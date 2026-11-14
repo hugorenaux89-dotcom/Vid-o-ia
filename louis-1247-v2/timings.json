@@ -1,0 +1,134 @@
+[
+ {
+  "plan": "p01",
+  "debut": 0,
+  "duree": 3.58,
+  "texte": "Non, non, non, non ! Pourquoi il y a un cochon dans mon lit ?!"
+ },
+ {
+  "plan": "p02",
+  "debut": 3.58,
+  "duree": 2.35,
+  "texte": "Attends. On reprend depuis le début."
+ },
+ {
+  "plan": "p03",
+  "debut": 5.93,
+  "duree": 7.94,
+  "texte": "Hier soir, je me suis couché en 2026. Ce matin… plus de chambre. Plus de téléphone. Juste… de la paille."
+ },
+ {
+  "plan": "p04",
+  "debut": 13.87,
+  "duree": 5.83,
+  "texte": "Petit défi. Un objet de 2026 est caché dans cette vidéo. Trouve-le, et écris-le en commentaire."
+ },
+ {
+  "plan": "p05",
+  "debut": 19.7,
+  "duree": 2.9,
+  "texte": "Les toilettes ? Un seau. Bon courage."
+ },
+ {
+  "plan": "p06",
+  "debut": 22.6,
+  "duree": 5.77,
+  "texte": "Question ! Au Moyen Âge, on buvait quoi ? De la bière… ou de l'eau ?"
+ },
+ {
+  "plan": "p07",
+  "debut": 28.37,
+  "duree": 6.56,
+  "texte": "De l'eau ! La bière à tous les repas parce que l'eau était sale, c'est un mythe. Bon, il y avait aussi de la petite bière, très légère."
+ },
+ {
+  "plan": "p08",
+  "debut": 34.93,
+  "duree": 3.92,
+  "texte": "Petit-déj : pain noir et bouillie. Et non. Pas de Nutella."
+ },
+ {
+  "plan": "p09",
+  "debut": 38.84,
+  "duree": 5.07,
+  "texte": "Six heures, direction les champs. Le bœuf me regarde comme si c'était moi, l'animal."
+ },
+ {
+  "plan": "p10",
+  "debut": 43.91,
+  "duree": 5.96,
+  "texte": "Ici, on bosse du lever au coucher du soleil. Repos ? Le dimanche… et les fêtes religieuses."
+ },
+ {
+  "plan": "p11",
+  "debut": 49.87,
+  "duree": 1.96,
+  "texte": "Attends… Tu entends ça ?"
+ },
+ {
+  "plan": "p12",
+  "debut": 51.83,
+  "duree": 6.58,
+  "texte": "Le seigneur. Il prend sa part de ma récolte. Et la semaine prochaine, je travaille gratuitement sur ses terres. Ça s'appelle la corvée."
+ },
+ {
+  "plan": "p13",
+  "debut": 58.41,
+  "duree": 3.42,
+  "texte": "Et en plus, faut dire merci. Merci, monseigneur !"
+ },
+ {
+  "plan": "p14",
+  "debut": 61.83,
+  "duree": 3.87,
+  "texte": "Et toi, t'aurais fait quoi ? Commente : courbette… ou révolte ?"
+ },
+ {
+  "plan": "p15",
+  "debut": 65.7,
+  "duree": 5.25,
+  "texte": "Quinze heures. Je me coupe avec la faucille. Et les antibiotiques… c'est dans sept cents ans."
+ },
+ {
+  "plan": "p16",
+  "debut": 70.95,
+  "duree": 5.25,
+  "texte": "Donc, direction le barbier. Il coupe les cheveux, arrache les dents… et soigne les blessures."
+ },
+ {
+  "plan": "p17",
+  "debut": 76.2,
+  "duree": 3.71,
+  "texte": "Il met du vin et du miel sur ma plaie. Ça, franchement, c'est malin."
+ },
+ {
+  "plan": "p18",
+  "debut": 79.91,
+  "duree": 3.71,
+  "texte": "Et après… il me propose une saignée. Non. Merci !"
+ },
+ {
+  "plan": "p19",
+  "debut": 83.62,
+  "duree": 5.67,
+  "texte": "Le soir, toute la famille dort dans la même pièce… et les animaux aussi. Leur chaleur chauffe la maison."
+ },
+ {
+  "plan": "p20",
+  "debut": 89.29,
+  "duree": 2.27,
+  "texte": "Voilà. Le cochon. Tout s'explique."
+ },
+ {
+  "plan": "p21",
+  "debut": 91.56,
+  "duree": 7.55,
+  "texte": "L'espérance de vie ? Environ trente ans. Mais surtout parce que beaucoup d'enfants mouraient jeunes. Les adultes vivaient souvent bien plus longtemps."
+ },
+ {
+  "plan": "p22",
+  "debut": 99.11,
+  "duree": 6.11,
+  "texte": "Alors, t'aurais tenu combien de jours ? Et l'objet caché, tu l'as trouvé ? Partie deux… si je survis."
+ }
+]
