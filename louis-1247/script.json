@@ -1,0 +1,19 @@
+[
+  {"id": "s01", "bg": "nightpig", "hour": "AN 1247", "badge": "", "text": "Comment je me suis retrouvé… à dormir avec un cochon ?"},
+  {"id": "s02", "bg": "hut", "hour": "4H30", "badge": "", "text": "Je m'appelle Louis. Hier soir, je me suis couché en 2026. Ce matin… je me suis réveillé en 1247."},
+  {"id": "s03", "bg": "village", "hour": "4H45", "badge": "", "text": "Premier problème : pas de toilettes. Juste un pot. Ou une fosse, dehors."},
+  {"id": "s04", "bg": "well", "hour": "5H00", "badge": "MYTHE ❌", "text": "Je croyais qu'au Moyen Âge, on ne buvait que de la bière. Faux ! C'est un mythe. On buvait l'eau du puits… et une petite bière très légère."},
+  {"id": "s05", "bg": "bread", "hour": "5H15", "badge": "", "text": "Petit-déj : pain noir et bouillie. Pas de Nutella."},
+  {"id": "s06", "bg": "field", "hour": "6H00", "badge": "", "text": "Direction les champs. Pas de tracteur. Juste une charrue… et un bœuf qui me déteste."},
+  {"id": "s07", "bg": "wheat", "hour": "9H00", "badge": "", "text": "Ici, on travaille du lever au coucher du soleil. Les seuls jours de repos : le dimanche, et les fêtes religieuses."},
+  {"id": "s08", "bg": "horses", "hour": "12H00", "badge": "", "text": "Et là… j'entends des chevaux."},
+  {"id": "s09", "bg": "lord", "hour": "12H05", "badge": "LA CORVÉE 😐", "text": "C'est le seigneur. Il vient prendre sa part de la récolte. Et la semaine prochaine, je travaille gratuitement sur ses terres. Ça s'appelle la corvée."},
+  {"id": "s10", "bg": "bow", "hour": "12H10", "badge": "", "text": "Et en plus… faut dire merci."},
+  {"id": "s11", "bg": "cut", "hour": "15H00", "badge": "", "text": "Je me coupe avec la faucille. Et les antibiotiques… c'est dans sept cents ans."},
+  {"id": "s12", "bg": "barber", "hour": "15H30", "badge": "", "text": "Direction le barbier. Il coupe les cheveux, arrache les dents… et soigne les blessures."},
+  {"id": "s13", "bg": "barber2", "hour": "15H40", "badge": "MIEL ✅  SAIGNÉE 😬", "text": "Il nettoie ma plaie avec du vin et du miel. Ça, c'est malin. Mais après, il me propose une saignée. Non merci !"},
+  {"id": "s14", "bg": "family", "hour": "20H00", "badge": "", "text": "Le soir, toute la famille dort dans une seule pièce…"},
+  {"id": "s15", "bg": "nightpig", "hour": "21H00", "badge": "", "text": "…avec les animaux. Leur chaleur chauffait la maison. Voilà. Le cochon."},
+  {"id": "s16", "bg": "stars", "hour": "23H00", "badge": "~30 ANS", "text": "L'espérance de vie ? Environ trente ans. Mais surtout parce que beaucoup d'enfants mouraient jeunes. Adulte, on pouvait vivre jusqu'à cinquante ou soixante ans."},
+  {"id": "s17", "bg": "end", "hour": "4H30", "badge": "", "text": "Bref. Demain, je recommence. Et toi, t'aurais survécu combien de jours ? Abonne-toi pour savoir si je rentre en 2026."}
+]
