@@ -10,6 +10,7 @@ function shade(hex, f) {
 
 const OUTFIT = {
   YANIS_J1: { top: '#9ea2a8', short: true, stains: true, belly: true, pants: '#4b5878', shoes: '#ececec', stink: true },
+  YANIS_A: { top: '#9ea2a8', short: true, stains: true, belly: true, pants: '#4b5878', shoes: '#ececec', stink: true },
   YANIS: { top: '#8d9096', pants: '#2f3a52', shoes: '#f2f2f2' },
   NADIA: { top: '#dcc6a3', pants: '#7a63a0', shoes: '#5a4a3a', dress: true },
   SOFIANE: { top: '#1b1b1b', pants: '#1b1b1b', shoes: '#f2f2f2', stripes: true },
@@ -98,11 +99,11 @@ function body(pid, expr = 'neutre', talk = false, pose = 'idle') {
   const phone = pose === 'phone' ? `<rect x="${(ra.hand[0] - 30).toFixed(1)}" y="${(ra.hand[1] - 78).toFixed(1)}" width="60" height="108" rx="12" fill="#1c1c1c" stroke="${K}" stroke-width="5"/><rect x="${(ra.hand[0] - 23).toFixed(1)}" y="${(ra.hand[1] - 70).toFixed(1)}" width="46" height="86" rx="6" fill="#8fd4ff"/>` : '';
   const stink = o.stink ? [[70, 520], [520, 500], [60, 700], [530, 700]].map(([x, y]) => `<path d="M${x} ${y} q-16 -24 0 -48 q16 -24 0 -48 q-16 -24 0 -48" fill="none" stroke="#7bc96f" stroke-width="7" stroke-linecap="round" opacity=".8"/>`).join('') : '';
   // --- tête (visage BD + ombrage)
-  const hs = 0.6, hx = sx - 300 * hs, hy = 108;
-  const head = `<defs><clipPath id="hc${id}"><ellipse cx="300" cy="280" rx="215" ry="262"/></clipPath>
+  const big = (c.w || 1) > 1.25, hs = big ? 0.74 : 0.6, hx = sx - 300 * hs, hy = big ? 70 : 108;
+  const head = `<defs><clipPath id="hc${id}"><ellipse cx="300" cy="300" rx="285" ry="290"/></clipPath>
       <linearGradient id="fs${id}" x1="0" x2="1"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#3a1d0a" stop-opacity=".22"/></linearGradient></defs>
     <g transform="translate(${hx},${hy - 20}) scale(${hs})"><g clip-path="url(#hc${id})">${toonPerson(pid, expr, talk)}
-      <ellipse cx="300" cy="300" rx="215" ry="262" fill="url(#fs${id})"/></g></g>`;
+      <ellipse cx="300" cy="300" rx="285" ry="290" fill="url(#fs${id})"/></g></g>`;
   const floorShadow = `<ellipse cx="${sx}" cy="1268" rx="${200 + fat}" ry="26" fill="#000" opacity=".25"/>`;
   return `<g>${floorShadow}${legs}${shoes}${waist}${torso}${belly}${stains}${extra}${neck}${head}${la.svg}${ra.svg}${hand(la.hand, la.ang, skin)}${hand(ra.hand, ra.ang, skin)}${phone}${stink}</g>`;
 }

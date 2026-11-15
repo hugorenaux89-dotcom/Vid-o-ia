@@ -30,6 +30,11 @@ const C = {
   POLICIER:{ skin: '#e8b994', hair: 'police', hc: '#3a2a20', beard: 'none', outfit: 'police', w: 1.08 },
   GRIS:    { skin: '#efc6a6', hair: 'balding', hc: '#6a5a50', beard: 'none', outfit: 'greysuit', glasses: 'round', age: true, w: 1.05 },
   YANIS_J1:{ skin: '#c98e62', hair: 'messy', hc: '#1c1511', beard: 'patchy', outfit: 'hoodieDirty', chain: 'silver', w: 1.26, pimples: true, unibrow: true, chin: true },
+  YANIS_A: { skin: '#c98e62', hair: 'bowl', hc: '#1c1511', beard: 'cuts', outfit: 'hoodieDirty', w: 1.42, pimples: true, unibrow: true, chin: true, glasses: 'broken', teeth: 'dirty', jowls: true },
+  YANIS_B: { skin: '#c98e62', hair: 'bowl', hc: '#1c1511', beard: 'patchy', outfit: 'hoodie', w: 1.3, chin: true, glasses: 'rect', teeth: 'ok', pimplesLight: true },
+  YANIS_C: { skin: '#c98e62', hair: 'fade', hc: '#1c1511', beard: 'trimmed', outfit: 'hoodie', w: 1.14, glasses: 'rect' },
+  YANIS_D: { skin: '#c98e62', hair: 'fade', hc: '#1c1511', beard: 'trimmed', outfit: 'hoodie', w: 1.06, glasses: 'thin' },
+  YANIS_E: { skin: '#c98e62', hair: 'fade', hc: '#1c1511', beard: 'trimmed', outfit: 'hoodie', w: 1.04, glasses: 'thin' },
   SARAH:   { skin: '#ebb68d', hair: 'long', hc: '#3a2216', beard: 'none', outfit: 'cropBeige', fem: true, hoops: true, w: 0.97 },
   KENZO:   { skin: '#e2a77a', hair: 'short', hc: '#ecd27c', beard: 'none', outfit: 'coach', chain: 'gold', w: 1.14, brow: '#b8963f' },
   BILAL:   { skin: '#c7905f', hair: 'short', hc: '#141010', beard: 'trimmed', outfit: 'whiteShirt', w: 1.08 },
@@ -145,6 +150,9 @@ function hairFront(c, id) {
     case 'fade': return `<path d="M180 250 C182 210 186 190 196 176 L206 240 Z M420 250 C418 210 414 190 404 176 L394 240 Z" fill="url(#fade${id})"/>
       <path d="M176 238 C160 130 222 60 302 60 C384 60 446 130 424 238 C418 200 404 176 390 164 C350 140 250 140 210 164 C196 176 182 200 176 238 Z" fill="${H}" ${SS}/>
       <path d="M220 110 Q236 98 250 108 M262 92 Q280 82 296 92 M310 90 Q330 82 344 94 M356 104 Q372 98 384 112" fill="none" stroke="${shade(H, 1.2)}" stroke-width="5" stroke-linecap="round"/>`;
+    case 'bowl': return `<path d="M168 262 C150 120 220 56 302 56 C386 56 452 120 432 262 L414 250 L400 214 L380 232 L356 204 L330 226 L304 200 L280 228 L254 204 L232 232 L210 210 L190 248 Z" fill="${H}" ${SS}/>
+      <path d="M220 96 Q250 140 236 196 M290 80 Q300 140 286 196 M360 92 Q350 140 366 196" fill="none" stroke="#4a3a30" stroke-width="5" stroke-linecap="round"/>
+      <path d="M250 70 q20 -8 40 0" fill="none" stroke="#6a5a4a" stroke-width="6" opacity=".6"/>`;
     case 'messy': return `<path d="M176 240 C150 130 214 52 302 52 C392 52 452 130 424 240 C418 196 404 172 388 160 C350 136 250 136 212 160 C196 172 182 196 176 240 Z" fill="${H}" ${SS}/>
       <path d="M210 92 l-28 -34 l44 18 M262 64 l-6 -42 l26 34 M330 62 l18 -40 l4 44 M384 92 l40 -24 l-22 40 M300 58 l10 -30 l12 30" fill="${H}" ${S(6)}/>
       <path d="M220 120 Q240 104 262 118 M300 100 Q322 90 340 106" fill="none" stroke="#3a2c22" stroke-width="5"/>`;
@@ -173,6 +181,9 @@ function beard(c, id) {
   switch (c.beard) {
     case 'stubble': return `<path d="M186 360 C198 470 250 508 300 510 C350 508 402 470 414 360 C404 440 362 484 300 486 C238 484 196 440 186 360 Z" fill="url(#stub${id})"/><path d="M256 412 Q300 396 344 412 Q300 404 256 412 Z" fill="url(#stub${id})"/>`;
     case 'patchy': return `<path d="M200 420 C214 470 250 500 290 506 L280 470 C250 460 222 444 200 420 Z M400 420 C386 470 350 500 312 506 L322 470 C352 460 380 444 400 420 Z" fill="url(#stub${id})"/><path d="M270 412 Q285 402 296 410 Z" fill="url(#stub${id})"/>`;
+    case 'cuts': return `<path d="M188 380 C204 470 250 508 296 512 L286 470 C250 462 214 440 188 380 Z M412 380 C396 470 350 508 306 512 L318 476 C352 462 390 438 412 380 Z" fill="url(#stub${id})"/>
+      <path d="M262 470 Q280 480 300 476" fill="url(#stub${id})"/><circle cx="350" cy="452" r="5" fill="url(#stub${id})"/>
+      <path d="M232 436 l14 6 M368 470 l12 -8 M300 498 l10 4" stroke="#d23a2a" stroke-width="4" stroke-linecap="round"/>`;
     case 'full': return `<path d="M180 340 C186 470 244 524 300 526 C356 524 414 470 420 340 C404 430 370 470 300 470 C230 470 196 430 180 340 Z" fill="${c.hc}" ${S(6)}/><path d="M250 410 Q300 386 350 410 Q300 420 250 410 Z" fill="${c.hc}" ${S(5)}/>`;
     case 'trimmed': return `<path d="M184 356 C194 470 248 512 300 514 C352 512 406 470 416 356 C402 446 362 484 300 486 C238 484 198 446 184 356 Z" fill="${c.hc}" opacity=".85" ${S(5)}/><path d="M256 410 Q300 394 344 410 Q300 414 256 410 Z" fill="${c.hc}"/>`;
     case 'moustache': return `<path d="M246 418 Q272 388 300 406 Q328 388 354 418 Q328 426 300 414 Q272 426 246 418 Z" fill="#c9c9c9" ${S(5)}/>`;
@@ -183,6 +194,12 @@ function beard(c, id) {
 function glasses(c) {
   switch (c.glasses) {
     case 'round': return `<circle cx="245" cy="305" r="44" fill="none" ${S(7)}/><circle cx="355" cy="305" r="44" fill="none" ${S(7)}/><path d="M289 300 L311 300" ${S(7)}/>`;
+    case 'broken': return `<g transform="rotate(-4 300 305)"><rect x="196" y="270" width="98" height="72" rx="14" fill="#cfe6ff" fill-opacity=".25" ${S(9)}/><rect x="306" y="270" width="98" height="72" rx="14" fill="#cfe6ff" fill-opacity=".25" ${S(9)}/>
+      <path d="M332 278 L356 312 L344 336 M356 312 L392 300" stroke="#ffffff" stroke-width="4" fill="none"/><path d="M332 278 L356 312 L344 336 M356 312 L392 300" stroke="#141414" stroke-width="1.5" fill="none"/>
+      <rect x="284" y="288" width="32" height="28" rx="4" fill="#f4f4f4" ${S(4)}/><path d="M288 296 l24 0 M288 306 l24 0" stroke="#bbb" stroke-width="2"/>
+      <path d="M196 290 L160 280 M404 290 L440 284" ${S(8)}/></g>`;
+    case 'rect': return `<rect x="196" y="274" width="98" height="64" rx="10" fill="#cfe6ff" fill-opacity=".18" ${S(8)}/><rect x="306" y="274" width="98" height="64" rx="10" fill="#cfe6ff" fill-opacity=".18" ${S(8)}/><path d="M294 300 L306 300" ${S(7)}/><path d="M196 292 L160 284 M404 292 L440 284" ${S(7)}/>`;
+    case 'thin': return `<rect x="200" y="280" width="92" height="56" rx="20" fill="#cfe6ff" fill-opacity=".12" stroke="#2a2a2a" stroke-width="4"/><rect x="308" y="280" width="92" height="56" rx="20" fill="#cfe6ff" fill-opacity=".12" stroke="#2a2a2a" stroke-width="4"/><path d="M292 300 L308 300 M200 296 L164 288 M400 296 L436 288" stroke="#2a2a2a" stroke-width="4"/>`;
     case 'forehead': return `<g transform="translate(0,-130)"><circle cx="248" cy="305" r="36" fill="#cfe6ff" opacity=".7" ${S(6)}/><circle cx="352" cy="305" r="36" fill="#cfe6ff" opacity=".7" ${S(6)}/><path d="M284 300 L316 300" ${S(6)}/></g>`;
     case 'sunHead': return `<g transform="translate(0,-170)"><ellipse cx="245" cy="305" rx="48" ry="30" fill="#151515" ${S(6)}/><ellipse cx="355" cy="305" rx="48" ry="30" fill="#151515" ${S(6)}/><path d="M293 300 L307 300" ${S(6)}/></g>`;
     case 'sun': return `<ellipse cx="245" cy="305" rx="48" ry="30" fill="#151515" ${S(6)}/><ellipse cx="355" cy="305" rx="48" ry="30" fill="#151515" ${S(6)}/><path d="M293 300 L307 300" ${S(6)}/>`;
@@ -220,9 +237,11 @@ function toonPerson(pid, expr = 'neutre', talk = false) {
       ${hideEyes ? '' : eye(245, e.eyes, false, c.skin, c.fem) + eye(355, e.eyes, true, c.skin, c.fem)}
       ${glasses(c)}
       <path d="M302 300 C292 338 280 358 288 372 C298 386 322 384 330 370" fill="none" ${S(6)}/><path d="M292 368 Q298 362 304 368" fill="none" ${S(4)}/>
-      ${mouth(e.mouth, talk, c.fem)}
+      ${c.jowls ? `<path d="M186 360 C176 430 206 480 246 492 C214 470 196 430 196 380 Z M414 360 C424 430 394 480 354 492 C386 470 404 430 404 380 Z" fill="${shade(c.skin, -0.1)}" opacity=".55"/><path d="M226 534 Q300 568 374 534" fill="none" stroke="#141414" stroke-width="5" stroke-linecap="round" opacity=".55"/>` : ''}
+      ${c.teeth === 'dirty' ? mouth(e.mouth, talk, c.fem).replace(/fill="#fff"/g, 'fill="#d9bf55"') + '<circle cx="286" cy="436" r="4" fill="#8a5a2a"/><circle cx="318" cy="438" r="3.5" fill="#8a5a2a"/>' : mouth(e.mouth, talk, c.fem)}
       ${c.beard === 'moustache' ? beard(c, id) : ''}
       ${e.blush || c.fem ? `<ellipse cx="216" cy="384" rx="24" ry="12" fill="#ff7a7a" opacity="${e.blush ? .5 : .25}"/><ellipse cx="384" cy="384" rx="24" ry="12" fill="#ff7a7a" opacity="${e.blush ? .5 : .25}"/>` : ''}
+      ${c.pimplesLight ? [[230, 214], [372, 392]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="7" fill="#e2524a" opacity=".7"/>`).join('') : ''}
       ${c.pimples ? [[230, 200], [372, 214], [300, 230], [210, 392], [392, 380], [372, 410], [236, 238]].map(([x, y]) => `<circle cx="${x}" cy="${y}" r="9" fill="#e2524a" ${S(3)}/><circle cx="${x - 2}" cy="${y - 2}" r="3" fill="#ffd0c0"/>`).join('') : ''}
       ${c.unibrow ? `<path d="M276 ${(e.brow[1]) + 4} Q300 ${(e.brow[1]) - 4} 324 ${(e.brow2 || e.brow)[1] + 4}" stroke="${browCol}" stroke-width="12" fill="none" stroke-linecap="round"/>` : ''}
       ${c.chin ? '<path d="M240 512 Q300 548 360 512" fill="none" stroke="#141414" stroke-width="6" stroke-linecap="round" opacity=".7"/>' : ''}
