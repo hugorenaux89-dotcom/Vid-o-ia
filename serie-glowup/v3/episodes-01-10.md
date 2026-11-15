@@ -5,94 +5,108 @@
 ---
 
 ## Épisode 1 · J-30 · « Le déclic »
-⏱️ **1:35** · 📊 `JOUR 1 SUR 30`
+⏱️ **1:15** · 📊 `JOUR 1 · À TOI DE CHOISIR`
 
 **P1 · L'accroche**
-🎥 `Close-up of {YANIS_A} looking at the camera, panicked, sweat drops, bald shiny head, broken glasses.`
+🎥 `Close-up of {YANIS_A} in {CHAMBRE} at night, panicking, waving his arms, sweat drops, bald shiny head, broken glasses.`
+🎬 `hook`
 🎭 `panique · panic`
-🔠 `IL A *30 JOURS* POUR DEVENIR MÉCONNAISSABLE`
+🔠 `~30 JOURS~ POUR DEVENIR *MÉCONNAISSABLE*`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Ce mec a trente jours pour devenir méconnaissable. Sinon, son ex va l'humilier devant toute sa famille. Et le pire ? C'est toi qui décides de tout ! »
+🎙️ **VOIX OFF** : « Ce mec a trente jours pour devenir méconnaissable. Sinon, son ex va l'humilier devant toute sa famille. Et c'est toi qui décides de tout ! »
 
 **P2 · Voici Yanis**
-🎥 `{YANIS_A} lying on an unmade bed in {CHAMBRE} at night, eating chips, crumbs everywhere.`
+🎥 `{YANIS_A} lying on his unmade bed in {CHAMBRE} at night, eating chips, crumbs everywhere.`
+🎬 `bedEat`
 🎭 `neutre · idle`
 🔠 `VOICI *YANIS*`
-🎙️ **VOIX OFF** : « Lui, c'est Yanis. Vingt-quatre ans, mécano. Son sport préféré ? Le canapé. Son plat préféré ? Les chips. Au petit-déjeuner. »
+🎙️ **VOIX OFF** : « Lui, c'est Yanis. Vingt-quatre ans, mécano. Son sport préféré ? Le lit. Son plat préféré ? Les chips… au petit-déjeuner. »
 
 **P3 · L'invitation**
-🎥 `{YANIS_A} in {CHAMBRE} holding a golden wedding invitation card "BILAL & YASMINE", surprised.`
+🎥 `{YANIS_A} in {CHAMBRE} at night, jumping in surprise, holding a golden wedding invitation "BILAL & YASMINE", the J-30 calendar on the wall.`
+🎬 `invite`
 🎭 `choque · point`
-🔠 `UN MARIAGE DANS *30 JOURS*`
-🎙️ **VOIX OFF** : « Ce soir, son téléphone vibre. Une invitation. Le mariage de son cousin Bilal. Dans trente jours pile. Toute la famille sera là. »
+🔠 `UN MARIAGE DANS ~30 JOURS~`
+🔊 `boing`
+🎙️ **VOIX OFF** : « Un soir, il reçoit une invitation. Le mariage de son cousin Bilal. Dans trente jours pile. »
 
 **P4 · La story**
-🎥 `{YANIS_A} in {CHAMBRE} looking at his phone, shocked, an Instagram story of {SARAH} with {KENZO} on the screen.`
+🎥 `{YANIS_A} in {CHAMBRE} at night, shocked, looking at his phone: an Instagram story of {SARAH} with {KENZO}.`
+🎬 `phone`
 🎭 `choque · phone`
 🔠 `SON EX SERA *LÀ*`
 🔊 `scratch`
-🎙️ **VOIX OFF** : « Et là… c'est le drame. Sarah. Son ex. Elle poste une story avec son nouveau copain, Kenzo. Coach sportif. Des abdos en béton. Et la légende : rendez-vous au mariage de Bilal. »
+🎙️ **VOIX OFF** : « Et là… c'est le drame. Sarah, son ex, poste une story avec son nouveau copain. Kenzo. Coach sportif. Avec la légende : rendez-vous au mariage de Bilal. »
 📝 *(story)* `Sarah : « Mon homme 💪 Rdv au mariage de Bilal 💍 »`
 
 **P5 · Le miroir**
-🎥 `{YANIS_A} standing in front of the full-length mirror in {CHAMBRE}, looking at his reflection, sad.`
+🎥 `{YANIS_A} walking up to a tall standing mirror in {CHAMBRE}, looking at his reflection, sad.`
+🎬 `mirror`
 🎭 `triste · tired`
 🔠 `LE MIROIR NE *MENT PAS*`
-🔊 `boing`
-🎙️ **VOIX OFF** : « Yanis se lève et se regarde dans le miroir. Et le miroir… ne ment pas. Un crâne qui brille plus que la lune. Des lunettes scotchées. Des dents jaunes. Et un tee-shirt qui a abandonné le combat. »
+🎙️ **VOIX OFF** : « Yanis se regarde dans le miroir. Et le miroir… ne ment pas. Un crâne qui brille plus que la lune. Des lunettes scotchées. Et un tee-shirt qui a abandonné le combat. »
 
 **P6 · Le score**
-🎥 `{KENZO} flexing his muscles next to {YANIS_A} covered in chips crumbs.`
+🎥 `{KENZO} flexing his muscles next to {YANIS_A} eating chips, crumbs falling.`
+🎬 `score`
 🎭 `triste · tired`
 🔠 `KENZO 1 – *YANIS 0*`
-🎙️ **VOIX OFF** : « Kenzo : des abdos. Yanis : des miettes de chips. Score actuel ? Un à zéro pour Kenzo. Et ce n'est pas un match serré. »
+🔊 `boing`
+🎙️ **VOIX OFF** : « Kenzo : des abdos. Yanis : des miettes de chips. Un à zéro pour Kenzo. »
 
 **P7 · La décision**
-🎥 `{YANIS_A} in {CHAMBRE} throwing the bag of chips into the trash, fist raised, determined.`
+🎥 `{YANIS_A} in {CHAMBRE} throwing the bag of chips into the trash, then raising his fist, determined.`
+🎬 `throw`
 🎭 `determine · fist`
-🔠 `30 JOURS POUR *TOUT CHANGER*`
+🔠 `~30 JOURS~ POUR *TOUT CHANGER*`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Alors Yanis jette ses chips. Et il fait une promesse. Trente jours. Un changement par jour. Le jour du mariage, Sarah ne va même pas le reconnaître ! »
+🎙️ **VOIX OFF** : « Alors Yanis jette ses chips… et fait une promesse. Trente jours. Un changement par jour. »
 
 **P8 · Le twist**
 🎥 `{YANIS_A} in {CHAMBRE} pointing at the camera.`
+🎬 `point`
 🎭 `determine · point`
 🔠 `C'EST *TOI* QUI CHOISIS`
-🎙️ **VOIX OFF** : « Mais il y a un twist. C'est toi qui choisis ce qui change chez lui. Chaque jour, un vote. Et chaque changement reste pour toujours. »
+🎙️ **VOIX OFF** : « Mais attention : c'est toi qui choisis ce qui change. Et chaque changement reste pour toujours. »
 
-**P9 · La salle**
-🎥 `{YANIS_A} in {SALLE_MUSCU} trying push-ups on the floor, red face, sweating.`
+**P9 · Les pompes**
+🎥 `{YANIS_A} in {SALLE_MUSCU} doing push-ups on a blue mat, red face, sweating, then collapsing flat.`
+🎬 `pushup`
 🎭 `panique · panic`
 🔠 `5 POMPES… *ET IL S'ÉCRASE*`
 🔊 `thud`
-🎙️ **VOIX OFF** : « Premier arrêt : la salle de sport. Objectif : des pompes. Une… deux… trois… quatre… cinq. Et il s'écrase par terre comme une crêpe ! »
-📝 `MUSCU : 5 POMPES · BARRE À VIDE`
+🎙️ **VOIX OFF** : « Premier arrêt : la salle de sport. Une pompe… Deux… Trois… Quatre… Cinq… Et il s'écrase comme une crêpe ! »
+📝 `MUSCU : 5 POMPES`
 
 **P10 · Le bilan**
-🎥 `{YANIS_A} lying exhausted in {SALLE_MUSCU}, giving a weak thumbs-up.`
+🎥 `{YANIS_A} lying exhausted on the floor of {SALLE_MUSCU}, giving a weak thumbs-up.`
+🎬 `lieFloor`
 🎭 `triste · tired`
 🔠 `UN *DÉBUT*`
-🎙️ **VOIX OFF** : « Cinq pompes. Kenzo en fait cinq cents. Mais bon… il faut bien commencer quelque part. »
+🎙️ **VOIX OFF** : « Kenzo en fait cinq cents. Mais bon… il faut bien commencer quelque part. »
 
 **P11 · L'eau**
-🎥 `{YANIS_A} in {CUISINE} writing "2 L" with a marker on a big water bottle, {NADIA} moved.`
-🎭 `sourire · idle`
+🎥 `{YANIS_A} in {CUISINE} writing "2 L" with a marker on a big water bottle, {NADIA} wiping a tear.`
+🎬 `water`
+🎭 `determine · idle`
 🔠 `ADIEU *LES SODAS*`
-🎙️ **VOIX OFF** : « Le soir, première règle : deux litres d'eau par jour. Il l'écrit au marqueur sur une bouteille géante. Sa mère le regarde, émue. Ça fait dix ans qu'elle attend ce moment. »
+🎙️ **VOIX OFF** : « Le soir, nouvelle règle : deux litres d'eau par jour. Sa mère est émue. Elle attend ce moment depuis dix ans. »
 📝 `✨ GLOW-UP DU JOUR : 2 L D'EAU PAR JOUR`
 
 **P12 · Le problème**
-🎥 `{YANIS_A} raising his arms in {CHAMBRE}, sweat stains, green smell lines.`
+🎥 `{YANIS_A} raising his arms in {CHAMBRE}, green smell cloud, flies escaping.`
+🎬 `armsUp`
 🎭 `inquiet · panic`
 🔠 `UN *GROS* PROBLÈME`
 🔊 `boing`
-🎙️ **VOIX OFF** : « Mais il reste un problème. Un gros problème. Quand Yanis lève les bras… même les mouches s'enfuient. »
+🎙️ **VOIX OFF** : « Mais il reste un gros problème. Quand Yanis lève les bras… même les mouches s'enfuient ! »
 
 **P13 · Le vote**
-🎥 `{YANIS_A} looking worried at the camera, touching his pimples.`
+🎥 `{YANIS_A} in {CHAMBRE} scratching his head, worried.`
+🎬 `vote`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
-🎙️ **VOIX OFF** : « Alors à toi de jouer. Commente un seul mot : ODEUR… ou BOUTONS. Le plus voté sera réglé demain. Abonne-toi : le jour trente va être complètement fou ! »
+🎙️ **VOIX OFF** : « Alors, à toi de jouer. Commente un seul mot : ODEUR… ou BOUTONS. Abonne-toi : le jour trente va être complètement fou ! »
 📝 `🅰️ ODEUR` / `🅱️ BOUTONS`
 
 ---

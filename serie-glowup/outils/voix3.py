@@ -26,7 +26,7 @@ V = {
  "L'HOMME EN GRIS": ("fr-FR-HenriNeural", -4, 4),
  "UNE VOIX": ("fr-CH-FabriceNeural", 4, -8),
  "TOUS": ("fr-FR-RemyMultilingualNeural", 0, 0),
- "VOIX OFF": ("fr-FR-RemyMultilingualNeural", 18, 3),
+ "VOIX OFF": ("fr-FR-RemyMultilingualNeural", 25, 3),
 }
 # émotion: (vitesse, hauteur, volume %, cible loudness, filtre)
 EMO = {
@@ -164,6 +164,12 @@ async def line(ep, name, who, text, emo, sem):
                 g = os.path.join(work, f"g{i}.wav")
                 await sh("ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anullsrc=r=44100:cl=mono", "-t", f"{gap_after(s)/1000:.3f}", g)
                 wavs.append(g)
+        starts, acc = [], 0.12
+        for w in wavs:
+            if os.path.basename(w).startswith("s"): starts.append(round(acc, 3))
+            pr = await asyncio.create_subprocess_exec("ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", w, stdout=asyncio.subprocess.PIPE)
+            o, _ = await pr.communicate(); acc += float(o.decode().strip())
+        import json as _j; _j.dump({"starts": starts, "sents": sents}, open(os.path.join(d, name.replace(".mp3", ".json")), "w"), ensure_ascii=False)
         lst = os.path.join(work, "list.txt")
         open(lst, "w").write("".join(f"file '{w}'\n" for w in wavs))
         joined = os.path.join(work, "joined.wav")
