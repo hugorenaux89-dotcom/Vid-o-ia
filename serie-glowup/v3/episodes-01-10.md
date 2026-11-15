@@ -112,75 +112,90 @@
 ---
 
 ## Épisode 2 · J-29 · « L'odeur »
-⏱️ **1:30** · 📊 `JOUR 2 · VOUS AVEZ CHOISI ODEUR`
+⏱️ **1:15** · 📊 `JOUR 2 · VOUS AVEZ CHOISI ODEUR`
 
 **P1 · Le résultat**
-🎥 `{YANIS_A} in {CHAMBRE} raising his arm, visible sweat stain, green smell lines, embarrassed.`
+🎥 `{YANIS_A} in {CHAMBRE} raising one arm, big sweat stain, green smell lines, embarrassed.`
+🎬 `armRaise`
 🎭 `choque · point`
 🔠 `VOUS AVEZ CHOISI *ODEUR*`
-🎙️ **VOIX OFF** : « Jour deux. Vous avez choisi : odeur. Et franchement, vous avez bien fait. Parce que ce matin, même son ventilateur refuse de tourner vers lui. »
+🔊 `boom`
+🎙️ **VOIX OFF** : « Jour deux. Vous avez choisi : ODEUR. Et franchement, il était temps. Ce matin, même son ventilateur refuse de tourner vers lui ! »
 
 **P2 · Les courbatures**
 🎥 `{YANIS_A} in {CHAMBRE} unable to lift his arms to put on a t-shirt, face of pain.`
+🎬 `sore`
 🎭 `panique · tired`
 🔠 `IL NE PEUT PLUS *LEVER LES BRAS*`
-🎙️ **VOIX OFF** : « Problème numéro un : les courbatures. Cinq pompes hier, et aujourd'hui il ne peut plus lever les bras. Enfiler un tee-shirt lui prend sept minutes. Aujourd'hui, c'est repos. »
+🔊 `boing`
+🎙️ **VOIX OFF** : « Mais d'abord, les courbatures. Cinq pompes hier… et aujourd'hui, il ne peut plus lever les bras. Enfiler un tee-shirt lui prend sept minutes. »
 📝 `😩 REPOS : COURBATURES PARTOUT`
 
 **P3 · Sofiane**
-🎥 `{SOFIANE} bursting into {CHAMBRE} with a whistle around his neck and a kebab, {YANIS_A} on the bed.`
+🎥 `{SOFIANE} walking into {CHAMBRE} with a whistle around his neck and a kebab, {YANIS_A} lying on the bed.`
+🎬 `sofiane`
 🎭 `choque · idle`
 🔠 `VOICI LE *COACH*`
-🎙️ **VOIX OFF** : « Et là, son meilleur pote Sofiane débarque avec un sifflet autour du cou et un kebab à la main. Il s'autoproclame coach. Il n'a jamais couru de sa vie. »
+🔊 `scratch`
+🎙️ **VOIX OFF** : « Là, son meilleur pote Sofiane débarque. Un sifflet autour du cou, un kebab à la main. Il s'autoproclame coach. Il n'a jamais couru de sa vie. »
 
 **P4 · Le programme**
 🎥 `{SOFIANE} showing a training program written on a greasy kebab napkin, {YANIS_A} skeptical.`
+🎬 `napkin`
 🎭 `mefiant · idle`
 🔠 `UN PROGRAMME SUR *UNE SERVIETTE*`
-🎙️ **VOIX OFF** : « Il sort son programme d'entraînement… écrit sur une serviette de kebab. Lundi : muscu. Mardi : repos. Mercredi : course. Et en bas, une énorme tache de sauce samouraï. »
+🎙️ **VOIX OFF** : « Son programme ? Écrit sur une serviette de kebab. Muscu, repos, course… et une énorme tache de sauce samouraï. »
 
 **P5 · Nadia**
-🎥 `{NADIA} entering {CHAMBRE} with laundry, pinching her nose, {YANIS_A} embarrassed.`
+🎥 `{NADIA} entering {CHAMBRE} with a laundry basket, pinching her nose, {YANIS_A} embarrassed.`
+🎬 `nose`
 🎭 `choque · point`
 🔠 `ÇA SENT *LE VESTIAIRE*`
-🎙️ **VOIX OFF** : « Sa mère entre dans la chambre avec le linge… et se bouche le nez immédiatement. Elle lui dit : mon fils, ça sent le vestiaire de foot après un match sous la pluie. »
+🔊 `boing`
+🎙️ **VOIX OFF** : « Puis sa mère entre avec le linge… et se bouche le nez direct. Mon fils, ça sent le vestiaire après un match sous la pluie ! »
 
 **P6 · La douche**
-🎥 `{YANIS_A} in {SALLE_DE_BAIN} with a towel on his shoulder, shower gel and deodorant on the sink.`
+🎥 `{YANIS_A} in {SALLE_DE_BAIN} scrubbing with a sponge, bubbles everywhere, towel on his shoulder.`
+🎬 `shower`
 🎭 `determine · idle`
 🔠 `DEUX DOUCHES *PAR JOUR*`
-🎙️ **VOIX OFF** : « Alors on règle le problème. Douche le matin, douche le soir. Gel douche, serviette propre, et on frotte. Partout. Même derrière les oreilles. »
+🎙️ **VOIX OFF** : « Alors on règle ça. Douche le matin, douche le soir. Et on frotte partout. Même derrière les oreilles. »
 
 **P7 · Le déo**
-🎥 `{YANIS_A} in {SALLE_DE_BAIN} applying deodorant under his arm, proud, a pack of three deodorants on the sink.`
+🎥 `{YANIS_A} in {SALLE_DE_BAIN} spraying deodorant under his arm, then flexing, proud.`
+🎬 `deo`
 🎭 `sourire · flex`
 🔠 `ADIEU *LES AURÉOLES*`
-🎙️ **VOIX OFF** : « Et surtout : du déo, tous les jours, sans exception. Sofiane lui en offre trois d'un coup, au cas où. Adieu les auréoles sous les bras. »
+🎙️ **VOIX OFF** : « Et surtout : du déo, tous les jours. Sofiane lui en offre trois d'un coup, au cas où. Adieu les auréoles ! »
 📝 `✨ GLOW-UP DU JOUR : DOUCHE + DÉO`
 
 **P8 · Le test**
-🎥 `{NADIA} sniffing the air near {YANIS_A} in {CHAMBRE}, then smiling, thumbs up.`
+🎥 `{NADIA} walking up to {YANIS_A} in {CHAMBRE}, sniffing, then smiling with a thumbs up.`
+🎬 `sniff`
 🎭 `sourire · idle`
 🔠 `TEST *RÉUSSI*`
-🎙️ **VOIX OFF** : « Le soir, test officiel : Nadia s'approche, renifle… et lève le pouce. Ça sent le savon. Pour la première fois depuis des mois, Yanis sent bon. »
+🎙️ **VOIX OFF** : « Le soir, test officiel. Nadia s'approche, renifle… et lève le pouce. Pour la première fois depuis des mois, Yanis sent bon ! »
 
-**P9 · La suite**
-🎥 `{YANIS_A} in {CHAMBRE} at night looking at his old torn sneakers, worried.`
+**P9 · Les baskets**
+🎥 `{YANIS_A} in {CHAMBRE} at night holding his old torn sneakers, worried.`
+🎬 `sneakers`
 🎭 `inquiet · point`
 🔠 `DEMAIN, *IL COURT*`
-🎙️ **VOIX OFF** : « Mais demain, c'est sa première course. Et quand il regarde ses vieilles baskets trouées, il se dit qu'il y a un deuxième problème. »
+🎙️ **VOIX OFF** : « Mais demain, c'est sa première course. Et quand il regarde ses vieilles baskets trouées… il y a un deuxième problème. »
 
-**P10 · Le frigo de Sofiane**
-🎥 `{SOFIANE} sending a photo of his own fridge full of sodas to {YANIS_A}, who puts his phone on silent.`
+**P10 · Courage frérot**
+🎥 `{YANIS_A} in {CHAMBRE} at night looking at his phone, suspicious: a photo of a fridge full of sodas.`
+🎬 `phone`
 🎭 `mefiant · phone`
 🔠 `COURAGE *FRÉROT*`
-🎙️ **VOIX OFF** : « Avant de dormir, Sofiane lui envoie une photo : son propre frigo, rempli de sodas, avec la légende : courage, frérot. Yanis met son téléphone en silencieux. Demain, il a une course, et il compte bien la finir. »
+🎙️ **VOIX OFF** : « Avant de dormir, Sofiane lui envoie une photo de son frigo rempli de sodas. Légende : courage, frérot. Yanis met son téléphone en silencieux. »
 
 **P11 · Le vote**
-🎥 `{YANIS_A} holding his torn sneakers in one hand, touching his pimples with the other.`
+🎥 `{YANIS_A} in {CHAMBRE} scratching his head, worried.`
+🎬 `vote`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
-🎙️ **VOIX OFF** : « Alors commente un seul mot : BASKETS… ou BOUTONS. Le plus voté sera réglé au jour trois. Et chaque changement reste pour toujours. »
+🎙️ **VOIX OFF** : « Alors, commente un seul mot : BASKETS… ou BOUTONS. Le plus voté sera réglé demain. Et chaque changement reste pour toujours ! »
 📝 `🅰️ BASKETS` / `🅱️ BOUTONS`
 
 ---
