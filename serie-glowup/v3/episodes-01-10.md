@@ -132,7 +132,13 @@
 🔠 `DEMAIN, *IL COURT*`
 🎙️ **VOIX OFF** : « Mais demain, c'est sa première course. Et quand il regarde ses vieilles baskets trouées, il se dit qu'il y a un deuxième problème. »
 
-**P10 · Le vote**
+**P10 · Le frigo de Sofiane**
+🎥 `{SOFIANE} sending a photo of his own fridge full of sodas to {YANIS_A}, who puts his phone on silent.`
+🎭 `mefiant · phone`
+🔠 `COURAGE *FRÉROT*`
+🎙️ **VOIX OFF** : « Avant de dormir, Sofiane lui envoie une photo : son propre frigo, rempli de sodas, avec la légende : courage, frérot. Yanis met son téléphone en silencieux. Demain, il a une course, et il compte bien la finir. »
+
+**P11 · Le vote**
 🎥 `{YANIS_A} holding his torn sneakers in one hand, touching his pimples with the other.`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
@@ -201,7 +207,19 @@
 🔠 `LE FRIGO DE *LA TENTATION*`
 🎙️ **VOIX OFF** : « Et quand il ouvre le frigo, c'est un piège : sodas, pizzas surgelées, chips. Tout ce qu'il aime. Tout ce qui l'empêche d'avancer. »
 
-**P10 · Le vote**
+**P10 · Le retour**
+🎥 `{SOFIANE} in front of the building with a croissant in each hand, dropping one in surprise, {YANIS_A} showing his smartwatch.`
+🎭 `sourire · point`
+🔠 `SOFIANE *N'Y CROIT PAS*`
+🎙️ **VOIX OFF** : « En rentrant, il croise Sofiane devant l'immeuble, un croissant dans chaque main. Sofiane lui demande s'il a vraiment couru. Yanis lui montre sa montre : trois kilomètres. Sofiane lâche un croissant de surprise. Il le ramasse, souffle dessus, et le mange quand même. »
+
+**P11 · La soupe**
+🎥 `{NADIA} serving a vegetable soup to {YANIS_A} in {CUISINE}, Yanis looking at it suspiciously, then eating.`
+🎭 `mefiant · idle`
+🔠 `LA *SOUPE*`
+🎙️ **VOIX OFF** : « Le soir, Nadia lui sert une soupe de légumes. Yanis la regarde comme un ennemi. Mais il la finit. Puis il en reprend. Il découvre, à vingt-quatre ans, que les légumes peuvent avoir du goût. »
+
+**P12 · Le vote**
 🎥 `{YANIS_A} between the fridge and the mirror, hesitating.`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
@@ -269,7 +287,19 @@
 🔠 `ET *CES LUNETTES*`
 🎙️ **VOIX OFF** : « Et ses lunettes… Le scotch commence à se décoller. Elles ne tiendront plus très longtemps. »
 
-**P10 · Le vote**
+**P10 · La balance**
+🎥 `{YANIS_A} standing on a bathroom scale in {SALLE_DE_BAIN} showing 112 kg, writing it on a post-it on the mirror.`
+🎭 `triste · point`
+🔠 `*112* KILOS`
+🎙️ **VOIX OFF** : « Le soir, il monte sur la balance de la salle de bain. Cent douze kilos. Il descend, il remonte, comme si le chiffre allait changer. Cent douze. Il l'écrit sur un post-it et le colle sur le miroir. Objectif : le voir baisser chaque semaine. »
+
+**P11 · Le marché**
+🎥 `{NADIA} and {YANIS_A} at a colorful street market, Yanis carrying bags of vegetables, vendors cheering.`
+🎭 `sourire · idle`
+🔠 `TOUT LE QUARTIER *Y CROIT*`
+🎙️ **VOIX OFF** : « Le dimanche, Nadia l'emmène au marché. Tomates, courgettes, poulet, citrons. Yanis porte les sacs. Les vendeurs le connaissent depuis qu'il est petit, et tous l'encouragent : allez Yanis, on y croit ! »
+
+**P12 · Le vote**
 🎥 `{YANIS_A} pointing at his face, worried.`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
@@ -337,7 +367,13 @@
 🔠 `CRAC`
 🎙️ **VOIX OFF** : « Il pose son téléphone, s'assoit sur son lit… et entend un crac. Il vient de s'asseoir sur ses lunettes. Le scotch a lâché. Un verre roule sous le lit. »
 
-**P10 · Le vote**
+**P10 · Le post-it**
+🎥 `{YANIS_A} looking at the post-it on the mirror now showing 110 kg, proud, sending a photo to {SOFIANE}.`
+🎭 `sourire · phone`
+🔠 `*MOINS 2* KILOS`
+🎙️ **VOIX OFF** : « Le post-it du miroir affiche maintenant cent dix kilos. Deux kilos de moins en cinq jours. Yanis prend une photo et l'envoie à Sofiane. Sofiane répond avec la photo de son burger. Chacun son combat. »
+
+**P11 · Le vote**
 🎥 `{YANIS_A} holding his broken glasses in two pieces, sad.`
 🎭 `larmes · tired`
 🔠 `COMMENTE *UN MOT*`
@@ -405,7 +441,13 @@
 🔠 `ET *SES CHEVEUX*`
 🎙️ **VOIX OFF** : « Mais avec ses nouvelles lunettes, il voit aussi très bien autre chose. Son crâne. Brillant. Trois cheveux sur les côtés. Et ça, aucune lunette ne le cachera. »
 
-**P10 · Le vote**
+**P10 · Sofiane jaloux**
+🎥 `{SOFIANE} trying on {YANIS_B}'s new glasses in front of a mirror, posing, then buying frames without lenses.`
+🎭 `sourire · idle`
+🔠 `SOFIANE *VEUT DES LUNETTES*`
+🎙️ **VOIX OFF** : « Sofiane essaie les lunettes de Yanis, se trouve très beau, et décide qu'il veut aussi des lunettes. Il n'en a pas besoin. Il voit parfaitement. Il en achète quand même. Sans verres. »
+
+**P11 · Le vote**
 🎥 `{YANIS_B} pointing at his bald head with one hand and his yellow teeth with the other.`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
@@ -473,7 +515,13 @@
 🔠 `MAIS *CE SOURIRE*`
 🎙️ **VOIX OFF** : « Devant le miroir, il sourit enfin à pleines dents. Et c'est là qu'il les voit. Ses dents. Jaunes. Presque marron. Des années de sodas et de brossages oubliés. »
 
-**P10 · Le vote**
+**P10 · Le fond d'écran**
+🎥 `{YANIS_B} taking a selfie with his new thick hair and setting it as his phone wallpaper, smiling.`
+🎭 `sourire · phone`
+🔠 `LE *FOND D'ÉCRAN*`
+🎙️ **VOIX OFF** : « Le soir, Yanis prend un selfie avec ses nouveaux cheveux. Il le regarde pendant dix minutes. Il ne le poste pas. Pas encore. Il veut garder la surprise. Mais il le met en fond d'écran. »
+
+**P11 · Le vote**
 🎥 `{YANIS_B} covering his mouth with his hand, embarrassed.`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
@@ -541,7 +589,13 @@
 🔠 `DES *CERNES* JUSQU'AU MENTON`
 🎙️ **VOIX OFF** : « Résultat au réveil : des cernes jusqu'au menton. Il ressemble à un panda qui aurait raté son bus. »
 
-**P10 · Le vote**
+**P10 · La balance**
+🎥 `{YANIS_B} on the bathroom scale showing 107 kg, doing a little victory dance, {NADIA} knocking on the door.`
+🎭 `sourire · flex`
+🔠 `*107* KILOS`
+🎙️ **VOIX OFF** : « Sur le post-it du miroir, un nouveau chiffre : cent sept kilos. Cinq kilos en huit jours. Yanis fait une petite danse de la victoire dans la salle de bain. Nadia frappe à la porte pour savoir si tout va bien. »
+
+**P11 · Le vote**
 🎥 `{YANIS_B} yawning, holding his phone, worried.`
 🎭 `inquiet · phone`
 🔠 `COMMENTE *UN MOT*`
@@ -609,7 +663,13 @@
 🔠 `C'EST *POUR QUI* ?`
 🎙️ **VOIX OFF** : « À la fin, Lina lui demande : ce glow-up, c'est pour qui ? Yanis répond : pour moi. Juste pour moi. Et Lina sourit : bonne réponse. »
 
-**P10 · Le vote**
+**P10 · Le secret**
+🎥 `{KENZO} in {SALLE_MUSCU} asking {YANIS_B} a question, Yanis answering mysteriously.`
+🎭 `mefiant · idle`
+🔠 `SON SECRET ? *UN TIROIR*`
+🎙️ **VOIX OFF** : « Le lundi, à la salle, Kenzo lui trouve l'air reposé. Il lui demande son secret. Yanis répond : un tiroir. Kenzo ne comprend pas. Yanis ne développe pas. »
+
+**P11 · Le vote**
 🎥 `{YANIS_B} walking home with his back slouched, looking at his reflection in a shop window.`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
@@ -678,7 +738,13 @@
 🔠 `UN SEUL *SOURCIL*`
 🎙️ **VOIX OFF** : « Mais en rangeant son téléphone, il aperçoit un détail dans le miroir. Ses sourcils. Ou plutôt son sourcil. Un seul. D'une oreille à l'autre. »
 
-**P10 · Le vote**
+**P10 · Le post-it**
+🎥 `{YANIS_B} updating the post-it on the bathroom mirror: 104 kg, and writing CONTINUE underneath.`
+🎭 `determine · point`
+🔠 `*104* KILOS`
+🎙️ **VOIX OFF** : « Avant de dormir, il met à jour le post-it du miroir : cent quatre kilos. Huit kilos en dix jours. Et en dessous, il ajoute un seul mot, en majuscules : continue. »
+
+**P11 · Le vote**
 🎥 `{YANIS_B} pointing at his unibrow, worried.`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
