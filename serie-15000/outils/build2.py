@@ -188,6 +188,9 @@ def layer(st, big=None):
     if st.get("manque"):
         d.text((W / 2, 1180), "IL MANQUE", font=A(110), fill="white", anchor="mm", stroke_width=12, stroke_fill="#000")
         d.text((W / 2, 1340), st["manque"], font=A(190), fill="#ff4d4d", anchor="mm", stroke_width=14, stroke_fill="#000")
+    if st.get("suspense"):
+        d.text((W / 2, 1180), "QUE VA FAIRE", font=A(120), fill="white", anchor="mm", stroke_width=12, stroke_fill="#000")
+        d.text((W / 2, 1330), "YANIS ?", font=A(190), fill="#ffcf4a", anchor="mm", stroke_width=14, stroke_fill="#000")
     if st.get("result"):
         L, txt = st["result"]; col = "#ff4d4d" if L == "A" else "#3d8bff"
         rr(d, (70, 330, W - 70, 760), 40, (14, 16, 24, 230), "#141414", 8)
@@ -262,6 +265,12 @@ def plan(E, version, prev_choice):
             if emo == "shout" or st["expr"] in ("panique", "colere", "choque"): st["shake"] = True
             segs.append(st)
             others = [t for t in tags if t != st["pid"]]
+            if not others and not st.get("phone") and st.get("talk"):
+                alt = {"inquiet": "triste", "panique": "choque", "choque": "panique", "colere": "determine", "triste": "inquiet",
+                       "sourire": "tendre", "determine": "mefiant", "mefiant": "calme", "calme": "mefiant", "tendre": "sourire",
+                       "larmes": "triste", "neutre": "inquiet"}.get(st["expr"], "inquiet")
+                segs.append(dict(base, kind="silent", dur=1.5, pid=st["pid"], expr=alt, newblock=True, toplabel=None, ccolor="white",
+                                 cards=[], sfx=None, react=True, flash=st["flash"]))
             if others and st["kind"] == "line" and not st.get("phone"):
                 segs.append(dict(base, kind="silent", dur=1.6, pid=others[0], expr=cue(others[0], cam), newblock=True, toplabel=None,
                                  ccolor="white", sfx=None, react=True, shake=st.get("shake", False) and False))
@@ -270,6 +279,8 @@ def plan(E, version, prev_choice):
             if rest > 0:
                 segs.append(dict(base, kind="silent", dur=2.6, pid="YANIS", expr="inquiet", manque=f"{rest:,} €".replace(",", " "), cards=[],
                                  toplabel=None, newblock=True, sfx="boom", fill=True))
+            segs.append(dict(base, kind="silent", dur=2.6, pid="YANIS", expr="inquiet", manque=None, suspense=True, cards=[],
+                             toplabel=None, newblock=True, sfx="whoosh"))
             segs.append(dict(base, kind="silent", dur=3.6, pid="YANIS", expr="determine", choice=E["choice"], cards=[], toplabel=None, newblock=False, sfx="boom"))
         first = False
     # durée mini 62 s : on allonge les silences puis les respirations
@@ -278,13 +289,13 @@ def plan(E, version, prev_choice):
     T = total(); need = 64 - T
     if need > 0:
         sil = [s for s in segs if s["kind"] == "silent" and not s.get("choice") and not s.get("intro")]
-        for s in sil: s["dur"] += min(2.8, need / max(1, len(sil)))
+        for s in sil: s["dur"] += min(3.2, need / max(1, len(sil)))
         T = total(); need = 64 - T
     if need > 0:
         ls = [s for s in segs if s["kind"] == "line"]
-        for s in ls: s["gap"] += min(1.3, need / max(1, len(ls)))
+        for s in ls: s["gap"] += min(1.6, need / max(1, len(ls)))
         T = total(); need = 64 - T
-    if need > 0: segs[-1]["dur"] += min(need, 8.0)
+    if need > 0: segs[-1]["dur"] += min(need, 12.0)
     return segs
 
 # ---------------- rendu ----------------
