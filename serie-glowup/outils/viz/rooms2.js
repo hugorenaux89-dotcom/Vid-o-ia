@@ -95,6 +95,21 @@ const R = {
     <defs>${glow('gm2', 760, 900, 520, '#bfe4ff', 0.25)}</defs>
     <rect width="1080" height="1920" fill="#040818" opacity=".25"/><rect width="1080" height="1920" fill="url(#gm2)"/>`,
 
+  salleDeBain: () => `${shell(['#bfe6ea', '#9fd0d6'], '#8cc2c8', '#e8eef0', '#b8c4c8', false)}
+    ${[...Array(14)].map((_, i) => [...Array(19)].map((_, j) => `<rect x="${120 + i * 60}" y="${90 + j * 60}" width="60" height="60" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="3"/>`).join('')).join('')}
+    ${[...Array(9)].map((_, i) => `<path d="M${120 + i * 105} 1250 L${-300 + i * 210} 1920" stroke="#9aa8ad" stroke-width="3"/>`).join('')}${[1330, 1450, 1620, 1840].map(y => `<path d="M0 ${y} L1080 ${y}" stroke="#9aa8ad" stroke-width="3"/>`).join('')}
+    <!-- douche -->
+    <rect x="620" y="180" width="320" height="1070" fill="#d6f2f6" stroke="${K}" stroke-width="6"/><path d="M780 180 L780 260 L700 260" fill="none" ${O(10)}/><circle cx="700" cy="270" r="30" fill="#bbb" ${O(5)}/>
+    <rect x="600" y="160" width="360" height="18" rx="9" fill="#888" ${O(4)}/>
+    <path d="M610 178 Q640 600 620 1240 L700 1240 Q720 600 680 178 Z" fill="#ffd23a" ${O(5)}/>${[0, 1, 2, 3].map(i => `<circle cx="${650}" cy="${300 + i * 250}" r="18" fill="#ff8fb3" opacity=".8"/>`).join('')}
+    <!-- lavabo + miroir -->
+    <rect x="200" y="300" width="300" height="380" rx="30" fill="#e8f7ff" stroke="#8a6a4a" stroke-width="14"/><path d="M240 360 L300 320 M250 440 L380 330" stroke="#fff" stroke-width="12" opacity=".7"/>
+    <path d="M180 900 L520 900 Q520 1010 350 1010 Q180 1010 180 900 Z" fill="#fff" ${O(6)}/><rect x="320" y="1000" width="60" height="250" fill="#f2f2f2" ${O(5)}/><path d="M350 900 L350 860 L390 860" fill="none" ${O(8)}/>
+    <rect x="190" y="830" width="40" height="70" rx="8" fill="#2f6fd6" ${O(4)}/><rect x="240" y="845" width="34" height="55" rx="8" fill="#2f6fd6" ${O(4)}/><rect x="284" y="840" width="34" height="60" rx="8" fill="#2f6fd6" ${O(4)}/>
+    <rect x="440" y="820" width="50" height="80" rx="10" fill="#5bbf4a" ${O(4)}/>
+    <rect x="140" y="720" width="22" height="160" fill="#888"/><path d="M140 720 L120 720 L120 880" fill="none" ${O(4)}/><path d="M120 730 L60 730 L60 880 L120 880" fill="#ff8fb3" ${O(5)}/>
+    <ellipse cx="300" cy="1560" rx="170" ry="50" fill="#5bbf4a" opacity=".8" ${O(4)}/>
+    <defs>${glow('gb', 540, 300, 900, '#ffffff', 0.35)}</defs><rect width="1080" height="1920" fill="url(#gb)"/>`,
   salleMuscu: () => `${shell(['#4a505c', '#363b45'], '#2f343e', '#2a2c33', '#141519', false)}
     ${[...Array(9)].map((_, i) => `<path d="M${120 + i * 105} 1250 L${-300 + i * 210} 1920" stroke="#fff" stroke-opacity=".05" stroke-width="3"/>`).join('')}
     <rect x="150" y="280" width="780" height="520" fill="#9fb4c8" opacity=".25" ${O(6)}/><path d="M410 280 L410 800 M670 280 L670 800" stroke="#000" stroke-opacity=".3" stroke-width="6"/>

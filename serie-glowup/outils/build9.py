@@ -256,7 +256,7 @@ def render_seg(s, epn):
 def sfx_time(s):
     b = timing(s)["starts"]; k = s.get("kind")
     g = lambda i, d=0.35: (b[i] if i < len(b) else b[-1]) + 0.2
-    return {"pushup": (b[6] + 0.5) if len(b) > 6 else 3, "throw": 1.9, "armsUp": g(1) + 0.3, "phone": g(1), "score": g(2), "invite": 0.12, "hook": 0.05}.get(k, 0.35)
+    return {"pushup": (b[6] + 0.5) if len(b) > 6 else 3, "throw": 1.9, "armsUp": g(1) + 0.3, "phone": g(1), "score": g(2), "invite": 0.12, "hook": 0.05, "armRaise": 0.05, "sore": g(1), "sofiane": 0.3, "nose": g(1) - 0.2}.get(k, 0.35)
 
 SFX = {"thud": "anoisesrc=color=brown:amplitude=0.9:d=0.35,lowpass=f=180,afade=t=out:st=0.05:d=0.3,volume=3",
        "boing": "aevalsrc='0.6*sin(2*PI*(90+60*exp(-6*t))*t)*exp(-3*t)':d=0.7,lowpass=f=600",

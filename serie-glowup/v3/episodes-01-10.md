@@ -115,12 +115,12 @@
 ⏱️ **1:15** · 📊 `JOUR 2 · VOUS AVEZ CHOISI ODEUR`
 
 **P1 · Le résultat**
-🎥 `{YANIS_A} in {CHAMBRE} raising one arm, big sweat stain, green smell lines, embarrassed.`
+🎥 `{YANIS_A} in {CHAMBRE} raising one arm, big sweat stain, green smell cloud; the fan next to him turns its head away.`
 🎬 `armRaise`
 🎭 `choque · point`
-🔠 `VOUS AVEZ CHOISI *ODEUR*`
+🔠 `IL SENT *TELLEMENT FORT* QUE…`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Jour deux. Vous avez choisi : ODEUR. Et franchement, il était temps. Ce matin, même son ventilateur refuse de tourner vers lui ! »
+🎙️ **VOIX OFF** : « Ce mec sent tellement fort… que même son ventilateur refuse de tourner vers lui ! Il a trente jours pour changer avant le mariage où son ex viendra avec son nouveau copain. Et hier, vous avez choisi : ODEUR. »
 
 **P2 · Les courbatures**
 🎥 `{YANIS_A} in {CHAMBRE} unable to lift his arms to put on a t-shirt, face of pain.`

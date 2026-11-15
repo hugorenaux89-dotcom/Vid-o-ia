@@ -131,6 +131,70 @@ const KINDS = {
     const cloud = r > 0 ? `<g opacity="${f1(r * 0.85)}">${stinkLines([[280, 900], [800, 900], [220, 1100], [860, 1080], [540, 760]], t * 1.5, 0.9)}</g>` : '';
     return { scene: 'chambreNuit', act: place(y, 540, 1660, 0.92) + cloud + flies(t, up + 0.3, 540, 1000), cam: camH(t, j, 1.2, 540, 1660, 0.92, 760, [[up + 0.3, 14]]) };
   },
+  // ---------- épisode 2
+  armRaise: (t, j) => {
+    const b = j.beats || [], r = ramp(t, 0.15, 0.5), turn = ramp(t, (b[1] || 1.5) + 0.7, (b[1] || 1.5) + 1.2);
+    const y = stand(j.yid, { expr: ex(r > 0.5 ? 'choque' : 'neutre', t), t, la: [16, 8], ra: [16 + 150 * r, 8 + 168 * r], bob: breath(t), jiggle: 0.5, stink: 1 });
+    const cloud = `<g opacity="${f1(r * 0.9)}">${stinkLines([[560, 900], [620, 800], [680, 1000], [500, 760]], t * 1.6, 0.95)}</g>`;
+    const sx = 1 - 1.3 * turn, sp = t * 25;
+    const fan = `<g transform="translate(880,1560)"><rect x="-10" y="-420" width="20" height="400" fill="#777" stroke="${K}" stroke-width="4"/><ellipse cx="0" cy="-10" rx="90" ry="22" fill="#666" stroke="${K}" stroke-width="5"/>
+      <g transform="translate(0,-470) scale(${f1(Math.abs(sx) < 0.15 ? 0.15 : sx)},1)"><circle r="130" fill="${sx < 0 ? '#888' : '#dfe8ee'}" stroke="${K}" stroke-width="7"/>
+      ${sx > 0 ? [0, 1, 2].map(i => `<ellipse cx="0" cy="-60" rx="34" ry="62" fill="#5aa9e6" stroke="${K}" stroke-width="4" transform="rotate(${f1(sp * 57 + i * 120)})"/>`).join('') + `<circle r="22" fill="#2f6fd6" stroke="${K}" stroke-width="4"/>` : `<circle r="60" fill="#666"/>`}
+      ${[...Array(8)].map((_, i) => `<path d="M0 0 L${f1(130 * Math.cos(i * 0.785))} ${f1(130 * Math.sin(i * 0.785))}" stroke="${K}" stroke-width="3" opacity=".5"/>`).join('')}</g></g>`;
+    return { scene: 'chambreNuit', act: fan + place(y, 430, 1680, 0.95) + cloud, cam: camH(t, j, 1.25, 600, 1680, 0.95, 820, [[0, 24], [(b[1] || 1.5) + 0.8, 14]]) };
+  },
+  sore: (t, j) => {
+    const c = (t % 2.2) / 2.2, w = c < 0.7 ? ease(c / 0.7) : 1 - ease((c - 0.7) / 0.3), tr = 4 * S(t * 45) * w;
+    const y = stand(j.yid, { expr: ex(w > 0.5 ? 'panique' : 'triste', t), t, la: [20 + 55 * w + tr, 20 + 70 * w], ra: [20 + 55 * w - tr, 20 + 70 * w], bob: breath(t), jiggle: 0.6, tilt: 5 * S(t * 3) });
+    const tee = `<g transform="translate(${f1(540 - 30)},${f1(1080 - 260 * w)})"><path d="M-170 -60 L-90 -110 L90 -110 L170 -60 L130 0 L90 -20 L90 140 L-90 140 L-90 -20 L-130 0 Z" fill="#e5483f" stroke="${K}" stroke-width="6"/></g>`;
+    return { scene: 'chambreNuit', act: place(y, 540, 1680, 0.92) + tee, cam: camH(t, j, 1.15, 540, 1680, 0.92, 760) };
+  },
+  sofiane: (t, j) => {
+    const walk = 1 - ramp(t, 0, 1.3), x = 820 + 430 * walk, step = S(t * 10) * walk, blow = (t % 1.5) < 0.4 && walk < 0.1;
+    const sof = stand('SOFIANE', { expr: ex(blow ? 'colere' : 'sourire', t, 1), t, la: [20 + 20 * step, 8], ra: blow ? [140, 175] : [-15, -130], rp: blow ? null : ['kebab', 0, 0, 20], ll: [16 * step, 4], rl: [-16 * step, 4], bob: breath(t) + Math.abs(step) * 10, whistle: 1, blow });
+    const y = lying(j.yid, { expr: ex('choque', t), t, arm: [70, 110], y: 1150 });
+    return { scene: 'chambreNuit', act: `<g transform="translate(265,414) scale(0.62)">${y}</g>` + place(sof, x, 1720, 0.86), cam: camH(t, j, 1.1, 600, 1720, 0.86, 760, [[1.3, 12]]) };
+  },
+  napkin: (t, j) => {
+    const sh = 4 * S(t * 3);
+    const sof = stand('SOFIANE', { expr: ex('sourire', t, 1), t, la: [16, 8], lp: ['kebab', 0, 0, 20], ra: [-35, -150 + sh], rp: ['napkin', -6, -160, 40], bob: breath(t), whistle: 1, tilt: 4 });
+    const y = stand(j.yid, { expr: ex('mefiant', t), t, la: [-25, -105], ra: [-25, -105], bob: breath(t + 1), jiggle: 0.2, tilt: -5 + 3 * S(t * 2) });
+    return { scene: 'chambreNuit', act: place(y, 300, 1700, 0.88) + place(sof, 760, 1700, 0.86), cam: camH(t, j, 1.08, 560, 1700, 0.88, 740) };
+  },
+  nose: (t, j) => {
+    const b = j.beats || [], walk = 1 - ramp(t, 0, 1.1), x = 790 + 400 * walk, step = S(t * 10) * walk, pinch = t > (b[1] || 1.6) - 0.3;
+    const n = stand('NADIA', { expr: ex(pinch ? 'colere' : 'neutre', t, 2), t, la: [-15, -70], lp: ['basket', 0, 40, 30], ra: pinch ? [-22, 198] : [16, 8], ll: [14 * step, 3], rl: [-14 * step, 3], bob: breath(t) + Math.abs(step) * 8, tilt: pinch ? -8 : 0 });
+    const y = stand(j.yid, { expr: ex(pinch ? 'inquiet' : 'neutre', t), t, la: [150, 200], ra: [16, 8], bob: breath(t), jiggle: 0.3, stink: 1, tilt: 5 });
+    const cloud = `<g opacity=".8">${stinkLines([[480, 1000], [560, 880], [420, 820]], t * 1.5, 0.9)}</g>`;
+    return { scene: 'chambreNuit', act: place(y, 330, 1700, 0.9) + cloud + place(n, x, 1700, 0.86), cam: camH(t, j, 1.08, 560, 1700, 0.9, 740, [[(b[1] || 1.6), 12]]) };
+  },
+  shower: (t, j) => {
+    const w = S(t * 12);
+    const y = stand(j.yid, { expr: ex(S(t * 1.3) > 0 ? 'determine' : 'sourire', t), t, la: [150 + 8 * w, 205 + 12 * w], ra: [-30 + 8 * w, -115 + 22 * w], rp: ['sponge', 20 * w, 0, 10], bob: breath(t), jiggle: 0.8, stink: 0, towel: 1, tilt: 4 * w });
+    const bub = [...Array(12)].map((_, i) => { const u = (t * 0.6 + i / 12) % 1, x = 300 + (i * 97) % 480 + 20 * S(t * 3 + i), yy = 1450 - u * 900; return `<circle cx="${f1(x)}" cy="${f1(yy)}" r="${f1(14 + (i % 4) * 8)}" fill="#fff" fill-opacity=".55" stroke="#9fd4ff" stroke-width="4" opacity="${f1(1 - u)}"/>`; }).join('');
+    return { scene: 'salleDeBain', act: place(y, 460, 1700, 0.92) + bub, cam: camH(t, j, 1.12, 520, 1700, 0.92, 760) };
+  },
+  deo: (t, j) => {
+    const b = j.beats || [], fl = t > (b[2] || 3.2) - 0.2, side = Math.floor(t / 1.2) % 2;
+    let q;
+    if (!fl) q = side ? { la: [-55, -95], lp: ['deo', 70, 0, 0], ra: [150, 175] } : { la: [150, 175], ra: [-55, -95], rp: ['deo', -70, 0, 0] };
+    else q = { la: [95, 178], ra: [95, 178], lh: 'fist', rh: 'fist' };
+    const y = stand(j.yid, Object.assign({ expr: ex(fl ? 'sourire' : 'determine', t), t, bob: breath(t) + (fl ? Math.abs(S(t * 6)) * 12 : 0), jiggle: 0.5, stink: 0, towel: 1 }, q));
+    const spray = fl ? '' : [...Array(10)].map((_, i) => { const u = (t * 3 + i / 10) % 1, dx = side ? -1 : 1; return `<circle cx="${f1(540 + dx * (120 + u * 160))}" cy="${f1(1040 - u * 60 + (i % 3 - 1) * 30 * u)}" r="${f1(6 + u * 18)}" fill="#e8f6ff" opacity="${f1(0.8 - u * 0.8)}"/>`; }).join('');
+    const spark = fl ? [0, 1, 2, 3].map(i => { const a = t * 2 + i * 1.57; return `<text x="${f1(540 + Math.cos(a) * 330)}" y="${f1(900 + Math.sin(a) * 260)}" font-family="Lilita One" font-size="64" fill="#ffd23a" stroke="${K}" stroke-width="3">✦</text>`; }).join('') : '';
+    return { scene: 'salleDeBain', act: place(y, 540, 1700, 0.92) + spray + spark, cam: camH(t, j, 1.15, 540, 1700, 0.92, 760, fl ? [[(b[2] || 3.2) - 0.2, 12]] : []) };
+  },
+  sniff: (t, j) => {
+    const b = j.beats || [], walk = 1 - ramp(t, 0, 1.0), x = 720 + 380 * walk, step = S(t * 10) * walk, ok = t > (b[2] || 2.6) - 0.4;
+    const n = stand('NADIA', { expr: ex(ok ? 'sourire' : 'mefiant', t, 2), t, la: [16, 8], ra: ok ? [30, 160] : [16, 8], rh: ok ? 'thumb' : 'open', ll: [14 * step, 3], rl: [-14 * step, 3], bob: breath(t) + Math.abs(step) * 8 + (ok ? 0 : 4 * S(t * 14)), tilt: ok ? 0 : -12, hx: ok ? 0 : -20 });
+    const y = stand(j.yid, { expr: ex(ok ? 'sourire' : 'inquiet', t), t, ...idleArms(t), bob: breath(t) + (ok ? Math.abs(S(t * 6)) * 10 : 0), jiggle: 0.3, stink: 0 });
+    const spark = ok ? [0, 1, 2].map(i => { const a = t * 2 + i * 2.1; return `<text x="${f1(330 + Math.cos(a) * 260)}" y="${f1(900 + Math.sin(a) * 220)}" font-family="Lilita One" font-size="60" fill="#ffd23a" stroke="${K}" stroke-width="3">✦</text>`; }).join('') : '';
+    return { scene: 'chambreNuit', act: place(y, 330, 1700, 0.9) + place(n, x, 1700, 0.86) + spark, cam: camH(t, j, 1.08, 560, 1700, 0.9, 740) };
+  },
+  sneakers: (t, j) => {
+    const y = stand(j.yid, { expr: ex('inquiet', t), t, la: [-20, -150], lp: ['sneaker', -10 + 4 * S(t * 3), 10, 0], ra: [-20, -150], rp: ['sneaker', 10 - 4 * S(t * 3), -10, 0], bob: breath(t), jiggle: 0.3, tilt: 7 * S(t * 2.2) });
+    return { scene: 'chambreNuit', act: place(y, 540, 1680, 0.95), cam: camH(t, j, 1.3, 540, 1680, 0.95, 820) };
+  },
   // vote : se gratte la tête puis haussement d'épaules
   vote: (t, j) => {
     const s = (t % 2) < 1;

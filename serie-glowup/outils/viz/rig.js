@@ -30,7 +30,7 @@ function hand(p, ang, skin, kind = 'open') {
   const [x, y] = p.map(f1);
   if (kind === 'fist') return `<g transform="rotate(${f1(-ang)} ${x} ${y})"><circle cx="${x}" cy="${+y + 10}" r="27" fill="${skin}" stroke="${K}" stroke-width="4.5"/>
     <path d="M${x - 18} ${+y + 4} q9 -8 18 0 q9 -8 18 0" fill="none" stroke="${K}" stroke-width="3.5"/></g>`;
-  if (kind === 'thumb') return `<g transform="rotate(${f1(-ang)} ${x} ${y})"><circle cx="${x}" cy="${+y + 10}" r="26" fill="${skin}" stroke="${K}" stroke-width="4.5"/>
+  if (kind === 'thumb') return `<g><circle cx="${x}" cy="${+y + 10}" r="26" fill="${skin}" stroke="${K}" stroke-width="4.5"/>
     <rect x="${+x - 9}" y="${+y - 34}" width="18" height="40" rx="9" fill="${skin}" stroke="${K}" stroke-width="4"/></g>`;
   if (kind === 'point') return `<g transform="rotate(${f1(-ang)} ${x} ${y})"><circle cx="${x}" cy="${+y + 8}" r="25" fill="${skin}" stroke="${K}" stroke-width="4.5"/>
     <rect x="${+x - 7}" y="${+y + 14}" width="15" height="48" rx="7.5" fill="${skin}" stroke="${K}" stroke-width="4"/></g>`;
@@ -40,6 +40,18 @@ function hand(p, ang, skin, kind = 'open') {
 }
 // accessoires tenus en main
 const PROPS = {
+  kebab: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><path d="M-40 -150 L40 -150 L28 10 L-28 10 Z" fill="#f4e3c1" stroke="${K}" stroke-width="5"/><path d="M-36 -150 Q0 -190 36 -150 Z" fill="#c9824a" stroke="${K}" stroke-width="5"/>
+    <path d="M-30 -150 q10 -16 20 0 q10 -16 20 0 q10 -16 20 0" fill="#5bbf4a" stroke="${K}" stroke-width="3"/><circle cx="-12" cy="-160" r="8" fill="#e5483f"/><path d="M-34 -60 L34 -60" stroke="#c8b48a" stroke-width="4"/></g>`,
+  napkin: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><path d="M-150 -250 L150 -260 L160 20 L-145 30 Z" fill="#fbf7ec" stroke="${K}" stroke-width="6"/>
+    <text x="0" y="-195" font-family="Lilita One" font-size="38" text-anchor="middle" fill="#2a54c8">PROGRAMME</text>
+    <text x="-120" y="-140" font-family="Lilita One" font-size="30" fill="#141414">LUNDI : MUSCU</text><text x="-120" y="-100" font-family="Lilita One" font-size="30" fill="#141414">MARDI : REPOS</text><text x="-120" y="-60" font-family="Lilita One" font-size="30" fill="#141414">MERCREDI : COURSE</text>
+    <ellipse cx="70" cy="-20" rx="60" ry="34" fill="#e8892f" opacity=".75"/><ellipse cx="40" cy="-10" rx="24" ry="14" fill="#c9601a" opacity=".6"/></g>`,
+  basket: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><path d="M-130 -110 L130 -110 L110 40 L-110 40 Z" fill="#d9b06a" stroke="${K}" stroke-width="6"/>
+    <path d="M-120 -70 L120 -70 M-115 -30 L115 -30 M-112 10 L112 10" stroke="#b08840" stroke-width="5"/><path d="M-110 -110 q40 -60 90 -20 q40 -50 90 -10 q30 -20 50 30 Z" fill="#7fb3ff" stroke="${K}" stroke-width="5"/><path d="M-40 -130 q30 -30 70 0" fill="#ff9ec2" stroke="${K}" stroke-width="4"/></g>`,
+  deo: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><rect x="-24" y="-130" width="48" height="140" rx="12" fill="#2f6fd6" stroke="${K}" stroke-width="5"/><rect x="-18" y="-152" width="36" height="26" rx="6" fill="#ddd" stroke="${K}" stroke-width="4"/><rect x="-24" y="-80" width="48" height="30" fill="#fff"/><text x="0" y="-58" font-family="Lilita One" font-size="20" text-anchor="middle" fill="#2f6fd6">DÉO</text></g>`,
+  sneaker: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><path d="M-90 20 Q-92 -40 -40 -46 L20 -60 Q40 -30 70 -24 Q100 -14 100 20 Z" fill="#d8d0c0" stroke="${K}" stroke-width="5"/><rect x="-96" y="12" width="200" height="18" rx="8" fill="#8a8070" stroke="${K}" stroke-width="4"/>
+    <ellipse cx="-30" cy="-6" rx="18" ry="12" fill="#2a2a2a"/><ellipse cx="50" cy="0" rx="12" ry="9" fill="#2a2a2a"/><path d="M-10 -40 l10 14 l10 -14" fill="none" stroke="${K}" stroke-width="4"/><path d="M60 -40 q8 -20 0 -34 M80 -30 q8 -20 0 -34" fill="none" stroke="#7bc96f" stroke-width="5"/></g>`,
+  sponge: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><rect x="-44" y="-30" width="88" height="56" rx="14" fill="#ffd23a" stroke="${K}" stroke-width="5"/><rect x="-44" y="-30" width="88" height="20" rx="8" fill="#5bbf4a" stroke="${K}" stroke-width="4"/><circle cx="-14" cy="10" r="5" fill="#d9a520"/><circle cx="14" cy="4" r="4" fill="#d9a520"/></g>`,
   chips: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><path d="M-55 -95 L55 -100 L62 30 L-60 34 Z" fill="#f2c230" stroke="${K}" stroke-width="6"/>
     <path d="M-55 -95 l12 -10 l12 10 l12 -10 l12 10 l12 -10 l12 10 l12 -10 l12 10 l11 -10" fill="none" stroke="${K}" stroke-width="5"/>
     <text x="2" y="-20" font-family="Lilita One" font-size="40" text-anchor="middle" fill="#d9342b" stroke="${K}" stroke-width="1.5">CHIPS</text><ellipse cx="0" cy="12" rx="26" ry="12" fill="#ffe08a" stroke="${K}" stroke-width="3"/></g>`,
@@ -118,9 +130,11 @@ function stand(pid, q) {
   const la = arm(-1, q.la, q.lh, q.lp), ra = arm(1, q.ra, q.rh, q.rp);
   const big = (c.w || 1) > 1.25, hs = q.hs || (big ? 0.84 : 0.66), htop = (big ? 20 : 92) + bob - (big ? 0 : 0);
   const hd = head(pid, q.expr || 'neutre', sx + (q.hx || 0), htop - 30 * (hs - 0.74) * 4, hs, q.tilt || 0, id);
+  const acc = (q.whistle ? `<path d="M${sx - 60} ${top + 4} Q${sx} ${top + 150} ${sx + 60} ${top + 4}" fill="none" stroke="#e5483f" stroke-width="7"/><g transform="translate(${sx + 6},${top + 140}) rotate(${f1(q.blow ? -25 : 0)})"><rect x="-26" y="-14" width="52" height="30" rx="12" fill="#cfd4da" stroke="${K}" stroke-width="5"/><circle cx="14" cy="2" r="7" fill="#555"/></g>` : '')
+    + (q.towel ? `<path d="M${sx - tw - 10} ${top + 30} Q${sx - tw + 60} ${top - 30} ${sx - 30} ${top + 10} L${sx - 50} ${top + 300} L${sx - tw - 20} ${top + 280} Z" fill="#ff8fb3" stroke="${K}" stroke-width="6"/><path d="M${sx - tw} ${top + 240} L${sx - 60} ${top + 250}" stroke="#fff" stroke-width="10"/>` : '');
   const stink = (o.stink && q.stink !== 0) ? stinkLines([[40, 600], [560, 580], [30, 820], [570, 800]], t, q.stink || 0.85) : '';
   const shadow = `<ellipse cx="${sx}" cy="1298" rx="${230 + fat}" ry="28" fill="#000" opacity=".28"/>`;
-  return `<g>${shadow}${legs}${waist}${torso}${belly}${sweatMarks}${extra}${neck}${hd}${la.svg}${ra.svg}${la.hand}${ra.hand}${la.prop}${ra.prop}${stink}</g>`;
+  return `<g>${shadow}${legs}${waist}${torso}${belly}${sweatMarks}${extra}${neck}${hd}${acc}${la.svg}${ra.svg}${la.hand}${ra.hand}${la.prop}${ra.prop}${stink}</g>`;
 }
 
 // pompes vues de profil (tête de face). d = 0 bras tendus, 1 en bas, >1.2 écrasé
