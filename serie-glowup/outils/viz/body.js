@@ -76,11 +76,14 @@ function body(pid, expr = 'neutre', talk = false, pose = 'idle') {
     : `<defs><linearGradient id="tg${id}" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="${shade(o.top, 0.12)}"/><stop offset=".55" stop-color="${o.top}"/><stop offset="1" stop-color="${shade(o.top, -0.25)}"/></linearGradient></defs>
        <path d="${torsoPath}" fill="url(#tg${id})" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
        <path d="M${sx - 40} ${top + 120} q30 40 10 90 M${sx + 50} ${top + 150} q-20 50 4 100 M${sx - tw + 40} ${top + 200} q20 30 10 70" fill="none" stroke="${shade(o.top, -0.28)}" stroke-width="4" opacity=".7"/>`;
-  const belly = o.belly ? `<defs><radialGradient id="bg${id}" cx=".38" cy=".35" r=".75"><stop offset="0" stop-color="${shade(skin, 0.15)}"/><stop offset=".7" stop-color="${skin}"/><stop offset="1" stop-color="${shade(skin, -0.25)}"/></radialGradient></defs>
-    <ellipse cx="${sx}" cy="${bot + 60}" rx="${tw + fat * 0.25}" ry="128" fill="url(#bg${id})" stroke="${K}" stroke-width="6"/>
-    <path d="M${sx - 8} ${bot + 70} q10 14 0 24" fill="none" stroke="${K}" stroke-width="5"/>
-    ${[[-60, 30], [-40, 60], [40, 40], [60, 80], [0, 10], [-80, 90], [80, 110], [20, 120]].map(([dx, dy]) => `<path d="M${sx + dx} ${bot + dy} l4 -16" stroke="${K}" stroke-width="3" opacity=".6"/>`).join('')}
-    <path d="M${sx - tw + 8 - fat * 0.4} ${bot} Q${sx} ${bot + 30} ${sx + tw - 8 + fat * 0.4} ${bot}" fill="none" stroke="${K}" stroke-width="6"/>` : '';
+  // ventre SOUS le tee-shirt : tissu tendu, ombré, avec plis et ourlet
+  const belly = o.belly ? `<defs><radialGradient id="bg${id}" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="${shade(o.top, 0.14)}"/><stop offset=".6" stop-color="${o.top}"/><stop offset="1" stop-color="${shade(o.top, -0.3)}"/></radialGradient></defs>
+    <path d="M${sx - tw + 4} ${bot - 120} Q${sx - tw - fat * 0.9} ${bot + 70} ${sx - tw + 30} ${bot + 175} Q${sx} ${bot + 215} ${sx + tw - 30} ${bot + 175} Q${sx + tw + fat * 0.9} ${bot + 70} ${sx + tw - 4} ${bot - 120} Z" fill="url(#bg${id})"/>
+    <path d="M${sx - tw + 4} ${bot - 120} Q${sx - tw - fat * 0.9} ${bot + 70} ${sx - tw + 30} ${bot + 175} Q${sx} ${bot + 215} ${sx + tw - 30} ${bot + 175} Q${sx + tw + fat * 0.9} ${bot + 70} ${sx + tw - 4} ${bot - 120}" fill="none" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M${sx - tw + 40} ${bot + 160} Q${sx} ${bot + 196} ${sx + tw - 40} ${bot + 160}" fill="none" stroke="${shade(o.top, -0.35)}" stroke-width="5"/>
+    <path d="M${sx - 70} ${bot + 20} q40 30 90 18 M${sx - 90} ${bot + 80} q60 30 140 10 M${sx + 40} ${bot - 40} q30 20 60 10 M${sx - tw + 30} ${bot + 40} q20 30 18 70 M${sx + tw - 30} ${bot + 40} q-20 30 -18 70" fill="none" stroke="${shade(o.top, -0.3)}" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+    <ellipse cx="${sx + 60}" cy="${bot + 60}" rx="34" ry="22" fill="#b9813f" opacity=".7"/><ellipse cx="${sx - 50}" cy="${bot + 120}" rx="22" ry="15" fill="#8f5a3a" opacity=".6"/><circle cx="${sx + 10}" cy="${bot + 150}" r="10" fill="#b9813f" opacity=".7"/>
+    <ellipse cx="${sx - 40}" cy="${bot - 10}" rx="${tw * 0.4}" ry="60" fill="#fff" opacity=".08"/>` : '';
   const waist = `<path d="M${sx - tw + 6} ${hipY - 40} Q${sx} ${hipY - 10} ${sx + tw - 6} ${hipY - 40} L${sx + tw - 2} ${hipY + 10} Q${sx} ${hipY + 40} ${sx - tw + 2} ${hipY + 10} Z" fill="${o.pants}" stroke="${K}" stroke-width="6"/>
     <path d="M${sx - 14} ${hipY - 18} l-8 46 M${sx + 14} ${hipY - 18} l8 46" stroke="#e8e8e8" stroke-width="5"/>`;
   const stains = o.stains ? `<ellipse cx="${sx - 50}" cy="${top + 110}" rx="36" ry="24" fill="#b9813f" opacity=".7"/><ellipse cx="${sx + 70}" cy="${top + 170}" rx="26" ry="18" fill="#8f5a3a" opacity=".65"/><circle cx="${sx + 30}" cy="${top + 70}" r="14" fill="#b9813f" opacity=".7"/>
