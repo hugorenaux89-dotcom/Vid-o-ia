@@ -203,7 +203,7 @@ def plans_to_segments(E):
 def fullbody_key(pid, expr, pose): return f"p_{pid}_{expr}_{pose}_0.png"
 
 def render_seg(s, epn):
-    ad = dur(s["audio"]); D = ad + (0.12 if not s.get("choice") else 1.6)
+    ad = dur(s["audio"]); D = ad + (0.06 if not s.get("choice") else 1.4)
     key = hashlib.md5(json.dumps({k: v for k, v in s.items()}, sort_keys=True, default=str).encode()).hexdigest()[:16]
     out = os.path.join(SEG, key + ".mp4")
     if os.path.exists(out): return out, D
@@ -224,8 +224,8 @@ def render_seg(s, epn):
     cp = os.path.join(tmp, "c.png"); canvas.save(cp, compress_level=1)
     # gros plan sur les moments forts, plan large sinon
     close = s["expr"] in ("choque", "panique", "colere", "larmes") and not two and not s.get("story") and not s.get("choice")
-    CW = 1500 if close else 900
-    yoff = "300-0.05*h" if close else "H-h-20"
+    CW = 1250 if close else 780
+    yoff = "340-0.05*h" if close else "H-h-30"
     # texte : mots successifs
     ch = chunks(s["sub"]); tot = sum(len(c) + 2 for c in ch); body = ""
     p0 = os.path.join(tmp, "t_.png"); layer(s).save(p0, compress_level=1)

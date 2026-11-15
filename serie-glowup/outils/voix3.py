@@ -26,7 +26,7 @@ V = {
  "L'HOMME EN GRIS": ("fr-FR-HenriNeural", -4, 4),
  "UNE VOIX": ("fr-CH-FabriceNeural", 4, -8),
  "TOUS": ("fr-FR-RemyMultilingualNeural", 0, 0),
- "VOIX OFF": ("fr-FR-RemyMultilingualNeural", 6, -2),
+ "VOIX OFF": ("fr-FR-RemyMultilingualNeural", 18, 3),
 }
 # émotion: (vitesse, hauteur, volume %, cible loudness, filtre)
 EMO = {
@@ -110,11 +110,11 @@ def sentences(text):
     out = [s.strip() for s in re.split(r"(?<=[.!?…])\s+", text) if re.search(r"\w", s)]
     return out
 
-def gap_after(s):
-    if s.endswith("…"): return random.randint(380, 520)
-    if s.endswith("?"): return random.randint(200, 300)
-    if s.endswith("!"): return random.randint(150, 240)
-    return random.randint(220, 340)
+def gap_after(s):  # voix off dynamique : respirations courtes
+    if s.endswith("…"): return random.randint(240, 320)
+    if s.endswith("?"): return random.randint(140, 200)
+    if s.endswith("!"): return random.randint(110, 160)
+    return random.randint(130, 190)
 
 async def sh(*args):
     p = await asyncio.create_subprocess_exec(*args, stdout=asyncio.subprocess.DEVNULL, stderr=asyncio.subprocess.PIPE)

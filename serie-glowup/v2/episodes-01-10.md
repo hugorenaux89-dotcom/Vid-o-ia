@@ -15,7 +15,7 @@
 **P2 · L'invitation**
 🎥 `{YANIS_A} in {CHAMBRE} holding a golden wedding invitation card "BILAL & YASMINE", surprised.`
 🎭 `choque · point`
-🎙️ **VOIX OFF** : « Ce soir, il reçoit une invitation : le mariage de son cousin Bilal. Dans trente jours, pile. »
+🎙️ **VOIX OFF** : « Ce soir, il reçoit une invitation : le mariage de son cousin Bilal. Dans trente jours, pile. Toute la famille sera là. »
 📝 `MARIAGE DANS 30 JOURS`
 
 **P3 · La story**
@@ -44,7 +44,7 @@
 **P7 · Le glow-up du jour**
 🎥 `{YANIS_A} in {CUISINE} writing "2 L" with a marker on a big water bottle, {NADIA} proud in the background.`
 🎭 `sourire · idle`
-🎙️ **VOIX OFF** : « Glow-up du jour : deux litres d'eau par jour. Il écrit deux litres au marqueur sur sa bouteille. Fini les sodas au petit-déjeuner. »
+🎙️ **VOIX OFF** : « Glow-up du jour : deux litres d'eau par jour. Il écrit deux litres au marqueur sur sa bouteille. Fini les sodas au petit-déjeuner. Sa mère n'en revient pas. »
 📝 `✨ GLOW-UP DU JOUR : 2 L D'EAU PAR JOUR`
 
 **P8 · Le choix**
