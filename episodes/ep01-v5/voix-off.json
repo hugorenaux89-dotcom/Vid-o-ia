@@ -1,0 +1,170 @@
+[
+ {
+  "id": "a1",
+  "voix": "narrateur",
+  "text": "Dans trente jours, Lana va revoir le garçon qu'elle aime depuis le lycée.",
+  "dire": "Dans trente jours, Lana va revoir le garçon qu'elle aime depuis le lycée."
+ },
+ {
+  "id": "a2",
+  "voix": "narrateur",
+  "text": "Et là, maintenant… elle ressemble à ça.",
+  "dire": "Et là, maintenant… elle ressemble à ça.",
+  "ex": 0.5,
+  "cfg": 0.5
+ },
+ {
+  "id": "b1",
+  "voix": "narrateur",
+  "text": "Lana. Vingt-cinq ans. Record personnel : onze jours sans sortir de chez elle.",
+  "dire": "Lana. Vingt-cinq ans. Record personnel : onze jours sans sortir de chez elle."
+ },
+ {
+  "id": "c1",
+  "voix": "narrateur",
+  "text": "Son seul contact humain ? Le livreur de pizza. Et hier, il lui a demandé si elle allait bien.",
+  "dire": "Son seul contact humain ? Le livreur de pizza. Et hier, il lui a demandé si elle allait bien."
+ },
+ {
+  "id": "d1",
+  "voix": "narrateur",
+  "text": "Lui, c'est Pâtes. Il ne l'aime pas. Il reste pour les croquettes.",
+  "dire": "Lui, c'est Pâtes. Il ne l'aime pas. Il reste pour les croquettes."
+ },
+ {
+  "id": "e1",
+  "voix": "narrateur",
+  "text": "Mais cette nuit, à trois heures quarante-sept, son téléphone vibre.",
+  "dire": "Mais cette nuit, à trois heures quarante-sept, son téléphone vibre.",
+  "ex": 0.7,
+  "cfg": 0.4
+ },
+ {
+  "id": "e2",
+  "voix": "ines",
+  "text": "Coucou ma belle ! La soirée des dix ans du lycée, c'est dans trente jours. Tu viens ?",
+  "dire": "Coucou ma belle ! La soirée des dix ans du lycée, c'est dans trente jours. Tu viens ?",
+  "ex": 0.8,
+  "cfg": 0.35
+ },
+ {
+  "id": "e3",
+  "voix": "narrateur",
+  "text": "Inès. Son ex-meilleure amie. Elles ne se parlent plus depuis un certain bal de fin d'année.",
+  "dire": "Inès. Son ex-meilleure amie. Elles ne se parlent plus depuis un certain bal de fin d'année.",
+  "ex": 0.55,
+  "cfg": 0.45
+ },
+ {
+  "id": "f1",
+  "voix": "lana",
+  "text": "Non. Hors de question.",
+  "dire": "Non. Hors de question.",
+  "ex": 0.7,
+  "cfg": 0.4
+ },
+ {
+  "id": "f2",
+  "voix": "narrateur",
+  "text": "Deuxième message.",
+  "dire": "Deuxième message.",
+  "ex": 0.7,
+  "cfg": 0.4
+ },
+ {
+  "id": "f3",
+  "voix": "ines",
+  "text": "Au fait… Nathan m'a demandé si tu venais.",
+  "dire": "Au fait… Natan m'a demandé si tu venais.",
+  "ex": 0.85,
+  "cfg": 0.35
+ },
+ {
+  "id": "f4",
+  "voix": "lana",
+  "text": "Attends… Quoi ?! Nathan ?!",
+  "dire": "Attends… Quoi ?! Natan ?!",
+  "ex": 0.85,
+  "cfg": 0.35
+ },
+ {
+  "id": "g1",
+  "voix": "narrateur",
+  "text": "Nathan. Le seul garçon qui riait à toutes ses blagues. Le soir du bal, il lui avait donné rendez-vous, pour lui dire quelque chose d'important.",
+  "dire": "Natan. Le seul garçon qui riait à toutes ses blagues. Le soir du bal, il lui avait donné rendez-vous, pour lui dire quelque chose d'important.",
+  "ex": 0.45,
+  "cfg": 0.5
+ },
+ {
+  "id": "g2",
+  "voix": "narrateur",
+  "text": "Il n'est jamais venu. Et elle n'a jamais su pourquoi.",
+  "dire": "Il n'est jamais venu. Et elle n'a jamais su pourquoi.",
+  "ex": 0.4,
+  "cfg": 0.55
+ },
+ {
+  "id": "h1",
+  "voix": "lana",
+  "text": "D'accord. Trente jours. Je change tout.",
+  "dire": "D'accord. Trente jours. Je change tout.",
+  "ex": 0.9,
+  "cfg": 0.35
+ },
+ {
+  "id": "h2",
+  "voix": "narrateur",
+  "text": "Lana se lève. Pour la première fois depuis des semaines…",
+  "dire": "Lana se lève. Pour la première fois depuis des semaines…",
+  "ex": 0.7,
+  "cfg": 0.4
+ },
+ {
+  "id": "h3",
+  "voix": "narrateur",
+  "text": "et elle glisse sur une boîte de nuggets.",
+  "dire": "et elle glisse sur une boîte de nuguettes.",
+  "ex": 0.6,
+  "cfg": 0.45
+ },
+ {
+  "id": "i1",
+  "voix": "narrateur",
+  "text": "Trente jours pour devenir méconnaissable. Mais seule, elle n'y arrivera pas. Alors c'est toi qui choisis.",
+  "dire": "Trente jours pour devenir méconnaissable. Mais seule, elle n'y arrivera pas. Alors c'est toi qui choisis.",
+  "ex": 0.65,
+  "cfg": 0.4
+ },
+ {
+  "id": "i2",
+  "voix": "narrateur",
+  "text": "Chaque jour, une décision. Et ce qui est fait… est fait pour toujours.",
+  "dire": "Chaque jour, une décision. Et ce qui est fait… est fait pour toujours.",
+  "ex": 0.6,
+  "cfg": 0.45
+ },
+ {
+  "id": "j1",
+  "voix": "narrateur",
+  "text": "Premier choix. Son appart, qui sent la pizza froide depuis deux mille vingt-deux. Ou ses sourcils, qui ont leur propre code postal.",
+  "dire": "Premier choix. Son appart, qui sent la pizza froide depuis deux mille vingt-deux. Ou ses sourcils, qui ont leur propre code postal.",
+  "ex": 0.6,
+  "cfg": 0.45
+ },
+ {
+  "id": "k1",
+  "voix": "narrateur",
+  "text": "Écris un seul mot en commentaire. Le plus voté gagne demain.",
+  "dire": "Écris un seul mot en commentaire. Le plus voté gagne demain.",
+  "ex": 0.75,
+  "cfg": 0.35
+ },
+ {
+  "id": "l1",
+  "voix": "narrateur",
+  "text": "Et demain… quelqu'un sonne à sa porte.",
+  "dire": "Et demain… quelqu'un sonne à sa porte.",
+  "ex": 0.55,
+  "cfg": 0.5
+ }
+]

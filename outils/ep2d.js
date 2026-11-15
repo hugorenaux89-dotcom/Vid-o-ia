@@ -111,11 +111,18 @@ R.refus = (t, p) => {
 /* 8. LE CRI */
 R.cri = (t, p) => {
   const a = amp(p, t);
-  const k = easeOut(t / 0.15);
-  const P = { blink: 0, lid: 0, eyes: 'grand', look: [0, 0], armL: [lerp(78, -48, k), lerp(92, -84, k)], armR: [lerp(58, -48, k), lerp(-98, -84, k)], mouth: 'parle', open: Math.max(0.55, a), browLift: -24, sweat: true, headRot: Math.sin(t * 40) * 2, y: -30 * Math.sin(clamp(t / 0.3) * Math.PI) };
+  const tQ = wt(p, 'Quoi');
+  if (t < tQ) { // « Attends… » : elle se fige, les yeux s'ouvrent
+    const P = { blink: 0, lid: tw(t, 0, tQ, 0.3, 0), look: [8, 10], phone: true, armR: POSES.phone, mouth: 'parle', open: a, browLift: tw(t, 0, tQ, -4, -14), headRot: 2 };
+    const scene = A.chambre(t, { lit: 'lump', linge: false, nuggets: false }) + B.litFond(t) + assise(P, t) + B.couette(t) + B.nuit(0.55) + lueur(540, 720, 220, 0.85) + VIG;
+    return A.camera(scene, 380, 700, tw(t, 0, tQ, 1.2, 1.45));
+  }
+  const u = t - tQ;
+  const k = easeOut(u / 0.15);
+  const P = { blink: 0, lid: 0, eyes: 'grand', look: [0, 0], armL: [lerp(78, -48, k), lerp(92, -84, k)], armR: [lerp(58, -48, k), lerp(-98, -84, k)], mouth: 'parle', open: Math.max(0.55, a), browLift: -24, sweat: true, headRot: Math.sin(u * 40) * 2, y: -30 * Math.sin(clamp(u / 0.3) * Math.PI) };
   const scene = A.chambre(t, { lit: 'lump', linge: false, nuggets: false }) + B.litFond(t) + assise(P, t) + B.couette(t) + B.nuit(0.4) + VIG;
-  const [sx, sy] = A.shake(t, 0, 0.9, 18);
-  return A.camera(scene, 360, 640, lerp(1.0, 1.35, easeOut(t / 0.25)), sx, sy);
+  const [sx, sy] = A.shake(u, 0, 0.9, 18);
+  return A.camera(scene, 360, 640, lerp(1.0, 1.35, easeOut(u / 0.25)), sx, sy);
 };
 
 /* 9. LE BAL */
@@ -216,6 +223,13 @@ Over.vote = (t, p) => E3.sousTitres(t, p, 900);
 
 const frameAt = (T) => {
   const p = E3.plan(T); const t = T - p.start;
-  return A.DEFS + `<rect width="720" height="1280" fill="#1b1230"/>` + R[p.id](t, p) + E3.habillage(T, Over);
+  let scene = R[p.id](t, p);
+  // coup de zoom quand Lana prend la parole
+  let bump = 0;
+  for (const v of p.voices) if (v.voix === 'lana' && t > v.start) bump += 0.07 * Math.exp(-(t - v.start) / 0.22);
+  if (bump > 0.001) scene = `<g transform="translate(360 640) scale(${(1 + bump).toFixed(4)}) translate(-360 -640)">${scene}</g>`;
+  // glissé rapide à l'entrée de chaque plan
+  if (p.start > 0 && t < 0.14) { const k = 1 - easeOut(t / 0.14); scene = `<g transform="translate(${(k * 70).toFixed(1)} 0) scale(${(1 + k * 0.05).toFixed(3)})">${scene}</g>`; }
+  return A.DEFS + `<rect width="720" height="1280" fill="#1b1230"/>` + scene + E3.habillage(T, Over);
 };
 module.exports = { TL, frameAt };

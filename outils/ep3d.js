@@ -5,7 +5,7 @@ const { execFileSync } = require('child_process');
 const A = require('./art');
 const { easeOut, easeBack, popS, clamp } = A;
 
-const VX = path.join(__dirname, '../build/ep01-3d/voix');
+const VX = process.env.VOIX_DIR || path.join(__dirname, '../build/ep01-3d/voix');
 const voix = (id) => JSON.parse(fs.readFileSync(`${VX}/${id}.json`, 'utf8'));
 
 // plans : segments [voix, attente avant], durée de fin
@@ -139,9 +139,9 @@ O.refus = (t, p) => {
   return s + A.hud(30, 0) + sousTitres(t, p, 1140);
 };
 O.cri = (t, p) => {
-  const k = t;
+  const k = Math.max(0, t - wt(p, 'Quoi'));
   return `<rect width="720" height="1280" fill="#ff1f3d" opacity="${(0.3 * Math.abs(Math.sin(k * 10)) * (1 - clamp(k / 1.4))).toFixed(2)}"/>` +
-    A.pop(360, 300, popS(t, 0.05, 0.25), A.titre0(0, [['NATHAN ?!', '#ff4d5e']], 150), -5) + A.hud(30, 0) + sousTitres(t, p, 1140);
+    A.pop(360, 300, popS(t, wt(p, 'Nathan') - 0.05, 0.25), A.titre0(0, [['NATHAN ?!', '#ff4d5e']], 150), -5) + A.hud(30, 0) + sousTitres(t, p, 1140);
 };
 O.bal = (t, p) => {
   const tJ = vstart(p, 'g2');

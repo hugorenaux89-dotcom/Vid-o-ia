@@ -2,9 +2,9 @@
 const path = require('path');
 const { execFileSync } = require('child_process');
 const { TL, P, wt, vstart: vs, vend: ve } = require('./ep3d');
-const B = path.join(__dirname, '../build/ep01-2d');
+const B = process.env.OUT_DIR || path.join(__dirname, '../build/ep01-2d');
 const SFX = path.join(__dirname, '../build/ep01/sfx');
-const VX = path.join(__dirname, '../build/ep01-3d/voix');
+const VX = process.env.VOIX_DIR || path.join(__dirname, '../build/ep01-3d/voix');
 const voix = [], fx = [];
 for (const p of TL.plans) for (const v of p.voices) voix.push([`${VX}/${v.id}.wav`, p.start + v.start, 1.0]);
 const at = (id, local) => P[id].start + local;
