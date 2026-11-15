@@ -62,6 +62,7 @@ function eye(cx, kind, right, skin, fem) {
   const lash = fem ? `<path d="M${cx - 32} ${cy - 18} Q${cx} ${cy - 40} ${cx + 34} ${cy - 22}" fill="none" ${S(7)}/>` : '';
   const lid = (y2) => `<path d="M${cx - 33} ${cy - 2} L${cx + 33} ${y2} L${cx + 33} ${cy - 32} L${cx - 33} ${cy - 32} Z" fill="${skin}"/><path d="M${cx - 31} ${cy - 2} L${cx + 31} ${y2}" ${S(7)}/>`;
   switch (kind) {
+    case 'shut': return `<path d="M${cx - 28} ${cy + 2} Q${cx} ${cy + 12} ${cx + 28} ${cy + 2}" fill="none" ${S(7)}/>`;
     case 'wide': return white(34, 34) + `<circle cx="${cx}" cy="${cy}" r="8" fill="#0c0805"/>`;
     case 'squeeze': return `<path d="${right ? `M${cx + 30} ${cy - 16} L${cx - 2} ${cy} L${cx + 30} ${cy + 16}` : `M${cx - 30} ${cy - 16} L${cx + 2} ${cy} L${cx - 30} ${cy + 16}`}" fill="none" ${S(8)}/>`;
     case 'happy': return `<path d="M${cx - 28} ${cy + 8} Q${cx} ${cy - 22} ${cx + 28} ${cy + 8}" fill="none" ${S(8)}/>`;
@@ -215,7 +216,10 @@ function glasses(c) {
 
 let uid = 0;
 function toonPerson(pid, expr = 'neutre', talk = false) {
-  const c = C[pid], e = E[expr] || E.neutre, id = ++uid;
+  const blink = String(expr).endsWith('_blink'); const baseExpr = String(expr).replace('_blink', '');
+  const c = C[pid], id = ++uid;
+  const e0 = E[baseExpr] || E.neutre;
+  const e = blink && !['squeeze', 'happy', 'cry'].includes(e0.eyes) ? Object.assign({}, e0, { eyes: 'shut' }) : e0;
   const skinS = shade(c.skin, -0.13);
   const browCol = c.brow || (c.fem ? '#2a1a12' : c.hc === '#f0d48a' ? '#a0784a' : '#1c1511');
   const hideEyes = c.glasses === 'sun';

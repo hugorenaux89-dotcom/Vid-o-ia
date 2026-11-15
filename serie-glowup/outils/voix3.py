@@ -148,9 +148,14 @@ async def line(ep, name, who, text, emo, sem):
         wavs = []
         for i, s in enumerate(sents):
             mp = os.path.join(work, f"s{i}.mp3"); wv = os.path.join(work, f"s{i}.wav")
-            rate = r0 + er + random.randint(-4, 4)
+            rate = r0 + er + random.randint(-3, 3)
+            if who.startswith("VOIX"):          # voix off « conteur » : plus d'élan sur les chutes, du suspense sur les « … »
+                if s.endswith("!"): rate += 6
+                elif s.endswith("…"): rate -= 8
+                elif s.endswith("?"): rate += 2
+                if len(s) < 18: rate -= 4         # phrases courtes = punchlines, posées
             # dernière phrase d'une question : légère montée ; phrases courtes un peu plus vives
-            pitch = p0 + ep_ + random.randint(-3, 3) + (2 if s.endswith("?") else 0)
+            pitch = p0 + ep_ + random.randint(-3, 3) + (3 if s.endswith("?") else 0) + (4 if s.endswith("!") else 0) - (3 if s.endswith("…") else 0)
             if len(s) < 25: rate += 3
             await tts(s, voice, rate, pitch, evol, mp)
             await sh("ffmpeg", "-y", "-loglevel", "error", "-i", mp, "-af", TRIM, "-ar", "44100", "-ac", "1", wv)
