@@ -2,7 +2,9 @@
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
 const { stand, plank, lying, PROPS, stinkLines } = require('./rig');
-const { ROOMS2 } = require('./rooms2');
+const { ROOMS2 } = require('./rooms3');
+require('./props2');
+const { ensureY } = require('./look');
 const K = '#1f1a17';
 const f1 = v => (+v).toFixed(1);
 const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
@@ -74,7 +76,7 @@ const KINDS = {
   // arrive devant le miroir, se regarde, le ventre qui tremble
   mirror: (t, j) => {
     const walk = 1 - ramp(t, 0, 1.2), x = 330 - 200 * walk, step = S(t * 9) * walk;
-    const q = { expr: ex(t < 1.4 ? 'neutre' : 'triste', t), t, ...idleArms(t, 0.6), ll: [18 * step, 4], rl: [-18 * step, 4], bob: breath(t) + Math.abs(step) * 8, jiggle: walk > 0.05 ? 1 : 0.5, tilt: 3 };
+    const q = { expr: ex(t < 1.4 ? 'neutre' : (j.expr || 'triste'), t), t, ...idleArms(t, 0.6), ll: [18 * step, 4], rl: [-18 * step, 4], bob: breath(t) + Math.abs(step) * 8, jiggle: walk > 0.05 ? 1 : 0.5, tilt: 3 };
     if (t > 1.4) { q.la = [10, 4]; q.ra = [10, 4]; }
     const me = stand(j.yid, q), refl = stand(j.yid, Object.assign({}, q, { t: t + 0.01 }));
     const mirror = `<g><rect x="560" y="420" width="420" height="1120" rx="210" fill="#6e4528" stroke="${K}" stroke-width="8"/>
@@ -283,12 +285,14 @@ const KINDS = {
   },
 };
 
+require('./kinds2').install({ KINDS, camera, camH, place, ex, breath, idleArms, flies, park, jog, ramp, ease, clamp, S, f1, K, stand, plank, lying, PROPS, stinkLines });
 const css = `<style>@font-face{font-family:'Lilita One';src:url(file:///root/.fonts/LilitaOne-Regular.ttf)}@font-face{font-family:Anton;src:url(file:///root/.fonts/Anton-Regular.ttf)}body{margin:0;background:#000}</style>`;
 async function main() {
   const jobs = JSON.parse(fs.readFileSync(process.argv[2]));
   const b = await chromium.launch(); const p = await b.newPage({ viewport: { width: 1080, height: 1920 } });
   for (const j of jobs) {
     fs.mkdirSync(j.out, { recursive: true });
+    for (const m of JSON.stringify(j).match(/\bY\d+s?\b/g) || []) ensureY(m);
     const fps = j.fps || 30, N = j.frames || Math.ceil(j.D * fps);
     const first = KINDS[j.kind](0, j);
     await p.setContent(css + `<svg id="s" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><g id="cam"><g id="bg">${ROOMS2[first.scene](j)}</g><g id="act"></g></g></svg>`);

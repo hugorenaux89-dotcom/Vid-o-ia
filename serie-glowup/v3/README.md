@@ -3,7 +3,7 @@
 > **Yanis a 30 jours avant le mariage de son cousin, où son ex Sarah viendra avec son nouveau copain. Chaque jour, c'est TOI qui choisis ce qui change chez lui. Et chaque changement reste pour toujours.**
 
 ## Le format
-- **Durée :** environ **1 min 30** par vidéo, soit environ 260 mots de voix off lue en continu, **sans aucun blanc**.
+- **Durée :** entre **1 min 02 et 1 min 17** par vidéo, soit environ 230 à 260 mots de voix off lue en continu, **sans aucun blanc**.
 - **Voix off :** elle raconte la vie de Yanis à la troisième personne, sur un ton rapide, drôle et plein d'accroches. **Yanis ne parle jamais.**
 - **À l'écran :**
   - en haut, **un gros titre** qui change à chaque plan (lettres blanches, mot clé en rouge) ;
@@ -23,24 +23,23 @@
 📝 `carte à l'écran`           (optionnel)
 ```
 
-## Les défauts de Yanis au jour 1 (et le jour où ils disparaissent)
-| Défaut | Réglé au jour |
-|---|---|
-| **Calvitie** (crâne dégarni, quelques cheveux sur les côtés) | 7 · le médecin, et ses cheveux repoussent « en 6 secondes » |
-| Odeur de transpiration | 2 |
-| Baskets trouées, pas de tenue de sport | 3 |
-| Sodas et fast-food | 4 |
-| Boutons | 5 (routine) → 17 (peau parfaite) |
-| Lunettes cassées et scotchées | 6 |
-| Dents jaunes | 8 (dentiste) → 12 (blanches) |
-| Cernes / il ne dort pas | 9 |
-| Dos voûté | 10 |
-| Monosourcil | 11 |
-| Ongles noirs de cambouis | 13 |
-| Coupe ratée (une fois les cheveux revenus) | 14 |
-| Barbe mal rasée | 15 |
-| Ventre (sport tous les jours) | il fond petit à petit jusqu'au jour 28 |
-| Style | 19 (placard) → 20 (shopping) → 25 (costume) |
+## Ce qui change chaque jour (vote du public)
+| Jour | Changement | Jour | Changement | Jour | Changement |
+|---|---|---|---|---|---|
+| 1 | 2 L d'eau | 11 | Dents blanches | 21 | Danse |
+| 2 | Odeur (douche + déo) | 12 | Barbe | 22 | Cuisine |
+| 3 | Baskets de running | 13 | Coupe (dégradé) | 23 | Montre de son père |
+| 4 | Frigo sain | 14 | Sourcils | 24 | Costume |
+| 5 | Lunettes | 15 | Posture | 25 | Discours |
+| 6 | Dents (détartrage) | 16 | Ongles | 26 | Chaussures |
+| 7 | Cheveux (en 6 secondes) | 17 | Parfum | 27 | Cadeau + 10 km |
+| 8 | Boutons (routine) | 18 | Chambre | 28 | La vérité à Kenzo |
+| 9 | Sommeil | 19 | Style | 29 | Entrée de star |
+| 10 | Peau (plus aucun bouton) | 20 | Confiance (< 100 kg) | 30 | Le mariage |
+
+**Sport :** muscu → repos → course, de 3 km à 10 km/h (jour 3) jusqu'à 10 km à 12 km/h (jour 27). **Poids :** 112 kg → 95 kg.
+**Fin de chaque épisode :** « Demain, qu'est-ce qu'on améliore : X… ou Y ? Écris-le en commentaire ! »
+**Apparence :** elle évolue automatiquement jour après jour (`outils/viz/look.js`).
 
 ## L'apparence de Yanis (raccourcis pour les prompts)
 - **{YANIS_A}** (jours 1 à 6) : `full body, 24-year-old very overweight North African young man, big round fat face with a double chin, BALD on top with a shiny scalp and a few thin hairs on the sides, BROKEN black glasses taped in the middle with one cracked lens, dirty yellow teeth, badly shaved patchy beard with razor cuts, almost-joined eyebrows, red pimples, big belly UNDER a too-tight stained grey t-shirt with sweat marks, dirty grey joggers, worn-out sneakers`
@@ -53,4 +52,6 @@
 
 **Style des prompts :** `2D cartoon illustration, thick clean outlines, flat colors with soft shading, character large in the center, detailed background, vertical 9:16, sharp and clean.`
 
-👉 Épisodes : [`episodes-01-10.md`](./episodes-01-10.md) · [`episodes-11-20.md`](./episodes-11-20.md) · [`episodes-21-30.md`](./episodes-21-30.md)
+👉 Épisodes : [`episodes-01-03.md`](./episodes-01-03.md) · [`episodes-04-12.md`](./episodes-04-12.md) · [`episodes-13-21.md`](./episodes-13-21.md) · [`episodes-22-30.md`](./episodes-22-30.md)
+
+👉 Descriptions TikTok : [`descriptions.md`](./descriptions.md) (et `videos/epXX-description.txt` à côté de chaque vidéo)

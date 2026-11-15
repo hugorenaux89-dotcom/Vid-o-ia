@@ -124,7 +124,7 @@ const R = {
   salleMuscu: () => `${shell(['#4a505c', '#363b45'], '#2f343e', '#2a2c33', '#141519', false)}
     ${[...Array(9)].map((_, i) => `<path d="M${120 + i * 105} 1250 L${-300 + i * 210} 1920" stroke="#fff" stroke-opacity=".05" stroke-width="3"/>`).join('')}
     <rect x="150" y="280" width="780" height="520" fill="#9fb4c8" opacity=".25" ${O(6)}/><path d="M410 280 L410 800 M670 280 L670 800" stroke="#000" stroke-opacity=".3" stroke-width="6"/>
-    <text x="540" y="230" font-family="Lilita One" font-size="120" text-anchor="middle" fill="#ff3b3b" stroke="${K}" stroke-width="6">IRON CITÉ</text>
+    <text x="540" y="580" font-family="Lilita One" font-size="110" text-anchor="middle" fill="#ff3b3b" stroke="${K}" stroke-width="6" opacity=".85">IRON CITÉ</text>
     ${[0, 1, 2].map(i => `<rect x="${200 + i * 250}" y="70" width="180" height="20" rx="10" fill="#f4fbff"/>`).join('')}
     <rect x="170" y="880" width="740" height="22" fill="#666" ${O()}/>${[0, 1, 2, 3, 4, 5].map(i => `<g transform="translate(${200 + i * 118},836)"><rect x="0" y="0" width="22" height="${44 + i * 3}" rx="5" fill="#222" ${O(3)}/><rect x="22" y="${16 + i}" width="40" height="10" fill="#aaa"/><rect x="62" y="0" width="22" height="${44 + i * 3}" rx="5" fill="#222" ${O(3)}/></g>`).join('')}
     <rect x="720" y="1000" width="240" height="40" rx="10" fill="#c0392b" ${O()}/><rect x="740" y="1040" width="22" height="200" fill="#555"/><rect x="918" y="1040" width="22" height="200" fill="#555"/>
@@ -146,4 +146,4 @@ const R = {
     
     <defs>${glow('gk', 540, 220, 900, '#fff1c0', 0.45)}</defs><rect width="1080" height="1920" fill="url(#gk)"/>`,
 };
-module.exports = { ROOMS2: R, calendar };
+module.exports = { ROOMS2: R, calendar, shell, glow, lg, bed, desk, chair };

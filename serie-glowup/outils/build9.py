@@ -54,14 +54,16 @@ def parse():
                 m = re.search(r"📊 `([^`]+)`", s); E["counter"] = m.group(1) if m else ""; continue
             m = re.match(r"\*\*(P\d+) ·", s)
             if m:
-                cur = {"tag": m.group(1), "cam": "", "expr": "neutre", "pose": "idle", "notes": [], "voice": None, "vote": None, "choice": None, "head": "", "sfx": None, "kind": None}
+                cur = {"tag": m.group(1), "cam": "", "expr": "neutre", "pose": "idle", "notes": [], "voice": None, "vote": None, "choice": None, "head": "", "sfx": None, "kind": None, "p": {}, "sfxb": None}
                 E["plans"].append(cur); continue
             if cur is None: continue
             if s.startswith("🎥"): cur["cam"] = s
             elif s.startswith("🎬"):
-                m = re.search(r"`(\w+)`", s); cur["kind"] = m.group(1) if m else None
+                m = re.search(r"`([^`]+)`", s)
+                if m:
+                    w_ = m.group(1).split(); cur["kind"] = w_[0]; cur["p"] = dict(x.split("=", 1) for x in w_[1:] if "=" in x)
             elif s.startswith("🔊"):
-                m = re.search(r"`(\w+)`", s); cur["sfx"] = m.group(1) if m else None
+                m = re.search(r"`(\w+)(?:@(\d+))?`", s); cur["sfx"] = m.group(1) if m else None; cur["sfxb"] = int(m.group(2)) if m and m.group(2) else None
             elif s.startswith("🔠"):
                 m = re.search(r"`([^`]+)`", s); cur["head"] = m.group(1) if m else ""
             elif s.startswith("🎭"):
@@ -210,7 +212,7 @@ def plans_to_segments(E):
         cl = cam.lower(); story = "instagram story" in cl or ("story" in cl and "{SARAH}" in cam and "{KENZO}" in cam and "phone" in cl)
         st = {"counter": E["counter"], "scene": scene, "cards": [], "props": [], "audio": p["voice"]["audio"] if p["voice"] else None,
               "sub": p["voice"]["text"] if p["voice"] else "", "yanis": yid if "{YANIS" in cam else None, "expr": p["expr"], "pose": p["pose"],
-              "vote": p["vote"], "choice": p["choice"], "i": i, "head": p["head"], "band": E["counter"], "sfx": p["sfx"], "kind": p["kind"]}
+              "vote": p["vote"], "choice": p["choice"], "i": i, "head": p["head"], "band": E["counter"], "sfx": p["sfx"], "kind": p["kind"], "p": p["p"], "sfxb": p["sfxb"], "day": E["n"]}
         st["props"] = [k for k, w in (("invitation", "invitation"), ("chips", "chips"), ("water", "water bottle")) if w in cl]
         cards = list(p["notes"])
         if story:
@@ -261,6 +263,7 @@ def render_seg(s, epn):
 
 def sfx_time(s):
     b = timing(s)["starts"]; k = s.get("kind")
+    if s.get("sfxb") is not None: return (b[s["sfxb"]] if s["sfxb"] < len(b) else b[-1]) + 0.15
     g = lambda i, d=0.35: (b[i] if i < len(b) else b[-1]) + 0.2
     return {"pushup": (b[6] + 0.5) if len(b) > 6 else 3, "throw": 1.9, "armsUp": g(1) + 0.3, "phone": g(1), "score": g(2), "invite": 0.12, "hook": 0.05, "armRaise": 0.05, "sore": g(1), "sofiane": 0.3, "nose": g(1) - 0.2, "runPass": (b[1] if len(b) > 2 else 1.3), "box": g(3) - 0.2, "croissant": g(3) + 0.6}.get(k, 0.35)
 
@@ -304,7 +307,7 @@ if __name__ == "__main__":
             for b in s.get("story", []): busts.add((b, "sourire"))
             key = seg_key(s)
             if os.path.exists(os.path.join(SEG, key + ".mp4")): continue
-            jobs.append({"day": 31 - E["n"], "kind": s["kind"], "D": seg_dur(s), "beats": timing(s)["starts"], "expr": s["expr"], "yid": s["yanis"] or "YANIS_A", "out": os.path.join(SEG, key + "_f"), "fps": FPS})
+            jobs.append({"day": 31 - E["n"], "kind": s["kind"], "D": seg_dur(s), "beats": timing(s)["starts"], "expr": s["expr"], "yid": (f"Y{E['n']}" if E["n"] >= 4 else (s["yanis"] or "YANIS_A")), "p": s.get("p", {}), "out": os.path.join(SEG, key + "_f"), "fps": FPS})
     req = os.path.join(WORK, "req.json"); json.dump({"scenes": [], "persons": [], "busts": sorted(busts)}, open(req, "w"))
     subprocess.run(["node", os.path.join(HERE, "viz", "assets5.js"), req, ASSETS], check=True)
     jf = os.path.join(WORK, "jobs.json"); json.dump(jobs, open(jf, "w"))
