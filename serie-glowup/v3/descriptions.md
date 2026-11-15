@@ -1,5 +1,5 @@
 # Descriptions TikTok (à coller sous chaque vidéo)
-Rappels : coche « Contenu généré par IA », mets la miniature `epXX-miniature.png` en couverture, et épingle un commentaire avec la question du jour.
+Rappels : coche « Contenu généré par IA », mets la miniature `epXX-miniature.png` en couverture, et épingle le commentaire indiqué.
 
 ## Épisode 1 — `videos/ep01.mp4`
 ```
@@ -109,7 +109,7 @@ Qu'est-ce qu'on améliore demain ? SOURCILS ou POSTURE ? Dis-le en commentaire �
 ```
 Jour 14 sur 30 😬 Son ex lui a dit bonsoir… sans le reconnaître 😳 Vous avez choisi SOURCILS.
 Qu'est-ce qu'on améliore demain ? POSTURE ou PARFUM ? Dis-le en commentaire 👇
-#30jours #glowup #transformation #animation #histoire #fyp #pourtoi #ex #transformation
+#30jours #glowup #transformation #animation #histoire #fyp #pourtoi #ex
 ```
 📌 Commentaire à épingler : « POSTURE ou PARFUM ? Le mot le plus commenté change Yanis pour toujours 👇 »
 
@@ -204,7 +204,7 @@ Qu'est-ce qu'on améliore demain ? CHAUSSURES ou CADEAU ? Dis-le en commentaire 
 ## Épisode 26 — `videos/ep26.mp4`
 ```
 Jour 26 sur 30 😬 Son ex lui a envoyé un cœur ❤️… il n'a pas répondu. Vous avez choisi CHAUSSURES.
-Qu'est-ce qu'on améliore demain ? CADEAU ou VÉRITÉ ? Dis-le en commentaire 👇
+Demain, il fait quoi ? CADEAU ou VÉRITÉ ? Dis-le en commentaire 👇
 #30jours #glowup #transformation #animation #histoire #fyp #pourtoi #ex #loyaute
 ```
 📌 Commentaire à épingler : « CADEAU ou VÉRITÉ ? Le mot le plus commenté change Yanis pour toujours 👇 »
@@ -212,7 +212,7 @@ Qu'est-ce qu'on améliore demain ? CADEAU ou VÉRITÉ ? Dis-le en commentaire �
 ## Épisode 27 — `videos/ep27.mp4`
 ```
 Jour 27 sur 30 😬 Jour 3 : 3 km le mettaient à terre. Jour 27 : 10 KM 🏃‍♂️🔥 Vous avez choisi CADEAU.
-Qu'est-ce qu'on améliore demain ? VÉRITÉ ou SECRET ? Dis-le en commentaire 👇
+Demain, il fait quoi ? Dire la VÉRITÉ à Kenzo ou garder le SECRET ? Dis-le en commentaire 👇
 #30jours #glowup #transformation #animation #histoire #fyp #pourtoi #running #10km
 ```
 📌 Commentaire à épingler : « VÉRITÉ ou SECRET ? Le mot le plus commenté change Yanis pour toujours 👇 »
@@ -220,7 +220,7 @@ Qu'est-ce qu'on améliore demain ? VÉRITÉ ou SECRET ? Dis-le en commentaire �
 ## Épisode 28 — `videos/ep28.mp4`
 ```
 Jour 28 sur 30 😬 Il a avoué au copain de son ex… qu'il est son ex 😳 La réaction de Kenzo 😭 Vous avez choisi VÉRITÉ.
-Qu'est-ce qu'on améliore demain ? DISCRET ou EN STAR ? Dis-le en commentaire 👇
+Au mariage, il arrive comment ? DISCRET ou EN STAR ? Dis-le en commentaire 👇
 #30jours #glowup #transformation #animation #histoire #fyp #pourtoi #amitie #verite
 ```
 📌 Commentaire à épingler : « DISCRET ou EN STAR ? Le mot le plus commenté change Yanis pour toujours 👇 »
@@ -228,8 +228,8 @@ Qu'est-ce qu'on améliore demain ? DISCRET ou EN STAR ? Dis-le en commentaire �
 ## Épisode 29 — `videos/ep29.mp4`
 ```
 Jour 29 sur 30 😬 Jour 1 vs Jour 29 : -17 kg 😳 Demain, c'est le mariage 💍 Vous avez choisi EN STAR.
-Qu'est-ce qu'on améliore demain ? Sarah va le reconnaître : OUI ou NON ? Dis-le en commentaire 👇
-#30jours #glowup #transformation #animation #histoire #fyp #pourtoi #avantapres #glowup
+Demain, Sarah va-t-elle le reconnaître ? OUI ou NON ? Dis-le en commentaire 👇
+#30jours #glowup #transformation #animation #histoire #fyp #pourtoi #avantapres
 ```
 📌 Commentaire à épingler : « Sarah va le reconnaître : OUI ou NON ? Le mot le plus commenté change Yanis pour toujours 👇 »
 
