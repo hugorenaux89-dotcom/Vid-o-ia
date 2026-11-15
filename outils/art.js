@@ -216,7 +216,7 @@ function handPos(side, a1, a2) {
   return [S[0] + L1 * Math.cos(rad(A1)) + L2 * Math.cos(rad(A2)), S[1] + L1 * Math.sin(rad(A1)) + L2 * Math.sin(rad(A2))];
 }
 const POSES = {
-  bas: [78, 92], phone: [58, -98], haut: [-48, -84], hausse: [22, -38], pointe: [96, -62], salut: [-30, -100], hanche: [40, 150],
+  bas: [78, 92], phone: [58, -98], croise: [110, 180], poing: [100, -80], tete: [-30, -150], cadeau: [100, -40], haut: [-48, -84], hausse: [22, -38], pointe: [96, -62], salut: [-30, -100], hanche: [40, 150],
 };
 
 function telephone(x, y, r, s, t, content = 'ines') {
@@ -257,6 +257,7 @@ function bouche(P) {
   const m = P.mouth || 'plat';
   const x = 362, y = 668;
   switch (m) {
+    case 'parle': { const k = clamp(P.open || 0); return k < 0.12 ? `<path d="M${x - 26} ${y} q26 -10 52 0" fill="none" ${O(5)}/>` : `<ellipse cx="${x}" cy="${y + 4}" rx="${(16 + k * 10).toFixed(1)}" ry="${(5 + k * 24).toFixed(1)}" fill="#7a1f2b" ${O(5)}/>`; }
     case 'o': return `<ellipse cx="${x}" cy="${y}" rx="13" ry="16" fill="#7a1f2b" ${O(5)}/>`;
     case 'cri': return `<path d="M${x - 26} ${y - 14} q26 -12 52 0 q6 52 -26 54 q-32 -2 -26 -54z" fill="#7a1f2b" ${O(5)}/><path d="M${x - 16} ${y + 24} q16 -12 32 0 q-4 14 -16 14 q-12 0 -16 -14z" fill="#ff8a95"/><path d="M${x - 20} ${y - 12} h40 v8 h-40z" fill="#fff"/>`;
     case 'sourire': return `<path d="M${x - 34} ${y - 6} q34 38 68 0 q-34 10 -68 0z" fill="#7a1f2b" ${O(5)}/><path d="M${x - 26} ${y - 3} q26 8 52 0 v6 q-26 8 -52 0z" fill="#fff"/>`;
