@@ -1,0 +1,17 @@
+{
+ "vibration": ["Smartphone vibrating on a cardboard pizza box, buzzing twice, close up", 1.6],
+ "notif": ["Short bright smartphone message notification chime", 0.8],
+ "grillons": ["Night crickets chirping quietly in a silent dark bedroom, ambience", 5],
+ "pop": ["Short cartoon bubble pop sound effect", 0.5],
+ "miaou": ["Grumpy fat cat low disapproving meow", 1.5],
+ "valise": ["Cartoon zip of a suitcase closing quickly then a thud", 1.2],
+ "choc": ["Dramatic comedic orchestral stinger, dun dun duuun", 2.2],
+ "scratch": ["Vinyl record scratch stop, comedic", 0.9],
+ "magie": ["Magical sparkle twinkle shimmer, nostalgic", 2],
+ "whoosh": ["Fast cartoon whoosh transition", 0.6],
+ "glissade": ["Cartoon slip on cardboard box, squeak then body falling into a big pile of soft clothes with a thump, comedic", 2.2],
+ "boing": ["Cartoon dizzy birds tweeting after a fall", 1.6],
+ "ding": ["Game show correct answer ding bell", 1],
+ "tambour": ["Short drum roll ending with a cymbal crash", 2.5],
+ "musique": ["Playful quirky comedic background music, pizzicato strings, soft ukulele and light percussion, cartoon sitcom vibe, no vocals", 22]
+}
