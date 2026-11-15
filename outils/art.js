@@ -35,6 +35,7 @@ const DEFS = `
  <linearGradient id="sepia" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f4dcae"/><stop offset="1" stop-color="#e2b77c"/></linearGradient>
  <linearGradient id="denim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f7fc4"/><stop offset="1" stop-color="#355e9e"/></linearGradient>
  <filter id="sh" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#000" flood-opacity=".35"/></filter>
+ <filter id="silh" x="-20%" y="-20%" width="140%" height="140%"><feFlood flood-color="#1a1030"/><feComposite in2="SourceAlpha" operator="in" result="s"/><feMorphology in="SourceAlpha" operator="dilate" radius="6" result="d"/><feFlood flood-color="#ffd23f"/><feComposite in2="d" operator="in" result="edge"/><feGaussianBlur in="edge" stdDeviation="6" result="glow"/><feMerge><feMergeNode in="glow"/><feMergeNode in="s"/></feMerge></filter>
  <filter id="blur"><feGaussianBlur stdDeviation="7"/></filter>
  <clipPath id="cFace"><ellipse cx="360" cy="560" rx="148" ry="158"/></clipPath>
  <clipPath id="cTop"><path d="M222 790 Q235 735 360 728 Q485 735 498 790 L515 1010 L205 1010 Z"/></clipPath>
@@ -480,8 +481,9 @@ function groupes(words) {
   });
   return out;
 }
-function sousTitres(t, words, y = 1010) {
+function sousTitres(t, words, y = 1010, emph = null) {
   if (!words || !words.length) return '';
+  emph = emph || module.exports.EMPH;
   const gs = groupes(words);
   let cur = null;
   for (let i = 0; i < gs.length; i++) {
@@ -497,7 +499,9 @@ function sousTitres(t, words, y = 1010) {
   const spans = cur.map((w, i) => {
     const on = t >= w.s - 0.03;
     const active = on && (i === cur.length - 1 || t < cur[i + 1].s - 0.03);
-    return `<tspan fill="${active ? C.yellow : '#fff'}" opacity="${on ? 1 : 0.35}">${esc(txt[i])}</tspan>`;
+    const isE = emph && emph.test(w.w);
+    const col = isE && on ? '#ff4d5e' : active ? C.yellow : '#fff';
+    return `<tspan fill="${col}" ${isE ? `font-size="${Math.round(size * 1.18)}"` : ''} opacity="${on ? 1 : 0.35}">${esc(txt[i])}</tspan>`;
   }).join(' ');
   return `<g transform="translate(360 ${y}) scale(${clamp(sIn, 0, 1.2).toFixed(3)})">
     <text x="0" y="0" font-family="Anton" font-size="${size}" text-anchor="middle" stroke="${K}" stroke-width="14" paint-order="stroke" filter="url(#sh)">${spans}</text></g>`;

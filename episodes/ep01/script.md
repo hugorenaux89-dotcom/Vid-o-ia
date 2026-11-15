@@ -28,3 +28,25 @@ node outils/mix-ep01.js
 node outils/render.js ./ep01.js video build/ep01/video.mp4 30 4
 ffmpeg -i build/ep01/video.mp4 -i build/ep01/audio.m4a -c:v copy -c:a copy -shortest episodes/ep01/lana-jour-01.mp4
 ```
+
+---
+
+# Version 2 — optimisée TikTok (`lana-jour-01-v2-tiktok.mp4`)
+
+58 s · 1080 × 1920 · 30 i/s · aucune nouvelle génération ElevenLabs (voix et sons existants réutilisés)
+
+| Temps | Plan | Changement |
+|---|---|---|
+| 0:00 – 0:02 | **Accroche** | Ouverture sur le choc : Lana hurle sur son téléphone (« Et Nathan sera là »), gros plan, tremblement, flash rouge. Texte : « SON CRUSH REVIENT DANS 30 JOURS 😱 ». Puis effet VHS « ⏪ 1 HEURE PLUS TÔT » + disque rayé |
+| 0:02 – 0:05 | Téléphone | La notification s'affiche dès 0,3 s (au lieu de 0,9 s) |
+| 0:05 – 0:47 | Histoire | Blancs entre les phrases réduits à 0,16 s, voix accélérée de 12 % (même hauteur), marges de début et de fin de plan raccourcies |
+| tout du long | Sous-titres | Mots-clés en rouge et plus gros (NATHAN, SANDRINE, DÉMÉNAGER, NUGGETS, TOI, APPART, SOURCILS…) + coup de zoom sur chacun |
+| chaque coupe | Transitions | Glissé + zoom d'entrée + whoosh |
+| 0:45 – 0:54 | Vote | Plus court, appel au vote conservé |
+| 0:54 – 0:58 | **Écran final** | Silhouette mystère « JOUR 30 : MÉCONNAISSABLE ? », « DEMAIN : ON SONNE À SA PORTE 👀 », « 🔔 ABONNE-TOI POUR LA SUITE », « ENVOIE ÇA À TA POTE EN PYJAMA 🦄 » |
+
+Refaire : `python3 outils/resserrer.py build/ep01/voix build/ep01v2/voix 1.12 s5:16:19:s0 s1 s2 s3 s4 s5 s5b s5c s6a s6b s7 s8 s9`
+puis `node outils/mix-ep01.js ./ep01v2 ep01v2` et `DSF=1.5 node outils/render.js ./ep01v2.js video build/ep01v2/video.mp4 30 4`.
+
+Légende conseillée :
+Son crush revient dans 30 jours… et c'est TOI qui décides de sa transformation 😬 Jour 1/30 : commente APPART ou SOURCILS 👇 Le plus voté sera réglé demain. #30joursdetransformation #glowup #transformation #animation #histoire

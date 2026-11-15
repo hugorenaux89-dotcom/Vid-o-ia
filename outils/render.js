@@ -11,7 +11,7 @@ const HTML = `<html><head><link href="https://fonts.googleapis.com/css2?family=A
 <div style="font-family:Anton;position:absolute;opacity:0">ABC</div></body></html>`;
 
 async function page(b) {
-  const p = await b.newPage({ viewport: { width: 720, height: 1280 } });
+  const p = await b.newPage({ viewport: { width: 720, height: 1280 }, deviceScaleFactor: +(process.env.DSF || 1) });
   await p.setContent(HTML, { waitUntil: 'networkidle' });
   await p.evaluate(() => document.fonts.ready);
   return p;

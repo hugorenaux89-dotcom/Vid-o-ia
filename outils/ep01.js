@@ -4,7 +4,7 @@ const path = require('path');
 const A = require('./art');
 const { tw, easeOut, easeBack, blinkAt, popS, clamp, POSES } = A;
 
-const VOIX = path.join(__dirname, '../build/ep01/voix');
+let VOIX = path.join(__dirname, '../build/ep01/voix');
 const voix = (id) => JSON.parse(fs.readFileSync(path.join(VOIX, id + '.json'), 'utf8'));
 
 // Scènes : segments de voix (id, début local), durée totale
@@ -32,7 +32,7 @@ function construireTimeline() {
     sc.segs.forEach(([id, lead], i) => {
       const v = voix(id);
       local += i === 0 ? lead : sc.gap || 0;
-      voices.push({ id, start: local });
+      voices.push({ id, start: local, dur: v.dur });
       v.words.forEach((w) => words.push({ w: w.w, s: w.s + local, e: w.e + local, seg: id }));
       local += v.dur;
     });
@@ -63,18 +63,19 @@ const R = {};
 /* 1. Le téléphone qui vibre */
 R.telephone = (t, sc) => {
   const vib = (t > 0.05 && t < 1.6) ? Math.sin(t * 95) * 5 : 0;
-  const notif = popS(t, 0.9, 0.4);
+  const tNotif = sc.notif ?? 0.9;
+  const notif = popS(t, tNotif, 0.4);
   const z = tw(t, 0, sc.dur, 1.0, 1.12);
   const bg = `<g filter="url(#blur)" opacity=".85">${A.chambre(t, { linge: false })}</g><rect width="720" height="1280" fill="#000" opacity=".35"/>`;
   const boxes = `<g filter="url(#sh)">${[0, 1, 2, 3].map((i) => `<rect x="${60 + i * 8}" y="${1000 - i * 60}" width="600" height="60" rx="6" fill="#e8c08b" ${A.O(7)}/>`).join('')}
     <text x="380" y="958" font-family="Anton" font-size="40" fill="#b5462b" text-anchor="middle">PIZZA</text>
     <path d="M110 1180 q60 -10 120 0" stroke="#c88" stroke-width="6" fill="none" opacity=".6"/></g>`;
-  const glowA = t > 0.9 ? 0.9 : 0.2;
+  const glowA = t > tNotif ? 0.9 : 0.2;
   const phone = `<g transform="translate(${360 + vib} 700) rotate(-4)">
     <ellipse cx="0" cy="0" rx="300" ry="380" fill="url(#glow)" opacity="${glowA}"/>
     <rect x="-150" y="-260" width="300" height="520" rx="44" fill="#1b1b1b" ${A.O(9)}/>
-    <rect x="-128" y="-226" width="256" height="452" rx="16" fill="${t > 0.9 ? '#1d2b55' : '#0b0b0b'}"/>
-    ${t > 0.9 ? `<text x="0" y="-130" font-family="Anton" font-size="72" fill="#fff" text-anchor="middle" opacity=".9">03:47</text>
+    <rect x="-128" y="-226" width="256" height="452" rx="16" fill="${t > tNotif ? '#1d2b55' : '#0b0b0b'}"/>
+    ${t > tNotif ? `<text x="0" y="-130" font-family="Anton" font-size="72" fill="#fff" text-anchor="middle" opacity=".9">03:47</text>
       <text x="0" y="-90" font-family="Anton" font-size="22" fill="#cfd8ff" text-anchor="middle">MARDI 1 NOVEMBRE</text>` : ''}
     ${A.pop(0, 40, notif, `<g filter="url(#sh)"><rect x="-118" y="-60" width="236" height="150" rx="18" fill="#fff" ${A.O(4)}/>
       <circle cx="-85" cy="-28" r="20" fill="#ef5b93" ${A.O(3)}/><text x="-85" y="-20" font-family="Anton" font-size="22" fill="#fff" text-anchor="middle">I</text>
@@ -211,7 +212,7 @@ R.jean = (t, sc) => {
 R.chute = (t, sc) => {
   const tDec = wt(sc, 'décidée'), tChanger = wt(sc, 'changer');
   const segB = sc.voices[1].start;
-  const tSlip = sc.voices[0].start + 3.2 + 0.2;
+  const tSlip = sc.voices[0].start + sc.voices[0].dur + 0.2;
   const tLand = tSlip + 0.5;
   let inner;
   if (t < tLand) {
@@ -303,4 +304,4 @@ function frameAt(T) {
   return A.DEFS + R[sc.id](t, sc);
 }
 
-module.exports = { TL, frameAt, wt, S };
+module.exports = { TL, frameAt, wt, S, R, entree, setVoix: (d) => { VOIX = d; }, voix };
