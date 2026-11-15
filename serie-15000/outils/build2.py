@@ -405,8 +405,7 @@ if __name__ == "__main__":
     for n in sorted(eps):
         if ONLY and n not in ONLY: continue
         E = eps[n]; prev = eps.get(n - 1, {}).get("choice")
-        ab = any(b["kind"] in ("A", "B") for b in E["blocks"])
-        for v in (("A", "B") if ab else (None,)): todo.append((E, v, prev, f"ep{n:02d}" + (f"-{v}" if v else "")))
+        todo.append((E, None, prev, f"ep{n:02d}"))   # une seule vidéo par épisode (pas de versions A/B)
     scenes, persons = set(), set()
     for E, v, prev, _ in todo:
         for s in plan(E, v, prev):
