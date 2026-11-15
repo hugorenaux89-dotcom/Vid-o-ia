@@ -30,8 +30,8 @@ const C = {
   POLICIER:{ skin: '#e8b994', hair: 'police', hc: '#3a2a20', beard: 'none', outfit: 'police', w: 1.08 },
   GRIS:    { skin: '#efc6a6', hair: 'balding', hc: '#6a5a50', beard: 'none', outfit: 'greysuit', glasses: 'round', age: true, w: 1.05 },
   YANIS_J1:{ skin: '#c98e62', hair: 'messy', hc: '#1c1511', beard: 'patchy', outfit: 'hoodieDirty', chain: 'silver', w: 1.26, pimples: true, unibrow: true, chin: true },
-  YANIS_A: { skin: '#c98e62', hair: 'bowl', hc: '#1c1511', beard: 'cuts', outfit: 'hoodieDirty', w: 1.42, pimples: true, unibrow: true, chin: true, glasses: 'broken', teeth: 'dirty', jowls: true },
-  YANIS_B: { skin: '#c98e62', hair: 'bowl', hc: '#1c1511', beard: 'patchy', outfit: 'hoodie', w: 1.3, chin: true, glasses: 'rect', teeth: 'ok', pimplesLight: true },
+  YANIS_A: { skin: '#c98e62', hair: 'bald', hc: '#1c1511', beard: 'cuts', outfit: 'hoodieDirty', w: 1.42, pimples: true, unibrow: true, chin: true, glasses: 'broken', teeth: 'dirty', jowls: true },
+  YANIS_B: { skin: '#c98e62', hair: 'thick', hc: '#1c1511', beard: 'patchy', outfit: 'hoodie', w: 1.3, chin: true, glasses: 'rect', teeth: 'ok', pimplesLight: true },
   YANIS_C: { skin: '#c98e62', hair: 'fade', hc: '#1c1511', beard: 'trimmed', outfit: 'hoodie', w: 1.14, glasses: 'rect' },
   YANIS_D: { skin: '#c98e62', hair: 'fade', hc: '#1c1511', beard: 'trimmed', outfit: 'hoodie', w: 1.06, glasses: 'thin' },
   YANIS_E: { skin: '#c98e62', hair: 'fade', hc: '#1c1511', beard: 'trimmed', outfit: 'hoodie', w: 1.04, glasses: 'thin' },
@@ -150,6 +150,12 @@ function hairFront(c, id) {
     case 'fade': return `<path d="M180 250 C182 210 186 190 196 176 L206 240 Z M420 250 C418 210 414 190 404 176 L394 240 Z" fill="url(#fade${id})"/>
       <path d="M176 238 C160 130 222 60 302 60 C384 60 446 130 424 238 C418 200 404 176 390 164 C350 140 250 140 210 164 C196 176 182 200 176 238 Z" fill="${H}" ${SS}/>
       <path d="M220 110 Q236 98 250 108 M262 92 Q280 82 296 92 M310 90 Q330 82 344 94 M356 104 Q372 98 384 112" fill="none" stroke="${shade(H, 1.2)}" stroke-width="5" stroke-linecap="round"/>`;
+    case 'bald': return `<path d="M176 290 C168 250 172 214 186 196 L200 214 L196 300 Z M424 290 C432 250 428 214 414 196 L400 214 L404 300 Z" fill="${H}" ${S(5)}/>
+      <ellipse cx="262" cy="150" rx="46" ry="20" fill="#fff" opacity=".35" transform="rotate(-18 262 150)"/><ellipse cx="236" cy="176" rx="12" ry="6" fill="#fff" opacity=".3"/>
+      <path d="M286 96 q4 -16 0 -26 M306 94 q6 -14 2 -24 M326 100 q8 -12 6 -22" fill="none" stroke="${H}" stroke-width="3" stroke-linecap="round"/>`;
+    case 'thick': return `<path d="M170 250 C150 120 220 46 302 46 C388 46 456 120 430 250 C426 206 410 176 392 162 C356 140 246 140 210 162 C192 176 176 206 170 250 Z" fill="${H}" ${SS}/>
+      <path d="M200 120 q30 -40 60 -10 q30 -40 60 -6 q30 -36 70 6 q-20 -60 -90 -68 q-70 6 -100 78 Z" fill="${H}" ${S(6)}/>
+      <path d="M230 96 Q250 80 272 92 M300 76 Q324 66 344 82" fill="none" stroke="#4a3a30" stroke-width="5" stroke-linecap="round"/>`;
     case 'bowl': return `<path d="M168 262 C150 120 220 56 302 56 C386 56 452 120 432 262 L414 250 L400 214 L380 232 L356 204 L330 226 L304 200 L280 228 L254 204 L232 232 L210 210 L190 248 Z" fill="${H}" ${SS}/>
       <path d="M220 96 Q250 140 236 196 M290 80 Q300 140 286 196 M360 92 Q350 140 366 196" fill="none" stroke="#4a3a30" stroke-width="5" stroke-linecap="round"/>
       <path d="M250 70 q20 -8 40 0" fill="none" stroke="#6a5a4a" stroke-width="6" opacity=".6"/>`;
