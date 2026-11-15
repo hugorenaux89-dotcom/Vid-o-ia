@@ -29,7 +29,12 @@ Ce que Yanis ne sait pas encore : le vol a été **organisé par Vidal lui-même
 Yanis doit 15 000 € à un homme dangereux. Il a 30 jours.
 Chaque épisode finit sur un choix.
 Tu votes en commentaire, et ça arrive 👇
+🎬 Série de fiction
 ```
+
+> ⚠️ **Deux règles importantes :**
+> - **Indique clairement que c'est une fiction** (bio + `#fiction`). Sinon, des gens risquent de croire que Yanis existe et de vouloir lui envoyer de l'argent, surtout à l'épisode de la cagnotte.
+> - **Si tes vidéos sont générées par IA, active l'option « Contenu généré par IA »** au moment de publier sur TikTok. C'est obligatoire, et une vidéo non étiquetée peut être supprimée.
 
 **Playlists :** `La série` · `Hors-série` · `Résumés`
 
@@ -66,8 +71,8 @@ J-17 · 6 450 € / 15 000 €
 Il monte et il descend selon les choix du public. C'est lui qui donne envie de revenir.
 
 ### Gestion des votes
-1. Publier l'épisode, puis **épingler 2 commentaires** : `A 🅰️` et `B 🅱️`.
-2. **24 h après**, le commentaire qui a le plus de likes gagne.
+1. Publier l'épisode, puis **épingler le commentaire de vote** (le texte est fourni pour chaque épisode dans `scripts/`).
+2. Les abonnés répondent **A** ou **B** en commentaire. **24 h après**, la lettre la plus citée gagne.
 3. Chaque épisode a **deux ouvertures possibles déjà écrites** (voir `episodes.md`). On tourne celle qui a gagné.
 4. Les grandes étapes de l'histoire sont **fixes** : les choix changent le chemin et l'argent, mais tout le monde arrive aux mêmes rebondissements. Ça permet de tourner à l'avance.
 
@@ -126,4 +131,17 @@ Plan [face caméra / épaule / large]. Durée [X] secondes.
 | 3 | J-14 → J-7 | **L'enquête** | Les caméras effacées, l'entrepôt, la fraude à l'assurance |
 | 4 | J-6 → J-0 | **Le piège** | Le plan final, la trahison, minuit au garage |
 
-👉 **Les 30 épisodes détaillés sont dans [`episodes.md`](./episodes.md).**
+## 8. Les fichiers
+
+| Fichier | Contenu |
+|---|---|
+| [`episodes.md`](./episodes.md) | Le plan des 30 épisodes (vue d'ensemble) |
+| [`personnages-ia.md`](./personnages-ia.md) | Les descriptions IA des personnages, des lieux et du style |
+| [`scripts/ep01-05.md`](./scripts/ep01-05.md) | **Scripts complets** : dialogues mot pour mot, prompts IA plan par plan, légendes, hashtags et commentaires épinglés |
+| [`scripts/ep06-10.md`](./scripts/ep06-10.md) | Épisodes 6 à 10 |
+| [`scripts/ep11-15.md`](./scripts/ep11-15.md) | Épisodes 11 à 15 |
+| [`scripts/ep16-20.md`](./scripts/ep16-20.md) | Épisodes 16 à 20 |
+| [`scripts/ep21-25.md`](./scripts/ep21-25.md) | Épisodes 21 à 25 |
+| [`scripts/ep26-30.md`](./scripts/ep26-30.md) | Épisodes 26 à 30 + bonus |
+
+Chaque épisode dure **entre 1 min 14 et 1 min 30**.

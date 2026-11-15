@@ -187,10 +187,10 @@
 
 ### Épisode 21 · J-10 · « La 2CV »
 `J-10 · 10 700 € / 15 000 €`
-- **Accroche :** Une vieille 2CV rouillée. *« Ce client m'offre 4 000 € si je la restaure en 10 jours. »*
+- **Accroche :** Une vieille 2CV rouillée. *« Ce client m'offre 2 000 € si je la restaure en 10 jours. »*
 - **Scène :** Un vieux client du lavage, collectionneur, a vu le travail de Yanis. C'est l'occasion de montrer son talent de mécano, comme son père.
 - **Choix :** **A** : Il accepte (il bossera jour et nuit). / **B** : Il refuse pour se concentrer sur l'enquête.
-- **Si A →** Montage rapide de nuits blanches, de cambouis et de café. 💰 **+4 000 € à la livraison (épisode 26)**. Le client : *« Ton père travaillait comme ça. »*
+- **Si A →** Montage rapide de nuits blanches, de cambouis et de café. 💰 **+2 000 € à la livraison (épisode 26)**. Le client : *« Ton père travaillait comme ça. »*
 - **Si B →** Il passe la nuit avec Lina sur l'ordi, et ils trouvent un article de 2016 : *« Un collectionneur indemnisé pour le vol d'une Porsche jamais retrouvée. »* Le nom : Vidal.
 
 ### Épisode 22 · J-9 · « 120 000 € »
@@ -233,11 +233,11 @@
 
 ### Épisode 26 · J-5 · « Les derniers euros »
 `J-5 · 11 000 € / 15 000 €`
-- **Accroche :** *« Il manque 4 000 €. Et il reste 5 jours. »*
-- **Scène :** (Si A à l'épisode 21 : il livre la 2CV restaurée, 💰 +4 000 €, et le client est ému.) Sinon, il faut trouver autre chose.
+- **Accroche :** *« Il manque 2 000 €. Et il reste 5 jours. »*
+- **Scène :** (Si A à l'épisode 21 : il livre la 2CV restaurée, 💰 +2 000 €, et le client est ému.) Sinon, il faut trouver autre chose.
 - **Choix :** **A** : Vendre « Yanis Lavage » à un concurrent. / **B** : Organiser un grand lavage solidaire dans le quartier.
-- **Si A →** 💰 **+2 500 €**. Sofiane est dégoûté : *« C'était notre truc. »*
-- **Si B →** Tout le quartier vient, Nadia fait des crêpes et le DJ de la cité passe. 💰 **+1 800 €**. Le plus beau moment de la saison.
+- **Si A →** 💰 **+1 500 €**. Sofiane est dégoûté : *« C'était notre truc. »*
+- **Si B →** Tout le quartier vient, Nadia fait des crêpes et le DJ de la cité passe. 💰 **+1 500 €**. Le plus beau moment de la saison.
 
 ### Épisode 27 · J-4 · « Après »
 `J-4 · 14 500 € / 15 000 €`
@@ -255,6 +255,8 @@
 - **Si A →** Sofiane part en claquant la porte. Mais une heure plus tard, il revient avec une vidéo de la caméra du voisin : **Bruno**, cagoulé, qui sort de l'immeuble. *(Sofiane le sauve quand même)*
 - **Si B →** Sofiane : *« Merci. Et je sais qui c'est. »* Il montre la vidéo du voisin : Bruno.
 - 🔁 **Les deux chemins se rejoignent : Vidal veut que Yanis ne puisse pas payer, pour le tenir encore plus.**
+
+> J-2 : jour de hors-série (« Vidal au téléphone »).
 
 ### Épisode 29 · J-1 · « Si demain… »
 `J-1 · 6 000 € / 15 000 €`
