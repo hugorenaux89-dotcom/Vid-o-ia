@@ -387,8 +387,9 @@ def build(E, version, prev_choice, label):
     sf = sfx_files()
     drone = "0.08*sin(2*PI*55*t)*(0.6+0.4*sin(2*PI*0.2*t))+0.05*sin(2*PI*82.4*t)+0.03*sin(2*PI*110*t)*(0.5+0.5*sin(2*PI*0.13*t))+0.25*sin(2*PI*1700*t)*exp(-70*mod(t,1))"
     ins = ["-i", raw, "-f", "lavfi", "-i", f"aevalsrc='{drone}':s=44100:d={t:.2f}"]
-    fc = f"[1:a]lowpass=f=2500,afade=t=in:d=1.5,afade=t=out:st={max(0, t - 2):.2f}:d=2,volume=0.45,aformat=channel_layouts=stereo[m]"
-    mix = ["[0:a]", "[m]"]
+    fc = f"[1:a]lowpass=f=2500,afade=t=in:d=1.5,afade=t=out:st={max(0, t - 2):.2f}:d=2,volume=0.6,aformat=channel_layouts=stereo[m]"
+    fc += ";[0:a]asplit=2[vx][vs];[m][vs]sidechaincompress=threshold=0.015:ratio=8:attack=20:release=400:makeup=1[md]"
+    mix = ["[vx]", "[md]"]
     for i, (k, at) in enumerate(events):
         ins += ["-i", sf[k]]; ms = int(at * 1000)
         fc += f";[{i + 2}:a]adelay={ms}|{ms}[e{i}]"; mix.append(f"[e{i}]")
