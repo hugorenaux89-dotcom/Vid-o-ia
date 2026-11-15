@@ -16,7 +16,7 @@ Format des fichiers : `NN_plan_PERSONNAGE.mp3`. Les fichiers `ouverture-A` et `o
 | Bernard | Gérard | très lent |
 | Inès | Denise | rapide et aigu |
 
-Ce sont des voix de synthèse : à l'oreille, on entend que c'est de l'IA. Pour plus de réalisme, tu peux réenregistrer les répliques avec ta voix ou celle d'amis en suivant les mêmes textes.
+Version 2 : émotions par réplique (chuchoté, cri, larmes, téléphone…), phrases générées une par une avec de vraies pauses, traitement « micro » (compression, acoustique de pièce, léger bruit de fond). Pour un réalisme total, tu peux réenregistrer les répliques avec ta voix ou celle d'amis en suivant les mêmes textes.
 
 ## Épisode 1
 
