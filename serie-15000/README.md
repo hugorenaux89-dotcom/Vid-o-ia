@@ -144,4 +144,10 @@ Plan [face caméra / épaule / large]. Durée [X] secondes.
 | [`scripts/ep21-25.md`](./scripts/ep21-25.md) | Épisodes 21 à 25 |
 | [`scripts/ep26-30.md`](./scripts/ep26-30.md) | Épisodes 26 à 30 + bonus |
 
+| [`calendrier.md`](./calendrier.md) | Planning de publication : 2 vidéos par jour du 15 au 30 novembre 2026 |
+| [`visuels/`](./visuels/) | Photos de profil TikTok, fiche de Yanis, une image par épisode (format 1080×1920) |
+| [`voix/`](./voix/) | Les répliques de tous les épisodes en MP3, une voix par personnage (voir `voix/INDEX.md`) |
+
 Chaque épisode dure **entre 1 min 14 et 1 min 30**.
+
+**Langage :** un argot léger de banlieue (« frérot », « balles », « j'suis »), sans excès. C'est réaliste, tout le monde le comprend, et ça reste regardable par un public large.
