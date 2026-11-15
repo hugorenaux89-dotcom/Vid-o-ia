@@ -1,0 +1,584 @@
+[
+ {
+  "fichier": "ep02/01_P1_YANIS.mp3",
+  "emotion": "triste",
+  "texte_envoye": "Avec mon salaire, il me faudrait neuf mois. J'ai vingt-neuf jours.",
+  "controle": 0.9
+ },
+ {
+  "fichier": "ep02/02_P2_SOFIANE.mp3",
+  "emotion": "crie",
+  "texte_envoye": "[shouting] Frérot ! P.S.G.-Marseille, cote à trois. Tu mets cinq cents, t'en gagnes mille cinq cents. C'est sûr !",
+  "controle": 0.98
+ },
+ {
+  "fichier": "ep02/03_P3_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "Je mise ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep03/01_P1_NADIA.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "Tu manges pas. Qu'est-ce que t'as ?",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep03/02_P1_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Rien, maman. La fatigue.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep03/03_P2_NADIA.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Si t'as un problème, c'est maintenant qu'il faut le dire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep03/04_P3_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "Je lui dis la vérité ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep04/01_P1_YANIS.mp3",
+  "emotion": "triste",
+  "texte_envoye": "La P.S. cinq, les Jordan… Et la montre de mon père.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep04/02_P2_YANIS.mp3",
+  "emotion": "choque",
+  "texte_envoye": "Mille huit cents ? C'est le seul truc qui me reste de lui.",
+  "controle": 0.8
+ },
+ {
+  "fichier": "ep04/03_P3_YANIS.mp3",
+  "emotion": "triste",
+  "texte_envoye": "Je la vends ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep05/01_P1_LINA.mp3",
+  "emotion": "sourire",
+  "texte_envoye": "Un croissant offert. T'as une tête de mort-vivant. Raconte.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep05/02_P2_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "C'est pour elle que je suis parti cette nuit-là. Et elle le sait pas.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep05/03_P3_YANIS.mp3",
+  "emotion": "tendre",
+  "texte_envoye": "Je lui dis ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep06/01_P1_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "Il manque vingt-deux minutes. Pile quand j'étais pas là.",
+  "controle": 0.89
+ },
+ {
+  "fichier": "ep06/02_P3_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "J'en parle à Gérard ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep07/01_P2_SOFIANE.mp3",
+  "emotion": "sourire",
+  "texte_envoye": "Oublie les livraisons. \"Yanis Lavage\" ! On lave des voitures le samedi.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep07/02_P2_YANIS.mp3",
+  "emotion": "mefiant",
+  "texte_envoye": "Et si personne vient ?",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep07/03_P2_SOFIANE.mp3",
+  "emotion": "sourire",
+  "texte_envoye": "On aura des voitures propres.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep07/04_P3_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "Livreur ou lavage ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep08/01_R_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Résumé. Une Porsche disparue, quinze mille euros, des caméras effacées. Et quelqu'un me ment.",
+  "controle": 0.86
+ },
+ {
+  "fichier": "ep08/02_P1_VIDAL.mp3",
+  "emotion": "menace",
+  "texte_envoye": "[menacing] Elles marchent bien, vos caméras ?",
+  "controle": 0.81
+ },
+ {
+  "fichier": "ep08/03_P2_YANIS.mp3",
+  "emotion": "mefiant",
+  "texte_envoye": "Il sourit à une caméra qui a rien filmé. Comme s'il le savait.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep08/04_P3_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Je l'interroge ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep09/01_P1_INES.mp3",
+  "emotion": "sourire",
+  "texte_envoye": "Tu me laves la voiture gratuitement, et je te fais une story !",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep09/02_P2_SOFIANE.mp3",
+  "emotion": "excite",
+  "texte_envoye": "Accepte, frère ! Pense au business !",
+  "controle": 0.98
+ },
+ {
+  "fichier": "ep09/03_P3_YANIS.mp3",
+  "emotion": "mefiant",
+  "texte_envoye": "Gratuit ou payant ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep10/01_P1_SOFIANE.mp3",
+  "emotion": "excite",
+  "texte_envoye": "Un gars paie deux mille euros pour transporter un carton. Sans poser de questions.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep10/02_P2_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Quand on doit pas poser de questions, c'est que la réponse est grave.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep10/03_P3_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "J'y vais ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep11/01_P1_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Cette rayure, c'est la bague de Vidal. C'est sa Porsche. Quelqu'un la découpe en morceaux.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep11/02_P2_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "La police, ou je remonte la piste moi-même ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep12/01_P2_KARIM.mp3",
+  "emotion": "calme",
+  "texte_envoye": "Je te prête cinq mille. Tu m'en rends six mille cinq dans un mois.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep12/02_P2_YANIS.mp3",
+  "emotion": "mefiant",
+  "texte_envoye": "Et si je rends pas ?",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep12/03_P2_KARIM.mp3",
+  "emotion": "calme",
+  "texte_envoye": "Tout le monde rend.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep12/04_P3_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "J'accepte ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep13/01_P1_LINA.mp3",
+  "emotion": "sourire",
+  "texte_envoye": "On raconte ton histoire. Les gens du quartier t'adorent.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep13/02_P1_YANIS.mp3",
+  "emotion": "mefiant",
+  "texte_envoye": "J'ai jamais rien demandé à personne.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep13/03_P2_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "Je publie ? Vote en commentaire.",
+  "controle": 0.95
+ },
+ {
+  "fichier": "ep14/01_P1_NADIA.mp3",
+  "emotion": "colere",
+  "texte_envoye": "[angry] Vidal. Pourquoi tu m'as rien dit ? Je vais le voir.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep14/02_P1_YANIS.mp3",
+  "emotion": "choque",
+  "texte_envoye": "Maman, tu sais pas qui c'est !",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep14/03_P1_NADIA.mp3",
+  "emotion": "colere",
+  "texte_envoye": "[angry] Si. Je sais très bien qui c'est.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep14/04_P2_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "Je la laisse partir ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep15/01_P1_YANIS.mp3",
+  "emotion": "triste",
+  "texte_envoye": "J'ai jamais osé l'ouvrir.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep15/02_P3_YANIS.mp3",
+  "emotion": "larmes",
+  "texte_envoye": "[crying] Je l'ouvre ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep16/01_R_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Résumé. La Porsche est découpée, Vidal a jamais porté plainte, et mon père travaillait pour lui.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep16/02_P1_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Même plan. Et moi, je suis le coupable parfait.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep16/03_P2_VIDAL.mp3",
+  "emotion": "menace",
+  "texte_envoye": "[menacing] Le trentième jour, à minuit, au garage. En liquide. Viens seul.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep16/04_P3_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Je paie, ou je l'enregistre ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep17/01_P1_YANIS.mp3",
+  "emotion": "colere",
+  "texte_envoye": "[angry] Qui d'autre a le code, Gérard ?",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep17/02_P1_GERARD.mp3",
+  "emotion": "triste",
+  "texte_envoye": "Bruno. Le chauffeur de Vidal. Il est passé ce soir-là. Je lui ai donné le code.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep17/03_P2_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Je le lâche, ou je le force à m'aider ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep18/01_P1_SOFIANE.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "Il est énorme. Je vais lui dire que j'achète des pièces de Porsche.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep18/02_P1_YANIS.mp3",
+  "emotion": "excite",
+  "texte_envoye": "T'y connais rien en Porsche !",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep18/03_P2_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "On l'aborde, ou on le suit ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep19/01_P1_YANIS.mp3",
+  "emotion": "chuchote",
+  "texte_envoye": "[whispers] Si on se fait choper, c'est fini.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep19/02_P2_SOFIANE.mp3",
+  "emotion": "excite",
+  "texte_envoye": "Personne l'a volée. Elle est juste là.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep19/03_P3_YANIS.mp3",
+  "emotion": "chuchote",
+  "texte_envoye": "[whispers] Une voiture arrive. On part, ou on regarde ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep20/01_P1_YANIS.mp3",
+  "emotion": "panique",
+  "texte_envoye": "[panicked] Ils savent où j'habite.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep20/02_P2_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "J'arrête tout, ou je continue ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep21/01_P1_BERNARD.mp3",
+  "emotion": "tendre",
+  "texte_envoye": "C'était la voiture de ma femme. Fais-la rouler pour notre anniversaire, dans dix jours. Je te donne deux mille euros.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep21/02_P2_BERNARD.mp3",
+  "emotion": "sourire",
+  "texte_envoye": "Ton père aurait dit oui. Tout le monde connaissait Malik.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep21/03_P3_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "La deux-chevaux, ou l'enquête ? Vote en commentaire.",
+  "controle": 0.87
+ },
+ {
+  "fichier": "ep22/01_P1_LINA.mp3",
+  "emotion": "choque",
+  "texte_envoye": "Il touche cent vingt mille de l'assurance. Et il te prend quinze mille en plus.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep22/02_P1_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Et c'est moi qui passe pour le voleur.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep22/03_P2_YANIS.mp3",
+  "emotion": "colere",
+  "texte_envoye": "[angry] Je préviens l'assurance, ou je garde tout pour le jour J ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep23/01_P1_YANIS.mp3",
+  "emotion": "chuchote",
+  "texte_envoye": "[whispers] Non. Pas lui.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep23/02_P2_SOFIANE.mp3",
+  "emotion": "sourire",
+  "texte_envoye": "Yo frérot ! J'ai ramené des tacos !",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep23/03_P3_YANIS.mp3",
+  "emotion": "colere",
+  "texte_envoye": "[angry] Je lui balance, ou j'attends ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep24/01_R_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Résumé. Vidal a caché sa propre voiture. On m'a menacé. Et mon meilleur pote est monté chez l'ennemi.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep24/02_P1_GERARD.mp3",
+  "emotion": "triste",
+  "texte_envoye": "Vidal voulait savoir qui était de garde ce soir-là. J'ai dit : Yanis. Il t'a choisi, parce que t'es le fils de Malik.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep24/03_P2_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Gérard témoigne, ou je le protège ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep25/01_P1_LINA.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Plan un : on paie, c'est fini.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep25/02_P1_SOFIANE.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Plan deux : on le piège avec des micros !",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep25/03_P2_NADIA.mp3",
+  "emotion": "calme",
+  "texte_envoye": "Les hommes orgueilleux finissent toujours par se vanter.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep25/04_P2_SOFIANE.mp3",
+  "emotion": "excite",
+  "texte_envoye": "Madame, vous êtes flippante.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep25/05_P3_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "On paie, ou on le piège ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep26/01_P1_BERNARD.mp3",
+  "emotion": "larmes",
+  "texte_envoye": "[crying] Elle roule ! Ma Jeannine serait tellement contente.",
+  "controle": 0.99
+ },
+ {
+  "fichier": "ep26/02_P2_SOFIANE.mp3",
+  "emotion": "triste",
+  "texte_envoye": "Un garage veut racheter Yanis Lavage. Mille cinq cents.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep26/03_P2_LINA.mp3",
+  "emotion": "excite",
+  "texte_envoye": "Ou on fait une grande fête solidaire, samedi !",
+  "controle": 0.98
+ },
+ {
+  "fichier": "ep26/04_P3_YANIS.mp3",
+  "emotion": "inquiet",
+  "texte_envoye": "Vendre, ou faire la fête ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep27/01_P1_LINA.mp3",
+  "emotion": "tendre",
+  "texte_envoye": "Ce soir-là, t'es parti vingt minutes pour me voir. Tu regrettes ?",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep27/02_P1_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Non. Sans toi, j'aurais jamais su la vérité sur mon père.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep27/03_P2_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Maintenant, ou après minuit ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep28/01_P1_YANIS.mp3",
+  "emotion": "choque",
+  "texte_envoye": "Non, non, non… Il manque huit mille cinq cents !",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep28/02_P2_SOFIANE.mp3",
+  "emotion": "choque",
+  "texte_envoye": "Attends… Tu crois que c'est moi ?",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep28/03_P3_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "C'est lui ou pas ? Vote en commentaire.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep29/01_P1_YANIS.mp3",
+  "emotion": "calme",
+  "texte_envoye": "Si demain ça tourne mal, cette vidéo est pour vous. La Porsche est à Saint-Ouen. Vidal va toucher cent vingt mille euros. Il a fait pareil à mon père. Toutes les preuves sont sur trois clés U.S.B..",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep29/02_P2_YANIS.mp3",
+  "emotion": "sourire",
+  "texte_envoye": "Merci de voter depuis le premier jour. Choisissez la dernière étape.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep30/01_P1_VIDAL.mp3",
+  "emotion": "menace",
+  "texte_envoye": "[menacing] Ponctuel. Comme ton père.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep30/02_P1_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Y a six mille. Le reste, ton chauffeur l'a volé chez moi.",
+  "controle": 0.97
+ },
+ {
+  "fichier": "ep30/03_P2_VIDAL.mp3",
+  "emotion": "menace",
+  "texte_envoye": "[menacing] L'assurance me paie, toi tu me paies. Et personne ne croira jamais le fils d'un voleur.",
+  "controle": 0.98
+ },
+ {
+  "fichier": "ep30/04_P2_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Donc t'as caché ta propre voiture ?",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep30/05_P2_VIDAL.mp3",
+  "emotion": "menace",
+  "texte_envoye": "[menacing] Et à qui veux-tu le raconter ?",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep30/06_P3_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "À eux.",
+  "controle": 0.55
+ },
+ {
+  "fichier": "ep30/07_P3_LINA.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "C'est en direct.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep30/08_P4_VIDAL.mp3",
+  "emotion": "chuchote",
+  "texte_envoye": "[whispers] Laisse-moi partir. Trente mille euros. Ce soir.",
+  "controle": 0.8
+ },
+ {
+  "fichier": "ep30/09_P5_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Dernier vote. Tu décides de la saison deux.",
+  "controle": 0.94
+ }
+]
