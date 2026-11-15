@@ -1,0 +1,38 @@
+[
+ {
+  "fichier": "ep01/01_P1_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Le mariage de mon cousin Bilal… dans trente jours. Easy.",
+  "controle": 0.92
+ },
+ {
+  "fichier": "ep01/02_P2_YANIS.mp3",
+  "emotion": "crie",
+  "texte_envoye": "[shouting] Attends… Sarah sera au mariage. Avec LUI ?!",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep01/03_P3_YANIS.mp3",
+  "emotion": "triste",
+  "texte_envoye": "Des boutons. Un bide. Un sweat qui sent le cambouis. Elle m'a quitté pour un mec comme ça… et moi je suis comme ÇA.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep01/04_P4_YANIS.mp3",
+  "emotion": "determine",
+  "texte_envoye": "Trente jours. Un glow-up par jour. Le jour du mariage, elle va même pas me reconnaître.",
+  "controle": 0.94
+ },
+ {
+  "fichier": "ep01/05_P5_YANIS.mp3",
+  "emotion": "panique",
+  "texte_envoye": "[panicked] Quatre… cinq… C'est bon, je suis mort.",
+  "controle": 1.0
+ },
+ {
+  "fichier": "ep01/06_P7_YANIS.mp3",
+  "emotion": "neutre",
+  "texte_envoye": "Je demande à Sofiane d'être mon coach ? Vote en commentaire.",
+  "controle": 1.0
+ }
+]
