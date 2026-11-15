@@ -53,7 +53,7 @@ function chair(x, y) {
 }
 
 const R = {
-  chambreNuit: () => `${shell(['#28305e', '#1d2347'], '#1a1f40', '#7b5638', '#4e3420')}
+  chambreNuit: (o = {}) => `${shell(['#28305e', '#1d2347'], '#1a1f40', '#7b5638', '#4e3420')}
     ${[...Array(15)].map((_, i) => `<rect x="${130 + i * 56}" y="90" width="18" height="1130" fill="#fff" opacity=".035"/>`).join('')}
     <rect x="120" y="90" width="840" height="18" fill="#ff4fd8" opacity=".85"/><rect x="120" y="90" width="840" height="60" fill="#ff4fd8" opacity=".15"/>
     <!-- fenêtre -->
@@ -69,7 +69,7 @@ const R = {
       <circle cx="240" cy="402" r="24" fill="#222" ${O(5)}/><circle cx="410" cy="402" r="24" fill="#222" ${O(5)}/><path d="M300 336 L330 362 L420 360" fill="none" stroke="#9fd4ff" stroke-width="10"/>
       <text x="320" y="290" font-family="Lilita One" font-size="52" text-anchor="middle" fill="#fff">GTR</text></g>
     <rect x="160" y="490" width="160" height="200" fill="#1f3b8c" ${O(6)}/><rect x="226" y="490" width="28" height="200" fill="#e5483f"/><circle cx="240" cy="585" r="46" fill="#1f3b8c" ${O(5)}/><text x="240" y="600" font-family="Lilita One" font-size="42" text-anchor="middle" fill="#fff">PSG</text>
-    ${calendar(360, 490)}
+    ${calendar(360, 490, o.day || 30)}
     <!-- étagère -->
     <rect x="160" y="760" width="220" height="16" fill="#6e4528" ${O(4)}/><rect x="180" y="700" width="36" height="60" fill="#ffd23a" ${O(4)}/><rect x="226" y="712" width="30" height="48" fill="#4fe1ff" ${O(4)}/><path d="M290 760 L310 690 L330 760 Z" fill="#e5483f" ${O(4)}/>
     ${desk(650, 1010, true)}${chair(820, 1250)}
@@ -87,11 +87,11 @@ const R = {
     <rect width="1080" height="1920" fill="#040818" opacity=".16"/><rect width="1080" height="1920" fill="url(#gm)"/><rect width="1080" height="1920" fill="url(#gw)"/>
     <rect width="1080" height="1920" fill="#ff4fd8" opacity=".04"/>`,
 
-  miroir: () => `${shell(['#28305e', '#1d2347'], '#1a1f40', '#7b5638', '#4e3420')}
+  miroir: (o = {}) => `${shell(['#28305e', '#1d2347'], '#1a1f40', '#7b5638', '#4e3420')}
     ${[...Array(15)].map((_, i) => `<rect x="${130 + i * 56}" y="90" width="18" height="1130" fill="#fff" opacity=".035"/>`).join('')}
     <rect x="120" y="90" width="840" height="18" fill="#ff4fd8" opacity=".85"/>
     <rect x="170" y="300" width="160" height="200" fill="#1f3b8c" ${O(6)}/><text x="250" y="420" font-family="Lilita One" font-size="44" text-anchor="middle" fill="#fff">PSG</text>
-    ${calendar(170, 560)}
+    ${calendar(170, 560, o.day || 30)}
     <defs>${glow('gm2', 760, 900, 520, '#bfe4ff', 0.25)}</defs>
     <rect width="1080" height="1920" fill="#040818" opacity=".25"/><rect width="1080" height="1920" fill="url(#gm2)"/>`,
 
@@ -110,6 +110,17 @@ const R = {
     <rect x="140" y="720" width="22" height="160" fill="#888"/><path d="M140 720 L120 720 L120 880" fill="none" ${O(4)}/><path d="M120 730 L60 730 L60 880 L120 880" fill="#ff8fb3" ${O(5)}/>
     <ellipse cx="300" cy="1560" rx="170" ry="50" fill="#5bbf4a" opacity=".8" ${O(4)}/>
     <defs>${glow('gb', 540, 300, 900, '#ffffff', 0.35)}</defs><rect width="1080" height="1920" fill="url(#gb)"/>`,
+  parc: () => `<defs>${lg('sky', '#ffb36b', '#ffe3a8')}${lg('gr', '#7cc35a', '#4f9a3a')}</defs>
+    <rect width="1080" height="1920" fill="url(#sky)"/><circle cx="780" cy="560" r="120" fill="#fff3b0"/><circle cx="780" cy="560" r="200" fill="#fff3b0" opacity=".3"/>
+    ${[0, 1, 2, 3, 4, 5].map(i => `<rect x="${i * 190 - 20}" y="${720 - (i % 3) * 90}" width="150" height="${400 + (i % 3) * 90}" fill="#c9a0b8" opacity=".55"/>`).join('')}
+    <path d="M0 1000 Q270 900 540 980 Q800 1050 1080 940 L1080 1300 L0 1300 Z" fill="#6aa84f"/>
+    <rect x="0" y="1100" width="1080" height="820" fill="url(#gr)"/>
+    <path d="M0 1420 L1080 1420 L1080 1700 L0 1700 Z" fill="#d9b98a"/><path d="M0 1420 L1080 1420" stroke="#b89868" stroke-width="8"/><path d="M0 1700 L1080 1700" stroke="#b89868" stroke-width="8"/>`,
+  rue: () => `<defs>${lg('sky2', '#ffd09a', '#ffefcf')}</defs><rect width="1080" height="1920" fill="url(#sky2)"/>
+    <rect x="40" y="200" width="1000" height="1250" fill="#e6c9a8" ${O(7)}/>${[0, 1, 2].map(i => [0, 1, 2, 3].map(j => `<rect x="${110 + i * 320}" y="${260 + j * 230}" width="180" height="160" fill="#9fd4ff" ${O(5)}/><path d="M${200 + i * 320} ${260 + j * 230} L${200 + i * 320} ${420 + j * 230}" ${O(4)}/>`).join('')).join('')}
+    <rect x="420" y="1120" width="240" height="330" fill="#6e4528" ${O(7)}/><rect x="400" y="1090" width="280" height="40" fill="#555" ${O(5)}/><circle cx="625" cy="1290" r="10" fill="#ffd23a"/><text x="540" y="1080" font-family="Lilita One" font-size="40" text-anchor="middle" fill="#6e4528">BÂT. B</text>
+    <rect x="0" y="1450" width="1080" height="470" fill="#b9b2aa"/>${[...Array(8)].map((_, i) => `<path d="M${i * 150} 1450 L${i * 150 - 120} 1920" stroke="#9a948c" stroke-width="5"/>`).join('')}<path d="M0 1450 L1080 1450" stroke="#7a746c" stroke-width="10"/>
+    <defs>${glow('gr2', 540, 300, 1000, '#fff', 0.25)}</defs><rect width="1080" height="1920" fill="url(#gr2)"/>`,
   salleMuscu: () => `${shell(['#4a505c', '#363b45'], '#2f343e', '#2a2c33', '#141519', false)}
     ${[...Array(9)].map((_, i) => `<path d="M${120 + i * 105} 1250 L${-300 + i * 210} 1920" stroke="#fff" stroke-opacity=".05" stroke-width="3"/>`).join('')}
     <rect x="150" y="280" width="780" height="520" fill="#9fb4c8" opacity=".25" ${O(6)}/><path d="M410 280 L410 800 M670 280 L670 800" stroke="#000" stroke-opacity=".3" stroke-width="6"/>

@@ -184,11 +184,17 @@ def layer(st, big=None):
         fb = L(104)
         while d.textlength(big.upper(), font=fb) > 1000 and fb.size > 60: fb = L(fb.size - 8)
         d.text((W / 2 + 5, 1597), big.upper(), font=fb, fill="#000", anchor="mm", stroke_width=13, stroke_fill="#000")
-        d.text((W / 2, 1590), big.upper(), font=fb, fill="#ffe14a", anchor="mm", stroke_width=13, stroke_fill="#111")
+        keys = {re.sub(r"[^\wÀ-ÿ']", "", w_).upper() for w_ in re.sub(r"[*~]", " ", st.get("head") or "").split()} - SMALL
+        ws = big.upper().split(); x = W / 2 - d.textlength(big.upper(), font=fb) / 2
+        for w_ in ws:
+            hot = re.sub(r"[^\wÀ-ÿ']", "", w_) in keys or re.search(r"\d", w_)
+            d.text((x, 1590), w_, font=fb, fill="#ff4d4d" if hot else "#ffe14a", anchor="lm", stroke_width=13, stroke_fill="#111")
+            x += d.textlength(w_ + " ", font=fb)
     # bandeau du jour
     band = st.get("band", "")
     if band:
         fb2 = L(60)
+        while d.textlength(band.upper(), font=fb2) > W - 200: fb2 = L(fb2.size - 2)
         rr(d, (70, 1712, W - 70, 1832), 34, (16, 16, 22, 240), "#f2c230", 7)
         d.text((W / 2, 1772), band.upper(), font=fb2, fill="white", anchor="mm")
     return im
@@ -256,7 +262,7 @@ def render_seg(s, epn):
 def sfx_time(s):
     b = timing(s)["starts"]; k = s.get("kind")
     g = lambda i, d=0.35: (b[i] if i < len(b) else b[-1]) + 0.2
-    return {"pushup": (b[6] + 0.5) if len(b) > 6 else 3, "throw": 1.9, "armsUp": g(1) + 0.3, "phone": g(1), "score": g(2), "invite": 0.12, "hook": 0.05, "armRaise": 0.05, "sore": g(1), "sofiane": 0.3, "nose": g(1) - 0.2}.get(k, 0.35)
+    return {"pushup": (b[6] + 0.5) if len(b) > 6 else 3, "throw": 1.9, "armsUp": g(1) + 0.3, "phone": g(1), "score": g(2), "invite": 0.12, "hook": 0.05, "armRaise": 0.05, "sore": g(1), "sofiane": 0.3, "nose": g(1) - 0.2, "runPass": (b[1] if len(b) > 2 else 1.3), "box": g(3) - 0.2, "croissant": g(3) + 0.6}.get(k, 0.35)
 
 SFX = {"thud": "anoisesrc=color=brown:amplitude=0.9:d=0.35,lowpass=f=180,afade=t=out:st=0.05:d=0.3,volume=3",
        "boing": "aevalsrc='0.6*sin(2*PI*(90+60*exp(-6*t))*t)*exp(-3*t)':d=0.7,lowpass=f=600",
@@ -298,7 +304,7 @@ if __name__ == "__main__":
             for b in s.get("story", []): busts.add((b, "sourire"))
             key = seg_key(s)
             if os.path.exists(os.path.join(SEG, key + ".mp4")): continue
-            jobs.append({"kind": s["kind"], "D": seg_dur(s), "beats": timing(s)["starts"], "expr": s["expr"], "yid": s["yanis"] or "YANIS_A", "out": os.path.join(SEG, key + "_f"), "fps": FPS})
+            jobs.append({"day": 31 - E["n"], "kind": s["kind"], "D": seg_dur(s), "beats": timing(s)["starts"], "expr": s["expr"], "yid": s["yanis"] or "YANIS_A", "out": os.path.join(SEG, key + "_f"), "fps": FPS})
     req = os.path.join(WORK, "req.json"); json.dump({"scenes": [], "persons": [], "busts": sorted(busts)}, open(req, "w"))
     subprocess.run(["node", os.path.join(HERE, "viz", "assets5.js"), req, ASSETS], check=True)
     jf = os.path.join(WORK, "jobs.json"); json.dump(jobs, open(jf, "w"))

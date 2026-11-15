@@ -201,82 +201,91 @@
 ---
 
 ## Épisode 3 · J-28 · « Les 3 kilomètres »
-⏱️ **1:30** · 📊 `JOUR 3 · VOUS AVEZ CHOISI BASKETS`
+⏱️ **1:08** · 📊 `JOUR 3 · VOUS AVEZ CHOISI BASKETS`
 
-**P1 · Le résultat**
-🎥 `{SOFIANE} presenting a brand-new pair of running shoes in a box to {YANIS_A} in {CHAMBRE}.`
+**P1 · L'accroche**
+🎥 `{YANIS_A} jogging in {PARC}, {KENZO} running past him very fast with a thumbs-up, Yanis shocked.`
+🎬 `runPass`
+🎭 `choque · idle`
+🔠 `IL COURT AVEC *LE COPAIN DE SON EX*`
+🔊 `boom`
+🎙️ **VOIX OFF** : « Il court à côté du nouveau copain de son ex… et l'autre n'a aucune idée de qui il est ! »
+
+**P2 · Le résultat**
+🎥 `{SOFIANE} presenting a shoebox with brand-new running shoes to {YANIS_A} in {CHAMBRE}, like a TV host.`
+🎬 `box`
 🎭 `sourire · point`
 🔠 `VOUS AVEZ CHOISI *BASKETS*`
-🎙️ **VOIX OFF** : « Jour trois. Vous avez choisi : baskets. Et Sofiane arrive avec une boîte, comme un présentateur télé. Dedans : de vraies chaussures de running. »
+🔊 `boing`
+🎙️ **VOIX OFF** : « Retour au matin. Jour trois, vous avez choisi : BASKETS. Sofiane débarque avec une boîte, comme un présentateur télé. Dedans : de vraies chaussures de running ! »
+📝 `✨ GLOW-UP DU JOUR : VRAIES BASKETS DE RUNNING`
 
-**P2 · Adieu**
-🎥 `{YANIS_A} throwing his old torn sneakers and odd socks into the trash, proud.`
-🎭 `determine · idle`
-🔠 `ADIEU *LES TROUS*`
-🎙️ **VOIX OFF** : « Ses vieilles baskets trouées partent à la poubelle, avec ses chaussettes dépareillées. Une rouge, une verte. Il les portait depuis le lycée. »
-📝 `✨ GLOW-UP DU JOUR : VRAIES CHAUSSURES DE RUNNING`
-
-**P3 · Le parc**
-🎥 `{YANIS_A} at the start of the running path in {PARC} at sunrise, stretching awkwardly, joggers around.`
+**P3 · Adieu les trous**
+🎥 `{YANIS_A} throwing his old torn sneakers into the trash in {CHAMBRE}.`
+🎬 `throwShoes`
 🎭 `determine · fist`
-🔠 `OBJECTIF : *3 KM*`
-🎙️ **VOIX OFF** : « Sept heures du matin, au parc. Objectif : trois kilomètres à dix kilomètres-heure. Dix-huit minutes. Sur le papier, c'est facile. Sur le papier. »
+🔠 `ADIEU *LES TROUS*`
+🎙️ **VOIX OFF** : « Les vieilles baskets trouées ? Direct à la poubelle. Avec les chaussettes dépareillées. Une rouge, une verte. Depuis le lycée. »
+
+**P4 · Le parc**
+🎥 `{YANIS_A} stretching awkwardly at the start of the path in {PARC} at sunrise, unable to touch his toes.`
+🎬 `stretch`
+🎭 `determine · idle`
+🔠 `OBJECTIF : ~3 KM~`
+🎙️ **VOIX OFF** : « Sept heures, au parc. Objectif : trois kilomètres à dix kilomètres-heure. Sur le papier, c'est facile. Sur le papier… »
 📝 `🏃 COURSE : 3 KM À 10 KM/H`
 
-**P4 · Le premier kilomètre**
-🎥 `{YANIS_A} running in {PARC}, red face, tongue out, glasses sliding down, holding his side.`
+**P5 · Le point de côté**
+🎥 `{YANIS_A} running in {PARC}, red face, glasses sliding, holding his side, a duck watching him.`
+🎬 `run`
 🎭 `panique · panic`
 🔠 `LE *POINT DE CÔTÉ*`
-🎙️ **VOIX OFF** : « Premier kilomètre : ses lunettes glissent, son ventre rebondit, et un point de côté lui transperce le flanc. Un canard le regarde passer avec pitié. »
+🎙️ **VOIX OFF** : « Premier kilomètre : les lunettes glissent, le ventre rebondit, et un point de côté le transperce. Un canard le regarde passer… avec pitié. »
 
-**P5 · La rencontre**
-🎥 `{KENZO} running past {YANIS_A} very fast in {PARC}, giving a thumbs-up, Yanis shocked.`
+**P6 · C'est lui**
+🎥 `{KENZO} running past {YANIS_A} very fast in {PARC}, thumbs-up, Yanis shocked.`
+🎬 `runPass`
 🎭 `choque · idle`
 🔠 `C'EST *LUI*`
-🎙️ **VOIX OFF** : « Et soudain, quelqu'un le double à toute vitesse en levant le pouce. Allez champion ! Ce sourire parfait… Yanis le reconnaît immédiatement. C'est Kenzo. Le copain de Sarah. »
+🔊 `scratch`
+🎙️ **VOIX OFF** : « Et soudain, quelqu'un le double à toute vitesse. Allez champion ! Ce sourire… Yanis le reconnaît. C'est Kenzo. Le copain de Sarah. »
 
-**P6 · Le secret**
-🎥 `{YANIS_A} putting his hood up while running, mysterious.`
+**P7 · Le secret**
+🎥 `{YANIS_A} running in {PARC}, suspicious look, keeping the secret.`
+🎬 `run`
 🎭 `mefiant · idle`
 🔠 `IL NE SAIT *PAS QUI IL EST*`
-🎙️ **VOIX OFF** : « Kenzo ne sait pas qui il est. Il vient de doubler l'ex de sa copine sans le savoir. Yanis décide de garder le secret. Pour l'instant. »
+🎙️ **VOIX OFF** : « Kenzo ne sait pas qui il est. Yanis décide de garder le secret. Pour l'instant… »
 
-**P7 · L'arrivée**
-🎥 `{YANIS_A} collapsing on a bench in {PARC}, smartwatch showing 18:04, exhausted but proud.`
+**P8 · L'arrivée**
+🎥 `{YANIS_A} collapsing on a bench in {PARC}, showing his watch 18:00, exhausted but proud.`
+🎬 `bench`
 🎭 `sourire · tired`
 🔠 `3 KM EN *18 MINUTES*`
-🎙️ **VOIX OFF** : « Mais Yanis ne lâche pas. Trois kilomètres, dix-huit minutes et quatre secondes. Il s'effondre sur un banc, rouge comme une tomate. Mais il l'a fait. »
-📝 `✅ 3 KM EN 18:04`
+🎙️ **VOIX OFF** : « Mais il ne lâche rien. Trois kilomètres en dix-huit minutes. Il s'effondre sur un banc, rouge comme une tomate. Mais il l'a fait ! »
+📝 `✅ 3 KM EN 18 MIN`
 
-**P8 · Le miroir**
-🎥 `{YANIS_A} in {SALLE_DE_BAIN} looking at his pimples in the cracked mirror, sad.`
-🎭 `triste · point`
-🔠 `ET *CES BOUTONS*`
-🎙️ **VOIX OFF** : « Le soir, sous la douche, il se regarde dans le miroir. Les boutons sont toujours là. Rouges, nombreux, partout sur le front. »
-
-**P9 · Le frigo**
-🎥 `{YANIS_A} in {CUISINE} opening the fridge full of sodas, chips and frozen pizzas, tempted.`
-🎭 `inquiet · point`
-🔠 `LE FRIGO DE *LA TENTATION*`
-🎙️ **VOIX OFF** : « Et quand il ouvre le frigo, c'est un piège : sodas, pizzas surgelées, chips. Tout ce qu'il aime. Tout ce qui l'empêche d'avancer. »
-
-**P10 · Le retour**
-🎥 `{SOFIANE} in front of the building with a croissant in each hand, dropping one in surprise, {YANIS_A} showing his smartwatch.`
+**P9 · Le croissant**
+🎥 `{SOFIANE} in front of the building with a croissant in each hand, dropping one, picking it up and eating it; {YANIS_A} showing his watch.`
+🎬 `croissant`
 🎭 `sourire · point`
 🔠 `SOFIANE *N'Y CROIT PAS*`
-🎙️ **VOIX OFF** : « En rentrant, il croise Sofiane devant l'immeuble, un croissant dans chaque main. Sofiane lui demande s'il a vraiment couru. Yanis lui montre sa montre : trois kilomètres. Sofiane lâche un croissant de surprise. Il le ramasse, souffle dessus, et le mange quand même. »
+🔊 `boing`
+🎙️ **VOIX OFF** : « En rentrant, Sofiane l'attend avec deux croissants. Tu as vraiment couru ? Yanis montre sa montre. Sofiane lâche un croissant… le ramasse, souffle dessus, et le mange quand même. »
 
-**P11 · La soupe**
-🎥 `{NADIA} serving a vegetable soup to {YANIS_A} in {CUISINE}, Yanis looking at it suspiciously, then eating.`
-🎭 `mefiant · idle`
-🔠 `LA *SOUPE*`
-🎙️ **VOIX OFF** : « Le soir, Nadia lui sert une soupe de légumes. Yanis la regarde comme un ennemi. Mais il la finit. Puis il en reprend. Il découvre, à vingt-quatre ans, que les légumes peuvent avoir du goût. »
+**P10 · Le frigo**
+🎥 `{YANIS_A} in {CUISINE} opening the fridge full of sodas, pizzas and chips, glowing light, tempted.`
+🎬 `fridge`
+🎭 `inquiet · point`
+🔠 `LE FRIGO DE *LA TENTATION*`
+🎙️ **VOIX OFF** : « Mais le soir, piège : il ouvre le frigo. Sodas, pizzas, chips… Tout ce qu'il aime. »
 
-**P12 · Le vote**
-🎥 `{YANIS_A} between the fridge and the mirror, hesitating.`
+**P11 · Le vote**
+🎥 `{YANIS_A} in {CHAMBRE} scratching his head, worried.`
+🎬 `vote`
 🎭 `inquiet · point`
 🔠 `COMMENTE *UN MOT*`
-🎙️ **VOIX OFF** : « Alors commente un seul mot : FRIGO… ou BOUTONS. Le plus voté sera réglé au jour quatre. Et attention : Kenzo revient demain. »
+🎙️ **VOIX OFF** : « Alors, commente un seul mot : FRIGO… ou BOUTONS. Et reste abonné : demain, Kenzo lui propose de s'entraîner… ensemble. »
 📝 `🅰️ FRIGO` / `🅱️ BOUTONS`
 
 ---

@@ -40,6 +40,13 @@ function hand(p, ang, skin, kind = 'open') {
 }
 // accessoires tenus en main
 const PROPS = {
+  shoebox: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><path d="M-150 -40 L150 -40 L140 60 L-140 60 Z" fill="#ff7a1a" stroke="${K}" stroke-width="6"/><path d="M-150 -40 L-120 -110 L170 -110 L150 -40 Z" fill="#ff9a4a" stroke="${K}" stroke-width="6"/>
+    <path d="M-120 -40 Q-118 -90 -70 -94 L-10 -104 Q10 -80 40 -76 Q80 -66 80 -40 Z" fill="#fff" stroke="${K}" stroke-width="5"/><path d="M-60 -70 L20 -84" stroke="#3ec5ff" stroke-width="10"/>
+    <path d="M10 -40 Q12 -86 56 -90 L110 -100 Q126 -76 150 -72 Q170 -62 168 -40 Z" fill="#fff" stroke="${K}" stroke-width="5"/><path d="M60 -66 L130 -80" stroke="#3ec5ff" stroke-width="10"/>
+    <text x="0" y="30" font-family="Lilita One" font-size="40" text-anchor="middle" fill="#fff">RUNNING</text></g>`,
+  watch: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><rect x="-70" y="-60" width="140" height="100" rx="20" fill="#111" stroke="${K}" stroke-width="6"/><rect x="-58" y="-48" width="116" height="76" rx="10" fill="#9ff59a"/>
+    <text x="0" y="5" font-family="Lilita One" font-size="44" text-anchor="middle" fill="#0b3d10">18:00</text><text x="0" y="24" font-family="Lilita One" font-size="18" text-anchor="middle" fill="#0b3d10">3,0 KM</text></g>`,
+  croissant: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><path d="M-70 10 Q-60 -50 0 -54 Q60 -50 70 10 Q40 -6 30 20 Q0 -10 -30 20 Q-40 -6 -70 10 Z" fill="#e8a33a" stroke="${K}" stroke-width="5"/><path d="M-30 -40 L-20 10 M0 -50 L0 0 M30 -40 L20 10" stroke="#b8721a" stroke-width="5"/></g>`,
   kebab: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><path d="M-40 -150 L40 -150 L28 10 L-28 10 Z" fill="#f4e3c1" stroke="${K}" stroke-width="5"/><path d="M-36 -150 Q0 -190 36 -150 Z" fill="#c9824a" stroke="${K}" stroke-width="5"/>
     <path d="M-30 -150 q10 -16 20 0 q10 -16 20 0 q10 -16 20 0" fill="#5bbf4a" stroke="${K}" stroke-width="3"/><circle cx="-12" cy="-160" r="8" fill="#e5483f"/><path d="M-34 -60 L34 -60" stroke="#c8b48a" stroke-width="4"/></g>`,
   napkin: (x, y, r = 0) => `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(r)})"><path d="M-150 -250 L150 -260 L160 20 L-145 30 Z" fill="#fbf7ec" stroke="${K}" stroke-width="6"/>
@@ -86,11 +93,11 @@ function stand(pid, q) {
   const tw = 150 + wide + fat * 0.6;
   const hipY = 860 + bob * 0.4, lx = sx - 62 - fat * 0.3 - wide * 0.2, rx = sx + 62 + fat * 0.3 + wide * 0.2;
   const legW = 92 + fat * 0.5;
-  const leg = (x, side, [h, k] = [0, 0]) => {
-    const a = side * h, kn = P([x, hipY], a, 190), an = P(kn, side * k, 170);
+  const leg = (x, side, [h, k] = [0, 0], lift = 0) => {
+    const a = side * h, kn = P([x, hipY], a, 190 * (1 - 0.6 * lift)), an = P(kn, side * k, 170 * (1 - 0.15 * lift));
     return { svg: tube([[x, hipY], kn, an], legW, o.pants), an, ang: side * k };
   };
-  const L = leg(lx, -1, q.ll), R = leg(rx, 1, q.rl);
+  const L = leg(lx, -1, q.ll, (q.lift || [0, 0])[0]), R = leg(rx, 1, q.rl, (q.lift || [0, 0])[1]);
   const shoe = (p, side) => { const [x, y] = p; return `<g transform="translate(${f1(x + side * 12)},${f1(y + 32)})"><path d="M-62 26 Q-64 -24 -22 -28 L30 -26 Q78 -16 80 26 Z" fill="${o.shoes}" stroke="${K}" stroke-width="5" transform="scale(${side},1)"/>
     <rect x="-66" y="18" width="150" height="16" rx="8" fill="${shade(o.shoes, -0.25)}" stroke="${K}" stroke-width="4" transform="scale(${side},1)"/></g>`; };
   const legs = L.svg + R.svg + shoe(L.an, -1) + shoe(R.an, 1);

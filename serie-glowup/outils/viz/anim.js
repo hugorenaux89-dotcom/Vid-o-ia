@@ -31,6 +31,19 @@ function flies(t, t0, cx, cy) {
     return `<g transform="translate(${f1(x)},${f1(y)})"><ellipse cx="0" cy="0" rx="14" ry="10" fill="#222"/><ellipse cx="-8" cy="-12" rx="10" ry="7" fill="#dff" opacity=".8" transform="rotate(${f1(30 * S(u * 60))})"/><ellipse cx="8" cy="-12" rx="10" ry="7" fill="#dff" opacity=".8"/></g>`; }).join('');
 }
 
+
+function tree(x, h = 1) { return `<g transform="translate(${f1(x)},1150) scale(${h})"><rect x="-22" y="-60" width="44" height="260" fill="#7a4e2a" stroke="${K}" stroke-width="5"/><circle cx="0" cy="-160" r="150" fill="#3f8f3a" stroke="${K}" stroke-width="6"/><circle cx="-90" cy="-90" r="90" fill="#4fa547" stroke="${K}" stroke-width="5"/><circle cx="90" cy="-100" r="95" fill="#4fa547" stroke="${K}" stroke-width="5"/><circle cx="-40" cy="-220" r="50" fill="#6cc45f" opacity=".7"/></g>`; }
+function lamp(x) { return `<g transform="translate(${f1(x)},1420)"><rect x="-8" y="-520" width="16" height="520" fill="#333"/><path d="M-40 -520 L40 -520 L28 -560 L-28 -560 Z" fill="#444" stroke="${K}" stroke-width="4"/><circle cx="0" cy="-505" r="14" fill="#ffe9a0"/></g>`; }
+function bush(x) { return `<g transform="translate(${f1(x)},1440)"><ellipse cx="0" cy="0" rx="130" ry="70" fill="#4f9a3a" stroke="${K}" stroke-width="5"/><ellipse cx="-60" cy="-30" rx="70" ry="50" fill="#5fb04a" stroke="${K}" stroke-width="5"/><circle cx="20" cy="-20" r="10" fill="#ff6b8a"/><circle cx="60" cy="0" r="9" fill="#ffd23a"/></g>`; }
+function park(off, duck = null) {
+  const wrap = (base, per) => { const out = []; for (let k = -1; k < 4; k++) { const x = ((base - off) % per + per) % per + k * per - per; if (x > -400 && x < 1500) out.push(x); } return out; };
+  let s = wrap(200, 900).map(x => tree(x, 0.9)).join('') + wrap(650, 600).map(lamp).join('') + wrap(400, 700).map(bush).join('');
+  s += [...Array(8)].map((_, i) => { const x = ((i * 160 - off * 1.0) % 1280 + 1280) % 1280 - 100; return `<path d="M${f1(x)} 1560 l60 0" stroke="#c4a374" stroke-width="8" stroke-linecap="round"/>`; }).join('');
+  if (duck !== null) { const x = 1200 - off * 0.5 + duck; s += `<g transform="translate(${f1(x)},1820)"><ellipse cx="0" cy="40" rx="260" ry="60" fill="#5fb4e6" stroke="${K}" stroke-width="5"/><ellipse cx="0" cy="10" rx="70" ry="44" fill="#fff" stroke="${K}" stroke-width="5"/><circle cx="-60" cy="-40" r="34" fill="#fff" stroke="${K}" stroke-width="5"/><path d="M-96 -40 l-34 8 l34 8 Z" fill="#ff9a1a" stroke="${K}" stroke-width="4"/><circle cx="-70" cy="-48" r="6" fill="#111"/><path d="M-84 -66 l20 6" stroke="${K}" stroke-width="5"/></g>`; }
+  return s;
+}
+const jog = (t, f = 2.2, k = 1) => { const ph = S(t * f * Math.PI * 2); return { lift: [Math.max(0, ph) * 0.7 * k, Math.max(0, -ph) * 0.7 * k], la: [28 + 14 * ph * k, 195 + 28 * ph * k], ra: [28 - 14 * ph * k, 195 - 28 * ph * k], ll: [6, 0], rl: [6, 0], bob: -Math.abs(ph) * 22 * k, jiggle: 1 }; };
+
 const KINDS = {
   // accroche : panique, bras qui s'agitent, sautille
   hook: (t, j) => {
@@ -84,14 +97,14 @@ const KINDS = {
   throw: (t, j) => {
     const tw = (j.beats && j.beats[0] !== undefined ? 0.5 : 0.5), tt = 1.1;
     let ra, rp = null;
-    if (t < tt) { const w = ramp(t, tw, tt); ra = [40 + 110 * w, 60 + 120 * w]; rp = ['chips', 20 + 40 * w]; }
+    if (t < tt) { const w = ramp(t, tw, tt); ra = [40 + 110 * w, 60 + 120 * w]; rp = [j.prop || 'chips', 20 + 40 * w]; }
     else if (t < tt + 0.3) { const w = ramp(t, tt, tt + 0.3); ra = [150 - 60 * w, 180 - 120 * w]; }
     else { ra = [165, 178]; }
     const fist = t > tt + 0.5;
     const jump = fist ? Math.max(0, S((t - tt - 0.5) * 6)) * 20 : 0;
     const y = stand(j.yid, { expr: ex(t < tt ? 'colere' : 'determine', t), t, la: fist ? [20, 8] : [30, 40], ra, rh: fist ? 'fist' : 'open', rp, bob: breath(t), jiggle: 0.5 });
     let bag = '';
-    if (t >= tt) { const u = clamp((t - tt) / 0.8, 0, 1); const x = 640 + (950 - 640) * u, yy = 820 - 500 * S(u * Math.PI) * 0.8 + 600 * u; if (u < 1) bag = PROPS.chips(x, yy, u * 540); }
+    if (t >= tt) { const u = clamp((t - tt) / 0.8, 0, 1); const x = 640 + (950 - 640) * u, yy = 820 - 500 * S(u * Math.PI) * 0.8 + 600 * u; if (u < 1) bag = PROPS[j.prop || 'chips'](x, yy, u * 540); }
     return { scene: 'chambreNuit', act: place(y, 480, 1660 - jump, 0.9) + bag, cam: camH(t, j, 1.12, 600, 1660, 0.9, 760, [[tt + 0.8, 22]]) };
   },
   // pointe la caméra
@@ -195,6 +208,73 @@ const KINDS = {
     const y = stand(j.yid, { expr: ex('inquiet', t), t, la: [-20, -150], lp: ['sneaker', -10 + 4 * S(t * 3), 10, 0], ra: [-20, -150], rp: ['sneaker', 10 - 4 * S(t * 3), -10, 0], bob: breath(t), jiggle: 0.3, tilt: 7 * S(t * 2.2) });
     return { scene: 'chambreNuit', act: place(y, 540, 1680, 0.95), cam: camH(t, j, 1.3, 540, 1680, 0.95, 820) };
   },
+  // ---------- épisode 3
+  runPass: (t, j) => {
+    const b = j.beats || [], tc = b.length > 2 ? b[1] : 1.3, u = (t - (tc - 1.1)) / 2.2;
+    const passed = u > 0.5;
+    const y = stand(j.yid, Object.assign(jog(t), { expr: ex(passed ? 'choque' : 'panique', t), t, tilt: passed ? -8 : 3 * S(t * 4) }));
+    const kx = -350 + 1900 * clamp(u, 0, 1);
+    const kz = stand('KENZO', Object.assign(jog(t, 3.2, 1.1), { expr: ex('sourire', t, 1), t, ra: Math.abs(kx - 430) < 380 ? [30, 160] : jog(t, 3.2).ra, rh: Math.abs(kx - 430) < 380 ? 'thumb' : 'open' }));
+    return { scene: 'parc', act: park(t * 260) + place(y, 430, 1640, 0.9) + (u > -0.1 && u < 1.1 ? place(kz, kx, 1780, 0.92) : ''), cam: camH(t, j, 1.1, 480, 1640, 0.9, 780, [[tc, 16]]) };
+  },
+  run: (t, j) => {
+    const side = j.expr === 'panique';
+    const q = Object.assign(jog(t, side ? 1.8 : 2.2), { expr: ex(j.expr || 'panique', t), t, tilt: 4 * S(t * 3.6) });
+    if (side) { q.la = [10, -40]; q.lh = 'open'; }
+    const y = stand(j.yid, q);
+    const drops = [0, 1, 2].map(i => { const u = (t * 1.4 + i / 3) % 1; return `<path d="M${f1(330 + i * 190)} ${f1(700 + u * 400)} q-14 26 0 34 q14 -8 0 -34 Z" fill="#9fdcff" stroke="${K}" stroke-width="3" opacity="${f1(1 - u)}"/>`; }).join('');
+    return { scene: 'parc', act: park(t * 240, side ? 0 : null) + place(y, 500, 1640, 0.92) + drops, cam: camH(t, j, 1.15, 520, 1640, 0.92, 780) };
+  },
+  stretch: (t, j) => {
+    const ph = (t % 3) < 1.6;
+    const q = ph ? { la: [160 + 10 * S(t * 3), 175], ra: [160 + 10 * S(t * 3), 175], tilt: 10 * S(t * 2.2), expr: 'determine' }
+      : { la: [5, 0], ra: [5, 0], lift: [0.35, 0.35], bob: 40 + 10 * S(t * 8), tilt: 0, expr: 'panique', jiggle: 1 };
+    const y = stand(j.yid, Object.assign({ t, bob: breath(t), jiggle: 0.4 }, q, { expr: ex(q.expr, t) }));
+    return { scene: 'parc', act: park(0) + place(y, 520, 1650, 0.92), cam: camH(t, j, 1.12, 520, 1650, 0.92, 770) };
+  },
+  bench: (t, j) => {
+    const b = j.beats || [], s = 0.92, feet = 1700, hip = feet - (1270 - 860) * s + 110 * s, show = t > (b[1] || 1.2) - 0.2, happy = t > (b[3] || 4);
+    const pant = 8 * S(t * 12);
+    const y = stand(j.yid, { expr: ex(happy ? 'sourire' : 'panique', t), t, lift: [0.9, 0.9], ll: [14, -6], rl: [14, -6], la: happy ? [30, 160] : [40, 20], lh: happy ? 'thumb' : 'open', ra: show ? [40, 160] : [40, 20], rp: show ? ['watch', -10, 0, -30] : null, bob: pant, jiggle: 1, tilt: happy ? 0 : -10 });
+    const bench = `<g><rect x="200" y="${f1(hip - 190)}" width="680" height="40" rx="10" fill="#9a5a2a" stroke="${K}" stroke-width="6"/><rect x="200" y="${f1(hip - 120)}" width="680" height="40" rx="10" fill="#9a5a2a" stroke="${K}" stroke-width="6"/>
+      <rect x="190" y="${f1(hip)}" width="700" height="44" rx="10" fill="#b06a32" stroke="${K}" stroke-width="6"/><rect x="230" y="${f1(hip + 44)}" width="26" height="${f1(feet - hip - 30)}" fill="#333"/><rect x="824" y="${f1(hip + 44)}" width="26" height="${f1(feet - hip - 30)}" fill="#333"/></g>`;
+    const steam = [0, 1].map(i => { const u = (t * 0.8 + i / 2) % 1; return `<path d="M${f1(440 + i * 200)} ${f1(560 - u * 200)} q-20 -30 0 -60 q20 -30 0 -60" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity="${f1(0.7 - u * 0.7)}"/>`; }).join('');
+    const seat = `<rect x="180" y="${f1(hip - 14)}" width="720" height="56" rx="12" fill="#b06a32" stroke="${K}" stroke-width="6"/><path d="M200 ${f1(hip + 14)} L880 ${f1(hip + 14)}" stroke="#8a4f22" stroke-width="5"/>`;
+    return { scene: 'parc', act: park(0) + bench + place(y, 540, feet + 110 * s, s) + seat + steam, cam: camH(t, j, 1.15, 540, feet + 110 * s, s, 820) };
+  },
+  croissant: (t, j) => {
+    const b = j.beats || [], show = t > (b[2] || 2) - 0.2, drop = (b[3] || 3) + 0.4, pick = (b[4] || 4.2) + 0.2, eat = pick + 1.1;
+    let ra = [-12, -120], rp = ['croissant', 0, 0, 10], fall = '';
+    if (t > drop && t < pick) { ra = [16, 8]; rp = null; const u = clamp((t - drop) / 0.4, 0, 1); fall = PROPS.croissant(860 + 30 * u, 1180 + 520 * u * u, u * 200); }
+    else if (t >= pick && t < eat) { const u = ramp(t, pick, pick + 0.5); ra = [16 - 30 * u, 8 - 140 * u]; rp = ['croissant', 0, 0, 10]; }
+    else if (t >= eat) { ra = [-25, 205]; rp = ['croissant', 30, 0, 0]; }
+    const sof = stand('SOFIANE', { expr: ex(t > drop && t < eat ? 'choque' : 'sourire', t, 1), t, la: [-12, -120], lp: ['croissant', 0, 0, 10], ra, rp, bob: breath(t) + (t > pick && t < pick + 0.5 ? 40 : 0), tilt: t > eat ? 4 * S(t * 10) : 0 });
+    const y = stand(j.yid, { expr: ex('sourire', t), t, la: [16, 8], ra: show ? [40, 160] : [16, 8], rp: show ? ['watch', -10, 0, -30] : null, bob: breath(t), jiggle: 0.3 });
+    return { scene: 'rue', act: place(y, 320, 1760, 0.9) + place(sof, 770, 1760, 0.88) + fall, cam: camH(t, j, 1.08, 560, 1760, 0.9, 740, [[drop + 0.4, 12]]) };
+  },
+  fridge: (t, j) => {
+    const b = j.beats || [], o = ramp(t, 0.3, 0.8), want = t > (b[1] || 1.5) - 0.2;
+    const inside = `<rect x="640" y="760" width="340" height="800" fill="#eaf8ff" stroke="${K}" stroke-width="7"/>
+      ${[920, 1110, 1300].map(y => `<rect x="650" y="${y}" width="320" height="10" fill="#bcd"/>`).join('')}
+      ${[0, 1, 2, 3, 4].map(i => `<rect x="${665 + i * 60}" y="840" width="44" height="76" rx="10" fill="${['#e5483f', '#2f6fd6', '#e5483f', '#4caf50', '#e5483f'][i]}" stroke="${K}" stroke-width="4"/>`).join('')}
+      <rect x="665" y="1020" width="290" height="80" fill="#e9c27a" stroke="${K}" stroke-width="5"/><text x="810" y="1075" font-family="Lilita One" font-size="40" text-anchor="middle" fill="#d9342b">PIZZA</text>
+      ${PROPS.chips(730, 1290, -8)}${PROPS.chips(880, 1290, 10)}
+      <rect x="665" y="1390" width="290" height="150" fill="#ffd23a" opacity=".5"/>`;
+    const door = `<path d="M640 760 L${f1(640 + 340 * (1 - o))} ${f1(760 + 40 * o)} L${f1(640 + 340 * (1 - o))} ${f1(1560 - 40 * o)} L640 1560 Z" fill="#f4f4f4" stroke="${K}" stroke-width="7"/>`;
+    const doorOpen = `<path d="M980 760 L${f1(980 + 220 * o)} ${f1(730)} L${f1(980 + 220 * o)} ${f1(1590)} L980 1560 Z" fill="#dfe6ea" stroke="${K}" stroke-width="7"/>`;
+    const rays = o > 0.5 ? `<g opacity="${f1((o - 0.5) * 1.6 * (0.8 + 0.2 * S(t * 6)))}">${[...Array(7)].map((_, i) => `<path d="M810 1150 L${f1(810 + 900 * Math.cos(-2.6 + i * 0.35))} ${f1(1150 + 900 * Math.sin(-2.6 + i * 0.35))}" stroke="#fff6b0" stroke-width="40" opacity=".35"/>`).join('')}</g>` : '';
+    const y = stand(j.yid, { expr: ex(want ? 'sourire' : 'choque', t), t, la: [16, 8], ra: want ? [70 + 6 * S(t * 4), 85] : [16, 8], bob: breath(t), jiggle: 0.3, tilt: want ? -8 : 0, hx: want ? 20 : 0 });
+    const drool = want ? `<path d="M${f1(420)} ${f1(1010 + ((t * 0.7) % 1) * 60)} q-12 30 0 40 q12 -10 0 -40 Z" fill="#9fdcff" stroke="${K}" stroke-width="3"/>` : '';
+    return { scene: 'cuisine', act: rays + (o < 0.99 ? inside + door : inside) + (o > 0.05 ? doorOpen : '') + place(y, 360, 1720, 0.92) + drool, cam: camH(t, j, 1.08, 600, 1720, 0.92, 740, [[0.8, 10]]) };
+  },
+  box: (t, j) => {
+    const b = j.beats || [], rev = t > (b[3] || 3.5) - 0.2;
+    const sof = stand('SOFIANE', { expr: ex('sourire', t, 1), t, la: [-18, -105], lp: ['shoebox', 0, 60, 30], ra: [100 + 25 * S(t * 3), 120 + 30 * S(t * 3)], bob: breath(t), tilt: 4 * S(t * 2) });
+    const y = stand(j.yid, { expr: ex(rev ? 'sourire' : 'choque', t), t, ...(rev ? { la: [150, 175], ra: [150, 175] } : idleArms(t)), bob: breath(t) + (rev ? Math.abs(S(t * 7)) * 24 : 0), jiggle: rev ? 1 : 0.3 });
+    const spark = rev ? [0, 1, 2, 3].map(i => { const a = t * 2.5 + i * 1.57; return `<text x="${f1(700 + Math.cos(a) * 200)}" y="${f1(1150 + Math.sin(a) * 120)}" font-family="Lilita One" font-size="60" fill="#ffd23a" stroke="${K}" stroke-width="3">✦</text>`; }).join('') : '';
+    return { scene: 'chambreNuit', act: place(y, 320, 1700, 0.9) + place(sof, 770, 1700, 0.88) + spark, cam: camH(t, j, 1.08, 560, 1700, 0.9, 740, rev ? [[(b[3] || 3.5) - 0.2, 10]] : []) };
+  },
+  throwShoes: (t, j) => KINDS.throw(t, Object.assign({}, j, { prop: 'sneaker' })),
   // vote : se gratte la tête puis haussement d'épaules
   vote: (t, j) => {
     const s = (t % 2) < 1;
@@ -211,7 +291,7 @@ async function main() {
     fs.mkdirSync(j.out, { recursive: true });
     const fps = j.fps || 30, N = j.frames || Math.ceil(j.D * fps);
     const first = KINDS[j.kind](0, j);
-    await p.setContent(css + `<svg id="s" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><g id="cam"><g id="bg">${ROOMS2[first.scene]()}</g><g id="act"></g></g></svg>`);
+    await p.setContent(css + `<svg id="s" xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920"><g id="cam"><g id="bg">${ROOMS2[first.scene](j)}</g><g id="act"></g></g></svg>`);
     await p.evaluate(() => document.fonts.ready);
     const times = j.times || [...Array(N).keys()].map(i => i / fps);
     for (let i = 0; i < times.length; i++) {
