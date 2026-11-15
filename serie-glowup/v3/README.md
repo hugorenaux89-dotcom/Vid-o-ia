@@ -3,7 +3,7 @@
 > **Yanis a 30 jours avant le mariage de son cousin, où son ex Sarah viendra avec son nouveau copain. Chaque jour, c'est TOI qui choisis ce qui change chez lui. Et chaque changement reste pour toujours.**
 
 ## Le format
-- **Durée :** entre **1 min 02 et 1 min 17** par vidéo, soit environ 230 à 260 mots de voix off lue en continu, **sans aucun blanc**.
+- **Durée :** entre **1 min 18 et 1 min 35** par vidéo (épisodes 4 à 30), soit environ 290 à 330 mots de voix off lue en continu, **sans aucun blanc**.
 - **Voix off :** elle raconte la vie de Yanis à la troisième personne, sur un ton rapide, drôle et plein d'accroches. **Yanis ne parle jamais.**
 - **À l'écran :**
   - en haut, **un gros titre** qui change à chaque plan (lettres blanches, mot clé en rouge) ;

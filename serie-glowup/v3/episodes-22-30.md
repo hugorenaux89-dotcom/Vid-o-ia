@@ -1,7 +1,7 @@
 # Épisodes 22 à 30
 
 ## Épisode 22 · J-9 · « La cuisine »
-⏱️ **1:12** · 📊 `JOUR 22 · VOUS AVEZ CHOISI CUISINE`
+⏱️ **1:25** · 📊 `JOUR 22 · VOUS AVEZ CHOISI CUISINE`
 
 **P1 · L'accroche**
 🎥 `Smoke in the kitchen, Yanis holding a burnt pan, Nadia panicking.`
@@ -70,7 +70,21 @@
 🔠 `*98,5 KG*`
 🎙️ **VOIX OFF** : « Quatre-vingt-dix-huit kilos et demi. Il ne mange pas moins. Il mange mieux. Et ça, personne ne pourra le lui enlever. »
 
-**P10 · Le vote**
+**P10 · La recette**
+🎥 `La recette`
+🎬 `solo scene=cuisine gest=show prop=paper shot=close`
+🎭 `determine · idle`
+🔠 `LE CARNET *DE RECETTES*`
+🎙️ **VOIX OFF** : « Nadia lui donne un vieux carnet. Les recettes de sa grand-mère, en version légère. Il le range comme un trésor. Il l'est. »
+
+**P11 · Kenzo**
+🎥 `Kenzo`
+🎬 `duo scene=salleMuscu other=KENZO gest=show prop=plate ogest=eat oexpr=sourire`
+🎭 `sourire · idle`
+🔠 `KENZO *GOÛTE*`
+🎙️ **VOIX OFF** : « Il apporte une boîte à la salle. Kenzo goûte et demande la recette. Le coach de toute la ville vient de demander une recette au gars du jour un. »
+
+**P12 · Le vote**
 🎥 `Yanis holding his late father's broken watch, emotional.`
 🎬 `solo scene=chambreNuit gest=show prop=watchGold shot=wide`
 🎭 `tendre · idle`
@@ -81,7 +95,7 @@
 ---
 
 ## Épisode 23 · J-8 · « La montre »
-⏱️ **1:12** · 📊 `JOUR 23 · VOUS AVEZ CHOISI MONTRE`
+⏱️ **1:25** · 📊 `JOUR 23 · VOUS AVEZ CHOISI MONTRE`
 
 **P1 · L'accroche**
 🎥 `Nadia giving Yanis an old gold watch, both crying.`
@@ -151,7 +165,21 @@
 🔠 `*98 KG*`
 🎙️ **VOIX OFF** : « Quatre-vingt-dix-huit kilos. Quatorze kilos de moins. Mais aujourd'hui, le chiffre le plus important, c'est l'heure sur cette montre. Elle tourne de nouveau. »
 
-**P10 · Le vote**
+**P10 · La lettre**
+🎥 `La lettre`
+🎬 `solo scene=chambreNuit gest=show prop=paper shot=close`
+🎭 `tendre · idle`
+🔠 `UNE *LETTRE*`
+🎙️ **VOIX OFF** : « Dans la boîte de la montre, il trouve un petit mot de son père. Pour mon fils, quand il sera prêt. Il le lit. Il le relit. Il est prêt. »
+
+**P11 · Sofiane**
+🎥 `Sofiane`
+🎬 `duo scene=chambreJour other=SOFIANE gest=hug ogest=hug oexpr=tendre fx=hearts`
+🎭 `tendre · idle`
+🔠 `SOFIANE *EST LÀ*`
+🎙️ **VOIX OFF** : « Sofiane le voit les yeux rouges. Il ne fait pas de blague. Il le serre juste dans ses bras. Puis il dit : t'as pas un truc à manger ? Normal. »
+
+**P12 · Le vote**
 🎥 `Yanis in his room, looking at a suit on a hanger and his old sneakers.`
 🎬 `solo scene=chambreJour gest=shrug shot=wide`
 🎭 `inquiet · idle`
@@ -162,7 +190,7 @@
 ---
 
 ## Épisode 24 · J-7 · « Le costume »
-⏱️ **1:12** · 📊 `JOUR 24 · VOUS AVEZ CHOISI COSTUME`
+⏱️ **1:25** · 📊 `JOUR 24 · VOUS AVEZ CHOISI COSTUME`
 
 **P1 · L'accroche**
 🎥 `Yanis in a perfect navy suit, the whole shop applauding.`
@@ -232,7 +260,21 @@
 🔠 `*97,5 KG*`
 🎙️ **VOIX OFF** : « Quatre-vingt-dix-sept kilos et demi. Plus que six jours. Le costume est prêt. Lui, presque. »
 
-**P10 · Le vote**
+**P10 · Les boutons de manchette**
+🎥 `Les boutons de manchette`
+🎬 `solo stage=24s scene=magasin gest=tie fx=sparkle shot=close`
+🎭 `calme · idle`
+🔠 `LES *DÉTAILS*`
+🎙️ **VOIX OFF** : « Bernard ajoute les détails : boutons de manchette, pochette blanche, ourlet parfait. Il dit : un costume, c'est une armure. Yanis n'a jamais eu d'armure. »
+
+**P11 · Sofiane**
+🎥 `Sofiane`
+🎬 `duo stage=24s scene=magasin other=SOFIANE gest=hips ogest=panic oexpr=choque`
+🎭 `sourire · idle`
+🔠 `SOFIANE *NE PEUT PAS*`
+🎙️ **VOIX OFF** : « Sofiane essaie un costume aussi. Il ne peut plus lever les bras. Il ne peut plus s'asseoir. Il dit que c'est parfait. Bernard ne dit rien. »
+
+**P12 · Le vote**
 🎥 `Yanis in his suit, wearing old sneakers, hesitating.`
 🎬 `solo stage=24s scene=chambreJour gest=shrug shot=wide`
 🎭 `inquiet · idle`
@@ -243,7 +285,7 @@
 ---
 
 ## Épisode 25 · J-6 · « Le discours »
-⏱️ **1:12** · 📊 `JOUR 25 · VOUS AVEZ CHOISI DISCOURS`
+⏱️ **1:25** · 📊 `JOUR 25 · VOUS AVEZ CHOISI DISCOURS`
 
 **P1 · L'accroche**
 🎥 `Yanis reading his speech, Sofiane crying in emotion.`
@@ -313,7 +355,21 @@
 🔠 `*97 KG*`
 🎙️ **VOIX OFF** : « Quatre-vingt-dix-sept kilos. Quinze kilos de moins. Le discours est prêt. Le costume est prêt. Il ne manque plus grand-chose. »
 
-**P10 · Le vote**
+**P10 · Le trac**
+🎥 `Le trac`
+🎬 `solo scene=chambreNuit gest=panic shot=med`
+🎭 `panique · panic`
+🔠 `LE *TRAC*`
+🎙️ **VOIX OFF** : « La nuit, il se réveille en sueur. Il a rêvé qu'il oubliait son discours devant deux cents personnes. Il se relève. Il le relit. Deux fois. »
+
+**P11 · La respiration**
+🎥 `La respiration`
+🎬 `solo scene=chambreJour gest=stretch shot=med`
+🎭 `calme · idle`
+🔠 `RESPIRER`
+🎙️ **VOIX OFF** : « Kenzo lui donne une astuce : respirer quatre secondes, bloquer quatre secondes, souffler quatre secondes. Ça marche. Il le fait même au supermarché. »
+
+**P12 · Le vote**
 🎥 `Yanis looking at his old sneakers with his suit, hesitating.`
 🎬 `solo stage=25s scene=chambreJour gest=shrug shot=wide`
 🎭 `inquiet · idle`
@@ -324,7 +380,7 @@
 ---
 
 ## Épisode 26 · J-5 · « Les chaussures »
-⏱️ **1:12** · 📊 `JOUR 26 · VOUS AVEZ CHOISI CHAUSSURES`
+⏱️ **1:25** · 📊 `JOUR 26 · VOUS AVEZ CHOISI CHAUSSURES`
 
 **P1 · L'accroche**
 🎥 `Yanis in his suit wearing his old dirty sneakers, Sofiane horrified.`
@@ -394,7 +450,21 @@
 🔠 `*96,5 KG*`
 🎙️ **VOIX OFF** : « Quatre-vingt-seize kilos et demi. Il est presque prêt. Mais un secret lui pèse plus lourd que tous les kilos qu'il a perdus. »
 
-**P10 · Le vote**
+**P10 · Les chaussettes**
+🎥 `Les chaussettes`
+🎬 `solo scene=magasin gest=show prop=shirt shot=close`
+🎭 `sourire · idle`
+🔠 `LES *CHAUSSETTES*`
+🎙️ **VOIX OFF** : « Ines ajoute un dernier conseil : des chaussettes assorties. Pas une rouge et une verte. Il rit. Ça, c'était le Yanis du jour trois. »
+
+**P11 · Nadia**
+🎥 `Nadia`
+🎬 `duo stage=26s scene=cuisine other=NADIA gest=walk ogest=clap oexpr=sourire fx=hearts`
+🎭 `sourire · idle`
+🔠 `LE *DÉFILÉ*`
+🎙️ **VOIX OFF** : « Il fait un défilé pour Nadia dans le couloir. Costume, montre, chaussures. Elle applaudit. Le voisin aussi, à travers le mur. Comme d'habitude. »
+
+**P12 · Le vote**
 🎥 `Yanis between a gift box and his phone with Kenzo's message.`
 🎬 `solo scene=chambreNuit gest=show prop=gift shot=wide`
 🎭 `inquiet · idle`
@@ -405,7 +475,7 @@
 ---
 
 ## Épisode 27 · J-4 · « Les 10 kilomètres »
-⏱️ **1:12** · 📊 `JOUR 27 · VOUS AVEZ CHOISI CADEAU`
+⏱️ **1:25** · 📊 `JOUR 27 · VOUS AVEZ CHOISI CADEAU`
 
 **P1 · L'accroche**
 🎥 `Yanis crossing a finish line in the park after 10 km, arms raised, confetti.`
@@ -476,7 +546,21 @@
 🔠 `JOUR 1 *VS* JOUR 27`
 🎙️ **VOIX OFF** : « Jour un : chauve, cent douze kilos, cinq pompes. Jour vingt-sept : dix kilomètres, quinze kilos en moins, et un vrai sourire. »
 
-**P10 · Le vote**
+**P10 · Sofiane**
+🎥 `Sofiane`
+🎬 `duo scene=parc other=SOFIANE gest=thumbs ogest=eat oprop=croissant oexpr=larmes`
+🎭 `sourire · idle`
+🔠 `SOFIANE *EST ÉMU*`
+🎙️ **VOIX OFF** : « Sofiane pleure en mangeant son croissant. Il dit que c'est la poussière. Il n'y a pas de poussière. Il y a juste un frère fier de son frère. »
+
+**P11 · La photo**
+🎥 `La photo`
+🎬 `solo scene=parc gest=show prop=photo shot=close`
+🎭 `tendre · idle`
+🔠 `LA PHOTO *DU VÉLO*`
+🎙️ **VOIX OFF** : « Le soir, il emballe le cadre. Lui et Bilal, à huit ans, sur le même vélo. Il écrit derrière : maintenant, c'est moi qui pédale. Merci. »
+
+**P12 · Le vote**
 🎥 `Yanis looking at Kenzo from afar, torn.`
 🎬 `solo scene=parc gest=think shot=wide`
 🎭 `inquiet · idle`
@@ -487,7 +571,7 @@
 ---
 
 ## Épisode 28 · J-3 · « La vérité »
-⏱️ **1:12** · 📊 `JOUR 28 · VOUS AVEZ CHOISI VÉRITÉ`
+⏱️ **1:25** · 📊 `JOUR 28 · VOUS AVEZ CHOISI VÉRITÉ`
 
 **P1 · L'accroche**
 🎥 `Kenzo frozen in shock in the gym, Yanis serious in front of him.`
@@ -557,7 +641,21 @@
 🔠 `*96 KG*`
 🎙️ **VOIX OFF** : « Quatre-vingt-seize kilos. Seize kilos de moins. Et surtout : plus aucun secret. Pour la première fois, il se sent léger. Vraiment léger. »
 
-**P10 · Le vote**
+**P10 · Sofiane**
+🎥 `Sofiane`
+🎬 `duo scene=rue other=SOFIANE gest=talk ogest=choque oexpr=choque`
+🎭 `sourire · idle`
+🔠 `SOFIANE *N'Y CROIT PAS*`
+🎙️ **VOIX OFF** : « Il raconte tout à Sofiane. Sofiane reste bouche bée. Puis il demande : et Kenzo, il a une sœur ? Il ne changera jamais. »
+
+**P11 · Le soir**
+🎥 `Le soir`
+🎬 `solo scene=chambreNuit gest=stretch shot=med`
+🎭 `calme · idle`
+🔠 `LÉGER`
+🎙️ **VOIX OFF** : « Le soir, il s'allonge et il respire. Plus de secret. Plus de mensonge. Juste un mariage dans trois jours. Et un ami de plus. »
+
+**P12 · Le vote**
 🎥 `Yanis in his suit in front of the mirror, imagining his entrance.`
 🎬 `solo stage=28s scene=chambreNuit gest=tie shot=wide`
 🎭 `calme · idle`
@@ -568,7 +666,7 @@
 ---
 
 ## Épisode 29 · J-2 · « La veille »
-⏱️ **1:12** · 📊 `JOUR 29 · VOUS AVEZ CHOISI EN STAR`
+⏱️ **1:25** · 📊 `JOUR 29 · VOUS AVEZ CHOISI EN STAR`
 
 **P1 · L'accroche**
 🎥 `Split screen: Yanis day 1 versus day 29 in his suit.`
@@ -638,7 +736,21 @@
 🔠 `*J-1*`
 🎙️ **VOIX OFF** : « Sur le calendrier, plus qu'une case. Trente jours qu'il attend ce moment. Trente jours qu'il se bat. Demain, il ne se bat plus. Il profite. »
 
-**P10 · Le vote**
+**P10 · Kenzo**
+🎥 `Kenzo`
+🎬 `duo stage=29s scene=salleMuscu other=KENZO gest=thumbs ogest=thumbs oexpr=sourire`
+🎭 `sourire · idle`
+🔠 `LE DERNIER *CHECK*`
+🎙️ **VOIX OFF** : « À la salle, Kenzo lui fait un dernier check. Demain, quoi qu'il se passe avec Sarah, on reste frères. Promis. Ils se serrent la main. »
+
+**P11 · La valise**
+🎥 `La valise`
+🎬 `solo stage=29s scene=chambreNuit gest=show prop=gift shot=close`
+🎭 `determine · idle`
+🔠 `TOUT EST *PRÊT*`
+🎙️ **VOIX OFF** : « Sur la chaise : le costume, la montre, le discours, le cadeau. Tout est prêt. Il regarde le calendrier une dernière fois. Plus qu'un dodo. »
+
+**P12 · Le vote**
 🎥 `Yanis smiling in his suit, mysterious.`
 🎬 `solo stage=29s scene=chambreNuit gest=shrug shot=wide`
 🎭 `mefiant · idle`
@@ -649,7 +761,7 @@
 ---
 
 ## Épisode 30 · J-0 · « Le mariage »
-⏱️ **1:20** · 📊 `JOUR 30 · LE MARIAGE`
+⏱️ **1:25** · 📊 `JOUR 30 · LE MARIAGE`
 
 **P1 · L'accroche**
 🎥 `Sarah jumping into Yanis's arms at the wedding, Kenzo shocked in the background.`
@@ -719,7 +831,21 @@
 🔠 `ET *KENZO ?*`
 🎙️ **VOIX OFF** : « Kenzo a tout vu. Il regarde Sarah. Puis Yanis. Puis Sarah à nouveau. Il a une décision à prendre. Et c'est toi qui vas la deviner. »
 
-**P10 · La question finale**
+**P10 · Bilal**
+🎥 `Bilal`
+🎬 `duo stage=30s scene=mariage other=BILAL gest=hug ogest=hug oexpr=larmes fx=hearts`
+🎭 `tendre · idle`
+🔠 `BILAL *PLEURE*`
+🎙️ **VOIX OFF** : « Bilal ouvre le cadeau : la photo du vélo. Il lit le mot derrière. Il pleure. Il serre son cousin. Merci d'être revenu, Yanis. Le vrai. »
+
+**P11 · Le slow**
+🎥 `Le slow`
+🎬 `duo stage=30s scene=mariage other=NADIA gest=hug ogest=hug oexpr=tendre fx=hearts`
+🎭 `tendre · idle`
+🔠 `LE *DERNIER SLOW*`
+🎙️ **VOIX OFF** : « Pour le dernier slow, il invite sa mère. Elle pose la tête sur son épaule. Elle lui dit : il est là, ton père. Je le sens. Lui aussi, il le sent. »
+
+**P12 · La question finale**
 🎥 `Kenzo between Sarah and the exit, hesitating.`
 🎬 `solo stage=30s scene=mariage gest=shrug shot=wide`
 🎭 `mefiant · idle`

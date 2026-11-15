@@ -1,7 +1,7 @@
 # Épisodes 13 à 21
 
 ## Épisode 13 · J-18 · « La coupe »
-⏱️ **1:12** · 📊 `JOUR 13 · VOUS AVEZ CHOISI COUPE`
+⏱️ **1:25** · 📊 `JOUR 13 · VOUS AVEZ CHOISI COUPE`
 
 **P1 · L'accroche**
 🎥 `Yanis with a fresh fade haircut, two girls looking at him in the street, Sofiane jealous.`
@@ -71,7 +71,21 @@
 🔠 `MAMAN *CRAQUE*`
 🎙️ **VOIX OFF** : « À la maison, Nadia le voit et lâche sa cuillère. Tu ressembles à ton père à vingt-cinq ans. Elle pleure. Il pleure un peu aussi. Juste un peu. »
 
-**P10 · Le vote**
+**P10 · Le selfie**
+🎥 `Le selfie`
+🎬 `solo scene=rue gest=phone shot=close`
+🎭 `sourire · phone`
+🔠 `LE SELFIE *DE LA VICTOIRE*`
+🎙️ **VOIX OFF** : « Il prend un selfie devant la vitrine. Puis un deuxième. Puis quinze. Il les supprime tous sauf un. Celui où il ressemble enfin à quelqu'un de confiant. »
+
+**P11 · Sofiane**
+🎥 `Sofiane`
+🎬 `duo scene=barbier other=SOFIANE gest=hips ogest=panic oexpr=panique`
+🎭 `sourire · idle`
+🔠 `SOFIANE *VEUT LA MÊME*`
+🎙️ **VOIX OFF** : « Sofiane veut la même coupe. Moussa le regarde, regarde ses cheveux, et dit : pour toi, il faudra deux rendez-vous. Et une prière. »
+
+**P12 · Le vote**
 🎥 `Yanis touching his joined eyebrows in the mirror.`
 🎬 `solo scene=salleDeBain gest=think shot=wide`
 🎭 `inquiet · idle`
@@ -82,7 +96,7 @@
 ---
 
 ## Épisode 14 · J-17 · « Les sourcils »
-⏱️ **1:12** · 📊 `JOUR 14 · VOUS AVEZ CHOISI SOURCILS`
+⏱️ **1:25** · 📊 `JOUR 14 · VOUS AVEZ CHOISI SOURCILS`
 
 **P1 · L'accroche**
 🎥 `Yanis screaming in the bathroom with tweezers, Nadia running in.`
@@ -152,7 +166,21 @@
 🔠 `*104,5 KG*`
 🎙️ **VOIX OFF** : « Cent quatre kilos et demi. Il regarde la balance, puis le miroir. Pour la première fois, ce n'est pas le chiffre qui le rend fier. C'est le regard. »
 
-**P10 · Le vote**
+**P10 · Le message**
+🎥 `Le message`
+🎬 `phone`
+🎭 `inquiet · phone`
+🔠 `KENZO *L'APPELLE*`
+🎙️ **VOIX OFF** : « Le soir, Kenzo l'appelle : Sarah a trouvé ton pote de la salle très poli. Yanis raccroche. Puis il rigole tout seul pendant cinq minutes. »
+
+**P11 · Le regard**
+🎥 `Le regard`
+🎬 `mirror`
+🎭 `determine · idle`
+🔠 `UN *NOUVEAU REGARD*`
+🎙️ **VOIX OFF** : « Devant le miroir, il fixe ses yeux. Il ne baisse plus le regard. Ses sourcils lui donnent l'air sérieux. Pour une fois, ça lui va bien. »
+
+**P12 · Le vote**
 🎥 `Yanis slouching like a shrimp, hesitating.`
 🎬 `solo scene=chambreNuit gest=shrug shot=wide`
 🎭 `inquiet · idle`
@@ -163,7 +191,7 @@
 ---
 
 ## Épisode 15 · J-16 · « La posture »
-⏱️ **1:12** · 📊 `JOUR 15 · VOUS AVEZ CHOISI POSTURE`
+⏱️ **1:25** · 📊 `JOUR 15 · VOUS AVEZ CHOISI POSTURE`
 
 **P1 · L'accroche**
 🎥 `Yanis walking with a book on his head in the living room, Sofiane laughing.`
@@ -233,7 +261,21 @@
 🔠 `*103,5 KG*`
 🎙️ **VOIX OFF** : « Cent trois kilos et demi. Huit kilos et demi de moins qu'au premier jour. Son vieux jean tient tout seul. Avec une ceinture. Serrée. »
 
-**P10 · Le vote**
+**P10 · Le garage**
+🎥 `Le garage`
+🎬 `solo scene=garage gest=hips shot=med`
+🎭 `determine · idle`
+🔠 `MÊME *AU GARAGE*`
+🎙️ **VOIX OFF** : « Même au garage, sous les voitures, il garde le dos droit. Son patron le regarde et lui demande s'il a avalé un balai. Il répond : non, un livre. »
+
+**P11 · Sofiane**
+🎥 `Sofiane`
+🎬 `duo scene=rue other=SOFIANE gest=hips ogest=sad oexpr=triste`
+🎭 `sourire · idle`
+🔠 `SOFIANE *SE REDRESSE*`
+🎙️ **VOIX OFF** : « Sofiane le voit marcher et se redresse d'un coup. Ça fait crac. Il se rassoit. Il dit qu'il commencera demain. Il dit ça depuis 2019. »
+
+**P12 · Le vote**
 🎥 `Yanis looking at his black nails, then his messy room.`
 🎬 `solo scene=chambreJour gest=show prop=wrench shot=wide`
 🎭 `inquiet · idle`
@@ -244,7 +286,7 @@
 ---
 
 ## Épisode 16 · J-15 · « Les ongles »
-⏱️ **1:12** · 📊 `JOUR 16 · VOUS AVEZ CHOISI ONGLES`
+⏱️ **1:25** · 📊 `JOUR 16 · VOUS AVEZ CHOISI ONGLES`
 
 **P1 · L'accroche**
 🎥 `A client at the garage refusing to shake Yanis's black greasy hand.`
@@ -314,7 +356,21 @@
 🔠 `*102,5 KG*`
 🎙️ **VOIX OFF** : « Cent deux kilos et demi. Dix kilos de moins en seize jours. Ses mains sont propres, son dos est droit. Il ne reste que deux semaines. »
 
-**P10 · Le vote**
+**P10 · Le patron**
+🎥 `Le patron`
+🎬 `duo scene=garage other=GERARD gest=thumbs ogest=clap oexpr=sourire`
+🎭 `sourire · idle`
+🔠 `LE PATRON *EST FIER*`
+🎙️ **VOIX OFF** : « Son patron le félicite devant tout le garage. Des mains propres, un dos droit, et toujours à l'heure. Il lui propose de s'occuper des clients. Promotion. »
+
+**P11 · Le dîner**
+🎥 `Le dîner`
+🎬 `duo scene=cuisine other=NADIA gest=eat prop=broccoli ogest=talk`
+🎭 `sourire · idle`
+🔠 `UN DÎNER *SANS NOIR*`
+🎙️ **VOIX OFF** : « Le soir, il mange avec les mains propres. Nadia remarque qu'il n'y a plus de traces noires sur le pain. Elle dit : c'est un miracle. Il dit : c'est du savon. »
+
+**P12 · Le vote**
 🎥 `Yanis sniffing his t-shirt, then looking at his messy room.`
 🎬 `solo scene=chambreJour gest=shrug shot=wide`
 🎭 `inquiet · idle`
@@ -325,7 +381,7 @@
 ---
 
 ## Épisode 17 · J-14 · « Le parfum »
-⏱️ **1:12** · 📊 `JOUR 17 · VOUS AVEZ CHOISI PARFUM`
+⏱️ **1:25** · 📊 `JOUR 17 · VOUS AVEZ CHOISI PARFUM`
 
 **P1 · L'accroche**
 🎥 `Yanis spraying way too much perfume, Sofiane coughing.`
@@ -395,7 +451,21 @@
 🔠 `IL *N'ACCEPTE PAS*`
 🎙️ **VOIX OFF** : « Il regarde la demande longtemps. Puis il pose le téléphone. Il n'accepte pas. Pas maintenant. Il a mieux à faire. Dormir, par exemple. »
 
-**P10 · Le vote**
+**P10 · La dame**
+🎥 `La dame`
+🎬 `duo scene=rue other=NADIA gest=thumbs ogest=talk oexpr=sourire`
+🎭 `sourire · idle`
+🔠 `« VOUS SENTEZ *BON* »`
+🎙️ **VOIX OFF** : « Dans le bus, une dame lui dit : vous sentez bon, jeune homme. Il la remercie. Il descend trois arrêts trop tard. Il était trop content. »
+
+**P11 · La gourde**
+🎥 `La gourde`
+🎬 `solo scene=salleMuscu gest=drink prop=bottle shot=med`
+🎭 `calme · idle`
+🔠 `TOUJOURS *SES 2 LITRES*`
+🎙️ **VOIX OFF** : « Et il n'oublie pas les bases : deux litres d'eau par jour depuis le jour un. Dix-sept jours sans soda. Sa gourde est devenue sa meilleure amie. »
+
+**P12 · Le vote**
 🎥 `Yanis looking at his messy room and his old clothes.`
 🎬 `solo scene=chambreNuit gest=scratch shot=wide`
 🎭 `inquiet · idle`
@@ -406,7 +476,7 @@
 ---
 
 ## Épisode 18 · J-13 · « La chambre »
-⏱️ **1:12** · 📊 `JOUR 18 · VOUS AVEZ CHOISI CHAMBRE`
+⏱️ **1:25** · 📊 `JOUR 18 · VOUS AVEZ CHOISI CHAMBRE`
 
 **P1 · L'accroche**
 🎥 `Yanis finding a two-year-old pizza under his bed, horrified.`
@@ -475,7 +545,21 @@
 🔠 `*101,5 KG*`
 🎙️ **VOIX OFF** : « Cent un kilos et demi. Encore un peu, et il passe sous les cent. Il n'a plus vu ce chiffre depuis le lycée. »
 
-**P10 · Le vote**
+**P10 · Le trophée**
+🎥 `Le trophée`
+🎬 `duo scene=chambreJour other=NADIA gest=show prop=trophy ogest=cry oexpr=larmes fx=hearts`
+🎭 `tendre · idle`
+🔠 `LE *SOUVENIR*`
+🎙️ **VOIX OFF** : « Nadia voit le trophée et sourit. Ton père t'emmenait à tous tes matchs. Il disait que tu ne lâchais jamais. Yanis serre le trophée un peu plus fort. »
+
+**P11 · Le lit**
+🎥 `Le lit`
+🎬 `bed mode=wake scene=chambreJour`
+🎭 `sourire · tired`
+🔠 `UN LIT *QUI SENT BON*`
+🎙️ **VOIX OFF** : « Le soir, il se couche dans des draps propres. Ça sent la lessive. Pas la pizza. Il s'endort en trois minutes. Un record. »
+
+**P12 · Le vote**
 🎥 `Yanis opening his wardrobe full of old t-shirts.`
 🎬 `solo scene=chambreJour gest=show prop=shirt shot=wide`
 🎭 `inquiet · idle`
@@ -486,7 +570,7 @@
 ---
 
 ## Épisode 19 · J-12 · « Le style »
-⏱️ **1:12** · 📊 `JOUR 19 · VOUS AVEZ CHOISI STYLE`
+⏱️ **1:25** · 📊 `JOUR 19 · VOUS AVEZ CHOISI STYLE`
 
 **P1 · L'accroche**
 🎥 `Yanis coming out of the fitting room in a new outfit, the saleswoman shocked.`
@@ -555,7 +639,21 @@
 🔠 `*100,5 KG*`
 🎙️ **VOIX OFF** : « Cent kilos et demi. Il fixe la balance. Encore cinq cents grammes, et il passe sous les cent. Il a envie d'aller courir tout de suite. »
 
-**P10 · Le vote**
+**P10 · La cabine**
+🎥 `La cabine`
+🎬 `solo scene=magasin gest=hips fx=sparkle shot=close`
+🎭 `calme · idle`
+🔠 `LA *POSE*`
+🎙️ **VOIX OFF** : « Ines lui apprend à se tenir : une main dans la poche, épaules détendues, petit sourire. Il essaie. Il ressemble à une pub de parfum. Une pub un peu raide. »
+
+**P11 · Kenzo**
+🎥 `Kenzo`
+🎬 `phone`
+🎭 `sourire · phone`
+🔠 `KENZO *VEUT LE MÊME*`
+🎙️ **VOIX OFF** : « Il envoie une photo à Kenzo. Kenzo répond : frère, c'est quoi le magasin ? Je veux le même tee-shirt. Le copain de son ex veut s'habiller comme lui. »
+
+**P12 · Le vote**
 🎥 `Yanis in his new outfit, shy, hesitating.`
 🎬 `solo scene=chambreJour gest=shrug shot=wide`
 🎭 `inquiet · idle`
@@ -566,7 +664,7 @@
 ---
 
 ## Épisode 20 · J-11 · « La confiance »
-⏱️ **1:12** · 📊 `JOUR 20 · VOUS AVEZ CHOISI CONFIANCE`
+⏱️ **1:25** · 📊 `JOUR 20 · VOUS AVEZ CHOISI CONFIANCE`
 
 **P1 · L'accroche**
 🎥 `Yanis speaking with a microphone in front of people, confident.`
@@ -637,7 +735,21 @@
 🔊 `scratch`
 🎙️ **VOIX OFF** : « Message de Kenzo : génial, Bilal m'a dit que tu fais le discours ! Sarah a hâte de te rencontrer. Elle ne sait pas à quel point elle te connaît déjà. »
 
-**P10 · Le vote**
+**P10 · Le kebab**
+🎥 `Le kebab`
+🎬 `duo scene=rue other=SOFIANE gest=talk ogest=eat oprop=kebab`
+🎭 `determine · idle`
+🔠 `IL *COMMANDE*`
+🎙️ **VOIX OFF** : « Il commande au kebab en regardant le vendeur dans les yeux. Une salade, sans sauce. Le vendeur demande s'il va bien. Sofiane, lui, commande double sauce. »
+
+**P11 · La danse**
+🎥 `La danse`
+🎬 `solo scene=chambreJour gest=jump fx=confetti shot=med`
+🎭 `sourire · idle`
+🔠 `LA JOIE *DES 99 KG*`
+🎙️ **VOIX OFF** : « Le soir, il fête les quatre-vingt-dix-neuf kilos en dansant tout seul dans sa chambre. Très mal. Mais avec beaucoup d'énergie. Ça, c'est demain qu'on règle. »
+
+**P12 · Le vote**
 🎥 `Yanis dancing badly in his bedroom, hesitating.`
 🎬 `solo scene=chambreJour gest=dance shot=wide`
 🎭 `inquiet · idle`
@@ -648,7 +760,7 @@
 ---
 
 ## Épisode 21 · J-10 · « La danse »
-⏱️ **1:12** · 📊 `JOUR 21 · VOUS AVEZ CHOISI DANSE`
+⏱️ **1:25** · 📊 `JOUR 21 · VOUS AVEZ CHOISI DANSE`
 
 **P1 · L'accroche**
 🎥 `Yanis dancing very badly, the dance teacher covering her eyes.`
@@ -718,7 +830,21 @@
 🔠 `*99 KG*`
 🎙️ **VOIX OFF** : « Quatre-vingt-dix-neuf kilos. Treize kilos de moins. Et ce soir, pour la première fois, il a dansé sans avoir honte. »
 
-**P10 · Le vote**
+**P10 · Sofiane danse**
+🎥 `Sofiane danse`
+🎬 `duo scene=studioDanse other=SOFIANE gest=clap ogest=dance oexpr=sourire fx=notes`
+🎭 `sourire · idle`
+🔠 `SOFIANE *SE LÂCHE*`
+🎙️ **VOIX OFF** : « Sofiane vient voir le cours. Il veut juste regarder. Cinq minutes plus tard, il est au milieu de la piste. Ines le supplie de s'arrêter. »
+
+**P11 · La chorégraphie**
+🎥 `La chorégraphie`
+🎬 `solo scene=studioDanse gest=dance fx=notes,sparkle shot=wide`
+🎭 `sourire · idle`
+🔠 `LA *CHORÉGRAPHIE*`
+🎙️ **VOIX OFF** : « Ines lui apprend une petite chorégraphie pour le mariage. Huit temps. Il la répète dans sa tête toute la soirée. Même en se brossant les dents. »
+
+**P12 · Le vote**
 🎥 `Yanis in the kitchen, hesitating, a watch in his hand.`
 🎬 `solo scene=cuisine gest=show prop=watchGold shot=wide`
 🎭 `tendre · idle`

@@ -1,7 +1,7 @@
 # Épisodes 4 à 12
 
 ## Épisode 4 · J-27 · « Le frigo »
-⏱️ **1:12** · 📊 `JOUR 4 · VOUS AVEZ CHOISI FRIGO`
+⏱️ **1:25** · 📊 `JOUR 4 · VOUS AVEZ CHOISI FRIGO`
 
 **P1 · L'accroche**
 🎥 `Yanis training at the gym, coached by Kenzo who doesn't know who he is.`
@@ -73,7 +73,21 @@
 🔠 `DÉJÀ *-1,5 KG*`
 🎙️ **VOIX OFF** : « Le soir, la balance : cent dix kilos et demi. Un kilo et demi en moins. Il saute de joie. La balance, elle, souffre encore. »
 
-**P10 · Le vote**
+**P10 · Le dernier soda**
+🎥 `Le dernier soda`
+🎬 `duo scene=cuisine other=SOFIANE gest=armsCross ogest=drink oprop=can oexpr=larmes`
+🎭 `mefiant · idle`
+🔠 `LE DERNIER *SODA*`
+🎙️ **VOIX OFF** : « Sofiane boit la dernière canette, très lentement, les yeux fermés. Il dit : je la bois pour toi, frérot. C'est un sacrifice. »
+
+**P11 · Le réveil**
+🎥 `Le réveil`
+🎬 `solo scene=chambreJour gest=stretch shot=med`
+🎭 `determine · idle`
+🔠 `RÉVEIL À *SEPT HEURES*`
+🎙️ **VOIX OFF** : « Et pour la première fois depuis des années, son réveil sonne à sept heures. Il ne le repousse pas. Il se lève. Même son lit est surpris. »
+
+**P12 · Le vote**
 🎥 `Yanis in his bedroom, shrugging, hesitating.`
 🎬 `solo scene=chambreJour gest=shrug shot=wide`
 🎭 `inquiet · idle`
@@ -84,7 +98,7 @@
 ---
 
 ## Épisode 5 · J-26 · « Les lunettes »
-⏱️ **1:12** · 📊 `JOUR 5 · VOUS AVEZ CHOISI LUNETTES`
+⏱️ **1:25** · 📊 `JOUR 5 · VOUS AVEZ CHOISI LUNETTES`
 
 **P1 · L'accroche**
 🎥 `Yanis's broken glasses falling into a soup bowl in front of Nadia.`
@@ -154,7 +168,21 @@
 🔠 `UN MESSAGE *DE KENZO*`
 🎙️ **VOIX OFF** : « Le soir, un message de Kenzo : demain, footing à sept heures. Et Sarah viendra peut-être nous voir. Yanis relit trois fois. »
 
-**P10 · Le vote**
+**P10 · La photo**
+🎥 `La photo`
+🎬 `solo scene=chambreJour gest=phone shot=close`
+🎭 `sourire · phone`
+🔠 `SA PREMIÈRE *PHOTO*`
+🎙️ **VOIX OFF** : « Il prend une photo de lui avec ses nouvelles lunettes. La première depuis deux ans. Il ne la poste pas. Il la garde. Juste pour lui. »
+
+**P11 · Nadia**
+🎥 `Nadia`
+🎬 `duo scene=cuisine other=NADIA gest=idle ogest=clap oexpr=sourire fx=hearts`
+🎭 `sourire · idle`
+🔠 `MAMAN *APPROUVE*`
+🎙️ **VOIX OFF** : « Nadia le regarde et dit : enfin, on voit tes yeux. Tu as les yeux de ton père. Yanis fait semblant d'avoir une poussière dans l'œil. »
+
+**P12 · Le vote**
 🎥 `Yanis smiling with his new glasses, hesitating.`
 🎬 `solo scene=chambreNuit gest=think shot=wide`
 🎭 `inquiet · idle`
@@ -165,7 +193,7 @@
 ---
 
 ## Épisode 6 · J-25 · « Les dents »
-⏱️ **1:12** · 📊 `JOUR 6 · VOUS AVEZ CHOISI DENTS`
+⏱️ **1:25** · 📊 `JOUR 6 · VOUS AVEZ CHOISI DENTS`
 
 **P1 · L'accroche**
 🎥 `Yanis running in the park, Sarah might be there, panicking.`
@@ -236,7 +264,21 @@
 🎙️ **VOIX OFF** : « Quatre kilomètres en vingt-quatre minutes. Il a mal partout. Mais aujourd'hui, il ne s'est pas assis une seule fois. »
 📝 `✅ 4 KM EN 24 MIN`
 
-**P10 · Le vote**
+**P10 · Le fil dentaire**
+🎥 `Le fil dentaire`
+🎬 `solo scene=salleDeBain gest=brush fx=sparkle shot=close`
+🎭 `panique · idle`
+🔠 `LE *FIL DENTAIRE*`
+🎙️ **VOIX OFF** : « Premier essai de fil dentaire. Il le coince entre deux dents. Il tire. Rien ne bouge. Il appelle Nadia. Nadia filme d'abord, puis elle aide. »
+
+**P11 · Sofiane**
+🎥 `Sofiane`
+🎬 `duo scene=rue other=SOFIANE gest=thumbs ogest=eat oprop=croissant`
+🎭 `sourire · idle`
+🔠 `SOFIANE *FAIT LA MORALE*`
+🎙️ **VOIX OFF** : « Sofiane lui fait la morale sur l'hygiène dentaire… la bouche pleine de croissant au chocolat. Il ne voit pas du tout le problème. »
+
+**P12 · Le vote**
 🎥 `Yanis touching his bald head, then his pimples, hesitating.`
 🎬 `solo scene=chambreNuit gest=scratch shot=wide`
 🎭 `inquiet · idle`
@@ -247,7 +289,7 @@
 ---
 
 ## Épisode 7 · J-24 · « 6 secondes »
-⏱️ **1:12** · 📊 `JOUR 7 · VOUS AVEZ CHOISI CHEVEUX`
+⏱️ **1:25** · 📊 `JOUR 7 · VOUS AVEZ CHOISI CHEVEUX`
 
 **P1 · L'accroche**
 🎥 `Yanis bald in the doctor's office, sparkles swirling, hair growing back in a flash.`
@@ -318,7 +360,21 @@
 🔠 `ENCORE *-1,5 KG*`
 🎙️ **VOIX OFF** : « Cent neuf kilos. Il a des cheveux et trois kilos de moins qu'au premier jour. La semaine commence bien. »
 
-**P10 · Le vote**
+**P10 · La famille**
+🎥 `La famille`
+🎬 `trio scene=cuisine a=NADIA b=SOFIANE agest=cry bgest=jump gest=flex fx=confetti`
+🎭 `sourire · flex`
+🔠 `TOUTE LA FAMILLE *EN VISIO*`
+🎙️ **VOIX OFF** : « En visio, la tante du bled demande : c'est une perruque ? Yanis tire ses cheveux pour prouver. Aïe. Ce ne sont pas des faux. Il le confirme en pleurant un peu. »
+
+**P11 · Le peigne**
+🎥 `Le peigne`
+🎬 `solo scene=salleDeBain gest=comb fx=sparkle shot=close`
+🎭 `sourire · idle`
+🔠 `SON PREMIER *COUP DE PEIGNE*`
+🎙️ **VOIX OFF** : « Le soir, il se coiffe pour la première fois depuis cinq ans. Il ne sait pas faire. Il se fait une raie au milieu. Personne ne lui dit rien. Par respect. »
+
+**P12 · Le vote**
 🎥 `Yanis with his new hair, touching his pimples.`
 🎬 `solo scene=chambreNuit gest=think shot=wide`
 🎭 `inquiet · idle`
@@ -329,7 +385,7 @@
 ---
 
 ## Épisode 8 · J-23 · « Les boutons »
-⏱️ **1:12** · 📊 `JOUR 8 · VOUS AVEZ CHOISI BOUTONS`
+⏱️ **1:25** · 📊 `JOUR 8 · VOUS AVEZ CHOISI BOUTONS`
 
 **P1 · L'accroche**
 🎥 `Yanis with a green face mask, Sofiane screaming in fear.`
@@ -399,7 +455,21 @@
 🔠 `DÉJÀ *MOINS ROUGE*`
 🎙️ **VOIX OFF** : « Avant de dormir, il se regarde. C'est encore là, mais c'est moins rouge. Moins gonflé. Pour la première fois, il a envie de continuer. »
 
-**P10 · Le vote**
+**P10 · Sofiane teste**
+🎥 `Sofiane teste`
+🎬 `duo scene=salleDeBain other=SOFIANE gest=facepalm ogest=cream oexpr=sourire fx=sparkle`
+🎭 `mefiant · idle`
+🔠 `SOFIANE *TESTE AUSSI*`
+🎙️ **VOIX OFF** : « Sofiane essaie le masque à l'argile. Il en met partout. Sur le front, sur les oreilles, dans les sourcils. Il ressemble à une statue. Une statue contente. »
+
+**P11 · La prière**
+🎥 `La prière`
+🎬 `solo scene=chambreNuit gest=think shot=close`
+🎭 `calme · idle`
+🔠 `UNE *PROMESSE*`
+🎙️ **VOIX OFF** : « Avant de dormir, il se promet une chose : ne plus jamais toucher ses boutons. Il garde ses mains sous l'oreiller. Toute la nuit. Par précaution. »
+
+**P12 · Le vote**
 🎥 `Yanis yawning in his bedroom, dark circles.`
 🎬 `solo scene=chambreNuit gest=yawn shot=wide`
 🎭 `inquiet · idle`
@@ -410,7 +480,7 @@
 ---
 
 ## Épisode 9 · J-22 · « Le sommeil »
-⏱️ **1:12** · 📊 `JOUR 9 · VOUS AVEZ CHOISI SOMMEIL`
+⏱️ **1:25** · 📊 `JOUR 9 · VOUS AVEZ CHOISI SOMMEIL`
 
 **P1 · L'accroche**
 🎥 `Yanis falling asleep standing up at the gym, Kenzo waving at him.`
@@ -481,7 +551,21 @@
 🔠 `ET ON *RECOMMENCE*`
 🎙️ **VOIX OFF** : « Le soir, téléphone au tiroir. Vingt-deux heures trente. Il s'endort en deux minutes. Son corps a enfin compris le programme. »
 
-**P10 · Le vote**
+**P10 · Le tiroir**
+🎥 `Le tiroir`
+🎬 `solo scene=chambreNuit gest=look shot=med`
+🎭 `inquiet · idle`
+🔠 `LE TIROIR *L'APPELLE*`
+🎙️ **VOIX OFF** : « À vingt-trois heures, il fixe le tiroir. Le téléphone vibre dedans. Il ne bouge pas. C'est le combat le plus dur de sa vie. Plus dur que les pompes. »
+
+**P11 · Sofiane**
+🎥 `Sofiane`
+🎬 `duo scene=rue other=SOFIANE gest=hips ogest=yawn oexpr=calme`
+🎭 `sourire · idle`
+🔠 `SOFIANE *N'A PAS DORMI*`
+🎙️ **VOIX OFF** : « Le lendemain, Sofiane a les yeux rouges. Il a regardé des vidéos de chats jusqu'à quatre heures. Les rôles se sont inversés. »
+
+**P12 · Le vote**
 🎥 `Yanis looking at his skin in the mirror, almost clear.`
 🎬 `solo scene=salleDeBain gest=think shot=wide`
 🎭 `inquiet · idle`
@@ -492,7 +576,7 @@
 ---
 
 ## Épisode 10 · J-21 · « La peau »
-⏱️ **1:12** · 📊 `JOUR 10 · VOUS AVEZ CHOISI PEAU`
+⏱️ **1:25** · 📊 `JOUR 10 · VOUS AVEZ CHOISI PEAU`
 
 **P1 · L'accroche**
 🎥 `Before/after split screen: day 1 vs day 10, skin clear.`
@@ -562,7 +646,21 @@
 🔊 `scratch`
 🎙️ **VOIX OFF** : « Sofiane le regarde en mangeant une part de pizza. C'est quoi ta crème, frérot ? Yanis répond : de l'eau et du sommeil. Sofiane ne le croit pas. »
 
-**P10 · Le vote**
+**P10 · Le compliment**
+🎥 `Le compliment`
+🎬 `duo scene=rue other=INES gest=shrug ogest=wave oexpr=sourire fx=hearts`
+🎭 `choque · idle`
+🔠 `UN *COMPLIMENT*`
+🎙️ **VOIX OFF** : « Dans la rue, une fille lui dit : tu as une belle peau. Il répond : merci, c'est l'eau. Elle part. Il se dit qu'il aurait pu trouver mieux. »
+
+**P11 · Le miroir du salon**
+🎥 `Le miroir du salon`
+🎬 `solo scene=chambreJour gest=hips shot=close`
+🎭 `sourire · idle`
+🔠 `IL NE SE *CACHE PLUS*`
+🎙️ **VOIX OFF** : « Avant, il évitait tous les miroirs. Aujourd'hui, il passe devant celui du salon… et il s'arrête. Juste pour se regarder. Sans honte. »
+
+**P12 · Le vote**
 🎥 `Yanis smiling, showing his teeth, hesitating.`
 🎬 `solo scene=chambreJour gest=shrug shot=wide`
 🎭 `sourire · idle`
@@ -573,7 +671,7 @@
 ---
 
 ## Épisode 11 · J-20 · « Les dents blanches »
-⏱️ **1:12** · 📊 `JOUR 11 · VOUS AVEZ CHOISI DENTS BLANCHES`
+⏱️ **1:25** · 📊 `JOUR 11 · VOUS AVEZ CHOISI DENTS BLANCHES`
 
 **P1 · L'accroche**
 🎥 `Yanis smiling, his teeth so white they shine, Sofiane blinded.`
@@ -643,7 +741,21 @@
 🔠 `ELLE VERRA *LE JOUR J*`
 🎙️ **VOIX OFF** : « Il respire. Sarah verra le résultat le jour du mariage. Pas avant. D'ici là, il continue. En silence. Avec le sourire. Blanc. »
 
-**P10 · Le vote**
+**P10 · La tante**
+🎥 `La tante`
+🎬 `phone`
+🎭 `sourire · phone`
+🔠 `LA TANTE *EN VISIO*`
+🎙️ **VOIX OFF** : « En visio, la tante du bled voit son sourire et demande s'il est devenu acteur. Il dit non. Elle lui demande quand même un autographe. »
+
+**P11 · La photo**
+🎥 `La photo`
+🎬 `solo scene=chambreJour gest=thumbs fx=sparkle shot=close`
+🎭 `sourire · idle`
+🔠 `LE *SOURIRE* SUR LES PHOTOS`
+🎙️ **VOIX OFF** : « Pour la première fois, il sourit sur une photo avec la bouche ouverte. Il la regarde dix fois. Il ne savait pas qu'il avait un beau sourire. »
+
+**P12 · Le vote**
 🎥 `Yanis touching his patchy beard, hesitating.`
 🎬 `solo scene=salleDeBain gest=think shot=wide`
 🎭 `inquiet · idle`
@@ -654,7 +766,7 @@
 ---
 
 ## Épisode 12 · J-19 · « La barbe »
-⏱️ **1:12** · 📊 `JOUR 12 · VOUS AVEZ CHOISI BARBE`
+⏱️ **1:25** · 📊 `JOUR 12 · VOUS AVEZ CHOISI BARBE`
 
 **P1 · L'accroche**
 🎥 `Barber shocked looking at Yanis's patchy beard with razor cuts.`
@@ -724,7 +836,21 @@
 🔠 `*105,5 KG*`
 🎙️ **VOIX OFF** : « Cent cinq kilos et demi. Sa barbe est propre, sa peau est nette, ses dents sont blanches. Il commence à ressembler à quelqu'un. À lui. »
 
-**P10 · Le vote**
+**P10 · L'après-rasage**
+🎥 `L'après-rasage`
+🎬 `solo scene=salleDeBain gest=cream fx=sparkle shot=close`
+🎭 `panique · idle`
+🔠 `L'*APRÈS-RASAGE*`
+🎙️ **VOIX OFF** : « Le soir, il met de l'après-rasage pour la première fois. Ça pique. Ça brûle. Il crie. Moussa avait dit : juste une goutte. Il en a mis une poignée. »
+
+**P11 · Nadia**
+🎥 `Nadia`
+🎬 `duo scene=cuisine other=NADIA gest=idle ogest=cry oexpr=larmes enter=1 fx=hearts`
+🎭 `sourire · idle`
+🔠 `MAMAN *LE TOUCHE*`
+🎙️ **VOIX OFF** : « Nadia lui touche la joue. Elle est douce, pour la première fois. Elle sourit. Puis elle demande à Moussa s'il fait aussi les sourcils. Pour elle. »
+
+**P12 · Le vote**
 🎥 `Yanis with his thick messy hair, hesitating.`
 🎬 `solo scene=chambreJour gest=scratch shot=wide`
 🎭 `inquiet · idle`
