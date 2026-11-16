@@ -25,7 +25,8 @@ Style : bonhommes sans visage (membres arrière plus sombres, reflets, ombres au
 ```bash
 pip install pycairo numpy pillow        # + ffmpeg
 python3 generator/ego_video.py --music assets/musique_ego.m4a                 # x1 -> output/ego_vs_discipline.mp4
-python3 generator/ego_video.py --music assets/musique_ego.m4a --speed 2 -o output/ego_vs_discipline_x2.mp4
+python3 generator/ego_video.py --music assets/musique_ego_x1.5.m4a --speed 1.5 -o output/ego_vs_discipline_x1.5.mp4
+python3 generator/ego_video.py --music assets/musique_ego_x2.m4a --speed 2 -o output/ego_vs_discipline_x2.mp4
 python3 generator/ego_video.py --preview                                     # planche de captures
 ```
 
