@@ -261,6 +261,7 @@ def text(ctx, s, x, y, size=40, family=MONO, bold=True, italic=False, color=WHIT
             ctx.move_to(x, y)
             ctx.show_text(ch)
             x += ctx.text_extents(ch).x_advance + spacing
+    ctx.new_path()
     return w
 
 
