@@ -163,6 +163,12 @@ def layer(st, big=None, hk=1.0, ck=1.0):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     y0 = hud(d, st) if st.get("hud") else 90
     hl = Image.new("RGBA", (W, H), (0, 0, 0, 0)); y = headline(ImageDraw.Draw(hl), st.get("head") or "", y0, small=bool(st.get("hud"))) + 14
+    if st.get("hud") and (st.get("i") == 0 or st.get("choice")):
+        f1_, f2_ = L(54), L(30)
+        rr(d, (60, y, W - 60, y + 130), 30, "#ffd23a", "#111", 7)
+        d.text((W / 2, y + 46), "1 ABONNEMENT = 1 €  ·  1 LIKE = 1 €", font=f1_, fill="#111", anchor="mm")
+        d.text((W / 2, y + 100), "POUR LE GLOW-UP DE YANIS (CAGNOTTE VIRTUELLE)", font=f2_, fill="#5a3b00", anchor="mm")
+        y += 146
     # badge sport / glow-up sous le titre
     for lab, txt in st.get("cards", []):
         u = txt.upper().lstrip("😩🏃🏋️✅🏆✨ ")
@@ -258,7 +264,7 @@ def timing(s):
     return json.load(open(j)) if os.path.exists(j) else {"starts": [0.1], "sents": [s["sub"]]}
 
 def seg_key(s):
-    return hashlib.md5((json.dumps({k: v for k, v in s.items()}, sort_keys=True, default=str) + str(os.path.getsize(s["audio"]) if s.get("audio") and os.path.exists(s["audio"]) else 0) + open(os.path.join(HERE, "viz", "anim.js")).read() + open(os.path.join(HERE, "viz", "rig.js")).read() + open(os.path.join(HERE, "viz", "rooms2.js")).read() + "".join(open(os.path.join(HERE, "viz", f)).read() for f in ("kinds2.js", "look.js", "props2.js", "rooms3.js", "toon2.js"))).encode()).hexdigest()[:16]
+    return hashlib.md5((json.dumps({k: v for k, v in s.items()}, sort_keys=True, default=str) + str(os.path.getsize(s["audio"]) if s.get("audio") and os.path.exists(s["audio"]) else 0) + "banner1" + open(os.path.join(HERE, "viz", "anim.js")).read() + open(os.path.join(HERE, "viz", "rig.js")).read() + open(os.path.join(HERE, "viz", "rooms2.js")).read() + "".join(open(os.path.join(HERE, "viz", f)).read() for f in ("kinds2.js", "look.js", "props2.js", "rooms3.js", "toon2.js"))).encode()).hexdigest()[:16]
 
 def seg_dur(s): return dur(s["audio"]) + (0.06 if not s.get("choice") else 1.4)
 
