@@ -26,11 +26,13 @@ V = {
  "L'HOMME EN GRIS": ("fr-FR-HenriNeural", -4, 4),
  "UNE VOIX": ("fr-CH-FabriceNeural", 4, -8),
  "TOUS": ("fr-FR-RemyMultilingualNeural", 0, 0),
- "VOIX OFF": ("fr-FR-HenriNeural", 27, 3),
+ "VOIX OFF": ("fr-FR-HenriNeural", 31, -1),
 }
 # émotion: (vitesse, hauteur, volume %, cible loudness, filtre)
 EMO = {
  "normal":  (0, 0, 0, -16, "room"),
+ "narr":    (0, 0, 0, -14, "narr"),
+ "narr_x":  (4, 2, 5, -13.5, "narr"),
  "whisper": (-8, -3, -30, -24, "whisper"),
  "shout":   (12, 7, 25, -13, "room"),
  "excited": (7, 3, 10, -15, "room"),
@@ -41,6 +43,7 @@ EMO = {
  "memory":  (-6, -2, -5, -18, "memory"),
 }
 CHAIN = {
+ "narr":    "highpass=f=70,lowpass=f=13000,equalizer=f=120:t=q:w=0.9:g=3,equalizer=f=350:t=q:w=1:g=-2,equalizer=f=3000:t=q:w=1.1:g=3.5,equalizer=f=7000:t=q:w=1:g=-2,acompressor=threshold=-24dB:ratio=4:attack=3:release=60:makeup=3,alimiter=limit=0.95",
  "room":    "highpass=f=75,lowpass=f=11500,equalizer=f=220:t=q:w=1:g=1.5,equalizer=f=3200:t=q:w=1.2:g=2,acompressor=threshold=-20dB:ratio=3:attack=4:release=80:makeup=2,aecho=0.85:0.4:14|27:0.07|0.04",
  "whisper": "highpass=f=180,lowpass=f=9000,equalizer=f=5000:t=q:w=1:g=3,acompressor=threshold=-24dB:ratio=2.5:attack=4:release=80,aecho=0.85:0.3:12:0.05",
  "phone":   "highpass=f=320,lowpass=f=3300,equalizer=f=1500:t=q:w=1:g=4,acompressor=threshold=-22dB:ratio=5:attack=2:release=50,acrusher=bits=12:mix=0.15",
@@ -59,7 +62,7 @@ CAM = [("phone", ("on speaker", "video call", "on the phone", "answering")),
        ("slow", ("calm", "slowly", "serious", "very calm"))]
 
 def emotion(direction, text, header, cam="", who=""):
-    if who.startswith("VOIX"): return "excited" if "!" in text else "normal"
+    if who.startswith("VOIX"): return "narr_x" if "!" in text else "narr"
     d = direction.lower() + " " + header.lower()
     if not direction and who and ("{" + who + "}") in cam:
         c = cam.lower()
@@ -111,10 +114,10 @@ def sentences(text):
     return out
 
 def gap_after(s):  # voix off dynamique : respirations courtes
-    if s.endswith("…"): return random.randint(330, 420)
+    if s.endswith("…"): return random.randint(280, 360)
     if s.endswith("?"): return random.randint(140, 200)
-    if s.endswith("!"): return random.randint(90, 130)
-    return random.randint(100, 150)
+    if s.endswith("!"): return random.randint(70, 110)
+    return random.randint(80, 120)
 
 async def sh(*args):
     p = await asyncio.create_subprocess_exec(*args, stdout=asyncio.subprocess.DEVNULL, stderr=asyncio.subprocess.PIPE)
