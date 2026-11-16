@@ -222,5 +222,26 @@ function install(X) {
     const guests = ['NADIA', 'BILAL', 'SOFIANE'].map((g, i) => place(stand(g, Object.assign(G.clap(t + i), { expr: ex(i === 2 ? 'choque' : 'sourire', t, i + 1), t })), [120, 960, 140][i], [1600, 1600, 1900][i], 0.7)).join('');
     return { scene: 'mariage', act: place(me, 540, 1350 + 380 * u, s) + guests + fx('glow,sparkle', t, 540, 1000), cam: camera(t, j.D, 1.0, 540, 1000) };
   };
+  // ---------- gamer : assis sur sa chaise, manette, écran qui clignote
+  KINDS.gamer = (t, j) => {
+    const p = P(j), id = Y(j), mode = p.mode || 'play', s = 0.92, feet = 1720, hip = feet - (1270 - 860) * s + 110 * s;
+    const jit = 3 * S(t * 30), rage = mode === 'rage', over = mode === 'over' && t > +(p.at || 1.2);
+    let q = { expr: ex(j.expr || 'determine', t), t, lift: [0.9, 0.9], ll: [14, -6], rl: [14, -6], la: [-22 + jit, -115], ra: [-22 - jit, -115], rp: ['controller', 0, -60, -10], bob: breath(t) * 0.6, jiggle: 0.5, tilt: 4 * S(t * 2) };
+    if (rage) q = Object.assign(q, { la: [150 + 20 * S(t * 11), 170], ra: [150 + 20 * S(t * 11 + 1), 170], rp: ['controller', t * 400 % 360, 0, 0], bob: -Math.abs(S(t * 9)) * 30, jiggle: 1, tilt: 8 * S(t * 9) });
+    if (over) q = Object.assign(q, { la: [20, 10], ra: [20, 10], rp: null, tilt: -6 });
+    if (mode === 'phone') q = Object.assign(q, { la: [-22, -115], ra: [-10, 205], rp: ['phone', -20, 0, -40] });
+    const me = place(stand(id, q), 430, feet + 110 * s, s);
+    const chair = `<g transform="translate(430,${f1(hip)})"><rect x="-190" y="-560" width="380" height="560" rx="70" fill="#141418" stroke="${K}" stroke-width="7"/><rect x="-90" y="-530" width="180" height="480" rx="40" fill="#e5483f"/><rect x="-230" y="-20" width="460" height="70" rx="26" fill="#141418" stroke="${K}" stroke-width="7"/></g>`;
+    const flick = 0.5 + 0.5 * S(t * 13) * S(t * 7.3);
+    const scr = over ? `<rect x="742" y="842" width="276" height="176" fill="#200"/><text x="880" y="955" font-family="Lilita One" font-size="54" text-anchor="middle" fill="#ff3b3b">GAME OVER</text>`
+      : `<rect x="742" y="842" width="276" height="176" fill="${['#3ec5ff', '#ff4fd8', '#ffe14f', '#5bbf4a'][Math.floor(t * 3) % 4]}" opacity=".9"/><path d="M760 990 l40 -60 l30 40 l50 -80 l60 100 Z" fill="#222" opacity=".5"/><circle cx="${f1(800 + 160 * ((t * 0.7) % 1))}" cy="900" r="16" fill="#fff"/>`;
+    const desk = `<g><rect x="720" y="820" width="320" height="220" rx="12" fill="#111" stroke="${K}" stroke-width="7"/>${scr}<rect x="860" y="1040" width="40" height="80" fill="#222"/><rect x="660" y="1110" width="440" height="34" fill="#2b2b33" stroke="${K}" stroke-width="6"/>
+      ${[0, 1, 2, 3, 4, 5].map(i => PROPS.can(700 + (i % 3) * 52 + (i > 2 ? 26 : 0), 1106 - (i > 2 ? 84 : 0), 0)).join('')}</g>`;
+    const glow = `<ellipse cx="860" cy="930" rx="300" ry="260" fill="${['#3ec5ff', '#ff4fd8', '#ffe14f', '#5bbf4a'][Math.floor(t * 3) % 4]}" opacity="${f1(over ? 0.1 : 0.08 + 0.06 * flick)}"/>`;
+    const mom = p.other ? place(stand(p.other, Object.assign(pose(p.ogest || 'point', t + 0.4, j), { expr: ex(p.oexpr || 'colere', t, 1), t })), 140, 1640, 0.8) : '';
+    const fall = mode === 'over' && t > +(p.at || 1.2) && t < +(p.at || 1.2) + 0.6 ? PROPS.controller(560, 1150 + 500 * ramp(t, +(p.at || 1.2), +(p.at || 1.2) + 0.5), t * 300) : '';
+    return { scene: SC(j) === 'chambreJour' ? 'chambreNuit' : SC(j), act: mom + chair + me + desk + glow + fall + fx(p.fx, t, 430, 900), cam: camH(t, j, +(p.z || 1.12), 560, feet + 110 * s, s, 800, rage || p.shake ? [[0.05, 24]] : (over ? [[+(p.at || 1.2), 20]] : [])) };
+  };
+
 }
 module.exports = { install };

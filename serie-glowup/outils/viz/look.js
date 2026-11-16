@@ -14,11 +14,12 @@ function ensureY(id) {
   if (d < 20) c.chin = true;
   if (d < 12) c.jowls = true;
   c.outfit = suit ? 'suit' : d < 3 ? 'hoodieDirty' : d < 19 ? 'hoodie' : 'jacket';
+  if (d === 1) Object.assign(c, { ugly: true, headset: true, w: 1.48 });
   C[id] = c;
-  const fat = Math.max(4, 50 - (d - 1) * 1.6);
+  const fat = d === 1 ? 62 : Math.max(4, 50 - (d - 1) * 1.6);
   let o;
   if (suit) o = { top: '#22325a', pants: '#22325a', shoes: '#1a1a1a', tie: '#9a1d2a', fat: Math.min(fat, 8) };
-  else if (d < 3) o = { top: '#9ea2a8', short: true, stains: true, belly: true, pants: '#4b5878', shoes: '#ececec', stink: d < 2 };
+  else if (d < 3) o = { top: '#9ea2a8', short: true, stains: true, belly: true, pants: '#4b5878', shoes: '#ececec', stink: d < 2, fat: d === 1 ? 62 : 50 };
   else if (d < 19) o = { top: d < 10 ? '#8d96a3' : '#5f6b7a', short: fat > 30, pants: '#3e4a66', shoes: '#f4f4f4', fat };
   else if (d < 24) o = { top: '#1d1d22', pants: '#2a3550', shoes: '#f4f4f4', fat };
   else o = { top: '#23345e', polo: true, pants: '#d8c3a0', shoes: '#f4f4f4', fat };

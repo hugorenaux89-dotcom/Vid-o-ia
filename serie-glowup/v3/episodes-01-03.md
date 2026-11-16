@@ -4,109 +4,102 @@
 
 ---
 
-## Épisode 1 · J-30 · « Le déclic »
-⏱️ **1:15** · 📊 `JOUR 1 · À TOI DE CHOISIR`
+## Épisode 1 · J-30 · « Game over »
+⏱️ **1:15** · 📊 `JOUR 1 SUR 30 · À TOI DE CHOISIR`
+📈 `0 · 0`
 
 **P1 · L'accroche**
-🎥 `Close-up of {YANIS_A} in {CHAMBRE} at night, panicking, waving his arms, sweat drops, bald shiny head, broken glasses.`
-🎬 `hook`
-🎭 `panique · panic`
-🔠 `~30 JOURS~ POUR DEVENIR *MÉCONNAISSABLE*`
+🎥 `Yanis at 4 a.m. raging at a video game, controller in the air, screen flashing, energy drink cans.`
+🎬 `gamer mode=rage fx=sweat stage=1`
+🎭 `colere · panic`
+🔠 `~14 HEURES~ DE JEU *PAR JOUR*`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Ce mec a trente jours pour devenir méconnaissable. Sinon, son ex va l'humilier devant toute sa famille. Et c'est toi qui décides de tout ! »
+🎙️ **VOIX OFF** : « Ce mec joue aux jeux vidéo quatorze heures par jour. Et dans trente jours, il doit revoir son ex… devant toute sa famille. »
 
 **P2 · Voici Yanis**
-🎥 `{YANIS_A} lying on his unmade bed in {CHAMBRE} at night, eating chips, crumbs everywhere.`
-🎬 `bedEat`
+🎥 `Close-up of ugly Yanis: 32 pimples, bald, taped glasses, dark circles, gaming headset, flies around him.`
+🎬 `solo scene=chambreNuit gest=scratch fx=stink,flies shot=close stage=1`
 🎭 `neutre · idle`
 🔠 `VOICI *YANIS*`
-🎙️ **VOIX OFF** : « Lui, c'est Yanis. Vingt-quatre ans, mécano. Son sport préféré ? Le lit. Son plat préféré ? Les chips… au petit-déjeuner. »
-
-**P3 · L'invitation**
-🎥 `{YANIS_A} in {CHAMBRE} at night, jumping in surprise, holding a golden wedding invitation "BILAL & YASMINE", the J-30 calendar on the wall.`
-🎬 `invite`
-🎭 `choque · point`
-🔠 `UN MARIAGE DANS ~30 JOURS~`
 🔊 `boing`
-🎙️ **VOIX OFF** : « Un soir, il reçoit une invitation. Le mariage de son cousin Bilal. Dans trente jours pile. »
+🎙️ **VOIX OFF** : « Lui, c'est Yanis. Vingt-quatre ans. Cent douze kilos. Trente-deux boutons. Chauve depuis ses vingt ans. Et une odeur… que même les mouches trouvent limite. »
 
-**P4 · La story**
-🎥 `{YANIS_A} in {CHAMBRE} at night, shocked, looking at his phone: an Instagram story of {SARAH} with {KENZO}.`
+**P3 · Sa journée**
+🎥 `Yanis sitting in his gaming chair, playing, eating chips, cans everywhere.`
+🎬 `gamer mode=play stage=1`
+🎭 `sourire · idle`
+🔠 `SA JOURNÉE *TYPE*`
+🎙️ **VOIX OFF** : « Sa journée type : réveil à quinze heures. Jeu vidéo. Chips. Jeu vidéo. Soda. Jeu vidéo. Sa chaise a pris la forme de ses fesses. »
+
+**P4 · Deux minutes**
+🎥 `His mother Nadia shouting at the door, Yanis not moving from his game.`
+🎬 `gamer mode=play other=NADIA ogest=point oexpr=colere stage=1`
+🎭 `determine · idle`
+🔠 `« DEUX *MINUTES* »`
+🔊 `scratch`
+🎙️ **VOIX OFF** : « Sa mère l'appelle pour manger. Il répond : deux minutes. C'était il y a trois jours. »
+
+**P5 · L'invitation**
+🎥 `Yanis in his gaming chair, shocked, looking at his phone: a wedding invitation.`
+🎬 `gamer mode=phone stage=1`
+🎭 `choque · phone`
+🔠 `UN MARIAGE DANS ~30 JOURS~`
+🎙️ **VOIX OFF** : « Et là, en pleine partie, son téléphone vibre. Une invitation. Le mariage de son cousin Bilal. Dans trente jours pile. »
+
+**P6 · La story**
+🎥 `{YANIS_A} in {CHAMBRE} looking at his phone, shocked, an Instagram story of {SARAH} with {KENZO} on the screen.`
 🎬 `phone`
 🎭 `choque · phone`
 🔠 `SON EX SERA *LÀ*`
 🔊 `scratch`
-🎙️ **VOIX OFF** : « Et là… c'est le drame. Sarah, son ex, poste une story avec son nouveau copain. Kenzo. Coach sportif. Avec la légende : rendez-vous au mariage de Bilal. »
+🎙️ **VOIX OFF** : « Puis il voit une story. Sarah, son ex. Avec son nouveau copain : Kenzo. Légende : rendez-vous au mariage de Bilal. »
 📝 *(story)* `Sarah : « Mon homme 💪 Rdv au mariage de Bilal 💍 »`
 
-**P5 · Le miroir**
-🎥 `{YANIS_A} walking up to a tall standing mirror in {CHAMBRE}, looking at his reflection, sad.`
+**P7 · Game over**
+🎥 `Yanis dropping his controller, GAME OVER on the screen, shocked.`
+🎬 `gamer mode=over at=1.2 stage=1`
+🎭 `choque · idle`
+🔠 `*GAME OVER*`
+🔊 `thud`
+🎙️ **VOIX OFF** : « Il lâche la manette. Sur l'écran : game over. Et pour la première fois, il a l'impression que c'est sa vie qui vient de perdre. »
+
+**P8 · Le miroir**
+🎥 `Yanis walking up to the mirror, looking at his reflection, sad.`
 🎬 `mirror`
 🎭 `triste · tired`
 🔠 `LE MIROIR NE *MENT PAS*`
-🎙️ **VOIX OFF** : « Yanis se regarde dans le miroir. Et le miroir… ne ment pas. Un crâne qui brille plus que la lune. Des lunettes scotchées. Et un tee-shirt qui a abandonné le combat. »
+🎙️ **VOIX OFF** : « Il se regarde dans le miroir. Et le miroir… ne ment pas. Des cernes jusqu'aux genoux. Et un tee-shirt qui a abandonné le combat. »
 
-**P6 · Le score**
-🎥 `{KENZO} flexing his muscles next to {YANIS_A} eating chips, crumbs falling.`
-🎬 `score`
-🎭 `triste · tired`
-🔠 `KENZO 1 – *YANIS 0*`
-🔊 `boing`
-🎙️ **VOIX OFF** : « Kenzo : des abdos. Yanis : des miettes de chips. Un à zéro pour Kenzo. »
-
-**P7 · La décision**
-🎥 `{YANIS_A} in {CHAMBRE} throwing the bag of chips into the trash, then raising his fist, determined.`
+**P9 · La décision**
+🎥 `Yanis throwing his chips into the trash, fist raised, determined.`
 🎬 `throw`
 🎭 `determine · fist`
 🔠 `~30 JOURS~ POUR *TOUT CHANGER*`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Alors Yanis jette ses chips… et fait une promesse. Trente jours. Un changement par jour. »
+🎙️ **VOIX OFF** : « Alors il débranche la console. Il jette ses chips. Et il fait une promesse : trente jours pour devenir méconnaissable. »
 
-**P8 · Le twist**
-🎥 `{YANIS_A} in {CHAMBRE} pointing at the camera.`
-🎬 `point`
-🎭 `determine · point`
-🔠 `C'EST *TOI* QUI CHOISIS`
-🎙️ **VOIX OFF** : « Mais attention : c'est toi qui choisis ce qui change. Et chaque changement reste pour toujours. »
+**P10 · La cagnotte**
+🎥 `Yanis shaking an empty piggy bank, worried.`
+🎬 `solo scene=chambreNuit gest=show prop=piggy shot=med stage=1`
+🎭 `inquiet · idle`
+🔠 `1 LIKE = *1 €*`
+🎙️ **VOIX OFF** : « Problème : il a zéro euro. Alors on fait un deal. Chaque like, c'est un euro dans sa cagnotte glow-up. Chaque abonné aussi. Et c'est toi qui choisis tout. »
+📝 `💰 CAGNOTTE VIRTUELLE : 1 LIKE = 1 € · 1 ABONNÉ = 1 €`
 
-**P9 · Les pompes**
-🎥 `{YANIS_A} in {SALLE_MUSCU} doing push-ups on a blue mat, red face, sweating, then collapsing flat.`
-🎬 `pushup`
+**P11 · Les pompes**
+🎥 `Yanis trying push-ups on the floor, red face, then collapsing flat.`
+🎬 `pushup reps=3`
 🎭 `panique · panic`
-🔠 `5 POMPES… *ET IL S'ÉCRASE*`
+🔠 `3 POMPES… *ET IL S'ÉCRASE*`
 🔊 `thud`
-🎙️ **VOIX OFF** : « Premier arrêt : la salle de sport. Une pompe… Deux… Trois… Quatre… Cinq… Et il s'écrase comme une crêpe ! »
-📝 `MUSCU : 5 POMPES`
+🎙️ **VOIX OFF** : « Premier test : des pompes. Une… Deux… Trois… Et il s'écrase comme une crêpe ! »
 
-**P10 · Le bilan**
-🎥 `{YANIS_A} lying exhausted on the floor of {SALLE_MUSCU}, giving a weak thumbs-up.`
-🎬 `lieFloor`
-🎭 `triste · tired`
-🔠 `UN *DÉBUT*`
-🎙️ **VOIX OFF** : « Kenzo en fait cinq cents. Mais bon… il faut bien commencer quelque part. »
-
-**P11 · L'eau**
-🎥 `{YANIS_A} in {CUISINE} writing "2 L" with a marker on a big water bottle, {NADIA} wiping a tear.`
-🎬 `water`
-🎭 `determine · idle`
-🔠 `ADIEU *LES SODAS*`
-🎙️ **VOIX OFF** : « Le soir, nouvelle règle : deux litres d'eau par jour. Sa mère est émue. Elle attend ce moment depuis dix ans. »
-📝 `✨ GLOW-UP DU JOUR : 2 L D'EAU PAR JOUR`
-
-**P12 · Le problème**
-🎥 `{YANIS_A} raising his arms in {CHAMBRE}, green smell cloud, flies escaping.`
-🎬 `armsUp`
-🎭 `inquiet · panic`
-🔠 `UN *GROS* PROBLÈME`
-🔊 `boing`
-🎙️ **VOIX OFF** : « Mais il reste un gros problème. Quand Yanis lève les bras… même les mouches s'enfuient ! »
-
-**P13 · Le vote**
-🎥 `{YANIS_A} in {CHAMBRE} scratching his head, worried.`
-🎬 `vote`
-🎭 `inquiet · point`
-🔠 `COMMENTE *UN MOT*`
-🎙️ **VOIX OFF** : « Alors, à toi de jouer. Commente un seul mot : ODEUR… ou BOUTONS. Abonne-toi : le jour trente va être complètement fou ! »
+**P12 · Le vote**
+🎥 `Yanis in his bedroom, shrugging, worried.`
+🎬 `solo scene=chambreNuit gest=shrug shot=wide stage=1`
+🎭 `inquiet · idle`
+🔠 `DEMAIN, ON AMÉLIORE *QUOI ?*`
+🎙️ **VOIX OFF** : « Alors, demain, qu'est-ce qu'on améliore : son odeur… ou ses boutons ? Écris-le en commentaire. Et n'oublie pas : chaque like, c'est un euro pour Yanis ! »
 📝 `🅰️ ODEUR` / `🅱️ BOUTONS`
 
 ---

@@ -3,11 +3,11 @@ Rappels : coche « Contenu généré par IA », mets la miniature `epXX-miniatur
 
 ## Épisode 1 — `videos/ep01.mp4`
 ```
-Jour 1 sur 30 😬 Yanis a 30 jours avant le mariage de son cousin… où son ex viendra avec son nouveau copain 💍 Et c'est TOI qui choisis chaque changement.
+Jour 1 sur 30 😬 Il joue aux jeux vidéo 14 h par jour… et dans 30 jours, il doit revoir son ex devant toute sa famille 💍 1 like = 1 € dans sa cagnotte glow-up (virtuelle) 💰 Et c'est TOI qui choisis chaque changement.
 Qu'est-ce qu'on améliore demain ? ODEUR ou BOUTONS ? Dis-le en commentaire 👇
-#30jours #glowup #transformation #animation #histoire #fyp #pourtoi #mariage #ex
+#30jours #glowup #transformation #animation #histoire #fyp #pourtoi #gamer #mariage #ex
 ```
-📌 Commentaire à épingler : « ODEUR ou BOUTONS ? Le mot le plus commenté change Yanis pour toujours 👇 »
+📌 Commentaire à épingler : « ODEUR ou BOUTONS ? Le mot le plus commenté change Yanis pour toujours 👇 (cagnotte virtuelle : 1 like = 1 €) »
 
 ## Épisode 2 — `videos/ep02.mp4`
 ```

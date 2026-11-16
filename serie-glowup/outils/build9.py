@@ -50,6 +50,10 @@ def parse():
                 eps[ep] = {"n": ep, "j": m.group(2), "title": m.group(3), "plans": [], "counter": "", "choice": None}; continue
             if ep is None: continue
             E = eps[ep]
+            if s.startswith("📈"):
+                m = re.search(r"`(\d+) · (\d+)`", s)
+                if m: E["hud"] = (int(m.group(1)), int(m.group(2)))
+                continue
             if s.startswith("⏱️"):
                 m = re.search(r"📊 `([^`]+)`", s); E["counter"] = m.group(1) if m else ""; continue
             m = re.match(r"\*\*(P\d+) ·", s)
@@ -185,13 +189,21 @@ def layer(st, big=None):
     if big:
         fb = L(104)
         while d.textlength(big.upper(), font=fb) > 1000 and fb.size > 60: fb = L(fb.size - 8)
-        d.text((W / 2 + 5, 1597), big.upper(), font=fb, fill="#000", anchor="mm", stroke_width=13, stroke_fill="#000")
+        CY = 1540 if st.get("hud") else 1590
+        d.text((W / 2 + 5, CY + 7), big.upper(), font=fb, fill="#000", anchor="mm", stroke_width=13, stroke_fill="#000")
         keys = {re.sub(r"[^\wÀ-ÿ']", "", w_).upper() for w_ in re.sub(r"[*~]", " ", st.get("head") or "").split()} - SMALL
         ws = big.upper().split(); x = W / 2 - d.textlength(big.upper(), font=fb) / 2
         for w_ in ws:
             hot = re.sub(r"[^\wÀ-ÿ']", "", w_) in keys or re.search(r"\d", w_)
-            d.text((x, 1590), w_, font=fb, fill="#ff4d4d" if hot else "#ffe14a", anchor="lm", stroke_width=13, stroke_fill="#111")
+            d.text((x, CY), w_, font=fb, fill="#ff4d4d" if hot else "#ffe14a", anchor="lm", stroke_width=13, stroke_fill="#111")
             x += d.textlength(w_ + " ", font=fb)
+    if st.get("hud"):
+        pct, eur = st["hud"]
+        rr(d, (70, 1630, 520, 1700), 26, (16, 16, 22, 235), "#7dff7a", 5)
+        rr(d, (220, 1648, 500, 1682), 14, (60, 60, 70, 255)); rr(d, (220, 1648, 220 + max(18, int(280 * pct / 100)), 1682), 14, "#7dff7a")
+        d.text((145, 1665), "GLOW-UP", font=L(30), fill="white", anchor="mm"); d.text((360, 1665), f"{pct} %", font=L(28), fill="#111" if pct > 40 else "white", anchor="mm")
+        rr(d, (560, 1630, W - 70, 1700), 26, (16, 16, 22, 235), "#f2c230", 5)
+        d.text(((560 + W - 70) / 2, 1665), f"CAGNOTTE : {eur} €", font=L(36), fill="#ffd23a", anchor="mm")
     # bandeau du jour
     band = st.get("band", "")
     if band:
@@ -212,7 +224,7 @@ def plans_to_segments(E):
         cl = cam.lower(); story = "instagram story" in cl or ("story" in cl and "{SARAH}" in cam and "{KENZO}" in cam and "phone" in cl)
         st = {"counter": E["counter"], "scene": scene, "cards": [], "props": [], "audio": p["voice"]["audio"] if p["voice"] else None,
               "sub": p["voice"]["text"] if p["voice"] else "", "yanis": yid if "{YANIS" in cam else None, "expr": p["expr"], "pose": p["pose"],
-              "vote": p["vote"], "choice": p["choice"], "i": i, "head": p["head"], "band": E["counter"], "sfx": p["sfx"], "kind": p["kind"], "p": p["p"], "sfxb": p["sfxb"], "day": E["n"]}
+              "vote": p["vote"], "choice": p["choice"], "i": i, "head": p["head"], "band": E["counter"], "sfx": p["sfx"], "kind": p["kind"], "p": p["p"], "sfxb": p["sfxb"], "day": E["n"], "hud": E.get("hud")}
         st["props"] = [k for k, w in (("invitation", "invitation"), ("chips", "chips"), ("water", "water bottle")) if w in cl]
         cards = list(p["notes"])
         if story:
@@ -230,7 +242,7 @@ def timing(s):
     return json.load(open(j)) if os.path.exists(j) else {"starts": [0.1], "sents": [s["sub"]]}
 
 def seg_key(s):
-    return hashlib.md5((json.dumps({k: v for k, v in s.items()}, sort_keys=True, default=str) + open(os.path.join(HERE, "viz", "anim.js")).read() + open(os.path.join(HERE, "viz", "rig.js")).read() + open(os.path.join(HERE, "viz", "rooms2.js")).read()).encode()).hexdigest()[:16]
+    return hashlib.md5((json.dumps({k: v for k, v in s.items()}, sort_keys=True, default=str) + open(os.path.join(HERE, "viz", "anim.js")).read() + open(os.path.join(HERE, "viz", "rig.js")).read() + open(os.path.join(HERE, "viz", "rooms2.js")).read() + "".join(open(os.path.join(HERE, "viz", f)).read() for f in ("kinds2.js", "look.js", "props2.js", "rooms3.js", "toon2.js"))).encode()).hexdigest()[:16]
 
 def seg_dur(s): return dur(s["audio"]) + (0.06 if not s.get("choice") else 1.4)
 
@@ -307,7 +319,7 @@ if __name__ == "__main__":
             for b in s.get("story", []): busts.add((b, "sourire"))
             key = seg_key(s)
             if os.path.exists(os.path.join(SEG, key + ".mp4")): continue
-            jobs.append({"day": 31 - E["n"], "kind": s["kind"], "D": seg_dur(s), "beats": timing(s)["starts"], "expr": s["expr"], "yid": (f"Y{E['n']}" if E["n"] >= 4 else (s["yanis"] or "YANIS_A")), "p": s.get("p", {}), "out": os.path.join(SEG, key + "_f"), "fps": FPS})
+            jobs.append({"day": 31 - E["n"], "kind": s["kind"], "D": seg_dur(s), "beats": timing(s)["starts"], "expr": s["expr"], "yid": (f"Y{E['n']}" if E["n"] >= 4 or E["n"] == 1 else (s["yanis"] or "YANIS_A")), "p": s.get("p", {}), "out": os.path.join(SEG, key + "_f"), "fps": FPS})
     req = os.path.join(WORK, "req.json"); json.dump({"scenes": [], "persons": [], "busts": sorted(busts)}, open(req, "w"))
     subprocess.run(["node", os.path.join(HERE, "viz", "assets5.js"), req, ASSETS], check=True)
     jf = os.path.join(WORK, "jobs.json"); json.dump(jobs, open(jf, "w"))

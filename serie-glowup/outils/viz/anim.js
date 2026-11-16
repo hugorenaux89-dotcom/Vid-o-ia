@@ -117,7 +117,7 @@ const KINDS = {
   },
   // pompes synchronisées sur la voix, puis s'écrase
   pushup: (t, j) => {
-    const b = j.beats || [], reps = b.slice(1, 6), crashAt = b[6] !== undefined ? b[6] + 0.45 : j.D * 0.8;
+    const nr = +((j.p || {}).reps || 5), b = j.beats || [], reps = b.slice(1, 1 + nr), crashAt = b[1 + nr] !== undefined ? b[1 + nr] + 0.45 : j.D * 0.8;
     let d = 0.05 + 0.04 * S(t * 30);
     for (const r of reps) { const u = t - r; if (u >= 0 && u < 0.7) d = Math.max(d, S(u / 0.7 * Math.PI) * 0.95); }
     if (t > crashAt) d = 1 + ramp(t, crashAt, crashAt + 0.25) * 0.3;
