@@ -7,18 +7,20 @@ function install(X) {
   const Y = j => { const id = P(j).stage ? 'Y' + P(j).stage : j.yid; ensureY(id); return id; };
 
   // ---------- gestes : (t, j, side) -> morceau de pose
+  // accent : petite impulsion au début de chaque phrase de la voix off
+  const acc = (t, j) => Math.max(0, ...((j && j.beats) || []).map(b => { const u = t - b; return u < 0 ? 0 : u < 0.25 ? u / 0.25 : Math.max(0, 1 - (u - 0.25) / 0.9); }));
   const G = {
     idle: t => idleArms(t),
-    talk: t => ({ la: [30 + 25 * S(t * 3.1), 60 + 50 * S(t * 3.1 + 1)], ra: [30 + 25 * S(t * 2.7 + 2), 60 + 50 * S(t * 2.7)], tilt: 4 * S(t * 2) }),
+    talk: (t, j) => { const a = acc(t, j); return { la: [16 + 6 * a, 10 + 20 * a], ra: [22 + 30 * a, 30 + 85 * a], tilt: 3 * a }; },
     wave: t => ({ la: [16, 8], ra: [150, 160 + 25 * S(t * 9)] }),
-    point: t => ({ la: [16, 8], ra: [80 + 6 * S(t * 5), 95 + 6 * S(t * 5)], rh: 'point' }),
+    point: (t, j) => { const a = acc(t, j); return { la: [16, 8], ra: [76 + 8 * a, 92 + 6 * a], rh: 'point' }; },
     fist: t => ({ la: [16, 8], ra: [165, 178], rh: 'fist', bob: -Math.max(0, S(t * 5)) * 14 }),
     flex: t => ({ la: [95, 178], ra: [95, 178], lh: 'fist', rh: 'fist', bob: Math.abs(S(t * 4)) * -8 }),
     jump: t => ({ la: [155 + 10 * S(t * 8), 170], ra: [155 + 10 * S(t * 8 + 1), 170], bob: -Math.abs(S(t * 6)) * 60, jiggle: 1 }),
     panic: t => ({ la: [150 + 20 * S(t * 9), 160 + 25 * S(t * 9 + 1)], ra: [150 + 20 * S(t * 9 + 2), 160 + 25 * S(t * 9 + 3)], bob: -Math.abs(S(t * 7)) * 24, jiggle: 1 }),
     facepalm: t => ({ la: [16, 8], ra: [-20, 205], tilt: 8 }),
-    think: t => ({ la: [-25, -110], ra: [-15, 200], rh: 'point', tilt: 6 * S(t * 1.5) }),
-    shrug: t => { const u = Math.abs(S(t * 2.2)); return { la: [50 + 30 * u, 120], ra: [50 + 30 * u, 120], tilt: 8 * S(t * 2.2) }; },
+    think: t => ({ la: [-25, -110], ra: [-15, 200], rh: 'point', tilt: 4 }),
+    shrug: (t, j) => { const u = acc(t, j); return { la: [40 + 30 * u, 110], ra: [40 + 30 * u, 110], tilt: 5 * u }; },
     eat: t => { const c = (t % 1.4) / 1.4, u = c < 0.5 ? ease(c * 2) : 1 - ease((c - 0.5) * 2); return { la: [16, 8], ra: [-10 - 15 * u, 120 + 85 * u] }; },
     drink: t => { const u = 0.5 + 0.5 * S(t * 2); return { la: [16, 8], ra: [-15, 160 + 45 * u], rpRot: -20 - 60 * u }; },
     phone: t => ({ la: [20, 8], ra: [-10, 205 + 4 * S(t * 6)], rpDefault: 'phone', tilt: -6 }),
@@ -36,8 +38,8 @@ function install(X) {
     brush: t => ({ la: [16, 8], ra: [-20 + 4 * S(t * 18), 205 + 8 * S(t * 18)], rpDefault: 'toothbrush' }),
     cream: t => ({ la: [-20 + 4 * S(t * 6), 205 + 8 * S(t * 6)], ra: [-20 + 4 * S(t * 6 + 2), 205 + 8 * S(t * 6 + 2)] }),
     comb: t => ({ la: [16, 8], ra: [150, 200 + 15 * S(t * 6)], rpDefault: 'comb' }),
-    armsCross: t => ({ la: [-25, -105], ra: [-25, -105], tilt: 4 * S(t * 1.5) }),
-    hips: t => ({ la: [40, -40], ra: [40, -40], tilt: 3 * S(t * 2) }),
+    armsCross: t => ({ la: [-25, -105], ra: [-25, -105], tilt: 0 }),
+    hips: t => ({ la: [40, -40], ra: [40, -40], tilt: 0 }),
     sad: t => ({ la: [6, 2], ra: [6, 2], bob: 10, tilt: 8 }),
     walk: t => { const s = S(t * 8); return { ll: [16 * s, 4], rl: [-16 * s, 4], la: [16 - 14 * s, 8], ra: [16 + 14 * s, 8], bob: -Math.abs(s) * 10 }; },
     curl: t => { const u = 0.5 + 0.5 * S(t * 3.6); return { la: [12, 20 + 150 * u], ra: [12, 20 + 150 * (1 - u)], lp: ['dumbbell', 90], rp: ['dumbbell', 90], lh: 'fist', rh: 'fist', jiggle: 0.5 }; },
@@ -48,11 +50,11 @@ function install(X) {
     kneel: t => ({ la: [16, 8], ra: [-20, -150], lift: [0.9, 0.2], bob: 120 }),
     hug: t => ({ la: [-40, -100], ra: [-40, -100] }),
     tie: t => ({ la: [-20, 200 + 4 * S(t * 8)], ra: [-20, 200 - 4 * S(t * 8)], tilt: -4 }),
-    look: t => ({ ...idleArms(t), tilt: -10 + 4 * S(t * 2) }),
+    look: t => ({ ...idleArms(t), tilt: -6 }),
   };
   function pose(gest, t, j, extra = {}) {
     const g = (G[gest] || G.idle)(t, j);
-    const q = Object.assign({ bob: breath(t), jiggle: 0.3 }, g);
+    const q = Object.assign({ bob: breath(t), jiggle: 0 }, g);
     if (g.bob !== undefined) q.bob = g.bob + breath(t) * 0.5;
     const pr = extra.prop || g.rpDefault;
     if (pr && !q.rp) q.rp = [pr, g.rpRot || 0, 0, 0];

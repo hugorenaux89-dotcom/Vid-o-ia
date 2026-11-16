@@ -14,14 +14,14 @@ const S = Math.sin;
 const place = (svg, x, feet, s) => `<g transform="translate(${f1(x - 300 * s)},${f1(feet - 1270 * s)}) scale(${s})">${svg}</g>`;
 const blinkAt = (t, seed = 0) => ((t + seed * 0.7) % 2.9) > 2.76;
 const ex = (e, t, seed) => blinkAt(t, seed) ? e + '_blink' : e;
-const idleArms = (t, k = 1) => ({ la: [16 + 3 * k * S(t * 2.1), 8 + 6 * k * S(t * 2.1 + 1)], ra: [16 + 3 * k * S(t * 2.1 + 2), 8 + 6 * k * S(t * 2.1 + 3)] });
-const breath = t => 6 * S(t * 2.6);
+const idleArms = (t, k = 1) => ({ la: [14 + 1.5 * k * S(t * 1.3), 8 + 3 * k * S(t * 1.3 + 1)], ra: [14 + 1.5 * k * S(t * 1.3 + 2), 8 + 3 * k * S(t * 1.3 + 3)] });
+const breath = t => 3 * S(t * 2.0);
 
 // caméra : point du monde (fx, fy) envoyé à l'écran (540, 1000), zoom z
 function camera(t, D, z, fx, fy, shakes = []) {
-  let zz = z * (1 + 0.1 * Math.max(0, 1 - t / 0.22)) * (1 + 0.045 * t / D);
+  let zz = z * (1 + 0.04 * Math.max(0, 1 - t / 0.3)) * (1 + 0.03 * t / D);
   let dx = 0, dy = 0;
-  for (const [at, amp] of shakes) { const u = t - at; if (u >= 0 && u < 0.45) { const a = amp * (1 - u / 0.45); dx += a * S(u * 90); dy += a * S(u * 73 + 1); } }
+  for (const [at, amp] of shakes) { const u = t - at; if (u >= 0 && u < 0.45) { const a = amp * 0.45 * (1 - u / 0.45); dx += a * S(u * 60); dy += a * S(u * 50 + 1); } }
   const vw = 1080 / zz, vh = 1920 / zz;
   const left = clamp(fx - 540 / zz, 0, 1080 - vw) + dx / zz, top = clamp(fy - 1000 / zz, 0, 1920 - vh) + dy / zz;
   return `scale(${zz.toFixed(4)}) translate(${f1(-left)},${f1(-top)})`;

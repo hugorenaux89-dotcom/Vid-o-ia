@@ -44,7 +44,7 @@ function handShapes(kind) {
     const th = kind === 'thumb' ? [-24, 16, -27, -22, 17] : [-26, 18, 0, 30, 16];
     return { palm: 'M-26 0 Q-32 24 -24 44 Q0 54 24 44 Q32 24 26 0 Z', fingers: f, thumb: th };
   }
-  return { palm: 'M-25 0 Q-31 24 -23 46 Q0 56 23 46 Q31 24 25 0 Z', fingers: [[-18, 40, -24, 74, 13], [-6.5, 44, -8, 84, 13.5], [6.5, 44, 7, 83, 13.5], [18, 40, 22, 70, 12.5]], thumb: [-24, 14, -44, 40, 14] };
+  return { palm: 'M-24 0 Q-30 24 -22 46 Q0 56 22 46 Q30 24 24 0 Z', fingers: [[-15.5, 42, -17, 68, 12.5], [-5.2, 46, -5.6, 76, 13], [5.2, 46, 5.6, 75, 13], [15.5, 42, 17, 66, 12]], thumb: [-22, 14, -34, 38, 13.5] };
 }
 function hand(p, ang, skin, kind = 'open', sc = 1) {
   const [x, y] = p;
@@ -59,16 +59,14 @@ function hand(p, ang, skin, kind = 'open', sc = 1) {
 }
 // bras effilé (épaule plus large que le poignet) avec coude, ombre et reflet
 function limb(s0, e, h, w, skin, cloth = false) {
-  const w2 = w * 0.92, dark = shade(skin, -0.22), lite = shade(skin, 0.25);
-  const seg = (a, b, ww, col) => `<path d="M${f1(a[0])} ${f1(a[1])} L${f1(b[0])} ${f1(b[1])}" stroke="${col}" stroke-width="${f1(ww)}" stroke-linecap="round" fill="none"/>`;
+  const w2 = w * 0.9, w3 = w * (cloth ? 0.86 : 0.74), dark = shade(skin, -0.18);
+  const seg = (a, b, ww, col, op = 1) => `<path d="M${f1(a[0])} ${f1(a[1])} L${f1(b[0])} ${f1(b[1])}" stroke="${col}" stroke-width="${f1(ww)}" stroke-linecap="round" fill="none"${op < 1 ? ` opacity="${op}"` : ''}/>`;
   const off = (a, b, d) => { const dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1; return [[a[0] - dy / L * d, a[1] + dx / L * d], [b[0] - dy / L * d, b[1] + dx / L * d]]; };
-  const [u1, u2] = off(s0, e, w * 0.24), [f1a, f1b] = off(e, h, w2 * 0.24), [l1, l2] = off(s0, e, -w * 0.26), [m1, m2] = off(e, h, -w2 * 0.26);
-  const wr = [e[0] + (h[0] - e[0]) * 0.62, e[1] + (h[1] - e[1]) * 0.62], w3 = w2 * 0.8;
-  const wl = (() => { const dx = h[0] - e[0], dy = h[1] - e[1], L = Math.hypot(dx, dy) || 1, px = -dy / L, py = dx / L, c = [h[0] - dx / L * 6, h[1] - dy / L * 6]; return `<path d="M${f1(c[0] - px * w3 * 0.45)} ${f1(c[1] - py * w3 * 0.45)} L${f1(c[0] + px * w3 * 0.45)} ${f1(c[1] + py * w3 * 0.45)}" stroke="${dark}" stroke-width="3.5" stroke-linecap="round" opacity=".9"/>`; })();
-  return seg(s0, e, w + 9, K) + seg(e, wr, w2 + 9, K) + seg(wr, h, w3 + 9, K) + seg(s0, e, w, skin) + seg(e, wr, w2, skin) + seg(wr, h, w3, skin) + wl
-    + seg(u1, u2, w * 0.3, dark).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".55"') + seg(f1a, f1b, w2 * 0.3, dark).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".55"')
-    + (cloth ? '' : seg(l1, l2, w * 0.12, lite).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".7"') + seg(m1, m2, w2 * 0.12, lite).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".7"'))
-    + `<path d="M${f1(e[0] - 6)} ${f1(e[1] - 4)} q6 6 12 0" fill="none" stroke="${dark}" stroke-width="3" opacity=".8"/>`;
+  const wr = [e[0] + (h[0] - e[0]) * 0.7, e[1] + (h[1] - e[1]) * 0.7];
+  const [u1, u2] = off(s0, e, w * 0.22), [v1, v2] = off(e, wr, w2 * 0.22);
+  return seg(s0, e, w + 9, K) + seg(e, wr, w2 + 9, K) + seg(wr, h, w3 + 9, K)
+    + seg(s0, e, w, skin) + seg(e, wr, w2, skin) + seg(wr, h, w3, skin)
+    + seg(u1, u2, w * 0.36, dark, 0.45) + seg(v1, v2, w2 * 0.36, dark, 0.45);
 }
 // manche de tee-shirt évasée, avec ourlet et pli
 function sleeve(s0, a, L, w, col) {
@@ -85,7 +83,7 @@ function sleeve(s0, a, L, w, col) {
     <path d="M${P2(A)} L${P2(B)} L${P2(C)} L${P2(D)} Q${P2(capc)} ${P2(A)} Z" fill="${col}"/>
     <path d="M${P2(A)} L${P2(B)} L${P2(C)} L${P2(D)}" fill="none" stroke="${K}" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
     <path d="M${P2(hem[0])} L${P2(hem[1])}" stroke="${shade(col, -0.3)}" stroke-width="5" stroke-linecap="round"/>
-    <path d="M${f1(mid[0] + px * w0 * 0.4)} ${f1(mid[1] + py * w0 * 0.4)} q${f1(dx * 16)} ${f1(dy * 16)} ${f1(-px * 18)} ${f1(-py * 18)}" fill="none" stroke="${shade(col, -0.25)}" stroke-width="4" stroke-linecap="round"/>`;
+`;
 }
 // accessoires tenus en main
 const PROPS = {
@@ -154,29 +152,32 @@ function stand(pid, q) {
       <rect x="-64" y="16" width="160" height="22" rx="11" fill="#f7f7f7" stroke="${K}" stroke-width="5"/><path d="M-56 30 L88 30" stroke="#cfcfcf" stroke-width="4"/></g>`; };
   const legs = L.svg + R.svg + shoe(L.an, -1) + shoe(R.an, 1);
   // haut du corps (décalé par la respiration)
-  const top = 440 + bob, bot = (o.short ? 700 + (50 - fat) * 2.4 : 880) + bob * 0.7;
-  const torsoPath = `M${sx - tw + 4} ${top + 110} C${sx - tw - 14} ${top + 70} ${sx - tw - 4} ${top + 8} ${sx - tw + 56} ${top + 4} C${sx - 104} ${top} ${sx - 80} ${top - 6} ${sx - 58} ${top - 10} Q${sx} ${top + 22} ${sx + 58} ${top - 10} C${sx + 80} ${top - 6} ${sx + 104} ${top} ${sx + tw - 56} ${top + 4} C${sx + tw + 4} ${top + 8} ${sx + tw + 14} ${top + 70} ${sx + tw - 4} ${top + 110} L${sx + tw - 8 + fat * 0.4} ${bot} Q${sx} ${bot + 24} ${sx - tw + 8 - fat * 0.4} ${bot} Z`;
+  const top = 440 + bob;
+  const hem = (o.short || o.belly || fat > 12) ? hipY - 26 + fat * 0.95 + bob * 0.5 : 880 + bob * 0.7;
+  const bot = hem;
+  const jig = (q.jiggle || 0) * 0.35 * Math.sin(t * 9);
+  const bw = fat * 0.8 + jig * 4, my = top + (hem - top) * 0.6, sw = tw + 4;
+  const torsoPath = `M${sx - 58} ${top - 10} Q${sx} ${top + 22} ${sx + 58} ${top - 10} C${sx + 110} ${top} ${sx + sw - 20} ${top + 4} ${sx + sw} ${top + 70}
+    C${f1(sx + sw + bw * 0.6)} ${f1(top + 160)} ${f1(sx + sw + bw)} ${f1(my - 60)} ${f1(sx + sw + bw)} ${f1(my)}
+    C${f1(sx + sw + bw)} ${f1(my + (hem - my) * 0.7)} ${f1(sx + sw * 0.75)} ${f1(hem + fat * 0.3)} ${sx} ${f1(hem + 14 + fat * 0.45)}
+    C${f1(sx - sw * 0.75)} ${f1(hem + fat * 0.3)} ${f1(sx - sw - bw)} ${f1(my + (hem - my) * 0.7)} ${f1(sx - sw - bw)} ${f1(my)}
+    C${f1(sx - sw - bw)} ${f1(my - 60)} ${f1(sx - sw - bw * 0.6)} ${f1(top + 160)} ${sx - sw} ${top + 70}
+    C${sx - sw + 20} ${top + 4} ${sx - 110} ${top} ${sx - 58} ${top - 10} Z`;
   const torso = o.dress ? `<path d="M${sx - tw} ${top + 40} Q${sx} ${top - 20} ${sx + tw} ${top + 40} L${sx + tw + 60} 1010 L${sx - tw - 60} 1010 Z" fill="${o.top}" stroke="${K}" stroke-width="6"/>`
-    : `<defs><linearGradient id="tg${id}" x1="0" x2="1"><stop offset="0" stop-color="${shade(o.top, 0.12)}"/><stop offset=".55" stop-color="${o.top}"/><stop offset="1" stop-color="${shade(o.top, -0.25)}"/></linearGradient></defs>
-       <path d="${torsoPath}" fill="${o.top}" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
-       <path d="M${sx + tw - 34} ${top + 60} L${sx + tw - 30} ${bot - 6}" stroke="${shade(o.top, -0.16)}" stroke-width="34" stroke-linecap="round" opacity=".4"/>
-       <path d="M${sx - tw + 30} ${top + 70} L${sx - tw + 34} ${bot - 20}" stroke="${shade(o.top, 0.12)}" stroke-width="12" stroke-linecap="round" opacity=".6"/>
-       <path d="M${sx - 40} ${top + 120} q30 40 10 90 M${sx + 50} ${top + 150} q-20 50 4 100" fill="none" stroke="${shade(o.top, -0.28)}" stroke-width="4" opacity=".7"/>
-       ${o.tie || o.polo ? '' : `<path d="M${sx - 66} ${top - 4} Q${sx} ${top + 52} ${sx + 66} ${top - 4}" fill="none" stroke="${shade(o.top, -0.32)}" stroke-width="14" stroke-linecap="round"/><path d="M${sx - 66} ${top - 4} Q${sx} ${top + 52} ${sx + 66} ${top - 4}" fill="none" stroke="${shade(o.top, 0.1)}" stroke-width="5" stroke-linecap="round"/>`}
-       <path d="M${sx - tw + 14} ${top + 70} L${sx - tw + 22} ${bot - 10} M${sx + tw - 14} ${top + 70} L${sx + tw - 22} ${bot - 10}" stroke="${shade(o.top, -0.25)}" stroke-width="3" stroke-dasharray="10 8" opacity=".6"/>`;
-  const jig = (q.jiggle || 0) * Math.sin(t * 22);
-  const bw = fat * 0.9 + jig * 6, bb = bot + jig * 3;
-  const belly = (o.belly || (o.short && fat > 12)) ? `<defs><radialGradient id="bg${id}" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="${shade(o.top, 0.14)}"/><stop offset=".6" stop-color="${o.top}"/><stop offset="1" stop-color="${shade(o.top, -0.3)}"/></radialGradient></defs>
-    <path d="M${sx - tw + 4} ${bb - 140} Q${f1(sx - tw - bw)} ${f1(bb + 70 * kk)} ${sx - tw + 30} ${f1(bb + 175 * kk)} Q${sx} ${f1(bb + 215 * kk)} ${sx + tw - 30} ${f1(bb + 175 * kk)} Q${f1(sx + tw + bw)} ${f1(bb + 70 * kk)} ${sx + tw - 4} ${bb - 140} Z" fill="${o.top}"/>
-    <path d="M${f1(sx + tw + bw * 0.55)} ${f1(bb - 40)} Q${f1(sx + tw + bw * 0.75)} ${f1(bb + 70 * kk)} ${f1(sx + tw - 40)} ${f1(bb + 170 * kk)}" fill="none" stroke="${shade(o.top, -0.16)}" stroke-width="34" stroke-linecap="round" opacity=".8"/>
-    <path d="M${sx - tw + 4} ${bb - 120} Q${f1(sx - tw - bw)} ${f1(bb + 70 * kk)} ${sx - tw + 30} ${f1(bb + 175 * kk)} Q${sx} ${f1(bb + 215 * kk)} ${sx + tw - 30} ${f1(bb + 175 * kk)} Q${f1(sx + tw + bw)} ${f1(bb + 70 * kk)} ${sx + tw - 4} ${bb - 120}" fill="none" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
-    <path d="M${sx - tw + 40} ${f1(bb + 160 * kk)} Q${sx} ${f1(bb + 196 * kk)} ${sx + tw - 40} ${f1(bb + 160 * kk)}" fill="none" stroke="${shade(o.top, -0.35)}" stroke-width="5"/>
-    <path d="M${sx - 70} ${bb + 20} q40 30 90 18 M${sx - 90} ${bb + 80} q60 30 140 10 M${sx + 40} ${bb - 40} q30 20 60 10" fill="none" stroke="${shade(o.top, -0.3)}" stroke-width="4" stroke-linecap="round" opacity=".8"/>
-    ${o.stains ? `<ellipse cx="${sx + 60}" cy="${bb + 60}" rx="34" ry="22" fill="#b9813f" opacity=".7"/><ellipse cx="${sx - 50}" cy="${bb + 120}" rx="22" ry="15" fill="#8f5a3a" opacity=".6"/>` : ''}
-    ` : '';
+    : `<defs><clipPath id="tc${id}"><path d="${torsoPath}"/></clipPath></defs>
+       <path d="${torsoPath}" fill="${o.top}"/>
+       <g clip-path="url(#tc${id})">
+         <ellipse cx="${f1(sx + sw + bw * 0.4)}" cy="${f1(my + 20)}" rx="${f1(70 + bw * 0.6)}" ry="${f1((hem - top) * 0.75)}" fill="${shade(o.top, -0.16)}"/>
+         <path d="M${f1(sx - sw * 0.75)} ${f1(hem - 6 + fat * 0.25)} Q${sx} ${f1(hem + 8 + fat * 0.45)} ${f1(sx + sw * 0.75)} ${f1(hem - 6 + fat * 0.25)}" fill="none" stroke="${shade(o.top, -0.3)}" stroke-width="10"/>
+         ${fat > 20 ? `<path d="M${f1(sx - sw * 0.55)} ${f1(my - 40)} Q${sx} ${f1(my - 10)} ${f1(sx + sw * 0.55)} ${f1(my - 40)}" fill="none" stroke="${shade(o.top, -0.24)}" stroke-width="4" stroke-linecap="round" opacity=".8"/>` : ''}
+         <path d="M${sx - 70} ${top + 150} q-10 40 6 70" fill="none" stroke="${shade(o.top, -0.24)}" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+         ${o.stains ? `<ellipse cx="${sx + 60}" cy="${f1(my + 20)}" rx="34" ry="22" fill="#b9813f" opacity=".7"/><ellipse cx="${sx - 50}" cy="${f1(my + 90)}" rx="22" ry="15" fill="#8f5a3a" opacity=".6"/><ellipse cx="${sx - 50}" cy="${top + 110}" rx="36" ry="24" fill="#b9813f" opacity=".7"/><ellipse cx="${sx + 70}" cy="${top + 170}" rx="26" ry="18" fill="#8f5a3a" opacity=".65"/>` : ''}
+       </g>
+       <path d="${torsoPath}" fill="none" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
+       ${o.tie || o.polo || o.varsity ? '' : `<path d="M${sx - 64} ${top - 6} Q${sx} ${top + 50} ${sx + 64} ${top - 6}" fill="none" stroke="${shade(o.top, -0.3)}" stroke-width="12" stroke-linecap="round"/>`}`;
+  const belly = '';
   const waist = `<path d="M${sx - tw + 6} ${hipY - 40} Q${sx} ${hipY - 10} ${sx + tw - 6} ${hipY - 40} L${sx + tw - 2} ${hipY + 10} Q${sx} ${hipY + 40} ${sx - tw + 2} ${hipY + 10} Z" fill="${o.pants}" stroke="${K}" stroke-width="6"/>`;
-  const sweatMarks = o.stains ? `<ellipse cx="${sx - 50}" cy="${top + 110}" rx="36" ry="24" fill="#b9813f" opacity=".7"/><ellipse cx="${sx + 70}" cy="${top + 170}" rx="26" ry="18" fill="#8f5a3a" opacity=".65"/>
-    <ellipse cx="${sx - tw + 38}" cy="${top + 120}" rx="30" ry="40" fill="${shade(o.top, -0.3)}" opacity=".75"/><ellipse cx="${sx + tw - 38}" cy="${top + 120}" rx="30" ry="40" fill="${shade(o.top, -0.3)}" opacity=".75"/>` : '';
+  const sweatMarks = '';
   const varsity = o.varsity ? `<path d="M${sx - 48} ${top - 2} L${sx + 48} ${top - 2} L${sx + 44} ${bot + 14} L${sx - 44} ${bot + 14} Z" fill="#f4f4f4" stroke="${K}" stroke-width="5"/>
     <path d="M${sx - 70} ${top - 6} Q${sx} ${top + 40} ${sx + 70} ${top - 6}" fill="none" stroke="#f2e6d0" stroke-width="16"/><path d="M${sx - 70} ${top - 6} Q${sx} ${top + 40} ${sx + 70} ${top - 6}" fill="none" stroke="${o.top}" stroke-width="5"/>
     <rect x="${sx - tw + 6}" y="${bot - 34}" width="${2 * tw - 12}" height="40" fill="#f2e6d0" stroke="${K}" stroke-width="5"/><path d="M${sx - tw + 8} ${bot - 22} L${sx + tw - 8} ${bot - 22} M${sx - tw + 8} ${bot - 6} L${sx + tw - 8} ${bot - 6}" stroke="${o.top}" stroke-width="6"/>
@@ -189,7 +190,7 @@ function stand(pid, q) {
     + (o.stripes ? `<path d="M${sx - tw - 26} ${top + 130} L${sx - tw + 30} ${top + 50} M${sx + tw + 26} ${top + 130} L${sx + tw - 30} ${top + 50}" stroke="#fff" stroke-width="10"/>` : '');
   const neck = `<path d="M${sx - 40} ${300 + bob} L${sx - 40} ${top + 10} Q${sx} ${top + 34} ${sx + 40} ${top + 10} L${sx + 40} ${300 + bob} Z" fill="${shade(skin, -0.12)}" stroke="${K}" stroke-width="6"/>`;
   // bras
-  const armW = 66 + (o.muscle ? 16 : 0) + fat * 0.4;
+  const armW = 70 + (o.muscle ? 16 : 0) + fat * 0.5;
   const arm = (side, [a1, a2] = [16, 6], hk, pr) => {
     const s0 = [sx + side * (tw - 22), top + 66], e = P(s0, side * a1, 175), h = P(e, side * a2, 160);
     const sl = o.dress || o.long ? '' : sleeve(s0, side * a1, o.short ? 78 : 165, armW, o.top);
@@ -198,11 +199,11 @@ function stand(pid, q) {
     const bic = o.muscle ? (() => { const m = P(s0, side * a1, 100), ang = -Math.atan2(e[0] - s0[0], e[1] - s0[1]) * 180 / Math.PI; return `<ellipse cx="${f1(m[0])}" cy="${f1(m[1])}" rx="${f1(30 + (q.flex || 0) * 10)}" ry="58" fill="${skin}" stroke="${K}" stroke-width="4" transform="rotate(${f1(ang)} ${f1(m[0])} ${f1(m[1])}) translate(${-side * 14},0)"/>`; })() : '';
     const prop = pr ? PROPS[pr[0]](h[0] + (pr[2] || 0), h[1] + 20 + (pr[3] || 0), pr[1] || 0) : '';
     const front = pr && pr[4] === 'behind';
-    return { svg: (o.long ? limb(s0, e, h, armW + 16, o.sleeve || o.top, true) + cuff : limb(s0, e, h, armW, skin)) + sl, hand: hand(h, side * a2, skin, hk, 1.3 * Math.max(1, armW / 66)), prop, front, h };
+    return { svg: (o.long ? limb(s0, e, h, armW + 16, o.sleeve || o.top, true) + cuff : limb(s0, e, h, armW, skin)) + sl, hand: hand(h, side * a2, skin, hk, 1.2 * Math.max(1, armW / 70)), prop, front, h };
   };
   const la = arm(-1, q.la, q.lh, q.lp), ra = arm(1, q.ra, q.rh, q.rp);
   const hs = q.hs || 1.08 * Math.max(0.64, Math.min(0.86, 0.66 + ((c.w || 1) - 1.04) * 0.47)), htop = 92 - (hs / 1.08 - 0.66) / 0.18 * 72 - 30 * (hs - hs / 1.08) / 0.07 + bob;
-  const hd = head(pid, q.expr || 'neutre', sx + (q.hx || 0), htop - 30 * (hs - 0.74) * 4, hs, q.tilt || 0, id);
+  const hd = head(pid, q.expr || 'neutre', sx + (q.hx || 0), htop - 30 * (hs - 0.74) * 4, hs, (q.tilt || 0) * 0.5, id);
   const acc = (q.whistle ? `<path d="M${sx - 60} ${top + 4} Q${sx} ${top + 150} ${sx + 60} ${top + 4}" fill="none" stroke="#e5483f" stroke-width="7"/><g transform="translate(${sx + 6},${top + 140}) rotate(${f1(q.blow ? -25 : 0)})"><rect x="-26" y="-14" width="52" height="30" rx="12" fill="#cfd4da" stroke="${K}" stroke-width="5"/><circle cx="14" cy="2" r="7" fill="#555"/></g>` : '')
     + (q.towel ? `<path d="M${sx - tw - 10} ${top + 30} Q${sx - tw + 60} ${top - 30} ${sx - 30} ${top + 10} L${sx - 50} ${top + 300} L${sx - tw - 20} ${top + 280} Z" fill="#ff8fb3" stroke="${K}" stroke-width="6"/><path d="M${sx - tw} ${top + 240} L${sx - 60} ${top + 250}" stroke="#fff" stroke-width="10"/>` : '');
   const stink = (o.stink && q.stink !== 0) ? stinkLines([[40, 600], [560, 580], [30, 820], [570, 800]], t, q.stink || 0.85) : '';
