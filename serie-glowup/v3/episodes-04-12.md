@@ -10,7 +10,7 @@
 🎭 `determine · idle`
 🔠 `SON COACH, C'EST *LE COPAIN DE SON EX*`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Son nouveau coach… c'est le copain de son ex. Et il n'a toujours aucune idée de qui il entraîne ! »
+🎙️ **VOIX OFF** : « Son nouveau coach… c'est le copain de son ex. Et il n'a toujours aucune idée de qui il entraîne ! Un abonnement, c'est un euro. Un like, c'est un euro. Pour le glow-up de Yanis ! »
 
 **P2 · Le résultat**
 🎥 `Yanis opening the fridge full of junk food, shocked.`
@@ -93,7 +93,7 @@
 🎬 `solo scene=chambreJour gest=shrug shot=wide`
 🎭 `inquiet · idle`
 🔠 `DEMAIN, ON AMÉLIORE *QUOI ?*`
-🎙️ **VOIX OFF** : « Alors, qu'est-ce que tu veux améliorer demain : ses lunettes scotchées… ou ses dents jaunes ? Écris-le en commentaire ! »
+🎙️ **VOIX OFF** : « Alors, qu'est-ce que tu veux améliorer demain : ses lunettes scotchées… ou ses dents jaunes ? Écris-le en commentaire ! Et n'oublie pas : un abonnement, un euro. Un like, un euro. Pour le glow-up de Yanis ! »
 📝 `🅰️ LUNETTES` / `🅱️ DENTS`
 
 ---
