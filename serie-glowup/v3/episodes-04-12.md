@@ -74,7 +74,21 @@
 🔠 `DÉJÀ *-1,5 KG*`
 🎙️ **VOIX OFF** : « Le soir, la balance : cent dix kilos et demi. Un kilo et demi en moins. Il saute de joie. La balance, elle, souffre encore. »
 
-**P10 · Le vote**
+**P10 · Le dernier soda**
+🎥 `Le dernier soda`
+🎬 `duo scene=cuisine other=SOFIANE gest=armsCross ogest=drink oprop=can oexpr=larmes`
+🎭 `mefiant · idle`
+🔠 `LE DERNIER *SODA*`
+🎙️ **VOIX OFF** : « Sofiane boit la dernière canette, très lentement, les yeux fermés. Il dit : je la bois pour toi, frérot. C'est un sacrifice. »
+
+**P11 · Le réveil**
+🎥 `Le réveil`
+🎬 `solo scene=chambreJour gest=stretch shot=med`
+🎭 `determine · idle`
+🔠 `RÉVEIL À *SEPT HEURES*`
+🎙️ **VOIX OFF** : « Et pour la première fois depuis des années, son réveil sonne à sept heures. Il ne le repousse pas. Il se lève. Même son lit est surpris. »
+
+**P12 · Le vote**
 🎥 `Yanis in his bedroom, shrugging, hesitating.`
 🎬 `solo scene=chambreJour gest=shrug shot=wide`
 🎭 `inquiet · idle`
