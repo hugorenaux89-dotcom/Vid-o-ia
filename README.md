@@ -1,8 +1,8 @@
 # Vid-o-ia — Édit Kylian Mbappé
 
-Édit vertical **1080×1920, 60 fps**, ~42 s, monté au battement près sur une musique phonk/montagem **originale**.
+Édit vertical **1080×1920, 60 fps**, 40 s, monté au battement près sur une musique phonk/montagem **originale**.
 
-➡️ Vidéo finale : [`output/mbappe_edit.mp4`](output/mbappe_edit.mp4) · texte de description prêt à coller : [`output/description.txt`](output/description.txt)
+➡️ Vidéo finale : [`output/mbappe_edit.mp4`](output/mbappe_edit.mp4) · couverture : [`output/cover.jpg`](output/cover.jpg) · description prête à coller : [`output/description.txt`](output/description.txt)
 
 ## Ce qu'il y a dedans
 
