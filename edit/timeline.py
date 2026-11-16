@@ -203,8 +203,8 @@ class Timeline:
         self._drop(dropA, a0, base_flash=0.38)
         # drop A texts
         t = self.bar(8)
-        self.text("REAL MADRID", t, t + BAR, face="anton", size=250, pos=(0.5, 0.22),
-                  layer="behind", anim="slam", exit=0.05)
+        self.text("REAL MADRID", t, t + BAR, face="anton", size=230, pos=(0.5, 0.17),
+                  layer="front", anim="slam", exit=0.05)
         self.text("SOULIER D'OR EUROPÉEN 2025", t + 0.2, t + BAR, face="bebas", size=66,
                   tracking=10, pos=(0.5, 0.80), anim="pop", exit=0.05)
 
