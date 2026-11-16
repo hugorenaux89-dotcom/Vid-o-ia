@@ -965,7 +965,7 @@ def slope_y(x):
     return SLOPE_A[1] + (SLOPE_B[1] - SLOPE_A[1]) * (x - SLOPE_A[0]) / (SLOPE_B[0] - SLOPE_A[0])
 
 
-def you_vs_you_image(ctx, t, frame, a=1.0):
+def you_vs_you_image(ctx, t, frame, a=1.0, fig_col=(0.82, 0.82, 0.84)):
     ux, uy = SLOPE_B[0] - SLOPE_A[0], SLOPE_B[1] - SLOPE_A[1]
     ul = math.hypot(ux, uy)
     ux, uy = ux / ul, uy / ul
@@ -1062,7 +1062,7 @@ def you_vs_you_image(ctx, t, frame, a=1.0):
         fy = slope_y(fx) - 4 - lift
         a1, a2 = ik(hipx, hipy, fx, fy, 58 * s, 58 * s, (ux + nx, uy + ny))
         pose[side + "l1"], pose[side + "l2"] = a1, a2
-    stick(ctx, hipx, hipy, pose, s, fill=(0.82, 0.82, 0.84), outline=(0.03, 0.03, 0.035),
+    stick(ctx, hipx, hipy, pose, s, fill=fig_col, outline=(0.03, 0.03, 0.035),
           shadow=None, neck=-48)
     # poussiere sous les pieds
     r2 = random.Random(frame // 2)
