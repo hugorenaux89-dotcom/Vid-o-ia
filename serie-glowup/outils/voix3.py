@@ -26,7 +26,7 @@ V = {
  "L'HOMME EN GRIS": ("fr-FR-HenriNeural", -4, 4),
  "UNE VOIX": ("fr-CH-FabriceNeural", 4, -8),
  "TOUS": ("fr-FR-RemyMultilingualNeural", 0, 0),
- "VOIX OFF": ("fr-FR-HenriNeural", 24, 2),
+ "VOIX OFF": ("fr-FR-HenriNeural", 27, 3),
 }
 # émotion: (vitesse, hauteur, volume %, cible loudness, filtre)
 EMO = {
@@ -111,10 +111,10 @@ def sentences(text):
     return out
 
 def gap_after(s):  # voix off dynamique : respirations courtes
-    if s.endswith("…"): return random.randint(240, 320)
+    if s.endswith("…"): return random.randint(330, 420)
     if s.endswith("?"): return random.randint(140, 200)
-    if s.endswith("!"): return random.randint(110, 160)
-    return random.randint(130, 190)
+    if s.endswith("!"): return random.randint(90, 130)
+    return random.randint(100, 150)
 
 async def sh(*args):
     p = await asyncio.create_subprocess_exec(*args, stdout=asyncio.subprocess.DEVNULL, stderr=asyncio.subprocess.PIPE)
@@ -150,8 +150,8 @@ async def line(ep, name, who, text, emo, sem):
             mp = os.path.join(work, f"s{i}.mp3"); wv = os.path.join(work, f"s{i}.wav")
             rate = r0 + er + random.randint(-3, 3)
             if who.startswith("VOIX"):          # voix off « conteur » : plus d'élan sur les chutes, du suspense sur les « … »
-                if s.endswith("!"): rate += 6
-                elif s.endswith("…"): rate -= 8
+                if s.endswith("!"): rate += 9
+                elif s.endswith("…"): rate -= 10
                 elif s.endswith("?"): rate += 2
                 if len(s) < 18: rate -= 4         # phrases courtes = punchlines, posées
             # dernière phrase d'une question : légère montée ; phrases courtes un peu plus vives
