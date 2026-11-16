@@ -62,6 +62,8 @@ for key,t in SEL.items():
     # pick a standard thumbnail width giving >= ~2600 px on the long side, else original
     want = 2600*w/max(w,h)
     tw = next((s for s in STD if s>=want and s<w), None)
+    if tw is None:  # originals sit on the stricter host: take the largest thumb below
+        tw = max([s for s in STD if s<w], default=None) if w>2000 else None
     if tw:
         base=orig.split('/wikipedia/commons/')[1]
         name=base.split('/')[-1]
