@@ -253,11 +253,14 @@ class Timeline:
         self.shot("profile", o0, self.duration, curve="smooth", z0=1.18, z1=1.0, parallax=0.9,
                   handheld=0.6, entry=0.2)
         self.hit(o0, shake=1.6, flash=0.85, ca=0.014)
-        self.text("KYLIAN MBAPPÉ", o0 + 0.05, o1 + 0.5, face="anton", size=200,
-                  pos=(0.5, 0.21), layer="behind", anim="slam", exit=0.6)
+        self.text("MBAPPÉ", o0 + 0.05, o1 + 0.5, face="anton", size=300,
+                  pos=(0.5, 0.185), layer="front", anim="slam", exit=0.6)
+        self.text("KYLIAN", o0 + 0.25, o1 + 0.5, face="bebas", size=92, tracking=34,
+                  pos=(0.5, 0.088), anim="slide", exit=0.6)
         self.text("la légende continue.", o0 + 0.6, o1 + 0.5, face="serif", size=110,
                   pos=(0.5, 0.75), anim="slide", exit=0.6)
-        cr0 = o1 + 0.7
+        self.duration = o1 + 1.7  # short black tail (better for loops / retention)
+        cr0 = o1 + 0.55
         self.overlays.append(dict(text="ÉDIT ORIGINAL · MUSIQUE ORIGINALE", t_in=cr0,
                                   t_out=self.duration, face="bebas", size=46, tracking=8,
                                   pos=(0.5, 0.47), anim="fade", opacity=0.85, drift=0.0,
@@ -354,8 +357,8 @@ class Timeline:
                 leak += 0.25 * math.exp(-(t - acc) / 0.25)
         black = 0.0
         o1 = self.sec["outro"][1]
-        if t > o1 + 0.2:
-            black = min(1.0, (t - o1 - 0.2) / 0.6)
+        if t > o1 + 0.1:
+            black = min(1.0, (t - o1 - 0.1) / 0.45)
         # strobe on the last (fill) bar of each drop
         strobe = 0.0
         for b in (12, 18):

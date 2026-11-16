@@ -569,6 +569,11 @@ def mix_audio(out_wav):
         j = min(total, i + n)
         if i < total:
             mix[i:j] += x[: j - i]
+    # trim to the video length with a short fade
+    end = int(T.duration * sr)
+    mix = mix[:end]
+    fo = int(0.5 * sr)
+    mix[-fo:] *= np.linspace(1, 0, fo)[:, None] ** 2
     # loudness: normalise on the 99.7th percentile so rare SFX peaks are soft-limited
     ref = np.percentile(np.abs(mix), 99.7)
     mix = np.tanh(mix / ref * 1.25) * 0.89  # hard ceiling at 0.89 (~-1 dBFS)
