@@ -16,7 +16,7 @@ FOCUS = {
     "sprint": (0.50, 0.45),
     "sprint2": (0.56, 0.45),
     "volley": (0.47, 0.45),
-    "volley2": (0.47, 0.42),
+    "volley2": (0.55, 0.42),
     "flex": (0.50, 0.42),
     "armswide": (0.50, 0.45),
     "fist": (0.47, 0.35),
@@ -36,15 +36,15 @@ FOCUS = {
     "trophyrain": (0.55, 0.45),
     "madrid": (0.50, 0.40),
     "psgface": (0.50, 0.40),
-    "psgthumb": (0.45, 0.35),
-    "psgdrib": (0.50, 0.45),
+    "psgthumb": (0.52, 0.35),
+    "psgdrib": (0.52, 0.45),
     "psgshot": (0.62, 0.55),
 }
 
 # Extra zoom for photos where the player is small in frame
 ZOOMBIAS = {"madrid": 1.25}
 # Horizontal/vertical drift across a shot (fraction of source size)
-PAN = {"volley": (0.2, 0.0), "keeper": (0.1, 0.0)}
+PAN = {"volley": (0.2, 0.0), "keeper": (0.1, 0.0), "volley2": (0.12, 0.0)}
 
 GRADES = {
     "intro": dict(exposure=0.86, contrast=1.15, shadow=(-0.03, 0.0, 0.05), high=(0.06, 0.02, -0.04),
@@ -246,8 +246,8 @@ class Timeline:
         words = {15: "VITESSE.", 16: "TECHNIQUE.", 17: "PUISSANCE.", 18: "LÉGENDE."}
         for b, wd in words.items():
             t = self.bar(b)
-            self.text(wd, t, t + BAR, face="anton", size=260, style="outline", stroke=7,
-                      pos=(0.5, 0.19), layer="front", anim="slam", exit=0.04)
+            self.text(wd, t, t + BAR, face="anton", size=240, shadow=0.85,
+                      pos=(0.5, 0.17), layer="front", anim="slam", exit=0.04)
 
         # ---------------- OUTRO
         self.shot("profile", o0, self.duration, curve="smooth", z0=1.18, z1=1.0, parallax=0.9,
