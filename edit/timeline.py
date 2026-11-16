@@ -15,7 +15,7 @@ FOCUS = {
     "closeup": (0.47, 0.38),
     "sprint": (0.50, 0.45),
     "sprint2": (0.56, 0.45),
-    "volley": (0.40, 0.45),
+    "volley": (0.47, 0.45),
     "volley2": (0.47, 0.42),
     "flex": (0.50, 0.42),
     "armswide": (0.50, 0.45),
@@ -31,7 +31,7 @@ FOCUS = {
     "chest": (0.48, 0.38),
     "trophy18": (0.71, 0.45),
     "celeb18": (0.62, 0.40),
-    "champs18": (0.50, 0.50),
+    "champs18": (0.58, 0.45),
     "young18": (0.50, 0.40),
     "trophyrain": (0.55, 0.45),
     "madrid": (0.50, 0.40),
@@ -43,6 +43,8 @@ FOCUS = {
 
 # Extra zoom for photos where the player is small in frame
 ZOOMBIAS = {"madrid": 1.25}
+# Horizontal/vertical drift across a shot (fraction of source size)
+PAN = {"volley": (0.2, 0.0), "keeper": (0.1, 0.0)}
 
 GRADES = {
     "intro": dict(exposure=0.86, contrast=1.15, shadow=(-0.03, 0.0, 0.05), high=(0.06, 0.02, -0.04),
@@ -91,6 +93,8 @@ class Timeline:
         d = dict(src=src, t0=t0, t1=t1, z0=1.04, z1=1.16, curve="velocity", parallax=0.5,
                  focus_abs=FOCUS.get(src, (0.5, 0.4)), seed=(sum(map(ord, src)) % 997) / 97.0 + t0)
         d.update(kw)
+        if src in PAN and "pan" not in kw:
+            d["pan"] = PAN[src]
         zb = ZOOMBIAS.get(src, 1.0)
         d["z0"] *= zb
         d["z1"] *= zb
@@ -187,7 +191,7 @@ class Timeline:
 
         # ---------------- DROP A
         dropA = {
-            5: ["volley"],
+            5: ["volley"],  # pans from body to the ball (see PAN)
             6: ["sprint", "sprint2", "kick"],
             7: ["psgdrib", "psgface", "psgthumb"],
             8: ["madrid"],
