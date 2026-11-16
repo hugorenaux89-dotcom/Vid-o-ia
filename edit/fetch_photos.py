@@ -28,9 +28,6 @@ SEL = {
  'volley2': 'File:Kylian Mbappe France v Paraguay 4 July 2026-111.jpg',
  'psgdrib': 'File:2019-07-17 SG Dynamo Dresden vs. Paris Saint-Germain by Sandro Halank–569.jpg',
  'psgthumb': 'File:2019-07-17 SG Dynamo Dresden vs. Paris Saint-Germain by Sandro Halank–129 (cropped2).jpg',
- 'psgshot': 'File:2019-07-17 SG Dynamo Dresden vs. Paris Saint-Germain by Sandro Halank–243.jpg',
- 'young18': 'File:Kylian Mbappé 2018.jpg',
- 'trophyrain': 'File:Kylian Mbappé World Cup Trophy.jpg',
 }
 ROOT=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def api(titles):

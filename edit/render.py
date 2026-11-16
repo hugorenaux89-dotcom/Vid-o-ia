@@ -453,6 +453,10 @@ def render_frame(t):
         if lay is not None:
             f = over(f, lay)
 
+    st = env.get("strobe", 0)
+    if st:
+        f = f * (1 + st)
+
     # flash
     fl = env.get("flash", 0)
     if fl > 0.003:
@@ -560,6 +564,8 @@ def mix_audio(out_wav):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--preview", nargs="*", type=float)
+    ap.add_argument("--cover", type=float, default=None,
+                    help="export output/cover.jpg (TikTok/Reels cover) at this time")
     ap.add_argument("--from", dest="t_from", type=float, default=0)
     ap.add_argument("--to", dest="t_to", type=float, default=None)
     ap.add_argument("--fps", type=int, default=60)
@@ -570,6 +576,12 @@ def main():
     args = ap.parse_args()
 
     T = TL.get()
+    if args.cover is not None:
+        init_worker()
+        Image.fromarray(render_frame(args.cover)).save(
+            os.path.join(ROOT, "output", "cover.jpg"), quality=95)
+        print("cover saved")
+        return
     if args.preview is not None:
         init_worker()
         os.makedirs(os.path.join(BUILD, "preview"), exist_ok=True)

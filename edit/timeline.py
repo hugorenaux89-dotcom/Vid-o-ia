@@ -41,6 +41,9 @@ FOCUS = {
     "psgshot": (0.62, 0.55),
 }
 
+# Extra zoom for photos where the player is small in frame
+ZOOMBIAS = {"madrid": 1.25}
+
 GRADES = {
     "intro": dict(exposure=0.86, contrast=1.15, shadow=(-0.03, 0.0, 0.05), high=(0.06, 0.02, -0.04),
                   lift=0.015, sat=0.8, bloom=0.28, vignette=0.6, grain=0.022, sharpen=0.4),
@@ -88,6 +91,9 @@ class Timeline:
         d = dict(src=src, t0=t0, t1=t1, z0=1.04, z1=1.16, curve="velocity", parallax=0.5,
                  focus_abs=FOCUS.get(src, (0.5, 0.4)), seed=(sum(map(ord, src)) % 997) / 97.0 + t0)
         d.update(kw)
+        zb = ZOOMBIAS.get(src, 1.0)
+        d["z0"] *= zb
+        d["z1"] *= zb
         self.shots.append(d)
         return d
 
@@ -183,12 +189,12 @@ class Timeline:
         dropA = {
             5: ["volley"],
             6: ["sprint", "sprint2", "kick"],
-            7: ["psgdrib", "psgshot", "psgthumb"],
+            7: ["psgdrib", "psgface", "psgthumb"],
             8: ["madrid"],
             9: ["dribble", "keeper", "run"],
             10: ["shot"],
             11: ["armswide", "flex", "jump"],
-            12: ["fist", "thumbs", "volley2", "chest", "young18", "back10"],
+            12: ["fist", "thumbs", "volley2", "chest", "celeb18", "back10"],
         }
         self._drop(dropA, a0, base_flash=0.38)
         # drop A texts
@@ -230,7 +236,7 @@ class Timeline:
             15: ["volley2", "kick", "sprint", "armswide", "shot"],
             16: ["dribble", "keeper", "run", "psgdrib", "flex"],
             17: ["jump", "fist", "back10", "sprint2", "volley"],
-            18: ["thumbs", "celeb18", "madrid", "trophyrain", "psgthumb", "closeup"],
+            18: ["thumbs", "celeb18", "madrid", "trophy18", "psgthumb", "closeup"],
         }
         self._drop(dropB, d0, base_flash=0.42, amp=1.25)
         words = {15: "VITESSE.", 16: "TECHNIQUE.", 17: "PUISSANCE.", 18: "LÉGENDE."}
@@ -346,8 +352,14 @@ class Timeline:
         o1 = self.sec["outro"][1]
         if t > o1 + 0.2:
             black = min(1.0, (t - o1 - 0.2) / 0.6)
+        # strobe on the last (fill) bar of each drop
+        strobe = 0.0
+        for b in (12, 18):
+            a = self.bar(b) + self.BAR * 0.5
+            if a <= t < self.bar(b + 1) - self.BEAT * 0.5:
+                strobe = 0.22 if int(t * 30) % 2 == 0 else -0.08
         return dict(shake=shake, flash=min(flash, 0.95), ca=min(ca, 0.02), blur=min(blur, 0.1),
-                    letterbox=lb, leak=leak, black=black)
+                    letterbox=lb, leak=leak, black=black, strobe=strobe)
 
     def grade_at(self, t):
         sec = self.section_at(t)
