@@ -683,9 +683,9 @@
 🎥 `Moussa showing Yanis the result in a mirror, Yanis amazed.`
 🎬 `chair scene=barbier pro=MOUSSA tool=comb gest=thumbs at2=2 expr2=sourire fx=sparkle`
 🎭 `choque · idle`
-🔠 `UNE BARBE *PROPRE*`
+🔠 `UN BOUC *BIEN TAILLÉ*`
 🔊 `boing@1`
-🎙️ **VOIX OFF** : « Moussa tourne le fauteuil vers le miroir. Barbe courte, contours nets. Yanis touche sa joue. C'est doux. Il ne savait pas qu'une barbe pouvait être douce. »
+🎙️ **VOIX OFF** : « Moussa tourne le fauteuil vers le miroir. Plus de trous, plus de coupures : juste un bouc et une moustache, bien taillés. Yanis touche son menton. Il ne se reconnaît pas. »
 
 **P5 · Le conseil**
 🎥 `Moussa talking, giving advice, Yanis listening.`

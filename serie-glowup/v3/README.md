@@ -27,8 +27,8 @@
 | Jour | Changement | Jour | Changement | Jour | Changement |
 |---|---|---|---|---|---|
 | 1 | 2 L d'eau | 11 | Dents blanches | 21 | Danse |
-| 2 | Odeur (douche + déo) | 12 | Barbe | 22 | Cuisine |
-| 3 | Baskets de running | 13 | Coupe (dégradé) | 23 | Montre de son père |
+| 2 | Odeur (douche + déo) | 12 | Barbe (bouc + moustache) | 22 | Cuisine |
+| 3 | Baskets de running | 13 | Coupe (dégradé + boucles) | 23 | Montre de son père |
 | 4 | Frigo sain | 14 | Sourcils | 24 | Costume |
 | 5 | Lunettes | 15 | Posture | 25 | Discours |
 | 6 | Dents (détartrage) | 16 | Ongles | 26 | Chaussures |

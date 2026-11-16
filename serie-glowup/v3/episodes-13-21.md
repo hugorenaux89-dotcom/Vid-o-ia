@@ -24,15 +24,15 @@
 🎭 `calme · idle`
 🔠 `MOUSSA *ENTRE EN SCÈNE*`
 🎙️ **VOIX OFF** : « Retour chez Moussa. Il regarde la tête de Yanis, fait craquer ses doigts, et dit : je vais faire mon chef-d'œuvre. »
-📝 `✨ GLOW-UP DU JOUR : DÉGRADÉ PROPRE`
+📝 `✨ GLOW-UP DU JOUR : DÉGRADÉ + BOUCLES`
 
 **P4 · Le dégradé**
 🎥 `Yanis discovering his new fade haircut in the barber mirror.`
 🎬 `chair scene=barbier pro=MOUSSA tool=comb gest=thumbs at2=2.5 expr2=sourire fx=sparkle`
 🎭 `choque · idle`
-🔠 `UN DÉGRADÉ *PARFAIT*`
+🔠 `« T'INQUIÈTE, *C'EST À LA MODE* »`
 🔊 `boing@1`
-🎙️ **VOIX OFF** : « Dégradé sur les côtés, du volume sur le dessus. Moussa tourne le fauteuil. Yanis ne dit rien pendant dix secondes. Puis : c'est moi, ça ? »
+🎙️ **VOIX OFF** : « Dégradé sur les côtés… et des boucles sur le dessus. Yanis panique : c'est quoi, ces frisettes ? Moussa sourit : t'inquiète, c'est à la mode. Puis Yanis se regarde mieux. Et il adore. »
 
 **P5 · Le gel**
 🎥 `Yanis styling his hair with gel, proud.`

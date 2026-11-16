@@ -151,19 +151,22 @@ function stand(pid, q) {
   const torsoPath = `M${sx - tw} ${top + 40} Q${sx - tw + 10} ${top} ${sx - 60} ${top - 6} Q${sx} ${top + 22} ${sx + 60} ${top - 6} Q${sx + tw - 10} ${top} ${sx + tw} ${top + 40} L${sx + tw - 8 + fat * 0.4} ${bot} Q${sx} ${bot + 24} ${sx - tw + 8 - fat * 0.4} ${bot} Z`;
   const torso = o.dress ? `<path d="M${sx - tw} ${top + 40} Q${sx} ${top - 20} ${sx + tw} ${top + 40} L${sx + tw + 60} 1010 L${sx - tw - 60} 1010 Z" fill="${o.top}" stroke="${K}" stroke-width="6"/>`
     : `<defs><linearGradient id="tg${id}" x1="0" x2="1"><stop offset="0" stop-color="${shade(o.top, 0.12)}"/><stop offset=".55" stop-color="${o.top}"/><stop offset="1" stop-color="${shade(o.top, -0.25)}"/></linearGradient></defs>
-       <path d="${torsoPath}" fill="url(#tg${id})" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
+       <path d="${torsoPath}" fill="${o.top}" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
+       <path d="M${sx + tw - 34} ${top + 60} L${sx + tw - 30} ${bot - 6}" stroke="${shade(o.top, -0.16)}" stroke-width="34" stroke-linecap="round" opacity=".8"/>
+       <path d="M${sx - tw + 30} ${top + 70} L${sx - tw + 34} ${bot - 20}" stroke="${shade(o.top, 0.12)}" stroke-width="12" stroke-linecap="round" opacity=".6"/>
        <path d="M${sx - 40} ${top + 120} q30 40 10 90 M${sx + 50} ${top + 150} q-20 50 4 100" fill="none" stroke="${shade(o.top, -0.28)}" stroke-width="4" opacity=".7"/>
        ${o.tie || o.polo ? '' : `<path d="M${sx - 66} ${top - 4} Q${sx} ${top + 52} ${sx + 66} ${top - 4}" fill="none" stroke="${shade(o.top, -0.32)}" stroke-width="14" stroke-linecap="round"/><path d="M${sx - 66} ${top - 4} Q${sx} ${top + 52} ${sx + 66} ${top - 4}" fill="none" stroke="${shade(o.top, 0.1)}" stroke-width="5" stroke-linecap="round"/>`}
        <path d="M${sx - tw + 14} ${top + 70} L${sx - tw + 22} ${bot - 10} M${sx + tw - 14} ${top + 70} L${sx + tw - 22} ${bot - 10}" stroke="${shade(o.top, -0.25)}" stroke-width="3" stroke-dasharray="10 8" opacity=".6"/>`;
   const jig = (q.jiggle || 0) * Math.sin(t * 22);
   const bw = fat * 0.9 + jig * 6, bb = bot + jig * 3;
   const belly = (o.belly || (o.short && fat > 12)) ? `<defs><radialGradient id="bg${id}" cx=".36" cy=".3" r=".8"><stop offset="0" stop-color="${shade(o.top, 0.14)}"/><stop offset=".6" stop-color="${o.top}"/><stop offset="1" stop-color="${shade(o.top, -0.3)}"/></radialGradient></defs>
-    <path d="M${sx - tw + 4} ${bb - 120} Q${f1(sx - tw - bw)} ${f1(bb + 70 * kk)} ${sx - tw + 30} ${f1(bb + 175 * kk)} Q${sx} ${f1(bb + 215 * kk)} ${sx + tw - 30} ${f1(bb + 175 * kk)} Q${f1(sx + tw + bw)} ${f1(bb + 70 * kk)} ${sx + tw - 4} ${bb - 120} Z" fill="url(#bg${id})"/>
+    <path d="M${sx - tw + 4} ${bb - 140} Q${f1(sx - tw - bw)} ${f1(bb + 70 * kk)} ${sx - tw + 30} ${f1(bb + 175 * kk)} Q${sx} ${f1(bb + 215 * kk)} ${sx + tw - 30} ${f1(bb + 175 * kk)} Q${f1(sx + tw + bw)} ${f1(bb + 70 * kk)} ${sx + tw - 4} ${bb - 140} Z" fill="${o.top}"/>
+    <path d="M${f1(sx + tw + bw * 0.55)} ${f1(bb - 40)} Q${f1(sx + tw + bw * 0.75)} ${f1(bb + 70 * kk)} ${f1(sx + tw - 40)} ${f1(bb + 170 * kk)}" fill="none" stroke="${shade(o.top, -0.16)}" stroke-width="34" stroke-linecap="round" opacity=".8"/>
     <path d="M${sx - tw + 4} ${bb - 120} Q${f1(sx - tw - bw)} ${f1(bb + 70 * kk)} ${sx - tw + 30} ${f1(bb + 175 * kk)} Q${sx} ${f1(bb + 215 * kk)} ${sx + tw - 30} ${f1(bb + 175 * kk)} Q${f1(sx + tw + bw)} ${f1(bb + 70 * kk)} ${sx + tw - 4} ${bb - 120}" fill="none" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
     <path d="M${sx - tw + 40} ${f1(bb + 160 * kk)} Q${sx} ${f1(bb + 196 * kk)} ${sx + tw - 40} ${f1(bb + 160 * kk)}" fill="none" stroke="${shade(o.top, -0.35)}" stroke-width="5"/>
     <path d="M${sx - 70} ${bb + 20} q40 30 90 18 M${sx - 90} ${bb + 80} q60 30 140 10 M${sx + 40} ${bb - 40} q30 20 60 10" fill="none" stroke="${shade(o.top, -0.3)}" stroke-width="4" stroke-linecap="round" opacity=".8"/>
     ${o.stains ? `<ellipse cx="${sx + 60}" cy="${bb + 60}" rx="34" ry="22" fill="#b9813f" opacity=".7"/><ellipse cx="${sx - 50}" cy="${bb + 120}" rx="22" ry="15" fill="#8f5a3a" opacity=".6"/>` : ''}
-    <ellipse cx="${sx - 40}" cy="${bb - 10}" rx="${f1(tw * 0.4)}" ry="60" fill="#fff" opacity=".1"/>` : '';
+    ` : '';
   const waist = `<path d="M${sx - tw + 6} ${hipY - 40} Q${sx} ${hipY - 10} ${sx + tw - 6} ${hipY - 40} L${sx + tw - 2} ${hipY + 10} Q${sx} ${hipY + 40} ${sx - tw + 2} ${hipY + 10} Z" fill="${o.pants}" stroke="${K}" stroke-width="6"/>`;
   const sweatMarks = o.stains ? `<ellipse cx="${sx - 50}" cy="${top + 110}" rx="36" ry="24" fill="#b9813f" opacity=".7"/><ellipse cx="${sx + 70}" cy="${top + 170}" rx="26" ry="18" fill="#8f5a3a" opacity=".65"/>
     <ellipse cx="${sx - tw + 38}" cy="${top + 120}" rx="30" ry="40" fill="${shade(o.top, -0.3)}" opacity=".75"/><ellipse cx="${sx + tw - 38}" cy="${top + 120}" rx="30" ry="40" fill="${shade(o.top, -0.3)}" opacity=".75"/>` : '';
