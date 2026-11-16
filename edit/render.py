@@ -157,11 +157,20 @@ def _vignette():
 
 VIG_R = None
 GRAIN = None
+CAP_GRAD = None
+
+
+def _caption_gradient():
+    y = np.linspace(0, 1, H, dtype=np.float32)
+    bottom = np.clip((y - 0.58) / 0.34, 0, 1) ** 1.5
+    top = np.clip((0.32 - y) / 0.26, 0, 1) ** 1.5 * 0.75
+    return (bottom + top)[:, None, None]
 
 
 def init_worker():
-    global VIG_R, GRAIN
+    global VIG_R, GRAIN, CAP_GRAD
     VIG_R = _vignette()
+    CAP_GRAD = _caption_gradient()
     rng = np.random.default_rng(3)
     GRAIN = []
     for _ in range(10):
@@ -432,6 +441,11 @@ def render_frame(t):
     if ll is not None:
         f = 1 - (1 - f) * (1 - ll)
 
+    # darken top/bottom so captions stay readable on bright kits
+    cg = env.get("caption_grad", 0)
+    if cg > 0:
+        f = f * (1 - cg * CAP_GRAD)
+
     shake_xy = (ox, oy)
     # texts behind the player
     behind = [x for x in T.texts if x.get("layer") == "behind"]
@@ -572,7 +586,7 @@ def main():
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--out", default=os.path.join(ROOT, "output", "mbappe_edit.mp4"))
     ap.add_argument("--crf", type=int, default=18)
-    ap.add_argument("--maxrate", default="14M")
+    ap.add_argument("--maxrate", default="12M")
     args = ap.parse_args()
 
     T = TL.get()

@@ -29,7 +29,7 @@ FOCUS = {
     "profile": (0.42, 0.40),
     "kick": (0.55, 0.50),
     "chest": (0.48, 0.38),
-    "trophy18": (0.71, 0.45),
+    "trophy18": (0.50, 0.42),
     "celeb18": (0.45, 0.40),
     "champs18": (0.58, 0.45),
     "young18": (0.50, 0.40),
@@ -148,25 +148,25 @@ class Timeline:
                   anim="slide", exit=0.06)
         # 2018
         t = self.bar(1)
-        self.text("2018", t, t + BAR, face="anton", size=430, style="outline", stroke=7,
-                  pos=(0.5, 0.25), layer="behind", anim="pop", exit=0.06)
-        self.text("19 ans.", t + 0.25, t + BAR, face="serif", size=150, pos=(0.5, 0.70),
+        self.text("2018", t, t + BAR, face="anton", size=380, style="outline", stroke=7,
+                  pos=(0.5, 0.205), layer="front", anim="pop", exit=0.06)
+        self.text("19 ans.", t + 0.25, t + BAR, face="serif", size=150, pos=(0.5, 0.70), shadow=0.9,
                   anim="slide", exit=0.06)
         self.text("CHAMPION DU MONDE", t + 0.5, t + BAR, face="bebas", size=74, tracking=12,
                   pos=(0.5, 0.775), anim="slide", exit=0.06)
         # 2022
         t = self.bar(2)
-        self.text("2022", t, t + BAR, face="anton", size=430, style="outline", stroke=7,
-                  pos=(0.5, 0.25), layer="behind", anim="pop", exit=0.06)
-        self.text("Triplé", t + 0.25, t + BAR, face="serif", size=150, pos=(0.5, 0.70),
+        self.text("2022", t, t + BAR, face="anton", size=380, style="outline", stroke=7,
+                  pos=(0.5, 0.205), layer="front", anim="pop", exit=0.06)
+        self.text("Triplé", t + 0.25, t + BAR, face="serif", size=150, pos=(0.5, 0.70), shadow=0.9,
                   anim="slide", exit=0.06)
         self.text("EN FINALE DE COUPE DU MONDE", t + 0.5, t + BAR, face="bebas", size=64,
                   tracking=10, pos=(0.5, 0.775), anim="slide", exit=0.06)
         # PSG
         t = self.bar(3)
-        self.text("256", t, t + BAR, face="anton", size=470, style="outline", stroke=7,
-                  pos=(0.5, 0.25), layer="behind", anim="pop", exit=0.06)
-        self.text("buts.", t + 0.25, t + BAR, face="serif", size=150, pos=(0.5, 0.70),
+        self.text("256", t, t + BAR, face="anton", size=380, style="outline", stroke=7,
+                  pos=(0.5, 0.205), layer="front", anim="pop", exit=0.06)
+        self.text("buts.", t + 0.25, t + BAR, face="serif", size=150, pos=(0.5, 0.70), shadow=0.9,
                   anim="slide", exit=0.06)
         self.text("MEILLEUR BUTEUR DE L'HISTOIRE DU PSG", t + 0.5, t + BAR, face="bebas",
                   size=58, tracking=8, pos=(0.5, 0.775), anim="slide", exit=0.06)
@@ -247,7 +247,7 @@ class Timeline:
         for b, wd in words.items():
             t = self.bar(b)
             self.text(wd, t, t + BAR, face="anton", size=260, style="outline", stroke=7,
-                      pos=(0.5, 0.19), layer="behind", anim="slam", exit=0.04)
+                      pos=(0.5, 0.19), layer="front", anim="slam", exit=0.04)
 
         # ---------------- OUTRO
         self.shot("profile", o0, self.duration, curve="smooth", z0=1.18, z1=1.0, parallax=0.9,
@@ -362,8 +362,10 @@ class Timeline:
             a = self.bar(b) + self.BAR * 0.5
             if a <= t < self.bar(b + 1) - self.BEAT * 0.5:
                 strobe = 0.22 if int(t * 30) % 2 == 0 else -0.08
+        cap = {"intro": 0.6, "build": 0.35, "dropA": 0.3, "break": 0.6,
+               "dropB": 0.3, "outro": 0.6}[sec]
         return dict(shake=shake, flash=min(flash, 0.95), ca=min(ca, 0.02), blur=min(blur, 0.1),
-                    letterbox=lb, leak=leak, black=black, strobe=strobe)
+                    letterbox=lb, leak=leak, black=black, strobe=strobe, caption_grad=cap)
 
     def grade_at(self, t):
         sec = self.section_at(t)
