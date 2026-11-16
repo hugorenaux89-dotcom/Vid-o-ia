@@ -75,7 +75,12 @@ def decay(t, h, tau):
 
 @lru_cache(maxsize=40)
 def load_src(key):
-    d = np.load(os.path.join(PREP, key + ".npz"))
+    path = os.path.join(PREP, key + ".npz")
+    if not os.path.exists(path) and os.environ.get("EDIT_FALLBACK"):
+        # draft mode: stand-in for photos not prepared yet
+        avail = sorted(f[:-4] for f in os.listdir(PREP) if f.endswith(".npz"))
+        path = os.path.join(PREP, avail[sum(map(ord, key)) % len(avail)] + ".npz")
+    d = np.load(path)
     img = d["img"]
     mask = d["mask"]
     bg = d["bg"]

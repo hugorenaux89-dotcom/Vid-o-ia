@@ -13,8 +13,8 @@ BUILD = os.path.join(ROOT, "build")
 FOCUS = {
     "back10": (0.50, 0.40),
     "closeup": (0.47, 0.38),
-    "sprint": (0.55, 0.45),
-    "sprint2": (0.50, 0.45),
+    "sprint": (0.50, 0.45),
+    "sprint2": (0.56, 0.45),
     "volley": (0.40, 0.45),
     "volley2": (0.47, 0.42),
     "flex": (0.50, 0.42),
@@ -29,7 +29,7 @@ FOCUS = {
     "profile": (0.42, 0.40),
     "kick": (0.55, 0.50),
     "chest": (0.48, 0.38),
-    "trophy18": (0.62, 0.45),
+    "trophy18": (0.71, 0.45),
     "celeb18": (0.62, 0.40),
     "champs18": (0.50, 0.50),
     "young18": (0.50, 0.40),
@@ -237,7 +237,7 @@ class Timeline:
         for b, wd in words.items():
             t = self.bar(b)
             self.text(wd, t, t + BAR, face="anton", size=260, style="outline", stroke=7,
-                      pos=(0.5, 0.24), layer="behind", anim="slam", exit=0.04)
+                      pos=(0.5, 0.19), layer="behind", anim="slam", exit=0.04)
 
         # ---------------- OUTRO
         self.shot("profile", o0, self.duration, curve="smooth", z0=1.18, z1=1.0, parallax=0.9,
@@ -337,11 +337,11 @@ class Timeline:
                 lb = lb_full
         if t >= self.sec["outro"][1]:
             lb = lb_full
-        leak = {"intro": 0.14, "build": 0.1, "dropA": 0.0, "break": 0.42,
-                "dropB": 0.0, "outro": 0.3}[sec]
+        leak = {"intro": 0.14, "build": 0.1, "dropA": 0.0, "break": 0.26,
+                "dropB": 0.0, "outro": 0.1}[sec]
         for acc in (self.sec["dropA"][0], self.sec["dropB"][0], self.sec["outro"][0]):
             if acc <= t < acc + 1.0:
-                leak += 0.45 * math.exp(-(t - acc) / 0.35)
+                leak += 0.25 * math.exp(-(t - acc) / 0.25)
         black = 0.0
         o1 = self.sec["outro"][1]
         if t > o1 + 0.2:
