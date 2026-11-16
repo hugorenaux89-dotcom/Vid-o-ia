@@ -26,7 +26,7 @@ V = {
  "L'HOMME EN GRIS": ("fr-FR-HenriNeural", -4, 4),
  "UNE VOIX": ("fr-CH-FabriceNeural", 4, -8),
  "TOUS": ("fr-FR-RemyMultilingualNeural", 0, 0),
- "VOIX OFF": ("fr-FR-RemyMultilingualNeural", 25, 3),
+ "VOIX OFF": ("fr-FR-HenriNeural", 24, 2),
 }
 # émotion: (vitesse, hauteur, volume %, cible loudness, filtre)
 EMO = {

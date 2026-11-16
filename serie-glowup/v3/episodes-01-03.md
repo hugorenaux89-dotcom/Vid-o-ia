@@ -4,7 +4,7 @@
 
 ---
 
-## Épisode 1 · J-30 · « Game over »
+## Épisode 1 · J-30 · « Partie terminée »
 ⏱️ **1:15** · 📊 `JOUR 1 SUR 30 · À TOI DE CHOISIR`
 📈 `0 · 0`
 
@@ -29,7 +29,7 @@
 🎬 `gamer mode=play stage=1`
 🎭 `sourire · idle`
 🔠 `SA JOURNÉE *TYPE*`
-🎙️ **VOIX OFF** : « Sa journée type : réveil à quinze heures. Jeu vidéo. Chips. Jeu vidéo. Soda. Jeu vidéo. Sa chaise a pris la forme de ses fesses. »
+🎙️ **VOIX OFF** : « Sa journée type : réveil à quinze heures. Jeu vidéo. Chips. Jeu vidéo. Soda. Jeu vidéo. Sa chaise de joueur a pris la forme de ses fesses. »
 
 **P4 · Deux minutes**
 🎥 `His mother Nadia shouting at the door, Yanis not moving from his game.`
@@ -52,16 +52,16 @@
 🎭 `choque · phone`
 🔠 `SON EX SERA *LÀ*`
 🔊 `scratch`
-🎙️ **VOIX OFF** : « Puis il voit une story. Sarah, son ex. Avec son nouveau copain : Kenzo. Légende : rendez-vous au mariage de Bilal. »
+🎙️ **VOIX OFF** : « Puis il voit une photo. Sarah, son ex. Avec son nouveau copain : Kenzo. Légende : rendez-vous au mariage de Bilal. »
 📝 *(story)* `Sarah : « Mon homme 💪 Rdv au mariage de Bilal 💍 »`
 
 **P7 · Game over**
 🎥 `Yanis dropping his controller, GAME OVER on the screen, shocked.`
 🎬 `gamer mode=over at=1.2 stage=1`
 🎭 `choque · idle`
-🔠 `*GAME OVER*`
+🔠 `PARTIE *TERMINÉE*`
 🔊 `thud`
-🎙️ **VOIX OFF** : « Il lâche la manette. Sur l'écran : game over. Et pour la première fois, il a l'impression que c'est sa vie qui vient de perdre. »
+🎙️ **VOIX OFF** : « Il lâche la manette. Sur l'écran : perdu. Et pour la première fois, il a l'impression que c'est sa vie qui vient de perdre. »
 
 **P8 · Le miroir**
 🎥 `Yanis walking up to the mirror, looking at his reflection, sad.`
@@ -82,9 +82,9 @@
 🎥 `Yanis shaking an empty piggy bank, worried.`
 🎬 `solo scene=chambreNuit gest=show prop=piggy shot=med stage=1`
 🎭 `inquiet · idle`
-🔠 `1 LIKE = *1 €*`
-🎙️ **VOIX OFF** : « Problème : il a zéro euro. Alors on fait un deal. Chaque like, c'est un euro dans sa cagnotte glow-up. Chaque abonné aussi. Et c'est toi qui choisis tout. »
-📝 `💰 CAGNOTTE VIRTUELLE : 1 LIKE = 1 € · 1 ABONNÉ = 1 €`
+🔠 `1 J'AIME = *1 €*`
+🎙️ **VOIX OFF** : « Problème : il a zéro euro. Alors on fait un marché. Chaque j'aime, c'est un euro dans sa cagnotte de transformation. Chaque abonné aussi. Et c'est toi qui choisis tout. »
+📝 `💰 CAGNOTTE VIRTUELLE : 1 J'AIME = 1 € · 1 ABONNÉ = 1 €`
 
 **P11 · Les pompes**
 🎥 `Yanis trying push-ups on the floor, red face, then collapsing flat.`
@@ -99,7 +99,7 @@
 🎬 `solo scene=chambreNuit gest=shrug shot=wide stage=1`
 🎭 `inquiet · idle`
 🔠 `DEMAIN, ON AMÉLIORE *QUOI ?*`
-🎙️ **VOIX OFF** : « Alors, demain, qu'est-ce qu'on améliore : son odeur… ou ses boutons ? Écris-le en commentaire. Et n'oublie pas : chaque like, c'est un euro pour Yanis ! »
+🎙️ **VOIX OFF** : « Alors, demain, qu'est-ce qu'on améliore : son odeur… ou ses boutons ? Écris-le en commentaire. Et n'oublie pas : chaque j'aime, c'est un euro pour Yanis ! »
 📝 `🅰️ ODEUR` / `🅱️ BOUTONS`
 
 ---

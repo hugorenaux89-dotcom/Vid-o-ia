@@ -301,7 +301,7 @@ async function main() {
     for (let i = 0; i < times.length; i++) {
       const r = KINDS[j.kind](times[i], j);
       await p.evaluate(([a, c]) => { document.getElementById('act').innerHTML = a; document.getElementById('cam').setAttribute('transform', c); }, [r.act, r.cam]);
-      await p.screenshot({ path: path.join(j.out, `f_${String(i).padStart(5, '0')}.jpg`), type: 'jpeg', quality: 90 });
+      await p.screenshot({ path: path.join(j.out, `f_${String(i).padStart(5, '0')}.jpg`), type: 'jpeg', quality: 96 });
     }
   }
   await b.close();

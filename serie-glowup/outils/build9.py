@@ -139,9 +139,16 @@ def chunks(text):
         else: out.append(" ".join(cur))
     return out
 
-def layer(st, big=None):
+def popc(im, layer_img, k, cy):
+    """colle layer_img sur im, agrandi d'un facteur k autour de la ligne cy (effet rebond)"""
+    if abs(k - 1) < 1e-3: im.alpha_composite(layer_img); return
+    sc = layer_img.resize((int(W * k), int(H * k)), Image.LANCZOS)
+    ox, oy = int(W / 2 - W / 2 * k), int(cy - cy * k)
+    im.alpha_composite(sc.crop((-ox, -oy, -ox + W, -oy + H)))
+
+def layer(st, big=None, hk=1.0, ck=1.0):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    y = headline(d, st.get("head") or "", 90) + 14
+    hl = Image.new("RGBA", (W, H), (0, 0, 0, 0)); y = headline(ImageDraw.Draw(hl), st.get("head") or "", 90) + 14
     # badge sport / glow-up sous le titre
     for lab, txt in st.get("cards", []):
         u = txt.upper().lstrip("😩🏃🏋️✅🏆✨ ")
@@ -163,7 +170,7 @@ def layer(st, big=None):
             fimg = Image.open(os.path.join(ASSETS, f"t_{pid_}_sourire_0.png")).convert("RGBA").crop((150, 20, 1050, 1100)).resize((230, 276))
             im.alpha_composite(fimg, (x0 + 10 + k * 150, y + 110))
         d = ImageDraw.Draw(im)
-        rr(d, (x0 + 24, y + 28, x0 + 200, y + 70), 20, (255, 255, 255, 230)); d.text((x0 + 112, y + 49), "STORY", font=L(32), fill="#e1306c", anchor="mm")
+        rr(d, (x0 + 24, y + 28, x0 + 200, y + 70), 20, (255, 255, 255, 230)); d.text((x0 + 112, y + 49), "PHOTO", font=L(32), fill="#e1306c", anchor="mm")
         ty = y + 430
         for ln in wrap(st.get("storytext", ""), L(36), cw - 50, d)[:3]: d.text((x0 + cw / 2, ty), ln, font=L(36), fill="white", anchor="mm", stroke_width=4, stroke_fill="#000"); ty += 42
     for prop in []:
@@ -186,10 +193,10 @@ def layer(st, big=None):
             d.text((W / 2, yy + 85), word.upper(), font=f, fill="white", anchor="mm", stroke_width=6, stroke_fill="#111")
         d.text((W / 2, 1200), "OU", font=L(80), fill="white", anchor="mm", stroke_width=8, stroke_fill="#111")
     # sous-titres (mots qui défilent), sans fond gris
+    cl = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dm = d; d = ImageDraw.Draw(cl); CY = 1540 if st.get("hud") else 1590
     if big:
         fb = L(104)
         while d.textlength(big.upper(), font=fb) > 1000 and fb.size > 60: fb = L(fb.size - 8)
-        CY = 1540 if st.get("hud") else 1590
         d.text((W / 2 + 5, CY + 7), big.upper(), font=fb, fill="#000", anchor="mm", stroke_width=13, stroke_fill="#000")
         keys = {re.sub(r"[^\wÀ-ÿ']", "", w_).upper() for w_ in re.sub(r"[*~]", " ", st.get("head") or "").split()} - SMALL
         ws = big.upper().split(); x = W / 2 - d.textlength(big.upper(), font=fb) / 2
@@ -197,11 +204,12 @@ def layer(st, big=None):
             hot = re.sub(r"[^\wÀ-ÿ']", "", w_) in keys or re.search(r"\d", w_)
             d.text((x, CY), w_, font=fb, fill="#ff4d4d" if hot else "#ffe14a", anchor="lm", stroke_width=13, stroke_fill="#111")
             x += d.textlength(w_ + " ", font=fb)
+    d = dm
     if st.get("hud"):
         pct, eur = st["hud"]
         rr(d, (70, 1630, 520, 1700), 26, (16, 16, 22, 235), "#7dff7a", 5)
         rr(d, (220, 1648, 500, 1682), 14, (60, 60, 70, 255)); rr(d, (220, 1648, 220 + max(18, int(280 * pct / 100)), 1682), 14, "#7dff7a")
-        d.text((145, 1665), "GLOW-UP", font=L(30), fill="white", anchor="mm"); d.text((360, 1665), f"{pct} %", font=L(28), fill="#111" if pct > 40 else "white", anchor="mm")
+        d.text((95, 1665), "TRANSFO", font=L(30), fill="white", anchor="lm"); d.text((360, 1665), f"{pct} %", font=L(28), fill="#111" if pct > 40 else "white", anchor="mm")
         rr(d, (560, 1630, W - 70, 1700), 26, (16, 16, 22, 235), "#f2c230", 5)
         d.text(((560 + W - 70) / 2, 1665), f"CAGNOTTE : {eur} €", font=L(36), fill="#ffd23a", anchor="mm")
     # bandeau du jour
@@ -211,6 +219,7 @@ def layer(st, big=None):
         while d.textlength(band.upper(), font=fb2) > W - 200: fb2 = L(fb2.size - 2)
         rr(d, (70, 1712, W - 70, 1832), 34, (16, 16, 22, 240), "#f2c230", 7)
         d.text((W / 2, 1772), band.upper(), font=fb2, fill="white", anchor="mm")
+    popc(im, cl, ck, CY); popc(im, hl, hk, 200)
     return im
 
 # ------------------------------------------------------------------ plan
@@ -256,20 +265,23 @@ def render_seg(s, epn):
     # sous-titres calés phrase par phrase
     body = ""; s2 = dict(s, sub=""); p0 = os.path.join(tmp, "t_.png"); layer(s2).save(p0, compress_level=1)
     t0 = 0.0; k = 0
+    for i, hk in enumerate((0.55, 0.85, 1.1, 1.04)):
+        p = os.path.join(tmp, f"h{i}.png"); layer(s2, None, hk=hk).save(p, compress_level=1); body += f"file '{p}'\nduration {1 / FPS:.4f}\n"; t0 += 1 / FPS
     for i, sent in enumerate(sents):
         a = st0[i]; b = st0[i + 1] - 0.05 if i + 1 < len(st0) else ad - 0.15
         if a > t0: body += f"file '{p0}'\nduration {a - t0:.3f}\n"; t0 = a
         ch = chunks(sent); tot = sum(len(c) + 3 for c in ch)
         for c in ch:
-            p = os.path.join(tmp, f"t{k}.png"); k += 1; layer(s2, c).save(p, compress_level=1)
-            dd = (b - a) * (len(c) + 3) / tot; body += f"file '{p}'\nduration {dd:.3f}\n"; t0 += dd
+            p = os.path.join(tmp, f"t{k}.png"); pp = os.path.join(tmp, f"u{k}.png"); k += 1
+            layer(s2, c).save(p, compress_level=1); layer(s2, c, ck=1.2).save(pp, compress_level=1)
+            dd = (b - a) * (len(c) + 3) / tot; body += f"file '{pp}'\nduration {min(dd, 2 / FPS):.4f}\nfile '{p}'\nduration {max(dd - 2 / FPS, 0.01):.3f}\n"; t0 += dd
     body += f"file '{p0}'\nduration {max(D - t0, 0.05):.3f}\nfile '{p0}'\n"
     tl = os.path.join(tmp, "t.txt"); open(tl, "w").write(body)
     run(["ffmpeg", "-y", "-loglevel", "error", "-framerate", str(FPS), "-i", os.path.join(frames, "f_%05d.jpg"),
          "-f", "concat", "-safe", "0", "-i", tl, "-i", s["audio"],
          "-filter_complex", "[1:v]fps=30,format=rgba[t];[0:v][t]overlay=0:0,format=yuv420p[v];[2:a]aresample=44100,aformat=channel_layouts=stereo,apad[a]",
-         "-map", "[v]", "-map", "[a]", "-t", f"{D:.3f}", "-r", str(FPS), "-c:v", "libx264", "-preset", "veryfast",
-         "-crf", "20", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", out])
+         "-map", "[v]", "-map", "[a]", "-t", f"{D:.3f}", "-r", str(FPS), "-c:v", "libx264", "-preset", "medium",
+         "-crf", "17", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "160k", "-ar", "44100", out])
     shutil.rmtree(tmp, ignore_errors=True); shutil.rmtree(frames, ignore_errors=True)
     return out, D
 
@@ -301,8 +313,10 @@ def build(E):
         if not os.path.exists(p): run(["ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", f, "-ar", "44100", "-ac", "2", p])
         sfx[k] = p
     beat = "0.55*sin(2*PI*52*t)*exp(-9*mod(t,0.5))+0.05*sin(2*PI*110*t)*(0.5+0.5*sin(2*PI*0.25*t))+0.04*sin(2*PI*164.8*t)*(0.5+0.5*sin(2*PI*0.2*t))"
-    ins = ["-i", raw, "-f", "lavfi", "-i", f"aevalsrc='{beat}':s=44100:d={t:.2f}"]
-    fc = f"[1:a]lowpass=f=900,afade=t=in:d=1,afade=t=out:st={max(0, t - 2):.2f}:d=2,volume=0.5,aformat=channel_layouts=stereo[m];[0:a]asplit=2[vx][vs];[m][vs]sidechaincompress=threshold=0.015:ratio=8:attack=20:release=300[md]"
+    mus = os.path.join(WORK, f"musique_{int(t) + 2}.wav")
+    if not os.path.exists(mus): run(["python3", os.path.join(HERE, "musique.py"), mus, str(int(t) + 2)])
+    ins = ["-i", raw, "-i", mus]
+    fc = f"[1:a]atrim=0:{t:.2f},afade=t=in:d=0.6,afade=t=out:st={max(0, t - 2):.2f}:d=2,volume=0.42,aformat=channel_layouts=stereo[m];[0:a]asplit=2[vx][vs];[m][vs]sidechaincompress=threshold=0.015:ratio=8:attack=20:release=300[md]"
     mix = ["[vx]", "[md]"]
     for i, (k, at) in enumerate(ev):
         ins += ["-i", sfx[k]]; ms = int(at * 1000); fc += f";[{i + 2}:a]adelay={ms}|{ms}[e{i}]"; mix.append(f"[e{i}]")

@@ -233,7 +233,7 @@ function install(X) {
     const me = place(stand(id, q), 430, feet + 110 * s, s);
     const chair = `<g transform="translate(430,${f1(hip)})"><rect x="-190" y="-560" width="380" height="560" rx="70" fill="#141418" stroke="${K}" stroke-width="7"/><rect x="-90" y="-530" width="180" height="480" rx="40" fill="#e5483f"/><rect x="-230" y="-20" width="460" height="70" rx="26" fill="#141418" stroke="${K}" stroke-width="7"/></g>`;
     const flick = 0.5 + 0.5 * S(t * 13) * S(t * 7.3);
-    const scr = over ? `<rect x="742" y="842" width="276" height="176" fill="#200"/><text x="880" y="955" font-family="Lilita One" font-size="54" text-anchor="middle" fill="#ff3b3b">GAME OVER</text>`
+    const scr = over ? `<rect x="742" y="842" width="276" height="176" fill="#200"/><text x="880" y="955" font-family="Lilita One" font-size="54" text-anchor="middle" fill="#ff3b3b">PERDU</text>`
       : `<rect x="742" y="842" width="276" height="176" fill="${['#3ec5ff', '#ff4fd8', '#ffe14f', '#5bbf4a'][Math.floor(t * 3) % 4]}" opacity=".9"/><path d="M760 990 l40 -60 l30 40 l50 -80 l60 100 Z" fill="#222" opacity=".5"/><circle cx="${f1(800 + 160 * ((t * 0.7) % 1))}" cy="900" r="16" fill="#fff"/>`;
     const desk = `<g><rect x="720" y="820" width="320" height="220" rx="12" fill="#111" stroke="${K}" stroke-width="7"/>${scr}<rect x="860" y="1040" width="40" height="80" fill="#222"/><rect x="660" y="1110" width="440" height="34" fill="#2b2b33" stroke="${K}" stroke-width="6"/>
       ${[0, 1, 2, 3, 4, 5].map(i => PROPS.can(700 + (i % 3) * 52 + (i > 2 ? 26 : 0), 1106 - (i > 2 ? 84 : 0), 0)).join('')}</g>`;
