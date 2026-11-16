@@ -1,3 +1,4 @@
 __pycache__/
 *.pyc
 output/serie/.*.m4a
+output/*/.*.m4a
