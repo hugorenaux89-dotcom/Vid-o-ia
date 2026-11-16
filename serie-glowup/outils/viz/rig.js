@@ -77,10 +77,12 @@ function sleeve(s0, a, L, w, col) {
   const w0 = w / 2 + 24, w1 = w / 2 + 13, e = [s0[0] + dx * L, s0[1] + dy * L];
   const A = [st[0] + px * w0, st[1] + py * w0], B = [e[0] + px * w1, e[1] + py * w1], C = [e[0] - px * w1, e[1] - py * w1], D = [st[0] - px * w0, st[1] - py * w0];
   const P2 = q => q.map(f1).join(' ');
-  const capc = [st[0] - dx * w0 * 0.55, st[1] - dy * w0 * 0.55];
+  const capc = [st[0] - dx * w0 * 1.1, st[1] - dy * w0 * 1.1];
   const hem = [[B[0] - dx * 13, B[1] - dy * 13], [C[0] - dx * 13, C[1] - dy * 13]];
   const mid = [s0[0] + dx * L * 0.4, s0[1] + dy * L * 0.4];
-  return `<path d="M${P2(A)} L${P2(B)} L${P2(C)} L${P2(D)} Q${P2(capc)} ${P2(A)} Z" fill="${col}"/>
+  const dc = [s0[0] + dx * 6, s0[1] + dy * 6], R = w0 * 1.02;
+  return `<circle cx="${f1(dc[0])}" cy="${f1(dc[1])}" r="${f1(R + 3)}" fill="${K}"/><circle cx="${f1(dc[0])}" cy="${f1(dc[1])}" r="${f1(R - 3)}" fill="${col}"/>
+    <path d="M${P2(A)} L${P2(B)} L${P2(C)} L${P2(D)} Q${P2(capc)} ${P2(A)} Z" fill="${col}"/>
     <path d="M${P2(A)} L${P2(B)} L${P2(C)} L${P2(D)}" fill="none" stroke="${K}" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
     <path d="M${P2(hem[0])} L${P2(hem[1])}" stroke="${shade(col, -0.3)}" stroke-width="5" stroke-linecap="round"/>
     <path d="M${f1(mid[0] + px * w0 * 0.4)} ${f1(mid[1] + py * w0 * 0.4)} q${f1(dx * 16)} ${f1(dy * 16)} ${f1(-px * 18)} ${f1(-py * 18)}" fill="none" stroke="${shade(col, -0.25)}" stroke-width="4" stroke-linecap="round"/>`;
@@ -153,7 +155,7 @@ function stand(pid, q) {
   const legs = L.svg + R.svg + shoe(L.an, -1) + shoe(R.an, 1);
   // haut du corps (décalé par la respiration)
   const top = 440 + bob, bot = (o.short ? 700 + (50 - fat) * 2.4 : 880) + bob * 0.7;
-  const torsoPath = `M${sx - tw + 2} ${top + 96} C${sx - tw - 4} ${top + 58} ${sx - tw + 14} ${top + 30} ${sx - tw + 52} ${top + 22} C${sx - 110} ${top + 12} ${sx - 80} ${top - 4} ${sx - 58} ${top - 10} Q${sx} ${top + 22} ${sx + 58} ${top - 10} C${sx + 80} ${top - 4} ${sx + 110} ${top + 12} ${sx + tw - 52} ${top + 22} C${sx + tw - 14} ${top + 30} ${sx + tw + 4} ${top + 58} ${sx + tw - 2} ${top + 96} L${sx + tw - 8 + fat * 0.4} ${bot} Q${sx} ${bot + 24} ${sx - tw + 8 - fat * 0.4} ${bot} Z`;
+  const torsoPath = `M${sx - tw + 4} ${top + 110} C${sx - tw - 14} ${top + 70} ${sx - tw - 4} ${top + 8} ${sx - tw + 56} ${top + 4} C${sx - 104} ${top} ${sx - 80} ${top - 6} ${sx - 58} ${top - 10} Q${sx} ${top + 22} ${sx + 58} ${top - 10} C${sx + 80} ${top - 6} ${sx + 104} ${top} ${sx + tw - 56} ${top + 4} C${sx + tw + 4} ${top + 8} ${sx + tw + 14} ${top + 70} ${sx + tw - 4} ${top + 110} L${sx + tw - 8 + fat * 0.4} ${bot} Q${sx} ${bot + 24} ${sx - tw + 8 - fat * 0.4} ${bot} Z`;
   const torso = o.dress ? `<path d="M${sx - tw} ${top + 40} Q${sx} ${top - 20} ${sx + tw} ${top + 40} L${sx + tw + 60} 1010 L${sx - tw - 60} 1010 Z" fill="${o.top}" stroke="${K}" stroke-width="6"/>`
     : `<defs><linearGradient id="tg${id}" x1="0" x2="1"><stop offset="0" stop-color="${shade(o.top, 0.12)}"/><stop offset=".55" stop-color="${o.top}"/><stop offset="1" stop-color="${shade(o.top, -0.25)}"/></linearGradient></defs>
        <path d="${torsoPath}" fill="${o.top}" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
