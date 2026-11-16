@@ -37,51 +37,53 @@ function tube(pts, w, color) {
 // main dessinée en deux passes (contour puis remplissage) pour une silhouette propre
 function cap(x1, y1, x2, y2, w, col) { return `<path d="M${f1(x1)} ${f1(y1)} L${f1(x2)} ${f1(y2)}" stroke="${col}" stroke-width="${f1(w)}" stroke-linecap="round" fill="none"/>`; }
 function handShapes(kind) {
-  // repère local : poignet en (0,0), la main pend vers +y
-  const palm = 'M-23 2 Q-28 26 -21 46 Q0 54 21 46 Q28 26 23 2 Z';
+  // repère local : poignet en (0,0), la main pend vers +y. doigts = [x1,y1,x2,y2,épaisseur]
   if (kind === 'fist' || kind === 'point' || kind === 'thumb') {
-    const caps = [[-15, 44, -15, 46, 17], [-5, 47, -5, 49, 17], [5, 47, 5, 49, 17], [15, 44, 15, 46, 16]];
-    if (kind === 'point') caps.push([-6, 40, -6, 86, 13]);
-    if (kind === 'thumb') caps.push([-22, 22, -26, -16, 15]); else caps.push([-24, 20, 2, 30, 14]);
-    return { palm: 'M-25 2 Q-30 26 -22 44 Q0 54 22 44 Q30 26 25 2 Z', caps, lines: kind === 'point' ? [] : [[-10, 44, -10, 52], [0, 46, 0, 54], [10, 44, 10, 52]] };
+    const f = [[-16, 40, -16, 44, 18], [-5.5, 44, -5.5, 48, 18], [5.5, 44, 5.5, 48, 18], [16, 40, 16, 43, 17]];
+    if (kind === 'point') f[1] = [-6, 40, -6, 92, 15];
+    const th = kind === 'thumb' ? [-24, 16, -27, -22, 17] : [-26, 18, 0, 30, 16];
+    return { palm: 'M-26 0 Q-32 24 -24 44 Q0 54 24 44 Q32 24 26 0 Z', fingers: f, thumb: th };
   }
-  return { palm, caps: [[-16, 40, -18, 68, 11], [-5.5, 44, -6, 78, 11.5], [5.5, 44, 6, 77, 11.5], [16, 40, 17, 64, 10.5], [-21, 12, -36, 36, 12]], lines: [[-11, 46, -12, 60], [0, 48, 0, 62], [11, 46, 11.5, 58]] };
+  return { palm: 'M-25 0 Q-31 24 -23 46 Q0 56 23 46 Q31 24 25 0 Z', fingers: [[-18, 40, -24, 74, 13], [-6.5, 44, -8, 84, 13.5], [6.5, 44, 7, 83, 13.5], [18, 40, 22, 70, 12.5]], thumb: [-24, 14, -44, 40, 14] };
 }
 function hand(p, ang, skin, kind = 'open', sc = 1) {
   const [x, y] = p;
-  const sh = handShapes(kind), dark = shade(skin, -0.2), lite = shade(skin, 0.22);
-  const outline = `<path d="${sh.palm}" fill="${K}" stroke="${K}" stroke-width="9" stroke-linejoin="round"/>` + sh.caps.map(c => cap(c[0], c[1], c[2], c[3], c[4] + 8, K)).join('');
-  const fill = `<path d="${sh.palm}" fill="${skin}"/>` + sh.caps.map(c => cap(c[0], c[1], c[2], c[3], c[4], skin)).join('');
-  const det = sh.lines.map(l => `<path d="M${l[0]} ${l[1]} L${l[2]} ${l[3]}" stroke="${K}" stroke-width="2.6" stroke-linecap="round" opacity=".75"/>`).join('')
-    + `<path d="M14 6 Q20 26 14 42" fill="none" stroke="${dark}" stroke-width="7" stroke-linecap="round" opacity=".7"/><path d="M-12 8 Q-16 20 -12 30" fill="none" stroke="${lite}" stroke-width="5" stroke-linecap="round" opacity=".8"/>`;
+  const sh = handShapes(kind), dark = shade(skin, -0.18), lite = shade(skin, 0.22);
+  const one = c => cap(c[0], c[1], c[2], c[3], c[4] + 8, K) + cap(c[0], c[1], c[2], c[3], c[4], skin) + cap(c[0] + c[4] * 0.18, c[1] + 4, c[2] + c[4] * 0.18, c[3] - 2, c[4] * 0.32, dark).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".45"');
+  const palm = `<path d="${sh.palm}" fill="${skin}" stroke="${K}" stroke-width="6" stroke-linejoin="round"/><path d="M14 6 Q22 26 14 44" fill="none" stroke="${dark}" stroke-width="7" stroke-linecap="round" opacity=".6"/><path d="M-12 8 Q-18 22 -13 32" fill="none" stroke="${lite}" stroke-width="5" stroke-linecap="round" opacity=".8"/>`;
+  const fingers = sh.fingers.map(one).join(''), thumb = one(sh.thumb);
+  const knuckles = kind === 'open' ? '' : `<path d="M-22 44 q5 -5 10 0 M-11 47 q5 -5 11 0 M0 47 q5 -5 11 0 M11 44 q5 -5 10 0" fill="none" stroke="${K}" stroke-width="2.5" opacity=".6"/>`;
   const rot = kind === 'thumb' ? 0 : -ang;
-  return `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(rot)}) scale(${f1(sc)})">${outline}${fill}${det}</g>`;
+  const body = kind === 'open' ? palm + fingers + thumb : palm + fingers + knuckles + thumb;
+  return `<g transform="translate(${f1(x)},${f1(y)}) rotate(${f1(rot)}) scale(${f1(sc)})">${body}</g>`;
 }
 // bras effilé (épaule plus large que le poignet) avec coude, ombre et reflet
-function limb(s0, e, h, w, skin) {
+function limb(s0, e, h, w, skin, cloth = false) {
   const w2 = w * 0.92, dark = shade(skin, -0.22), lite = shade(skin, 0.25);
   const seg = (a, b, ww, col) => `<path d="M${f1(a[0])} ${f1(a[1])} L${f1(b[0])} ${f1(b[1])}" stroke="${col}" stroke-width="${f1(ww)}" stroke-linecap="round" fill="none"/>`;
   const off = (a, b, d) => { const dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1; return [[a[0] - dy / L * d, a[1] + dx / L * d], [b[0] - dy / L * d, b[1] + dx / L * d]]; };
   const [u1, u2] = off(s0, e, w * 0.24), [f1a, f1b] = off(e, h, w2 * 0.24), [l1, l2] = off(s0, e, -w * 0.26), [m1, m2] = off(e, h, -w2 * 0.26);
-  return seg(s0, e, w + 9, K) + seg(e, h, w2 + 9, K) + seg(s0, e, w, skin) + seg(e, h, w2, skin)
+  const wr = [e[0] + (h[0] - e[0]) * 0.62, e[1] + (h[1] - e[1]) * 0.62], w3 = w2 * 0.8;
+  const wl = (() => { const dx = h[0] - e[0], dy = h[1] - e[1], L = Math.hypot(dx, dy) || 1, px = -dy / L, py = dx / L, c = [h[0] - dx / L * 6, h[1] - dy / L * 6]; return `<path d="M${f1(c[0] - px * w3 * 0.45)} ${f1(c[1] - py * w3 * 0.45)} L${f1(c[0] + px * w3 * 0.45)} ${f1(c[1] + py * w3 * 0.45)}" stroke="${dark}" stroke-width="3.5" stroke-linecap="round" opacity=".9"/>`; })();
+  return seg(s0, e, w + 9, K) + seg(e, wr, w2 + 9, K) + seg(wr, h, w3 + 9, K) + seg(s0, e, w, skin) + seg(e, wr, w2, skin) + seg(wr, h, w3, skin) + wl
     + seg(u1, u2, w * 0.3, dark).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".55"') + seg(f1a, f1b, w2 * 0.3, dark).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".55"')
-    + seg(l1, l2, w * 0.12, lite).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".7"') + seg(m1, m2, w2 * 0.12, lite).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".7"')
+    + (cloth ? '' : seg(l1, l2, w * 0.12, lite).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".7"') + seg(m1, m2, w2 * 0.12, lite).replace('stroke-linecap="round"', 'stroke-linecap="round" opacity=".7"'))
     + `<path d="M${f1(e[0] - 6)} ${f1(e[1] - 4)} q6 6 12 0" fill="none" stroke="${dark}" stroke-width="3" opacity=".8"/>`;
 }
 // manche de tee-shirt évasée, avec ourlet et pli
 function sleeve(s0, a, L, w, col) {
   const r = a * Math.PI / 180, dx = Math.sin(r), dy = Math.cos(r), px = -dy, py = dx;
-  const st = [s0[0] - dx * 34, s0[1] - dy * 34];
-  const w0 = w / 2 + 22, w1 = w / 2 + 12, e = [s0[0] + dx * L, s0[1] + dy * L];
+  const st = [s0[0] - dx * 26, s0[1] - dy * 26];
+  const w0 = w / 2 + 24, w1 = w / 2 + 13, e = [s0[0] + dx * L, s0[1] + dy * L];
   const A = [st[0] + px * w0, st[1] + py * w0], B = [e[0] + px * w1, e[1] + py * w1], C = [e[0] - px * w1, e[1] - py * w1], D = [st[0] - px * w0, st[1] - py * w0];
   const P2 = q => q.map(f1).join(' ');
+  const capc = [st[0] - dx * w0 * 0.55, st[1] - dy * w0 * 0.55];
   const hem = [[B[0] - dx * 13, B[1] - dy * 13], [C[0] - dx * 13, C[1] - dy * 13]];
-  const mid = [s0[0] + dx * L * 0.35, s0[1] + dy * L * 0.35];
-  return `<path d="M${P2(A)} L${P2(B)} L${P2(C)} L${P2(D)} Z" fill="${col}"/>
+  const mid = [s0[0] + dx * L * 0.4, s0[1] + dy * L * 0.4];
+  return `<path d="M${P2(A)} L${P2(B)} L${P2(C)} L${P2(D)} Q${P2(capc)} ${P2(A)} Z" fill="${col}"/>
     <path d="M${P2(A)} L${P2(B)} L${P2(C)} L${P2(D)}" fill="none" stroke="${K}" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
-    <path d="M${P2(hem[0])} L${P2(hem[1])}" stroke="${shade(col, -0.3)}" stroke-width="5"/>
-    <path d="M${f1(mid[0] + px * w0 * 0.45)} ${f1(mid[1] + py * w0 * 0.45)} q${f1(dx * 16)} ${f1(dy * 16)} ${f1(-px * 18)} ${f1(-py * 18)}" fill="none" stroke="${shade(col, -0.28)}" stroke-width="4" stroke-linecap="round"/>
-    <path d="M${f1(st[0] - px * w0 * 0.55)} ${f1(st[1] - py * w0 * 0.55)} L${f1(e[0] - px * w1 * 0.55)} ${f1(e[1] - py * w1 * 0.55)}" stroke="${shade(col, 0.18)}" stroke-width="7" opacity=".55" stroke-linecap="round"/>`;
+    <path d="M${P2(hem[0])} L${P2(hem[1])}" stroke="${shade(col, -0.3)}" stroke-width="5" stroke-linecap="round"/>
+    <path d="M${f1(mid[0] + px * w0 * 0.4)} ${f1(mid[1] + py * w0 * 0.4)} q${f1(dx * 16)} ${f1(dy * 16)} ${f1(-px * 18)} ${f1(-py * 18)}" fill="none" stroke="${shade(col, -0.25)}" stroke-width="4" stroke-linecap="round"/>`;
 }
 // accessoires tenus en main
 const PROPS = {
@@ -138,7 +140,7 @@ function stand(pid, q) {
   const leg = (x, side, [h, k] = [0, 0], lift = 0) => {
     const a = side * h, kn = P([x, hipY], a, 190 * (1 - 0.6 * lift)), an = P(kn, side * k, 170 * (1 - 0.15 * lift));
     const crease = `<path d="M${f1(kn[0] - 22)} ${f1(kn[1] - 4)} q22 12 44 0" fill="none" stroke="${shade(o.pants, -0.35)}" stroke-width="4" stroke-linecap="round"/>`;
-    return { svg: limb([x, hipY], kn, an, legW, o.pants) + crease, an, ang: side * k };
+    return { svg: limb([x, hipY], kn, an, legW, o.pants, true) + crease, an, ang: side * k };
   };
   const L = leg(lx, -1, q.ll, (q.lift || [0, 0])[0]), R = leg(rx, 1, q.rl, (q.lift || [0, 0])[1]);
   const shoe = (p, side) => { const [x, y] = p; const sc = o.shoes, sd = shade(o.shoes, -0.22);
@@ -151,11 +153,11 @@ function stand(pid, q) {
   const legs = L.svg + R.svg + shoe(L.an, -1) + shoe(R.an, 1);
   // haut du corps (décalé par la respiration)
   const top = 440 + bob, bot = (o.short ? 700 + (50 - fat) * 2.4 : 880) + bob * 0.7;
-  const torsoPath = `M${sx - tw} ${top + 40} Q${sx - tw + 10} ${top} ${sx - 60} ${top - 6} Q${sx} ${top + 22} ${sx + 60} ${top - 6} Q${sx + tw - 10} ${top} ${sx + tw} ${top + 40} L${sx + tw - 8 + fat * 0.4} ${bot} Q${sx} ${bot + 24} ${sx - tw + 8 - fat * 0.4} ${bot} Z`;
+  const torsoPath = `M${sx - tw} ${top + 80} C${sx - tw} ${top + 10} ${sx - tw + 30} ${top - 4} ${sx - 62} ${top - 8} Q${sx} ${top + 24} ${sx + 62} ${top - 8} C${sx + tw - 30} ${top - 4} ${sx + tw} ${top + 10} ${sx + tw} ${top + 80} L${sx + tw - 8 + fat * 0.4} ${bot} Q${sx} ${bot + 24} ${sx - tw + 8 - fat * 0.4} ${bot} Z`;
   const torso = o.dress ? `<path d="M${sx - tw} ${top + 40} Q${sx} ${top - 20} ${sx + tw} ${top + 40} L${sx + tw + 60} 1010 L${sx - tw - 60} 1010 Z" fill="${o.top}" stroke="${K}" stroke-width="6"/>`
     : `<defs><linearGradient id="tg${id}" x1="0" x2="1"><stop offset="0" stop-color="${shade(o.top, 0.12)}"/><stop offset=".55" stop-color="${o.top}"/><stop offset="1" stop-color="${shade(o.top, -0.25)}"/></linearGradient></defs>
        <path d="${torsoPath}" fill="${o.top}" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
-       <path d="M${sx + tw - 34} ${top + 60} L${sx + tw - 30} ${bot - 6}" stroke="${shade(o.top, -0.16)}" stroke-width="34" stroke-linecap="round" opacity=".8"/>
+       <path d="M${sx + tw - 34} ${top + 60} L${sx + tw - 30} ${bot - 6}" stroke="${shade(o.top, -0.16)}" stroke-width="34" stroke-linecap="round" opacity=".4"/>
        <path d="M${sx - tw + 30} ${top + 70} L${sx - tw + 34} ${bot - 20}" stroke="${shade(o.top, 0.12)}" stroke-width="12" stroke-linecap="round" opacity=".6"/>
        <path d="M${sx - 40} ${top + 120} q30 40 10 90 M${sx + 50} ${top + 150} q-20 50 4 100" fill="none" stroke="${shade(o.top, -0.28)}" stroke-width="4" opacity=".7"/>
        ${o.tie || o.polo ? '' : `<path d="M${sx - 66} ${top - 4} Q${sx} ${top + 52} ${sx + 66} ${top - 4}" fill="none" stroke="${shade(o.top, -0.32)}" stroke-width="14" stroke-linecap="round"/><path d="M${sx - 66} ${top - 4} Q${sx} ${top + 52} ${sx + 66} ${top - 4}" fill="none" stroke="${shade(o.top, 0.1)}" stroke-width="5" stroke-linecap="round"/>`}
@@ -194,7 +196,7 @@ function stand(pid, q) {
     const bic = o.muscle ? (() => { const m = P(s0, side * a1, 100), ang = -Math.atan2(e[0] - s0[0], e[1] - s0[1]) * 180 / Math.PI; return `<ellipse cx="${f1(m[0])}" cy="${f1(m[1])}" rx="${f1(30 + (q.flex || 0) * 10)}" ry="58" fill="${skin}" stroke="${K}" stroke-width="4" transform="rotate(${f1(ang)} ${f1(m[0])} ${f1(m[1])}) translate(${-side * 14},0)"/>`; })() : '';
     const prop = pr ? PROPS[pr[0]](h[0] + (pr[2] || 0), h[1] + 20 + (pr[3] || 0), pr[1] || 0) : '';
     const front = pr && pr[4] === 'behind';
-    return { svg: (o.long ? limb(s0, e, h, armW + 16, o.sleeve || o.top) + cuff : limb(s0, e, h, armW, skin)) + sl, hand: hand(h, side * a2, skin, hk, 1.3 * Math.max(1, armW / 66)), prop, front, h };
+    return { svg: (o.long ? limb(s0, e, h, armW + 16, o.sleeve || o.top, true) + cuff : limb(s0, e, h, armW, skin)) + sl, hand: hand(h, side * a2, skin, hk, 1.3 * Math.max(1, armW / 66)), prop, front, h };
   };
   const la = arm(-1, q.la, q.lh, q.lp), ra = arm(1, q.ra, q.rh, q.rp);
   const hs = q.hs || 1.08 * Math.max(0.64, Math.min(0.86, 0.66 + ((c.w || 1) - 1.04) * 0.47)), htop = 92 - (hs / 1.08 - 0.66) / 0.18 * 72 - 30 * (hs - hs / 1.08) / 0.07 + bob;
