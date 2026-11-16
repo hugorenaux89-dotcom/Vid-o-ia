@@ -2,6 +2,7 @@
 
 ## Épisode 4 · J-27 · « Le frigo »
 ⏱️ **1:12** · 📊 `JOUR 4 · VOUS AVEZ CHOISI FRIGO`
+📈 `4 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis training at the gym, coached by Kenzo who doesn't know who he is.`
@@ -85,6 +86,7 @@
 
 ## Épisode 5 · J-26 · « Les lunettes »
 ⏱️ **1:12** · 📊 `JOUR 5 · VOUS AVEZ CHOISI LUNETTES`
+📈 `6 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis's broken glasses falling into a soup bowl in front of Nadia.`
@@ -166,6 +168,7 @@
 
 ## Épisode 6 · J-25 · « Les dents »
 ⏱️ **1:12** · 📊 `JOUR 6 · VOUS AVEZ CHOISI DENTS`
+📈 `9 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis running in the park, Sarah might be there, panicking.`
@@ -248,6 +251,7 @@
 
 ## Épisode 7 · J-24 · « 6 secondes »
 ⏱️ **1:12** · 📊 `JOUR 7 · VOUS AVEZ CHOISI CHEVEUX`
+📈 `11 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis bald in the doctor's office, sparkles swirling, hair growing back in a flash.`
@@ -330,6 +334,7 @@
 
 ## Épisode 8 · J-23 · « Les boutons »
 ⏱️ **1:12** · 📊 `JOUR 8 · VOUS AVEZ CHOISI BOUTONS`
+📈 `14 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis with a green face mask, Sofiane screaming in fear.`
@@ -411,6 +416,7 @@
 
 ## Épisode 9 · J-22 · « Le sommeil »
 ⏱️ **1:12** · 📊 `JOUR 9 · VOUS AVEZ CHOISI SOMMEIL`
+📈 `16 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis falling asleep standing up at the gym, Kenzo waving at him.`
@@ -493,6 +499,7 @@
 
 ## Épisode 10 · J-21 · « La peau »
 ⏱️ **1:12** · 📊 `JOUR 10 · VOUS AVEZ CHOISI PEAU`
+📈 `19 · 0`
 
 **P1 · L'accroche**
 🎥 `Before/after split screen: day 1 vs day 10, skin clear.`
@@ -574,6 +581,7 @@
 
 ## Épisode 11 · J-20 · « Les dents blanches »
 ⏱️ **1:12** · 📊 `JOUR 11 · VOUS AVEZ CHOISI DENTS BLANCHES`
+📈 `23 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis smiling, his teeth so white they shine, Sofiane blinded.`
@@ -655,6 +663,7 @@
 
 ## Épisode 12 · J-19 · « La barbe »
 ⏱️ **1:12** · 📊 `JOUR 12 · VOUS AVEZ CHOISI BARBE`
+📈 `26 · 0`
 
 **P1 · L'accroche**
 🎥 `Barber shocked looking at Yanis's patchy beard with razor cuts.`

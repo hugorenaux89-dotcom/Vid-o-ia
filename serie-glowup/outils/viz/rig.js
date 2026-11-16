@@ -170,7 +170,11 @@ function stand(pid, q) {
   const waist = `<path d="M${sx - tw + 6} ${hipY - 40} Q${sx} ${hipY - 10} ${sx + tw - 6} ${hipY - 40} L${sx + tw - 2} ${hipY + 10} Q${sx} ${hipY + 40} ${sx - tw + 2} ${hipY + 10} Z" fill="${o.pants}" stroke="${K}" stroke-width="6"/>`;
   const sweatMarks = o.stains ? `<ellipse cx="${sx - 50}" cy="${top + 110}" rx="36" ry="24" fill="#b9813f" opacity=".7"/><ellipse cx="${sx + 70}" cy="${top + 170}" rx="26" ry="18" fill="#8f5a3a" opacity=".65"/>
     <ellipse cx="${sx - tw + 38}" cy="${top + 120}" rx="30" ry="40" fill="${shade(o.top, -0.3)}" opacity=".75"/><ellipse cx="${sx + tw - 38}" cy="${top + 120}" rx="30" ry="40" fill="${shade(o.top, -0.3)}" opacity=".75"/>` : '';
-  const outfitX = (o.coat ? `<path d="M${sx - tw + 6} ${top + 40} L${sx - tw - 20} ${1000} L${sx - 20} ${1000} L${sx - 10} ${top + 60} Z M${sx + tw - 6} ${top + 40} L${sx + tw + 20} ${1000} L${sx + 20} ${1000} L${sx + 10} ${top + 60} Z" fill="#fbfbfb" stroke="${K}" stroke-width="6"/><rect x="${sx + 50}" y="${top + 130}" width="60" height="70" rx="8" fill="#e8eef2" stroke="${K}" stroke-width="4"/><path d="M${sx + 60} ${top + 120} l10 40" stroke="#2f6fd6" stroke-width="6"/>` : '')
+  const varsity = o.varsity ? `<path d="M${sx - 48} ${top - 2} L${sx + 48} ${top - 2} L${sx + 44} ${bot + 14} L${sx - 44} ${bot + 14} Z" fill="#f4f4f4" stroke="${K}" stroke-width="5"/>
+    <path d="M${sx - 70} ${top - 6} Q${sx} ${top + 40} ${sx + 70} ${top - 6}" fill="none" stroke="#f2e6d0" stroke-width="16"/><path d="M${sx - 70} ${top - 6} Q${sx} ${top + 40} ${sx + 70} ${top - 6}" fill="none" stroke="${o.top}" stroke-width="5"/>
+    <rect x="${sx - tw + 6}" y="${bot - 34}" width="${2 * tw - 12}" height="40" fill="#f2e6d0" stroke="${K}" stroke-width="5"/><path d="M${sx - tw + 8} ${bot - 22} L${sx + tw - 8} ${bot - 22} M${sx - tw + 8} ${bot - 6} L${sx + tw - 8} ${bot - 6}" stroke="${o.top}" stroke-width="6"/>
+    ${o.number ? `<text x="${sx + 78}" y="${top + 150}" font-family="Lilita One" font-size="64" text-anchor="middle" fill="#ffd23a" stroke="${K}" stroke-width="3">${o.number}</text>` : ''}` : '';
+  const outfitX = varsity + (o.coat ? `<path d="M${sx - tw + 6} ${top + 40} L${sx - tw - 20} ${1000} L${sx - 20} ${1000} L${sx - 10} ${top + 60} Z M${sx + tw - 6} ${top + 40} L${sx + tw + 20} ${1000} L${sx + 20} ${1000} L${sx + 10} ${top + 60} Z" fill="#fbfbfb" stroke="${K}" stroke-width="6"/><rect x="${sx + 50}" y="${top + 130}" width="60" height="70" rx="8" fill="#e8eef2" stroke="${K}" stroke-width="4"/><path d="M${sx + 60} ${top + 120} l10 40" stroke="#2f6fd6" stroke-width="6"/>` : '')
     + (o.tie ? `<path d="M${sx - 64} ${top - 4} L${sx} ${top + 170} L${sx + 64} ${top - 4} Z" fill="#fff" stroke="${K}" stroke-width="5"/><path d="M${sx - 14} ${top + 14} L${sx + 14} ${top + 14} L${sx + 22} ${top + 150} L${sx} ${top + 180} L${sx - 22} ${top + 150} Z" fill="${o.tie}" stroke="${K}" stroke-width="4"/><path d="M${sx - 70} ${top} L${sx - 10} ${top + 230} M${sx + 70} ${top} L${sx + 10} ${top + 230}" stroke="${shade(o.top, -0.35)}" stroke-width="8"/><circle cx="${sx}" cy="${top + 280}" r="9" fill="#222"/><path d="M${sx - tw + 30} ${top + 100} l50 0" stroke="#fff" stroke-width="8"/>` : '')
     + (o.polo ? `<path d="M${sx - 50} ${top} L${sx} ${top + 70} L${sx + 50} ${top}" fill="#fff" stroke="${K}" stroke-width="5"/><circle cx="${sx}" cy="${top + 100}" r="7" fill="#fff" stroke="${K}" stroke-width="3"/>` : '');
   const extra = outfitX + (o.text ? `<text x="${sx}" y="${top + 170}" font-family="Lilita One" font-size="60" text-anchor="middle" fill="#fff">${o.text}</text>` : '')
@@ -181,11 +185,13 @@ function stand(pid, q) {
   const armW = 56 + (o.muscle ? 16 : 0) + fat * 0.42;
   const arm = (side, [a1, a2] = [16, 6], hk, pr) => {
     const s0 = [sx + side * (tw - 18), top + 52], e = P(s0, side * a1, 175), h = P(e, side * a2, 160);
-    const sl = o.dress ? '' : sleeve(s0, side * a1, o.short ? 78 : 165, armW, o.top);
+    const sl = o.dress || o.long ? '' : sleeve(s0, side * a1, o.short ? 78 : 165, armW, o.top);
+    const cuff = o.long ? (() => { const c1 = P(e, side * a2, 118), c2 = P(e, side * a2, 150), d2 = side * a2; const px = Math.cos(d2 * Math.PI / 180), py = -Math.sin(d2 * Math.PI / 180), w = armW / 2 + 10;
+      return [c1, [(c1[0] + c2[0]) / 2, (c1[1] + c2[1]) / 2]].map((c, k) => `<path d="M${f1(c[0] - px * w)} ${f1(c[1] - py * w)} L${f1(c[0] + px * w)} ${f1(c[1] + py * w)}" stroke="${k ? '#ffffff' : (o.stripe || '#8a1730')}" stroke-width="9"/>`).join(''); })() : '';
     const bic = o.muscle ? (() => { const m = P(s0, side * a1, 100), ang = -Math.atan2(e[0] - s0[0], e[1] - s0[1]) * 180 / Math.PI; return `<ellipse cx="${f1(m[0])}" cy="${f1(m[1])}" rx="${f1(30 + (q.flex || 0) * 10)}" ry="58" fill="${skin}" stroke="${K}" stroke-width="4" transform="rotate(${f1(ang)} ${f1(m[0])} ${f1(m[1])}) translate(${-side * 14},0)"/>`; })() : '';
     const prop = pr ? PROPS[pr[0]](h[0] + (pr[2] || 0), h[1] + 20 + (pr[3] || 0), pr[1] || 0) : '';
     const front = pr && pr[4] === 'behind';
-    return { svg: limb(s0, e, h, armW, skin) + sl, hand: hand(h, side * a2, skin, hk, Math.max(1, armW / 58)), prop, front, h };
+    return { svg: (o.long ? limb(s0, e, h, armW + 16, o.sleeve || o.top) + cuff : limb(s0, e, h, armW, skin)) + sl, hand: hand(h, side * a2, skin, hk, Math.max(1, armW / 58)), prop, front, h };
   };
   const la = arm(-1, q.la, q.lh, q.lp), ra = arm(1, q.ra, q.rh, q.rp);
   const hs = q.hs || Math.max(0.64, Math.min(0.86, 0.66 + ((c.w || 1) - 1.04) * 0.47)), htop = 92 - (hs - 0.66) / 0.18 * 72 + bob;

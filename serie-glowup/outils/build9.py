@@ -96,7 +96,7 @@ def wrap(text, f, maxw, d):
     if cur: out.append(cur)
     return out
 SMALL = {"LE", "LA", "LES", "UN", "UNE", "DE", "DES", "DU", "À", "AU", "ET", "SON", "SA", "SES", "CE", "IL", "EN", "DANS", "SUR", "POUR", "PAR", "AVEC", "QUI", "QUE", "NE", "MON", "MA", "MES", "PLUS", "SE", "SI", "OU", "MAIS", "C'EST", "L'", "D'", "QU'"}
-def headline(d, text, y0=90, im=None):
+def headline(d, text, y0=90, im=None, small=False):
     """gros titre : ~jaune~, *rouge*, reste blanc ; police épaisse, gros contour + ombre portée"""
     toks = []
     for m in re.finditer(r"~[^~]+~|\*[^*]+\*|\S+", text):
@@ -114,8 +114,8 @@ def headline(d, text, y0=90, im=None):
         if cur: lines.append(cur)
         return lines
     wid = lambda f, ls: max(d.textlength(" ".join(t for t, _ in ln), font=f) for ln in ls)
-    f = L(138); lines = lay(f)
-    while (len(lines) > 3 or wid(f, lines) > 1030) and f.size > 70: f = L(f.size - 6); lines = lay(f)
+    f = L(118 if small else 138); lines = lay(f)
+    while (len(lines) > (2 if small else 3) or wid(f, lines) > 1030) and f.size > 64: f = L(f.size - 6); lines = lay(f)
     y = y0
     for ln in lines:
         total = d.textlength(" ".join(t for t, _ in ln), font=f); x = (W - total) / 2
@@ -146,9 +146,23 @@ def popc(im, layer_img, k, cy):
     ox, oy = int(W / 2 - W / 2 * k), int(cy - cy * k)
     im.alpha_composite(sc.crop((-ox, -oy, -ox + W, -oy + H)))
 
+def hud(d, st):
+    """barre du haut façon série TikTok : JOURS RESTANTS · ARGENT · GLOW-UP"""
+    pct, eur = st["hud"]; rest = 31 - st.get("day", 1)
+    boxes = [(30, 340), (370, 710), (740, 1050)]
+    for (x0, x1) in boxes: rr(d, (x0, 28, x1, 178), 26, (14, 14, 18, 235), "#2a2a33", 4)
+    d.text((185, 62), "JOURS RESTANTS", font=A(34), fill="#e8e8e8", anchor="mm"); d.text((185, 128), str(rest), font=A(84), fill="#ffd23a", anchor="mm", stroke_width=4, stroke_fill="#111")
+    col = "#7dff7a" if eur >= 0 else "#ff4d4d"
+    rr(d, (370, 28, 710, 178), 26, (14, 14, 18, 235), col, 5)
+    d.text((540, 62), "ARGENT", font=A(34), fill="#e8e8e8", anchor="mm"); d.text((540, 128), f"{'+' if eur >= 0 else '-'}{abs(eur)} €", font=A(80), fill=col, anchor="mm", stroke_width=4, stroke_fill="#111")
+    d.text((895, 62), "GLOW-UP", font=A(34), fill="#e8e8e8", anchor="mm"); d.text((895, 124), f"{pct}%", font=A(84), fill="#7dff7a", anchor="mm", stroke_width=4, stroke_fill="#111")
+    rr(d, (770, 160, 1020, 170), 5, (60, 60, 70, 255)); rr(d, (770, 160, 770 + max(8, int(250 * pct / 100)), 170), 5, "#3ccf4e")
+    return 200
+
 def layer(st, big=None, hk=1.0, ck=1.0):
     im = Image.new("RGBA", (W, H), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
-    hl = Image.new("RGBA", (W, H), (0, 0, 0, 0)); y = headline(ImageDraw.Draw(hl), st.get("head") or "", 90) + 14
+    y0 = hud(d, st) if st.get("hud") else 90
+    hl = Image.new("RGBA", (W, H), (0, 0, 0, 0)); y = headline(ImageDraw.Draw(hl), st.get("head") or "", y0, small=bool(st.get("hud"))) + 14
     # badge sport / glow-up sous le titre
     for lab, txt in st.get("cards", []):
         u = txt.upper().lstrip("😩🏃🏋️✅🏆✨ ")
@@ -193,7 +207,7 @@ def layer(st, big=None, hk=1.0, ck=1.0):
             d.text((W / 2, yy + 85), word.upper(), font=f, fill="white", anchor="mm", stroke_width=6, stroke_fill="#111")
         d.text((W / 2, 1200), "OU", font=L(80), fill="white", anchor="mm", stroke_width=8, stroke_fill="#111")
     # sous-titres (mots qui défilent), sans fond gris
-    cl = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dm = d; d = ImageDraw.Draw(cl); CY = 1540 if st.get("hud") else 1590
+    cl = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dm = d; d = ImageDraw.Draw(cl); CY = 1590
     if big:
         fb = L(104)
         while d.textlength(big.upper(), font=fb) > 1000 and fb.size > 60: fb = L(fb.size - 8)
@@ -202,16 +216,9 @@ def layer(st, big=None, hk=1.0, ck=1.0):
         ws = big.upper().split(); x = W / 2 - d.textlength(big.upper(), font=fb) / 2
         for w_ in ws:
             hot = re.sub(r"[^\wÀ-ÿ']", "", w_) in keys or re.search(r"\d", w_)
-            d.text((x, CY), w_, font=fb, fill="#ff4d4d" if hot else "#ffe14a", anchor="lm", stroke_width=13, stroke_fill="#111")
+            d.text((x, CY), w_, font=fb, fill=("#ffd23a" if hot else "white") if st.get("hud") else ("#ff4d4d" if hot else "#ffe14a"), anchor="lm", stroke_width=13, stroke_fill="#111")
             x += d.textlength(w_ + " ", font=fb)
     d = dm
-    if st.get("hud"):
-        pct, eur = st["hud"]
-        rr(d, (70, 1630, 520, 1700), 26, (16, 16, 22, 235), "#7dff7a", 5)
-        rr(d, (220, 1648, 500, 1682), 14, (60, 60, 70, 255)); rr(d, (220, 1648, 220 + max(18, int(280 * pct / 100)), 1682), 14, "#7dff7a")
-        d.text((95, 1665), "TRANSFO", font=L(30), fill="white", anchor="lm"); d.text((360, 1665), f"{pct} %", font=L(28), fill="#111" if pct > 40 else "white", anchor="mm")
-        rr(d, (560, 1630, W - 70, 1700), 26, (16, 16, 22, 235), "#f2c230", 5)
-        d.text(((560 + W - 70) / 2, 1665), f"CAGNOTTE : {eur} €", font=L(36), fill="#ffd23a", anchor="mm")
     # bandeau du jour
     band = st.get("band", "")
     if band:

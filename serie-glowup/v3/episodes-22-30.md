@@ -2,6 +2,7 @@
 
 ## Épisode 22 · J-9 · « La cuisine »
 ⏱️ **1:12** · 📊 `JOUR 22 · VOUS AVEZ CHOISI CUISINE`
+📈 `64 · 0`
 
 **P1 · L'accroche**
 🎥 `Smoke in the kitchen, Yanis holding a burnt pan, Nadia panicking.`
@@ -82,6 +83,7 @@
 
 ## Épisode 23 · J-8 · « La montre »
 ⏱️ **1:12** · 📊 `JOUR 23 · VOUS AVEZ CHOISI MONTRE`
+📈 `68 · 0`
 
 **P1 · L'accroche**
 🎥 `Nadia giving Yanis an old gold watch, both crying.`
@@ -163,6 +165,7 @@
 
 ## Épisode 24 · J-7 · « Le costume »
 ⏱️ **1:12** · 📊 `JOUR 24 · VOUS AVEZ CHOISI COSTUME`
+📈 `72 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis in a perfect navy suit, the whole shop applauding.`
@@ -244,6 +247,7 @@
 
 ## Épisode 25 · J-6 · « Le discours »
 ⏱️ **1:12** · 📊 `JOUR 25 · VOUS AVEZ CHOISI DISCOURS`
+📈 `77 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis reading his speech, Sofiane crying in emotion.`
@@ -325,6 +329,7 @@
 
 ## Épisode 26 · J-5 · « Les chaussures »
 ⏱️ **1:12** · 📊 `JOUR 26 · VOUS AVEZ CHOISI CHAUSSURES`
+📈 `81 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis in his suit wearing his old dirty sneakers, Sofiane horrified.`
@@ -406,6 +411,7 @@
 
 ## Épisode 27 · J-4 · « Les 10 kilomètres »
 ⏱️ **1:12** · 📊 `JOUR 27 · VOUS AVEZ CHOISI CADEAU`
+📈 `86 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis crossing a finish line in the park after 10 km, arms raised, confetti.`
@@ -488,6 +494,7 @@
 
 ## Épisode 28 · J-3 · « La vérité »
 ⏱️ **1:12** · 📊 `JOUR 28 · VOUS AVEZ CHOISI VÉRITÉ`
+📈 `90 · 0`
 
 **P1 · L'accroche**
 🎥 `Kenzo frozen in shock in the gym, Yanis serious in front of him.`
@@ -569,6 +576,7 @@
 
 ## Épisode 29 · J-2 · « La veille »
 ⏱️ **1:12** · 📊 `JOUR 29 · VOUS AVEZ CHOISI EN STAR`
+📈 `95 · 0`
 
 **P1 · L'accroche**
 🎥 `Split screen: Yanis day 1 versus day 29 in his suit.`
@@ -650,6 +658,7 @@
 
 ## Épisode 30 · J-0 · « Le mariage »
 ⏱️ **1:20** · 📊 `JOUR 30 · LE MARIAGE`
+📈 `100 · 0`
 
 **P1 · L'accroche**
 🎥 `Sarah jumping into Yanis's arms at the wedding, Kenzo shocked in the background.`

@@ -21,7 +21,7 @@ function ensureY(id) {
   if (suit) o = { top: '#22325a', pants: '#22325a', shoes: '#1a1a1a', tie: '#9a1d2a', fat: Math.min(fat, 8) };
   else if (d < 3) o = { top: '#8d9096', short: true, stains: true, belly: true, pants: '#4b5878', shoes: '#ececec', stink: d < 2, fat: d === 1 ? 62 : 50 };
   else if (d < 19) o = { top: '#8d9096', short: fat > 30, pants: '#3e4a66', shoes: '#f4f4f4', fat };
-  else if (d < 24) o = { top: '#1d1d22', pants: '#2a3550', shoes: '#f4f4f4', fat };
+  else if (d < 24) o = { top: '#8a1730', sleeve: '#f2e6d0', long: true, varsity: true, number: 'Y', pants: '#2a2a33', shoes: '#f4f4f4', fat };
   else o = { top: '#23345e', polo: true, pants: '#d8c3a0', shoes: '#f4f4f4', fat };
   OUTFIT[id] = o;
 }

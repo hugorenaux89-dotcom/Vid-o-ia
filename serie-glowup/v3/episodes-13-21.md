@@ -2,6 +2,7 @@
 
 ## Épisode 13 · J-18 · « La coupe »
 ⏱️ **1:12** · 📊 `JOUR 13 · VOUS AVEZ CHOISI COUPE`
+📈 `29 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis with a fresh fade haircut, two girls looking at him in the street, Sofiane jealous.`
@@ -83,6 +84,7 @@
 
 ## Épisode 14 · J-17 · « Les sourcils »
 ⏱️ **1:12** · 📊 `JOUR 14 · VOUS AVEZ CHOISI SOURCILS`
+📈 `33 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis screaming in the bathroom with tweezers, Nadia running in.`
@@ -164,6 +166,7 @@
 
 ## Épisode 15 · J-16 · « La posture »
 ⏱️ **1:12** · 📊 `JOUR 15 · VOUS AVEZ CHOISI POSTURE`
+📈 `36 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis walking with a book on his head in the living room, Sofiane laughing.`
@@ -245,6 +248,7 @@
 
 ## Épisode 16 · J-15 · « Les ongles »
 ⏱️ **1:12** · 📊 `JOUR 16 · VOUS AVEZ CHOISI ONGLES`
+📈 `40 · 0`
 
 **P1 · L'accroche**
 🎥 `A client at the garage refusing to shake Yanis's black greasy hand.`
@@ -326,6 +330,7 @@
 
 ## Épisode 17 · J-14 · « Le parfum »
 ⏱️ **1:12** · 📊 `JOUR 17 · VOUS AVEZ CHOISI PARFUM`
+📈 `43 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis spraying way too much perfume, Sofiane coughing.`
@@ -407,6 +412,7 @@
 
 ## Épisode 18 · J-13 · « La chambre »
 ⏱️ **1:12** · 📊 `JOUR 18 · VOUS AVEZ CHOISI CHAMBRE`
+📈 `47 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis finding a two-year-old pizza under his bed, horrified.`
@@ -487,6 +493,7 @@
 
 ## Épisode 19 · J-12 · « Le style »
 ⏱️ **1:12** · 📊 `JOUR 19 · VOUS AVEZ CHOISI STYLE`
+📈 `51 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis coming out of the fitting room in a new outfit, the saleswoman shocked.`
@@ -567,6 +574,7 @@
 
 ## Épisode 20 · J-11 · « La confiance »
 ⏱️ **1:12** · 📊 `JOUR 20 · VOUS AVEZ CHOISI CONFIANCE`
+📈 `55 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis speaking with a microphone in front of people, confident.`
@@ -649,6 +657,7 @@
 
 ## Épisode 21 · J-10 · « La danse »
 ⏱️ **1:12** · 📊 `JOUR 21 · VOUS AVEZ CHOISI DANSE`
+📈 `59 · 0`
 
 **P1 · L'accroche**
 🎥 `Yanis dancing very badly, the dance teacher covering her eyes.`

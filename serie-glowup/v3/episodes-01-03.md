@@ -106,6 +106,7 @@
 
 ## Épisode 2 · J-29 · « L'odeur »
 ⏱️ **1:15** · 📊 `JOUR 2 · VOUS AVEZ CHOISI ODEUR`
+📈 `1 · 0`
 
 **P1 · Le résultat**
 🎥 `{YANIS_A} in {CHAMBRE} raising one arm, big sweat stain, green smell cloud; the fan next to him turns its head away.`
@@ -195,6 +196,7 @@
 
 ## Épisode 3 · J-28 · « Les 3 kilomètres »
 ⏱️ **1:08** · 📊 `JOUR 3 · VOUS AVEZ CHOISI BASKETS`
+📈 `2 · 0`
 
 **P1 · L'accroche**
 🎥 `{YANIS_A} jogging in {PARC}, {KENZO} running past him very fast with a thumbs-up, Yanis shocked.`
