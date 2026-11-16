@@ -153,7 +153,7 @@ function stand(pid, q) {
   const legs = L.svg + R.svg + shoe(L.an, -1) + shoe(R.an, 1);
   // haut du corps (décalé par la respiration)
   const top = 440 + bob, bot = (o.short ? 700 + (50 - fat) * 2.4 : 880) + bob * 0.7;
-  const torsoPath = `M${sx - tw} ${top + 80} C${sx - tw} ${top + 10} ${sx - tw + 30} ${top - 4} ${sx - 62} ${top - 8} Q${sx} ${top + 24} ${sx + 62} ${top - 8} C${sx + tw - 30} ${top - 4} ${sx + tw} ${top + 10} ${sx + tw} ${top + 80} L${sx + tw - 8 + fat * 0.4} ${bot} Q${sx} ${bot + 24} ${sx - tw + 8 - fat * 0.4} ${bot} Z`;
+  const torsoPath = `M${sx - tw + 2} ${top + 96} C${sx - tw - 4} ${top + 58} ${sx - tw + 14} ${top + 30} ${sx - tw + 52} ${top + 22} C${sx - 110} ${top + 12} ${sx - 80} ${top - 4} ${sx - 58} ${top - 10} Q${sx} ${top + 22} ${sx + 58} ${top - 10} C${sx + 80} ${top - 4} ${sx + 110} ${top + 12} ${sx + tw - 52} ${top + 22} C${sx + tw - 14} ${top + 30} ${sx + tw + 4} ${top + 58} ${sx + tw - 2} ${top + 96} L${sx + tw - 8 + fat * 0.4} ${bot} Q${sx} ${bot + 24} ${sx - tw + 8 - fat * 0.4} ${bot} Z`;
   const torso = o.dress ? `<path d="M${sx - tw} ${top + 40} Q${sx} ${top - 20} ${sx + tw} ${top + 40} L${sx + tw + 60} 1010 L${sx - tw - 60} 1010 Z" fill="${o.top}" stroke="${K}" stroke-width="6"/>`
     : `<defs><linearGradient id="tg${id}" x1="0" x2="1"><stop offset="0" stop-color="${shade(o.top, 0.12)}"/><stop offset=".55" stop-color="${o.top}"/><stop offset="1" stop-color="${shade(o.top, -0.25)}"/></linearGradient></defs>
        <path d="${torsoPath}" fill="${o.top}" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
@@ -189,7 +189,7 @@ function stand(pid, q) {
   // bras
   const armW = 66 + (o.muscle ? 16 : 0) + fat * 0.4;
   const arm = (side, [a1, a2] = [16, 6], hk, pr) => {
-    const s0 = [sx + side * (tw - 18), top + 52], e = P(s0, side * a1, 175), h = P(e, side * a2, 160);
+    const s0 = [sx + side * (tw - 22), top + 66], e = P(s0, side * a1, 175), h = P(e, side * a2, 160);
     const sl = o.dress || o.long ? '' : sleeve(s0, side * a1, o.short ? 78 : 165, armW, o.top);
     const cuff = o.long ? (() => { const c1 = P(e, side * a2, 118), c2 = P(e, side * a2, 150), d2 = side * a2; const px = Math.cos(d2 * Math.PI / 180), py = -Math.sin(d2 * Math.PI / 180), w = armW / 2 + 10;
       return [c1, [(c1[0] + c2[0]) / 2, (c1[1] + c2[1]) / 2]].map((c, k) => `<path d="M${f1(c[0] - px * w)} ${f1(c[1] - py * w)} L${f1(c[0] + px * w)} ${f1(c[1] + py * w)}" stroke="${k ? '#ffffff' : (o.stripe || '#8a1730')}" stroke-width="9"/>`).join(''); })() : '';
