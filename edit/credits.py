@@ -2,6 +2,7 @@
 assets/photos/credits.json, plus a short caption ready to paste under the post."""
 import json
 import os
+import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -24,7 +25,8 @@ def main():
     for c in credits:
         author = " ".join(c["author"].split()) or "inconnu"
         lines.append(f"| `{c['key']}` | {author} | {c['license']} | [{c['title'][5:]}]({c['source']}) |")
-        short.append(author)
+        for name in re.sub(r"\s*\(.*?\)", "", author).replace(", Wikimedia Commons", "").split(" / "):
+            short.append(name.strip())
     lines += [
         "",
         "## Musique et sons",
