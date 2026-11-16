@@ -31,3 +31,27 @@ python3 generator/ego_video.py --preview                                     # p
 ```
 
 La musique (`assets/musique_ego.m4a`) a été générée avec ElevenLabs (piano sombre puis beat phonk à partir de la chute).
+
+## Série de 10 vidéos (`generator/series.py`)
+
+Même style, MOTIVATION / TALENT / DISCIPLINE : la motivation démarre fort puis ralentit et abandonne,
+le talent s'arrête, la discipline garde le même rythme jusqu'au bout. Chaque vidéo contient la carte
+« définition du dictionnaire » et la photo motivation du rocher (comme la 1re vidéo).
+
+| # | Vidéo | Défi |
+|---|-------|------|
+| 1 | escaliers | monter les marches jusqu'en haut |
+| 2 | diamants | creuser un trou — les diamants sont tout au fond |
+| 3 | tractions | 10 reps une fois vs 30 reps tous les jours |
+| 4 | marathon | sprint vs rythme constant |
+| 5 | rocher | pousser son rocher jusqu'au sommet |
+| 6 | briques | une brique par jour |
+| 7 | arbre | un coup de hache par jour |
+| 8 | poids | 200 kg le 1er jour vs +10 kg à la fois |
+| 9 | 5h du matin | « 5 more minutes » vs courir au lever du soleil |
+| 10 | corde | grimper jusqu'à la cloche |
+
+```bash
+python3 generator/series.py --video all            # les 10 en x1.5 -> output/serie/
+python3 generator/series.py --video 2 --speed 1    # une seule, vitesse normale
+```
