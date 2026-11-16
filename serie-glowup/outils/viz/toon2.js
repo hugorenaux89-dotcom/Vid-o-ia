@@ -149,18 +149,14 @@ function hairFront(c, id) {
   const H = c.hc, SS = S();
   switch (c.hair) {
     case 'curly': {
-      // masse ondulée et bouffante, bord festonné, frange en mèches sur le front
-      const pts = [], N = 11;
-      for (let k = 0; k <= N; k++) { const a = Math.PI * (1.08 + k * 0.84 / N); pts.push([300 + 150 * Math.cos(a), 178 + 132 * Math.sin(a)]); }
-      let d = `M176 252 L${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;
-      for (let k = 1; k <= N; k++) d += ` A30 30 0 0 1 ${pts[k][0].toFixed(1)} ${pts[k][1].toFixed(1)}`;
-      d += ` L424 252 Q414 214 392 208 Q384 236 362 222 Q352 244 330 226 Q316 248 296 228 Q278 246 262 224 Q244 240 230 216 Q206 220 196 236 Q186 240 176 252 Z`;
-      const dk = shade(H, -0.35), lt = shade(H, 0.4);
-      return `<path d="M178 250 C182 210 186 190 196 176 L206 240 Z M422 250 C418 210 414 190 404 176 L394 240 Z" fill="url(#fade${id})"/>
-      <path d="${d}" fill="${H}" ${SS}/>
-      <path d="M200 150 q20 -26 46 -10 q-10 26 14 34 M262 102 q26 -20 50 0 q-12 24 12 30 M334 104 q30 -10 46 14 q-20 16 0 34 M222 196 q16 -22 40 -8 M300 160 q18 -24 42 -6 M362 182 q16 -18 34 0" fill="none" stroke="${dk}" stroke-width="6" stroke-linecap="round"/>
-      <path d="M214 132 q14 -14 30 -6 M280 92 q16 -10 30 0 M350 100 q14 -6 26 6 M244 172 q12 -10 24 -4 M318 146 q12 -8 24 0" fill="none" stroke="${lt}" stroke-width="5" stroke-linecap="round" opacity=".9"/>
-      <path d="M248 214 q-6 22 10 30 M292 222 q-4 22 12 28 M336 216 q2 20 16 24" fill="none" stroke="${H}" stroke-width="9" stroke-linecap="round"/><path d="M248 214 q-6 22 10 30 M292 222 q-4 22 12 28 M336 216 q2 20 16 24" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" opacity=".6"/>`;
+      // coupe « décoiffée ondulée » : volume sur le dessus, mèches qui rebiquent vers l'extérieur au-dessus des oreilles, frange ondulée sur le front
+      const dk = shade(H, -0.35), lt = shade(H, 0.45);
+      const d = `M168 262 C150 236 156 206 176 196 C164 176 170 150 190 140 C186 112 206 92 232 92 C246 66 280 56 304 66 C326 52 360 60 372 84 C398 80 422 100 420 128 C442 138 450 166 436 186 C452 200 452 232 432 260
+        C426 246 418 236 408 232 C404 246 394 252 384 248 C384 232 376 222 366 220 C360 236 346 240 336 232 C334 218 326 210 316 208 C306 226 290 230 278 220 C276 208 268 200 258 198 C248 214 232 218 222 208 C220 220 210 230 198 228 C196 240 186 250 168 262 Z`;
+      return `<path d="${d}" fill="${H}" ${SS}/>
+      <path d="M168 262 C158 246 156 228 166 216 M432 260 C444 246 446 228 436 214" fill="none" stroke="#141414" stroke-width="7" stroke-linecap="round"/>
+      <path d="M206 130 q22 -22 48 -6 M262 92 q24 -18 50 -2 M330 92 q26 -8 42 14 M390 128 q18 2 26 22 M218 182 q20 -18 42 -4 M286 160 q22 -16 46 -2 M352 170 q22 -12 40 6" fill="none" stroke="${dk}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M222 118 q14 -10 28 -4 M276 82 q14 -8 28 0 M340 84 q14 -2 22 10 M300 146 q14 -8 28 0" fill="none" stroke="${lt}" stroke-width="5" stroke-linecap="round" opacity=".9"/>`;
     }
     case 'fade': return `<path d="M180 250 C182 210 186 190 196 176 L206 240 Z M420 250 C418 210 414 190 404 176 L394 240 Z" fill="url(#fade${id})"/>
       <path d="M176 238 C160 130 222 60 302 60 C384 60 446 130 424 238 C418 200 404 176 390 164 C350 140 250 140 210 164 C196 176 182 200 176 238 Z" fill="${H}" ${SS}/>
