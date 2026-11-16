@@ -23,6 +23,7 @@ import sys
 
 import cairo
 import numpy as np
+from PIL import Image, ImageDraw
 
 W, H, FPS = 1080, 1920, 30
 MONO = "JetBrains Mono"
@@ -117,7 +118,7 @@ def run_pose(ph, lean=160):
     )
 
 
-def joints(p, s=1.0, arm=1.0):
+def joints(p, s=1.0, arm=1.0, bend=0.0):
     def seg(o, a, ln):
         x, y = d(a)
         return (o[0] + x * ln * s, o[1] + y * ln * s)
@@ -125,7 +126,7 @@ def joints(p, s=1.0, arm=1.0):
     hip = (0.0, 0.0)
     neck = seg(hip, p["t"], 92)
     sh = seg(hip, p["t"], 80)
-    head = seg(hip, p["t"], 92 + 33)
+    head = seg(seg(hip, p["t"], 92), p["t"] + bend, 33)
     le = seg(sh, p["la1"], 48 * arm)
     lh = seg(le, p["la2"], 46 * arm)
     re = seg(sh, p["ra1"], 48 * arm)
@@ -145,52 +146,62 @@ def ground_hip_y(p, s, ground, arm=1.0):
 
 
 def stick(ctx, x, y, p, s=1.0, fill=GREY, outline=OUT, face=None, face_dx=0.0,
-          alpha=1.0, arm=1.0, lw=17, ow=7):
-    j = joints(p, s, arm)
-    chains = [
-        [j["hip"], j["neck"]],
-        [j["sh"], j["le"], j["lh"]],
-        [j["sh"], j["re"], j["rh"]],
-        [j["hip"], j["lk"], j["lf"]],
-        [j["hip"], j["rk"], j["rf"]],
-    ]
+          alpha=1.0, arm=1.0, lw=19, ow=7, shadow=None, neck=0.0):
+    """Bonhomme sans visage : membres arriere plus sombres (profondeur), reflet de volume,
+    ombre au sol optionnelle (shadow = y du sol)."""
+    j = joints(p, s, arm, neck)
+    back = [[j["sh"], j["le"], j["lh"]], [j["hip"], j["lk"], j["lf"]]]
+    front = [[j["hip"], j["neck"]], [j["sh"], j["re"], j["rh"]], [j["hip"], j["rk"], j["rf"]]]
+    if shadow is not None:
+        fx = x + (j["lf"][0] + j["rf"][0]) / 2
+        g = cairo.RadialGradient(fx, shadow, 0, fx, shadow, 80 * s)
+        g.add_color_stop_rgba(0, 0, 0, 0, 0.55 * alpha)
+        g.add_color_stop_rgba(1, 0, 0, 0, 0)
+        ctx.save()
+        ctx.translate(fx, shadow)
+        ctx.scale(1, 0.16)
+        ctx.translate(-fx, -shadow)
+        ctx.set_source(g)
+        ctx.arc(fx, shadow, 80 * s, 0, 2 * math.pi)
+        ctx.fill()
+        ctx.restore()
     ctx.save()
     ctx.translate(x, y)
     ctx.set_line_cap(cairo.LINE_CAP_ROUND)
     ctx.set_line_join(cairo.LINE_JOIN_ROUND)
-    hr = 31 * s
-    for pas, (col, w) in enumerate(((outline, (lw + 2 * ow) * s), (fill, lw * s))):
-        rgb(ctx, col, alpha)
+    hr = 32 * s
+    hi = mix(fill, (1, 1, 1), 0.45)
+
+    def chains_pass(chs, col, w, dx=0.0, dy=0.0, a=1.0):
+        rgb(ctx, col, alpha * a)
         ctx.set_line_width(w)
-        for ch in chains:
-            ctx.move_to(*ch[0])
+        for ch in chs:
+            ctx.move_to(ch[0][0] + dx, ch[0][1] + dy)
             for pt in ch[1:]:
-                ctx.line_to(*pt)
+                ctx.line_to(pt[0] + dx, pt[1] + dy)
             ctx.stroke()
-        r = hr + (ow * s if pas == 0 else 0)
-        ctx.arc(j["head"][0], j["head"][1], r, 0, 2 * math.pi)
-        ctx.fill()
-    if face:
-        hx, hy = j["head"]
-        hx += face_dx * 9 * s
-        rgb(ctx, OUT, alpha)
-        for ex in (-10, 10):
-            ctx.arc(hx + ex * s, hy - 4 * s, 3.6 * s, 0, 2 * math.pi)
-            ctx.fill()
-        ctx.set_line_width(3.5 * s)
-        if face == "sad":
-            ctx.arc(hx, hy + 17 * s, 9 * s, math.pi * 1.15, math.pi * 1.85)
-        elif face == "happy":
-            ctx.arc(hx, hy + 4 * s, 10 * s, math.pi * 0.15, math.pi * 0.85)
-        else:  # determined
-            ctx.move_to(hx - 8 * s, hy + 11 * s)
-            ctx.line_to(hx + 8 * s, hy + 11 * s)
-            ctx.stroke()
-            ctx.move_to(hx - 16 * s, hy - 14 * s)
-            ctx.line_to(hx - 5 * s, hy - 9 * s)
-            ctx.move_to(hx + 16 * s, hy - 14 * s)
-            ctx.line_to(hx + 5 * s, hy - 9 * s)
-        ctx.stroke()
+
+    # membres arriere (plus sombres)
+    chains_pass(back, outline, (lw + 2 * ow) * s)
+    chains_pass(back, mix(fill, (0, 0, 0), 0.28), lw * s)
+    # corps + membres avant
+    chains_pass(front, outline, (lw + 2 * ow) * s)
+    rgb(ctx, outline, alpha)
+    ctx.arc(j["head"][0], j["head"][1], hr + ow * s, 0, 2 * math.pi)
+    ctx.fill()
+    chains_pass(front, fill, lw * s)
+    rgb(ctx, fill, alpha)
+    ctx.arc(j["head"][0], j["head"][1], hr, 0, 2 * math.pi)
+    ctx.fill()
+    # reflets
+    chains_pass(front, hi, lw * 0.3 * s, -lw * 0.17 * s, -lw * 0.17 * s, 0.45)
+    hx, hy = j["head"]
+    g = cairo.RadialGradient(hx - hr * 0.35, hy - hr * 0.4, 0, hx - hr * 0.35, hy - hr * 0.4, hr * 1.1)
+    g.add_color_stop_rgba(0, 1, 1, 1, 0.35 * alpha)
+    g.add_color_stop_rgba(1, 1, 1, 1, 0)
+    ctx.set_source(g)
+    ctx.arc(hx, hy, hr, 0, 2 * math.pi)
+    ctx.fill()
     ctx.restore()
     return j
 
@@ -442,28 +453,36 @@ def draw_podium_world(ctx, t, frame, mock=0.0, tags=0.0, ego_red=0.0, ego_on_top
             base = pmix(CHEER, CHEER2, 0.5 + 0.5 * math.sin(ph))
             mk = pmix(LAUGH, POINT, 0.5 + 0.5 * math.sin(t * 9 + i))
             pose = pmix(base, mk, ease(mock))
-            figures.append((key, c["x"], c["top"], pose, GREY, None, c["name"]))
+            jump = (1 - ease(mock)) * 34 * max(0.0, math.sin(t * 6.5 + i * 2.1)) ** 2
+            figures.append((key, c["x"], c["top"], pose, GREY, jump, c["name"]))
         ego_pose = pmix(STAND, SAD, ease(mock))
         ego_pose["t"] = 180 - 8 * ease(mock)
         figures.append(("ego", EGO_X, GROUND, ego_pose, mix(WHITE, (0.97, 0.55, 0.55), ego_red),
-                        "sad", "EGO"))
+                        0.0, "EGO"))
     else:
         # fin : l'EGO est numero 1
         order = [("disc", "moti"), ("moti", "disc"), ("tale", "tale")]
         names = {"disc": "DISCIPLINE", "moti": "MOTIVATION", "tale": "TALENT"}
         figures.append(("ego", PODIUM["disc"]["x"], PODIUM["disc"]["top"],
-                        pmix(CHEER, CHEER2, 0.5 + 0.5 * math.sin(t * 8)), RED, "happy", "EGO"))
-        figures.append(("a", PODIUM["moti"]["x"], PODIUM["moti"]["top"], SAD, GREY, None, "DISCIPLINE"))
-        figures.append(("b", PODIUM["tale"]["x"], PODIUM["tale"]["top"], SAD, GREY, None, "TALENT"))
-        figures.append(("c", EGO_X, GROUND, SAD, (0.4, 0.4, 0.41), None, "MOTIVATION"))
+                        pmix(CHEER, CHEER2, 0.5 + 0.5 * math.sin(t * 8)), RED,
+                        60 * max(0.0, math.sin(t * 5.5)) ** 2, "EGO"))
+        figures.append(("a", PODIUM["moti"]["x"], PODIUM["moti"]["top"], SAD, GREY, 0.0, "DISCIPLINE"))
+        figures.append(("b", PODIUM["tale"]["x"], PODIUM["tale"]["top"], SAD, GREY, 0.0, "TALENT"))
+        figures.append(("c", EGO_X, GROUND, SAD, (0.4, 0.4, 0.41), 0.0, "MOTIVATION"))
 
     ego_hip = None
-    for key, x, top, pose, col, face, name in figures:
+    for key, x, top, pose, col, jump, name in figures:
         s = 1.05 if key != "ego" or ego_on_top else 1.0
-        hy = ground_hip_y(pose, s, top)
+        hy = ground_hip_y(pose, s, top) - jump
         if key == "ego" and mock > 0 and not ego_on_top:
             x += math.sin(t * 40) * 2.5 * mock
-        j = stick(ctx, x, hy, pose, s, fill=col, face=face, face_dx=-0.3)
+            # recul a chaque etiquette qui le frappe
+            for i in range(4):
+                land = (i + 1) / 4
+                dk = (tags - land) * 2.2
+                if 0 <= dk < 0.3:
+                    x += 22 * (1 - dk / 0.3)
+        j = stick(ctx, x, hy, pose, s, fill=col, shadow=top)
         hx, hyy = x + j["head"][0], hy + j["head"][1]
         is_red = key == "ego"
         text(ctx, name, hx, hyy - (95 if is_red and ego_on_top else 52), 22, color=RED if is_red else (0.82, 0.82, 0.83),
@@ -509,15 +528,28 @@ def scene_podium(ctx, t, frame):
         k = t - 2.6
         idx = min(2, int(k / 1.17))
         kk = (k - idx * 1.17) / 1.17
-        key = ["disc", "moti", "tale"][idx]
-        c = PODIUM[key]
+        keys = ["disc", "moti", "tale"]
+        c = PODIUM[keys[idx]]
         z = lerp(2.4, 2.75, ease(kk))
-        camera(ctx, c["x"] + lerp(-30, 30, kk), c["top"] - 190, z)
+        cx = c["x"] + lerp(-30, 30, kk)
+        if idx > 0 and kk < 0.14:  # whip pan depuis le perso precedent
+            pc = PODIUM[keys[idx - 1]]
+            cx = lerp(pc["x"] + 30, cx, ease_out(kk / 0.14))
+        elif idx == 0 and kk < 0.14:
+            z = lerp(1.06, z, ease_out(kk / 0.14))
+        camera(ctx, cx, c["top"] - 190, z)
         draw_podium_world(ctx, t, frame)
     else:
         k = t - 6.1
-        camera(ctx, lerp(W / 2, W / 2 + 60, ease(k / 3.5)), H / 2 - 20, lerp(1.0, 1.12, ease(k / 3.5)),
-               shake=4 if k > 2.6 else 0, frame=frame)
+        tags_v = clamp((k - 0.7) / 2.2)
+        hit = 0.0
+        for i in range(4):
+            dk = (tags_v - (i + 1) / 4) * 2.2
+            if 0 <= dk < 0.25:
+                hit = max(hit, 1 - dk / 0.25)
+        camera(ctx, lerp(W / 2, W / 2 + 140, ease(k / 3.5)), lerp(H / 2 - 20, H / 2 - 60, ease(k / 3.5)),
+               lerp(1.0, 1.25, ease(k / 3.5)) + 0.03 * hit,
+               shake=(4 if k > 2.6 else 0) + 14 * hit, frame=frame)
         draw_podium_world(ctx, t, frame, mock=clamp(k / 0.6), tags=clamp((k - 0.7) / 2.2),
                           ego_red=clamp((k - 2.2) / 1.0))
 
@@ -553,7 +585,7 @@ def ego_pullup(ctx, u, s=1.15, col=WHITE, shake=0.0, t=0.0):
     j = joints(pose, s)
     hip_y = BAR_Y - j["rh"][1] + 4
     x = 540 + math.sin(t * 50) * shake
-    j = stick(ctx, x, hip_y, pose, s, fill=col, face="sad" if u < 0.7 else "angry")
+    j = stick(ctx, x, hip_y, pose, s, fill=col, shadow=1290)
     text(ctx, "EGO", x + j["head"][0], hip_y + j["head"][1] - 46, 20, color=RED, spacing=3)
     return x + j["head"][0], hip_y + j["head"][1]
 
@@ -561,12 +593,14 @@ def ego_pullup(ctx, u, s=1.15, col=WHITE, shake=0.0, t=0.0):
 def ego_pushup(ctx, u, s=1.15, col=WHITE):
     pose = pmix(PUSH_UP, PUSH_DOWN, ease(u))
     hy = ground_hip_y(pose, s, 1290, arm=0.9)
-    j = stick(ctx, 500, hy, pose, s, fill=col, face="angry", face_dx=0.8, arm=0.9)
+    j = stick(ctx, 500, hy, pose, s, fill=col, arm=0.9, shadow=1290)
     text(ctx, "EGO", 500 + j["head"][0], hy + j["head"][1] - 46, 20, color=RED, spacing=3)
 
 
 def scene_day_one(ctx, t, frame):
-    camera(ctx, W / 2, H / 2 - 150, lerp(1.04, 1.0, ease(t / 3)))
+    hit = clamp(1 - (t - 2.05) / 0.3) if t > 2.05 else 0.0
+    z = lerp(1.0, 1.18, ease(t / 2.05)) if t < 2.05 else lerp(1.24, 1.05, ease_out((t - 2.05) / 1.0))
+    camera(ctx, W / 2, lerp(H / 2 - 150, H / 2 - 230, ease(t / 2.05)), z, shake=16 * hit, frame=frame)
     gym_base(ctx)
     pullup_bar(ctx)
     reps = 1 if t > 2.05 else 0
@@ -584,16 +618,22 @@ def scene_day_one(ctx, t, frame):
         hx, hy = ego_pullup(ctx, 1 - ease((t - 2.6) / 0.6))
     if t > 2.05:
         k = clamp((t - 2.05) / 0.25)
-        text(ctx, "1", 790, 700, 90 * back_out(k), color=WHITE, alpha=clamp(1.6 - (t - 2.05)))
+        text(ctx, "1", 790, 700, 110 * back_out(k), color=WHITE, alpha=clamp(1.6 - (t - 2.05)))
+        rr = 40 + 600 * ease_out((t - 2.05) / 0.6)
+        ctx.set_source_rgba(1, 1, 1, 0.5 * clamp(1 - (t - 2.05) / 0.6))
+        ctx.set_line_width(6)
+        ctx.arc(540, 700, rr, 0, 2 * math.pi)
+        ctx.stroke()
 
 
 TL_LEN = 5.2
 
 
 def scene_timelapse(ctx, t, frame):
-    camera(ctx, W / 2, H / 2 - 150, 1.0)
-    gym_base(ctx)
     prog = clamp(t / TL_LEN)
+    seg_k = (t % 1.05) / 1.05
+    camera(ctx, W / 2, H / 2 - 150, lerp(1.0, 1.12, ease(seg_k)) + 0.05 * (1 - ease_out(seg_k / 0.2)))
+    gym_base(ctx)
     day = int(1 + 364 * prog ** 1.5)
     reps = int(24990 * prog ** 1.7)
     # pages qui s'envolent
@@ -606,7 +646,12 @@ def scene_timelapse(ctx, t, frame):
         if t > period:
             flips.append((str(max(1, prev_day)), clamp(k + i * 0.33)))
     calendar(ctx, W / 2, 330, str(day), flips)
-    text(ctx, f"REPS   {reps:,}", W / 2, 560, 40, color=(0.92, 0.92, 0.92), spacing=6)
+    pop = 1 + 0.12 * abs(math.sin(t * 2 * math.pi * 2.8))
+    ctx.save()
+    ctx.translate(W / 2, 545)
+    ctx.scale(pop, pop)
+    text(ctx, f"REPS   {reps:,}", 0, 15, 40, color=(0.92, 0.92, 0.92), spacing=6)
+    ctx.restore()
     seg = int(t / 1.05) % 2
     if seg == 0:
         pullup_bar(ctx)
@@ -620,13 +665,14 @@ def scene_timelapse(ctx, t, frame):
 
 
 def scene_crisis(ctx, t, frame):
-    camera(ctx, W / 2, H / 2 - 60, lerp(1.0, 1.12, ease(t / 2.2)))
-    pulse = 0.18 + 0.1 * math.sin(t * 5)
+    beat = max(0.0, math.sin(t * 2 * math.pi * 1.3)) ** 8
+    camera(ctx, W / 2, H / 2 - 60, lerp(1.0, 1.22, ease(t / 2.2)) + 0.035 * beat)
+    pulse = 0.18 + 0.2 * beat
     gym_base(ctx, glow_a=pulse, red=True)
     calendar(ctx, W / 2, 330, "X")
     text(ctx, "REPS   25,000", W / 2, 560, 40, color=(0.92, 0.92, 0.92), spacing=6)
     hy = ground_hip_y(SAD, 1.1, 1290)
-    j = stick(ctx, 540, hy, SAD, 1.1, fill=WHITE, face="sad")
+    j = stick(ctx, 540, hy, SAD, 1.1, fill=WHITE, shadow=1290)
     text(ctx, "EGO", 540, hy + j["head"][1] - 46, 20, color=RED, spacing=3)
     vignette(ctx, 0.85)
 
@@ -656,10 +702,16 @@ def track(ctx, scroll, red=0.0):
             x += 260
 
 
-def runner(ctx, x, lane_y, ph, col, s=0.85, face=None, label=None, lab_col=(0.8, 0.8, 0.8), alpha=1.0):
+def runner(ctx, x, lane_y, ph, col, s=0.85, face=None, label=None, lab_col=(0.8, 0.8, 0.8), alpha=1.0,
+           trail=0):
+    # trainee fantome (vitesse)
+    for i in range(trail, 0, -1):
+        pose = run_pose(ph - i * 0.35)
+        hy = lane_y + 60 - 112 * s + 14 * abs(math.cos(ph - i * 0.35)) * s - 8 * s
+        stick(ctx, x - i * 46 * s, hy, pose, s, fill=col, outline=col, alpha=alpha * 0.16 / i)
     pose = run_pose(ph)
-    hy = lane_y + 60 - 112 * s + 10 * abs(math.cos(ph)) * s - 8 * s
-    j = stick(ctx, x, hy, pose, s, fill=col, face=face, face_dx=0.8, alpha=alpha)
+    hy = lane_y + 60 - 112 * s + 14 * abs(math.cos(ph)) * s - 8 * s
+    j = stick(ctx, x, hy, pose, s, fill=col, alpha=alpha, shadow=lane_y + 60)
     if label:
         text(ctx, label, x + j["head"][0], hy + j["head"][1] - 44 * s, 18, color=lab_col, spacing=3,
              alpha=alpha)
@@ -708,6 +760,14 @@ def thought_bubble(ctx, cx, cy, r, col, t, frame):
 
 
 def scene_race_fall(ctx, t, frame):
+    impact = clamp(1 - (t - 1.62) / 0.35) if t > 1.62 else 0.0
+    if t < 1.62:
+        camera(ctx, lerp(W / 2, 470, ease(t / 1.6)), lerp(H / 2, 1250, ease(t / 1.6)),
+               lerp(1.0, 1.3, ease(t / 1.6)))
+    else:
+        k2 = ease_out((t - 1.62) / 0.9)
+        camera(ctx, lerp(470, W / 2, k2), lerp(1250, H / 2 - 40, k2), lerp(1.3, 1.0, k2) + 0.04 * impact,
+               shake=22 * impact, frame=frame)
     track(ctx, t * 500 * clamp(1.6 - t), red=clamp((t - 2.6)))
     others = [("MOTIVATION", LANES[0], 380, 1.0), ("DISCIPLINE", LANES[1], 420, 1.2),
               ("TALENT", LANES[2], 400, 1.1)]
@@ -719,15 +779,26 @@ def scene_race_fall(ctx, t, frame):
     col = mix(WHITE, RED, red)
     ex = 300 + min(t, 1.4) * 90
     if t < 1.35:
-        runner(ctx, ex, LANES[3], t * 11, col, s=1.0, face="angry", label="EGO", lab_col=RED)
+        runner(ctx, ex, LANES[3], t * 11, col, s=1.0, label="EGO", lab_col=RED, trail=2)
     else:
         k = ease_out((t - 1.35) / 0.35)
         pose = pmix(run_pose(1.35 * 11), LYING, k)
         hy = lerp(LANES[3] + 60 - 112, ground_hip_y(LYING, 1.0, LANES[3] + 60), k)
-        stick(ctx, ex + 60 * k, hy, pose, 1.0, fill=col, face="sad", face_dx=0.9)
+        stick(ctx, ex + 60 * k, hy, pose, 1.0, fill=col, shadow=LANES[3] + 60)
         text(ctx, "EGO", ex + 60 * k + 120, hy - 60, 20, color=RED, spacing=3)
+        if t > 1.6:
+            dk = clamp((t - 1.6) / 0.8)
+            r3 = random.Random(77)
+            for _ in range(22):
+                a_ = r3.uniform(math.pi, 2 * math.pi)
+                sp = r3.uniform(60, 220)
+                px = ex + 60 + r3.uniform(-80, 140) + math.cos(a_) * sp * ease_out(dk)
+                py = LANES[3] + 55 + math.sin(a_) * sp * 0.4 * ease_out(dk)
+                ctx.set_source_rgba(0.8, 0.8, 0.8, 0.35 * (1 - dk))
+                ctx.arc(px, py, r3.uniform(4, 12) * (0.5 + dk), 0, 6.28)
+                ctx.fill()
     if t < 0.9:
-        text(ctx, "GO!", W / 2, 560, 130 * back_out(t / 0.25), color=WHITE, alpha=clamp((0.9 - t) * 3))
+        text(ctx, "GO!", 470, 900, 150 * back_out(t / 0.25), color=WHITE, alpha=clamp((0.9 - t) * 3))
     if t > 1.9:
         k = ease_out((t - 1.9) / 0.4)
         bcol = mix(WHITE, RED, red)
@@ -737,6 +808,7 @@ def scene_race_fall(ctx, t, frame):
         ctx.translate(-400, -720)
         thought_bubble(ctx, 400, 720, 300, bcol, t, frame)
         ctx.restore()
+    ctx.identity_matrix()
     if t > 3.3:
         text(ctx, "CAN'T", W / 2 + 40, 1650, 120, family=SERIF, color=(0.9, 0.9, 0.9),
              alpha=0.25 * clamp((t - 3.3) * 4))
@@ -788,41 +860,218 @@ def scene_obsessed(ctx, t, frame):
     grain(ctx, frame, 0.06)
 
 
-def boulder_sketch(ctx, cx, cy, r, seed):
-    rnd = random.Random(seed)
-    ctx.set_line_cap(cairo.LINE_CAP_ROUND)
-    for _ in range(170):
-        ox, oy = rnd.gauss(0, r * 0.12), rnd.gauss(0, r * 0.12)
-        rx = r * rnd.uniform(0.55, 1.02)
-        ry = rx * rnd.uniform(0.75, 1.05)
-        a0 = rnd.uniform(0, 6.28)
-        span = rnd.uniform(0.6, 3.2)
-        ctx.save()
-        ctx.translate(cx + ox, cy + oy)
-        ctx.rotate(rnd.uniform(0, 3.14))
-        ctx.scale(1, ry / rx)
-        ctx.new_path()
-        ctx.arc(0, 0, rx, a0, a0 + span)
-        ctx.restore()
-        ctx.set_source_rgba(1, 1, 1, rnd.uniform(0.15, 0.6))
-        ctx.set_line_width(rnd.uniform(0.8, 2.6))
-        ctx.stroke()
+# ----------------------------------------------------------------------------- rocher
+def _fbm(rng, size, octaves):
+    acc = np.zeros((size, size), np.float32)
+    tot = 0.0
+    for n, amp in octaves:
+        g = rng.random((n, n)).astype(np.float32)
+        im = Image.fromarray(g, "F").resize((size, size), Image.BICUBIC)
+        acc += np.asarray(im, np.float32) * amp
+        tot += amp
+    return acc / tot
+
+
+def make_rock(R=215, seed=21):
+    """Rocher realiste : silhouette irreguliere, relief (bump), eclairage, fissures."""
+    rng = np.random.default_rng(seed)
+    S = int(R * 2.5)
+    c = S / 2
+    yy, xx = np.mgrid[0:S, 0:S].astype(np.float32)
+    dx, dy = xx - c, yy - c
+    dist = np.hypot(dx, dy)
+    th = np.arctan2(dy, dx)
+    rr = np.ones_like(th)
+    for k, amp in [(2, 0.045), (3, 0.04), (5, 0.025), (7, 0.018), (11, 0.01), (17, 0.006)]:
+        rr += amp * np.sin(k * th + rng.uniform(0, 6.28))
+    rad = R * rr
+    alpha = np.clip(rad - dist + 0.5, 0, 1)
+    q = np.clip(dist / rad, 0, 0.999)
+    nz = np.sqrt(1 - q * q)
+    nx, ny = dx / rad, dy / rad
+    h = _fbm(rng, S, [(6, 1.0), (12, 0.6), (24, 0.35), (48, 0.2), (96, 0.12), (192, 0.06)])
+    hy_, hx_ = np.gradient(h)
+    k = 55.0
+    nx = nx - k * hx_ * nz
+    ny = ny - k * hy_ * nz
+    nl = np.sqrt(nx * nx + ny * ny + nz * nz)
+    nx, ny, nzz = nx / nl, ny / nl, nz / nl
+    L = np.array([-0.55, -0.62, 0.56])
+    L /= np.linalg.norm(L)
+    diff = np.clip(nx * L[0] + ny * L[1] + nzz * L[2], 0, 1)
+    # lumiere d'appoint (contre-jour) a droite
+    rim = np.clip(nx * 0.85 + ny * 0.1 + nzz * 0.2, 0, 1) ** 3
+    spec = np.clip(2 * diff * nzz - L[2], 0, 1) ** 18
+    alb = 0.42 + 0.35 * (_fbm(rng, S, [(8, 1), (32, 0.6), (128, 0.4)]) - 0.5) * 2
+    pits = _fbm(rng, S, [(40, 1), (80, 0.6)])
+    alb *= np.where(pits > 0.62, 0.55, 1.0)
+    ao = 0.45 + 0.55 * nz ** 0.6
+    lum = alb * (0.07 + 1.05 * diff) * ao + 0.25 * rim + 0.18 * spec
+    # fissures
+    cr = Image.new("L", (S, S), 0)
+    dr = ImageDraw.Draw(cr)
+    r = random.Random(seed)
+    for _ in range(9):
+        a0 = r.uniform(0, 6.28)
+        x, y = c + R * 0.95 * math.cos(a0), c + R * 0.95 * math.sin(a0)
+        ang = a0 + math.pi + r.uniform(-0.6, 0.6)
+        w = r.choice([2, 3, 4])
+        for _ in range(r.randint(6, 14)):
+            ln = r.uniform(10, 28)
+            nx2, ny2 = x + ln * math.cos(ang), y + ln * math.sin(ang)
+            dr.line([(x, y), (nx2, ny2)], fill=255, width=w)
+            x, y = nx2, ny2
+            ang += r.uniform(-0.6, 0.6)
+            w = max(1, w - (1 if r.random() < 0.3 else 0))
+    crack = np.asarray(cr, np.float32) / 255
+    lum = lum * (1 - 0.75 * crack)
+    lum = np.clip(lum, 0, 1) ** (1 / 1.15)
+    col = np.stack([lum * 0.96, lum * 0.97, lum * 1.0], -1)
+    arr = np.zeros((S, S, 4), np.uint8)
+    arr[..., 0] = (col[..., 2] * alpha * 255).astype(np.uint8)
+    arr[..., 1] = (col[..., 1] * alpha * 255).astype(np.uint8)
+    arr[..., 2] = (col[..., 0] * alpha * 255).astype(np.uint8)
+    arr[..., 3] = (alpha * 255).astype(np.uint8)
+    surf = cairo.ImageSurface.create_for_data(arr, cairo.FORMAT_ARGB32, S, S)
+    return surf, arr, S
+
+
+ROCK_R = 215
+ROCK = make_rock(ROCK_R)
+
+
+def ik(ax, ay, tx, ty, l1, l2, pref):
+    """IK 2 segments : renvoie (angle1, angle2) ; le coude/genou va du cote de pref."""
+    dx, dy = tx - ax, ty - ay
+    dist = clamp(math.hypot(dx, dy), abs(l1 - l2) + 0.01, l1 + l2 - 0.01)
+    base = math.atan2(dx, dy)
+    A = math.acos(clamp((l1 * l1 + dist * dist - l2 * l2) / (2 * l1 * dist), -1, 1))
+    best = None
+    for sgn in (1, -1):
+        a1 = base + sgn * A
+        ex, ey = ax + l1 * math.sin(a1), ay + l1 * math.cos(a1)
+        sc = (ex - ax) * pref[0] + (ey - ay) * pref[1]
+        if best is None or sc > best[0]:
+            a2 = math.atan2(tx - ex, ty - ey)
+            best = (sc, math.degrees(a1), math.degrees(a2))
+    return best[1], best[2]
+
+
+SLOPE_A = (40, 1500)
+SLOPE_B = (1100, 930)
+
+
+def slope_y(x):
+    return SLOPE_A[1] + (SLOPE_B[1] - SLOPE_A[1]) * (x - SLOPE_A[0]) / (SLOPE_B[0] - SLOPE_A[0])
 
 
 def you_vs_you_image(ctx, t, frame, a=1.0):
-    seed = frame // 3
-    glow(ctx, 560, 1000, 520, (1, 1, 1), 0.07 * a)
-    # pente
-    rnd = random.Random(seed + 99)
-    for _ in range(6):
-        ctx.set_source_rgba(1, 1, 1, 0.3 * a)
-        ctx.set_line_width(rnd.uniform(1, 2.5))
-        ctx.move_to(60, 1420 + rnd.gauss(0, 6))
-        ctx.line_to(1040, 900 + rnd.gauss(0, 6))
-        ctx.stroke()
+    ux, uy = SLOPE_B[0] - SLOPE_A[0], SLOPE_B[1] - SLOPE_A[1]
+    ul = math.hypot(ux, uy)
+    ux, uy = ux / ul, uy / ul
+    nx, ny = uy, -ux  # normale vers le haut
+    if ny > 0:
+        nx, ny = -nx, -ny
     ctx.push_group()
-    boulder_sketch(ctx, 640, 900, 210, seed)
-    stick_sketch(ctx, 330, 1150, PUSH_ROCK, 1.45, seed + 7)
+    glow(ctx, 640, 900, 620, (1, 1, 1), 0.09)
+    # pente texturee
+    rnd = random.Random(4)
+    ctx.move_to(SLOPE_A[0] - 200, slope_y(SLOPE_A[0] - 200))
+    xs = list(range(-200, W + 240, 24))
+    for x in xs:
+        ctx.line_to(x, slope_y(x) + rnd.uniform(-3, 3))
+    ctx.line_to(W + 240, H + 200)
+    ctx.line_to(-200, H + 200)
+    ctx.close_path()
+    g = cairo.LinearGradient(0, 900, 0, 1900)
+    g.add_color_stop_rgb(0, 0.16, 0.16, 0.17)
+    g.add_color_stop_rgb(1, 0.03, 0.03, 0.035)
+    ctx.set_source(g)
+    ctx.fill()
+    ctx.set_source_rgba(1, 1, 1, 0.35)
+    ctx.set_line_width(2.5)
+    ctx.move_to(-200, slope_y(-200))
+    ctx.line_to(W + 240, slope_y(W + 240))
+    ctx.stroke()
+    for i in range(40):
+        x = rnd.uniform(-50, W + 50)
+        y = slope_y(x) + rnd.uniform(8, 500)
+        ctx.set_source_rgba(1, 1, 1, rnd.uniform(0.03, 0.09))
+        ctx.set_line_width(rnd.uniform(1, 3))
+        ctx.move_to(x, y)
+        ctx.line_to(x + rnd.uniform(30, 120) * ux, y + rnd.uniform(30, 120) * uy)
+        ctx.stroke()
+
+    # le rocher monte doucement, avec des a-coups d'effort
+    push = 0.5 - 0.5 * math.cos(t * 2 * math.pi * 0.9)
+    prog = t * 26 + 10 * push
+    cx0 = 610 + prog * ux
+    cy0 = slope_y(610) + prog * uy
+    R = ROCK_R
+    cx, cy = cx0 + nx * (R - 6), cy0 + ny * (R - 6)
+    # ombre de contact
+    gsh = cairo.RadialGradient(cx0, cy0, 0, cx0, cy0, R * 1.1)
+    gsh.add_color_stop_rgba(0, 0, 0, 0, 0.75)
+    gsh.add_color_stop_rgba(1, 0, 0, 0, 0)
+    ctx.save()
+    ctx.translate(cx0, cy0)
+    ctx.rotate(math.atan2(uy, ux))
+    ctx.scale(1, 0.13)
+    ctx.translate(-cx0, -cy0)
+    ctx.set_source(gsh)
+    ctx.arc(cx0, cy0, R * 1.1, 0, 2 * math.pi)
+    ctx.fill()
+    ctx.restore()
+    surf, _, S = ROCK
+    ctx.save()
+    ctx.translate(cx, cy)
+    ctx.rotate(prog / R + 0.01 * math.sin(t * 13) * push)
+    ctx.set_source_surface(surf, -S / 2, -S / 2)
+    ctx.paint()
+    ctx.restore()
+
+    # le personnage : mains sur le rocher (IK), pieds sur la pente qui marchent
+    s = 1.55
+    hand_pts = []
+    for beta in (10, -3):
+        b_ = math.radians(beta)
+        vx = -math.cos(b_) * ux + math.sin(b_) * nx
+        vy = -math.cos(b_) * uy + math.sin(b_) * ny
+        hand_pts.append((cx + vx * R * 0.96, cy + vy * R * 0.96))
+    hmx = (hand_pts[0][0] + hand_pts[1][0]) / 2
+    hmy = (hand_pts[0][1] + hand_pts[1][1]) / 2
+    lean = math.radians(15 + 5 * push)
+    ldx, ldy = math.cos(lean) * ux + math.sin(lean) * nx, math.cos(lean) * uy + math.sin(lean) * ny
+    dd = (182 - 14 * push) * s
+    hipx, hipy = hmx - ldx * dd, hmy - ldy * dd
+    t_ang = math.degrees(math.atan2(hmx - hipx, hmy - hipy)) - 2
+    pose = {"t": t_ang}
+    # bras : coudes vers le bas
+    for side, hp in (("l", hand_pts[0]), ("r", hand_pts[1])):
+        tdx_, tdy_ = d(t_ang)
+        shx, shy = hipx + tdx_ * 80 * s, hipy + tdy_ * 80 * s
+        a1, a2 = ik(shx, shy, hp[0], hp[1], 48 * s, 46 * s, (0, 1))
+        pose[side + "a1"], pose[side + "a2"] = a1, a2
+    # jambes : cycle de pas lent
+    ph = t * 2 * math.pi * 0.45
+    for side, off in (("l", 0.0), ("r", math.pi)):
+        cyc = math.sin(ph + off)
+        along = -40 * s + 48 * s * cyc
+        lift = max(0.0, math.cos(ph + off)) * 14 * s
+        fx = hipx + along * ux
+        fy = slope_y(fx) - 4 - lift
+        a1, a2 = ik(hipx, hipy, fx, fy, 58 * s, 58 * s, (ux + nx, uy + ny))
+        pose[side + "l1"], pose[side + "l2"] = a1, a2
+    stick(ctx, hipx, hipy, pose, s, fill=(0.82, 0.82, 0.84), outline=(0.03, 0.03, 0.035),
+          shadow=None, neck=-48)
+    # poussiere sous les pieds
+    r2 = random.Random(frame // 2)
+    for _ in range(10):
+        px = hipx - 60 * s + r2.uniform(-80, 60)
+        py = slope_y(px) - r2.uniform(0, 30)
+        ctx.set_source_rgba(1, 1, 1, r2.uniform(0.04, 0.14))
+        ctx.arc(px, py, r2.uniform(2, 6), 0, 6.28)
+        ctx.fill()
     ctx.pop_group_to_source()
     ctx.paint_with_alpha(a)
 
@@ -834,16 +1083,19 @@ def scene_you_vs_you(ctx, t, frame):
     if t < 1.3:
         i = min(3, int(t / 0.325))
         k = (t - i * 0.325) / 0.325
-        sz = lerp(300, 270, k)
-        glow(ctx, W / 2, H / 2, 600, (1, 1, 1), 0.12)
-        text(ctx, words[i], W / 2, H / 2 + sz * 0.35, sz, family=SERIF, color=WHITE)
+        sz = 300 * lerp(1.45, 1.0, ease_out(k / 0.35)) * lerp(1.0, 0.93, k)
+        r = random.Random(frame)
+        sh = 18 * clamp(1 - k / 0.3)
+        glow(ctx, W / 2, H / 2, 600, (1, 1, 1), 0.12 + 0.15 * clamp(1 - k / 0.3))
+        text(ctx, words[i], W / 2 + r.uniform(-sh, sh), H / 2 + sz * 0.35 + r.uniform(-sh, sh), sz,
+             family=SERIF, color=WHITE)
     else:
         k = t - 1.3
         ap = clamp(k * 3)
-        z = lerp(1.0, 1.08, ease(k / 2.4))
+        z = lerp(1.06, 1.18, ease(k / 2.4))
         ctx.save()
-        camera(ctx, W / 2, H / 2, z, shake=2, frame=frame)
-        text(ctx, "IT'S YOU VS YOU", W / 2, 520, 96, family=SERIF, color=WHITE, alpha=ap)
+        camera(ctx, W / 2 - 30, H / 2 + 60, z, shake=2, frame=frame)
+        text(ctx, "IT'S YOU VS YOU", W / 2 - 30, 640, 92, family=SERIF, color=WHITE, alpha=ap)
         you_vs_you_image(ctx, k, frame, ap)
         ctx.restore()
     # flicker
@@ -854,7 +1106,13 @@ def scene_you_vs_you(ctx, t, frame):
     grain(ctx, frame, 0.08)
 
 
-def scene_race_win(ctx, t, frame):
+def scene_race_win(ctx, t, frame, overlay=True):
+    passing = 0.0
+    for tp in (1.0, 2.0, 3.0):
+        if 0 <= t - tp < 0.25:
+            passing = 1 - (t - tp) / 0.25
+    camera(ctx, W / 2 - 40, H / 2 + 120, 1.12 + 0.05 * passing + 0.03 * math.sin(t * 3),
+           shake=4 + 10 * passing, frame=frame)
     track(ctx, t * 900, red=0.7)
     ex = 400
     # lignes de vitesse
@@ -893,14 +1151,21 @@ def scene_race_win(ctx, t, frame):
             ctx.line_to(fx + (i + 1) * 6, y0 + 40)
             ctx.stroke()
     glow(ctx, ex, LANES[3] - 40, 220, RED, 0.35)
-    runner(ctx, ex, LANES[3], t * 16, RED, s=1.0, face="angry", label="EGO", lab_col=RED)
+    runner(ctx, ex, LANES[3], t * 16, RED, s=1.0, label="EGO", lab_col=RED, trail=4)
+    ctx.identity_matrix()
+    if passing:
+        ctx.set_source_rgba(RED[0], RED[1], RED[2], 0.12 * passing)
+        ctx.paint()
+    if overlay and 3.9 < t < 4.15:
+        ctx.set_source_rgba(1, 1, 1, 0.5 * (1 - (t - 3.9) / 0.25))
+        ctx.paint()
     vignette(ctx, 0.7)
 
 
 def scene_prove(ctx, t, frame):
     # reprend la ligne d'arrivee, assombrie
     ctx.save()
-    scene_race_win(ctx, 3.95 + t * 0.15, frame)
+    scene_race_win(ctx, 4.15 + t * 0.12, frame, overlay=False)
     ctx.restore()
     ctx.set_source_rgba(0, 0, 0, 0.55)
     ctx.paint()
@@ -910,7 +1175,7 @@ def scene_prove(ctx, t, frame):
     if t > 1.1:
         k = clamp((t - 1.1) / 0.25)
         sc = lerp(1.7, 1.0, ease_out(k))
-        shake = (1 - k) * 12
+        shake = (1 - k) * 26
         r = random.Random(frame)
         glow(ctx, W / 2, 1490, 380, RED, 0.35 * k)
         ctx.save()
@@ -922,7 +1187,8 @@ def scene_prove(ctx, t, frame):
 
 
 def scene_final(ctx, t, frame):
-    camera(ctx, W / 2, H / 2 - 40, lerp(1.25, 1.0, ease_out(t / 1.2)))
+    camera(ctx, W / 2, lerp(780, H / 2 - 40, ease_out(t / 1.4)), lerp(1.8, 1.0, ease_out(t / 1.4)),
+           shake=6 * clamp(1 - t / 0.5), frame=frame)
     draw_podium_world(ctx, t + 20, frame, ego_on_top=True)
     ctx.identity_matrix()
     if t > 2.4:
@@ -954,13 +1220,20 @@ def render_frame(surface, ctx, gt, frame):
         if gt < acc + dur or name == SCENES[-1][0]:
             lt = gt - acc
             ctx.identity_matrix()
+            punch = 1.0 + (0.09 * (1 - ease_out(lt / 0.35)) if acc > 0 else 0.0)
+            dx = 5 * math.sin(gt * 1.3) + 3 * math.sin(gt * 3.1)
+            dy = 5 * math.sin(gt * 1.7 + 1) + 3 * math.sin(gt * 2.3)
+            ctx.translate(W / 2 + dx, H / 2 + dy)
+            ctx.rotate(0.006 * math.sin(gt * 0.9) - 0.02 * (1 - ease_out(lt / 0.3)) * (1 if acc > 0 else 0))
+            ctx.scale(punch * 1.02, punch * 1.02)
+            ctx.translate(-W / 2, -H / 2)
             ctx.save()
             fn(ctx, lt, frame)
             ctx.restore()
             ctx.identity_matrix()
             # flash de coupe
-            if acc > 0 and lt < 2 / FPS:
-                ctx.set_source_rgba(1, 1, 1, 0.22)
+            if acc > 0 and lt < 2.5 / FPS:
+                ctx.set_source_rgba(1, 1, 1, 0.3)
                 ctx.paint()
             return name
         acc += dur
@@ -972,6 +1245,7 @@ def main():
     ap.add_argument("--music", help="fichier audio a mettre en fond")
     ap.add_argument("--speed", type=float, default=1.0, help="1 = normal, 2 = x2 comme l'original")
     ap.add_argument("--preview", action="store_true", help="planche de captures au lieu de la video")
+    ap.add_argument("--mb", type=int, default=3, help="sous-images de flou de mouvement (1 = aucun)")
     args = ap.parse_args()
 
     surface = cairo.ImageSurface(cairo.FORMAT_ARGB32, W, H)
@@ -1009,9 +1283,18 @@ def main():
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     for f in range(n_frames):
         gt = f / FPS * args.speed
-        render_frame(surface, ctx, gt, f)
-        surface.flush()
-        proc.stdin.write(bytes(surface.get_data()))
+        if args.mb <= 1:
+            render_frame(surface, ctx, gt, f)
+            surface.flush()
+            proc.stdin.write(bytes(surface.get_data()))
+        else:
+            acc = None
+            for k in range(args.mb):
+                render_frame(surface, ctx, gt + (k / args.mb - 0.5) * 0.7 / FPS * args.speed, f)
+                surface.flush()
+                a = np.ndarray((H, W, 4), np.uint8, surface.get_data()).astype(np.uint16)
+                acc = a if acc is None else acc + a
+            proc.stdin.write((acc // args.mb).astype(np.uint8).tobytes())
         if f % 60 == 0:
             print(f"\r{f}/{n_frames}", end="", file=sys.stderr, flush=True)
     proc.stdin.close()

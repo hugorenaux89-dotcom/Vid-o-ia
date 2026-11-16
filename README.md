@@ -20,6 +20,8 @@ Générateur de vidéos motivation style « stickman » (format TikTok / Reels, 
 
 La vidéo est en vitesse normale (x1, ~42 s). L'enregistrement d'origine était en x2.
 
+Style : bonhommes sans visage (membres arrière plus sombres, reflets, ombres au sol), caméra dynamique (zoom à chaque coupe, whip-pan, secousses aux impacts, traînées de vitesse) et flou de mouvement (`--mb 3` par défaut, `--mb 1` pour un rendu plus rapide). Le rocher de « IT'S YOU VS YOU » est généré procéduralement (relief, éclairage, fissures) et le personnage le pousse avec de vraies mains posées dessus (cinématique inverse).
+
 ```bash
 pip install pycairo numpy pillow        # + ffmpeg
 python3 generator/ego_video.py --music assets/musique_ego.m4a                 # x1 -> output/ego_vs_discipline.mp4
