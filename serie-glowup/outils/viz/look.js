@@ -15,7 +15,7 @@ function ensureY(id) {
   if (d < 20) c.chin = true;
   if (d < 12) c.jowls = true;
   c.outfit = suit ? 'suit' : d < 3 ? 'hoodieDirty' : d < 19 ? 'hoodie' : 'bomber';
-  if (d === 1) Object.assign(c, { ugly: true, headset: true, w: 1.48 });
+  if (d === 1) Object.assign(c, { ugly: true, headset: true, w: 1.48, beard: 'none' });
   C[id] = c;
   const fat = d === 1 ? 62 : Math.max(4, 50 - (d - 1) * 1.6);
   let o;
