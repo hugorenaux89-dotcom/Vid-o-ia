@@ -221,7 +221,7 @@ function glasses(c) {
 }
 
 let uid = 0;
-function toonPerson(pid, expr = 'neutre', talk = false) {
+function toonPerson(pid, expr = 'neutre', talk = false, noBody = false) {
   const blink = String(expr).endsWith('_blink'); const baseExpr = String(expr).replace('_blink', '');
   const c = C[pid], id = ++uid;
   const e0 = E[baseExpr] || E.neutre;
@@ -235,11 +235,11 @@ function toonPerson(pid, expr = 'neutre', talk = false) {
   }).join('');
   return `${defs(id)}<g>
     ${hairBack(c)}
-    <g transform="translate(0,-50)">${body(c)}
+    ${noBody ? '' : `<g transform="translate(0,-50)">${body(c)}
       <path d="M240 480 L240 580 Q300 606 360 580 L360 480 Z" fill="${skinS}" ${S()}/>
       ${c.chain === 'silver' ? '<path d="M232 568 Q300 620 368 568" fill="none" stroke="#d6d9de" stroke-width="7"/>' : ''}
       ${c.chain === 'gold' ? '<path d="M226 566 Q300 632 374 566" fill="none" stroke="#e2b73a" stroke-width="14"/><path d="M226 566 Q300 632 374 566" fill="none" stroke="#141414" stroke-width="3"/>' : ''}
-    </g>
+    </g>`}
     <g transform="translate(300,300) scale(${c.w},1.02) translate(-300,-300)">
       ${c.hair !== 'scarf' ? `<path d="M178 260 C140 250 130 300 142 330 C152 360 176 368 186 356 Z" fill="${c.skin}" ${S()}/><path d="M422 260 C460 250 470 300 458 330 C448 360 424 368 414 356 Z" fill="${c.skin}" ${S()}/>
       <path d="M165 290 Q156 312 170 334 M435 290 Q444 312 430 334" fill="none" ${S(5)}/>` : ''}

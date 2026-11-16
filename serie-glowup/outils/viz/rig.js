@@ -59,7 +59,7 @@ function hand(p, ang, skin, kind = 'open', sc = 1) {
 }
 // bras effilé (épaule plus large que le poignet) avec coude, ombre et reflet
 function limb(s0, e, h, w, skin) {
-  const w2 = w * 0.84, dark = shade(skin, -0.22), lite = shade(skin, 0.25);
+  const w2 = w * 0.92, dark = shade(skin, -0.22), lite = shade(skin, 0.25);
   const seg = (a, b, ww, col) => `<path d="M${f1(a[0])} ${f1(a[1])} L${f1(b[0])} ${f1(b[1])}" stroke="${col}" stroke-width="${f1(ww)}" stroke-linecap="round" fill="none"/>`;
   const off = (a, b, d) => { const dx = b[0] - a[0], dy = b[1] - a[1], L = Math.hypot(dx, dy) || 1; return [[a[0] - dy / L * d, a[1] + dx / L * d], [b[0] - dy / L * d, b[1] + dx / L * d]]; };
   const [u1, u2] = off(s0, e, w * 0.24), [f1a, f1b] = off(e, h, w2 * 0.24), [l1, l2] = off(s0, e, -w * 0.26), [m1, m2] = off(e, h, -w2 * 0.26);
@@ -120,10 +120,7 @@ const PROPS = {
 
 function head(pid, expr, cx, top, scale, tilt, id) {
   const hx = cx - 300 * scale;
-  return `<defs><clipPath id="hc${id}"><ellipse cx="300" cy="300" rx="285" ry="290"/></clipPath>
-      <linearGradient id="fs${id}" x1="0" x2="1"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#3a1d0a" stop-opacity=".22"/></linearGradient></defs>
-    <g transform="rotate(${f1(tilt)} ${f1(cx)} ${f1(top + 470 * scale)}) translate(${f1(hx)},${f1(top)}) scale(${scale})"><g clip-path="url(#hc${id})">${toonPerson(pid, expr, false)}
-      <ellipse cx="300" cy="300" rx="285" ry="290" fill="url(#fs${id})"/></g></g>`;
+  return `<g transform="rotate(${f1(tilt)} ${f1(cx)} ${f1(top + 470 * scale)}) translate(${f1(hx)},${f1(top)}) scale(${scale})">${toonPerson(pid, expr, false, true)}</g>`;
 }
 function stinkLines(pts, t, op = 0.85) {
   return pts.map(([x, y], i) => { const w = 14 * Math.sin(t * 5 + i); return `<path d="M${x} ${y} q${f1(-16 + w)} -24 0 -48 q${f1(16 + w)} -24 0 -48 q${f1(-16 + w)} -24 0 -48" fill="none" stroke="#7bc96f" stroke-width="8" stroke-linecap="round" opacity="${op}"/>`; }).join('');
@@ -140,11 +137,17 @@ function stand(pid, q) {
   const legW = 92 + fat * 0.5;
   const leg = (x, side, [h, k] = [0, 0], lift = 0) => {
     const a = side * h, kn = P([x, hipY], a, 190 * (1 - 0.6 * lift)), an = P(kn, side * k, 170 * (1 - 0.15 * lift));
-    return { svg: tube([[x, hipY], kn, an], legW, o.pants), an, ang: side * k };
+    const crease = `<path d="M${f1(kn[0] - 22)} ${f1(kn[1] - 4)} q22 12 44 0" fill="none" stroke="${shade(o.pants, -0.35)}" stroke-width="4" stroke-linecap="round"/>`;
+    return { svg: limb([x, hipY], kn, an, legW, o.pants) + crease, an, ang: side * k };
   };
   const L = leg(lx, -1, q.ll, (q.lift || [0, 0])[0]), R = leg(rx, 1, q.rl, (q.lift || [0, 0])[1]);
-  const shoe = (p, side) => { const [x, y] = p; return `<g transform="translate(${f1(x + side * 12)},${f1(y + 32)})"><path d="M-62 26 Q-64 -24 -22 -28 L30 -26 Q78 -16 80 26 Z" fill="${o.shoes}" stroke="${K}" stroke-width="5" transform="scale(${side},1)"/>
-    <rect x="-66" y="18" width="150" height="16" rx="8" fill="${shade(o.shoes, -0.25)}" stroke="${K}" stroke-width="4" transform="scale(${side},1)"/></g>`; };
+  const shoe = (p, side) => { const [x, y] = p; const sc = o.shoes, sd = shade(o.shoes, -0.22);
+    return `<g transform="translate(${f1(x + side * 16)},${f1(y + 30)}) scale(${f1(side * 1.15)},1.15)">
+      <path d="M-58 22 Q-62 -30 -18 -34 L22 -32 Q52 -24 66 -6 Q90 4 90 22 Z" fill="${sc}" stroke="${K}" stroke-width="6" stroke-linejoin="round"/>
+      <path d="M-18 -30 Q-10 -6 30 -14" fill="none" stroke="${sd}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M-4 -26 l14 10 M8 -28 l14 10 M20 -26 l12 9" stroke="${K}" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M40 -8 Q60 0 82 8" fill="none" stroke="${o.stripe2 || '#e5483f'}" stroke-width="6" stroke-linecap="round" opacity=".85"/>
+      <rect x="-64" y="16" width="160" height="22" rx="11" fill="#f7f7f7" stroke="${K}" stroke-width="5"/><path d="M-56 30 L88 30" stroke="#cfcfcf" stroke-width="4"/></g>`; };
   const legs = L.svg + R.svg + shoe(L.an, -1) + shoe(R.an, 1);
   // haut du corps (décalé par la respiration)
   const top = 440 + bob, bot = (o.short ? 700 + (50 - fat) * 2.4 : 880) + bob * 0.7;
@@ -182,7 +185,7 @@ function stand(pid, q) {
     + (o.stripes ? `<path d="M${sx - tw - 26} ${top + 130} L${sx - tw + 30} ${top + 50} M${sx + tw + 26} ${top + 130} L${sx + tw - 30} ${top + 50}" stroke="#fff" stroke-width="10"/>` : '');
   const neck = `<path d="M${sx - 40} ${300 + bob} L${sx - 40} ${top + 10} Q${sx} ${top + 34} ${sx + 40} ${top + 10} L${sx + 40} ${300 + bob} Z" fill="${shade(skin, -0.12)}" stroke="${K}" stroke-width="6"/>`;
   // bras
-  const armW = 56 + (o.muscle ? 16 : 0) + fat * 0.42;
+  const armW = 66 + (o.muscle ? 16 : 0) + fat * 0.4;
   const arm = (side, [a1, a2] = [16, 6], hk, pr) => {
     const s0 = [sx + side * (tw - 18), top + 52], e = P(s0, side * a1, 175), h = P(e, side * a2, 160);
     const sl = o.dress || o.long ? '' : sleeve(s0, side * a1, o.short ? 78 : 165, armW, o.top);
@@ -191,10 +194,10 @@ function stand(pid, q) {
     const bic = o.muscle ? (() => { const m = P(s0, side * a1, 100), ang = -Math.atan2(e[0] - s0[0], e[1] - s0[1]) * 180 / Math.PI; return `<ellipse cx="${f1(m[0])}" cy="${f1(m[1])}" rx="${f1(30 + (q.flex || 0) * 10)}" ry="58" fill="${skin}" stroke="${K}" stroke-width="4" transform="rotate(${f1(ang)} ${f1(m[0])} ${f1(m[1])}) translate(${-side * 14},0)"/>`; })() : '';
     const prop = pr ? PROPS[pr[0]](h[0] + (pr[2] || 0), h[1] + 20 + (pr[3] || 0), pr[1] || 0) : '';
     const front = pr && pr[4] === 'behind';
-    return { svg: (o.long ? limb(s0, e, h, armW + 16, o.sleeve || o.top) + cuff : limb(s0, e, h, armW, skin)) + sl, hand: hand(h, side * a2, skin, hk, Math.max(1, armW / 58)), prop, front, h };
+    return { svg: (o.long ? limb(s0, e, h, armW + 16, o.sleeve || o.top) + cuff : limb(s0, e, h, armW, skin)) + sl, hand: hand(h, side * a2, skin, hk, 1.3 * Math.max(1, armW / 66)), prop, front, h };
   };
   const la = arm(-1, q.la, q.lh, q.lp), ra = arm(1, q.ra, q.rh, q.rp);
-  const hs = q.hs || Math.max(0.64, Math.min(0.86, 0.66 + ((c.w || 1) - 1.04) * 0.47)), htop = 92 - (hs - 0.66) / 0.18 * 72 + bob;
+  const hs = q.hs || 1.08 * Math.max(0.64, Math.min(0.86, 0.66 + ((c.w || 1) - 1.04) * 0.47)), htop = 92 - (hs / 1.08 - 0.66) / 0.18 * 72 - 30 * (hs - hs / 1.08) / 0.07 + bob;
   const hd = head(pid, q.expr || 'neutre', sx + (q.hx || 0), htop - 30 * (hs - 0.74) * 4, hs, q.tilt || 0, id);
   const acc = (q.whistle ? `<path d="M${sx - 60} ${top + 4} Q${sx} ${top + 150} ${sx + 60} ${top + 4}" fill="none" stroke="#e5483f" stroke-width="7"/><g transform="translate(${sx + 6},${top + 140}) rotate(${f1(q.blow ? -25 : 0)})"><rect x="-26" y="-14" width="52" height="30" rx="12" fill="#cfd4da" stroke="${K}" stroke-width="5"/><circle cx="14" cy="2" r="7" fill="#555"/></g>` : '')
     + (q.towel ? `<path d="M${sx - tw - 10} ${top + 30} Q${sx - tw + 60} ${top - 30} ${sx - 30} ${top + 10} L${sx - 50} ${top + 300} L${sx - tw - 20} ${top + 280} Z" fill="#ff8fb3" stroke="${K}" stroke-width="6"/><path d="M${sx - tw} ${top + 240} L${sx - 60} ${top + 250}" stroke="#fff" stroke-width="10"/>` : '');
