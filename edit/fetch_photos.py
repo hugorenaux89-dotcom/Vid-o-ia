@@ -65,7 +65,7 @@ for key,t in SEL.items():
     if tw:
         base=orig.split('/wikipedia/commons/')[1]
         name=base.split('/')[-1]
-        url='https://upload.wikimedia.org/wikipedia/commons/thumb/%s/%dpx-%s'%(base,tw,name)
+        url='https://thumb.wikimedia.org/wikipedia/commons/thumb/%s/%dpx-%s'%(base,tw,name)
         if ext=='.png': url+='.png'
     else:
         url=orig
