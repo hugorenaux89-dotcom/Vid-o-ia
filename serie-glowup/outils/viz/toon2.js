@@ -149,11 +149,18 @@ function hairFront(c, id) {
   const H = c.hc, SS = S();
   switch (c.hair) {
     case 'curly': {
-      const cl = [[196, 176, 30], [228, 140, 33], [266, 116, 35], [306, 106, 36], [346, 114, 35], [384, 136, 33], [410, 172, 29], [214, 206, 24], [392, 206, 24], [246, 168, 30], [288, 150, 31], [330, 150, 31], [370, 170, 29], [286, 76, 28], [326, 78, 27], [246, 92, 26], [366, 96, 25], [268, 196, 22], [310, 192, 23], [348, 200, 21], [200, 236, 18], [402, 238, 18]];
-      const curl = ([x, y, r]) => `<circle cx="${x}" cy="${y}" r="${r}" fill="${H}" ${S(5)}/><path d="M${x - r * 0.45} ${y + r * 0.1} a${r * 0.45} ${r * 0.45} 0 1 1 ${r * 0.55} ${r * 0.4}" fill="none" stroke="${shade(H, 2.2)}" stroke-width="4" stroke-linecap="round" opacity=".9"/>`;
+      // masse ondulée et bouffante, bord festonné, frange en mèches sur le front
+      const pts = [], N = 11;
+      for (let k = 0; k <= N; k++) { const a = Math.PI * (1.08 + k * 0.84 / N); pts.push([300 + 150 * Math.cos(a), 178 + 132 * Math.sin(a)]); }
+      let d = `M176 252 L${pts[0][0].toFixed(1)} ${pts[0][1].toFixed(1)}`;
+      for (let k = 1; k <= N; k++) d += ` A30 30 0 0 1 ${pts[k][0].toFixed(1)} ${pts[k][1].toFixed(1)}`;
+      d += ` L424 252 Q414 214 392 208 Q384 236 362 222 Q352 244 330 226 Q316 248 296 228 Q278 246 262 224 Q244 240 230 216 Q206 220 196 236 Q186 240 176 252 Z`;
+      const dk = shade(H, -0.35), lt = shade(H, 0.4);
       return `<path d="M178 250 C182 210 186 190 196 176 L206 240 Z M422 250 C418 210 414 190 404 176 L394 240 Z" fill="url(#fade${id})"/>
-      <path d="M180 232 C170 140 228 72 302 72 C376 72 434 140 420 232 C404 200 380 186 300 184 C220 186 196 200 180 232 Z" fill="${H}" ${SS}/>
-      ${cl.map(curl).join('')}`;
+      <path d="${d}" fill="${H}" ${SS}/>
+      <path d="M200 150 q20 -26 46 -10 q-10 26 14 34 M262 102 q26 -20 50 0 q-12 24 12 30 M334 104 q30 -10 46 14 q-20 16 0 34 M222 196 q16 -22 40 -8 M300 160 q18 -24 42 -6 M362 182 q16 -18 34 0" fill="none" stroke="${dk}" stroke-width="6" stroke-linecap="round"/>
+      <path d="M214 132 q14 -14 30 -6 M280 92 q16 -10 30 0 M350 100 q14 -6 26 6 M244 172 q12 -10 24 -4 M318 146 q12 -8 24 0" fill="none" stroke="${lt}" stroke-width="5" stroke-linecap="round" opacity=".9"/>
+      <path d="M248 214 q-6 22 10 30 M292 222 q-4 22 12 28 M336 216 q2 20 16 24" fill="none" stroke="${H}" stroke-width="9" stroke-linecap="round"/><path d="M248 214 q-6 22 10 30 M292 222 q-4 22 12 28 M336 216 q2 20 16 24" fill="none" stroke="#141414" stroke-width="3" stroke-linecap="round" opacity=".6"/>`;
     }
     case 'fade': return `<path d="M180 250 C182 210 186 190 196 176 L206 240 Z M420 250 C418 210 414 190 404 176 L394 240 Z" fill="url(#fade${id})"/>
       <path d="M176 238 C160 130 222 60 302 60 C384 60 446 130 424 238 C418 200 404 176 390 164 C350 140 250 140 210 164 C196 176 182 200 176 238 Z" fill="${H}" ${SS}/>

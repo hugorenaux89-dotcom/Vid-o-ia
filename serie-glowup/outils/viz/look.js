@@ -10,7 +10,8 @@ function ensureY(id) {
   if (d < 6) c.teeth = 'dirty';
   if (d < 8) c.pimples = true; else if (d < 10) c.pimplesLight = true;
   if (d < 14) c.unibrow = true;
-  c.beard = d < 12 ? 'cuts' : 'neat';
+  c.beard = d < 12 ? 'cuts' : 'none';
+  if (d >= 13) c.hc = '#6b4428';
   if (d < 20) c.chin = true;
   if (d < 12) c.jowls = true;
   c.outfit = suit ? 'suit' : d < 3 ? 'hoodieDirty' : d < 19 ? 'hoodie' : 'bomber';

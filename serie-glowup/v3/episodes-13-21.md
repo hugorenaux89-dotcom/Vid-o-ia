@@ -33,7 +33,7 @@
 🎭 `choque · idle`
 🔠 `« T'INQUIÈTE, *C'EST À LA MODE* »`
 🔊 `boing@1`
-🎙️ **VOIX OFF** : « Dégradé sur les côtés… et des boucles sur le dessus. Yanis panique : c'est quoi, ces frisettes ? Moussa sourit : t'inquiète, c'est à la mode. Puis Yanis se regarde mieux. Et il adore. »
+🎙️ **VOIX OFF** : « Dégradé sur les côtés… et des boucles bien volumineuses sur le dessus. Yanis panique : c'est quoi, ces frisettes ? Moussa sourit : t'inquiète, c'est à la mode. Puis Yanis se regarde mieux. Et il adore. »
 
 **P5 · Le gel**
 🎥 `Yanis styling his hair with gel, proud.`
