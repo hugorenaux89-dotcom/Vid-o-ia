@@ -273,7 +273,7 @@
 🎭 `choque · idle`
 🔠 `SES CHEVEUX REPOUSSENT *EN 6 SECONDES*`
 🔊 `boom@1`
-🎙️ **VOIX OFF** : « Ce mec était chauve depuis ses vingt ans. Et ses cheveux viennent de repousser… en six secondes ! »
+🎙️ **VOIX OFF** : « Ce mec était chauve depuis ses vingt ans. Et ses cheveux viennent de repousser… en six secondes ! Un abonnement, c'est un euro. Un like, c'est un euro. Pour le glow-up de Yanis ! »
 
 **P2 · Le résultat**
 🎥 `Yanis in his bedroom, touching his bald head, worried.`
@@ -341,7 +341,7 @@
 🎬 `solo scene=chambreNuit gest=think shot=wide`
 🎭 `inquiet · idle`
 🔠 `DEMAIN, ON AMÉLIORE *QUOI ?*`
-🎙️ **VOIX OFF** : « Alors, demain, qu'est-ce qu'on améliore : ses boutons… ou son sommeil ? Dis-le en commentaire, c'est toi qui décides ! »
+🎙️ **VOIX OFF** : « Alors, demain, qu'est-ce qu'on améliore : ses boutons… ou son sommeil ? Dis-le en commentaire, c'est toi qui décides ! Et n'oublie pas : un abonnement, un euro. Un like, un euro. Pour le glow-up de Yanis ! »
 📝 `🅰️ BOUTONS` / `🅱️ SOMMEIL`
 
 ---
