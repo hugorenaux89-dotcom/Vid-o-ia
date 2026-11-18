@@ -58,9 +58,13 @@ def parse():
                 m = re.search(r"📊 `([^`]+)`", s); E["counter"] = m.group(1) if m else ""; continue
             m = re.match(r"\*\*(P\d+) ·", s)
             if m:
-                cur = {"tag": m.group(1), "cam": "", "expr": "neutre", "pose": "idle", "notes": [], "voice": None, "vote": None, "choice": None, "head": "", "sfx": None, "kind": None, "p": {}, "sfxb": None}
+                cur = {"tag": m.group(1), "cam": "", "expr": "neutre", "pose": "idle", "notes": [], "voice": None, "vote": None, "choice": None, "head": "", "sfx": None, "kind": None, "p": {}, "sfxb": None, "eur": None}
                 E["plans"].append(cur); continue
             if cur is None: continue
+            if s.startswith("💶"):
+                m = re.search(r"`(-?\d+)`", s)
+                if m: cur["eur"] = int(m.group(1))
+                continue
             if s.startswith("🎥"): cur["cam"] = s
             elif s.startswith("🎬"):
                 m = re.search(r"`([^`]+)`", s)
@@ -238,7 +242,9 @@ def layer(st, big=None, hk=1.0, ck=1.0):
 # ------------------------------------------------------------------ plan
 def plans_to_segments(E):
     segs, scene = [], None
+    eur = E["hud"][1] if E.get("hud") else 0
     for i, p in enumerate(E["plans"]):
+        if p.get("eur") is not None: eur = p["eur"]
         cam = p["cam"]; scene = scene_of(cam, scene)
         m = re.search(r"\{(YANIS_[A-E])\}", cam); yid = m.group(1) if m else "YANIS_A"
         others = [o for o in OTHERS if "{" + o + "}" in cam and "{" + o + "}'s contact" not in cam]
@@ -246,7 +252,7 @@ def plans_to_segments(E):
         cl = cam.lower(); story = "instagram story" in cl or ("story" in cl and "{SARAH}" in cam and "{KENZO}" in cam and "phone" in cl)
         st = {"counter": E["counter"], "scene": scene, "cards": [], "props": [], "audio": p["voice"]["audio"] if p["voice"] else None,
               "sub": p["voice"]["text"] if p["voice"] else "", "yanis": yid if "{YANIS" in cam else None, "expr": p["expr"], "pose": p["pose"],
-              "vote": p["vote"], "choice": p["choice"], "i": i, "head": p["head"], "band": E["counter"], "sfx": p["sfx"], "kind": p["kind"], "p": p["p"], "sfxb": p["sfxb"], "day": E["n"], "hud": E.get("hud")}
+              "vote": p["vote"], "choice": p["choice"], "i": i, "head": p["head"], "band": E["counter"], "sfx": p["sfx"], "kind": p["kind"], "p": p["p"], "sfxb": p["sfxb"], "day": E["n"], "hud": (E["hud"][0], eur) if E.get("hud") else None}
         st["props"] = [k for k, w in (("invitation", "invitation"), ("chips", "chips"), ("water", "water bottle")) if w in cl]
         cards = list(p["notes"])
         if story:

@@ -348,7 +348,7 @@
 
 ## Épisode 8 · J-23 · « Les boutons »
 ⏱️ **1:12** · 📊 `JOUR 8 · VOUS AVEZ CHOISI BOUTONS`
-📈 `14 · 0`
+📈 `14 · 65`
 
 **P1 · L'accroche**
 🎥 `Yanis with a green face mask, Sofiane screaming in fear.`
@@ -356,7 +356,7 @@
 🎭 `calme · idle`
 🔠 `SOFIANE CROIT VOIR *UN MONSTRE*`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Son meilleur pote vient de hurler en le voyant. Il a cru voir un monstre. C'était juste un masque à l'argile. »
+🎙️ **VOIX OFF** : « Son meilleur pote vient de hurler en le voyant. Il a cru voir un monstre. C'était juste un masque à l'argile. Un abonnement, c'est un euro. Un like, c'est un euro. Pour le glow-up de Yanis ! »
 
 **P2 · Le résultat**
 🎥 `Yanis looking at his pimples in the bathroom mirror.`
@@ -365,15 +365,25 @@
 🔠 `VOUS AVEZ CHOISI *BOUTONS*`
 🎙️ **VOIX OFF** : « Jour huit, vous avez choisi : BOUTONS. Sur son visage, il y en a tellement qu'on pourrait jouer à relier les points. »
 
-**P3 · La routine**
+**P3 · La cagnotte**
+🎥 `Yanis holding his piggy bank, amazed, coins and sparkles.`
+🎬 `solo scene=salleDeBain gest=show prop=piggy fx=sparkle,confetti shot=med`
+🎭 `sourire · idle`
+🔠 `VOUS AVEZ DONNÉ *65 €*`
+🔊 `boom`
+🎙️ **VOIX OFF** : « Et grosse nouvelle : hier, vous avez été soixante et un à liker, et quatre nouveaux à vous abonner. Ça fait soixante-cinq euros dans la cagnotte de Yanis ! Merci à vous ! »
+📝 `💰 61 LIKES + 4 ABONNÉS = 65 €`
+
+**P4 · La routine**
 🎥 `Yanis applying cream on his face with both hands.`
 🎬 `solo scene=salleDeBain gest=cream lprop=cream fx=sparkle`
 🎭 `determine · idle`
 🔠 `LA ROUTINE *EN 3 ÉTAPES*`
-🎙️ **VOIX OFF** : « Nouvelle routine. Un : nettoyant doux. Deux : crème hydratante. Trois : on ne touche plus son visage avec ses mains de mécano. »
-📝 `✨ GLOW-UP DU JOUR : ROUTINE PEAU`
+🎙️ **VOIX OFF** : « Et cet argent, il sert tout de suite. Avec vingt-cinq euros, Yanis s'achète un vrai kit anti-boutons. Un : nettoyant doux. Deux : crème hydratante. Trois : on ne touche plus son visage avec ses mains de mécano. »
+📝 `🛒 KIT ANTI-BOUTONS : -25 € (PAYÉ PAR VOUS)`
+💶 `40`
 
-**P4 · L'interdit**
+**P5 · L'interdit**
 🎥 `Yanis about to pop a pimple, Nadia catching him.`
 🎬 `duo scene=salleDeBain other=NADIA gest=facepalm ogest=point oexpr=colere enter=1`
 🎭 `choque · idle`
@@ -381,14 +391,14 @@
 🔊 `boing@1`
 🎙️ **VOIX OFF** : « Il approche ses doigts d'un bouton… Nadia surgit de nulle part. On n'éclate pas ! Personne ne sait depuis combien de temps elle était là. »
 
-**P5 · Le masque**
+**P6 · Le masque**
 🎥 `Yanis relaxing with a face mask, cucumber slices.`
 🎬 `solo scene=salleDeBain gest=hips fx=sparkle shot=close`
 🎭 `calme · idle`
 🔠 `MASQUE *À L'ARGILE*`
 🎙️ **VOIX OFF** : « Le soir, masque à l'argile. Quinze minutes sans parler, sans bouger. C'est la première fois de sa vie qu'il se détend sans écran. »
 
-**P6 · Le repos**
+**P7 · Le repos**
 🎥 `Yanis walking calmly in the park, rest day.`
 🎬 `jog speed=120`
 🎭 `calme · idle`
@@ -396,14 +406,14 @@
 🎙️ **VOIX OFF** : « Aujourd'hui, repos. Juste trente minutes de marche. Il découvre que le parc a des arbres. Il y passait tous les jours sans les voir. »
 📝 `😴 REPOS : 30 MIN DE MARCHE`
 
-**P7 · Le repas**
+**P8 · Le repas**
 🎥 `Yanis eating a healthy plate in the kitchen.`
 🎬 `solo scene=cuisine gest=eat prop=broccoli`
 🎭 `sourire · idle`
 🔠 `MOINS DE SUCRE, *MOINS DE BOUTONS*`
 🎙️ **VOIX OFF** : « Moins de sucre, moins de friture. Il boit ses deux litres d'eau. Sa peau commence déjà à respirer. Elle n'en revient pas non plus. »
 
-**P8 · Kenzo**
+**P9 · Kenzo**
 🎥 `Yanis reading a message from Kenzo, worried.`
 🎬 `phone`
 🎭 `inquiet · phone`
@@ -411,19 +421,19 @@
 🔊 `scratch`
 🎙️ **VOIX OFF** : « Message de Kenzo : Sarah veut rencontrer mon nouveau pote de sport. Samedi ? Yanis répond : désolé, j'ai… un truc. Il n'a aucun truc. »
 
-**P9 · Le progrès**
+**P10 · Le progrès**
 🎥 `Yanis smiling at the mirror, fewer pimples.`
 🎬 `mirror`
 🎭 `sourire · idle`
 🔠 `DÉJÀ *MOINS ROUGE*`
 🎙️ **VOIX OFF** : « Avant de dormir, il se regarde. C'est encore là, mais c'est moins rouge. Moins gonflé. Pour la première fois, il a envie de continuer. »
 
-**P10 · Le vote**
+**P11 · Le vote**
 🎥 `Yanis yawning in his bedroom, dark circles.`
 🎬 `solo scene=chambreNuit gest=yawn shot=wide`
 🎭 `inquiet · idle`
 🔠 `DEMAIN, ON AMÉLIORE *QUOI ?*`
-🎙️ **VOIX OFF** : « Alors demain, qu'est-ce qu'on règle : son sommeil… ou sa posture de crevette ? Écris-le en commentaire ! »
+🎙️ **VOIX OFF** : « Alors demain, qu'est-ce qu'on règle : son sommeil… ou sa posture de crevette ? Écris-le en commentaire ! Il reste quarante euros dans la cagnotte. À cent euros, Yanis pourra s'offrir sa première vraie coupe chez le barbier. Alors un abonnement, un euro. Un like, un euro ! »
 📝 `🅰️ SOMMEIL` / `🅱️ POSTURE`
 
 ---
