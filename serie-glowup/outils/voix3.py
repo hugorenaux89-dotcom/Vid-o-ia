@@ -26,7 +26,7 @@ V = {
  "L'HOMME EN GRIS": ("fr-FR-HenriNeural", -4, 4),
  "UNE VOIX": ("fr-CH-FabriceNeural", 4, -8),
  "TOUS": ("fr-FR-RemyMultilingualNeural", 0, 0),
- "VOIX OFF": ("fr-FR-HenriNeural", 31, -1),
+ "VOIX OFF": (os.environ.get("VOIX", "fr-FR-RemyMultilingualNeural"), int(os.environ.get("VRATE", "32")), int(os.environ.get("VPITCH", "0"))),
 }
 # émotion: (vitesse, hauteur, volume %, cible loudness, filtre)
 EMO = {
@@ -147,6 +147,10 @@ async def line(ep, name, who, text, emo, sem):
     if not sents:  # réplique muette (« … ») : 1 s de silence d'ambiance
         await sh("ffmpeg", "-y", "-loglevel", "error", "-f", "lavfi", "-i", "anoisesrc=color=brown:amplitude=0.0035:r=44100", "-t", "1", "-ac", "1", "-b:a", "160k", out)
         return
+    if who.startswith("VOIX") and NATURAL:
+        async with sem:
+            await natural(text, sents, voice, r0, p0, d, name, work, lufs)
+        return
     async with sem:
         wavs = []
         for i, s in enumerate(sents):
@@ -184,6 +188,30 @@ async def line(ep, name, who, text, emo, sem):
               f"[v][n]amix=inputs=2:duration=first:weights=1 1:normalize=0[o]")
         await sh("ffmpeg", "-y", "-loglevel", "error", "-i", joined, "-filter_complex", fc, "-map", "[o]", "-ar", "44100", "-ac", "1", "-b:a", "160k", out)
         shutil.rmtree(work, ignore_errors=True)
+
+NATURAL = True
+async def natural(text, sents, voice, r0, p0, d, name, work, lufs):
+    """une seule synthèse par plan (intonation continue, plus naturelle) + horodatage des mots pour les sous-titres"""
+    mp = os.path.join(work, "all.mp3"); words = []
+    for k in range(5):
+        try:
+            words = []
+            with open(mp, "wb") as fh:
+                async for ch in edge_tts.Communicate(text.replace("…", "..."), voice, rate=f"{r0:+d}%", pitch=f"{p0:+d}Hz", boundary="WordBoundary").stream():
+                    if ch["type"] == "audio": fh.write(ch["data"])
+                    elif ch["type"] == "WordBoundary": words.append(ch["offset"] / 1e7)
+            if os.path.getsize(mp) > 0 and words: break
+        except Exception:
+            await asyncio.sleep(2 * (k + 1))
+    starts, wi = [], 0
+    for s in sents:
+        n = len(re.findall(r"[\wÀ-ÿ'’-]+", s))
+        starts.append(round(0.12 + (words[min(wi, len(words) - 1)] if words else 0), 3)); wi += n
+    import json as _j; _j.dump({"starts": starts, "sents": sents}, open(os.path.join(d, name.replace(".mp3", ".json")), "w"), ensure_ascii=False)
+    out = os.path.join(d, name)
+    fc = (f"[0]adelay=120,areverse,silenceremove=start_periods=1:start_threshold=-48dB:start_silence=0.06,areverse,apad=pad_dur=0.2,{CHAIN['narr']},loudnorm=I={lufs}:TP=-1.5:LRA=9,aresample=44100[o]")
+    await sh("ffmpeg", "-y", "-loglevel", "error", "-i", mp, "-filter_complex", fc, "-map", "[o]", "-ar", "44100", "-ac", "1", "-b:a", "160k", out)
+    shutil.rmtree(work, ignore_errors=True)
 
 async def run():
     sem = asyncio.Semaphore(6)
