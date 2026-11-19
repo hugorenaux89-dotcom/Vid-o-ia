@@ -440,7 +440,7 @@
 
 ## Épisode 9 · J-22 · « Le sommeil »
 ⏱️ **1:12** · 📊 `JOUR 9 · VOUS AVEZ CHOISI SOMMEIL`
-📈 `16 · 0`
+📈 `16 · 92`
 
 **P1 · L'accroche**
 🎥 `Yanis falling asleep standing up at the gym, Kenzo waving at him.`
@@ -448,7 +448,7 @@
 🎭 `calme · idle`
 🔠 `IL S'ENDORT *DEBOUT*`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Il vient de s'endormir… debout… en pleine salle de sport. Devant le copain de son ex. »
+🎙️ **VOIX OFF** : « Il vient de s'endormir… debout… en pleine salle de sport. Devant le copain de son ex. Un abonnement, c'est un euro. Un like, c'est un euro. Pour le glow-up de Yanis ! »
 
 **P2 · Le résultat**
 🎥 `Yanis in bed at 3 a.m. scrolling his phone, tired eyes.`
@@ -457,22 +457,32 @@
 🔠 `VOUS AVEZ CHOISI *SOMMEIL*`
 🎙️ **VOIX OFF** : « Jour neuf, vous avez choisi : SOMMEIL. Le problème : chaque nuit, il scrolle jusqu'à trois heures du matin. Des vidéos de chats. Puis des vidéos de chats qui dorment. »
 
-**P3 · La règle**
+**P3 · La cagnotte**
+🎥 `Yanis holding his piggy bank, amazed, coins and sparkles.`
+🎬 `solo scene=chambreJour gest=show prop=piggy fx=sparkle,confetti shot=med`
+🎭 `sourire · idle`
+🔠 `ENCORE *52 €* GRÂCE À VOUS`
+🔊 `boom`
+🎙️ **VOIX OFF** : « Mais d'abord, la cagnotte ! Hier, vous avez été quarante-sept à liker, et cinq nouveaux à vous abonner. Ça fait cinquante-deux euros de plus. Yanis a maintenant quatre-vingt-douze euros ! »
+📝 `💰 47 LIKES + 5 ABONNÉS = +52 € · TOTAL : 92 €`
+
+**P4 · La règle**
 🎥 `Yanis putting his phone in a drawer, determined.`
 🎬 `solo scene=chambreNuit gest=show prop=phone shot=med`
 🎭 `determine · idle`
 🔠 `TÉLÉPHONE *AU TIROIR*`
-🎙️ **VOIX OFF** : « Nouvelle règle : à vingt-deux heures trente, le téléphone part dans le tiroir. Pas sous l'oreiller. Dans le tiroir. Fermé. »
-📝 `✨ GLOW-UP DU JOUR : 8 H DE SOMMEIL`
+🎙️ **VOIX OFF** : « Et cet argent sert direct : avec douze euros, Yanis s'achète un vrai réveil. Comme ça, plus besoin du téléphone dans le lit. Nouvelle règle : à vingt-deux heures trente, le téléphone part dans le tiroir. Pas sous l'oreiller. Dans le tiroir. Fermé. »
+📝 `🛒 RÉVEIL : -12 € (PAYÉ PAR VOUS)`
+💶 `80`
 
-**P4 · La première nuit**
+**P5 · La première nuit**
 🎥 `Yanis sleeping peacefully in bed, zzz.`
 🎬 `bed mode=sleep scene=chambreNuit`
 🎭 `calme · idle`
 🔠 `8 HEURES *DE SOMMEIL*`
 🎙️ **VOIX OFF** : « La première heure, il fixe le plafond. La deuxième, il compte les moutons. Et puis… huit heures d'affilée. Un record depuis la maternelle. »
 
-**P5 · Le réveil**
+**P6 · Le réveil**
 🎥 `Yanis waking up and stretching, sunlight.`
 🎬 `solo scene=chambreJour gest=stretch fx=sparkle shot=med`
 🎭 `sourire · idle`
@@ -480,7 +490,7 @@
 🔊 `boing@1`
 🎙️ **VOIX OFF** : « Au réveil, ses cernes ont presque disparu. Il est en forme. Tellement en forme qu'il fait son lit. Nadia vérifie s'il a de la fièvre. »
 
-**P6 · La course**
+**P7 · La course**
 🎥 `Yanis running fast in the park with Kenzo.`
 🎬 `jog with=KENZO fast=1 duck=1`
 🎭 `determine · idle`
@@ -488,7 +498,7 @@
 🎙️ **VOIX OFF** : « Footing avec Kenzo : cinq kilomètres. Et avec une vraie nuit de sommeil, ses jambes répondent enfin. Le canard du parc n'en revient pas. »
 📝 `🏃 COURSE : 5 KM À 10 KM/H`
 
-**P7 · Kenzo impressionné**
+**P8 · Kenzo impressionné**
 🎥 `Kenzo giving a thumbs-up, Yanis proud.`
 🎬 `duo scene=parc other=KENZO gest=flex ogest=thumbs`
 🎭 `sourire · idle`
@@ -496,7 +506,7 @@
 🎙️ **VOIX OFF** : « À l'arrivée, Kenzo lève le pouce. T'es une machine, frère. Yanis sourit. L'homme qui lui a volé son ex vient de lui faire un compliment. »
 📝 `✅ 5 KM EN 30 MIN`
 
-**P8 · Le shake**
+**P9 · Le shake**
 🎥 `Kenzo offering a protein shake, Yanis drinking.`
 🎬 `duo scene=parc other=KENZO gest=drink prop=bottle ogest=talk`
 🎭 `mefiant · idle`
@@ -504,19 +514,19 @@
 🔊 `scratch@1`
 🎙️ **VOIX OFF** : « Kenzo lui tend un shake. Au fait, tu viens d'où ? Ton visage me dit quelque chose. Yanis boit très, très lentement. »
 
-**P9 · Le soir**
+**P10 · Le soir**
 🎥 `Yanis putting his phone away and going to bed.`
 🎬 `bed mode=sleep scene=chambreNuit`
 🎭 `calme · idle`
 🔠 `ET ON *RECOMMENCE*`
 🎙️ **VOIX OFF** : « Le soir, téléphone au tiroir. Vingt-deux heures trente. Il s'endort en deux minutes. Son corps a enfin compris le programme. »
 
-**P10 · Le vote**
+**P11 · Le vote**
 🎥 `Yanis looking at his skin in the mirror, almost clear.`
 🎬 `solo scene=salleDeBain gest=think shot=wide`
 🎭 `inquiet · idle`
 🔠 `DEMAIN, ON AMÉLIORE *QUOI ?*`
-🎙️ **VOIX OFF** : « Alors demain : on finit le travail sur sa peau… ou on attaque sa barbe ? Écris-le en commentaire ! »
+🎙️ **VOIX OFF** : « Alors demain : on finit le travail sur sa peau… ou on attaque sa barbe ? Écris-le en commentaire ! Il y a quatre-vingts euros dans la cagnotte. Plus que vingt euros, et Yanis va chez le barbier ! Alors un abonnement, un euro. Un like, un euro ! »
 📝 `🅰️ PEAU` / `🅱️ BARBE`
 
 ---
