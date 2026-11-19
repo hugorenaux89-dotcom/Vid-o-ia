@@ -533,7 +533,7 @@
 
 ## Épisode 10 · J-21 · « La peau »
 ⏱️ **1:12** · 📊 `JOUR 10 · VOUS AVEZ CHOISI PEAU`
-📈 `19 · 0`
+📈 `19 · 122`
 
 **P1 · L'accroche**
 🎥 `Before/after split screen: day 1 vs day 10, skin clear.`
@@ -541,7 +541,7 @@
 🎭 `sourire · idle`
 🔠 `JOUR 1 *VS* JOUR 10`
 🔊 `boom`
-🎙️ **VOIX OFF** : « À gauche, le jour un. À droite, aujourd'hui. Et regarde bien sa peau… il n'y a plus un seul bouton ! »
+🎙️ **VOIX OFF** : « À gauche, le jour un. À droite, aujourd'hui. Et regarde bien sa peau… il n'y a plus un seul bouton ! Un abonnement, c'est un euro. Un like, c'est un euro. Pour le glow-up de Yanis ! »
 
 **P2 · Le résultat**
 🎥 `Yanis in the bathroom, washing his face.`
@@ -550,15 +550,25 @@
 🔠 `VOUS AVEZ CHOISI *PEAU*`
 🎙️ **VOIX OFF** : « Jour dix, vous avez choisi : PEAU. Dix jours de routine, d'eau et de sommeil. Il reste quelques traces. Aujourd'hui, on les efface. »
 
-**P3 · Le gommage**
+**P3 · La cagnotte**
+🎥 `Yanis holding his piggy bank, amazed, coins and sparkles.`
+🎬 `solo scene=salleDeBain gest=show prop=piggy fx=sparkle,confetti shot=med`
+🎭 `sourire · idle`
+🔠 `+42 € : ON DÉPASSE *LES 100 €*`
+🔊 `boom`
+🎙️ **VOIX OFF** : « Et la cagnotte explose ! Hier, trente-trois likes et neuf nouveaux abonnés. Quarante-deux euros de plus ! Yanis a maintenant cent vingt-deux euros ! »
+📝 `💰 33 LIKES + 9 ABONNÉS = +42 € · TOTAL : 122 €`
+
+**P4 · Le gommage**
 🎥 `Yanis applying a scrub, sparkles.`
 🎬 `solo scene=salleDeBain gest=cream fx=sparkle`
 🎭 `calme · idle`
 🔠 `GOMMAGE *+ CRÈME SOLAIRE*`
-🎙️ **VOIX OFF** : « Gommage doux, crème hydratante, et crème solaire. Oui, même en hiver. Il ne savait pas que le soleil travaillait aussi en novembre. »
-📝 `✨ GLOW-UP DU JOUR : PEAU NETTE`
+🎙️ **VOIX OFF** : « Avec dix-huit euros de la cagnotte, il s'offre un gommage doux et une crème solaire. Gommage, crème hydratante, et crème solaire. Oui, même en hiver. Il ne savait pas que le soleil travaillait aussi en novembre. »
+📝 `🛒 GOMMAGE + CRÈME SOLAIRE : -18 € (PAYÉ PAR VOUS)`
+💶 `104`
 
-**P4 · Le miroir**
+**P5 · Le miroir**
 🎥 `Yanis looking at his clear skin in the mirror, amazed.`
 🎬 `mirror`
 🎭 `choque · idle`
@@ -566,27 +576,20 @@
 🔊 `boing@1`
 🎙️ **VOIX OFF** : « Il se regarde. Il cherche un bouton. Il n'en trouve aucun. Il cherche encore, par habitude. Rien. Il se fait un clin d'œil. Gênant, mais mérité. »
 
-**P5 · Nadia**
+**P6 · Nadia**
 🎥 `Nadia touching Yanis's cheeks, crying with joy.`
 🎬 `duo scene=cuisine other=NADIA gest=idle ogest=cry oexpr=larmes enter=1 fx=hearts`
 🎭 `sourire · idle`
 🔠 `MAMAN *PLEURE*`
 🎙️ **VOIX OFF** : « Nadia lui prend les joues. Mon fils… tu as la peau de quand tu avais six ans. Puis elle pleure. Comme d'habitude. Mais de joie. »
 
-**P6 · La muscu**
+**P7 · La muscu**
 🎥 `Yanis lifting dumbbells with Kenzo, counting.`
 🎬 `gym ex=curl with=KENZO ogest=clap count=15`
 🎭 `determine · idle`
 🔠 `15 CURLS, *SANS PAUSE*`
 🎙️ **VOIX OFF** : « Muscu avec Kenzo. Quinze curls, sans pause. Il y a dix jours, il soulevait à peine son sac de courses. »
 📝 `🏋️ MUSCU : 15 CURLS · 15 POMPES`
-
-**P7 · Les pompes**
-🎥 `Yanis doing push-ups fast at the gym.`
-🎬 `gym ex=pushup auto=1 with=KENZO ogest=thumbs`
-🎭 `determine · panic`
-🔠 `15 POMPES *D'AFFILÉE*`
-🎙️ **VOIX OFF** : « Et quinze pompes d'affilée. Kenzo filme pour son compte Instagram. Yanis cache son visage. Il ne faut surtout pas que Sarah voie cette vidéo. »
 
 **P8 · La balance**
 🎥 `Yanis on the scale, weight going down.`
@@ -601,14 +604,14 @@
 🎭 `sourire · idle`
 🔠 `SOFIANE *EST JALOUX*`
 🔊 `scratch`
-🎙️ **VOIX OFF** : « Sofiane le regarde en mangeant une part de pizza. C'est quoi ta crème, frérot ? Yanis répond : de l'eau et du sommeil. Sofiane ne le croit pas. »
+🎙️ **VOIX OFF** : « Sofiane le regarde en mangeant une part de pizza. C'est quoi ta crème, frérot ? Yanis répond : de l'eau, du sommeil… et vos likes. Sofiane ne le croit pas. »
 
 **P10 · Le vote**
 🎥 `Yanis smiling, showing his teeth, hesitating.`
 🎬 `solo scene=chambreJour gest=shrug shot=wide`
 🎭 `sourire · idle`
 🔠 `DEMAIN, ON AMÉLIORE *QUOI ?*`
-🎙️ **VOIX OFF** : « Alors demain, qu'est-ce qu'on améliore : des dents bien blanches… ou un parfum qui sent bon ? Écris-le en commentaire ! »
+🎙️ **VOIX OFF** : « Et grâce à vous, l'objectif des cent euros est atteint : le rendez-vous chez le barbier est réservé ! Prochain objectif : cent cinquante euros. Alors demain, qu'est-ce qu'on améliore : des dents bien blanches… ou un parfum qui sent bon ? Écris-le en commentaire ! Un abonnement, un euro. Un like, un euro ! »
 📝 `🅰️ DENTS BLANCHES` / `🅱️ PARFUM`
 
 ---
