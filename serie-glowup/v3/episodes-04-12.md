@@ -618,7 +618,7 @@
 
 ## Épisode 11 · J-20 · « Les dents blanches »
 ⏱️ **1:12** · 📊 `JOUR 11 · VOUS AVEZ CHOISI DENTS BLANCHES`
-📈 `23 · 0`
+📈 `23 · 167`
 
 **P1 · L'accroche**
 🎥 `Yanis smiling, his teeth so white they shine, Sofiane blinded.`
@@ -626,7 +626,7 @@
 🎭 `sourire · idle`
 🔠 `SON SOURIRE *ÉBLOUIT* SON POTE`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Il vient de sourire… et son meilleur pote a dû mettre des lunettes de soleil. On t'explique. »
+🎙️ **VOIX OFF** : « Il vient de sourire… et son meilleur pote a dû mettre des lunettes de soleil. On t'explique. Un abonnement, c'est un euro. Un like, c'est un euro. Pour le glow-up de Yanis ! »
 
 **P2 · Le résultat**
 🎥 `Yanis in the dentist's chair again, determined.`
@@ -635,15 +635,25 @@
 🔠 `VOUS AVEZ CHOISI *DENTS BLANCHES*`
 🎙️ **VOIX OFF** : « Jour onze. Vous avez choisi : DENTS BLANCHES. Retour chez Lina, la dentiste. Cette fois, elle ne recule pas. Elle sourit. »
 
-**P3 · Le blanchiment**
+**P3 · La cagnotte**
+🎥 `Yanis holding his piggy bank, amazed, coins and sparkles.`
+🎬 `solo scene=dentiste gest=show prop=piggy fx=sparkle,confetti shot=med`
+🎭 `sourire · idle`
+🔠 `+63 € : OBJECTIF *150 € ATTEINT*`
+🔊 `boom`
+🎙️ **VOIX OFF** : « Mais avant tout : la cagnotte ! Hier, cinquante-sept likes et six nouveaux abonnés. Soixante-trois euros de plus ! Yanis a cent soixante-sept euros. L'objectif des cent cinquante est atteint ! »
+📝 `💰 57 LIKES + 6 ABONNÉS = +63 € · TOTAL : 167 €`
+
+**P4 · Le blanchiment**
 🎥 `The dentist with a blue light on Yanis's teeth, sparkles.`
 🎬 `chair scene=dentiste pro=LINA tool=dentalMirror gest=thumbs at2=3 expr2=sourire fx=sparkle`
 🎭 `calme · idle`
 🔠 `BLANCHIMENT *EN DOUCEUR*`
-🎙️ **VOIX OFF** : « Blanchiment doux, en trois séances. Une gouttière, une lumière bleue, et quarante minutes à écouter de la musique d'ascenseur. »
-📝 `✨ GLOW-UP DU JOUR : DENTS BLANCHES`
+🎙️ **VOIX OFF** : « Et c'est vous qui payez : cent vingt euros de la cagnotte pour un vrai blanchiment. Blanchiment doux, en trois séances. Une gouttière, une lumière bleue, et quarante minutes à écouter de la musique d'ascenseur. »
+📝 `🛒 BLANCHIMENT : -120 € (PAYÉ PAR VOUS)`
+💶 `47`
 
-**P4 · Le sourire**
+**P5 · Le sourire**
 🎥 `Yanis smiling big in the bathroom mirror, shining teeth.`
 🎬 `solo scene=salleDeBain gest=thumbs fx=sparkle,glow shot=close`
 🎭 `sourire · idle`
@@ -651,7 +661,7 @@
 🔊 `boing@1`
 🎙️ **VOIX OFF** : « Le soir, il se sourit dans le miroir. Ses dents sont blanches. Vraiment blanches. Il sourit tellement qu'il en a mal aux joues. »
 
-**P5 · Le repos**
+**P6 · Le repos**
 🎥 `Yanis walking calmly in the park, smiling at people.`
 🎬 `jog speed=110`
 🎭 `sourire · idle`
@@ -659,20 +669,13 @@
 🎙️ **VOIX OFF** : « Jour de repos. Il se balade et il sourit à tout le monde. Une dame lui sourit en retour. Un chien aussi. Il prend tout. »
 📝 `😴 REPOS : MARCHE + ÉTIREMENTS`
 
-**P6 · Le café**
-🎥 `Yanis refusing a coffee and a soda, drinking water.`
-🎬 `solo scene=cuisine gest=drink prop=bottle`
-🎭 `determine · idle`
-🔠 `ADIEU *CAFÉ ET SODA*`
-🎙️ **VOIX OFF** : « Pour garder ses dents blanches : moins de café, zéro soda. Il boit de l'eau. Beaucoup d'eau. Il connaît maintenant chaque toilette de la ville. »
-
 **P7 · Kenzo**
 🎥 `Yanis reading a message from Kenzo, shocked.`
 🎬 `phone`
 🎭 `choque · phone`
 🔠 `SARAH A VU *LA VIDÉO*`
 🔊 `scratch`
-🎙️ **VOIX OFF** : « Message de Kenzo : Sarah a vu la vidéo des pompes. Elle demande qui c'est, ce mec. Yanis lâche son téléphone. Dans son verre d'eau. »
+🎙️ **VOIX OFF** : « Message de Kenzo : Sarah a vu une vidéo de Yanis à la salle, sur son Instagram. Elle demande qui c'est, ce mec. Yanis lâche son téléphone. Dans son verre d'eau. »
 
 **P8 · La panique**
 🎥 `Yanis panicking in his bedroom, Sofiane trying to calm him.`
@@ -693,7 +696,7 @@
 🎬 `solo scene=salleDeBain gest=think shot=wide`
 🎭 `inquiet · idle`
 🔠 `DEMAIN, ON AMÉLIORE *QUOI ?*`
-🎙️ **VOIX OFF** : « Alors demain, qu'est-ce qu'on améliore : sa barbe pleine de trous… ou ses sourcils qui se touchent ? Dis-le en commentaire ! »
+🎙️ **VOIX OFF** : « Il reste quarante-sept euros dans la cagnotte. Prochain objectif : cent cinquante euros, pour sa première tenue stylée. Alors demain, qu'est-ce qu'on améliore : sa barbe pleine de trous… ou ses sourcils qui se touchent ? Dis-le en commentaire ! Un abonnement, un euro. Un like, un euro ! »
 📝 `🅰️ BARBE` / `🅱️ SOURCILS`
 
 ---
