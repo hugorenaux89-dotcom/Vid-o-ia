@@ -26,7 +26,8 @@ BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 VOIX = "fr-FR-HenriNeural"  # voix française native (pas « Multilingual », qui a un accent anglais)
 # Traitement studio de la voix : coupe les graves parasites, présence, compression, léger écho de pièce
-FILTRE_VOIX = ("highpass=f=90,equalizer=f=200:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.5:g=3,"
+FILTRE_VOIX = ("silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
+               "silenceremove=start_periods=1:start_threshold=-45dB,areverse,highpass=f=90,equalizer=f=200:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.5:g=3,"
                "acompressor=threshold=-20dB:ratio=3.5:attack=5:release=120:makeup=3,"
                "aecho=0.8:0.5:35:0.12")
 CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache_voix")
@@ -149,16 +150,16 @@ def pop(t, duree=0.3):
 
 # Émotions : réglages (débit, hauteur, volume) appliqués phrase par phrase
 TONS = {
-    "neutre":     ("+15%", "+0Hz", "+0%"),
-    "curieux":    ("+12%", "+3Hz", "+0%"),
-    "intrigant":  ("+5%", "-2Hz", "+0%"),
-    "mysterieux": ("-2%", "-5Hz", "-5%"),
-    "suspense":   ("-8%", "-7Hz", "-8%"),
-    "energique":  ("+22%", "+6Hz", "+10%"),
-    "malicieux":  ("+16%", "+5Hz", "+5%"),
-    "emerveille": ("+8%", "+7Hz", "+5%"),
-    "triomphant": ("+16%", "+9Hz", "+15%"),
-    "chaleureux": ("+10%", "+2Hz", "+0%"),
+    "neutre":     ("+25%", "+0Hz", "+0%"),
+    "curieux":    ("+24%", "+3Hz", "+0%"),
+    "intrigant":  ("+18%", "-2Hz", "+0%"),
+    "mysterieux": ("+10%", "-5Hz", "-5%"),
+    "suspense":   ("+4%", "-7Hz", "-8%"),
+    "energique":  ("+30%", "+6Hz", "+10%"),
+    "malicieux":  ("+26%", "+5Hz", "+5%"),
+    "emerveille": ("+20%", "+7Hz", "+5%"),
+    "triomphant": ("+26%", "+9Hz", "+15%"),
+    "chaleureux": ("+22%", "+2Hz", "+0%"),
 }
 
 
@@ -181,6 +182,22 @@ def voix(texte, ton="neutre"):
 
 # ---------- écrans ----------
 
+def punch(img, force, flash=0.0):
+    """Zoom bref (force > 0) et flash blanc (0..1) pour dynamiser les transitions."""
+    if force > 0.002:
+        z = 1 + force
+        big = img.resize((int(W * z), int(H * z)), Image.BILINEAR)
+        l, h = (big.width - W) // 2, (big.height - H) // 2
+        img = big.crop((l, h, l + W, h + H))
+    if flash > 0.01:
+        img = Image.blend(img, Image.new("RGB", (W, H), (255, 255, 255)), min(0.6, flash))
+    return img
+
+
+def decroit(t, duree):
+    return max(0.0, 1 - t / duree) if t >= 0 else 0.0
+
+
 def ecran_texte(ep, ecran, t, secousse=False):
     img = fond(T)
     d = ImageDraw.Draw(img)
@@ -196,7 +213,7 @@ def ecran_texte(ep, ecran, t, secousse=False):
         y = 640
     for text, size, color in ecran["lignes"]:
         y = texte_centre(d, text, y, int(size * pulse), color, dx=dx) + 12
-    return img
+    return punch(img, 0.05 * decroit(t, 0.2))
 
 
 def ecran_question(ep, i, q, t, A, C):
@@ -212,7 +229,7 @@ def ecran_question(ep, i, q, t, A, C):
                             fill=JAUNE if k <= i else GRIS)
 
     revele = t >= A + C
-    apparition = min(1, t / 0.35)
+    apparition = min(1, t / 0.22)
 
     # emoji (gauche) + chrono (droite)
     coller_emoji(img, q["emoji"], 330, 455, 190 * pop(t))
@@ -225,7 +242,7 @@ def ecran_question(ep, i, q, t, A, C):
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=CASE, outline=GRIS, width=12)
         d.arc([cx - r, cy - r, cx + r, cy + r], -90, -90 + 360 * frac, fill=couleur, width=12)
         num = str(max(1, math.ceil(restant)))
-        s = 84 if not urgent else int(84 * (1 + 0.12 * abs(math.sin(t * math.pi * 2))))
+        s = int(84 * (1 + 0.25 * decroit((t - A) % 1, 0.25))) if t >= A else 84  # le chiffre « tape » chaque seconde
         nw = font(s).getlength(num)
         d.text((cx - nw / 2, cy - s * 0.6), num, font=font(s), fill=couleur)
     else:
@@ -260,10 +277,14 @@ def ecran_question(ep, i, q, t, A, C):
         d.text((215 + dx, y + (h - size) / 2 - 6), choix, font=font(size), fill=txt)
 
     if revele and q.get("bonus"):
-        texte_centre(d, q["bonus"], 1375, 46, JAUNE, maxw=900)
+        tb = 46
+        while len(wrap(q["bonus"], tb, 900)) > 2 and tb > 34:
+            tb -= 2  # info bonus longue : on réduit pour tenir en 2 lignes
+        texte_centre(d, q["bonus"], 1380, tb, JAUNE, maxw=900)
     elif not revele and i == 0:
         texte_centre(d, "Mets ta lettre en commentaire !", 1385, 40, (200, 200, 220))
-    return img
+    tr = t - A - C
+    return punch(img, 0.04 * decroit(t, 0.18) + 0.06 * decroit(tr, 0.25), 0.5 * decroit(tr, 0.15))
 
 
 # ---------- timeline ----------
@@ -274,20 +295,20 @@ def construire(ep):
 
     def ecran(e, secousse=False, son="whoosh"):
         v = voix(e["voix"], e.get("ton", "neutre"))
-        dur = max(e.get("min", 2.0), len(v) / SR + 0.45)
-        segs.append((dur, lambda t: ecran_texte(ep, e, t, secousse), [(son, 0)], [(v, 0.1)]))
+        dur = max(e.get("min", 1.4), len(v) / SR + 0.2)
+        segs.append((dur, lambda t: ecran_texte(ep, e, t, secousse), [(son, 0)], [(v, 0.05)]))
 
     ecran(ep["hook"], secousse=True, son="boom")
     ecran(ep["regles"])
     for i, q in enumerate(ep["questions"]):
-        C = q.get("compte", 3)
+        C = q.get("compte", 2 if i < 5 else 3)  # chrono plus court sur les premières questions
         vq = voix(q.get("voix", q["question"]), q.get("ton_question", "curieux"))
         vr = voix(q["voix_reponse"], q.get("ton_reponse", "triomphant"))
-        A = max(1.5, len(vq) / SR + 0.25)
-        R = max(2.8, len(vr) / SR + 0.5)
+        A = max(1.2, len(vq) / SR + 0.1)
+        R = max(1.9, len(vr) / SR + 0.3)
         ev = [("whoosh", 0)] + [("tick", A + s) for s in range(C)] + [("ding", A + C)]
         rendu = (lambda i, q, A, C: lambda t: ecran_question(ep, i, q, t, A, C))(i, q, A, C)
-        segs.append((A + C + R, rendu, ev, [(vq, 0.12), (vr, A + C + 0.15)]))
+        segs.append((A + C + R, rendu, ev, [(vq, 0.05), (vr, A + C + 0.08)]))
         rel = ep.get("relances", {}).get(str(i + 1))
         if rel:
             ecran(rel, son="suspense")
@@ -304,9 +325,10 @@ def mixer(segs):
     tt = np.arange(n) / SR
 
     notes = [55, 55, 65.4, 49]
-    for b in range(int(total / 0.5) + 1):
-        f, s0 = notes[(b // 8) % 4], int(b * 0.5 * SR)
-        x = np.arange(min(int(0.45 * SR), n - s0)) / SR
+    beat = 0.42
+    for b in range(int(total / beat) + 1):
+        f, s0 = notes[(b // 8) % 4], int(b * beat * SR)
+        x = np.arange(min(int(0.4 * SR), n - s0)) / SR
         musique[s0:s0 + len(x)] += 0.18 * np.exp(-x * 7) * np.sin(2 * np.pi * f * 2 * x)
         if b % 2:
             hx = np.arange(min(int(0.05 * SR), n - s0)) / SR

@@ -41,7 +41,7 @@
    ]
   ],
   "voix": "Quatre-vingt-dix-huit pour cent des gens... ratent la dernière question. Et toi, tu vas la trouver ?",
-  "min": 3.0,
+  "min": 2.5,
   "ton": "mysterieux"
  },
  "regles": {
@@ -304,7 +304,7 @@
    ],
    "reponse": 3,
    "bonus": "Environ 730 km, via la Guyane !",
-   "compte": 5,
+   "compte": 4,
    "voix_reponse": "Le Brésil ! Grâce à la Guyane !",
    "ton_question": "suspense",
    "voix": "Avec quel pays la France partage sa plus longue frontière ?",
@@ -379,7 +379,7 @@
    ]
   ],
   "voix": "Alors... t'as eu combien ? Dis-le moi en commentaire, et abonne-toi pour la partie deux !",
-  "min": 5.0,
+  "min": 3.5,
   "ton": "chaleureux"
  }
 }
