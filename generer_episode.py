@@ -6,7 +6,8 @@ Produit deux fichiers :
   - sortie/episode1.mp4               : voix off + musique + effets sonores
   - sortie/episode1_sans_musique.mp4  : voix off + effets (pour ajouter un son tendance dans TikTok)
 
-Voix : voix neuronale française Microsoft (paquet `edge-tts`, gratuit).
+Voix : voix neuronale française native Microsoft « Henri » (paquet `edge-tts`, gratuit).
+Fond : fond animé commun à tous les épisodes (fonction `fond`).
 """
 import asyncio
 import hashlib
@@ -23,8 +24,13 @@ from PIL import Image, ImageDraw, ImageFont
 W, H, FPS, SR = 1080, 1920, 30, 44100
 BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
-VOIX = "fr-FR-RemyMultilingualNeural"
+VOIX = "fr-FR-HenriNeural"  # voix française native (pas « Multilingual », qui a un accent anglais)
 DEBIT = "+15%"
+HAUTEUR = "+0Hz"
+# Traitement studio de la voix : coupe les graves parasites, présence, compression, léger écho de pièce
+FILTRE_VOIX = ("highpass=f=90,equalizer=f=200:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.5:g=3,"
+               "acompressor=threshold=-20dB:ratio=3.5:attack=5:release=120:makeup=3,"
+               "aecho=0.8:0.5:35:0.12")
 CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache_voix")
 
 BG_TOP, BG_BOT = (12, 16, 48), (40, 10, 70)
@@ -59,13 +65,54 @@ def coller_emoji(img, e, cx, cy, size):
     img.paste(em, (int(cx - em.width / 2), int(cy - em.height / 2)), em)
 
 
-def fond():
-    grad = np.linspace(0, 1, H)[:, None]
-    col = (np.array(BG_TOP) * (1 - grad) + np.array(BG_BOT) * grad).astype(np.uint8)
-    return Image.fromarray(np.repeat(col[:, None, :], W, axis=1))
+# ---------- fond animé (identique pour tous les épisodes) ----------
+# Rayons lumineux façon plateau de jeu télé qui tournent lentement, halo central,
+# particules qui montent, vignette, et une carte translucide derrière le contenu.
+
+_FW, _FH = W // 2, H // 2  # calcul en demi-résolution puis agrandi (dégradés doux)
+_yy, _xx = np.mgrid[0:_FH, 0:_FW].astype(np.float32)
+_CX, _CY = _FW / 2, 470 / 2
+_ANG = np.arctan2(_yy - _CY, _xx - _CX)
+_R = np.hypot(_xx - _CX, (_yy - _CY) * 0.9)
+_GRAD = (_yy / _FH)[..., None]
+_BASE = (np.array([14, 8, 52], np.float32) * (1 - _GRAD) + np.array([48, 6, 72], np.float32) * _GRAD)
+_HALO = np.exp(-(_R / 260) ** 2)[..., None] * np.array([110, 60, 230], np.float32)
+_RAYON_ATT = (0.55 * np.exp(-_R / 700))[..., None]
+_VIGNETTE = (1 - 0.55 * np.clip(np.hypot((_xx - _FW / 2) / _FW, (_yy - _FH / 2) / _FH) * 1.6, 0, 1) ** 2)[..., None]
 
 
-FOND = None
+def _carte_masque():
+    m = Image.new("L", (_FW, _FH), 0)
+    ImageDraw.Draw(m).rounded_rectangle([25, 105, _FW - 25, 760], 30, fill=150)
+    return (np.asarray(m, np.float32) / 255)[..., None]
+
+
+_CARTE = _carte_masque()
+_rng = np.random.default_rng(7)
+_PARTICULES = [(_rng.uniform(0, W), _rng.uniform(0, H), _rng.uniform(25, 70), _rng.uniform(2, 6),
+                _rng.uniform(0, 6.28)) for _ in range(45)]
+
+
+def fond(t):
+    """Fond animé au temps t (secondes, temps global de la vidéo)."""
+    rayons = 0.5 + 0.5 * np.cos(12 * _ANG + t * 0.35)
+    rayons = (rayons ** 6)[..., None] * _RAYON_ATT
+    arr = _BASE + _HALO * (0.85 + 0.15 * math.sin(t * 2.2)) + rayons * np.array([170, 120, 255], np.float32)
+    arr *= _VIGNETTE
+    arr = arr * (1 - _CARTE) + np.array([10, 8, 30], np.float32) * _CARTE
+    img = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8)).resize((W, H), Image.BILINEAR)
+    d = ImageDraw.Draw(img)
+    for x, y0, v, r, ph in _PARTICULES:
+        y = (y0 - v * t) % H
+        xx = x + 15 * math.sin(t * 0.8 + ph)
+        b = 0.5 + 0.5 * math.sin(t * 2 + ph)
+        c = (int(120 + 90 * b), int(100 + 70 * b), 255)
+        d.ellipse([xx - r, y - r, xx + r, y + r], fill=c)
+    d.rounded_rectangle([50, 210, W - 50, 1520], 60, outline=(120, 90, 255), width=3)
+    return img
+
+
+T = 0.0  # temps global courant
 
 
 def wrap(text, size, maxw):
@@ -105,15 +152,15 @@ def pop(t, duree=0.3):
 def voix(texte):
     """Renvoie la voix off en numpy float (mono, 44,1 kHz), avec cache."""
     os.makedirs(CACHE, exist_ok=True)
-    h = hashlib.md5(f"{VOIX}|{DEBIT}|{texte}".encode()).hexdigest()
+    h = hashlib.md5(f"{VOIX}|{DEBIT}|{HAUTEUR}|{texte}".encode()).hexdigest()
     mp3 = os.path.join(CACHE, h + ".mp3")
     if not os.path.exists(mp3):
         import certifi
         certifi.where = lambda: os.environ.get("SSL_CERT_FILE", "/root/.ccr/ca-bundle.crt") \
             if os.path.exists("/root/.ccr/ca-bundle.crt") else certifi.__file__.replace("__init__.py", "cacert.pem")
         import edge_tts
-        asyncio.run(edge_tts.Communicate(texte, VOIX, rate=DEBIT).save(mp3))
-    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", mp3, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"],
+        asyncio.run(edge_tts.Communicate(texte, VOIX, rate=DEBIT, pitch=HAUTEUR).save(mp3))
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", mp3, "-af", FILTRE_VOIX, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"],
                          capture_output=True, check=True).stdout
     return np.frombuffer(raw, dtype=np.int16).astype(np.float64) / 32767
 
@@ -121,7 +168,7 @@ def voix(texte):
 # ---------- écrans ----------
 
 def ecran_texte(ep, ecran, t, secousse=False):
-    img = FOND.copy()
+    img = fond(T)
     d = ImageDraw.Draw(img)
     texte_centre(d, ep["titre"], 170, 38, JAUNE)
     dx = 0
@@ -139,7 +186,7 @@ def ecran_texte(ep, ecran, t, secousse=False):
 
 
 def ecran_question(ep, i, q, t, A, C):
-    img = FOND.copy()
+    img = fond(T)
     d = ImageDraw.Draw(img)
     texte_centre(d, ep["titre"], 170, 38, JAUNE)
     n = len(ep["questions"])
@@ -175,7 +222,10 @@ def ecran_question(ep, i, q, t, A, C):
             fs = int(90 * sc)
             d.text((cx - font(fs).getlength("✓") / 2, cy - fs * 0.62), "✓", font=font(fs), fill=BLANC)
 
-    texte_centre(d, q["question"], 590, 62, BLANC, maxw=940)
+    taille = 62
+    while len(wrap(q["question"], taille, 940)) > 3 and taille > 44:
+        taille -= 2  # question longue : on réduit pour tenir en 3 lignes
+    texte_centre(d, q["question"], 590, taille, BLANC, maxw=940)
 
     lettres = "ABCD"
     y0, h, g = 840, 112, 20
@@ -298,8 +348,7 @@ def ecrire_wav(chemin, audio):
 
 
 def main(src, dst):
-    global FOND
-    FOND = fond()
+    global T
     ep = json.load(open(src, encoding="utf-8"))
     segs = construire(ep)
     avec, sans, total = mixer(segs)
@@ -313,9 +362,12 @@ def main(src, dst):
         "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", dst,
     ], stdin=subprocess.PIPE)
+    t_global = 0.0
     for dur, rendu, _, _ in segs:
         for f in range(int(round(dur * FPS))):
+            T = t_global + f / FPS
             ff.stdin.write(rendu(f / FPS).tobytes())
+        t_global += int(round(dur * FPS)) / FPS
     ff.stdin.close()
     ff.wait()
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", dst, "-i", base + "_b.wav", "-map", "0:v",
