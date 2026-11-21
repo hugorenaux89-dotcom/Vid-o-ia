@@ -25,8 +25,6 @@ W, H, FPS, SR = 1080, 1920, 30, 44100
 BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 VOIX = "fr-FR-HenriNeural"  # voix française native (pas « Multilingual », qui a un accent anglais)
-DEBIT = "+15%"
-HAUTEUR = "+0Hz"
 # Traitement studio de la voix : coupe les graves parasites, présence, compression, léger écho de pièce
 FILTRE_VOIX = ("highpass=f=90,equalizer=f=200:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.5:g=3,"
                "acompressor=threshold=-20dB:ratio=3.5:attack=5:release=120:makeup=3,"
@@ -149,17 +147,33 @@ def pop(t, duree=0.3):
 
 # ---------- voix ----------
 
-def voix(texte):
+# Émotions : réglages (débit, hauteur, volume) appliqués phrase par phrase
+TONS = {
+    "neutre":     ("+15%", "+0Hz", "+0%"),
+    "curieux":    ("+12%", "+3Hz", "+0%"),
+    "intrigant":  ("+5%", "-2Hz", "+0%"),
+    "mysterieux": ("-2%", "-5Hz", "-5%"),
+    "suspense":   ("-8%", "-7Hz", "-8%"),
+    "energique":  ("+22%", "+6Hz", "+10%"),
+    "malicieux":  ("+16%", "+5Hz", "+5%"),
+    "emerveille": ("+8%", "+7Hz", "+5%"),
+    "triomphant": ("+16%", "+9Hz", "+15%"),
+    "chaleureux": ("+10%", "+2Hz", "+0%"),
+}
+
+
+def voix(texte, ton="neutre"):
     """Renvoie la voix off en numpy float (mono, 44,1 kHz), avec cache."""
     os.makedirs(CACHE, exist_ok=True)
-    h = hashlib.md5(f"{VOIX}|{DEBIT}|{HAUTEUR}|{texte}".encode()).hexdigest()
+    debit, hauteur, volume = TONS.get(ton, TONS["neutre"])
+    h = hashlib.md5(f"{VOIX}|{debit}|{hauteur}|{volume}|{texte}".encode()).hexdigest()
     mp3 = os.path.join(CACHE, h + ".mp3")
     if not os.path.exists(mp3):
         import certifi
         certifi.where = lambda: os.environ.get("SSL_CERT_FILE", "/root/.ccr/ca-bundle.crt") \
             if os.path.exists("/root/.ccr/ca-bundle.crt") else certifi.__file__.replace("__init__.py", "cacert.pem")
         import edge_tts
-        asyncio.run(edge_tts.Communicate(texte, VOIX, rate=DEBIT, pitch=HAUTEUR).save(mp3))
+        asyncio.run(edge_tts.Communicate(texte, VOIX, rate=debit, pitch=hauteur, volume=volume).save(mp3))
     raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", mp3, "-af", FILTRE_VOIX, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"],
                          capture_output=True, check=True).stdout
     return np.frombuffer(raw, dtype=np.int16).astype(np.float64) / 32767
@@ -259,7 +273,7 @@ def construire(ep):
     segs = []
 
     def ecran(e, secousse=False, son="whoosh"):
-        v = voix(e["voix"])
+        v = voix(e["voix"], e.get("ton", "neutre"))
         dur = max(e.get("min", 2.0), len(v) / SR + 0.45)
         segs.append((dur, lambda t: ecran_texte(ep, e, t, secousse), [(son, 0)], [(v, 0.1)]))
 
@@ -267,8 +281,8 @@ def construire(ep):
     ecran(ep["regles"])
     for i, q in enumerate(ep["questions"]):
         C = q.get("compte", 3)
-        vq = voix(q["voix"] if "voix" in q else q["question"])
-        vr = voix(q["voix_reponse"])
+        vq = voix(q.get("voix", q["question"]), q.get("ton_question", "curieux"))
+        vr = voix(q["voix_reponse"], q.get("ton_reponse", "triomphant"))
         A = max(1.5, len(vq) / SR + 0.25)
         R = max(2.8, len(vr) / SR + 0.5)
         ev = [("whoosh", 0)] + [("tick", A + s) for s in range(C)] + [("ding", A + C)]

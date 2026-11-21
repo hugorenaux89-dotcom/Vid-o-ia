@@ -40,8 +40,9 @@
     ]
    ]
   ],
-  "voix": "98 % des gens ratent la dernière question. Et toi ?",
-  "min": 3.0
+  "voix": "Quatre-vingt-dix-huit pour cent des gens... ratent la dernière question. Et toi ?",
+  "min": 3.0,
+  "ton": "mysterieux"
  },
  "regles": {
   "emoji": "📝",
@@ -74,7 +75,8 @@
     ]
    ]
   ],
-  "voix": "Compte tes points. C'est parti !"
+  "voix": "Compte tes points... C'est parti !",
+  "ton": "energique"
  },
  "relances": {
   "5": {
@@ -108,7 +110,8 @@
      ]
     ]
    ],
-   "voix": "5 sur 5 ? Top 20 % ! Mais là, ça se corse."
+   "voix": "Cinq sur cinq ? Tu es dans le top vingt pour cent ! Mais là... ça se corse.",
+   "ton": "malicieux"
   },
   "9": {
    "emoji": "😱",
@@ -141,7 +144,8 @@
      ]
     ]
    ],
-   "voix": "Dernière question. Presque personne ne la trouve."
+   "voix": "Dernière question... Presque personne ne la trouve.",
+   "ton": "suspense"
   }
  },
  "questions": [
@@ -156,7 +160,10 @@
    ],
    "reponse": 2,
    "bonus": "Pas Sydney ! Canberra a été construite pour départager Sydney et Melbourne.",
-   "voix_reponse": "Canberra ! Pas Sydney !"
+   "voix_reponse": "Canberra ! Eh non... pas Sydney !",
+   "ton_question": "curieux",
+   "voix": "Quelle est la capitale de l'Australie ?",
+   "ton_reponse": "malicieux"
   },
   {
    "emoji": "🐙",
@@ -169,7 +176,10 @@
    ],
    "reponse": 2,
    "bonus": "Et son sang est bleu !",
-   "voix_reponse": "Trois ! Et son sang est bleu."
+   "voix_reponse": "Trois ! Et en plus... son sang est bleu.",
+   "ton_question": "curieux",
+   "voix": "Combien de cœurs a une pieuvre ?",
+   "ton_reponse": "emerveille"
   },
   {
    "emoji": "🪽",
@@ -182,7 +192,10 @@
    ],
    "reponse": 1,
    "bonus": "L'écureuil volant ne fait que planer !",
-   "voix_reponse": "La chauve-souris ! L'écureuil, lui, plane."
+   "voix_reponse": "La chauve-souris ! L'écureuil volant, lui... il plane.",
+   "ton_question": "intrigant",
+   "voix": "Quel est le seul mammifère capable de vraiment voler ?",
+   "ton_reponse": "malicieux"
   },
   {
    "emoji": "🦴",
@@ -195,7 +208,10 @@
    ],
    "reponse": 1,
    "bonus": "Un bébé en a près de 300, qui fusionnent en grandissant.",
-   "voix_reponse": "206 os !"
+   "voix_reponse": "Deux cent six !",
+   "ton_question": "curieux",
+   "voix": "Combien d'os possède un adulte ?",
+   "ton_reponse": "triomphant"
   },
   {
    "emoji": "🕐",
@@ -208,7 +224,10 @@
    ],
    "reponse": 3,
    "bonus": "12 fuseaux horaires grâce à l'outre-mer !",
-   "voix_reponse": "La France ! Grâce à l'outre-mer."
+   "voix_reponse": "La France ! Grâce à l'outre-mer.",
+   "ton_question": "intrigant",
+   "voix": "Quel pays a le plus de fuseaux horaires ?",
+   "ton_reponse": "triomphant"
   },
   {
    "emoji": "🔥",
@@ -221,7 +240,10 @@
    ],
    "reponse": 1,
    "bonus": "Près de 465 °C, à cause de son effet de serre géant.",
-   "voix_reponse": "Vénus ! Pas Mercure !"
+   "voix_reponse": "Vénus ! Pas Mercure !",
+   "ton_question": "intrigant",
+   "voix": "Quelle est la planète la plus chaude du système solaire ?",
+   "ton_reponse": "malicieux"
   },
   {
    "emoji": "☀️",
@@ -234,7 +256,10 @@
    ],
    "reponse": 1,
    "bonus": "Tu vois donc le Soleil tel qu'il était il y a 8 minutes !",
-   "voix_reponse": "8 minutes !"
+   "voix_reponse": "Huit minutes !",
+   "ton_question": "curieux",
+   "voix": "Combien de temps met la lumière du Soleil pour arriver sur Terre ?",
+   "ton_reponse": "emerveille"
   },
   {
    "emoji": "🌊",
@@ -247,7 +272,10 @@
    ],
    "reponse": 2,
    "bonus": "Plus de 1 000 km, entièrement en France.",
-   "voix_reponse": "La Loire !"
+   "voix_reponse": "La Loire !",
+   "ton_question": "curieux",
+   "voix": "Quel est le plus long fleuve de France ?",
+   "ton_reponse": "triomphant"
   },
   {
    "emoji": "🔍",
@@ -260,7 +288,10 @@
    ],
    "reponse": 1,
    "bonus": "Même au microscope, on a du mal à les différencier !",
-   "voix_reponse": "Le koala ! Incroyable."
+   "voix_reponse": "Le koala ! Incroyable, non ?",
+   "ton_question": "mysterieux",
+   "voix": "Quel animal a des empreintes digitales presque identiques aux nôtres ?",
+   "ton_reponse": "emerveille"
   },
   {
    "emoji": "🗺️",
@@ -274,7 +305,10 @@
    "reponse": 3,
    "bonus": "Environ 730 km, via la Guyane !",
    "compte": 5,
-   "voix_reponse": "Le Brésil ! Grâce à la Guyane."
+   "voix_reponse": "Le Brésil ! Grâce à la Guyane.",
+   "ton_question": "suspense",
+   "voix": "Avec quel pays la France a-t-elle sa plus longue frontière terrestre ?",
+   "ton_reponse": "triomphant"
   }
  ],
  "fin": {
@@ -344,7 +378,8 @@
     ]
    ]
   ],
-  "voix": "Ton score ? Écris-le en commentaire, et abonne-toi pour la partie 2 !",
-  "min": 5.0
+  "voix": "Alors... ton score ? Écris-le en commentaire, et abonne-toi pour la partie deux !",
+  "min": 5.0,
+  "ton": "chaleureux"
  }
 }
