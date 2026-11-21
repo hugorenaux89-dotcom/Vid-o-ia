@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 28",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🫘",
+   "question": "Quel est l'ingrédient principal du houmous ?",
+   "choix": [
+    "La lentille",
+    "Le pois chiche",
+    "Le haricot",
+    "La fève"
+   ],
+   "reponse": 1,
+   "bonus": "Mixé avec de la crème de sésame.",
+   "voix_reponse": "Le pois chiche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦉",
+   "question": "À quel moment le hibou chasse-t-il ?",
+   "choix": [
+    "Le matin",
+    "La nuit",
+    "À midi",
+    "Jamais"
+   ],
+   "reponse": 1,
+   "bonus": "Il voit et entend très bien dans le noir !",
+   "voix_reponse": "La nuit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇧🇷",
+   "question": "Quel est le plus grand pays d'Amérique du Sud ?",
+   "choix": [
+    "L'Argentine",
+    "Le Brésil",
+    "Le Pérou",
+    "La Colombie"
+   ],
+   "reponse": 1,
+   "bonus": "Presque la moitié du continent !",
+   "voix_reponse": "Le Brésil !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎭",
+   "question": "Qui a écrit Le Malade imaginaire ?",
+   "choix": [
+    "Racine",
+    "Molière",
+    "Corneille",
+    "Voltaire"
+   ],
+   "reponse": 1,
+   "bonus": "Molière est mort après une représentation de cette pièce !",
+   "voix_reponse": "Molière !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💪",
+   "question": "Combien de muscles a le corps humain, environ ?",
+   "choix": [
+    "200",
+    "400",
+    "Plus de 600",
+    "Plus de 2 000"
+   ],
+   "reponse": 2,
+   "bonus": "Environ 40 % de ton poids !",
+   "voix_reponse": "Plus de six cents !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚄",
+   "question": "Que signifie TGV ?",
+   "choix": [
+    "Train Grand Voyage",
+    "Train à Grande Vitesse",
+    "Transport Général Voyageurs",
+    "Train Gare Ville"
+   ],
+   "reponse": 1,
+   "bonus": "Mis en service en 1981.",
+   "voix_reponse": "Train à Grande Vitesse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌑",
+   "question": "Comment s'appelle le phénomène où la Lune cache le Soleil ?",
+   "choix": [
+    "Une éclipse lunaire",
+    "Une éclipse solaire",
+    "Un solstice",
+    "Un équinoxe"
+   ],
+   "reponse": 1,
+   "bonus": "Une éclipse totale dure au maximum environ 7 minutes.",
+   "voix_reponse": "Une éclipse solaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐍",
+   "question": "Quel serpent terrestre est le plus venimeux au monde ?",
+   "choix": [
+    "Le cobra royal",
+    "Le taïpan du désert",
+    "La vipère",
+    "Le mamba noir"
+   ],
+   "reponse": 1,
+   "bonus": "Il vit en Australie, mais il est très timide !",
+   "voix_reponse": "Le taïpan du désert !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎥",
+   "question": "Qui a inventé le cinématographe ?",
+   "choix": [
+    "Thomas Edison",
+    "Les frères Lumière",
+    "Georges Méliès",
+    "Charlie Chaplin"
+   ],
+   "reponse": 1,
+   "bonus": "Première projection publique en 1895, à Paris !",
+   "voix_reponse": "Les frères Lumière !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😵",
+   "question": "Combien de temps un cafard peut-il vivre sans sa tête ?",
+   "choix": [
+    "Quelques secondes",
+    "Une heure",
+    "Environ une semaine",
+    "Un an"
+   ],
+   "reponse": 2,
+   "bonus": "Il finit par mourir... de soif !",
+   "voix_reponse": "Environ une semaine !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

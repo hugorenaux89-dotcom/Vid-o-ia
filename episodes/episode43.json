@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 43",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍪",
+   "question": "Dans quel pays a été inventé le cookie aux pépites de chocolat ?",
+   "choix": [
+    "La France",
+    "Les États-Unis",
+    "Le Royaume-Uni",
+    "La Belgique"
+   ],
+   "reponse": 1,
+   "bonus": "Inventé dans les années 1930 !",
+   "voix_reponse": "Les États-Unis !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐘",
+   "question": "Quel animal a les plus grandes oreilles du monde ?",
+   "choix": [
+    "Le lapin",
+    "L'éléphant d'Afrique",
+    "Le fennec",
+    "La chauve-souris"
+   ],
+   "reponse": 1,
+   "bonus": "Elles l'aident aussi à se rafraîchir !",
+   "voix_reponse": "L'éléphant d'Afrique !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇸🇳",
+   "question": "Quelle est la capitale du Sénégal ?",
+   "choix": [
+    "Saint-Louis",
+    "Dakar",
+    "Bamako",
+    "Abidjan"
+   ],
+   "reponse": 1,
+   "bonus": "Bamako, c'est le Mali !",
+   "voix_reponse": "Dakar !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Quelle forme a un ballon de rugby ?",
+   "choix": [
+    "Ronde",
+    "Ovale",
+    "Carrée",
+    "Triangulaire"
+   ],
+   "reponse": 1,
+   "bonus": "D'où le surnom du rugby : le ballon ovale !",
+   "voix_reponse": "Ovale !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quelle cité grecque était célèbre pour ses guerriers ?",
+   "choix": [
+    "Athènes",
+    "Sparte",
+    "Corinthe",
+    "Delphes"
+   ],
+   "reponse": 1,
+   "bonus": "Les Spartiates étaient entraînés dès l'enfance !",
+   "voix_reponse": "Sparte !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪨",
+   "question": "Quelle roche se forme quand la lave refroidit ?",
+   "choix": [
+    "Le calcaire",
+    "Le basalte",
+    "Le marbre",
+    "Le grès"
+   ],
+   "reponse": 1,
+   "bonus": "C'est la roche la plus fréquente sous les océans !",
+   "voix_reponse": "Le basalte !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦀",
+   "question": "Comment s'appelle le moment où un crabe change de carapace ?",
+   "choix": [
+    "La mue",
+    "L'éclosion",
+    "La ponte",
+    "L'hibernation"
+   ],
+   "reponse": 0,
+   "bonus": "Il est très vulnérable pendant ce temps-là !",
+   "voix_reponse": "La mue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔴",
+   "question": "Quelle planète a une immense tempête appelée la Grande Tache rouge ?",
+   "choix": [
+    "Mars",
+    "Jupiter",
+    "Saturne",
+    "Vénus"
+   ],
+   "reponse": 1,
+   "bonus": "Une tempête plus grande que la Terre !",
+   "voix_reponse": "Jupiter !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "Qui a découvert les groupes sanguins ?",
+   "choix": [
+    "Louis Pasteur",
+    "Karl Landsteiner",
+    "Robert Koch",
+    "Edward Jenner"
+   ],
+   "reponse": 1,
+   "bonus": "C'était en 1901, il a reçu le prix Nobel !",
+   "voix_reponse": "Karl Landsteiner !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Quelle part de ton cerveau utilises-tu vraiment ?",
+   "choix": [
+    "10 %",
+    "50 %",
+    "Presque 100 %",
+    "1 %"
+   ],
+   "reponse": 2,
+   "bonus": "Les 10 %, c'est un mythe !",
+   "voix_reponse": "Presque cent pour cent ! Les dix pour cent, c'est un mythe.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

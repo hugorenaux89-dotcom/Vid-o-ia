@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 48",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍦",
+   "question": "De quel pays vient la glace appelée gelato ?",
+   "choix": [
+    "La France",
+    "L'Italie",
+    "La Grèce",
+    "L'Espagne"
+   ],
+   "reponse": 1,
+   "bonus": "« Gelato » veut dire glace en italien !",
+   "voix_reponse": "L'Italie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐅",
+   "question": "Quel est le plus grand félin du monde ?",
+   "choix": [
+    "Le lion",
+    "Le tigre",
+    "Le jaguar",
+    "Le léopard"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut dépasser 300 kg !",
+   "voix_reponse": "Le tigre ! Pas le lion.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🇫🇮",
+   "question": "Quelle est la capitale de la Finlande ?",
+   "choix": [
+    "Oslo",
+    "Helsinki",
+    "Tallinn",
+    "Riga"
+   ],
+   "reponse": 1,
+   "bonus": "Tallinn, c'est l'Estonie, juste en face !",
+   "voix_reponse": "Helsinki !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏃",
+   "question": "Qui détient le record du monde du 100 mètres ?",
+   "choix": [
+    "Carl Lewis",
+    "Usain Bolt",
+    "Tyson Gay",
+    "Yohan Blake"
+   ],
+   "reponse": 1,
+   "bonus": "9 secondes 58, depuis 2009 !",
+   "voix_reponse": "Usain Bolt !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫀",
+   "question": "Combien de litres de sang ton cœur pompe-t-il par jour ?",
+   "choix": [
+    "70 litres",
+    "700 litres",
+    "Environ 7 000 litres",
+    "70 000 litres"
+   ],
+   "reponse": 2,
+   "bonus": "De quoi remplir une petite piscine !",
+   "voix_reponse": "Environ sept mille litres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📜",
+   "question": "Quel roi a signé l'édit de Nantes ?",
+   "choix": [
+    "François Ier",
+    "Henri IV",
+    "Louis XIV",
+    "Charles IX"
+   ],
+   "reponse": 1,
+   "bonus": "En 1598, pour la paix entre catholiques et protestants.",
+   "voix_reponse": "Henri quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel océan borde la côte ouest de la France ?",
+   "choix": [
+    "La Méditerranée",
+    "L'Atlantique",
+    "La mer du Nord",
+    "Le Pacifique"
+   ],
+   "reponse": 1,
+   "bonus": "De la Bretagne au Pays basque !",
+   "voix_reponse": "L'Atlantique !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐙",
+   "question": "Combien de bras a une pieuvre ?",
+   "choix": [
+    "6",
+    "8",
+    "10",
+    "12"
+   ],
+   "reponse": 1,
+   "bonus": "Le calmar, lui, a 8 bras et 2 tentacules !",
+   "voix_reponse": "Huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💡",
+   "question": "Quelle est la vitesse de la lumière, environ ?",
+   "choix": [
+    "300 km/s",
+    "3 000 km/s",
+    "300 000 km/s",
+    "3 millions de km/s"
+   ],
+   "reponse": 2,
+   "bonus": "Rien ne va plus vite dans l'univers !",
+   "voix_reponse": "Trois cent mille kilomètres par seconde !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌲",
+   "question": "Quel pays a un cèdre sur son drapeau ?",
+   "choix": [
+    "La Syrie",
+    "Le Liban",
+    "La Jordanie",
+    "Chypre"
+   ],
+   "reponse": 1,
+   "bonus": "Le cèdre est le symbole du pays !",
+   "voix_reponse": "Le Liban !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

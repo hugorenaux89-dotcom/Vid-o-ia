@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 38",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍝",
+   "question": "Quelles pâtes ont la forme d'un papillon ?",
+   "choix": [
+    "Les penne",
+    "Les farfalle",
+    "Les fusilli",
+    "Les rigatoni"
+   ],
+   "reponse": 1,
+   "bonus": "« Farfalla » veut dire papillon en italien !",
+   "voix_reponse": "Les farfalle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐳",
+   "question": "La baleine est un...",
+   "choix": [
+    "Poisson",
+    "Mammifère",
+    "Reptile",
+    "Crustacé"
+   ],
+   "reponse": 1,
+   "bonus": "Elle allaite ses petits !",
+   "voix_reponse": "Un mammifère !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇵🇪",
+   "question": "Lima est la capitale de quel pays ?",
+   "choix": [
+    "La Bolivie",
+    "Le Pérou",
+    "L'Équateur",
+    "Le Chili"
+   ],
+   "reponse": 1,
+   "bonus": "Fondée en 1535.",
+   "voix_reponse": "Le Pérou !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⏱️",
+   "question": "Combien de minutes y a-t-il dans une journée ?",
+   "choix": [
+    "1 240",
+    "1 440",
+    "1 640",
+    "2 400"
+   ],
+   "reponse": 1,
+   "bonus": "24 fois 60 !",
+   "voix_reponse": "Mille quatre cent quarante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👂",
+   "question": "Où se trouve le plus petit muscle du corps humain ?",
+   "choix": [
+    "Dans le doigt",
+    "Dans l'oreille",
+    "Dans la paupière",
+    "Dans le nez"
+   ],
+   "reponse": 1,
+   "bonus": "Le muscle de l'étrier, à peine 1 mm !",
+   "voix_reponse": "Dans l'oreille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎭",
+   "question": "Quel pharaon est célèbre pour son masque funéraire en or ?",
+   "choix": [
+    "Ramsès II",
+    "Toutânkhamon",
+    "Khéops",
+    "Akhenaton"
+   ],
+   "reponse": 1,
+   "bonus": "Son tombeau a été découvert en 1922.",
+   "voix_reponse": "Toutânkhamon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☄️",
+   "question": "Quelle comète célèbre revient tous les 76 ans environ ?",
+   "choix": [
+    "Hale-Bopp",
+    "Halley",
+    "Encke",
+    "Swift-Tuttle"
+   ],
+   "reponse": 1,
+   "bonus": "Prochain passage prévu en 2061 !",
+   "voix_reponse": "La comète de Halley !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥚",
+   "question": "Quel oiseau pond l'œuf le plus gros ?",
+   "choix": [
+    "L'aigle",
+    "L'autruche",
+    "Le cygne",
+    "Le pélican"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 1,5 kg, l'équivalent de 24 œufs de poule !",
+   "voix_reponse": "L'autruche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥧",
+   "question": "Combien vaut le nombre Pi, environ ?",
+   "choix": [
+    "2,14",
+    "3,14",
+    "4,13",
+    "1,61"
+   ],
+   "reponse": 1,
+   "bonus": "Avec une infinité de décimales !",
+   "voix_reponse": "Trois virgule quatorze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏙️",
+   "question": "Quel est le pays le plus densément peuplé du monde ?",
+   "choix": [
+    "L'Inde",
+    "Monaco",
+    "Le Bangladesh",
+    "Singapour"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 18 000 habitants au km² !",
+   "voix_reponse": "Monaco !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

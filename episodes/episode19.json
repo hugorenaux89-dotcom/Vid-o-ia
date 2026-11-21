@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 19",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🧀",
+   "question": "De quelle région vient le camembert ?",
+   "choix": [
+    "La Bretagne",
+    "La Normandie",
+    "L'Alsace",
+    "La Savoie"
+   ],
+   "reponse": 1,
+   "bonus": "Du village de Camembert, dans l'Orne.",
+   "voix_reponse": "La Normandie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐱",
+   "question": "Combien d'heures un chat dort-il par jour, en moyenne ?",
+   "choix": [
+    "4 heures",
+    "8 heures",
+    "15 heures",
+    "22 heures"
+   ],
+   "reponse": 2,
+   "bonus": "Entre 12 et 16 heures par jour !",
+   "voix_reponse": "Environ quinze heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💷",
+   "question": "Quelle est la monnaie du Royaume-Uni ?",
+   "choix": [
+    "L'euro",
+    "La livre sterling",
+    "Le dollar",
+    "Le franc"
+   ],
+   "reponse": 1,
+   "bonus": "Le pays n'a jamais adopté l'euro.",
+   "voix_reponse": "La livre sterling !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌐",
+   "question": "Quel pays est traversé par l'équateur et le tropique du Capricorne ?",
+   "choix": [
+    "Le Brésil",
+    "L'Inde",
+    "Le Mexique",
+    "L'Égypte"
+   ],
+   "reponse": 0,
+   "bonus": "C'est le seul pays dans ce cas !",
+   "voix_reponse": "Le Brésil !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎨",
+   "question": "Qui a peint le plafond de la chapelle Sixtine ?",
+   "choix": [
+    "Léonard de Vinci",
+    "Michel-Ange",
+    "Raphaël",
+    "Le Caravage"
+   ],
+   "reponse": 1,
+   "bonus": "Quatre ans de travail, perché sur un échafaudage !",
+   "voix_reponse": "Michel-Ange !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌬️",
+   "question": "Quel gaz compose la majorité de l'air ?",
+   "choix": [
+    "L'oxygène",
+    "L'azote",
+    "Le CO2",
+    "L'hydrogène"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 78 %, contre 21 % d'oxygène !",
+   "voix_reponse": "L'azote ! Pas l'oxygène.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🐞",
+   "question": "Combien de pattes a une coccinelle ?",
+   "choix": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "C'est un insecte, donc six pattes !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la plus grande île du monde ?",
+   "choix": [
+    "L'Australie",
+    "Le Groenland",
+    "Madagascar",
+    "Bornéo"
+   ],
+   "reponse": 1,
+   "bonus": "L'Australie est considérée comme un continent.",
+   "voix_reponse": "Le Groenland !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧱",
+   "question": "En quelle année est tombé le mur de Berlin ?",
+   "choix": [
+    "1979",
+    "1989",
+    "1991",
+    "1999"
+   ],
+   "reponse": 1,
+   "bonus": "Le 9 novembre 1989.",
+   "voix_reponse": "Mille neuf cent quatre-vingt-neuf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦑",
+   "question": "Quel animal a les plus gros yeux du monde ?",
+   "choix": [
+    "La baleine bleue",
+    "Le calmar colossal",
+    "L'autruche",
+    "Le grand-duc"
+   ],
+   "reponse": 1,
+   "bonus": "Un œil grand comme un ballon de foot !",
+   "voix_reponse": "Le calmar colossal !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

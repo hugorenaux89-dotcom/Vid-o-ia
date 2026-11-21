@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 40",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍽️",
+   "question": "Quelle ville est surnommée la capitale de la gastronomie ?",
+   "choix": [
+    "Marseille",
+    "Lyon",
+    "Bordeaux",
+    "Lille"
+   ],
+   "reponse": 1,
+   "bonus": "Célèbre pour ses bouchons lyonnais !",
+   "voix_reponse": "Lyon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐔",
+   "question": "Combien d'œufs une poule pondeuse pond-elle par an ?",
+   "choix": [
+    "30",
+    "Environ 300",
+    "1 000",
+    "3 000"
+   ],
+   "reponse": 1,
+   "bonus": "Presque un œuf par jour !",
+   "voix_reponse": "Environ trois cents !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Comment appelle-t-on la montée et la descente de la mer ?",
+   "choix": [
+    "La houle",
+    "La marée",
+    "Le courant",
+    "La vague"
+   ],
+   "reponse": 1,
+   "bonus": "Causée par l'attraction de la Lune !",
+   "voix_reponse": "La marée !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📚",
+   "question": "Qui a écrit Vingt Mille Lieues sous les mers ?",
+   "choix": [
+    "Victor Hugo",
+    "Jules Verne",
+    "Alexandre Dumas",
+    "Hergé"
+   ],
+   "reponse": 1,
+   "bonus": "Avec le célèbre capitaine Nemo !",
+   "voix_reponse": "Jules Verne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👣",
+   "question": "Combien d'os y a-t-il dans un pied ?",
+   "choix": [
+    "16",
+    "26",
+    "36",
+    "46"
+   ],
+   "reponse": 1,
+   "bonus": "Tes deux pieds réunis en ont donc 52 !",
+   "voix_reponse": "Vingt-six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛡️",
+   "question": "Qui était Vercingétorix ?",
+   "choix": [
+    "Un roi franc",
+    "Un chef gaulois",
+    "Un empereur romain",
+    "Un pharaon"
+   ],
+   "reponse": 1,
+   "bonus": "Vaincu par Jules César à Alésia, en 52 avant J.-C.",
+   "voix_reponse": "Un chef gaulois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "Quelle est la grande galaxie la plus proche de la nôtre ?",
+   "choix": [
+    "Andromède",
+    "Le Sombrero",
+    "Le Tourbillon",
+    "Orion"
+   ],
+   "reponse": 0,
+   "bonus": "À environ 2,5 millions d'années-lumière !",
+   "voix_reponse": "Andromède !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦎",
+   "question": "Quel animal peut bouger ses deux yeux indépendamment ?",
+   "choix": [
+    "Le caméléon",
+    "Le chat",
+    "Le cheval",
+    "Le chien"
+   ],
+   "reponse": 0,
+   "bonus": "Il peut regarder devant et derrière en même temps !",
+   "voix_reponse": "Le caméléon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎈",
+   "question": "Quel gaz rend la voix aiguë quand on l'inspire ?",
+   "choix": [
+    "L'oxygène",
+    "L'hélium",
+    "L'azote",
+    "Le néon"
+   ],
+   "reponse": 1,
+   "bonus": "Le son va plus vite dans ce gaz léger !",
+   "voix_reponse": "L'hélium !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗣️",
+   "question": "Combien de langues parle-t-on dans le monde, environ ?",
+   "choix": [
+    "70",
+    "700",
+    "7 000",
+    "70 000"
+   ],
+   "reponse": 2,
+   "bonus": "Dont près de la moitié sont menacées !",
+   "voix_reponse": "Environ sept mille !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

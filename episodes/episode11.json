@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 11",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌮",
+   "question": "De quel pays viennent les tacos ?",
+   "choix": [
+    "L'Espagne",
+    "Le Mexique",
+    "Le Pérou",
+    "Les États-Unis"
+   ],
+   "reponse": 1,
+   "bonus": "Un plat traditionnel mexicain.",
+   "voix_reponse": "Le Mexique !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦓",
+   "question": "De quelle couleur est la peau d'un zèbre sous ses poils ?",
+   "choix": [
+    "Blanche",
+    "Noire",
+    "Grise",
+    "Rose"
+   ],
+   "reponse": 1,
+   "bonus": "Sous ses rayures, sa peau est noire !",
+   "voix_reponse": "Noire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔭",
+   "question": "Quelle planète est la plus proche du Soleil ?",
+   "choix": [
+    "Vénus",
+    "Mercure",
+    "Mars",
+    "La Terre"
+   ],
+   "reponse": 1,
+   "bonus": "Une année y dure seulement 88 jours !",
+   "voix_reponse": "Mercure !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏅",
+   "question": "Tous les combien d'années ont lieu les JO d'été ?",
+   "choix": [
+    "2 ans",
+    "3 ans",
+    "4 ans",
+    "5 ans"
+   ],
+   "reponse": 2,
+   "bonus": "Avec les JO d'hiver deux ans plus tard.",
+   "voix_reponse": "Tous les quatre ans !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌲",
+   "question": "Quel est l'arbre le plus haut du monde ?",
+   "choix": [
+    "Le chêne",
+    "Le séquoia",
+    "Le baobab",
+    "L'eucalyptus"
+   ],
+   "reponse": 1,
+   "bonus": "Le record : plus de 115 mètres !",
+   "voix_reponse": "Le séquoia !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫘",
+   "question": "Quel organe filtre le sang pour fabriquer l'urine ?",
+   "choix": [
+    "Le foie",
+    "Les reins",
+    "La rate",
+    "Le pancréas"
+   ],
+   "reponse": 1,
+   "bonus": "Ils filtrent environ 180 litres de sang par jour !",
+   "voix_reponse": "Les reins !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖋️",
+   "question": "Qui a écrit Les Misérables ?",
+   "choix": [
+    "Émile Zola",
+    "Victor Hugo",
+    "Balzac",
+    "Flaubert"
+   ],
+   "reponse": 1,
+   "bonus": "Publié en 1862.",
+   "voix_reponse": "Victor Hugo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌅",
+   "question": "De quel côté le Soleil se couche-t-il ?",
+   "choix": [
+    "Au nord",
+    "À l'est",
+    "Au sud",
+    "À l'ouest"
+   ],
+   "reponse": 3,
+   "bonus": "Il se lève à l'est.",
+   "voix_reponse": "À l'ouest !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔬",
+   "question": "Quel minuscule animal peut survivre dans l'espace ?",
+   "choix": [
+    "Le cafard",
+    "Le tardigrade",
+    "La fourmi",
+    "Le scorpion"
+   ],
+   "reponse": 1,
+   "bonus": "Il résiste au vide, au froid et aux radiations !",
+   "voix_reponse": "Le tardigrade !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛶",
+   "question": "Quel pays possède le plus de lacs au monde ?",
+   "choix": [
+    "La Russie",
+    "La Finlande",
+    "Le Canada",
+    "Les États-Unis"
+   ],
+   "reponse": 2,
+   "bonus": "Plus de la moitié des lacs du monde !",
+   "voix_reponse": "Le Canada ! Pas la Finlande.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

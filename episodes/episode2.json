@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 2",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🗼",
+   "question": "Combien de mètres mesure environ la tour Eiffel ?",
+   "choix": [
+    "130 m",
+    "230 m",
+    "330 m",
+    "430 m"
+   ],
+   "reponse": 2,
+   "bonus": "Elle grandit d'environ 15 cm en été, à cause de la chaleur !",
+   "voix_reponse": "Environ trois cent trente mètres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐝",
+   "question": "Combien de pattes a un insecte ?",
+   "choix": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "Huit, c'est l'araignée : ce n'est pas un insecte !",
+   "voix_reponse": "Six ! Huit, c'est l'araignée.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quel est le plus grand pays du monde ?",
+   "choix": [
+    "Le Canada",
+    "La Chine",
+    "La Russie",
+    "Les États-Unis"
+   ],
+   "reponse": 2,
+   "bonus": "Plus de 17 millions de km² !",
+   "voix_reponse": "La Russie ! Elle est énorme.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎨",
+   "question": "Qui a peint La Joconde ?",
+   "choix": [
+    "Michel-Ange",
+    "Raphaël",
+    "Léonard de Vinci",
+    "Botticelli"
+   ],
+   "reponse": 2,
+   "bonus": "Elle est exposée au Louvre, à Paris.",
+   "voix_reponse": "Léonard de Vinci ! Elle est au Louvre.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💧",
+   "question": "Quelle est la formule chimique de l'eau ?",
+   "choix": [
+    "CO2",
+    "H2O",
+    "O2",
+    "NaCl"
+   ],
+   "reponse": 1,
+   "bonus": "Deux atomes d'hydrogène et un atome d'oxygène.",
+   "voix_reponse": "H deux O !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚖️",
+   "question": "Quel est l'animal terrestre le plus lourd ?",
+   "choix": [
+    "L'hippopotame",
+    "Le rhinocéros",
+    "L'éléphant d'Afrique",
+    "La girafe"
+   ],
+   "reponse": 2,
+   "bonus": "Il peut dépasser 6 tonnes !",
+   "voix_reponse": "L'éléphant d'Afrique ! Plus de six tonnes.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌙",
+   "question": "Combien de temps met la Lune pour faire le tour de la Terre ?",
+   "choix": [
+    "Environ 7 jours",
+    "Environ 27 jours",
+    "Environ 60 jours",
+    "Environ 365 jours"
+   ],
+   "reponse": 1,
+   "bonus": "27,3 jours exactement pour un tour complet.",
+   "voix_reponse": "Environ vingt-sept jours !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎹",
+   "question": "Combien de touches a un piano classique ?",
+   "choix": [
+    "66",
+    "76",
+    "88",
+    "98"
+   ],
+   "reponse": 2,
+   "bonus": "52 touches blanches et 36 noires.",
+   "voix_reponse": "Quatre-vingt-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦵",
+   "question": "Quel est l'os le plus long du corps humain ?",
+   "choix": [
+    "L'humérus",
+    "Le tibia",
+    "Le fémur",
+    "Le radius"
+   ],
+   "reponse": 2,
+   "bonus": "Il fait environ un quart de ta taille !",
+   "voix_reponse": "Le fémur ! L'os de la cuisse.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏝️",
+   "question": "Quel pays compte le plus d'îles au monde ?",
+   "choix": [
+    "L'Indonésie",
+    "Les Philippines",
+    "La Suède",
+    "Le Japon"
+   ],
+   "reponse": 2,
+   "bonus": "Plus de 260 000 îles !",
+   "voix_reponse": "La Suède ! Plus de deux cent mille îles.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

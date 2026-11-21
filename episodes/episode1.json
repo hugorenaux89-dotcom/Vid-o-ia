@@ -350,8 +350,8 @@
     ]
    ],
    [
-    "Écris-le en commentaire !",
-    52,
+    "Abonne-toi pour voir",
+    54,
     [
      255,
      214,
@@ -359,8 +359,8 @@
     ]
    ],
    [
-    "Partie 2 très bientôt",
-    52,
+    "les prochains épisodes !",
+    54,
     [
      255,
      214,
@@ -368,8 +368,8 @@
     ]
    ]
   ],
-  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour la partie deux !",
-  "min": 3.5,
-  "ton": "chaleureux"
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
  }
 }

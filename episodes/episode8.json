@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 8",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐄",
+   "question": "En combien de poches est divisé l'estomac d'une vache ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 3,
+   "bonus": "La panse, le bonnet, le feuillet et la caillette.",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Quel roi de France était surnommé le Roi-Soleil ?",
+   "choix": [
+    "Louis XIII",
+    "Louis XIV",
+    "Louis XV",
+    "Louis XVI"
+   ],
+   "reponse": 1,
+   "bonus": "Il a régné 72 ans, un record !",
+   "voix_reponse": "Louis quatorze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌡️",
+   "question": "Quelle est la température normale du corps humain ?",
+   "choix": [
+    "35 °C",
+    "37 °C",
+    "39 °C",
+    "40 °C"
+   ],
+   "reponse": 1,
+   "bonus": "Au-delà de 38 °C, on parle de fièvre.",
+   "voix_reponse": "Trente-sept degrés !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦩",
+   "question": "Pourquoi le flamant rose est-il rose ?",
+   "choix": [
+    "C'est génétique",
+    "À cause de ce qu'il mange",
+    "À cause du soleil",
+    "Pour séduire"
+   ],
+   "reponse": 1,
+   "bonus": "Les petites crevettes et algues qu'il mange colorent ses plumes.",
+   "voix_reponse": "À cause de ce qu'il mange !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍏",
+   "question": "Quelle ville est surnommée « la Grosse Pomme » ?",
+   "choix": [
+    "Los Angeles",
+    "Chicago",
+    "New York",
+    "Londres"
+   ],
+   "reponse": 2,
+   "bonus": "« The Big Apple », en anglais !",
+   "voix_reponse": "New York !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📱",
+   "question": "En quelle année le premier iPhone est-il sorti ?",
+   "choix": [
+    "2005",
+    "2007",
+    "2009",
+    "2011"
+   ],
+   "reponse": 1,
+   "bonus": "Présenté par Steve Jobs en janvier 2007.",
+   "voix_reponse": "Deux mille sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧬",
+   "question": "Combien de chromosomes a une cellule humaine normale ?",
+   "choix": [
+    "23",
+    "44",
+    "46",
+    "48"
+   ],
+   "reponse": 2,
+   "bonus": "Soit 23 paires.",
+   "voix_reponse": "Quarante-six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗿",
+   "question": "Sur quelle île se trouvent les statues Moaï ?",
+   "choix": [
+    "L'île de Pâques",
+    "Tahiti",
+    "Hawaï",
+    "Madagascar"
+   ],
+   "reponse": 0,
+   "bonus": "Elle appartient au Chili.",
+   "voix_reponse": "L'île de Pâques !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😴",
+   "question": "Combien d'heures un koala dort-il par jour, environ ?",
+   "choix": [
+    "8 heures",
+    "12 heures",
+    "20 heures",
+    "24 heures"
+   ],
+   "reponse": 2,
+   "bonus": "Son alimentation lui donne très peu d'énergie.",
+   "voix_reponse": "Environ vingt heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👨‍🚀",
+   "question": "Combien d'humains ont marché sur la Lune ?",
+   "choix": [
+    "2",
+    "6",
+    "12",
+    "24"
+   ],
+   "reponse": 2,
+   "bonus": "Tous entre 1969 et 1972.",
+   "voix_reponse": "Douze !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

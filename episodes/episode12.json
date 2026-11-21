@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 12",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "📅",
+   "question": "Combien de jours y a-t-il dans une année bissextile ?",
+   "choix": [
+    "364",
+    "365",
+    "366",
+    "367"
+   ],
+   "reponse": 2,
+   "bonus": "Le 29 février revient tous les 4 ans.",
+   "voix_reponse": "Trois cent soixante-six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐺",
+   "question": "De quel animal descend le chien ?",
+   "choix": [
+    "Le renard",
+    "Le loup",
+    "Le chacal",
+    "Le coyote"
+   ],
+   "reponse": 1,
+   "bonus": "Domestiqué il y a plus de 15 000 ans.",
+   "voix_reponse": "Du loup !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎲",
+   "question": "Sur un dé, combien font deux faces opposées additionnées ?",
+   "choix": [
+    "6",
+    "7",
+    "8",
+    "12"
+   ],
+   "reponse": 1,
+   "bonus": "1 et 6, 2 et 5, 3 et 4 !",
+   "voix_reponse": "Sept ! Toujours.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Quelle ville romaine a été détruite par le Vésuve ?",
+   "choix": [
+    "Rome",
+    "Pompéi",
+    "Venise",
+    "Florence"
+   ],
+   "reponse": 1,
+   "bonus": "C'était en l'an 79.",
+   "voix_reponse": "Pompéi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩻",
+   "question": "Combien de vertèbres a la colonne vertébrale humaine ?",
+   "choix": [
+    "12",
+    "24",
+    "33",
+    "50"
+   ],
+   "reponse": 2,
+   "bonus": "Certaines sont soudées, au niveau du bassin.",
+   "voix_reponse": "Trente-trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗾",
+   "question": "Combien d'îles principales forment le Japon ?",
+   "choix": [
+    "2",
+    "4",
+    "6",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "Plus des milliers de petites îles autour !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quel chanteur est surnommé « le King » ?",
+   "choix": [
+    "Michael Jackson",
+    "Elvis Presley",
+    "Johnny Hallyday",
+    "Frank Sinatra"
+   ],
+   "reponse": 1,
+   "bonus": "Le roi du rock'n'roll !",
+   "voix_reponse": "Elvis Presley !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚛️",
+   "question": "Quel est l'élément le plus abondant dans l'univers ?",
+   "choix": [
+    "L'oxygène",
+    "Le carbone",
+    "L'hydrogène",
+    "L'hélium"
+   ],
+   "reponse": 2,
+   "bonus": "Environ trois quarts de la matière ordinaire !",
+   "voix_reponse": "L'hydrogène !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐦",
+   "question": "Quel oiseau peut voler en marche arrière ?",
+   "choix": [
+    "Le moineau",
+    "Le colibri",
+    "L'hirondelle",
+    "Le pigeon"
+   ],
+   "reponse": 1,
+   "bonus": "Ses ailes battent jusqu'à 80 fois par seconde !",
+   "voix_reponse": "Le colibri !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇫🇷",
+   "question": "Combien de pays ont une frontière avec la France métropolitaine ?",
+   "choix": [
+    "6",
+    "8",
+    "10",
+    "12"
+   ],
+   "reponse": 1,
+   "bonus": "Sans oublier Monaco et Andorre !",
+   "voix_reponse": "Huit ! Sans oublier Monaco et Andorre.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

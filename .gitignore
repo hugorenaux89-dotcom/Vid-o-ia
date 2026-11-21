@@ -1,3 +1,4 @@
 *.wav
 __pycache__/
 .cache_voix/
+sortie/*_sans_musique.mp4

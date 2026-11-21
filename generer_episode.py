@@ -175,7 +175,16 @@ def voix(texte, ton="neutre"):
         certifi.where = lambda: os.environ.get("SSL_CERT_FILE", "/root/.ccr/ca-bundle.crt") \
             if os.path.exists("/root/.ccr/ca-bundle.crt") else certifi.__file__.replace("__init__.py", "cacert.pem")
         import edge_tts
-        asyncio.run(edge_tts.Communicate(texte, VOIX, rate=debit, pitch=hauteur, volume=volume).save(mp3))
+        import time
+        for essai in range(6):  # le service de voix peut couper : on réessaie
+            try:
+                asyncio.run(edge_tts.Communicate(texte, VOIX, rate=debit, pitch=hauteur, volume=volume).save(mp3 + ".tmp"))
+                os.replace(mp3 + ".tmp", mp3)
+                break
+            except Exception:
+                if essai == 5:
+                    raise
+                time.sleep(5 * (essai + 1))
     raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", mp3, "-af", FILTRE_VOIX, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"],
                          capture_output=True, check=True).stdout
     return np.frombuffer(raw, dtype=np.int16).astype(np.float64) / 32767

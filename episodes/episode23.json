@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 23",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "💃",
+   "question": "Quelle danse est emblématique de l'Espagne ?",
+   "choix": [
+    "Le tango",
+    "Le flamenco",
+    "La samba",
+    "La valse"
+   ],
+   "reponse": 1,
+   "bonus": "Le tango vient d'Argentine !",
+   "voix_reponse": "Le flamenco !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐝",
+   "question": "Comment s'appelle la seule abeille qui pond dans la ruche ?",
+   "choix": [
+    "L'ouvrière",
+    "La reine",
+    "Le faux-bourdon",
+    "La nourrice"
+   ],
+   "reponse": 1,
+   "bonus": "Elle peut pondre plus de 1 000 œufs par jour !",
+   "voix_reponse": "La reine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌕",
+   "question": "Combien de temps met la lumière de la Lune pour nous parvenir ?",
+   "choix": [
+    "Environ 1 seconde",
+    "Environ 1 minute",
+    "Environ 8 minutes",
+    "Environ 1 heure"
+   ],
+   "reponse": 0,
+   "bonus": "Environ 1,3 seconde !",
+   "voix_reponse": "Environ une seconde !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Combien de temps dure un match de foot, hors arrêts de jeu ?",
+   "choix": [
+    "60 minutes",
+    "80 minutes",
+    "90 minutes",
+    "120 minutes"
+   ],
+   "reponse": 2,
+   "bonus": "Deux mi-temps de 45 minutes.",
+   "voix_reponse": "Quatre-vingt-dix minutes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Quel côté du cerveau contrôle ta main droite ?",
+   "choix": [
+    "Le gauche",
+    "Le droit",
+    "Les deux",
+    "Aucun"
+   ],
+   "reponse": 0,
+   "bonus": "Les commandes sont croisées !",
+   "voix_reponse": "Le gauche ! C'est croisé.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇮🇳",
+   "question": "Quelle est la capitale de l'Inde ?",
+   "choix": [
+    "Mumbai",
+    "New Delhi",
+    "Calcutta",
+    "Bangalore"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Mumbai, la plus grande ville !",
+   "voix_reponse": "New Delhi ! Pas Mumbai.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🦄",
+   "question": "Quel mammifère marin a une longue « corne » qui est en fait une dent ?",
+   "choix": [
+    "Le dauphin",
+    "Le narval",
+    "Le morse",
+    "L'orque"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle la licorne des mers !",
+   "voix_reponse": "Le narval !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📈",
+   "question": "Que mesure l'échelle de Richter ?",
+   "choix": [
+    "Le vent",
+    "Les séismes",
+    "La pluie",
+    "La chaleur"
+   ],
+   "reponse": 1,
+   "bonus": "Créée en 1935 par Charles Richter.",
+   "voix_reponse": "Les séismes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖌️",
+   "question": "À quel mouvement artistique est associé Claude Monet ?",
+   "choix": [
+    "Le cubisme",
+    "L'impressionnisme",
+    "Le surréalisme",
+    "Le baroque"
+   ],
+   "reponse": 1,
+   "bonus": "Son tableau « Impression, soleil levant » lui a donné son nom !",
+   "voix_reponse": "L'impressionnisme !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💡",
+   "question": "Combien de fois la lumière fait-elle le tour de la Terre en une seconde ?",
+   "choix": [
+    "1 fois",
+    "3 fois",
+    "7 fois",
+    "20 fois"
+   ],
+   "reponse": 2,
+   "bonus": "Environ 7 fois et demie !",
+   "voix_reponse": "Environ sept fois !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

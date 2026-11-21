@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 14",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🏀",
+   "question": "Combien de joueurs par équipe sur un terrain de basket ?",
+   "choix": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "reponse": 1,
+   "bonus": "Plus les remplaçants sur le banc.",
+   "voix_reponse": "Cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦋",
+   "question": "Comment s'appelle l'étape entre la chenille et le papillon ?",
+   "choix": [
+    "La larve",
+    "La chrysalide",
+    "L'œuf",
+    "La mue"
+   ],
+   "reponse": 1,
+   "bonus": "Une transformation complète : la métamorphose !",
+   "voix_reponse": "La chrysalide !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥑",
+   "question": "Quel fruit est à la base du guacamole ?",
+   "choix": [
+    "La tomate",
+    "L'avocat",
+    "Le citron",
+    "La mangue"
+   ],
+   "reponse": 1,
+   "bonus": "Une recette venue du Mexique.",
+   "voix_reponse": "L'avocat !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🕐",
+   "question": "Combien de fuseaux horaires compte la Russie ?",
+   "choix": [
+    "5",
+    "8",
+    "11",
+    "15"
+   ],
+   "reponse": 2,
+   "bonus": "Mais toujours moins que la France !",
+   "voix_reponse": "Onze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧑‍🔬",
+   "question": "Quel savant a énoncé la théorie de la relativité ?",
+   "choix": [
+    "Newton",
+    "Einstein",
+    "Hawking",
+    "Bohr"
+   ],
+   "reponse": 1,
+   "bonus": "Au début du XXe siècle.",
+   "voix_reponse": "Einstein !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐍",
+   "question": "Quel est le plus long serpent du monde ?",
+   "choix": [
+    "Le cobra royal",
+    "L'anaconda vert",
+    "Le python réticulé",
+    "Le mamba noir"
+   ],
+   "reponse": 2,
+   "bonus": "L'anaconda est plus lourd, mais moins long !",
+   "voix_reponse": "Le python réticulé ! Pas l'anaconda.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🧱",
+   "question": "Quelle est la plus longue construction humaine ?",
+   "choix": [
+    "Le canal de Suez",
+    "La Grande Muraille de Chine",
+    "Le Transsibérien",
+    "Le mur d'Hadrien"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 20 000 km avec toutes ses sections !",
+   "voix_reponse": "La Grande Muraille de Chine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "Combien de litres de sang a un adulte, environ ?",
+   "choix": [
+    "2 litres",
+    "5 litres",
+    "8 litres",
+    "12 litres"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 7 % du poids du corps.",
+   "voix_reponse": "Environ cinq litres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel est le premier long métrage d'animation de Disney ?",
+   "choix": [
+    "Pinocchio",
+    "Blanche-Neige",
+    "Bambi",
+    "Cendrillon"
+   ],
+   "reponse": 1,
+   "bonus": "Sorti en 1937 !",
+   "voix_reponse": "Blanche-Neige !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel est l'endroit le plus profond des océans ?",
+   "choix": [
+    "La fosse des Mariannes",
+    "Le triangle des Bermudes",
+    "La fosse de Porto Rico",
+    "Le golfe du Mexique"
+   ],
+   "reponse": 0,
+   "bonus": "Près de 11 000 mètres de profondeur !",
+   "voix_reponse": "La fosse des Mariannes ! Presque onze kilomètres.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

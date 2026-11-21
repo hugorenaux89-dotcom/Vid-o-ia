@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 36",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍺",
+   "question": "Quelle boisson est la star de l'Oktoberfest ?",
+   "choix": [
+    "Le vin",
+    "La bière",
+    "Le cidre",
+    "Le whisky"
+   ],
+   "reponse": 1,
+   "bonus": "Une grande fête qui a lieu à Munich !",
+   "voix_reponse": "La bière !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐍",
+   "question": "Avec quoi le serpent sent-il les odeurs ?",
+   "choix": [
+    "Son nez seulement",
+    "Sa langue",
+    "Ses yeux",
+    "Ses écailles"
+   ],
+   "reponse": 1,
+   "bonus": "C'est pour ça qu'il la sort sans arrêt !",
+   "voix_reponse": "Avec sa langue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇳🇴",
+   "question": "Quelle est la capitale de la Norvège ?",
+   "choix": [
+    "Stockholm",
+    "Oslo",
+    "Helsinki",
+    "Bergen"
+   ],
+   "reponse": 1,
+   "bonus": "Stockholm, c'est la Suède !",
+   "voix_reponse": "Oslo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quelle chanteuse était surnommée « la Môme » ?",
+   "choix": [
+    "Dalida",
+    "Édith Piaf",
+    "Barbara",
+    "Mylène Farmer"
+   ],
+   "reponse": 1,
+   "bonus": "Célèbre pour « La Vie en rose » !",
+   "voix_reponse": "Édith Piaf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛡️",
+   "question": "À quoi servent les globules blancs ?",
+   "choix": [
+    "Transporter l'oxygène",
+    "Défendre le corps",
+    "Faire coaguler le sang",
+    "Digérer"
+   ],
+   "reponse": 1,
+   "bonus": "Ce sont les soldats de ton système immunitaire !",
+   "voix_reponse": "À défendre le corps !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚔️",
+   "question": "En quelle année a eu lieu la bataille de Waterloo ?",
+   "choix": [
+    "1805",
+    "1815",
+    "1830",
+    "1870"
+   ],
+   "reponse": 1,
+   "bonus": "La dernière défaite de Napoléon.",
+   "voix_reponse": "Mille huit cent quinze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌳",
+   "question": "Quelle forêt est surnommée « le poumon de la planète » ?",
+   "choix": [
+    "Brocéliande",
+    "L'Amazonie",
+    "La taïga",
+    "La forêt noire"
+   ],
+   "reponse": 1,
+   "bonus": "Elle s'étend sur 9 pays !",
+   "voix_reponse": "L'Amazonie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔇",
+   "question": "Le son peut-il voyager dans l'espace ?",
+   "choix": [
+    "Oui, plus vite",
+    "Non, il n'y a pas d'air",
+    "Oui, plus lentement",
+    "Seulement près des étoiles"
+   ],
+   "reponse": 1,
+   "bonus": "Dans l'espace, personne ne t'entend crier !",
+   "voix_reponse": "Non ! Il n'y a pas d'air.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🐘",
+   "question": "Lequel de ces animaux ne peut pas sauter ?",
+   "choix": [
+    "Le kangourou",
+    "L'éléphant",
+    "Le chat",
+    "La grenouille"
+   ],
+   "reponse": 1,
+   "bonus": "Il garde toujours au moins un pied au sol !",
+   "voix_reponse": "L'éléphant !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌴",
+   "question": "Quel département français est le plus éloigné de Paris ?",
+   "choix": [
+    "La Guyane",
+    "La Réunion",
+    "La Martinique",
+    "Mayotte"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 9 000 km de Paris !",
+   "voix_reponse": "La Réunion !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 47",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🥘",
+   "question": "De quel pays vient la paella ?",
+   "choix": [
+    "L'Italie",
+    "L'Espagne",
+    "Le Portugal",
+    "Le Mexique"
+   ],
+   "reponse": 1,
+   "bonus": "De la région de Valence !",
+   "voix_reponse": "L'Espagne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐋",
+   "question": "Comment l'orque est-elle aussi surnommée ?",
+   "choix": [
+    "Le requin-tigre",
+    "La baleine tueuse",
+    "Le loup de mer",
+    "Le dauphin rouge"
+   ],
+   "reponse": 1,
+   "bonus": "Mais c'est en réalité un grand dauphin !",
+   "voix_reponse": "La baleine tueuse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇨🇴",
+   "question": "Quelle est la capitale de la Colombie ?",
+   "choix": [
+    "Medellín",
+    "Bogota",
+    "Cali",
+    "Caracas"
+   ],
+   "reponse": 1,
+   "bonus": "Caracas, c'est le Venezuela !",
+   "voix_reponse": "Bogota !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "♟️",
+   "question": "Aux échecs, quelle pièce se déplace en forme de L ?",
+   "choix": [
+    "La tour",
+    "Le cavalier",
+    "Le fou",
+    "La reine"
+   ],
+   "reponse": 1,
+   "bonus": "C'est la seule pièce qui peut sauter les autres !",
+   "voix_reponse": "Le cavalier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "De quelle couleur est le sang dans tes veines ?",
+   "choix": [
+    "Bleu",
+    "Rouge foncé",
+    "Vert",
+    "Noir"
+   ],
+   "reponse": 1,
+   "bonus": "Le sang humain n'est jamais bleu !",
+   "voix_reponse": "Rouge foncé ! Jamais bleu.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗡️",
+   "question": "Qui a retiré l'épée Excalibur du rocher ?",
+   "choix": [
+    "Lancelot",
+    "Arthur",
+    "Perceval",
+    "Merlin"
+   ],
+   "reponse": 1,
+   "bonus": "C'est ainsi qu'il est devenu roi !",
+   "voix_reponse": "Le roi Arthur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌕",
+   "question": "Pourquoi la Lune brille-t-elle ?",
+   "choix": [
+    "Elle produit sa lumière",
+    "Elle reflète le Soleil",
+    "Elle est en feu",
+    "Grâce à la Terre"
+   ],
+   "reponse": 1,
+   "bonus": "Elle n'a aucune lumière à elle !",
+   "voix_reponse": "Elle reflète le Soleil !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "❤️",
+   "question": "Quel animal a le plus gros cœur du monde ?",
+   "choix": [
+    "L'éléphant",
+    "La baleine bleue",
+    "La girafe",
+    "Le requin"
+   ],
+   "reponse": 1,
+   "bonus": "Il pèse autant qu'une petite voiture !",
+   "voix_reponse": "La baleine bleue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😱",
+   "question": "Quel artiste a peint Le Cri ?",
+   "choix": [
+    "Edvard Munch",
+    "Gustav Klimt",
+    "Van Gogh",
+    "Paul Gauguin"
+   ],
+   "reponse": 0,
+   "bonus": "Un peintre norvégien.",
+   "voix_reponse": "Edvard Munch !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌐",
+   "question": "Dans quel pays est né l'ancêtre d'Internet ?",
+   "choix": [
+    "Le Royaume-Uni",
+    "Les États-Unis",
+    "Le Japon",
+    "La Suisse"
+   ],
+   "reponse": 1,
+   "bonus": "Le web, lui, est né en Suisse, au CERN !",
+   "voix_reponse": "Les États-Unis ! Le web, lui, est né en Suisse.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

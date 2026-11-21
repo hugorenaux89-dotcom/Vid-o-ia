@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 20",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🇺🇸",
+   "question": "Combien d'étoiles y a-t-il sur le drapeau américain ?",
+   "choix": [
+    "13",
+    "48",
+    "50",
+    "52"
+   ],
+   "reponse": 2,
+   "bonus": "Une étoile par État.",
+   "voix_reponse": "Cinquante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐴",
+   "question": "Comment appelle-t-on le petit du cheval ?",
+   "choix": [
+    "Le veau",
+    "Le poulain",
+    "L'agneau",
+    "Le chevreau"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut marcher quelques heures après sa naissance !",
+   "voix_reponse": "Le poulain !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "De quoi est principalement composé le Soleil ?",
+   "choix": [
+    "De feu",
+    "D'hydrogène et d'hélium",
+    "De lave",
+    "De fer"
+   ],
+   "reponse": 1,
+   "bonus": "Ce n'est pas du feu, mais de la fusion nucléaire !",
+   "voix_reponse": "D'hydrogène et d'hélium !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔌",
+   "question": "Quel métal conduit le mieux l'électricité ?",
+   "choix": [
+    "L'or",
+    "Le cuivre",
+    "L'argent",
+    "L'aluminium"
+   ],
+   "reponse": 2,
+   "bonus": "Encore mieux que le cuivre, mais bien plus cher !",
+   "voix_reponse": "L'argent ! Pas le cuivre.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Qui était le premier empereur romain ?",
+   "choix": [
+    "Jules César",
+    "Auguste",
+    "Néron",
+    "Caligula"
+   ],
+   "reponse": 1,
+   "bonus": "Jules César n'a jamais été empereur !",
+   "voix_reponse": "Auguste ! Pas Jules César.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🦆",
+   "question": "Quel mammifère pond des œufs ?",
+   "choix": [
+    "Le kangourou",
+    "L'ornithorynque",
+    "Le koala",
+    "Le paresseux"
+   ],
+   "reponse": 1,
+   "bonus": "Avec l'échidné, c'est une exception !",
+   "voix_reponse": "L'ornithorynque !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Dans quelle mer flotte-t-on sans effort tant elle est salée ?",
+   "choix": [
+    "La mer Rouge",
+    "La mer Morte",
+    "La mer Noire",
+    "La mer Baltique"
+   ],
+   "reponse": 1,
+   "bonus": "Environ dix fois plus salée que l'océan !",
+   "voix_reponse": "La mer Morte !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎷",
+   "question": "Combien de musiciens y a-t-il dans un quatuor ?",
+   "choix": [
+    "3",
+    "4",
+    "5",
+    "8"
+   ],
+   "reponse": 1,
+   "bonus": "Un trio, c'est 3, un quintette, 5.",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "❄️",
+   "question": "Combien de branches a un flocon de neige ?",
+   "choix": [
+    "4",
+    "5",
+    "6",
+    "8"
+   ],
+   "reponse": 2,
+   "bonus": "À cause de la forme des molécules d'eau !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏺",
+   "question": "Quel chiffre romain correspond à 50 ?",
+   "choix": [
+    "X",
+    "L",
+    "C",
+    "D"
+   ],
+   "reponse": 1,
+   "bonus": "X vaut 10, C vaut 100, D vaut 500.",
+   "voix_reponse": "L !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 6",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🇧🇷",
+   "question": "Quelle langue parle-t-on principalement au Brésil ?",
+   "choix": [
+    "L'espagnol",
+    "Le portugais",
+    "Le brésilien",
+    "L'anglais"
+   ],
+   "reponse": 1,
+   "bonus": "Héritage de la colonisation portugaise.",
+   "voix_reponse": "Le portugais ! Pas l'espagnol.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🐸",
+   "question": "Comment s'appelle le petit de la grenouille ?",
+   "choix": [
+    "La larve",
+    "Le têtard",
+    "L'alevin",
+    "Le grenouillon"
+   ],
+   "reponse": 1,
+   "bonus": "Il respire avec des branchies, comme un poisson !",
+   "voix_reponse": "Le têtard !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "Quel groupe sanguin est le donneur universel ?",
+   "choix": [
+    "A+",
+    "AB+",
+    "O-",
+    "B-"
+   ],
+   "reponse": 2,
+   "bonus": "Ses globules rouges peuvent être donnés à presque tout le monde.",
+   "voix_reponse": "O négatif !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇨🇭",
+   "question": "Quelle ville est la capitale fédérale de la Suisse ?",
+   "choix": [
+    "Genève",
+    "Zurich",
+    "Berne",
+    "Lausanne"
+   ],
+   "reponse": 2,
+   "bonus": "Ni Genève, ni Zurich !",
+   "voix_reponse": "Berne ! Ni Genève, ni Zurich.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔄",
+   "question": "Quel oiseau peut tourner la tête d'environ 270 degrés ?",
+   "choix": [
+    "Le perroquet",
+    "Le hibou",
+    "L'aigle",
+    "Le corbeau"
+   ],
+   "reponse": 1,
+   "bonus": "Presque un tour complet !",
+   "voix_reponse": "Le hibou !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎻",
+   "question": "Qui a composé Les Quatre Saisons ?",
+   "choix": [
+    "Mozart",
+    "Bach",
+    "Vivaldi",
+    "Beethoven"
+   ],
+   "reponse": 2,
+   "bonus": "Un compositeur vénitien du XVIIIe siècle.",
+   "voix_reponse": "Vivaldi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☕",
+   "question": "Quel pays est le plus gros producteur de café au monde ?",
+   "choix": [
+    "La Colombie",
+    "Le Brésil",
+    "Le Vietnam",
+    "L'Éthiopie"
+   ],
+   "reponse": 1,
+   "bonus": "Environ un tiers du café de la planète !",
+   "voix_reponse": "Le Brésil ! Pas la Colombie.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🧊",
+   "question": "Quelle part d'un iceberg est cachée sous l'eau ?",
+   "choix": [
+    "50 %",
+    "70 %",
+    "90 %",
+    "99 %"
+   ],
+   "reponse": 2,
+   "bonus": "D'où l'expression « la partie émergée de l'iceberg ».",
+   "voix_reponse": "Environ quatre-vingt-dix pour cent !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⏳",
+   "question": "Quel animal peut vivre le plus longtemps ?",
+   "choix": [
+    "La tortue géante",
+    "L'éléphant",
+    "Le requin du Groenland",
+    "Le perroquet"
+   ],
+   "reponse": 2,
+   "bonus": "Plus de 250 ans, peut-être même 400 !",
+   "voix_reponse": "Le requin du Groenland ! Pas la tortue.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "👥",
+   "question": "Quel est le pays le plus peuplé du monde ?",
+   "choix": [
+    "La Chine",
+    "L'Inde",
+    "Les États-Unis",
+    "L'Indonésie"
+   ],
+   "reponse": 1,
+   "bonus": "Elle a dépassé la Chine en 2023 !",
+   "voix_reponse": "L'Inde ! Elle a dépassé la Chine.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

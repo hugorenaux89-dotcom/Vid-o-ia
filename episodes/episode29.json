@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 29",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🇳🇱",
+   "question": "Quelle est la capitale des Pays-Bas ?",
+   "choix": [
+    "Rotterdam",
+    "Amsterdam",
+    "La Haye",
+    "Utrecht"
+   ],
+   "reponse": 1,
+   "bonus": "Le gouvernement, lui, siège à La Haye !",
+   "voix_reponse": "Amsterdam !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐑",
+   "question": "Avec quel lait fabrique-t-on le roquefort ?",
+   "choix": [
+    "Le lait de vache",
+    "Le lait de brebis",
+    "Le lait de chèvre",
+    "Le lait de bufflonne"
+   ],
+   "reponse": 1,
+   "bonus": "Affiné dans des caves naturelles de l'Aveyron.",
+   "voix_reponse": "Le lait de brebis !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Combien de planètes compte le système solaire ?",
+   "choix": [
+    "7",
+    "8",
+    "9",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "Depuis que Pluton a été déclassée en 2006.",
+   "voix_reponse": "Huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Quel nageur a remporté le plus de médailles olympiques ?",
+   "choix": [
+    "Ian Thorpe",
+    "Michael Phelps",
+    "Mark Spitz",
+    "Léon Marchand"
+   ],
+   "reponse": 1,
+   "bonus": "28 médailles, un record absolu !",
+   "voix_reponse": "Michael Phelps !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💉",
+   "question": "Quel organe produit l'insuline ?",
+   "choix": [
+    "Le foie",
+    "Le pancréas",
+    "Les reins",
+    "L'estomac"
+   ],
+   "reponse": 1,
+   "bonus": "Elle régule le sucre dans le sang.",
+   "voix_reponse": "Le pancréas !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Quel château de la Loire a un célèbre escalier à double révolution ?",
+   "choix": [
+    "Chenonceau",
+    "Chambord",
+    "Amboise",
+    "Blois"
+   ],
+   "reponse": 1,
+   "bonus": "Deux personnes peuvent monter sans jamais se croiser !",
+   "voix_reponse": "Chambord !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐋",
+   "question": "Quel est le plus gros poisson du monde ?",
+   "choix": [
+    "Le requin blanc",
+    "Le requin-baleine",
+    "La baleine bleue",
+    "Le thon rouge"
+   ],
+   "reponse": 1,
+   "bonus": "La baleine est un mammifère, pas un poisson !",
+   "voix_reponse": "Le requin-baleine ! Pas la baleine.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font sept fois huit ?",
+   "choix": [
+    "54",
+    "56",
+    "58",
+    "64"
+   ],
+   "reponse": 1,
+   "bonus": "Le piège classique des tables de multiplication !",
+   "voix_reponse": "Cinquante-six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel est le plus long fleuve d'Europe ?",
+   "choix": [
+    "Le Danube",
+    "La Volga",
+    "Le Rhin",
+    "La Loire"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 3 500 km, entièrement en Russie !",
+   "voix_reponse": "La Volga ! Pas le Danube.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🛰️",
+   "question": "À quelle altitude vole la Station spatiale internationale ?",
+   "choix": [
+    "40 km",
+    "400 km",
+    "4 000 km",
+    "40 000 km"
+   ],
+   "reponse": 1,
+   "bonus": "Elle fait le tour de la Terre en 90 minutes !",
+   "voix_reponse": "Environ quatre cents kilomètres !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

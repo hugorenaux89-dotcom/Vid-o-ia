@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 13",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🥝",
+   "question": "De quel pays le kiwi est-il le symbole ?",
+   "choix": [
+    "L'Australie",
+    "La Nouvelle-Zélande",
+    "Le Chili",
+    "La Chine"
+   ],
+   "reponse": 1,
+   "bonus": "C'est aussi le nom d'un oiseau qui ne vole pas !",
+   "voix_reponse": "La Nouvelle-Zélande !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐻",
+   "question": "Que fait l'ours brun pendant l'hiver ?",
+   "choix": [
+    "Il migre",
+    "Il hiberne",
+    "Il change de couleur",
+    "Il chasse plus"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut rester des mois sans manger.",
+   "voix_reponse": "Il hiberne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖐️",
+   "question": "Combien d'os a une main humaine ?",
+   "choix": [
+    "17",
+    "27",
+    "37",
+    "47"
+   ],
+   "reponse": 1,
+   "bonus": "Poignet compris.",
+   "voix_reponse": "Vingt-sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇲🇦",
+   "question": "Quelle est la capitale du Maroc ?",
+   "choix": [
+    "Casablanca",
+    "Marrakech",
+    "Rabat",
+    "Fès"
+   ],
+   "reponse": 2,
+   "bonus": "Pas Casablanca !",
+   "voix_reponse": "Rabat ! Pas Casablanca.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "☢️",
+   "question": "Qui a découvert la radioactivité ?",
+   "choix": [
+    "Marie Curie",
+    "Henri Becquerel",
+    "Einstein",
+    "Pasteur"
+   ],
+   "reponse": 1,
+   "bonus": "Marie Curie a ensuite poursuivi ses travaux.",
+   "voix_reponse": "Henri Becquerel ! Pas Marie Curie.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🦔",
+   "question": "Combien de piquants a un hérisson, environ ?",
+   "choix": [
+    "500",
+    "1 500",
+    "6 000",
+    "20 000"
+   ],
+   "reponse": 2,
+   "bonus": "Et chaque piquant est un poil durci !",
+   "voix_reponse": "Environ six mille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "❄️",
+   "question": "Quel est le plus grand désert du monde ?",
+   "choix": [
+    "Le Sahara",
+    "L'Antarctique",
+    "Le Gobi",
+    "Le désert d'Arabie"
+   ],
+   "reponse": 1,
+   "bonus": "Un désert, c'est un endroit où il pleut très peu !",
+   "voix_reponse": "L'Antarctique ! Pas le Sahara.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🎻",
+   "question": "Quel grand compositeur est devenu sourd ?",
+   "choix": [
+    "Mozart",
+    "Beethoven",
+    "Chopin",
+    "Vivaldi"
+   ],
+   "reponse": 1,
+   "bonus": "Il a continué à composer malgré tout !",
+   "voix_reponse": "Beethoven !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💉",
+   "question": "Qui a créé le vaccin contre la rage ?",
+   "choix": [
+    "Louis Pasteur",
+    "Marie Curie",
+    "Robert Koch",
+    "Alexander Fleming"
+   ],
+   "reponse": 0,
+   "bonus": "C'était en 1885.",
+   "voix_reponse": "Louis Pasteur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔺",
+   "question": "Quel pays possède le plus de pyramides ?",
+   "choix": [
+    "L'Égypte",
+    "Le Mexique",
+    "Le Soudan",
+    "Le Pérou"
+   ],
+   "reponse": 2,
+   "bonus": "Plus de 200, contre environ 120 en Égypte !",
+   "voix_reponse": "Le Soudan ! Plus que l'Égypte.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

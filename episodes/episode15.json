@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 15",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍁",
+   "question": "Quelle feuille figure sur le drapeau du Canada ?",
+   "choix": [
+    "Le chêne",
+    "L'érable",
+    "Le platane",
+    "Le bouleau"
+   ],
+   "reponse": 1,
+   "bonus": "Le sirop d'érable est aussi un symbole du pays !",
+   "voix_reponse": "L'érable !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐒",
+   "question": "Quel animal est le plus proche de l'homme génétiquement ?",
+   "choix": [
+    "Le gorille",
+    "Le chimpanzé",
+    "L'orang-outan",
+    "Le babouin"
+   ],
+   "reponse": 1,
+   "bonus": "Avec le bonobo, environ 98 % d'ADN en commun !",
+   "voix_reponse": "Le chimpanzé !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✏️",
+   "question": "En quoi est faite la mine d'un crayon à papier ?",
+   "choix": [
+    "Du plomb",
+    "Du graphite",
+    "Du charbon",
+    "Du fer"
+   ],
+   "reponse": 1,
+   "bonus": "Jamais de plomb, malgré l'expression !",
+   "voix_reponse": "Du graphite ! Pas du plomb.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🗼",
+   "question": "En quelle année la tour Eiffel a-t-elle été inaugurée ?",
+   "choix": [
+    "1789",
+    "1889",
+    "1900",
+    "1925"
+   ],
+   "reponse": 1,
+   "bonus": "Pour l'Exposition universelle.",
+   "voix_reponse": "Mille huit cent quatre-vingt-neuf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧍",
+   "question": "Quel est l'organe le plus grand du corps humain ?",
+   "choix": [
+    "Le foie",
+    "La peau",
+    "Les intestins",
+    "Le cerveau"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 2 m² chez un adulte !",
+   "voix_reponse": "La peau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇪🇺",
+   "question": "Combien de pays compte l'Union européenne ?",
+   "choix": [
+    "25",
+    "27",
+    "28",
+    "30"
+   ],
+   "reponse": 1,
+   "bonus": "Depuis le départ du Royaume-Uni en 2020.",
+   "voix_reponse": "Vingt-sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐟",
+   "question": "Combien de temps dure la mémoire d'un poisson rouge ?",
+   "choix": [
+    "3 secondes",
+    "3 minutes",
+    "Plusieurs mois",
+    "Aucune mémoire"
+   ],
+   "reponse": 2,
+   "bonus": "Les 3 secondes, c'est un mythe !",
+   "voix_reponse": "Plusieurs mois ! Les trois secondes, c'est un mythe.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚀",
+   "question": "Qui a été le premier homme dans l'espace ?",
+   "choix": [
+    "Neil Armstrong",
+    "Youri Gagarine",
+    "Buzz Aldrin",
+    "John Glenn"
+   ],
+   "reponse": 1,
+   "bonus": "C'était en 1961.",
+   "voix_reponse": "Youri Gagarine ! Pas Armstrong.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Dans quel château Louis XIV s'est-il installé avec sa cour ?",
+   "choix": [
+    "Chambord",
+    "Versailles",
+    "Fontainebleau",
+    "Chenonceau"
+   ],
+   "reponse": 1,
+   "bonus": "La cour s'y installe en 1682.",
+   "voix_reponse": "Versailles !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔢",
+   "question": "Combien de zéros y a-t-il dans un milliard ?",
+   "choix": [
+    "6",
+    "9",
+    "12",
+    "15"
+   ],
+   "reponse": 1,
+   "bonus": "Un million en a 6.",
+   "voix_reponse": "Neuf !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

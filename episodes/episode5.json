@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 5",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍁",
+   "question": "Quelle est la capitale du Canada ?",
+   "choix": [
+    "Toronto",
+    "Montréal",
+    "Ottawa",
+    "Vancouver"
+   ],
+   "reponse": 2,
+   "bonus": "Ni Toronto, ni Montréal !",
+   "voix_reponse": "Ottawa ! Pas Toronto.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🕷️",
+   "question": "Combien d'yeux ont la plupart des araignées ?",
+   "choix": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "reponse": 3,
+   "bonus": "Et pourtant, beaucoup voient assez mal !",
+   "voix_reponse": "Huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Combien de joueurs par équipe au rugby à XV ?",
+   "choix": [
+    "11",
+    "13",
+    "15",
+    "17"
+   ],
+   "reponse": 2,
+   "bonus": "D'où son nom : rugby à quinze !",
+   "voix_reponse": "Quinze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Combien de dents a un adulte, dents de sagesse comprises ?",
+   "choix": [
+    "28",
+    "30",
+    "32",
+    "34"
+   ],
+   "reponse": 2,
+   "bonus": "Sans les dents de sagesse, c'est 28.",
+   "voix_reponse": "Trente-deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quelle mer borde la ville de Marseille ?",
+   "choix": [
+    "La Manche",
+    "La mer du Nord",
+    "La Méditerranée",
+    "L'océan Atlantique"
+   ],
+   "reponse": 2,
+   "bonus": "Marseille est le plus grand port de France.",
+   "voix_reponse": "La Méditerranée !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧲",
+   "question": "Lequel de ces métaux est attiré par un aimant ?",
+   "choix": [
+    "L'aluminium",
+    "Le cuivre",
+    "Le fer",
+    "L'or"
+   ],
+   "reponse": 2,
+   "bonus": "Le nickel et le cobalt aussi !",
+   "voix_reponse": "Le fer !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Combien de spectateurs le Colisée de Rome pouvait-il accueillir ?",
+   "choix": [
+    "5 000",
+    "15 000",
+    "50 000",
+    "500 000"
+   ],
+   "reponse": 2,
+   "bonus": "Entre 50 000 et 80 000 selon les historiens.",
+   "voix_reponse": "Environ cinquante mille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐼",
+   "question": "Que mange presque exclusivement le panda géant ?",
+   "choix": [
+    "Des fruits",
+    "Du poisson",
+    "Du bambou",
+    "Des insectes"
+   ],
+   "reponse": 2,
+   "bonus": "Il passe environ la moitié de sa journée à manger !",
+   "voix_reponse": "Du bambou !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏜️",
+   "question": "Dans quel pays se trouve la ville de Tombouctou ?",
+   "choix": [
+    "Le Niger",
+    "Le Mali",
+    "Le Maroc",
+    "Le Tchad"
+   ],
+   "reponse": 1,
+   "bonus": "Une ville légendaire aux portes du désert.",
+   "voix_reponse": "Le Mali !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "Quelle est l'étoile la plus proche de la Terre ?",
+   "choix": [
+    "Proxima du Centaure",
+    "Sirius",
+    "Le Soleil",
+    "L'étoile Polaire"
+   ],
+   "reponse": 2,
+   "bonus": "Piège : le Soleil est une étoile !",
+   "voix_reponse": "Le Soleil ! Eh oui, c'est une étoile.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

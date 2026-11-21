@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 26",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍅",
+   "question": "Pour les botanistes, la tomate est...",
+   "choix": [
+    "Un légume",
+    "Un fruit",
+    "Une céréale",
+    "Un tubercule"
+   ],
+   "reponse": 1,
+   "bonus": "Elle contient des graines : c'est un fruit !",
+   "voix_reponse": "Un fruit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐆",
+   "question": "Quel est l'animal terrestre le plus rapide ?",
+   "choix": [
+    "Le lion",
+    "Le guépard",
+    "L'antilope",
+    "Le lévrier"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 100 km/h en pointe !",
+   "voix_reponse": "Le guépard !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📆",
+   "question": "Combien de semaines y a-t-il dans une année ?",
+   "choix": [
+    "48",
+    "50",
+    "52",
+    "54"
+   ],
+   "reponse": 2,
+   "bonus": "Plus un jour, ou deux les années bissextiles.",
+   "voix_reponse": "Cinquante-deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌉",
+   "question": "Dans quelle ville se trouve le Golden Gate Bridge ?",
+   "choix": [
+    "Los Angeles",
+    "San Francisco",
+    "Seattle",
+    "New York"
+   ],
+   "reponse": 1,
+   "bonus": "Inauguré en 1937.",
+   "voix_reponse": "San Francisco !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👁️",
+   "question": "Quelle partie du corps ne contient aucun vaisseau sanguin ?",
+   "choix": [
+    "La cornée",
+    "Le foie",
+    "La langue",
+    "Le nez"
+   ],
+   "reponse": 0,
+   "bonus": "Elle reçoit l'oxygène directement de l'air !",
+   "voix_reponse": "La cornée !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇫🇷",
+   "question": "Quelle est la devise de la France ?",
+   "choix": [
+    "Liberté, Égalité, Fraternité",
+    "Paix et Justice",
+    "Unité et Progrès",
+    "Honneur et Patrie"
+   ],
+   "reponse": 0,
+   "bonus": "Héritée de la Révolution française.",
+   "voix_reponse": "Liberté, Égalité, Fraternité !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌲",
+   "question": "Lequel de ces conifères perd ses aiguilles en hiver ?",
+   "choix": [
+    "Le sapin",
+    "Le mélèze",
+    "Le pin",
+    "L'épicéa"
+   ],
+   "reponse": 1,
+   "bonus": "Un conifère qui n'est pas toujours vert !",
+   "voix_reponse": "Le mélèze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌐",
+   "question": "Combien mesure le tour de la Terre à l'équateur ?",
+   "choix": [
+    "4 000 km",
+    "40 000 km",
+    "400 000 km",
+    "4 millions de km"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 40 075 km !",
+   "voix_reponse": "Environ quarante mille kilomètres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦈",
+   "question": "Quel animal existait déjà avant les dinosaures ?",
+   "choix": [
+    "Le requin",
+    "Le chat",
+    "Le cheval",
+    "Le lapin"
+   ],
+   "reponse": 0,
+   "bonus": "Les requins existent depuis plus de 400 millions d'années !",
+   "voix_reponse": "Le requin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Combien y avait-il de merveilles du monde antique ?",
+   "choix": [
+    "5",
+    "7",
+    "9",
+    "12"
+   ],
+   "reponse": 1,
+   "bonus": "Seule la pyramide de Khéops existe encore !",
+   "voix_reponse": "Sept !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

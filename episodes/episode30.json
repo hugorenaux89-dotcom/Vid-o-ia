@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 30",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌰",
+   "question": "Avec quel fruit sec fait-on la pâte d'amande ?",
+   "choix": [
+    "La noisette",
+    "L'amande",
+    "La noix",
+    "La pistache"
+   ],
+   "reponse": 1,
+   "bonus": "Mélangée à du sucre !",
+   "voix_reponse": "L'amande !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐣",
+   "question": "Combien de jours faut-il pour qu'un œuf de poule éclose ?",
+   "choix": [
+    "7 jours",
+    "21 jours",
+    "45 jours",
+    "3 mois"
+   ],
+   "reponse": 1,
+   "bonus": "Trois semaines bien au chaud !",
+   "voix_reponse": "Vingt et un jours !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇦🇷",
+   "question": "Quelle est la capitale de l'Argentine ?",
+   "choix": [
+    "Santiago",
+    "Buenos Aires",
+    "Montevideo",
+    "Lima"
+   ],
+   "reponse": 1,
+   "bonus": "Santiago, c'est le Chili !",
+   "voix_reponse": "Buenos Aires !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖼️",
+   "question": "Quel peintre a créé le tableau Guernica ?",
+   "choix": [
+    "Dalí",
+    "Picasso",
+    "Miró",
+    "Goya"
+   ],
+   "reponse": 1,
+   "bonus": "Peint en 1937, contre la guerre.",
+   "voix_reponse": "Picasso !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔌",
+   "question": "Quelle est la tension d'une prise électrique en France ?",
+   "choix": [
+    "110 V",
+    "230 V",
+    "380 V",
+    "12 V"
+   ],
+   "reponse": 1,
+   "bonus": "Aux États-Unis, c'est environ 120 V.",
+   "voix_reponse": "Deux cent trente volts !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦒",
+   "question": "De quelle couleur est la langue d'une girafe ?",
+   "choix": [
+    "Rose",
+    "Bleu-noir",
+    "Rouge",
+    "Verte"
+   ],
+   "reponse": 1,
+   "bonus": "Sûrement pour la protéger des coups de soleil !",
+   "voix_reponse": "Bleu-noir !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Dans quelle ville se trouve le musée du Prado ?",
+   "choix": [
+    "Barcelone",
+    "Madrid",
+    "Séville",
+    "Lisbonne"
+   ],
+   "reponse": 1,
+   "bonus": "L'un des plus grands musées d'art au monde.",
+   "voix_reponse": "Madrid !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌙",
+   "question": "Qui a été le deuxième homme à marcher sur la Lune ?",
+   "choix": [
+    "Michael Collins",
+    "Buzz Aldrin",
+    "Neil Armstrong",
+    "Youri Gagarine"
+   ],
+   "reponse": 1,
+   "bonus": "Quelques minutes après Neil Armstrong !",
+   "voix_reponse": "Buzz Aldrin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Combien pèse un cerveau humain adulte, environ ?",
+   "choix": [
+    "400 g",
+    "1,4 kg",
+    "3 kg",
+    "5 kg"
+   ],
+   "reponse": 1,
+   "bonus": "À peu près le poids d'un ananas !",
+   "voix_reponse": "Environ un kilo quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Quel est le plus grand volcan du système solaire ?",
+   "choix": [
+    "L'Etna",
+    "Olympus Mons",
+    "Le Mauna Loa",
+    "Le Vésuve"
+   ],
+   "reponse": 1,
+   "bonus": "Sur Mars, environ 22 km de haut !",
+   "voix_reponse": "Olympus Mons ! Sur Mars.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

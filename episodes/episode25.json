@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 25",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🇬🇷",
+   "question": "Quelle est la capitale de la Grèce ?",
+   "choix": [
+    "Sparte",
+    "Athènes",
+    "Thessalonique",
+    "Olympie"
+   ],
+   "reponse": 1,
+   "bonus": "L'une des plus vieilles villes du monde !",
+   "voix_reponse": "Athènes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐶",
+   "question": "Quel est le sens le plus développé chez le chien ?",
+   "choix": [
+    "La vue",
+    "L'odorat",
+    "Le goût",
+    "Le toucher"
+   ],
+   "reponse": 1,
+   "bonus": "Des dizaines de milliers de fois meilleur que le nôtre !",
+   "voix_reponse": "L'odorat !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💧",
+   "question": "Quelle part de la surface de la Terre est couverte d'eau ?",
+   "choix": [
+    "50 %",
+    "60 %",
+    "71 %",
+    "90 %"
+   ],
+   "reponse": 2,
+   "bonus": "D'où son surnom : la planète bleue !",
+   "voix_reponse": "Environ soixante et onze pour cent !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎸",
+   "question": "De quel pays venaient les Beatles ?",
+   "choix": [
+    "Les États-Unis",
+    "L'Angleterre",
+    "L'Irlande",
+    "L'Australie"
+   ],
+   "reponse": 1,
+   "bonus": "De Liverpool, plus précisément !",
+   "voix_reponse": "L'Angleterre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Quelle vitamine le soleil aide-t-il à fabriquer ?",
+   "choix": [
+    "La vitamine A",
+    "La vitamine C",
+    "La vitamine D",
+    "La vitamine K"
+   ],
+   "reponse": 2,
+   "bonus": "Elle est essentielle pour les os !",
+   "voix_reponse": "La vitamine D !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quel roi de France a été guillotiné en 1793 ?",
+   "choix": [
+    "Louis XIV",
+    "Louis XV",
+    "Louis XVI",
+    "Charles X"
+   ],
+   "reponse": 2,
+   "bonus": "Quelques mois avant Marie-Antoinette.",
+   "voix_reponse": "Louis seize !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇩🇿",
+   "question": "Quel est le plus grand pays d'Afrique ?",
+   "choix": [
+    "Le Nigeria",
+    "L'Algérie",
+    "L'Égypte",
+    "La RD Congo"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 2,3 millions de km² !",
+   "voix_reponse": "L'Algérie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐝",
+   "question": "Combien de temps vit une abeille ouvrière en été ?",
+   "choix": [
+    "Quelques jours",
+    "Environ 6 semaines",
+    "Un an",
+    "Cinq ans"
+   ],
+   "reponse": 1,
+   "bonus": "Elle travaille littéralement jusqu'à l'épuisement !",
+   "voix_reponse": "Environ six semaines !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle est la planète la plus éloignée du Soleil ?",
+   "choix": [
+    "Pluton",
+    "Neptune",
+    "Uranus",
+    "Saturne"
+   ],
+   "reponse": 1,
+   "bonus": "Pluton n'est plus une planète depuis 2006 !",
+   "voix_reponse": "Neptune ! Pas Pluton.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🗣️",
+   "question": "Quelle est la langue maternelle la plus parlée au monde ?",
+   "choix": [
+    "L'anglais",
+    "Le mandarin",
+    "L'espagnol",
+    "L'hindi"
+   ],
+   "reponse": 1,
+   "bonus": "L'anglais est surtout parlé comme seconde langue !",
+   "voix_reponse": "Le mandarin ! Pas l'anglais.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

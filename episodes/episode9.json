@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 9",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🇹🇷",
+   "question": "Quelle est la capitale de la Turquie ?",
+   "choix": [
+    "Istanbul",
+    "Ankara",
+    "Izmir",
+    "Antalya"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Istanbul, même si c'est la plus grande ville !",
+   "voix_reponse": "Ankara ! Pas Istanbul.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🐬",
+   "question": "Le dauphin est un...",
+   "choix": [
+    "Poisson",
+    "Mammifère",
+    "Reptile",
+    "Amphibien"
+   ],
+   "reponse": 1,
+   "bonus": "Il respire de l'air avec ses poumons.",
+   "voix_reponse": "Un mammifère !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎨",
+   "question": "Quelles couleurs mélanger pour obtenir du vert ?",
+   "choix": [
+    "Rouge et bleu",
+    "Jaune et bleu",
+    "Rouge et jaune",
+    "Blanc et noir"
+   ],
+   "reponse": 1,
+   "bonus": "Rouge et bleu, ça donne du violet.",
+   "voix_reponse": "Jaune et bleu !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦴",
+   "question": "Où se trouve le plus petit os du corps humain ?",
+   "choix": [
+    "Dans le pied",
+    "Dans la main",
+    "Dans l'oreille",
+    "Dans le nez"
+   ],
+   "reponse": 2,
+   "bonus": "Il s'appelle l'étrier et mesure environ 3 mm.",
+   "voix_reponse": "Dans l'oreille ! C'est l'étrier.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔺",
+   "question": "Pour qui ont été construites les pyramides de Gizeh ?",
+   "choix": [
+    "Des rois romains",
+    "Des pharaons",
+    "Des empereurs perses",
+    "Des sultans"
+   ],
+   "reponse": 1,
+   "bonus": "Ce sont des tombeaux géants.",
+   "voix_reponse": "Des pharaons !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌪️",
+   "question": "Comment appelle-t-on un ouragan en Asie de l'Est ?",
+   "choix": [
+    "Une tornade",
+    "Un typhon",
+    "Une mousson",
+    "Un blizzard"
+   ],
+   "reponse": 1,
+   "bonus": "C'est le même phénomène, avec un autre nom.",
+   "voix_reponse": "Un typhon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📜",
+   "question": "Quel pays a inventé le papier ?",
+   "choix": [
+    "L'Égypte",
+    "La Chine",
+    "La Grèce",
+    "L'Inde"
+   ],
+   "reponse": 1,
+   "bonus": "Il y a environ 2 000 ans.",
+   "voix_reponse": "La Chine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐝",
+   "question": "Combien d'ailes a une abeille ?",
+   "choix": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "reponse": 1,
+   "bonus": "Elles battent environ 200 fois par seconde !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛰️",
+   "question": "Comment s'appelle le premier satellite artificiel ?",
+   "choix": [
+    "Apollo",
+    "Spoutnik",
+    "Hubble",
+    "Voyager"
+   ],
+   "reponse": 1,
+   "bonus": "Lancé par l'URSS en 1957.",
+   "voix_reponse": "Spoutnik !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍯",
+   "question": "Quel aliment peut se conserver des milliers d'années ?",
+   "choix": [
+    "Le pain",
+    "Le miel",
+    "Le lait",
+    "Le chocolat"
+   ],
+   "reponse": 1,
+   "bonus": "On en a trouvé dans des tombes égyptiennes !",
+   "voix_reponse": "Le miel !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

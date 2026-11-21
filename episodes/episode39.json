@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 39",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🧇",
+   "question": "De quel pays viennent les gaufres de Liège ?",
+   "choix": [
+    "La France",
+    "La Belgique",
+    "La Suisse",
+    "Les Pays-Bas"
+   ],
+   "reponse": 1,
+   "bonus": "Liège est une ville belge !",
+   "voix_reponse": "La Belgique !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐿️",
+   "question": "Quel animal fait des réserves de noisettes pour l'hiver ?",
+   "choix": [
+    "Le hérisson",
+    "L'écureuil",
+    "Le renard",
+    "Le lapin"
+   ],
+   "reponse": 1,
+   "bonus": "Il en oublie beaucoup... et plante des arbres !",
+   "voix_reponse": "L'écureuil !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Comment appelle-t-on un scientifique qui étudie les volcans ?",
+   "choix": [
+    "Un sismologue",
+    "Un volcanologue",
+    "Un géographe",
+    "Un météorologue"
+   ],
+   "reponse": 1,
+   "bonus": "Le sismologue, lui, étudie les séismes.",
+   "voix_reponse": "Un volcanologue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏆",
+   "question": "Quel joueur a remporté le plus de Ballons d'or ?",
+   "choix": [
+    "Cristiano Ronaldo",
+    "Lionel Messi",
+    "Michel Platini",
+    "Zinédine Zidane"
+   ],
+   "reponse": 1,
+   "bonus": "Huit Ballons d'or !",
+   "voix_reponse": "Lionel Messi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩺",
+   "question": "Quel organe peut se régénérer en partie ?",
+   "choix": [
+    "Le cœur",
+    "Le foie",
+    "Le cerveau",
+    "Les poumons"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut repousser même après une ablation partielle !",
+   "voix_reponse": "Le foie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇰🇷",
+   "question": "Quelle est la capitale de la Corée du Sud ?",
+   "choix": [
+    "Busan",
+    "Séoul",
+    "Pyongyang",
+    "Tokyo"
+   ],
+   "reponse": 1,
+   "bonus": "Pyongyang, c'est la Corée du Nord !",
+   "voix_reponse": "Séoul !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🕰️",
+   "question": "Quel artiste est célèbre pour ses montres molles ?",
+   "choix": [
+    "Picasso",
+    "Salvador Dalí",
+    "Magritte",
+    "Matisse"
+   ],
+   "reponse": 1,
+   "bonus": "Le tableau s'appelle « La Persistance de la mémoire ».",
+   "voix_reponse": "Salvador Dalí !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐡",
+   "question": "Quel poisson peut gonfler comme un ballon ?",
+   "choix": [
+    "Le poisson-clown",
+    "Le poisson-globe",
+    "Le mérou",
+    "La raie"
+   ],
+   "reponse": 1,
+   "bonus": "Et il peut être très toxique !",
+   "voix_reponse": "Le poisson-globe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛰️",
+   "question": "Quelle sonde est l'objet humain le plus éloigné de la Terre ?",
+   "choix": [
+    "Voyager 1",
+    "Curiosity",
+    "Hubble",
+    "Apollo 11"
+   ],
+   "reponse": 0,
+   "bonus": "Lancée en 1977, elle voyage toujours !",
+   "voix_reponse": "Voyager un !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇺🇸",
+   "question": "Quelle lettre n'apparaît dans aucun nom d'État américain ?",
+   "choix": [
+    "Q",
+    "X",
+    "Z",
+    "J"
+   ],
+   "reponse": 0,
+   "bonus": "Même le Z est dans Arizona !",
+   "voix_reponse": "Le Q !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

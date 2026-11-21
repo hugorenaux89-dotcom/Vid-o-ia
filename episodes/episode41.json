@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 41",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍉",
+   "question": "Quel fruit est composé à plus de 90 % d'eau ?",
+   "choix": [
+    "La banane",
+    "La pastèque",
+    "L'avocat",
+    "La datte"
+   ],
+   "reponse": 1,
+   "bonus": "Parfaite pour l'été !",
+   "voix_reponse": "La pastèque !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐕",
+   "question": "Quelle race de chien est la plus grande ?",
+   "choix": [
+    "Le berger allemand",
+    "Le dogue allemand",
+    "Le labrador",
+    "Le husky"
+   ],
+   "reponse": 1,
+   "bonus": "Debout, il peut dépasser 2 mètres !",
+   "voix_reponse": "Le dogue allemand !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇸🇪",
+   "question": "Quelle est la capitale de la Suède ?",
+   "choix": [
+    "Oslo",
+    "Stockholm",
+    "Copenhague",
+    "Göteborg"
+   ],
+   "reponse": 1,
+   "bonus": "Construite sur 14 îles !",
+   "voix_reponse": "Stockholm !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Dans quelle ville a lieu le célèbre festival de cinéma de la Palme d'or ?",
+   "choix": [
+    "Nice",
+    "Cannes",
+    "Deauville",
+    "Paris"
+   ],
+   "reponse": 1,
+   "bonus": "Créé en 1946.",
+   "voix_reponse": "Cannes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦴",
+   "question": "Quel os n'est relié à aucun autre os ?",
+   "choix": [
+    "La rotule",
+    "L'os hyoïde",
+    "Le coccyx",
+    "La clavicule"
+   ],
+   "reponse": 1,
+   "bonus": "Il se trouve dans le cou et soutient la langue !",
+   "voix_reponse": "L'os hyoïde !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quelle était la capitale de l'Empire byzantin ?",
+   "choix": [
+    "Rome",
+    "Constantinople",
+    "Athènes",
+    "Alexandrie"
+   ],
+   "reponse": 1,
+   "bonus": "Aujourd'hui, elle s'appelle Istanbul !",
+   "voix_reponse": "Constantinople !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛈️",
+   "question": "Comment s'appellent les gros nuages d'orage ?",
+   "choix": [
+    "Les cirrus",
+    "Les cumulonimbus",
+    "Les stratus",
+    "Les altocumulus"
+   ],
+   "reponse": 1,
+   "bonus": "Ils peuvent monter à plus de 10 km d'altitude !",
+   "voix_reponse": "Les cumulonimbus !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦥",
+   "question": "Quel est le mammifère le plus lent du monde ?",
+   "choix": [
+    "La tortue",
+    "Le paresseux",
+    "Le koala",
+    "L'escargot"
+   ],
+   "reponse": 1,
+   "bonus": "La tortue et l'escargot ne sont pas des mammifères !",
+   "voix_reponse": "Le paresseux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔋",
+   "question": "Qui a inventé la pile électrique ?",
+   "choix": [
+    "Edison",
+    "Alessandro Volta",
+    "Ampère",
+    "Tesla"
+   ],
+   "reponse": 1,
+   "bonus": "D'où le nom de l'unité : le volt !",
+   "voix_reponse": "Alessandro Volta !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇵🇭",
+   "question": "Quel pays est formé de plus de 7 000 îles ?",
+   "choix": [
+    "Le Japon",
+    "Les Philippines",
+    "La Grèce",
+    "Cuba"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 7 600 îles !",
+   "voix_reponse": "Les Philippines !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

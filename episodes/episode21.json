@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 21",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🛶",
+   "question": "Quelle ville italienne est construite sur l'eau ?",
+   "choix": [
+    "Florence",
+    "Venise",
+    "Milan",
+    "Naples"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 100 petites îles reliées par des ponts !",
+   "voix_reponse": "Venise !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐻‍❄️",
+   "question": "De quelle couleur est la peau de l'ours polaire ?",
+   "choix": [
+    "Blanche",
+    "Rose",
+    "Noire",
+    "Grise"
+   ],
+   "reponse": 2,
+   "bonus": "Et ses poils sont en réalité transparents !",
+   "voix_reponse": "Noire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍞",
+   "question": "Quel ingrédient fait lever la pâte à pain ?",
+   "choix": [
+    "Le sel",
+    "La levure",
+    "Le sucre",
+    "L'huile"
+   ],
+   "reponse": 1,
+   "bonus": "Elle produit du gaz qui gonfle la pâte.",
+   "voix_reponse": "La levure !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Combien d'habitants y a-t-il sur Terre, environ ?",
+   "choix": [
+    "4 milliards",
+    "6 milliards",
+    "8 milliards",
+    "12 milliards"
+   ],
+   "reponse": 2,
+   "bonus": "Le cap des 8 milliards a été franchi en 2022.",
+   "voix_reponse": "Environ huit milliards !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚡",
+   "question": "Qui a inventé le paratonnerre ?",
+   "choix": [
+    "Thomas Edison",
+    "Benjamin Franklin",
+    "Nikola Tesla",
+    "Volta"
+   ],
+   "reponse": 1,
+   "bonus": "Au XVIIIe siècle, en jouant avec un cerf-volant !",
+   "voix_reponse": "Benjamin Franklin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍑",
+   "question": "Quel est le muscle le plus gros du corps humain ?",
+   "choix": [
+    "Le biceps",
+    "Le grand fessier",
+    "Le quadriceps",
+    "Le cœur"
+   ],
+   "reponse": 1,
+   "bonus": "C'est lui qui te permet de te tenir debout.",
+   "voix_reponse": "Le grand fessier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Dans quel pays se trouve le Kilimandjaro ?",
+   "choix": [
+    "Le Kenya",
+    "La Tanzanie",
+    "L'Éthiopie",
+    "L'Ouganda"
+   ],
+   "reponse": 1,
+   "bonus": "Pas au Kenya, même s'il est tout près !",
+   "voix_reponse": "La Tanzanie ! Pas le Kenya.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🎞️",
+   "question": "Combien d'images par seconde défilent au cinéma ?",
+   "choix": [
+    "12",
+    "24",
+    "30",
+    "60"
+   ],
+   "reponse": 1,
+   "bonus": "La norme depuis la fin des années 1920.",
+   "voix_reponse": "Vingt-quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐠",
+   "question": "Le poisson-clown peut changer de...",
+   "choix": [
+    "Couleur",
+    "Sexe",
+    "Taille",
+    "Forme"
+   ],
+   "reponse": 1,
+   "bonus": "Un mâle peut devenir femelle !",
+   "voix_reponse": "De sexe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✈️",
+   "question": "Quel est le pays le plus visité au monde ?",
+   "choix": [
+    "L'Espagne",
+    "Les États-Unis",
+    "La France",
+    "L'Italie"
+   ],
+   "reponse": 2,
+   "bonus": "Le numéro un mondial depuis des décennies !",
+   "voix_reponse": "La France !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

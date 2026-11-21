@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 31",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "⌚",
+   "question": "Quel pays est célèbre pour ses montres et son chocolat ?",
+   "choix": [
+    "L'Autriche",
+    "La Suisse",
+    "La Belgique",
+    "La Suède"
+   ],
+   "reponse": 1,
+   "bonus": "L'horlogerie suisse est réputée dans le monde entier.",
+   "voix_reponse": "La Suisse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐟",
+   "question": "Quel poisson remonte les rivières pour pondre ?",
+   "choix": [
+    "Le thon",
+    "Le saumon",
+    "La sardine",
+    "Le requin"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent dans la rivière où il est né !",
+   "voix_reponse": "Le saumon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "♟️",
+   "question": "Combien de cases y a-t-il sur un échiquier ?",
+   "choix": [
+    "36",
+    "49",
+    "64",
+    "100"
+   ],
+   "reponse": 2,
+   "bonus": "8 lignes de 8 cases.",
+   "voix_reponse": "Soixante-quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎆",
+   "question": "Quel pays a inventé les feux d'artifice ?",
+   "choix": [
+    "L'Italie",
+    "La Chine",
+    "L'Inde",
+    "La France"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à l'invention de la poudre noire !",
+   "voix_reponse": "La Chine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👂",
+   "question": "Quelle partie du corps nous aide à garder l'équilibre ?",
+   "choix": [
+    "Les yeux",
+    "L'oreille interne",
+    "Le nez",
+    "Les genoux"
+   ],
+   "reponse": 1,
+   "bonus": "C'est pour ça qu'on peut avoir le mal de mer !",
+   "voix_reponse": "L'oreille interne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quelle reine de France a été guillotinée ?",
+   "choix": [
+    "Catherine de Médicis",
+    "Marie-Antoinette",
+    "Anne d'Autriche",
+    "Joséphine"
+   ],
+   "reponse": 1,
+   "bonus": "Le 16 octobre 1793.",
+   "voix_reponse": "Marie-Antoinette !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quel détroit sépare l'Europe de l'Afrique ?",
+   "choix": [
+    "Le Bosphore",
+    "Gibraltar",
+    "Le pas de Calais",
+    "Ormuz"
+   ],
+   "reponse": 1,
+   "bonus": "Seulement 14 km de large !",
+   "voix_reponse": "Le détroit de Gibraltar !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐈",
+   "question": "Lequel de ces animaux a une troisième paupière ?",
+   "choix": [
+    "Le chat",
+    "Le serpent",
+    "Le poisson rouge",
+    "L'escargot"
+   ],
+   "reponse": 0,
+   "bonus": "Une fine membrane qui protège son œil !",
+   "voix_reponse": "Le chat !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎻",
+   "question": "Qui a composé La Flûte enchantée ?",
+   "choix": [
+    "Bach",
+    "Mozart",
+    "Wagner",
+    "Verdi"
+   ],
+   "reponse": 1,
+   "bonus": "Son dernier opéra, en 1791.",
+   "voix_reponse": "Mozart !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "Combien de temps met la lumière de Proxima du Centaure pour nous arriver ?",
+   "choix": [
+    "4 secondes",
+    "4 minutes",
+    "Environ 4 ans",
+    "400 ans"
+   ],
+   "reponse": 2,
+   "bonus": "L'étoile la plus proche après le Soleil !",
+   "voix_reponse": "Environ quatre ans !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 37",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍫",
+   "question": "Quel pays est le premier producteur de cacao ?",
+   "choix": [
+    "Le Brésil",
+    "La Côte d'Ivoire",
+    "Le Ghana",
+    "L'Équateur"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 40 % du cacao mondial !",
+   "voix_reponse": "La Côte d'Ivoire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦓",
+   "question": "Chaque zèbre a-t-il des rayures uniques ?",
+   "choix": [
+    "Oui, comme des empreintes",
+    "Non, toutes identiques",
+    "Seulement les mâles",
+    "Seulement les petits"
+   ],
+   "reponse": 0,
+   "bonus": "Comme nos empreintes digitales !",
+   "voix_reponse": "Oui ! Comme des empreintes digitales.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Quel est le plus haut sommet d'Afrique ?",
+   "choix": [
+    "Le mont Kenya",
+    "Le Kilimandjaro",
+    "Le Toubkal",
+    "Le mont Cameroun"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 5 895 mètres.",
+   "voix_reponse": "Le Kilimandjaro !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎻",
+   "question": "Quel instrument à cordes a le son le plus grave ?",
+   "choix": [
+    "Le violon",
+    "L'alto",
+    "Le violoncelle",
+    "La contrebasse"
+   ],
+   "reponse": 3,
+   "bonus": "C'est aussi le plus grand !",
+   "voix_reponse": "La contrebasse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😴",
+   "question": "Quelle hormone aide à s'endormir ?",
+   "choix": [
+    "L'adrénaline",
+    "La mélatonine",
+    "L'insuline",
+    "La dopamine"
+   ],
+   "reponse": 1,
+   "bonus": "Les écrans le soir freinent sa production !",
+   "voix_reponse": "La mélatonine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇵🇱",
+   "question": "Quelle est la capitale de la Pologne ?",
+   "choix": [
+    "Cracovie",
+    "Varsovie",
+    "Gdansk",
+    "Prague"
+   ],
+   "reponse": 1,
+   "bonus": "Prague, c'est la Tchéquie !",
+   "voix_reponse": "Varsovie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚢",
+   "question": "En quelle année le Titanic a-t-il coulé ?",
+   "choix": [
+    "1905",
+    "1912",
+    "1921",
+    "1931"
+   ],
+   "reponse": 1,
+   "bonus": "Lors de son tout premier voyage !",
+   "voix_reponse": "Mille neuf cent douze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "En plein été, combien d'heures de jour y a-t-il au pôle Nord ?",
+   "choix": [
+    "12 heures",
+    "18 heures",
+    "24 heures",
+    "6 heures"
+   ],
+   "reponse": 2,
+   "bonus": "Le soleil ne se couche jamais : c'est le soleil de minuit !",
+   "voix_reponse": "Vingt-quatre heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🕹️",
+   "question": "Quel jeu vidéo à deux raquettes a été l'un des premiers succès ?",
+   "choix": [
+    "Tetris",
+    "Pong",
+    "Pac-Man",
+    "Space Invaders"
+   ],
+   "reponse": 1,
+   "bonus": "Sorti en 1972 !",
+   "voix_reponse": "Pong !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐇",
+   "question": "Lequel de ces animaux a des dents qui poussent toute sa vie ?",
+   "choix": [
+    "Le chien",
+    "Le lapin",
+    "Le chat",
+    "Le lion"
+   ],
+   "reponse": 1,
+   "bonus": "Il doit ronger pour les user !",
+   "voix_reponse": "Le lapin !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

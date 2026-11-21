@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 4",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍕",
+   "question": "De quel pays vient la pizza ?",
+   "choix": [
+    "La Grèce",
+    "L'Italie",
+    "L'Espagne",
+    "Les États-Unis"
+   ],
+   "reponse": 1,
+   "bonus": "Plus précisément de Naples !",
+   "voix_reponse": "L'Italie ! De Naples.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌈",
+   "question": "Combien de couleurs compte-t-on dans un arc-en-ciel ?",
+   "choix": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "reponse": 2,
+   "bonus": "Rouge, orange, jaune, vert, bleu, indigo, violet.",
+   "voix_reponse": "Sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel est le plus grand animal ayant jamais existé ?",
+   "choix": [
+    "Le mégalodon",
+    "Le diplodocus",
+    "La baleine bleue",
+    "Le requin-baleine"
+   ],
+   "reponse": 2,
+   "bonus": "Plus grosse que n'importe quel dinosaure !",
+   "voix_reponse": "La baleine bleue ! Plus grosse que les dinosaures.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✈️",
+   "question": "Qui a traversé la Manche en avion pour la première fois ?",
+   "choix": [
+    "Les frères Wright",
+    "Louis Blériot",
+    "Charles Lindbergh",
+    "Roland Garros"
+   ],
+   "reponse": 1,
+   "bonus": "C'était en 1909 !",
+   "voix_reponse": "Louis Blériot !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚡",
+   "question": "Quel organe consomme environ 20 % de l'énergie du corps ?",
+   "choix": [
+    "Le cœur",
+    "Le foie",
+    "Le cerveau",
+    "Les poumons"
+   ],
+   "reponse": 2,
+   "bonus": "Alors qu'il ne pèse qu'environ 2 % de ton poids !",
+   "voix_reponse": "Le cerveau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗽",
+   "question": "Quel pays a offert la statue de la Liberté aux États-Unis ?",
+   "choix": [
+    "Le Royaume-Uni",
+    "La France",
+    "L'Espagne",
+    "L'Italie"
+   ],
+   "reponse": 1,
+   "bonus": "Sa structure intérieure a été conçue par Gustave Eiffel !",
+   "voix_reponse": "La France ! Et c'est Eiffel qui a fait sa structure.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle est la plus grosse planète du système solaire ?",
+   "choix": [
+    "Saturne",
+    "Neptune",
+    "Jupiter",
+    "Uranus"
+   ],
+   "reponse": 2,
+   "bonus": "Elle pourrait contenir plus de 1 300 Terres !",
+   "voix_reponse": "Jupiter !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔤",
+   "question": "Combien de lettres compte l'alphabet français ?",
+   "choix": [
+    "24",
+    "25",
+    "26",
+    "27"
+   ],
+   "reponse": 2,
+   "bonus": "Sans compter les lettres accentuées.",
+   "voix_reponse": "Vingt-six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐫",
+   "question": "Que stocke vraiment un dromadaire dans sa bosse ?",
+   "choix": [
+    "De l'eau",
+    "De la graisse",
+    "Du sang",
+    "De l'air"
+   ],
+   "reponse": 1,
+   "bonus": "Pas de l'eau ! C'est une réserve d'énergie.",
+   "voix_reponse": "De la graisse ! Pas de l'eau.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🍌",
+   "question": "Lequel de ces fruits est une baie, pour les botanistes ?",
+   "choix": [
+    "La fraise",
+    "La banane",
+    "La framboise",
+    "La cerise"
+   ],
+   "reponse": 1,
+   "bonus": "Et la fraise, elle, n'en est pas une !",
+   "voix_reponse": "La banane ! Et non, pas la fraise.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

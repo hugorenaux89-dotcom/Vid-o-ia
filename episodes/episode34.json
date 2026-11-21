@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 34",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🇯🇵",
+   "question": "Comment dit-on « merci » en japonais ?",
+   "choix": [
+    "Konnichiwa",
+    "Arigato",
+    "Sayonara",
+    "Kawaii"
+   ],
+   "reponse": 1,
+   "bonus": "Konnichiwa veut dire bonjour !",
+   "voix_reponse": "Arigato !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥛",
+   "question": "Combien de litres de lait une vache laitière donne-t-elle par jour ?",
+   "choix": [
+    "3 litres",
+    "Environ 30 litres",
+    "100 litres",
+    "300 litres"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à deux traites par jour.",
+   "voix_reponse": "Environ trente litres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📐",
+   "question": "Combien vaut la somme des angles d'un triangle ?",
+   "choix": [
+    "90°",
+    "180°",
+    "270°",
+    "360°"
+   ],
+   "reponse": 1,
+   "bonus": "Quel que soit le triangle !",
+   "voix_reponse": "Cent quatre-vingts degrés !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇪🇬",
+   "question": "Quelle est la capitale de l'Égypte ?",
+   "choix": [
+    "Alexandrie",
+    "Le Caire",
+    "Louxor",
+    "Gizeh"
+   ],
+   "reponse": 1,
+   "bonus": "La plus grande ville d'Afrique du Nord !",
+   "voix_reponse": "Le Caire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😉",
+   "question": "Combien de fois cligne-t-on des yeux par minute, environ ?",
+   "choix": [
+    "2",
+    "15",
+    "60",
+    "100"
+   ],
+   "reponse": 1,
+   "bonus": "Ça garde tes yeux humides et propres !",
+   "voix_reponse": "Environ quinze fois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎸",
+   "question": "Quel guitariste a joué l'hymne américain à Woodstock ?",
+   "choix": [
+    "Eric Clapton",
+    "Jimi Hendrix",
+    "Jimmy Page",
+    "Carlos Santana"
+   ],
+   "reponse": 1,
+   "bonus": "Un moment culte de 1969 !",
+   "voix_reponse": "Jimi Hendrix !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦁",
+   "question": "Chez les lions, qui chasse le plus ?",
+   "choix": [
+    "Le mâle",
+    "Les lionnes",
+    "Les lionceaux",
+    "Personne"
+   ],
+   "reponse": 1,
+   "bonus": "Le mâle, lui, défend surtout le territoire !",
+   "voix_reponse": "Les lionnes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧪",
+   "question": "Quel est le pH de l'eau pure ?",
+   "choix": [
+    "0",
+    "7",
+    "10",
+    "14"
+   ],
+   "reponse": 1,
+   "bonus": "Ni acide, ni basique : neutre !",
+   "voix_reponse": "Sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏙️",
+   "question": "Dans quelle ville se trouve la tour Burj Khalifa ?",
+   "choix": [
+    "New York",
+    "Dubaï",
+    "Shanghai",
+    "Tokyo"
+   ],
+   "reponse": 1,
+   "bonus": "828 mètres de haut !",
+   "voix_reponse": "Dubaï !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦠",
+   "question": "Combien de bactéries vivent dans ton corps ?",
+   "choix": [
+    "Mille",
+    "Un million",
+    "Un milliard",
+    "Environ 40 000 milliards"
+   ],
+   "reponse": 3,
+   "bonus": "Autant que tes propres cellules, environ !",
+   "voix_reponse": "Environ quarante mille milliards !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

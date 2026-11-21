@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 16",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🏴",
+   "question": "Quelle est la capitale de l'Écosse ?",
+   "choix": [
+    "Glasgow",
+    "Édimbourg",
+    "Aberdeen",
+    "Dublin"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Glasgow, la plus grande ville !",
+   "voix_reponse": "Édimbourg ! Pas Glasgow.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🐪",
+   "question": "Combien de bosses a un dromadaire ?",
+   "choix": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "reponse": 1,
+   "bonus": "Le chameau, lui, en a deux !",
+   "voix_reponse": "Une seule ! Le chameau, lui, en a deux.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥚",
+   "question": "Scientifiquement, qui est apparu en premier ?",
+   "choix": [
+    "L'œuf",
+    "La poule",
+    "Les deux en même temps",
+    "On ne sait pas"
+   ],
+   "reponse": 0,
+   "bonus": "Les dinosaures pondaient déjà des œufs bien avant les poules !",
+   "voix_reponse": "L'œuf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔴",
+   "question": "Combien de lunes a la planète Mars ?",
+   "choix": [
+    "0",
+    "1",
+    "2",
+    "4"
+   ],
+   "reponse": 2,
+   "bonus": "Elles s'appellent Phobos et Déimos.",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👂",
+   "question": "Quel peintre s'est coupé une partie de l'oreille ?",
+   "choix": [
+    "Picasso",
+    "Van Gogh",
+    "Monet",
+    "Dalí"
+   ],
+   "reponse": 1,
+   "bonus": "C'était en 1888, à Arles.",
+   "voix_reponse": "Van Gogh !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Quelle est la matière la plus dure du corps humain ?",
+   "choix": [
+    "L'os",
+    "L'émail des dents",
+    "L'ongle",
+    "Le cartilage"
+   ],
+   "reponse": 1,
+   "bonus": "Plus dur que les os !",
+   "voix_reponse": "L'émail des dents !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛰️",
+   "question": "Quelles montagnes séparent la France de l'Espagne ?",
+   "choix": [
+    "Les Alpes",
+    "Les Pyrénées",
+    "Le Jura",
+    "Les Vosges"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 430 km de long.",
+   "voix_reponse": "Les Pyrénées !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💎",
+   "question": "Quel matériau naturel est le plus dur ?",
+   "choix": [
+    "Le quartz",
+    "Le diamant",
+    "Le saphir",
+    "Le granit"
+   ],
+   "reponse": 1,
+   "bonus": "Il ne peut être rayé que par un autre diamant.",
+   "voix_reponse": "Le diamant !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦇",
+   "question": "Comment les chauves-souris se repèrent-elles dans le noir ?",
+   "choix": [
+    "À l'odorat",
+    "Par écholocalisation",
+    "Grâce à la Lune",
+    "Au toucher"
+   ],
+   "reponse": 1,
+   "bonus": "Elles émettent des ultrasons et écoutent l'écho !",
+   "voix_reponse": "Par écholocalisation ! Avec des ultrasons.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚔️",
+   "question": "Combien de temps a duré la guerre de Cent Ans ?",
+   "choix": [
+    "100 ans",
+    "116 ans",
+    "99 ans",
+    "130 ans"
+   ],
+   "reponse": 1,
+   "bonus": "De 1337 à 1453 !",
+   "voix_reponse": "Cent seize ans ! Le nom est trompeur.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

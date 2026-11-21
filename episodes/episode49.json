@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 49",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🧀",
+   "question": "Quel fromage est célèbre pour ses trous ?",
+   "choix": [
+    "Le camembert",
+    "L'emmental",
+    "Le brie",
+    "Le roquefort"
+   ],
+   "reponse": 1,
+   "bonus": "Les trous viennent de bulles de gaz !",
+   "voix_reponse": "L'emmental !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐢",
+   "question": "Quel animal peut vivre plus de 150 ans ?",
+   "choix": [
+    "Le chat",
+    "La tortue géante",
+    "Le cheval",
+    "Le perroquet"
+   ],
+   "reponse": 1,
+   "bonus": "Certaines ont dépassé 180 ans !",
+   "voix_reponse": "La tortue géante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇻🇳",
+   "question": "Quelle est la capitale du Vietnam ?",
+   "choix": [
+    "Hô Chi Minh-Ville",
+    "Hanoï",
+    "Da Nang",
+    "Bangkok"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Hô Chi Minh-Ville, la plus grande ville !",
+   "voix_reponse": "Hanoï !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏐",
+   "question": "Combien de joueurs par équipe sur un terrain de volley ?",
+   "choix": [
+    "5",
+    "6",
+    "7",
+    "9"
+   ],
+   "reponse": 1,
+   "bonus": "Trois devant, trois derrière.",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Combien de doigts a un chat sur chaque patte avant ?",
+   "choix": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "reponse": 2,
+   "bonus": "Cinq devant, quatre derrière !",
+   "voix_reponse": "Cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖨️",
+   "question": "Quelle invention de Gutenberg a changé le monde ?",
+   "choix": [
+    "La boussole",
+    "L'imprimerie",
+    "La poudre",
+    "Le télescope"
+   ],
+   "reponse": 1,
+   "bonus": "Vers 1450, en Allemagne.",
+   "voix_reponse": "L'imprimerie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✨",
+   "question": "Combien de constellations officielles y a-t-il ?",
+   "choix": [
+    "12",
+    "48",
+    "88",
+    "200"
+   ],
+   "reponse": 2,
+   "bonus": "Les 12 du zodiaque n'en sont qu'une petite partie !",
+   "voix_reponse": "Quatre-vingt-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Combien de temps peut vivre une reine des abeilles ?",
+   "choix": [
+    "Un mois",
+    "Jusqu'à 5 ans",
+    "20 ans",
+    "Une semaine"
+   ],
+   "reponse": 1,
+   "bonus": "Beaucoup plus que les ouvrières !",
+   "voix_reponse": "Jusqu'à cinq ans !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪨",
+   "question": "Quel élément est le plus abondant dans la croûte terrestre ?",
+   "choix": [
+    "Le fer",
+    "L'oxygène",
+    "Le silicium",
+    "L'aluminium"
+   ],
+   "reponse": 1,
+   "bonus": "Il est enfermé dans les roches !",
+   "voix_reponse": "L'oxygène !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇳🇵",
+   "question": "Quel pays a un drapeau qui n'a pas quatre côtés ?",
+   "choix": [
+    "Le Népal",
+    "La Suisse",
+    "Le Vatican",
+    "Le Bhoutan"
+   ],
+   "reponse": 0,
+   "bonus": "Il est formé de deux triangles !",
+   "voix_reponse": "Le Népal !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

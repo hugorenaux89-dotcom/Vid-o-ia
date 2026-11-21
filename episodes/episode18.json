@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 18",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🇵🇹",
+   "question": "Quelle est la capitale du Portugal ?",
+   "choix": [
+    "Porto",
+    "Lisbonne",
+    "Faro",
+    "Madrid"
+   ],
+   "reponse": 1,
+   "bonus": "Une ville construite sur sept collines !",
+   "voix_reponse": "Lisbonne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐄",
+   "question": "Combien de trayons a une vache ?",
+   "choix": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "reponse": 1,
+   "bonus": "Ce sont les « tétines » qu'on utilise pour la traite.",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏃",
+   "question": "Quelle est la distance d'un marathon ?",
+   "choix": [
+    "21,1 km",
+    "35 km",
+    "42,195 km",
+    "50 km"
+   ],
+   "reponse": 2,
+   "bonus": "Le semi-marathon, c'est la moitié.",
+   "voix_reponse": "Quarante-deux kilomètres et cent quatre-vingt-quinze mètres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel est le plus grand lac d'Afrique ?",
+   "choix": [
+    "Le lac Tanganyika",
+    "Le lac Victoria",
+    "Le lac Malawi",
+    "Le lac Tchad"
+   ],
+   "reponse": 1,
+   "bonus": "Il est partagé entre trois pays.",
+   "voix_reponse": "Le lac Victoria !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Combien de neurones a le cerveau humain, environ ?",
+   "choix": [
+    "86 millions",
+    "86 milliards",
+    "86 000",
+    "8 600 milliards"
+   ],
+   "reponse": 1,
+   "bonus": "Reliés par des millions de milliards de connexions !",
+   "voix_reponse": "Environ quatre-vingt-six milliards !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦒",
+   "question": "Combien de vertèbres a le cou d'une girafe ?",
+   "choix": [
+    "7",
+    "12",
+    "20",
+    "30"
+   ],
+   "reponse": 0,
+   "bonus": "Autant que toi ! Elles sont juste énormes.",
+   "voix_reponse": "Sept ! Autant que toi.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎻",
+   "question": "Combien de cordes a un violon ?",
+   "choix": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "reponse": 1,
+   "bonus": "Sol, ré, la, mi.",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quelle civilisation a construit le Parthénon ?",
+   "choix": [
+    "Les Romains",
+    "Les Grecs",
+    "Les Égyptiens",
+    "Les Perses"
+   ],
+   "reponse": 1,
+   "bonus": "Il domine Athènes depuis plus de 2 400 ans.",
+   "voix_reponse": "Les Grecs !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍓",
+   "question": "Où se trouvent les graines de la fraise ?",
+   "choix": [
+    "Au centre",
+    "À l'extérieur",
+    "Elle n'en a pas",
+    "Dans la tige"
+   ],
+   "reponse": 1,
+   "bonus": "Ces petits points sont en fait ses vrais fruits !",
+   "voix_reponse": "À l'extérieur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✨",
+   "question": "Combien d'étoiles compte environ la Voie lactée ?",
+   "choix": [
+    "Mille",
+    "Un million",
+    "Un milliard",
+    "Des centaines de milliards"
+   ],
+   "reponse": 3,
+   "bonus": "Entre 100 et 400 milliards d'étoiles !",
+   "voix_reponse": "Des centaines de milliards !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

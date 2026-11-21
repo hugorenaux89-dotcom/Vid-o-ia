@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 27",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🇲🇽",
+   "question": "Quelle est la capitale du Mexique ?",
+   "choix": [
+    "Cancún",
+    "Mexico",
+    "Guadalajara",
+    "Tijuana"
+   ],
+   "reponse": 1,
+   "bonus": "L'une des plus grandes villes du monde !",
+   "voix_reponse": "Mexico !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐓",
+   "question": "Quel animal est le symbole de la France ?",
+   "choix": [
+    "L'aigle",
+    "Le coq",
+    "Le lion",
+    "Le loup"
+   ],
+   "reponse": 1,
+   "bonus": "Le mot latin « gallus » veut dire coq et Gaulois !",
+   "voix_reponse": "Le coq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌬️",
+   "question": "Sur quelle planète souffle le vent le plus rapide ?",
+   "choix": [
+    "Jupiter",
+    "Neptune",
+    "Saturne",
+    "Mars"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 2 000 km/h !",
+   "voix_reponse": "Neptune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎹",
+   "question": "De quel instrument jouait Frédéric Chopin ?",
+   "choix": [
+    "Du violon",
+    "Du piano",
+    "De la flûte",
+    "De la harpe"
+   ],
+   "reponse": 1,
+   "bonus": "Il a composé presque uniquement pour le piano.",
+   "voix_reponse": "Du piano !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👶",
+   "question": "Combien de temps dure une grossesse humaine, environ ?",
+   "choix": [
+    "7 mois",
+    "9 mois",
+    "11 mois",
+    "12 mois"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 40 semaines.",
+   "voix_reponse": "Neuf mois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Lequel de ces pays n'a pas d'accès à la mer ?",
+   "choix": [
+    "Le Portugal",
+    "La Suisse",
+    "La Croatie",
+    "La Belgique"
+   ],
+   "reponse": 1,
+   "bonus": "Mais elle a de très beaux lacs !",
+   "voix_reponse": "La Suisse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌡️",
+   "question": "Quel métal est liquide à température ambiante ?",
+   "choix": [
+    "Le plomb",
+    "Le mercure",
+    "L'étain",
+    "Le zinc"
+   ],
+   "reponse": 1,
+   "bonus": "On l'utilisait autrefois dans les thermomètres.",
+   "voix_reponse": "Le mercure !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍎",
+   "question": "Quel héros suisse aurait tiré sur une pomme posée sur la tête de son fils ?",
+   "choix": [
+    "Robin des Bois",
+    "Guillaume Tell",
+    "Ivanhoé",
+    "Arsène Lupin"
+   ],
+   "reponse": 1,
+   "bonus": "Un héros de légende suisse !",
+   "voix_reponse": "Guillaume Tell !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦎",
+   "question": "Que peut faire un lézard pour échapper à un prédateur ?",
+   "choix": [
+    "Changer de sexe",
+    "Perdre sa queue",
+    "Voler",
+    "Cracher du venin"
+   ],
+   "reponse": 1,
+   "bonus": "Et elle repousse ensuite !",
+   "voix_reponse": "Perdre sa queue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇺🇳",
+   "question": "Combien de pays sont membres de l'ONU ?",
+   "choix": [
+    "150",
+    "175",
+    "193",
+    "220"
+   ],
+   "reponse": 2,
+   "bonus": "Le dernier entré : le Soudan du Sud, en 2011.",
+   "voix_reponse": "Cent quatre-vingt-treize !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

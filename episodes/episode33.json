@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 33",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐉",
+   "question": "Quel animal du zodiaque chinois est imaginaire ?",
+   "choix": [
+    "Le tigre",
+    "Le dragon",
+    "Le serpent",
+    "Le singe"
+   ],
+   "reponse": 1,
+   "bonus": "Tous les autres existent vraiment !",
+   "voix_reponse": "Le dragon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐝",
+   "question": "Combien d'yeux a une abeille ?",
+   "choix": [
+    "2",
+    "3",
+    "5",
+    "8"
+   ],
+   "reponse": 2,
+   "bonus": "Deux gros yeux et trois petits sur le dessus de la tête !",
+   "voix_reponse": "Cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌸",
+   "question": "Quelle est l'épice la plus chère du monde ?",
+   "choix": [
+    "La vanille",
+    "Le safran",
+    "La cannelle",
+    "Le poivre"
+   ],
+   "reponse": 1,
+   "bonus": "Il faut des milliers de fleurs pour un seul gramme !",
+   "voix_reponse": "Le safran !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Dans quelle chaîne de montagnes se trouve l'Everest ?",
+   "choix": [
+    "Les Andes",
+    "L'Himalaya",
+    "Les Rocheuses",
+    "L'Atlas"
+   ],
+   "reponse": 1,
+   "bonus": "Entre le Népal et la Chine.",
+   "voix_reponse": "L'Himalaya !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚢",
+   "question": "Qui a réalisé le film Titanic ?",
+   "choix": [
+    "Steven Spielberg",
+    "James Cameron",
+    "George Lucas",
+    "Ridley Scott"
+   ],
+   "reponse": 1,
+   "bonus": "Sorti en 1997, onze Oscars !",
+   "voix_reponse": "James Cameron !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Combien de dents de lait a un enfant ?",
+   "choix": [
+    "16",
+    "20",
+    "24",
+    "32"
+   ],
+   "reponse": 1,
+   "bonus": "Elles tombent entre 6 et 12 ans environ.",
+   "voix_reponse": "Vingt !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏝️",
+   "question": "Quel empereur a fini sa vie en exil sur l'île de Sainte-Hélène ?",
+   "choix": [
+    "Louis XVIII",
+    "Napoléon Ier",
+    "Napoléon III",
+    "Charlemagne"
+   ],
+   "reponse": 1,
+   "bonus": "Il y est mort en 1821.",
+   "voix_reponse": "Napoléon premier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏅",
+   "question": "Qui a reçu deux prix Nobel dans deux sciences différentes ?",
+   "choix": [
+    "Einstein",
+    "Marie Curie",
+    "Pasteur",
+    "Newton"
+   ],
+   "reponse": 1,
+   "bonus": "En physique, puis en chimie !",
+   "voix_reponse": "Marie Curie ! La seule au monde.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐧",
+   "question": "Quel est le plus grand des manchots ?",
+   "choix": [
+    "Le manchot royal",
+    "Le manchot empereur",
+    "Le gorfou",
+    "Le manchot Adélie"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut mesurer plus d'un mètre !",
+   "voix_reponse": "Le manchot empereur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧊",
+   "question": "Quel est le plus petit océan du monde ?",
+   "choix": [
+    "L'océan Indien",
+    "L'océan Arctique",
+    "L'océan Atlantique",
+    "L'océan Austral"
+   ],
+   "reponse": 1,
+   "bonus": "Il est couvert de glace une bonne partie de l'année.",
+   "voix_reponse": "L'océan Arctique !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 42",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍿",
+   "question": "Avec quelle céréale fait-on le pop-corn ?",
+   "choix": [
+    "Le blé",
+    "Le maïs",
+    "Le riz",
+    "L'orge"
+   ],
+   "reponse": 1,
+   "bonus": "Le grain explose à cause de l'eau qu'il contient !",
+   "voix_reponse": "Le maïs !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐇",
+   "question": "Comment s'appelle l'abri du lapin de garenne ?",
+   "choix": [
+    "Le nid",
+    "Le terrier",
+    "La tanière",
+    "L'étable"
+   ],
+   "reponse": 1,
+   "bonus": "Un vrai réseau de galeries sous terre !",
+   "voix_reponse": "Le terrier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇹🇷",
+   "question": "Lequel de ces pays est à la fois en Europe et en Asie ?",
+   "choix": [
+    "L'Espagne",
+    "La Turquie",
+    "L'Égypte",
+    "L'Inde"
+   ],
+   "reponse": 1,
+   "bonus": "Istanbul est à cheval sur les deux continents !",
+   "voix_reponse": "La Turquie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎸",
+   "question": "Quel groupe a chanté Bohemian Rhapsody ?",
+   "choix": [
+    "The Beatles",
+    "Queen",
+    "ABBA",
+    "Pink Floyd"
+   ],
+   "reponse": 1,
+   "bonus": "Avec Freddie Mercury au chant !",
+   "voix_reponse": "Queen !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫁",
+   "question": "Quel muscle nous permet de respirer ?",
+   "choix": [
+    "Le biceps",
+    "Le diaphragme",
+    "Le trapèze",
+    "Le psoas"
+   ],
+   "reponse": 1,
+   "bonus": "C'est lui qui provoque le hoquet !",
+   "voix_reponse": "Le diaphragme !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👸",
+   "question": "Quelle reine d'Égypte a séduit Jules César ?",
+   "choix": [
+    "Néfertiti",
+    "Cléopâtre",
+    "Hatchepsout",
+    "Isis"
+   ],
+   "reponse": 1,
+   "bonus": "La dernière reine d'Égypte antique !",
+   "voix_reponse": "Cléopâtre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Sur Vénus, un jour dure...",
+   "choix": [
+    "Moins qu'un jour sur Terre",
+    "Pareil qu'ici",
+    "Plus longtemps que son année",
+    "Exactement une heure"
+   ],
+   "reponse": 2,
+   "bonus": "Un jour de Vénus dure plus longtemps que son année !",
+   "voix_reponse": "Plus longtemps que son année !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦩",
+   "question": "Sur combien de pattes dort souvent le flamant rose ?",
+   "choix": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "reponse": 1,
+   "bonus": "Pour économiser sa chaleur !",
+   "voix_reponse": "Une seule !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧂",
+   "question": "Quelle est la formule chimique du sel de table ?",
+   "choix": [
+    "NaCl",
+    "KCl",
+    "H2O",
+    "CO2"
+   ],
+   "reponse": 0,
+   "bonus": "Du chlorure de sodium !",
+   "voix_reponse": "N a C l ! Le chlorure de sodium.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌎",
+   "question": "Quel est le plus petit pays d'Amérique du Sud ?",
+   "choix": [
+    "L'Uruguay",
+    "Le Suriname",
+    "Le Paraguay",
+    "L'Équateur"
+   ],
+   "reponse": 1,
+   "bonus": "La Guyane française n'est pas un pays !",
+   "voix_reponse": "Le Suriname !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

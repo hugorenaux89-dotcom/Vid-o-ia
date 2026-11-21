@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 24",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🔶",
+   "question": "Combien de côtés a un hexagone ?",
+   "choix": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "reponse": 1,
+   "bonus": "La France est surnommée l'Hexagone pour sa forme !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐢",
+   "question": "Où les tortues marines pondent-elles leurs œufs ?",
+   "choix": [
+    "Dans l'eau",
+    "Sur la plage",
+    "Dans les coraux",
+    "Dans les algues"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent sur la plage où elles sont nées !",
+   "voix_reponse": "Sur la plage !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏸",
+   "question": "Dans quel sport utilise-t-on un volant ?",
+   "choix": [
+    "Le tennis",
+    "Le badminton",
+    "Le squash",
+    "Le ping-pong"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut dépasser 400 km/h !",
+   "voix_reponse": "Le badminton !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧊",
+   "question": "Quelle est la capitale du Groenland ?",
+   "choix": [
+    "Reykjavik",
+    "Nuuk",
+    "Oslo",
+    "Copenhague"
+   ],
+   "reponse": 1,
+   "bonus": "Reykjavik, c'est l'Islande !",
+   "voix_reponse": "Nuuk !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫁",
+   "question": "Combien de fois respire-t-on par jour, environ ?",
+   "choix": [
+    "2 000",
+    "20 000",
+    "200 000",
+    "2 millions"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 12 à 20 respirations par minute.",
+   "voix_reponse": "Environ vingt mille fois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎖️",
+   "question": "Qui a été le premier président de la Ve République ?",
+   "choix": [
+    "François Mitterrand",
+    "Charles de Gaulle",
+    "Georges Pompidou",
+    "Valéry Giscard d'Estaing"
+   ],
+   "reponse": 1,
+   "bonus": "Élu en 1958.",
+   "voix_reponse": "Charles de Gaulle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Comment appelle-t-on la lave quand elle est encore sous terre ?",
+   "choix": [
+    "Le basalte",
+    "Le magma",
+    "Le granit",
+    "La pierre ponce"
+   ],
+   "reponse": 1,
+   "bonus": "Elle devient lave en sortant du volcan.",
+   "voix_reponse": "Le magma !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐘",
+   "question": "Combien de litres d'eau un éléphant peut-il aspirer d'un coup ?",
+   "choix": [
+    "1 litre",
+    "Environ 8 litres",
+    "50 litres",
+    "100 litres"
+   ],
+   "reponse": 1,
+   "bonus": "Puis il la verse dans sa bouche !",
+   "voix_reponse": "Environ huit litres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔤",
+   "question": "Quelle est la lettre la plus utilisée en français ?",
+   "choix": [
+    "A",
+    "E",
+    "S",
+    "I"
+   ],
+   "reponse": 1,
+   "bonus": "Elle représente environ 15 % des lettres !",
+   "voix_reponse": "Le E !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌠",
+   "question": "Qu'est-ce qu'une étoile filante, en réalité ?",
+   "choix": [
+    "Une étoile qui tombe",
+    "Une poussière qui brûle",
+    "Un satellite",
+    "Une planète"
+   ],
+   "reponse": 1,
+   "bonus": "Une poussière spatiale qui brûle dans l'atmosphère !",
+   "voix_reponse": "Une poussière qui brûle !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

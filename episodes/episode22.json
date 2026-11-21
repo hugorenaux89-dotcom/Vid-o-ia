@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 22",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🥥",
+   "question": "Quel fruit contient de l'eau à l'intérieur ?",
+   "choix": [
+    "La mangue",
+    "La noix de coco",
+    "L'ananas",
+    "La papaye"
+   ],
+   "reponse": 1,
+   "bonus": "L'eau de coco, très rafraîchissante !",
+   "voix_reponse": "La noix de coco !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐟",
+   "question": "Avec quoi respirent les poissons ?",
+   "choix": [
+    "Des poumons",
+    "Des branchies",
+    "Leur peau uniquement",
+    "Ils ne respirent pas"
+   ],
+   "reponse": 1,
+   "bonus": "Elles captent l'oxygène dissous dans l'eau.",
+   "voix_reponse": "Avec des branchies !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✈️",
+   "question": "Quels frères ont réalisé le premier vol motorisé ?",
+   "choix": [
+    "Les frères Lumière",
+    "Les frères Wright",
+    "Les frères Montgolfier",
+    "Les frères Grimm"
+   ],
+   "reponse": 1,
+   "bonus": "C'était en 1903, aux États-Unis.",
+   "voix_reponse": "Les frères Wright !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Quel pays est surnommé « la terre de glace et de feu » ?",
+   "choix": [
+    "La Norvège",
+    "L'Islande",
+    "Le Groenland",
+    "La Finlande"
+   ],
+   "reponse": 1,
+   "bonus": "Des glaciers et des volcans actifs !",
+   "voix_reponse": "L'Islande !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👁️",
+   "question": "Quelle partie de l'œil donne sa couleur ?",
+   "choix": [
+    "La pupille",
+    "L'iris",
+    "La rétine",
+    "La cornée"
+   ],
+   "reponse": 1,
+   "bonus": "La pupille, elle, est toujours noire.",
+   "voix_reponse": "L'iris !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔥",
+   "question": "Qui a été brûlée à Rouen en 1431 ?",
+   "choix": [
+    "Marie-Antoinette",
+    "Jeanne d'Arc",
+    "Catherine de Médicis",
+    "Aliénor d'Aquitaine"
+   ],
+   "reponse": 1,
+   "bonus": "Elle avait seulement 19 ans.",
+   "voix_reponse": "Jeanne d'Arc !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔭",
+   "question": "Quel astronome a affirmé que la Terre tourne autour du Soleil ?",
+   "choix": [
+    "Ptolémée",
+    "Copernic",
+    "Newton",
+    "Aristote"
+   ],
+   "reponse": 1,
+   "bonus": "Au XVIe siècle, une révolution !",
+   "voix_reponse": "Copernic !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪰",
+   "question": "Combien de temps vit une mouche domestique, environ ?",
+   "choix": [
+    "24 heures",
+    "Environ un mois",
+    "Un an",
+    "Cinq ans"
+   ],
+   "reponse": 1,
+   "bonus": "Les 24 heures, c'est l'éphémère adulte !",
+   "voix_reponse": "Environ un mois ! Pas vingt-quatre heures.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🇳🇿",
+   "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+   "choix": [
+    "Auckland",
+    "Wellington",
+    "Christchurch",
+    "Sydney"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Auckland, la plus grande ville !",
+   "voix_reponse": "Wellington ! Pas Auckland.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🧪",
+   "question": "Quel est le symbole chimique du fer ?",
+   "choix": [
+    "F",
+    "Fe",
+    "Fr",
+    "Ir"
+   ],
+   "reponse": 1,
+   "bonus": "Du latin « ferrum ».",
+   "voix_reponse": "F e ! Du latin ferrum.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

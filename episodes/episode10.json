@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 10",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🇦🇷",
+   "question": "Quelle langue parle-t-on principalement en Argentine ?",
+   "choix": [
+    "Le portugais",
+    "L'espagnol",
+    "L'italien",
+    "L'argentin"
+   ],
+   "reponse": 1,
+   "bonus": "Le portugais, c'est au Brésil !",
+   "voix_reponse": "L'espagnol !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐊",
+   "question": "Quel animal a la morsure la plus puissante ?",
+   "choix": [
+    "Le lion",
+    "Le requin blanc",
+    "Le crocodile marin",
+    "L'hippopotame"
+   ],
+   "reponse": 2,
+   "bonus": "La morsure la plus puissante jamais mesurée !",
+   "voix_reponse": "Le crocodile marin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💡",
+   "question": "Quelle est l'unité de la puissance électrique ?",
+   "choix": [
+    "Le volt",
+    "L'ampère",
+    "Le watt",
+    "L'ohm"
+   ],
+   "reponse": 2,
+   "bonus": "Comme sur tes ampoules : 60 W, 100 W...",
+   "voix_reponse": "Le watt !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔔",
+   "question": "« Big Ben », à Londres, c'est en réalité le nom...",
+   "choix": [
+    "De la tour",
+    "De l'horloge",
+    "De la cloche",
+    "Du quartier"
+   ],
+   "reponse": 2,
+   "bonus": "La tour, elle, s'appelle Elizabeth Tower !",
+   "voix_reponse": "De la cloche ! Pas de la tour.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🦀",
+   "question": "Combien de pattes a un crabe, pinces comprises ?",
+   "choix": [
+    "6",
+    "8",
+    "10",
+    "12"
+   ],
+   "reponse": 2,
+   "bonus": "Les deux pinces comptent dans les dix !",
+   "voix_reponse": "Dix !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Dans quel pays se trouve le Machu Picchu ?",
+   "choix": [
+    "Le Mexique",
+    "Le Pérou",
+    "La Bolivie",
+    "Le Chili"
+   ],
+   "reponse": 1,
+   "bonus": "Une cité inca perchée dans les Andes.",
+   "voix_reponse": "Le Pérou !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎹",
+   "question": "Combien de notes y a-t-il dans la gamme de do majeur ?",
+   "choix": [
+    "5",
+    "7",
+    "8",
+    "12"
+   ],
+   "reponse": 1,
+   "bonus": "Do, ré, mi, fa, sol, la, si !",
+   "voix_reponse": "Sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😬",
+   "question": "Quel muscle est le plus puissant pour sa taille ?",
+   "choix": [
+    "Le cœur",
+    "Le biceps",
+    "Le masséter",
+    "La langue"
+   ],
+   "reponse": 2,
+   "bonus": "C'est le muscle de la mâchoire !",
+   "voix_reponse": "Le masséter ! Le muscle de la mâchoire.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌞",
+   "question": "Combien de temps met la Terre pour faire le tour du Soleil ?",
+   "choix": [
+    "24 heures",
+    "30 jours",
+    "365 jours",
+    "1 000 jours"
+   ],
+   "reponse": 2,
+   "bonus": "365 jours et 6 heures : d'où les années bissextiles.",
+   "voix_reponse": "Environ trois cent soixante-cinq jours !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐘",
+   "question": "Combien de temps dure la gestation d'un éléphant ?",
+   "choix": [
+    "9 mois",
+    "12 mois",
+    "22 mois",
+    "36 mois"
+   ],
+   "reponse": 2,
+   "bonus": "La plus longue de tous les mammifères terrestres !",
+   "voix_reponse": "Environ vingt-deux mois ! Presque deux ans.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

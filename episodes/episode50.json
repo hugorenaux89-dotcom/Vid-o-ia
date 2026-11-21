@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 50",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🗼",
+   "question": "Quel fleuve traverse Paris ?",
+   "choix": [
+    "La Loire",
+    "La Seine",
+    "Le Rhône",
+    "La Marne"
+   ],
+   "reponse": 1,
+   "bonus": "Avec 37 ponts dans Paris !",
+   "voix_reponse": "La Seine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐬",
+   "question": "Quel animal peut dormir avec un œil ouvert ?",
+   "choix": [
+    "Le dauphin",
+    "Le chat",
+    "Le lapin",
+    "Le cheval"
+   ],
+   "reponse": 0,
+   "bonus": "La moitié de son cerveau dort, l'autre veille !",
+   "voix_reponse": "Le dauphin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇨🇳",
+   "question": "Quelle est la capitale de la Chine ?",
+   "choix": [
+    "Shanghai",
+    "Pékin",
+    "Hong Kong",
+    "Canton"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Shanghai !",
+   "voix_reponse": "Pékin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏅",
+   "question": "Où ont eu lieu les Jeux olympiques d'été de 2024 ?",
+   "choix": [
+    "Los Angeles",
+    "Paris",
+    "Tokyo",
+    "Londres"
+   ],
+   "reponse": 1,
+   "bonus": "Cent ans après ceux de 1924, déjà à Paris !",
+   "voix_reponse": "Paris !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛏️",
+   "question": "Combien d'heures de sommeil conseille-t-on à un adulte ?",
+   "choix": [
+    "4 à 5 heures",
+    "7 à 9 heures",
+    "10 à 12 heures",
+    "12 à 14 heures"
+   ],
+   "reponse": 1,
+   "bonus": "Et encore plus pour les ados !",
+   "voix_reponse": "Sept à neuf heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖼️",
+   "question": "Qui a peint La Liberté guidant le peuple ?",
+   "choix": [
+    "Delacroix",
+    "Courbet",
+    "David",
+    "Manet"
+   ],
+   "reponse": 0,
+   "bonus": "Peint en 1830, il est au Louvre.",
+   "voix_reponse": "Delacroix !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚀",
+   "question": "Laquelle de ces agences spatiales est européenne ?",
+   "choix": [
+    "La NASA",
+    "L'ESA",
+    "Roscosmos",
+    "La CNSA"
+   ],
+   "reponse": 1,
+   "bonus": "Ses fusées décollent de Guyane !",
+   "voix_reponse": "L'ESA !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔊",
+   "question": "Quel animal produit le son le plus fort du monde ?",
+   "choix": [
+    "Le lion",
+    "Le cachalot",
+    "L'éléphant",
+    "Le singe hurleur"
+   ],
+   "reponse": 1,
+   "bonus": "Plus fort qu'un avion au décollage !",
+   "voix_reponse": "Le cachalot !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "À quelle distance sommes-nous du centre de la Voie lactée ?",
+   "choix": [
+    "2 600 années-lumière",
+    "26 000 années-lumière",
+    "260 000 années-lumière",
+    "2,6 millions d'années-lumière"
+   ],
+   "reponse": 1,
+   "bonus": "On est plutôt en banlieue de la galaxie !",
+   "voix_reponse": "Environ vingt-six mille années-lumière !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇸🇰",
+   "question": "Quelle est la seule capitale qui touche deux autres pays ?",
+   "choix": [
+    "Vienne",
+    "Bratislava",
+    "Luxembourg",
+    "Berne"
+   ],
+   "reponse": 1,
+   "bonus": "Elle touche l'Autriche et la Hongrie !",
+   "voix_reponse": "Bratislava ! Elle touche l'Autriche et la Hongrie.",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

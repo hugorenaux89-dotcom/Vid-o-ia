@@ -1,0 +1,375 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 35",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🍵",
+   "question": "Quelle est la boisson la plus bue au monde après l'eau ?",
+   "choix": [
+    "Le café",
+    "Le thé",
+    "Le soda",
+    "Le lait"
+   ],
+   "reponse": 1,
+   "bonus": "Plus que le café !",
+   "voix_reponse": "Le thé ! Pas le café.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🦆",
+   "question": "Comment s'appelle le petit du canard ?",
+   "choix": [
+    "Le caneton",
+    "Le poussin",
+    "L'oison",
+    "Le cygneau"
+   ],
+   "reponse": 0,
+   "bonus": "L'oison, c'est le petit de l'oie !",
+   "voix_reponse": "Le caneton !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇨🇦",
+   "question": "Quel pays a la plus longue côte du monde ?",
+   "choix": [
+    "La Russie",
+    "Le Canada",
+    "L'Australie",
+    "L'Indonésie"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 200 000 km de côtes !",
+   "voix_reponse": "Le Canada !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏀",
+   "question": "À quelle hauteur se trouve un panier de basket ?",
+   "choix": [
+    "2,50 m",
+    "3,05 m",
+    "3,50 m",
+    "4 m"
+   ],
+   "reponse": 1,
+   "bonus": "Soit 10 pieds, la mesure d'origine américaine.",
+   "voix_reponse": "Trois mètres cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💀",
+   "question": "Quel os protège le cerveau ?",
+   "choix": [
+    "Le sternum",
+    "Le crâne",
+    "La mâchoire",
+    "La colonne"
+   ],
+   "reponse": 1,
+   "bonus": "Il est formé de plusieurs os soudés !",
+   "voix_reponse": "Le crâne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💵",
+   "question": "Quel président américain figure sur le billet de 1 dollar ?",
+   "choix": [
+    "Lincoln",
+    "George Washington",
+    "Jefferson",
+    "Franklin"
+   ],
+   "reponse": 1,
+   "bonus": "Le tout premier président des États-Unis !",
+   "voix_reponse": "George Washington !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle planète a les anneaux les plus visibles ?",
+   "choix": [
+    "Jupiter",
+    "Saturne",
+    "Uranus",
+    "Neptune"
+   ],
+   "reponse": 1,
+   "bonus": "Toutes les planètes géantes ont des anneaux !",
+   "voix_reponse": "Saturne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "Qui a peint La Nuit étoilée ?",
+   "choix": [
+    "Monet",
+    "Van Gogh",
+    "Cézanne",
+    "Renoir"
+   ],
+   "reponse": 1,
+   "bonus": "Peinte en 1889.",
+   "voix_reponse": "Van Gogh !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐜",
+   "question": "Combien de fourmis vivent sur Terre, environ ?",
+   "choix": [
+    "Un milliard",
+    "Mille milliards",
+    "Vingt millions de milliards",
+    "Un million"
+   ],
+   "reponse": 2,
+   "bonus": "Environ 2,5 millions de fourmis par humain !",
+   "voix_reponse": "Environ vingt millions de milliards !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧭",
+   "question": "Le pôle Nord magnétique bouge-t-il ?",
+   "choix": [
+    "Non, il est fixe",
+    "Oui, il se déplace",
+    "Il a disparu",
+    "Il est au pôle Sud"
+   ],
+   "reponse": 1,
+   "bonus": "Il se déplace de plusieurs dizaines de km par an !",
+   "voix_reponse": "Oui, il se déplace !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}
