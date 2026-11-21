@@ -1,58 +1,350 @@
 {
-  "titre": "QUIZ CULTURE GÉ • ÉPISODE 1",
-  "hook": [
-    ["98 % des gens", 100, [255, 214, 0]],
-    ["n'ont pas 10/10", 100, [255, 214, 0]],
-    ["à ce quiz.", 80, [255, 255, 255]],
-    ["Et toi ?", 110, [255, 255, 255]]
-  ],
-  "regles": [
-    ["Compte tes points", 90, [255, 255, 255]],
-    ["et écris ton score", 80, [255, 214, 0]],
-    ["en commentaire !", 80, [255, 214, 0]]
-  ],
-  "relances": {
-    "5": [
-      ["Tu as 5/5 ?", 100, [255, 214, 0]],
-      ["Tu es dans le top 20 %...", 70, [255, 255, 255]],
-      ["mais là, ça se corse !", 70, [255, 255, 255]]
-    ],
-    "9": [
-      ["DERNIÈRE QUESTION", 90, [255, 214, 0]],
-      ["Presque personne", 75, [255, 255, 255]],
-      ["ne la trouve...", 75, [255, 255, 255]]
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 1",
+ "hook": {
+  "emoji": "🤯",
+  "lignes": [
+   [
+    "98 % des gens",
+    96,
+    [
+     255,
+     214,
+     0
     ]
-  },
-  "questions": [
-    {"question": "Combien de pattes a une araignée ?", "choix": ["6", "8", "10", "12"], "reponse": 1,
-     "bonus": "Les insectes en ont 6 : l'araignée n'en est pas un !"},
-    {"question": "Quelle planète est surnommée « la planète rouge » ?", "choix": ["Vénus", "Mars", "Jupiter", "Saturne"], "reponse": 1,
-     "bonus": "Sa couleur vient de la rouille (oxyde de fer)."},
-    {"question": "Quel élément chimique a pour symbole « Au » ?", "choix": ["Argent", "Aluminium", "Or", "Argon"], "reponse": 2,
-     "bonus": "Du latin « aurum »."},
-    {"question": "Quel est le plus grand océan du monde ?", "choix": ["Atlantique", "Indien", "Pacifique", "Arctique"], "reponse": 2,
-     "bonus": "Il est plus grand que toutes les terres émergées réunies !"},
-    {"question": "En quelle année l'Homme a-t-il marché sur la Lune ?", "choix": ["1965", "1969", "1972", "1975"], "reponse": 1,
-     "bonus": "Mission Apollo 11, avec Neil Armstrong."},
-    {"question": "Quelle est la capitale de l'Australie ?", "choix": ["Sydney", "Melbourne", "Canberra", "Perth"], "reponse": 2,
-     "bonus": "Construite comme compromis entre Sydney et Melbourne."},
-    {"question": "Combien d'os possède un adulte ?", "choix": ["186", "206", "226", "306"], "reponse": 1,
-     "bonus": "Un bébé en a près de 300, qui fusionnent en grandissant."},
-    {"question": "Combien de cœurs a une pieuvre ?", "choix": ["1", "2", "3", "4"], "reponse": 2,
-     "bonus": "Et son sang est bleu !"},
-    {"question": "Quel pays a le plus de fuseaux horaires ?", "choix": ["Russie", "États-Unis", "Chine", "France"], "reponse": 3,
-     "bonus": "12 fuseaux horaires grâce à l'outre-mer !"},
-    {"question": "Avec quel pays la France a-t-elle sa plus longue frontière terrestre ?", "choix": ["Belgique", "Espagne", "Suisse", "Brésil"], "reponse": 3,
-     "bonus": "Environ 730 km, via la Guyane !", "compte": 5}
+   ],
+   [
+    "ratent la",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "dernière question",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
   ],
-  "fin": [
-    ["TON SCORE ?", 100, [255, 214, 0]],
-    ["0-4 : débutant", 60, [255, 255, 255]],
-    ["5-7 : solide", 60, [255, 255, 255]],
-    ["8-9 : très fort", 60, [255, 255, 255]],
-    ["10 : GÉNIE", 70, [34, 197, 94]],
-    ["Écris-le en commentaire", 55, [255, 214, 0]],
-    ["et abonne-toi pour", 55, [255, 214, 0]],
-    ["la partie 2 !", 55, [255, 214, 0]]
-  ]
+  "voix": "98 % des gens ratent la dernière question. Et toi ?",
+  "min": 3.0
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Compte tes points. C'est parti !"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Tu as 5/5 ?",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Tu es dans le top 20 %...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "mais là, ça se corse !",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "5 sur 5 ? Top 20 % ! Mais là, ça se corse."
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question. Presque personne ne la trouve."
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🦘",
+   "question": "Quelle est la capitale de l'Australie ?",
+   "choix": [
+    "Sydney",
+    "Melbourne",
+    "Canberra",
+    "Perth"
+   ],
+   "reponse": 2,
+   "bonus": "Pas Sydney ! Canberra a été construite pour départager Sydney et Melbourne.",
+   "voix_reponse": "Canberra ! Pas Sydney !"
+  },
+  {
+   "emoji": "🐙",
+   "question": "Combien de cœurs a une pieuvre ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 2,
+   "bonus": "Et son sang est bleu !",
+   "voix_reponse": "Trois ! Et son sang est bleu."
+  },
+  {
+   "emoji": "🪽",
+   "question": "Quel est le seul mammifère capable de vraiment voler ?",
+   "choix": [
+    "L'écureuil volant",
+    "La chauve-souris",
+    "Le colugo",
+    "L'ornithorynque"
+   ],
+   "reponse": 1,
+   "bonus": "L'écureuil volant ne fait que planer !",
+   "voix_reponse": "La chauve-souris ! L'écureuil, lui, plane."
+  },
+  {
+   "emoji": "🦴",
+   "question": "Combien d'os possède un adulte ?",
+   "choix": [
+    "186",
+    "206",
+    "226",
+    "306"
+   ],
+   "reponse": 1,
+   "bonus": "Un bébé en a près de 300, qui fusionnent en grandissant.",
+   "voix_reponse": "206 os !"
+  },
+  {
+   "emoji": "🕐",
+   "question": "Quel pays a le plus de fuseaux horaires ?",
+   "choix": [
+    "La Russie",
+    "Les États-Unis",
+    "La Chine",
+    "La France"
+   ],
+   "reponse": 3,
+   "bonus": "12 fuseaux horaires grâce à l'outre-mer !",
+   "voix_reponse": "La France ! Grâce à l'outre-mer."
+  },
+  {
+   "emoji": "🔥",
+   "question": "Quelle est la planète la plus chaude du système solaire ?",
+   "choix": [
+    "Mercure",
+    "Vénus",
+    "Mars",
+    "Jupiter"
+   ],
+   "reponse": 1,
+   "bonus": "Près de 465 °C, à cause de son effet de serre géant.",
+   "voix_reponse": "Vénus ! Pas Mercure !"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Combien de temps met la lumière du Soleil pour arriver sur Terre ?",
+   "choix": [
+    "8 secondes",
+    "8 minutes",
+    "8 heures",
+    "1 jour"
+   ],
+   "reponse": 1,
+   "bonus": "Tu vois donc le Soleil tel qu'il était il y a 8 minutes !",
+   "voix_reponse": "8 minutes !"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel est le plus long fleuve de France ?",
+   "choix": [
+    "La Seine",
+    "Le Rhône",
+    "La Loire",
+    "La Garonne"
+   ],
+   "reponse": 2,
+   "bonus": "Plus de 1 000 km, entièrement en France.",
+   "voix_reponse": "La Loire !"
+  },
+  {
+   "emoji": "🔍",
+   "question": "Quel animal a des empreintes digitales presque identiques aux nôtres ?",
+   "choix": [
+    "Le chimpanzé",
+    "Le koala",
+    "Le gorille",
+    "Le panda"
+   ],
+   "reponse": 1,
+   "bonus": "Même au microscope, on a du mal à les différencier !",
+   "voix_reponse": "Le koala ! Incroyable."
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Avec quel pays la France a-t-elle sa plus longue frontière terrestre ?",
+   "choix": [
+    "La Belgique",
+    "L'Espagne",
+    "La Suisse",
+    "Le Brésil"
+   ],
+   "reponse": 3,
+   "bonus": "Environ 730 km, via la Guyane !",
+   "compte": 5,
+   "voix_reponse": "Le Brésil ! Grâce à la Guyane."
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Écris-le en commentaire !",
+    52,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "Partie 2 très bientôt",
+    52,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Ton score ? Écris-le en commentaire, et abonne-toi pour la partie 2 !",
+  "min": 5.0
+ }
 }

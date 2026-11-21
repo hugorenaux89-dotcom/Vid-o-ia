@@ -1,9 +1,18 @@
-"""Génère une vidéo TikTok quiz (1080x1920, 30 i/s) à partir d'un fichier JSON d'épisode.
+"""Génère une vidéo TikTok quiz (1080x1920, 30 i/s) avec voix off, à partir d'un fichier JSON d'épisode.
 
 Usage : python3 generer_episode.py episodes/episode1.json sortie/episode1.mp4
+
+Produit deux fichiers :
+  - sortie/episode1.mp4               : voix off + musique + effets sonores
+  - sortie/episode1_sans_musique.mp4  : voix off + effets (pour ajouter un son tendance dans TikTok)
+
+Voix : voix neuronale française Microsoft (paquet `edge-tts`, gratuit).
 """
+import asyncio
+import hashlib
 import json
 import math
+import os
 import subprocess
 import sys
 import wave
@@ -13,13 +22,16 @@ from PIL import Image, ImageDraw, ImageFont
 
 W, H, FPS, SR = 1080, 1920, 30, 44100
 BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
+EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
+VOIX = "fr-FR-RemyMultilingualNeural"
+DEBIT = "+15%"
+CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache_voix")
 
-# Couleurs
 BG_TOP, BG_BOT = (12, 16, 48), (40, 10, 70)
 JAUNE, BLANC, VERT, GRIS = (255, 214, 0), (255, 255, 255), (34, 197, 94), (70, 74, 100)
 CASE = (30, 36, 90)
 
-_fonts = {}
+_fonts, _emojis = {}, {}
 
 
 def font(size):
@@ -28,12 +40,29 @@ def font(size):
     return _fonts[size]
 
 
+def emoji_img(e, size):
+    key = (e, size)
+    if key not in _emojis:
+        f = ImageFont.truetype(EMOJI, 109)
+        im = Image.new("RGBA", (160, 160))
+        ImageDraw.Draw(im).text((10, 10), e, font=f, embedded_color=True)
+        im = im.crop(im.getbbox())
+        r = size / max(im.size)
+        _emojis[key] = im.resize((max(1, int(im.width * r)), max(1, int(im.height * r))), Image.LANCZOS)
+    return _emojis[key]
+
+
+def coller_emoji(img, e, cx, cy, size):
+    if size < 4:
+        return
+    em = emoji_img(e, int(size))
+    img.paste(em, (int(cx - em.width / 2), int(cy - em.height / 2)), em)
+
+
 def fond():
     grad = np.linspace(0, 1, H)[:, None]
-    top, bot = np.array(BG_TOP), np.array(BG_BOT)
-    col = (top * (1 - grad) + bot * grad).astype(np.uint8)
-    arr = np.repeat(col[:, None, :], W, axis=1)
-    return Image.fromarray(arr.reshape(H, W, 3))
+    col = (np.array(BG_TOP) * (1 - grad) + np.array(BG_BOT) * grad).astype(np.uint8)
+    return Image.fromarray(np.repeat(col[:, None, :], W, axis=1))
 
 
 FOND = None
@@ -54,72 +83,102 @@ def wrap(text, size, maxw):
     return lines
 
 
-def texte_centre(d, text, y, size, color, maxw=900, interligne=1.2):
+def texte_centre(d, text, y, size, color, maxw=900, interligne=1.2, dx=0):
     lines = wrap(text, size, maxw)
     for i, l in enumerate(lines):
         lw = font(size).getlength(l)
-        d.text(((W - lw) / 2, y + i * size * interligne), l, font=font(size), fill=color,
+        d.text(((W - lw) / 2 + dx, y + i * size * interligne), l, font=font(size), fill=tuple(color),
                stroke_width=max(2, size // 18), stroke_fill=(0, 0, 0))
     return y + len(lines) * size * interligne
 
 
-def entete(d, titre):
-    texte_centre(d, titre, 170, 38, JAUNE)
+def pop(t, duree=0.3):
+    """Effet « pop » : 0 -> 1.15 -> 1."""
+    if t >= duree:
+        return 1.0
+    x = t / duree
+    return 1.15 * math.sin(x * math.pi / 2) if x < 0.8 else 1.15 - 0.15 * (x - 0.8) / 0.2
+
+
+# ---------- voix ----------
+
+def voix(texte):
+    """Renvoie la voix off en numpy float (mono, 44,1 kHz), avec cache."""
+    os.makedirs(CACHE, exist_ok=True)
+    h = hashlib.md5(f"{VOIX}|{DEBIT}|{texte}".encode()).hexdigest()
+    mp3 = os.path.join(CACHE, h + ".mp3")
+    if not os.path.exists(mp3):
+        import certifi
+        certifi.where = lambda: os.environ.get("SSL_CERT_FILE", "/root/.ccr/ca-bundle.crt") \
+            if os.path.exists("/root/.ccr/ca-bundle.crt") else certifi.__file__.replace("__init__.py", "cacert.pem")
+        import edge_tts
+        asyncio.run(edge_tts.Communicate(texte, VOIX, rate=DEBIT).save(mp3))
+    raw = subprocess.run(["ffmpeg", "-loglevel", "error", "-i", mp3, "-f", "s16le", "-ac", "1", "-ar", str(SR), "-"],
+                         capture_output=True, check=True).stdout
+    return np.frombuffer(raw, dtype=np.int16).astype(np.float64) / 32767
 
 
 # ---------- écrans ----------
 
-def ecran_texte(ep, lignes, t, duree):
+def ecran_texte(ep, ecran, t, secousse=False):
     img = FOND.copy()
     d = ImageDraw.Draw(img)
-    entete(d, ep["titre"])
-    pulse = 1 + 0.04 * math.sin(t * 2 * math.pi * 1.5)
-    total = sum(s * 1.25 for _, s, _ in lignes)
-    y = (H - total) / 2 - 150
-    for text, size, color in lignes:
-        s = int(size * pulse); color = tuple(color)
-        y = texte_centre(d, text, y, s, color) + 10
+    texte_centre(d, ep["titre"], 170, 38, JAUNE)
+    dx = 0
+    if secousse and t < 0.6:
+        dx = 18 * math.sin(t * 60) * (1 - t / 0.6)
+    zoom = 1 + 0.3 * max(0, 1 - t / 0.35) if secousse else 1
+    pulse = (1 + 0.03 * math.sin(t * 2 * math.pi * 1.5)) * zoom
+    y = 330
+    if ecran.get("emoji"):
+        coller_emoji(img, ecran["emoji"], W / 2 + dx, 470, 250 * pop(t))
+        y = 640
+    for text, size, color in ecran["lignes"]:
+        y = texte_centre(d, text, y, int(size * pulse), color, dx=dx) + 12
     return img
 
 
-def ecran_question(ep, i, q, t, compte):
-    """t = temps écoulé dans le segment de la question."""
+def ecran_question(ep, i, q, t, A, C):
     img = FOND.copy()
     d = ImageDraw.Draw(img)
-    entete(d, ep["titre"])
+    texte_centre(d, ep["titre"], 170, 38, JAUNE)
     n = len(ep["questions"])
-
-    # progression
-    texte_centre(d, f"QUESTION {i + 1}/{n}", 240, 44, BLANC)
-    seg_w, gap, x0 = 76, 10, (W - (n * 76 + (n - 1) * 10)) / 2
+    texte_centre(d, f"QUESTION {i + 1}/{n}", 235, 44, BLANC)
+    seg_w, gap = 76, 10
+    x0 = (W - (n * seg_w + (n - 1) * gap)) / 2
     for k in range(n):
-        c = JAUNE if k <= i else GRIS
-        d.rounded_rectangle([x0 + k * (seg_w + gap), 310, x0 + k * (seg_w + gap) + seg_w, 324], 6, fill=c)
+        d.rounded_rectangle([x0 + k * (seg_w + gap), 300, x0 + k * (seg_w + gap) + seg_w, 314], 6,
+                            fill=JAUNE if k <= i else GRIS)
 
+    revele = t >= A + C
     apparition = min(1, t / 0.35)
-    revele = t >= 1 + compte
 
-    # question
-    texte_centre(d, q["question"], 380, 64, BLANC, maxw=920)
-
-    # compte à rebours
-    cx, cy, r = W / 2, 690, 80
+    # emoji (gauche) + chrono (droite)
+    coller_emoji(img, q["emoji"], 330, 455, 190 * pop(t))
+    cx, cy, r = 750, 455, 88
     if not revele:
-        restant = max(0, 1 + compte - t)
-        frac = min(1, restant / compte)
+        restant = min(C, A + C - t)
+        frac = restant / C
+        urgent = restant < 1.5 and t >= A
+        couleur = (239, 68, 68) if urgent else JAUNE
         d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=CASE, outline=GRIS, width=12)
-        if frac > 0:
-            d.arc([cx - r, cy - r, cx + r, cy + r], -90, -90 + 360 * frac, fill=JAUNE, width=12)
-        num = str(min(compte, math.ceil(restant))) if t >= 1 else str(compte)
-        nw = font(80).getlength(num)
-        d.text((cx - nw / 2, cy - 48), num, font=font(80), fill=JAUNE)
+        d.arc([cx - r, cy - r, cx + r, cy + r], -90, -90 + 360 * frac, fill=couleur, width=12)
+        num = str(max(1, math.ceil(restant)))
+        s = 84 if not urgent else int(84 * (1 + 0.12 * abs(math.sin(t * math.pi * 2))))
+        nw = font(s).getlength(num)
+        d.text((cx - nw / 2, cy - s * 0.6), num, font=font(s), fill=couleur)
     else:
-        d.ellipse([cx - r, cy - r, cx + r, cy + r], fill=VERT)
-        d.text((cx - font(90).getlength("✓") / 2, cy - 55), "✓", font=font(90), fill=BLANC)
+        sc = pop(t - A - C)
+        rr = r * sc
+        d.ellipse([cx - rr, cy - rr, cx + rr, cy + rr], fill=VERT)
+        if sc > 0.5:
+            fs = int(90 * sc)
+            d.text((cx - font(fs).getlength("✓") / 2, cy - fs * 0.62), "✓", font=font(fs), fill=BLANC)
 
-    # réponses
+    texte_centre(d, q["question"], 590, 62, BLANC, maxw=940)
+
     lettres = "ABCD"
-    y0, h, g = 810, 118, 24
+    y0, h, g = 840, 112, 20
     for k, choix in enumerate(q["choix"]):
         dx = (1 - apparition) * (W if k % 2 else -W) * (1 + k * 0.2)
         y = y0 + k * (h + g)
@@ -127,95 +186,115 @@ def ecran_question(ep, i, q, t, compte):
         fill, txt = CASE, BLANC
         if revele:
             fill, txt = (VERT, BLANC) if bonne else ((40, 42, 60), (130, 130, 150))
-        d.rounded_rectangle([90 + dx, y, 990 + dx, y + h], 28, fill=fill,
+        grow = 10 * pop(t - A - C) if revele and bonne else 0
+        d.rounded_rectangle([90 + dx - grow, y - grow / 2, 990 + dx + grow, y + h + grow / 2], 28, fill=fill,
                             outline=JAUNE if not revele else fill, width=4)
-        d.ellipse([110 + dx, y + 19, 190 + dx, y + 99], fill=JAUNE if not revele or bonne else GRIS)
+        d.ellipse([110 + dx, y + 16, 190 + dx, y + 96], fill=JAUNE if not revele or bonne else GRIS)
         lw = font(46).getlength(lettres[k])
-        d.text((150 + dx - lw / 2, y + 32), lettres[k], font=font(46), fill=(20, 20, 40))
-        size = 52 if font(52).getlength(choix) < 740 else 42
+        d.text((150 + dx - lw / 2, y + 29), lettres[k], font=font(46), fill=(20, 20, 40))
+        size = 50 if font(50).getlength(choix) < 740 else 40
         d.text((215 + dx, y + (h - size) / 2 - 6), choix, font=font(size), fill=txt)
 
     if revele and q.get("bonus"):
-        texte_centre(d, q["bonus"], 1395, 40, JAUNE, maxw=880)
+        texte_centre(d, q["bonus"], 1375, 46, JAUNE, maxw=900)
+    elif not revele and i == 0:
+        texte_centre(d, "Mets ta lettre en commentaire !", 1385, 40, (200, 200, 220))
     return img
 
 
 # ---------- timeline ----------
 
 def construire(ep):
-    segs = []  # (duree, fonction(t), evenements audio)
-    segs.append((3.0, lambda t: ecran_texte(ep, ep["hook"], t, 3), [("whoosh", 0)]))
-    segs.append((3.0, lambda t: ecran_texte(ep, ep["regles"], t, 3), [("whoosh", 0)]))
+    """Liste de segments : (durée, rendu(t), [(son, instant)], [(voix, instant)])."""
+    segs = []
+
+    def ecran(e, secousse=False, son="whoosh"):
+        v = voix(e["voix"])
+        dur = max(e.get("min", 2.0), len(v) / SR + 0.45)
+        segs.append((dur, lambda t: ecran_texte(ep, e, t, secousse), [(son, 0)], [(v, 0.1)]))
+
+    ecran(ep["hook"], secousse=True, son="boom")
+    ecran(ep["regles"])
     for i, q in enumerate(ep["questions"]):
-        compte = q.get("compte", 4)
-        dur = 1 + compte + 2.2
-        ev = [("whoosh", 0)] + [("tick", 1 + s) for s in range(compte)] + [("ding", 1 + compte)]
-        segs.append((dur, (lambda i, q, c: lambda t: ecran_question(ep, i, q, t, c))(i, q, compte), ev))
+        C = q.get("compte", 3)
+        vq = voix(q["voix"] if "voix" in q else q["question"])
+        vr = voix(q["voix_reponse"])
+        A = max(1.5, len(vq) / SR + 0.25)
+        R = max(2.8, len(vr) / SR + 0.5)
+        ev = [("whoosh", 0)] + [("tick", A + s) for s in range(C)] + [("ding", A + C)]
+        rendu = (lambda i, q, A, C: lambda t: ecran_question(ep, i, q, t, A, C))(i, q, A, C)
+        segs.append((A + C + R, rendu, ev, [(vq, 0.12), (vr, A + C + 0.15)]))
         rel = ep.get("relances", {}).get(str(i + 1))
         if rel:
-            segs.append((3.0, (lambda r: lambda t: ecran_texte(ep, r, t, 3))(rel), [("suspense", 0)]))
-    segs.append((7.0, lambda t: ecran_texte(ep, ep["fin"], t, 7), [("ding", 0)]))
+            ecran(rel, son="suspense")
+    ecran(ep["fin"], son="ding")
     return segs
 
 
 # ---------- audio ----------
 
-def synth(segs):
+def mixer(segs):
     total = sum(s[0] for s in segs)
-    n = int(total * SR)
-    out = np.zeros(n)
+    n = int(total * SR) + SR
+    musique, effets, parole = np.zeros(n), np.zeros(n), np.zeros(n)
     tt = np.arange(n) / SR
 
-    # musique de fond : basse pulsée + nappe, 120 BPM
-    notes = [55, 55, 65.4, 49]  # La, La, Do, Sol (graves)
-    beat = 0.5
-    for b in range(int(total / beat)):
-        f = notes[(b // 8) % 4]
-        s0 = int(b * beat * SR)
-        L = int(0.45 * SR)
-        x = np.arange(min(L, n - s0)) / SR
-        env = np.exp(-x * 7)
-        out[s0:s0 + len(x)] += 0.18 * env * np.sin(2 * np.pi * f * 2 * x)
-        if b % 2 == 1:  # charleston
-            hl = int(0.05 * SR)
-            hx = np.arange(min(hl, n - s0)) / SR
-            out[s0:s0 + len(hx)] += 0.03 * np.random.randn(len(hx)) * np.exp(-hx * 80)
-    out += 0.025 * np.sin(2 * np.pi * 220 * tt) * (0.5 + 0.5 * np.sin(2 * np.pi * 0.25 * tt))
+    notes = [55, 55, 65.4, 49]
+    for b in range(int(total / 0.5) + 1):
+        f, s0 = notes[(b // 8) % 4], int(b * 0.5 * SR)
+        x = np.arange(min(int(0.45 * SR), n - s0)) / SR
+        musique[s0:s0 + len(x)] += 0.18 * np.exp(-x * 7) * np.sin(2 * np.pi * f * 2 * x)
+        if b % 2:
+            hx = np.arange(min(int(0.05 * SR), n - s0)) / SR
+            musique[s0:s0 + len(hx)] += 0.03 * np.random.randn(len(hx)) * np.exp(-hx * 80)
+    musique += 0.025 * np.sin(2 * np.pi * 220 * tt) * (0.5 + 0.5 * np.sin(2 * np.pi * 0.25 * tt))
 
-    def add(t0, sig):
+    def add(buf, t0, sig):
         s0 = int(t0 * SR)
         e = min(n, s0 + len(sig))
         if s0 < n:
-            out[s0:e] += sig[:e - s0]
+            buf[s0:e] += sig[:e - s0]
 
-    def tick():
-        x = np.arange(int(0.08 * SR)) / SR
-        return 0.35 * np.sin(2 * np.pi * 1500 * x) * np.exp(-x * 60)
+    def x_(d):
+        return np.arange(int(d * SR)) / SR
 
-    def ding():
-        x = np.arange(int(0.9 * SR)) / SR
-        return 0.3 * (np.sin(2 * np.pi * 880 * x) + 0.6 * np.sin(2 * np.pi * 1320 * x)) * np.exp(-x * 4)
-
-    def whoosh():
-        x = np.arange(int(0.35 * SR)) / SR
-        bruit = np.convolve(np.random.randn(len(x)), np.ones(30) / 30, "same")
-        return 0.6 * bruit * np.sin(np.pi * x / x[-1])
-
-    def suspense():
-        x = np.arange(int(2.5 * SR)) / SR
-        f = 100 + 60 * x
-        return 0.15 * np.sin(2 * np.pi * np.cumsum(f) / SR) * np.minimum(1, x * 2)
-
-    sons = {"tick": tick, "ding": ding, "whoosh": whoosh, "suspense": suspense}
+    sons = {
+        "tick": lambda: 0.35 * np.sin(2 * np.pi * 1500 * x_(0.08)) * np.exp(-x_(0.08) * 60),
+        "ding": lambda: 0.3 * (np.sin(2 * np.pi * 880 * x_(0.9)) + 0.6 * np.sin(2 * np.pi * 1320 * x_(0.9)))
+        * np.exp(-x_(0.9) * 4),
+        "whoosh": lambda: 0.5 * np.convolve(np.random.randn(len(x_(0.35))), np.ones(30) / 30, "same")
+        * np.sin(np.pi * x_(0.35) / 0.35),
+        "suspense": lambda: 0.15 * np.sin(2 * np.pi * np.cumsum(100 + 60 * x_(2.5)) / SR) * np.minimum(1, x_(2.5) * 2),
+        "boom": lambda: 0.7 * np.sin(2 * np.pi * (60 + 80 * np.exp(-x_(0.6) * 12)) * x_(0.6)) * np.exp(-x_(0.6) * 5),
+    }
     t0 = 0
-    for dur, _, evs in segs:
+    for dur, _, evs, vxs in segs:
         for nom, dt in evs:
-            add(t0 + dt, sons[nom]())
+            add(effets, t0 + dt, sons[nom]())
+        for v, dt in vxs:
+            add(parole, t0 + dt, v)
         t0 += dur
-    fade = int(1.5 * SR)
-    out[-fade:] *= np.linspace(1, 0, fade)
-    out = out / max(1e-9, np.abs(out).max()) * 0.85
-    return (out * 32767).astype(np.int16), total
+
+    # baisse la musique quand la voix parle
+    env = np.convolve(np.abs(parole), np.ones(SR // 10) / (SR // 10), "same")
+    duck = np.where(env > 0.01, 0.35, 1.0)
+    duck = np.convolve(duck, np.ones(SR // 8) / (SR // 8), "same")
+
+    def finir(sig):
+        sig = sig[:int(total * SR)]
+        fade = int(1.2 * SR)
+        sig[-fade:] *= np.linspace(1, 0, fade)
+        return (sig / max(1e-9, np.abs(sig).max()) * 0.9 * 32767).astype(np.int16)
+
+    avec = finir(1.4 * parole + 0.8 * effets + 0.9 * musique * duck)
+    sans = finir(1.4 * parole + 0.8 * effets)
+    return avec, sans, total
+
+
+def ecrire_wav(chemin, audio):
+    with wave.open(chemin, "wb") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
+        w.writeframes(audio.tobytes())
 
 
 def main(src, dst):
@@ -223,24 +302,28 @@ def main(src, dst):
     FOND = fond()
     ep = json.load(open(src, encoding="utf-8"))
     segs = construire(ep)
-    audio, total = synth(segs)
-    wav = dst.rsplit(".", 1)[0] + ".wav"
-    with wave.open(wav, "wb") as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
-        w.writeframes(audio.tobytes())
+    avec, sans, total = mixer(segs)
+    base = dst.rsplit(".", 1)[0]
+    ecrire_wav(base + "_a.wav", avec)
+    ecrire_wav(base + "_b.wav", sans)
 
     ff = subprocess.Popen([
         "ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
-        "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", wav,
+        "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", base + "_a.wav",
         "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", dst,
     ], stdin=subprocess.PIPE)
-    for dur, render, _ in segs:
+    for dur, rendu, _, _ in segs:
         for f in range(int(round(dur * FPS))):
-            ff.stdin.write(render(f / FPS).tobytes())
+            ff.stdin.write(rendu(f / FPS).tobytes())
     ff.stdin.close()
     ff.wait()
-    print(f"OK : {dst} ({total:.1f} s)")
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", dst, "-i", base + "_b.wav", "-map", "0:v",
+                    "-map", "1:a", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest",
+                    "-movflags", "+faststart", base + "_sans_musique.mp4"], check=True)
+    os.remove(base + "_a.wav")
+    os.remove(base + "_b.wav")
+    print(f"OK : {dst} et {base}_sans_musique.mp4 ({total:.1f} s)")
 
 
 if __name__ == "__main__":
