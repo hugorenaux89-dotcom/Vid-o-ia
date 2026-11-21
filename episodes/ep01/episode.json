@@ -1,0 +1,181 @@
+{
+  "id": "ep01",
+  "title": "Dans 6 mois, tu pourrais être méconnaissable",
+  "voice": {
+    "voice_id": "pNInz6obpgDQGcFmaJgB",
+    "model_id": "eleven_multilingual_v2",
+    "settings": {
+      "stability": 0.42,
+      "similarity_boost": 0.8,
+      "style": 0.35,
+      "use_speaker_boost": true,
+      "speed": 0.95
+    }
+  },
+  "tighten": {
+    "max_gap": 0.2,
+    "dramatic_gap": 0.45,
+    "dramatic_before": [
+      "devient jamais",
+      "ça change",
+      "tu répondras",
+      "J'ai commencé"
+    ],
+    "remove": [
+      "Mais écoute bien."
+    ],
+    "tempo": 1.06
+  },
+  "display": {
+    "merge": [
+      [
+        "cent",
+        "quatre-vingts",
+        "180"
+      ],
+      [
+        "cinq",
+        "heures",
+        "5H"
+      ]
+    ],
+    "replace": {
+      "six": "6"
+    },
+    "drop_tokens": [
+      ":",
+      "«",
+      "»",
+      "»...",
+      "?"
+    ]
+  },
+  "highlight": [
+    "6",
+    "méconnaissable",
+    "lundi",
+    "jamais",
+    "paresseux",
+    "peur",
+    "petit",
+    "rien",
+    "180",
+    "tout",
+    "matins",
+    "abandonner",
+    "travail",
+    "résultat",
+    "aujourd'hui",
+    "parfait",
+    "commencé"
+  ],
+  "drop_at": "ça change tout",
+  "silence_at": "J'ai commencé",
+  "scenes": [
+    {
+      "at": "Dans six mois",
+      "style": "night",
+      "ghost": "6 MOIS",
+      "clip": "clips/s01_runner_5am.mp4"
+    },
+    {
+      "at": "Tu te dis",
+      "style": "doubt",
+      "ghost": "LUNDI",
+      "clip": "clips/s02_alarm_snooze.mp4"
+    },
+    {
+      "at": "Puis lundi",
+      "style": "doubt",
+      "ghost": "LE MOIS PROCHAIN",
+      "clip": "clips/s03_calendar.mp4"
+    },
+    {
+      "at": "Et le mois",
+      "style": "void",
+      "ghost": "JAMAIS",
+      "clip": "clips/s04_bed_dark.mp4"
+    },
+    {
+      "at": "Tu n'es pas",
+      "style": "mirror",
+      "ghost": null,
+      "clip": "clips/s05_mirror.mp4"
+    },
+    {
+      "at": "Une séance",
+      "style": "gym",
+      "ghost": "1 SÉANCE",
+      "clip": "clips/s07_gym_alone.mp4"
+    },
+    {
+      "at": "Un réveil",
+      "style": "clock",
+      "ghost": "05:00",
+      "clip": "clips/s08_alarm_5am.mp4"
+    },
+    {
+      "at": "Mais cent",
+      "style": "counter",
+      "ghost": null,
+      "clip": "clips/s09_timelapse.mp4"
+    },
+    {
+      "at": "ça change",
+      "style": "sunrise",
+      "ghost": null,
+      "flash": true,
+      "clip": "clips/s10_sunrise_peak.mp4"
+    },
+    {
+      "at": "Cent quatre-vingts matins",
+      "style": "sunrise_run",
+      "ghost": null,
+      "clip": "clips/s11_runner_sunrise.mp4"
+    },
+    {
+      "at": "Cent quatre-vingts fois",
+      "style": "gym",
+      "ghost": null,
+      "clip": "clips/s12_last_rep.mp4"
+    },
+    {
+      "at": "Personne ne verra",
+      "style": "night",
+      "ghost": null,
+      "clip": "clips/s13_entrepreneur_night.mp4"
+    },
+    {
+      "at": "Tout le monde",
+      "style": "sunrise",
+      "ghost": null,
+      "clip": "clips/s14_transformation.mp4"
+    },
+    {
+      "at": "Alors commence",
+      "style": "rooftop",
+      "ghost": null,
+      "clip": "clips/s15_rooftop_city.mp4"
+    },
+    {
+      "at": "Et dans six",
+      "style": "rooftop",
+      "ghost": null,
+      "clip": "clips/s16_mirror_after.mp4"
+    },
+    {
+      "at": "quand on te",
+      "style": "night",
+      "ghost": "?",
+      "clip": "clips/s16b_friend_question.mp4"
+    },
+    {
+      "at": "J'ai commencé",
+      "style": "final",
+      "ghost": null,
+      "clip": "clips/s17_final_smile.mp4"
+    }
+  ],
+  "end_card_seconds": 1.15,
+  "brand": "5H01"
+}
