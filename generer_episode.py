@@ -93,8 +93,19 @@ _PARTICULES = [(_rng.uniform(0, W), _rng.uniform(0, H), _rng.uniform(25, 70), _r
                 _rng.uniform(0, 6.28)) for _ in range(45)]
 
 
+_FOND_CACHE = {}
+
+
 def fond(t):
-    """Fond animé au temps t (secondes, temps global de la vidéo)."""
+    """Fond animé au temps t, calculé à 15 images/s (l'animation est lente) puis réutilisé."""
+    cle = round(t * 15)
+    if cle not in _FOND_CACHE:
+        _FOND_CACHE.clear()
+        _FOND_CACHE[cle] = _fond_calcul(cle / 15)
+    return _FOND_CACHE[cle].copy()
+
+
+def _fond_calcul(t):
     rayons = 0.5 + 0.5 * np.cos(12 * _ANG + t * 0.35)
     rayons = (rayons ** 6)[..., None] * _RAYON_ATT
     arr = _BASE + _HALO * (0.85 + 0.15 * math.sin(t * 2.2)) + rayons * np.array([170, 120, 255], np.float32)
@@ -405,7 +416,7 @@ def main(src, dst):
     ff = subprocess.Popen([
         "ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24",
         "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", base + "_a.wav",
-        "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
+        "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p",
         "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", dst,
     ], stdin=subprocess.PIPE)
     t_global = 0.0

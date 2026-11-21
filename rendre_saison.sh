@@ -26,4 +26,4 @@ Claude-Session: https://claude.ai/code/session_01JNk9t8jXnu2qHuk5bAHa8L" >> sort
   fi
 }
 export -f rendre
-if [ $# -gt 0 ]; then printf "%s\n" "$@"; else seq 1 50; fi | xargs -P 2 -I{} bash -c 'rendre {}'
+if [ $# -gt 0 ]; then printf "%s\n" "$@"; else seq 1 50; fi | xargs -P 3 -I{} bash -c 'rendre {}'
