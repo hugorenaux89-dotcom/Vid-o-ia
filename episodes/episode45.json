@@ -165,7 +165,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🐕",
+   "emoji": "🏡",
    "question": "Quel animal a été domestiqué en premier par l'homme ?",
    "choix": [
     "Le chat",
@@ -180,7 +180,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🇲🇦",
+   "emoji": "🕌",
    "question": "Dans quel pays se trouve la ville de Marrakech ?",
    "choix": [
     "L'Algérie",
@@ -240,7 +240,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🕳️",
+   "emoji": "🌌",
    "question": "Que trouve-t-on au centre de notre galaxie ?",
    "choix": [
     "Le Soleil",
@@ -285,7 +285,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🇩🇪",
+   "emoji": "👥",
    "question": "Hors Russie, quel pays d'Europe a le plus d'habitants ?",
    "choix": [
     "La France",

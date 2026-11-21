@@ -1,7 +1,8 @@
 #!/bin/bash
 # Rend les épisodes (2 en parallèle) dans un dossier temporaire ignoré par git,
 # puis déplace chaque vidéo terminée dans sortie/ et l'enregistre (commit + push).
-# Usage : ./rendre_saison.sh [premier] [dernier]
+# Usage : ./rendre_saison.sh            (tous les épisodes)
+#         ./rendre_saison.sh 4 7 12     (seulement ces épisodes)
 cd "$(dirname "$0")"
 mkdir -p sortie/.en_cours
 BRANCHE=$(git rev-parse --abbrev-ref HEAD)
@@ -25,4 +26,4 @@ Claude-Session: https://claude.ai/code/session_01JNk9t8jXnu2qHuk5bAHa8L" >> sort
   fi
 }
 export -f rendre
-seq "${1:-1}" "${2:-50}" | xargs -P 2 -I{} bash -c 'rendre {}'
+if [ $# -gt 0 ]; then printf "%s\n" "$@"; else seq 1 50; fi | xargs -P 2 -I{} bash -c 'rendre {}'

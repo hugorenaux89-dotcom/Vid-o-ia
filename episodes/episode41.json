@@ -150,7 +150,7 @@
  },
  "questions": [
   {
-   "emoji": "🍉",
+   "emoji": "💧",
    "question": "Quel fruit est composé à plus de 90 % d'eau ?",
    "choix": [
     "La banane",
@@ -255,7 +255,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🦥",
+   "emoji": "⏳",
    "question": "Quel est le mammifère le plus lent du monde ?",
    "choix": [
     "La tortue",
@@ -285,7 +285,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🇵🇭",
+   "emoji": "🏝️",
    "question": "Quel pays est formé de plus de 7 000 îles ?",
    "choix": [
     "Le Japon",
