@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 66",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Chez le paon, qui fait la roue ?",
+   "choix": [
+    "La femelle",
+    "Le mâle",
+    "Les deux",
+    "Le petit"
+   ],
+   "reponse": 1,
+   "bonus": "Pour séduire les femelles !",
+   "voix_reponse": "Le mâle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍫",
+   "question": "Quel ingrédient compose le chocolat blanc ?",
+   "choix": [
+    "La poudre de cacao",
+    "Le beurre de cacao",
+    "La vanille seule",
+    "Le café"
+   ],
+   "reponse": 1,
+   "bonus": "Il ne contient pas de poudre de cacao !",
+   "voix_reponse": "Le beurre de cacao !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Venezuela ?",
+   "choix": [
+    "Bogota",
+    "Caracas",
+    "Quito",
+    "Maracaibo"
+   ],
+   "reponse": 1,
+   "bonus": "Bogota, c'est la Colombie !",
+   "voix_reponse": "Caracas !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚴",
+   "question": "Combien d'étapes compte le Tour de France ?",
+   "choix": [
+    "7",
+    "12",
+    "21",
+    "30"
+   ],
+   "reponse": 2,
+   "bonus": "Plus de 3 000 km au total !",
+   "voix_reponse": "Vingt et une !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💤",
+   "question": "Pendant quelle phase du sommeil rêve-t-on le plus ?",
+   "choix": [
+    "Le sommeil léger",
+    "Le sommeil paradoxal",
+    "Le sommeil profond",
+    "L'endormissement"
+   ],
+   "reponse": 1,
+   "bonus": "Les yeux bougent très vite pendant cette phase !",
+   "voix_reponse": "Le sommeil paradoxal !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quelle reine britannique a régné plus de 70 ans ?",
+   "choix": [
+    "Victoria",
+    "Élisabeth II",
+    "Marie Ire",
+    "Anne"
+   ],
+   "reponse": 1,
+   "bonus": "De 1952 à 2022 !",
+   "voix_reponse": "Élisabeth deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔭",
+   "question": "Quel télescope spatial a été lancé en 2021 ?",
+   "choix": [
+    "Hubble",
+    "James Webb",
+    "Kepler",
+    "Spitzer"
+   ],
+   "reponse": 1,
+   "bonus": "Lancé par une fusée Ariane, depuis la Guyane !",
+   "voix_reponse": "James Webb !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💾",
+   "question": "Combien de bits y a-t-il dans un octet ?",
+   "choix": [
+    "4",
+    "8",
+    "16",
+    "32"
+   ],
+   "reponse": 1,
+   "bonus": "« Octet » vient de huit !",
+   "voix_reponse": "Huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💉",
+   "question": "Quelle maladie le premier vaccin de l'histoire combattait-il ?",
+   "choix": [
+    "La rage",
+    "La variole",
+    "La polio",
+    "La peste"
+   ],
+   "reponse": 1,
+   "bonus": "Par Edward Jenner, en 1796.",
+   "voix_reponse": "La variole !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel est le plus grand pays de l'Union européenne ?",
+   "choix": [
+    "L'Allemagne",
+    "La France",
+    "L'Espagne",
+    "La Suède"
+   ],
+   "reponse": 1,
+   "bonus": "Même sans l'outre-mer !",
+   "voix_reponse": "La France !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

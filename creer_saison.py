@@ -10,6 +10,9 @@ import sys
 ICI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(ICI, "episodes"))
 from saison1_questions import E  # noqa: E402
+from saison2_questions import E as E2  # noqa: E402
+
+E.update(E2)
 
 J, B, V = [255, 214, 0], [255, 255, 255], [34, 197, 94]
 
@@ -139,7 +142,7 @@ if __name__ == "__main__":
     pub1 = open(os.path.join(dossier, "episode1_publication.txt"), encoding="utf-8").read()
 
     with open(os.path.join(ICI, "DESCRIPTIONS_TIKTOK.txt"), "w", encoding="utf-8") as f:
-        f.write("DESCRIPTIONS DES 50 ÉPISODES (à copier sous chaque vidéo TikTok)\n" + "=" * 60 + "\n\n")
+        f.write("DESCRIPTIONS DES ÉPISODES (à copier sous chaque vidéo TikTok)\n" + "=" * 60 + "\n\n")
         f.write(pub1 + "\n" + "-" * 60 + "\n\n")
         f.write(("\n" + "-" * 60 + "\n\n").join(toutes))
     import datetime
@@ -148,7 +151,7 @@ if __name__ == "__main__":
     jours = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
     with open(os.path.join(ICI, "PLANNING_PUBLICATION.txt"), "w", encoding="utf-8") as f:
         f.write("PLANNING : 3 ÉPISODES PAR JOUR (12h30, 18h00, 21h00)\n" + "=" * 52 + "\n")
-        for n in range(1, 51):
+        for n in range(1, max(E) + 1):
             j = (n - 1) // 3
             d = debut + datetime.timedelta(days=j)
             if (n - 1) % 3 == 0:

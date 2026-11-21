@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 55",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Dans quel pays se trouve la ville de Barcelone ?",
+   "choix": [
+    "L'Italie",
+    "L'Espagne",
+    "Le Portugal",
+    "La France"
+   ],
+   "reponse": 1,
+   "bonus": "En Catalogne.",
+   "voix_reponse": "L'Espagne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Quel animal fait « hi-han » ?",
+   "choix": [
+    "Le cheval",
+    "L'âne",
+    "La chèvre",
+    "Le mouton"
+   ],
+   "reponse": 1,
+   "bonus": "On dit qu'il brait !",
+   "voix_reponse": "L'âne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥕",
+   "question": "Quel légume orange serait bon pour la vue, selon la tradition ?",
+   "choix": [
+    "La betterave",
+    "La carotte",
+    "Le navet",
+    "Le radis"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce au bêta-carotène !",
+   "voix_reponse": "La carotte !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Quelle nage est la plus rapide ?",
+   "choix": [
+    "La brasse",
+    "Le crawl",
+    "Le dos",
+    "Le papillon"
+   ],
+   "reponse": 1,
+   "bonus": "C'est la nage des épreuves de nage libre.",
+   "voix_reponse": "Le crawl !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦵",
+   "question": "Comment s'appelle l'os à l'avant du genou ?",
+   "choix": [
+    "Le tibia",
+    "La rotule",
+    "Le péroné",
+    "Le fémur"
+   ],
+   "reponse": 1,
+   "bonus": "Elle protège l'articulation.",
+   "voix_reponse": "La rotule !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗿",
+   "question": "Qui a sculpté Le Penseur ?",
+   "choix": [
+    "Michel-Ange",
+    "Auguste Rodin",
+    "Camille Claudel",
+    "Bartholdi"
+   ],
+   "reponse": 1,
+   "bonus": "Une statue en bronze de près de 2 mètres.",
+   "voix_reponse": "Auguste Rodin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌙",
+   "question": "Comment s'appelle la Lune quand on ne la voit pas du tout ?",
+   "choix": [
+    "La pleine lune",
+    "La nouvelle lune",
+    "Le premier quartier",
+    "La lune rousse"
+   ],
+   "reponse": 1,
+   "bonus": "Elle est entre la Terre et le Soleil.",
+   "voix_reponse": "La nouvelle lune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚂",
+   "question": "Quel tunnel relie la France et l'Angleterre ?",
+   "choix": [
+    "Le tunnel du Mont-Blanc",
+    "Le tunnel sous la Manche",
+    "Le Saint-Gothard",
+    "Le tunnel de Fréjus"
+   ],
+   "reponse": 1,
+   "bonus": "Ouvert en 1994, 50 km de long.",
+   "voix_reponse": "Le tunnel sous la Manche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧲",
+   "question": "Quel savant a donné son nom à l'unité de force ?",
+   "choix": [
+    "Watt",
+    "Newton",
+    "Pascal",
+    "Joule"
+   ],
+   "reponse": 1,
+   "bonus": "On mesure les forces en newtons !",
+   "voix_reponse": "Newton !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Quel volcan indonésien a explosé en 1883 avec un bruit entendu à des milliers de km ?",
+   "choix": [
+    "Le Krakatoa",
+    "Le Tambora",
+    "Le Pinatubo",
+    "Le Merapi"
+   ],
+   "reponse": 0,
+   "bonus": "L'un des bruits les plus forts de l'histoire !",
+   "voix_reponse": "Le Krakatoa !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 86",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal est connu pour son cri qui ressemble à un rire ?",
+   "choix": [
+    "Le loup",
+    "La hyène",
+    "Le chacal",
+    "Le singe"
+   ],
+   "reponse": 1,
+   "bonus": "C'est en réalité un signal de stress !",
+   "voix_reponse": "La hyène !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧀",
+   "question": "Quel fromage grec est fait avec du lait de brebis ?",
+   "choix": [
+    "La mozzarella",
+    "La feta",
+    "La ricotta",
+    "Le parmesan"
+   ],
+   "reponse": 1,
+   "bonus": "Parfaite dans une salade grecque !",
+   "voix_reponse": "La feta !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Algérie ?",
+   "choix": [
+    "Oran",
+    "Alger",
+    "Constantine",
+    "Tunis"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommée « Alger la Blanche » !",
+   "voix_reponse": "Alger !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏆",
+   "question": "Quelle compétition récompense le meilleur club de foot d'Europe ?",
+   "choix": [
+    "La Coupe du monde",
+    "La Ligue des champions",
+    "L'Euro",
+    "La Copa América"
+   ],
+   "reponse": 1,
+   "bonus": "Avec sa célèbre musique d'entrée !",
+   "voix_reponse": "La Ligue des champions !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦶",
+   "question": "Comment s'appelle l'os du talon ?",
+   "choix": [
+    "Le tibia",
+    "Le calcanéum",
+    "La rotule",
+    "Le métatarse"
+   ],
+   "reponse": 1,
+   "bonus": "Le plus gros os du pied !",
+   "voix_reponse": "Le calcanéum !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛪",
+   "question": "Quel mont normand est célèbre pour son abbaye ?",
+   "choix": [
+    "Le mont Ventoux",
+    "Le Mont-Saint-Michel",
+    "Le mont Blanc",
+    "Le puy de Dôme"
+   ],
+   "reponse": 1,
+   "bonus": "Entouré par la mer à marée haute !",
+   "voix_reponse": "Le Mont-Saint-Michel !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle planète est la plus dense du système solaire ?",
+   "choix": [
+    "Jupiter",
+    "La Terre",
+    "Mercure",
+    "Saturne"
+   ],
+   "reponse": 1,
+   "bonus": "Saturne, elle, pourrait flotter sur l'eau !",
+   "voix_reponse": "La Terre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔎",
+   "question": "Quel moteur de recherche est le plus utilisé au monde ?",
+   "choix": [
+    "Bing",
+    "Google",
+    "Yahoo",
+    "Qwant"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 8 milliards de recherches par jour !",
+   "voix_reponse": "Google !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧪",
+   "question": "Quelle est la formule du méthane ?",
+   "choix": [
+    "CO2",
+    "CH4",
+    "H2O",
+    "NH3"
+   ],
+   "reponse": 1,
+   "bonus": "Un gaz produit notamment par les vaches !",
+   "voix_reponse": "C H quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel est le pays le plus peuplé d'Amérique du Sud ?",
+   "choix": [
+    "L'Argentine",
+    "Le Brésil",
+    "La Colombie",
+    "Le Pérou"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 200 millions d'habitants !",
+   "voix_reponse": "Le Brésil !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 80",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit du mouton ?",
+   "choix": [
+    "Le chevreau",
+    "L'agneau",
+    "Le veau",
+    "Le poulain"
+   ],
+   "reponse": 1,
+   "bonus": "Il reconnaît sa mère à sa voix !",
+   "voix_reponse": "L'agneau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥂",
+   "question": "Dans quelle région produit-on le champagne ?",
+   "choix": [
+    "En Bourgogne",
+    "En Champagne",
+    "En Alsace",
+    "À Bordeaux"
+   ],
+   "reponse": 1,
+   "bonus": "Seul celui de cette région a droit au nom !",
+   "voix_reponse": "En Champagne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Estonie ?",
+   "choix": [
+    "Riga",
+    "Tallinn",
+    "Helsinki",
+    "Tartu"
+   ],
+   "reponse": 1,
+   "bonus": "Une vieille ville médiévale superbe !",
+   "voix_reponse": "Tallinn !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏁",
+   "question": "Combien d'heures dure la course automobile du Mans ?",
+   "choix": [
+    "6",
+    "12",
+    "24",
+    "48"
+   ],
+   "reponse": 2,
+   "bonus": "Jour et nuit, sans arrêt !",
+   "voix_reponse": "Vingt-quatre heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Comment s'appelle le médecin des dents ?",
+   "choix": [
+    "L'ophtalmologue",
+    "Le dentiste",
+    "Le dermatologue",
+    "Le cardiologue"
+   ],
+   "reponse": 1,
+   "bonus": "À voir au moins une fois par an !",
+   "voix_reponse": "Le dentiste !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quelle langue parlaient les Romains ?",
+   "choix": [
+    "Le grec",
+    "Le latin",
+    "L'italien",
+    "L'araméen"
+   ],
+   "reponse": 1,
+   "bonus": "La langue mère du français !",
+   "voix_reponse": "Le latin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔴",
+   "question": "Quel robot de la NASA explore Mars depuis 2021 ?",
+   "choix": [
+    "Curiosity",
+    "Perseverance",
+    "Opportunity",
+    "Spirit"
+   ],
+   "reponse": 1,
+   "bonus": "Avec un petit hélicoptère, Ingenuity !",
+   "voix_reponse": "Perseverance !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quel chanteur belge a chanté « Alors on danse » ?",
+   "choix": [
+    "Angèle",
+    "Stromae",
+    "Jacques Brel",
+    "Damso"
+   ],
+   "reponse": 1,
+   "bonus": "Un énorme tube de 2009 !",
+   "voix_reponse": "Stromae !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚡",
+   "question": "Quelle unité mesure la résistance électrique ?",
+   "choix": [
+    "Le volt",
+    "L'ohm",
+    "Le watt",
+    "L'ampère"
+   ],
+   "reponse": 1,
+   "bonus": "Son symbole est la lettre grecque oméga.",
+   "voix_reponse": "L'ohm !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐢",
+   "question": "À quel pays appartiennent les îles Galápagos ?",
+   "choix": [
+    "Le Pérou",
+    "L'Équateur",
+    "Le Chili",
+    "La Colombie"
+   ],
+   "reponse": 1,
+   "bonus": "Célèbres pour leurs tortues géantes !",
+   "voix_reponse": "L'Équateur !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

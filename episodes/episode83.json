@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 83",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Combien de pattes a une crevette ?",
+   "choix": [
+    "6",
+    "8",
+    "10",
+    "12"
+   ],
+   "reponse": 2,
+   "bonus": "C'est un crustacé décapode : « dix pattes » !",
+   "voix_reponse": "Dix !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍲",
+   "question": "Quelle soupe de poissons est une spécialité de Marseille ?",
+   "choix": [
+    "La ratatouille",
+    "La bouillabaisse",
+    "Le cassoulet",
+    "La garbure"
+   ],
+   "reponse": 1,
+   "bonus": "Servie avec de la rouille !",
+   "voix_reponse": "La bouillabaisse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Ghana ?",
+   "choix": [
+    "Lomé",
+    "Accra",
+    "Kumasi",
+    "Abidjan"
+   ],
+   "reponse": 1,
+   "bonus": "Lomé, c'est le Togo !",
+   "voix_reponse": "Accra !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Quel pays a gagné le plus de Coupes du monde de rugby ?",
+   "choix": [
+    "La Nouvelle-Zélande",
+    "L'Afrique du Sud",
+    "L'Australie",
+    "L'Angleterre"
+   ],
+   "reponse": 1,
+   "bonus": "Quatre titres, dont 2019 et 2023 !",
+   "voix_reponse": "L'Afrique du Sud ! Pas la Nouvelle-Zélande.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🍽️",
+   "question": "Combien mesure l'intestin grêle, environ ?",
+   "choix": [
+    "50 cm",
+    "Environ 6 m",
+    "20 m",
+    "100 m"
+   ],
+   "reponse": 1,
+   "bonus": "Replié dans ton ventre !",
+   "voix_reponse": "Environ six mètres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📜",
+   "question": "Quel traité a mis fin à la Première Guerre mondiale ?",
+   "choix": [
+    "Le traité de Rome",
+    "Le traité de Versailles",
+    "Le traité de Paris",
+    "Le traité de Maastricht"
+   ],
+   "reponse": 1,
+   "bonus": "Signé en 1919, dans la galerie des Glaces !",
+   "voix_reponse": "Le traité de Versailles !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Combien de temps le Soleil va-t-il encore briller ?",
+   "choix": [
+    "1 000 ans",
+    "Environ 5 milliards d'années",
+    "1 million d'années",
+    "Pour toujours"
+   ],
+   "reponse": 1,
+   "bonus": "On a encore le temps !",
+   "voix_reponse": "Environ cinq milliards d'années !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel réalisateur a créé E.T. et Jurassic Park ?",
+   "choix": [
+    "James Cameron",
+    "Steven Spielberg",
+    "George Lucas",
+    "Tim Burton"
+   ],
+   "reponse": 1,
+   "bonus": "L'un des réalisateurs les plus célèbres au monde.",
+   "voix_reponse": "Steven Spielberg !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍎",
+   "question": "Quelle force fait tomber les objets ?",
+   "choix": [
+    "Le magnétisme",
+    "La gravité",
+    "Le frottement",
+    "La pression"
+   ],
+   "reponse": 1,
+   "bonus": "Sur Terre, tout tombe à la même vitesse dans le vide !",
+   "voix_reponse": "La gravité !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏞️",
+   "question": "Quel est le plus grand lac d'Europe ?",
+   "choix": [
+    "Le Léman",
+    "Le lac Ladoga",
+    "Le lac de Constance",
+    "Le lac Balaton"
+   ],
+   "reponse": 1,
+   "bonus": "En Russie, près de Saint-Pétersbourg.",
+   "voix_reponse": "Le lac Ladoga !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

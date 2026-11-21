@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 94",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit de la poule ?",
+   "choix": [
+    "Le caneton",
+    "Le poussin",
+    "L'oison",
+    "Le dindonneau"
+   ],
+   "reponse": 1,
+   "bonus": "Il sort de l'œuf après 21 jours !",
+   "voix_reponse": "Le poussin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍯",
+   "question": "Comment s'appelle une personne qui élève des abeilles ?",
+   "choix": [
+    "Un apiculteur",
+    "Un aviculteur",
+    "Un ostréiculteur",
+    "Un sylviculteur"
+   ],
+   "reponse": 0,
+   "bonus": "L'ostréiculteur, lui, élève des huîtres !",
+   "voix_reponse": "Un apiculteur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Moldavie ?",
+   "choix": [
+    "Chisinau",
+    "Kiev",
+    "Bucarest",
+    "Minsk"
+   ],
+   "reponse": 0,
+   "bonus": "Entre la Roumanie et l'Ukraine.",
+   "voix_reponse": "Chisinau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Dans quel sport se dispute la Coupe Davis ?",
+   "choix": [
+    "Le golf",
+    "Le tennis",
+    "La voile",
+    "Le rugby"
+   ],
+   "reponse": 1,
+   "bonus": "Une compétition entre nations depuis 1900 !",
+   "voix_reponse": "Le tennis !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Quel organe ne ressent pas lui-même la douleur ?",
+   "choix": [
+    "La peau",
+    "Le cerveau",
+    "Les dents",
+    "Les yeux"
+   ],
+   "reponse": 1,
+   "bonus": "On peut l'opérer en étant éveillé !",
+   "voix_reponse": "Le cerveau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Quel château de la Loire est surnommé « le château des Dames » ?",
+   "choix": [
+    "Chambord",
+    "Chenonceau",
+    "Versailles",
+    "Amboise"
+   ],
+   "reponse": 1,
+   "bonus": "Construit au-dessus d'une rivière, le Cher !",
+   "voix_reponse": "Chenonceau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌲",
+   "question": "Quelle est la plus grande forêt de France métropolitaine ?",
+   "choix": [
+    "La forêt de Fontainebleau",
+    "La forêt des Landes",
+    "Brocéliande",
+    "La forêt d'Orléans"
+   ],
+   "reponse": 1,
+   "bonus": "Près d'un million d'hectares, plantés par l'homme !",
+   "voix_reponse": "La forêt des Landes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤖",
+   "question": "Quelle entreprise développe le système Android ?",
+   "choix": [
+    "Apple",
+    "Google",
+    "Microsoft",
+    "Samsung"
+   ],
+   "reponse": 1,
+   "bonus": "Présent sur la majorité des téléphones du monde !",
+   "voix_reponse": "Google !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚛️",
+   "question": "Comment s'appelle la plus petite partie d'un élément chimique ?",
+   "choix": [
+    "La molécule",
+    "L'atome",
+    "La cellule",
+    "Le grain"
+   ],
+   "reponse": 1,
+   "bonus": "Du grec « atomos » : qu'on ne peut pas couper !",
+   "voix_reponse": "L'atome !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale du Bhoutan ?",
+   "choix": [
+    "Katmandou",
+    "Thimphou",
+    "Lhassa",
+    "Dacca"
+   ],
+   "reponse": 1,
+   "bonus": "Une capitale sans aucun feu rouge !",
+   "voix_reponse": "Thimphou !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

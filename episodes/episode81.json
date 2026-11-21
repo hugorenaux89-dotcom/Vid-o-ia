@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 81",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Combien de pattes a une fourmi ?",
+   "choix": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "Comme tous les insectes !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫒",
+   "question": "Comment s'appelle le pain italien plat à l'huile d'olive ?",
+   "choix": [
+    "La ciabatta",
+    "La focaccia",
+    "Le panettone",
+    "La pita"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent avec du romarin !",
+   "voix_reponse": "La focaccia !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Slovénie ?",
+   "choix": [
+    "Zagreb",
+    "Ljubljana",
+    "Bratislava",
+    "Maribor"
+   ],
+   "reponse": 1,
+   "bonus": "Un nom pas facile à prononcer !",
+   "voix_reponse": "Ljubljana !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🟨",
+   "question": "Au foot, combien de cartons jaunes font un carton rouge dans un match ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 1,
+   "bonus": "Et le joueur doit quitter le terrain !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "À quoi servent les plaquettes dans le sang ?",
+   "choix": [
+    "Transporter l'oxygène",
+    "Arrêter les saignements",
+    "Combattre les microbes",
+    "Digérer"
+   ],
+   "reponse": 1,
+   "bonus": "Elles forment une sorte de bouchon !",
+   "voix_reponse": "À arrêter les saignements !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗳️",
+   "question": "En quelle année les Françaises ont-elles voté pour la première fois ?",
+   "choix": [
+    "1918",
+    "1945",
+    "1968",
+    "1981"
+   ],
+   "reponse": 1,
+   "bonus": "Le droit de vote a été accordé en 1944.",
+   "voix_reponse": "Mille neuf cent quarante-cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Quelle couche de l'atmosphère nous protège des UV ?",
+   "choix": [
+    "La couche d'azote",
+    "La couche d'ozone",
+    "Les nuages",
+    "La couche de CO2"
+   ],
+   "reponse": 1,
+   "bonus": "Elle se trouve à environ 25 km d'altitude.",
+   "voix_reponse": "La couche d'ozone !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎮",
+   "question": "Quel est le jeu vidéo le plus vendu de tous les temps ?",
+   "choix": [
+    "Tetris",
+    "Minecraft",
+    "GTA V",
+    "Mario Kart"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 300 millions d'exemplaires !",
+   "voix_reponse": "Minecraft !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌡️",
+   "question": "À combien de degrés Fahrenheit l'eau gèle-t-elle ?",
+   "choix": [
+    "0",
+    "32",
+    "100",
+    "212"
+   ],
+   "reponse": 1,
+   "bonus": "Et elle bout à 212 !",
+   "voix_reponse": "Trente-deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏜️",
+   "question": "Dans quel pays se trouve le désert d'Atacama ?",
+   "choix": [
+    "Le Pérou",
+    "Le Chili",
+    "L'Argentine",
+    "La Bolivie"
+   ],
+   "reponse": 1,
+   "bonus": "Le désert chaud le plus sec du monde !",
+   "voix_reponse": "Le Chili !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

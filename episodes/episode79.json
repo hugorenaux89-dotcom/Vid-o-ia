@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 79",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel insecte fabrique la soie ?",
+   "choix": [
+    "L'abeille",
+    "Le ver à soie",
+    "La coccinelle",
+    "La fourmi"
+   ],
+   "reponse": 1,
+   "bonus": "C'est en fait une chenille !",
+   "voix_reponse": "Le ver à soie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫕",
+   "question": "Quel fromage utilise-t-on dans la fondue savoyarde ?",
+   "choix": [
+    "Le camembert",
+    "Le beaufort",
+    "Le roquefort",
+    "Le brie"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent avec du comté et de l'emmental !",
+   "voix_reponse": "Le beaufort !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Lettonie ?",
+   "choix": [
+    "Vilnius",
+    "Riga",
+    "Tallinn",
+    "Minsk"
+   ],
+   "reponse": 1,
+   "bonus": "La plus grande ville des pays baltes !",
+   "voix_reponse": "Riga !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏀",
+   "question": "Combien de minutes dure un match de NBA ?",
+   "choix": [
+    "40",
+    "48",
+    "60",
+    "90"
+   ],
+   "reponse": 1,
+   "bonus": "Quatre quarts-temps de 12 minutes !",
+   "voix_reponse": "Quarante-huit minutes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫁",
+   "question": "Combien de lobes a le poumon droit ?",
+   "choix": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "reponse": 1,
+   "bonus": "Le gauche n'en a que 2, pour laisser de la place au cœur !",
+   "voix_reponse": "Trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quel peuple a construit Chichén Itzá ?",
+   "choix": [
+    "Les Aztèques",
+    "Les Mayas",
+    "Les Incas",
+    "Les Olmèques"
+   ],
+   "reponse": 1,
+   "bonus": "Au Mexique, dans le Yucatán.",
+   "voix_reponse": "Les Mayas !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚀",
+   "question": "Combien de temps faut-il pour aller sur la Lune en fusée ?",
+   "choix": [
+    "3 heures",
+    "Environ 3 jours",
+    "3 semaines",
+    "3 mois"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 384 000 km à parcourir !",
+   "voix_reponse": "Environ trois jours !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💬",
+   "question": "Que veut dire le premier « S » de SMS ?",
+   "choix": [
+    "Simple",
+    "Short",
+    "Super",
+    "Secure"
+   ],
+   "reponse": 1,
+   "bonus": "Short Message Service !",
+   "voix_reponse": "Short !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧪",
+   "question": "Lequel de ces métaux rouille ?",
+   "choix": [
+    "L'or",
+    "Le fer",
+    "L'aluminium",
+    "Le platine"
+   ],
+   "reponse": 1,
+   "bonus": "Au contact de l'eau et de l'air !",
+   "voix_reponse": "Le fer !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle ville est traversée par le Bosphore ?",
+   "choix": [
+    "Athènes",
+    "Istanbul",
+    "Ankara",
+    "Le Caire"
+   ],
+   "reponse": 1,
+   "bonus": "Une ville sur deux continents !",
+   "voix_reponse": "Istanbul !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

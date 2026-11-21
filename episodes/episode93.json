@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 93",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Combien de pattes a un serpent ?",
+   "choix": [
+    "0",
+    "2",
+    "4",
+    "100"
+   ],
+   "reponse": 0,
+   "bonus": "Il avance grâce à ses muscles et ses écailles !",
+   "voix_reponse": "Aucune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍬",
+   "question": "Quel fruit sec trouve-t-on dans le nougat de Montélimar ?",
+   "choix": [
+    "La noix",
+    "L'amande",
+    "La pistache",
+    "La noisette"
+   ],
+   "reponse": 1,
+   "bonus": "Avec du miel de lavande !",
+   "voix_reponse": "L'amande !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Macédoine du Nord ?",
+   "choix": [
+    "Tirana",
+    "Skopje",
+    "Sofia",
+    "Podgorica"
+   ],
+   "reponse": 1,
+   "bonus": "Ville natale de Mère Teresa !",
+   "voix_reponse": "Skopje !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚾",
+   "question": "Combien de joueurs par équipe au baseball, sur le terrain ?",
+   "choix": [
+    "7",
+    "9",
+    "11",
+    "12"
+   ],
+   "reponse": 1,
+   "bonus": "Le sport national des États-Unis !",
+   "voix_reponse": "Neuf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌈",
+   "question": "Combien de couleurs l'œil humain peut-il distinguer, environ ?",
+   "choix": [
+    "100",
+    "Environ 1 million",
+    "10",
+    "1 milliard"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à trois types de cellules dans la rétine !",
+   "voix_reponse": "Environ un million !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏹",
+   "question": "Quel empire était dirigé par Gengis Khan ?",
+   "choix": [
+    "L'Empire ottoman",
+    "L'Empire mongol",
+    "L'Empire perse",
+    "L'Empire chinois"
+   ],
+   "reponse": 1,
+   "bonus": "Le plus grand empire d'un seul tenant de l'histoire !",
+   "voix_reponse": "L'Empire mongol !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌙",
+   "question": "Combien de temps sépare deux nouvelles lunes ?",
+   "choix": [
+    "7 jours",
+    "Environ 29,5 jours",
+    "15 jours",
+    "365 jours"
+   ],
+   "reponse": 1,
+   "bonus": "D'où le mot « mois », qui vient de la Lune !",
+   "voix_reponse": "Environ vingt-neuf jours et demi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎻",
+   "question": "Quel compositeur a écrit le Boléro ?",
+   "choix": [
+    "Debussy",
+    "Maurice Ravel",
+    "Satie",
+    "Berlioz"
+   ],
+   "reponse": 1,
+   "bonus": "En 1928, l'une des œuvres les plus jouées au monde.",
+   "voix_reponse": "Maurice Ravel !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧬",
+   "question": "Quelle forme a la molécule d'ADN ?",
+   "choix": [
+    "Un cercle",
+    "Une double hélice",
+    "Un carré",
+    "Une étoile"
+   ],
+   "reponse": 1,
+   "bonus": "Comme un escalier en colimaçon !",
+   "voix_reponse": "Une double hélice !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale du Népal ?",
+   "choix": [
+    "Lhassa",
+    "Katmandou",
+    "Thimphou",
+    "Pokhara"
+   ],
+   "reponse": 1,
+   "bonus": "Porte d'entrée vers l'Everest !",
+   "voix_reponse": "Katmandou !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

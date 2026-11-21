@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 65",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel est le plus grand carnivore terrestre ?",
+   "choix": [
+    "Le lion",
+    "L'ours polaire",
+    "Le tigre",
+    "Le loup"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut dépasser 600 kg !",
+   "voix_reponse": "L'ours polaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍛",
+   "question": "Quelle épice donne sa couleur jaune au curry ?",
+   "choix": [
+    "Le safran",
+    "Le curcuma",
+    "Le paprika",
+    "Le cumin"
+   ],
+   "reponse": 1,
+   "bonus": "Pas le safran, bien trop cher !",
+   "voix_reponse": "Le curcuma !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Éthiopie ?",
+   "choix": [
+    "Nairobi",
+    "Addis-Abeba",
+    "Asmara",
+    "Khartoum"
+   ],
+   "reponse": 1,
+   "bonus": "Son nom veut dire « nouvelle fleur » !",
+   "voix_reponse": "Addis-Abeba !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Quel nageur français a gagné 4 médailles d'or aux JO de Paris 2024 ?",
+   "choix": [
+    "Florent Manaudou",
+    "Léon Marchand",
+    "Yannick Agnel",
+    "Camille Lacourt"
+   ],
+   "reponse": 1,
+   "bonus": "Une star de la natation !",
+   "voix_reponse": "Léon Marchand !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👀",
+   "question": "Quelle couleur d'yeux est la plus répandue dans le monde ?",
+   "choix": [
+    "Bleu",
+    "Marron",
+    "Vert",
+    "Gris"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 70 % des humains !",
+   "voix_reponse": "Marron !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🕊️",
+   "question": "Que commémore-t-on le 11 novembre en France ?",
+   "choix": [
+    "La prise de la Bastille",
+    "L'armistice de 1918",
+    "La fin de la Seconde Guerre",
+    "La Révolution"
+   ],
+   "reponse": 1,
+   "bonus": "La fin des combats de la Première Guerre mondiale.",
+   "voix_reponse": "L'armistice de mille neuf cent dix-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle planète possède la plus grande lune du système solaire ?",
+   "choix": [
+    "Saturne",
+    "Jupiter",
+    "Neptune",
+    "Uranus"
+   ],
+   "reponse": 1,
+   "bonus": "Ganymède, plus grande que Mercure !",
+   "voix_reponse": "Jupiter !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚡",
+   "question": "Quel sorcier a une cicatrice en forme d'éclair ?",
+   "choix": [
+    "Merlin",
+    "Harry Potter",
+    "Gandalf",
+    "Dumbledore"
+   ],
+   "reponse": 1,
+   "bonus": "Créé par J. K. Rowling.",
+   "voix_reponse": "Harry Potter !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧂",
+   "question": "Quel est le symbole chimique du sodium ?",
+   "choix": [
+    "So",
+    "Na",
+    "Sd",
+    "S"
+   ],
+   "reponse": 1,
+   "bonus": "Du latin « natrium » !",
+   "voix_reponse": "N a !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏙️",
+   "question": "Quelle est la plus grande ville francophone du monde ?",
+   "choix": [
+    "Paris",
+    "Kinshasa",
+    "Montréal",
+    "Abidjan"
+   ],
+   "reponse": 1,
+   "bonus": "Plus peuplée que Paris !",
+   "voix_reponse": "Kinshasa ! Pas Paris.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

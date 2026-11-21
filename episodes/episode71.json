@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 71",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Combien de pattes a un kangourou ?",
+   "choix": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "reponse": 1,
+   "bonus": "Il saute surtout sur les deux pattes arrière !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍦",
+   "question": "Quel parfum de glace est le plus vendu au monde ?",
+   "choix": [
+    "Chocolat",
+    "Vanille",
+    "Fraise",
+    "Pistache"
+   ],
+   "reponse": 1,
+   "bonus": "Un grand classique !",
+   "voix_reponse": "Vanille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Irak ?",
+   "choix": [
+    "Téhéran",
+    "Bagdad",
+    "Bassora",
+    "Damas"
+   ],
+   "reponse": 1,
+   "bonus": "Traversée par le Tigre !",
+   "voix_reponse": "Bagdad !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛳",
+   "question": "Comment appelle-t-on un trou réussi en un seul coup au golf ?",
+   "choix": [
+    "Un birdie",
+    "Un hole-in-one",
+    "Un bogey",
+    "Un par"
+   ],
+   "reponse": 1,
+   "bonus": "Le rêve de tout golfeur !",
+   "voix_reponse": "Un hole-in-one !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫀",
+   "question": "Quel est le plus gros vaisseau sanguin du corps ?",
+   "choix": [
+    "La veine cave",
+    "L'aorte",
+    "La carotide",
+    "L'artère fémorale"
+   ],
+   "reponse": 1,
+   "bonus": "Elle sort directement du cœur !",
+   "voix_reponse": "L'aorte !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📜",
+   "question": "Quel président américain a aboli l'esclavage ?",
+   "choix": [
+    "Washington",
+    "Abraham Lincoln",
+    "Roosevelt",
+    "Kennedy"
+   ],
+   "reponse": 1,
+   "bonus": "En 1865.",
+   "voix_reponse": "Abraham Lincoln !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle est la planète la plus froide du système solaire ?",
+   "choix": [
+    "Neptune",
+    "Uranus",
+    "Mars",
+    "Saturne"
+   ],
+   "reponse": 1,
+   "bonus": "Encore plus froide que Neptune : environ -224 °C !",
+   "voix_reponse": "Uranus ! Pas Neptune.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🖼️",
+   "question": "Quel peintre a peint La Laitière ?",
+   "choix": [
+    "Rembrandt",
+    "Vermeer",
+    "Van Gogh",
+    "Rubens"
+   ],
+   "reponse": 1,
+   "bonus": "Un peintre néerlandais du XVIIe siècle.",
+   "voix_reponse": "Vermeer !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧭",
+   "question": "Qu'est-ce qui oriente l'aiguille d'une boussole ?",
+   "choix": [
+    "Le Soleil",
+    "Le magnétisme terrestre",
+    "La Lune",
+    "Le vent"
+   ],
+   "reponse": 1,
+   "bonus": "La Terre est comme un aimant géant !",
+   "voix_reponse": "Le magnétisme terrestre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Oulan-Bator est la capitale de quel pays ?",
+   "choix": [
+    "Le Kazakhstan",
+    "La Mongolie",
+    "Le Népal",
+    "Le Tibet"
+   ],
+   "reponse": 1,
+   "bonus": "La capitale la plus froide du monde !",
+   "voix_reponse": "La Mongolie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

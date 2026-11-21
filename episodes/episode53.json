@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 53",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Belgique ?",
+   "choix": [
+    "Anvers",
+    "Bruxelles",
+    "Liège",
+    "Bruges"
+   ],
+   "reponse": 1,
+   "bonus": "Elle accueille aussi les institutions européennes.",
+   "voix_reponse": "Bruxelles !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Combien de pattes a un scorpion ?",
+   "choix": [
+    "6",
+    "8",
+    "10",
+    "12"
+   ],
+   "reponse": 1,
+   "bonus": "Ses pinces ne comptent pas comme des pattes !",
+   "voix_reponse": "Huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎂",
+   "question": "Quel dessert est fait de choux empilés en cône ?",
+   "choix": [
+    "Le Paris-Brest",
+    "La pièce montée",
+    "L'éclair",
+    "Le mille-feuille"
+   ],
+   "reponse": 1,
+   "bonus": "Le roi des mariages !",
+   "voix_reponse": "La pièce montée !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤾",
+   "question": "Combien de joueurs par équipe au handball, sur le terrain ?",
+   "choix": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "reponse": 2,
+   "bonus": "Gardien compris !",
+   "voix_reponse": "Sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👅",
+   "question": "Combien de papilles gustatives a-t-on sur la langue ?",
+   "choix": [
+    "Une dizaine",
+    "Une centaine",
+    "Plusieurs milliers",
+    "Un million"
+   ],
+   "reponse": 2,
+   "bonus": "Elles se renouvellent toutes les deux semaines environ !",
+   "voix_reponse": "Plusieurs milliers !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Quel roi a fait construire le château de Chambord ?",
+   "choix": [
+    "Louis XIV",
+    "François Ier",
+    "Henri IV",
+    "Louis XI"
+   ],
+   "reponse": 1,
+   "bonus": "À partir de 1519.",
+   "voix_reponse": "François premier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✨",
+   "question": "Quelle est la planète la plus brillante dans le ciel ?",
+   "choix": [
+    "Mars",
+    "Vénus",
+    "Jupiter",
+    "Saturne"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle aussi l'étoile du Berger !",
+   "voix_reponse": "Vénus !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💻",
+   "question": "Que signifie le « www » des adresses web ?",
+   "choix": [
+    "World Wide Web",
+    "Web World Wide",
+    "Wide Web World",
+    "World Web Wire"
+   ],
+   "reponse": 0,
+   "bonus": "La « toile d'araignée mondiale » !",
+   "voix_reponse": "World Wide Web !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💊",
+   "question": "Les antibiotiques soignent-ils les virus ?",
+   "choix": [
+    "Oui",
+    "Non, seulement les bactéries",
+    "Seulement la grippe",
+    "Seulement le rhume"
+   ],
+   "reponse": 1,
+   "bonus": "Contre un virus, ils ne servent à rien !",
+   "voix_reponse": "Non ! Seulement les bactéries.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel est le plus grand pays d'Amérique centrale ?",
+   "choix": [
+    "Le Honduras",
+    "Le Nicaragua",
+    "Le Guatemala",
+    "Le Panama"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 130 000 km².",
+   "voix_reponse": "Le Nicaragua !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

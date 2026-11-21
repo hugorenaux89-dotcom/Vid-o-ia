@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 51",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Autriche ?",
+   "choix": [
+    "Salzbourg",
+    "Vienne",
+    "Innsbruck",
+    "Graz"
+   ],
+   "reponse": 1,
+   "bonus": "Salzbourg, c'est la ville natale de Mozart !",
+   "voix_reponse": "Vienne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Un mille-pattes a-t-il vraiment mille pattes ?",
+   "choix": [
+    "Oui, toujours",
+    "Presque jamais",
+    "Il en a cent",
+    "Il n'en a aucune"
+   ],
+   "reponse": 1,
+   "bonus": "La plupart en ont entre 30 et 400 !",
+   "voix_reponse": "Presque jamais !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎨",
+   "question": "Quelle couleur obtient-on en mélangeant rouge et blanc ?",
+   "choix": [
+    "Violet",
+    "Rose",
+    "Orange",
+    "Marron"
+   ],
+   "reponse": 1,
+   "bonus": "Plus on ajoute de blanc, plus c'est clair !",
+   "voix_reponse": "Du rose !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤾",
+   "question": "Combien de temps dure une mi-temps au handball ?",
+   "choix": [
+    "20 minutes",
+    "30 minutes",
+    "40 minutes",
+    "45 minutes"
+   ],
+   "reponse": 1,
+   "bonus": "Soit 60 minutes de jeu au total.",
+   "voix_reponse": "Trente minutes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧬",
+   "question": "Quelle est la plus grosse glande du corps humain ?",
+   "choix": [
+    "La thyroïde",
+    "Le foie",
+    "Le pancréas",
+    "La rate"
+   ],
+   "reponse": 1,
+   "bonus": "Il pèse environ 1,5 kg !",
+   "voix_reponse": "Le foie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛵",
+   "question": "En quelle année Christophe Colomb a-t-il atteint l'Amérique ?",
+   "choix": [
+    "1392",
+    "1492",
+    "1592",
+    "1692"
+   ],
+   "reponse": 1,
+   "bonus": "Il pensait être arrivé en Inde !",
+   "voix_reponse": "Mille quatre cent quatre-vingt-douze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔴",
+   "question": "Combien de temps dure une journée sur Mars ?",
+   "choix": [
+    "12 heures",
+    "Environ 24 h 40",
+    "48 heures",
+    "10 jours"
+   ],
+   "reponse": 1,
+   "bonus": "Presque comme chez nous !",
+   "voix_reponse": "Environ vingt-quatre heures quarante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "De quel instrument jouait Louis Armstrong ?",
+   "choix": [
+    "Du saxophone",
+    "De la trompette",
+    "Du piano",
+    "De la batterie"
+   ],
+   "reponse": 1,
+   "bonus": "Une légende du jazz !",
+   "voix_reponse": "De la trompette !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧬",
+   "question": "Quel scientifique a proposé la théorie de l'évolution ?",
+   "choix": [
+    "Lamarck",
+    "Darwin",
+    "Mendel",
+    "Pasteur"
+   ],
+   "reponse": 1,
+   "bonus": "Son livre est sorti en 1859.",
+   "voix_reponse": "Charles Darwin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💧",
+   "question": "Quelle part de l'eau sur Terre est de l'eau douce ?",
+   "choix": [
+    "Environ 3 %",
+    "Environ 25 %",
+    "Environ 50 %",
+    "Environ 70 %"
+   ],
+   "reponse": 0,
+   "bonus": "Et la majorité est gelée dans les glaciers !",
+   "voix_reponse": "Environ trois pour cent seulement !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

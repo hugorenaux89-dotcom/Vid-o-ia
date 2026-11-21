@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 56",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Roumanie ?",
+   "choix": [
+    "Budapest",
+    "Bucarest",
+    "Sofia",
+    "Belgrade"
+   ],
+   "reponse": 1,
+   "bonus": "À ne pas confondre avec Budapest !",
+   "voix_reponse": "Bucarest !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Combien de temps une girafe dort-elle par nuit, environ ?",
+   "choix": [
+    "Moins de 2 heures",
+    "8 heures",
+    "12 heures",
+    "20 heures"
+   ],
+   "reponse": 0,
+   "bonus": "Souvent par petites siestes de quelques minutes !",
+   "voix_reponse": "Moins de deux heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍝",
+   "question": "Quelle sauce italienne est faite avec du basilic ?",
+   "choix": [
+    "Le pesto",
+    "La carbonara",
+    "La bolognaise",
+    "L'arrabbiata"
+   ],
+   "reponse": 0,
+   "bonus": "Avec des pignons et du parmesan.",
+   "voix_reponse": "Le pesto !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤽",
+   "question": "Combien de joueurs par équipe au water-polo, dans l'eau ?",
+   "choix": [
+    "5",
+    "6",
+    "7",
+    "9"
+   ],
+   "reponse": 2,
+   "bonus": "Gardien compris !",
+   "voix_reponse": "Sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👁️",
+   "question": "Comment s'appelle le rond noir au centre de l'œil ?",
+   "choix": [
+    "L'iris",
+    "La pupille",
+    "La cornée",
+    "Le cristallin"
+   ],
+   "reponse": 1,
+   "bonus": "Elle s'agrandit dans le noir !",
+   "voix_reponse": "La pupille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚔️",
+   "question": "Quelle bataille Napoléon a-t-il gagnée en 1805 ?",
+   "choix": [
+    "Waterloo",
+    "Austerlitz",
+    "Trafalgar",
+    "Leipzig"
+   ],
+   "reponse": 1,
+   "bonus": "Sa victoire la plus célèbre !",
+   "voix_reponse": "Austerlitz !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quel continent compte le plus de pays ?",
+   "choix": [
+    "L'Asie",
+    "L'Afrique",
+    "L'Europe",
+    "L'Amérique"
+   ],
+   "reponse": 1,
+   "bonus": "54 pays !",
+   "voix_reponse": "L'Afrique !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💻",
+   "question": "Qui a fondé Microsoft avec Paul Allen ?",
+   "choix": [
+    "Steve Jobs",
+    "Bill Gates",
+    "Mark Zuckerberg",
+    "Elon Musk"
+   ],
+   "reponse": 1,
+   "bonus": "En 1975.",
+   "voix_reponse": "Bill Gates !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔴",
+   "question": "Quel gaz compose l'essentiel de l'atmosphère de Mars ?",
+   "choix": [
+    "L'oxygène",
+    "Le dioxyde de carbone",
+    "L'azote",
+    "L'hélium"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 95 % !",
+   "voix_reponse": "Le dioxyde de carbone !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏝️",
+   "question": "Antananarivo est la capitale de quel pays ?",
+   "choix": [
+    "Le Mozambique",
+    "Madagascar",
+    "Maurice",
+    "Le Kenya"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle souvent « Tana » !",
+   "voix_reponse": "Madagascar !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

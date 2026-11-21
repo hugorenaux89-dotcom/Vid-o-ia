@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 95",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Que fabrique une araignée ?",
+   "choix": [
+    "Du miel",
+    "Une toile",
+    "Un nid",
+    "Une ruche"
+   ],
+   "reponse": 1,
+   "bonus": "Sa soie est plus solide que l'acier, à poids égal !",
+   "voix_reponse": "Une toile !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍺",
+   "question": "Avec quelle céréale fait-on surtout la bière ?",
+   "choix": [
+    "Le riz",
+    "L'orge",
+    "Le maïs",
+    "L'avoine"
+   ],
+   "reponse": 1,
+   "bonus": "Transformée en malt !",
+   "voix_reponse": "L'orge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Bangladesh ?",
+   "choix": [
+    "Calcutta",
+    "Dacca",
+    "Chittagong",
+    "Katmandou"
+   ],
+   "reponse": 1,
+   "bonus": "Calcutta, c'est en Inde !",
+   "voix_reponse": "Dacca !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚴",
+   "question": "Combien de kilomètres de vélo fait-on dans un triathlon Ironman ?",
+   "choix": [
+    "40 km",
+    "90 km",
+    "180 km",
+    "300 km"
+   ],
+   "reponse": 2,
+   "bonus": "Après 3,8 km de natation, et avant un marathon !",
+   "voix_reponse": "Cent quatre-vingts kilomètres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👍",
+   "question": "Combien de phalanges a un pouce ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 1,
+   "bonus": "Les autres doigts en ont trois !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗡️",
+   "question": "Quel roi macédonien a conquis un immense empire ?",
+   "choix": [
+    "Jules César",
+    "Alexandre le Grand",
+    "Hannibal",
+    "Darius"
+   ],
+   "reponse": 1,
+   "bonus": "Il est mort à seulement 32 ans !",
+   "voix_reponse": "Alexandre le Grand !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle est la plus petite planète du système solaire ?",
+   "choix": [
+    "Mars",
+    "Mercure",
+    "Vénus",
+    "Pluton"
+   ],
+   "reponse": 1,
+   "bonus": "Pluton n'est plus une planète !",
+   "voix_reponse": "Mercure ! Pas Pluton.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🦸",
+   "question": "Quel acteur a joué Iron Man ?",
+   "choix": [
+    "Chris Evans",
+    "Robert Downey Jr.",
+    "Chris Hemsworth",
+    "Mark Ruffalo"
+   ],
+   "reponse": 1,
+   "bonus": "Dans le premier film en 2008.",
+   "voix_reponse": "Robert Downey junior !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦠",
+   "question": "De quoi un virus a-t-il besoin pour se multiplier ?",
+   "choix": [
+    "D'eau",
+    "D'une cellule vivante",
+    "De lumière",
+    "De rien"
+   ],
+   "reponse": 1,
+   "bonus": "Seul, il ne peut rien faire !",
+   "voix_reponse": "D'une cellule vivante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel est le plus long fleuve d'Asie ?",
+   "choix": [
+    "Le Mékong",
+    "Le Yangtsé",
+    "Le Gange",
+    "L'Indus"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 6 300 km, en Chine !",
+   "voix_reponse": "Le Yangtsé !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

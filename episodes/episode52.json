@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 52",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Danemark ?",
+   "choix": [
+    "Oslo",
+    "Copenhague",
+    "Aarhus",
+    "Stockholm"
+   ],
+   "reponse": 1,
+   "bonus": "La ville de la Petite Sirène !",
+   "voix_reponse": "Copenhague !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit de la chèvre ?",
+   "choix": [
+    "Le chevreau",
+    "L'agneau",
+    "Le veau",
+    "Le faon"
+   ],
+   "reponse": 0,
+   "bonus": "On l'appelle aussi le cabri !",
+   "voix_reponse": "Le chevreau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌅",
+   "question": "Quelle boisson chaude est faite avec des grains torréfiés ?",
+   "choix": [
+    "Le thé",
+    "Le café",
+    "La tisane",
+    "Le maté"
+   ],
+   "reponse": 1,
+   "bonus": "Les grains viennent du caféier.",
+   "voix_reponse": "Le café !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛳",
+   "question": "Combien de trous compte un parcours de golf classique ?",
+   "choix": [
+    "9",
+    "12",
+    "18",
+    "24"
+   ],
+   "reponse": 2,
+   "bonus": "Certains petits parcours n'en ont que 9.",
+   "voix_reponse": "Dix-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦴",
+   "question": "Combien de côtes a un être humain ?",
+   "choix": [
+    "12",
+    "20",
+    "24",
+    "32"
+   ],
+   "reponse": 2,
+   "bonus": "Douze paires !",
+   "voix_reponse": "Vingt-quatre ! Douze paires.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quel roi des Francs a été baptisé à Reims ?",
+   "choix": [
+    "Charlemagne",
+    "Clovis",
+    "Pépin le Bref",
+    "Dagobert"
+   ],
+   "reponse": 1,
+   "bonus": "Vers l'an 500.",
+   "voix_reponse": "Clovis !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Comment s'appelle le point sous terre où démarre un séisme ?",
+   "choix": [
+    "L'épicentre",
+    "Le foyer",
+    "La faille",
+    "Le cratère"
+   ],
+   "reponse": 1,
+   "bonus": "L'épicentre, c'est le point juste au-dessus, en surface !",
+   "voix_reponse": "Le foyer ! Pas l'épicentre.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🚗",
+   "question": "Dans quel pays sont fabriquées les Ferrari ?",
+   "choix": [
+    "L'Allemagne",
+    "L'Italie",
+    "La France",
+    "L'Espagne"
+   ],
+   "reponse": 1,
+   "bonus": "À Maranello, près de Modène.",
+   "voix_reponse": "En Italie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧪",
+   "question": "Quel est le symbole chimique de l'argent ?",
+   "choix": [
+    "Ar",
+    "Ag",
+    "Au",
+    "Si"
+   ],
+   "reponse": 1,
+   "bonus": "Du latin « argentum ».",
+   "voix_reponse": "A g !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale du Kazakhstan ?",
+   "choix": [
+    "Almaty",
+    "Astana",
+    "Tachkent",
+    "Bichkek"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Almaty, l'ancienne capitale !",
+   "voix_reponse": "Astana ! Pas Almaty.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

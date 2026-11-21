@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 60",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Bulgarie ?",
+   "choix": [
+    "Bucarest",
+    "Sofia",
+    "Varna",
+    "Belgrade"
+   ],
+   "reponse": 1,
+   "bonus": "Au pied du mont Vitocha.",
+   "voix_reponse": "Sofia !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri du lion ?",
+   "choix": [
+    "Il barrit",
+    "Il rugit",
+    "Il hurle",
+    "Il brame"
+   ],
+   "reponse": 1,
+   "bonus": "On l'entend jusqu'à 8 km !",
+   "voix_reponse": "Il rugit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍏",
+   "question": "Avec quel fruit fait-on le cidre ?",
+   "choix": [
+    "Le raisin",
+    "La pomme",
+    "La poire",
+    "La prune"
+   ],
+   "reponse": 1,
+   "bonus": "Avec la poire, on fait le poiré !",
+   "voix_reponse": "La pomme !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏃",
+   "question": "Combien de kilomètres fait un semi-marathon ?",
+   "choix": [
+    "10 km",
+    "Environ 21 km",
+    "30 km",
+    "42 km"
+   ],
+   "reponse": 1,
+   "bonus": "La moitié d'un marathon !",
+   "voix_reponse": "Environ vingt et un kilomètres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👶",
+   "question": "Quel sens se développe en premier chez le bébé ?",
+   "choix": [
+    "La vue",
+    "Le toucher",
+    "L'ouïe",
+    "Le goût"
+   ],
+   "reponse": 1,
+   "bonus": "Dès les premières semaines dans le ventre !",
+   "voix_reponse": "Le toucher !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📜",
+   "question": "Quelle guerre a opposé le Nord et le Sud des États-Unis ?",
+   "choix": [
+    "La guerre d'indépendance",
+    "La guerre de Sécession",
+    "La guerre de Cent Ans",
+    "La guerre froide"
+   ],
+   "reponse": 1,
+   "bonus": "De 1861 à 1865.",
+   "voix_reponse": "La guerre de Sécession !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Quelle est la température à la surface du Soleil ?",
+   "choix": [
+    "500 °C",
+    "Environ 5 500 °C",
+    "55 000 °C",
+    "5 millions de °C"
+   ],
+   "reponse": 1,
+   "bonus": "Et plus de 15 millions de degrés en son centre !",
+   "voix_reponse": "Environ cinq mille cinq cents degrés !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Qui a chanté Thriller ?",
+   "choix": [
+    "Prince",
+    "Michael Jackson",
+    "Elvis Presley",
+    "Stevie Wonder"
+   ],
+   "reponse": 1,
+   "bonus": "L'album le plus vendu de l'histoire !",
+   "voix_reponse": "Michael Jackson !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧪",
+   "question": "Quelle est la formule du dioxyde de carbone ?",
+   "choix": [
+    "CO",
+    "CO2",
+    "O2",
+    "CH4"
+   ],
+   "reponse": 1,
+   "bonus": "Un atome de carbone, deux d'oxygène.",
+   "voix_reponse": "C O deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale de l'Albanie ?",
+   "choix": [
+    "Skopje",
+    "Tirana",
+    "Podgorica",
+    "Pristina"
+   ],
+   "reponse": 1,
+   "bonus": "Célèbre pour ses immeubles colorés !",
+   "voix_reponse": "Tirana !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

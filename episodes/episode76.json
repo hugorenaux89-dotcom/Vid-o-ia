@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 76",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on un groupe de loups ?",
+   "choix": [
+    "Une meute",
+    "Un troupeau",
+    "Une harde",
+    "Un banc"
+   ],
+   "reponse": 0,
+   "bonus": "Menée par un couple dominant.",
+   "voix_reponse": "Une meute !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧈",
+   "question": "Quel gâteau breton est très riche en beurre ?",
+   "choix": [
+    "Le far",
+    "Le kouign-amann",
+    "Le clafoutis",
+    "Le baba"
+   ],
+   "reponse": 1,
+   "bonus": "Son nom veut dire « gâteau au beurre » en breton !",
+   "voix_reponse": "Le kouign-amann !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Thaïlande ?",
+   "choix": [
+    "Phuket",
+    "Bangkok",
+    "Hanoï",
+    "Vientiane"
+   ],
+   "reponse": 1,
+   "bonus": "Son nom officiel est l'un des plus longs du monde !",
+   "voix_reponse": "Bangkok !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Combien mesure environ un terrain de foot pro en longueur ?",
+   "choix": [
+    "50 m",
+    "Environ 105 m",
+    "200 m",
+    "300 m"
+   ],
+   "reponse": 1,
+   "bonus": "Et environ 68 mètres de large.",
+   "voix_reponse": "Environ cent cinq mètres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Quelle molécule du cerveau est liée au plaisir ?",
+   "choix": [
+    "L'insuline",
+    "La dopamine",
+    "La mélatonine",
+    "Le cortisol"
+   ],
+   "reponse": 1,
+   "bonus": "C'est elle qui nous pousse à recommencer !",
+   "voix_reponse": "La dopamine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quelle merveille du monde antique se trouvait en Égypte, avec la pyramide de Khéops ?",
+   "choix": [
+    "Le Colosse de Rhodes",
+    "Le phare d'Alexandrie",
+    "Les jardins de Babylone",
+    "Le temple d'Artémis"
+   ],
+   "reponse": 1,
+   "bonus": "Il guidait les bateaux la nuit !",
+   "voix_reponse": "Le phare d'Alexandrie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Combien de temps dure une année sur Jupiter ?",
+   "choix": [
+    "1 an",
+    "Environ 12 ans",
+    "50 ans",
+    "100 ans"
+   ],
+   "reponse": 1,
+   "bonus": "Elle est très loin du Soleil !",
+   "voix_reponse": "Environ douze ans !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎻",
+   "question": "Combien de symphonies Beethoven a-t-il composées ?",
+   "choix": [
+    "5",
+    "9",
+    "12",
+    "41"
+   ],
+   "reponse": 1,
+   "bonus": "La 9e contient l'hymne européen !",
+   "voix_reponse": "Neuf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌬️",
+   "question": "Comment s'appelle l'énergie produite par le vent ?",
+   "choix": [
+    "Solaire",
+    "Éolienne",
+    "Hydraulique",
+    "Géothermique"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce aux éoliennes !",
+   "voix_reponse": "L'énergie éolienne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Abuja est la capitale de quel pays ?",
+   "choix": [
+    "Le Ghana",
+    "Le Nigeria",
+    "Le Cameroun",
+    "Le Niger"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Lagos, la plus grande ville !",
+   "voix_reponse": "Le Nigeria !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

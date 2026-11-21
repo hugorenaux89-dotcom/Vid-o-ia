@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 82",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle l'abri du chien ?",
+   "choix": [
+    "Le terrier",
+    "La niche",
+    "Le nid",
+    "L'étable"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent en bois, dans le jardin !",
+   "voix_reponse": "La niche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍫",
+   "question": "Dans quel pays a été inventé le chocolat au lait ?",
+   "choix": [
+    "La Belgique",
+    "La Suisse",
+    "La France",
+    "L'Allemagne"
+   ],
+   "reponse": 1,
+   "bonus": "Par Daniel Peter, en 1875 !",
+   "voix_reponse": "La Suisse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Cameroun ?",
+   "choix": [
+    "Douala",
+    "Yaoundé",
+    "Libreville",
+    "Abuja"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Douala, la plus grande ville !",
+   "voix_reponse": "Yaoundé ! Pas Douala.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Quel joueur suisse a gagné 8 fois Wimbledon ?",
+   "choix": [
+    "Stan Wawrinka",
+    "Roger Federer",
+    "Martina Hingis",
+    "Björn Borg"
+   ],
+   "reponse": 1,
+   "bonus": "Un record chez les hommes !",
+   "voix_reponse": "Roger Federer !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥕",
+   "question": "Quelle vitamine le bêta-carotène des carottes donne-t-il ?",
+   "choix": [
+    "La vitamine A",
+    "La vitamine C",
+    "La vitamine D",
+    "La vitamine K"
+   ],
+   "reponse": 0,
+   "bonus": "Importante pour la vision !",
+   "voix_reponse": "La vitamine A !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quel roi d'Angleterre a eu six épouses ?",
+   "choix": [
+    "Richard III",
+    "Henri VIII",
+    "Édouard VII",
+    "Charles Ier"
+   ],
+   "reponse": 1,
+   "bonus": "Il en a fait exécuter deux !",
+   "voix_reponse": "Henri huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👩‍🚀",
+   "question": "Comment s'appelle la première femme partie dans l'espace ?",
+   "choix": [
+    "Sally Ride",
+    "Valentina Terechkova",
+    "Claudie Haigneré",
+    "Svetlana Savitskaïa"
+   ],
+   "reponse": 1,
+   "bonus": "En 1963 !",
+   "voix_reponse": "Valentina Terechkova !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤖",
+   "question": "Que veut dire « IA » ?",
+   "choix": [
+    "Internet avancé",
+    "Intelligence artificielle",
+    "Image animée",
+    "Information automatique"
+   ],
+   "reponse": 1,
+   "bonus": "Comme la voix que tu entends !",
+   "voix_reponse": "Intelligence artificielle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪶",
+   "question": "Quel est le métal le plus léger ?",
+   "choix": [
+    "L'aluminium",
+    "Le lithium",
+    "Le titane",
+    "Le magnésium"
+   ],
+   "reponse": 1,
+   "bonus": "Il flotte même sur l'eau !",
+   "voix_reponse": "Le lithium !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale officielle de la Côte d'Ivoire ?",
+   "choix": [
+    "Abidjan",
+    "Yamoussoukro",
+    "Bouaké",
+    "Dakar"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Abidjan, la capitale économique !",
+   "voix_reponse": "Yamoussoukro ! Pas Abidjan.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

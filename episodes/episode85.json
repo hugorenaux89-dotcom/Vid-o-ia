@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 85",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Lequel de ces animaux est un marsupial ?",
+   "choix": [
+    "Le lapin",
+    "Le koala",
+    "Le raton laveur",
+    "Le panda"
+   ],
+   "reponse": 1,
+   "bonus": "Ce n'est pas un ours !",
+   "voix_reponse": "Le koala !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍒",
+   "question": "Avec quel fruit fait-on le kirsch ?",
+   "choix": [
+    "La poire",
+    "La cerise",
+    "La prune",
+    "La pomme"
+   ],
+   "reponse": 1,
+   "bonus": "« Kirsch » veut dire cerise en allemand !",
+   "voix_reponse": "La cerise !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Paraguay ?",
+   "choix": [
+    "Montevideo",
+    "Asunción",
+    "La Paz",
+    "Lima"
+   ],
+   "reponse": 1,
+   "bonus": "L'une des plus vieilles villes d'Amérique du Sud.",
+   "voix_reponse": "Asunción !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛷️",
+   "question": "Quelle ville a accueilli les JO d'hiver de 1992 ?",
+   "choix": [
+    "Chamonix",
+    "Albertville",
+    "Grenoble",
+    "Val-d'Isère"
+   ],
+   "reponse": 1,
+   "bonus": "En Savoie !",
+   "voix_reponse": "Albertville !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👓",
+   "question": "Quel défaut de vision empêche de bien voir de loin ?",
+   "choix": [
+    "L'hypermétropie",
+    "La myopie",
+    "La presbytie",
+    "Le daltonisme"
+   ],
+   "reponse": 1,
+   "bonus": "De plus en plus fréquent avec les écrans !",
+   "voix_reponse": "La myopie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📜",
+   "question": "Qui a déchiffré les hiéroglyphes ?",
+   "choix": [
+    "Howard Carter",
+    "Champollion",
+    "Napoléon",
+    "Auguste Mariette"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à la pierre de Rosette, en 1822 !",
+   "voix_reponse": "Champollion !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧑‍🚀",
+   "question": "Qui a fait la première sortie dans l'espace ?",
+   "choix": [
+    "Youri Gagarine",
+    "Alexeï Leonov",
+    "Neil Armstrong",
+    "John Glenn"
+   ],
+   "reponse": 1,
+   "bonus": "En 1965, pendant 12 minutes !",
+   "voix_reponse": "Alexeï Leonov !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quel groupe britannique a chanté « Yellow » ?",
+   "choix": [
+    "Oasis",
+    "Coldplay",
+    "Muse",
+    "Radiohead"
+   ],
+   "reponse": 1,
+   "bonus": "Leur premier grand succès, en 2000.",
+   "voix_reponse": "Coldplay !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔬",
+   "question": "Combien de cellules compte le corps humain ?",
+   "choix": [
+    "Un million",
+    "Un milliard",
+    "Environ 30 000 milliards",
+    "Mille"
+   ],
+   "reponse": 2,
+   "bonus": "Et des milliards se renouvellent chaque jour !",
+   "voix_reponse": "Environ trente mille milliards !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale de la Jordanie ?",
+   "choix": [
+    "Damas",
+    "Amman",
+    "Beyrouth",
+    "Jérusalem"
+   ],
+   "reponse": 1,
+   "bonus": "Pas loin de la célèbre Pétra !",
+   "voix_reponse": "Amman !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

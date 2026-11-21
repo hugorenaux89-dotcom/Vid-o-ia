@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 68",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le mâle de la vache ?",
+   "choix": [
+    "Le bœuf",
+    "Le taureau",
+    "Le veau",
+    "Le bouc"
+   ],
+   "reponse": 1,
+   "bonus": "Le bœuf, lui, est castré !",
+   "voix_reponse": "Le taureau ! Pas le bœuf.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "😖",
+   "question": "Quel fruit jaune est très acide ?",
+   "choix": [
+    "La banane",
+    "Le citron",
+    "L'ananas",
+    "La mangue"
+   ],
+   "reponse": 1,
+   "bonus": "Riche en vitamine C !",
+   "voix_reponse": "Le citron !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Iran ?",
+   "choix": [
+    "Bagdad",
+    "Téhéran",
+    "Kaboul",
+    "Ispahan"
+   ],
+   "reponse": 1,
+   "bonus": "Bagdad, c'est l'Irak !",
+   "voix_reponse": "Téhéran !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏁",
+   "question": "Quel pilote français a été 4 fois champion du monde de F1 ?",
+   "choix": [
+    "Jean Alesi",
+    "Alain Prost",
+    "Pierre Gasly",
+    "René Arnoux"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommé « le Professeur » !",
+   "voix_reponse": "Alain Prost !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💧",
+   "question": "Combien de temps peut-on survivre sans boire, environ ?",
+   "choix": [
+    "Quelques heures",
+    "Environ 3 jours",
+    "1 mois",
+    "3 mois"
+   ],
+   "reponse": 1,
+   "bonus": "L'eau est vitale !",
+   "voix_reponse": "Environ trois jours !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quel monument parisien abrite le tombeau de Napoléon ?",
+   "choix": [
+    "Le Panthéon",
+    "Les Invalides",
+    "Notre-Dame",
+    "Le Sacré-Cœur"
+   ],
+   "reponse": 1,
+   "bonus": "Sous un dôme doré !",
+   "voix_reponse": "Les Invalides !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "Comment s'appellent les lumières colorées dans le ciel polaire ?",
+   "choix": [
+    "Les arcs-en-ciel",
+    "Les aurores boréales",
+    "Les éclairs",
+    "Les halos"
+   ],
+   "reponse": 1,
+   "bonus": "Causées par des particules venues du Soleil !",
+   "voix_reponse": "Les aurores boréales !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💻",
+   "question": "Que veut dire « PC » ?",
+   "choix": [
+    "Personal Computer",
+    "Programme Central",
+    "Power Control",
+    "Petit Calculateur"
+   ],
+   "reponse": 0,
+   "bonus": "« Ordinateur personnel » en anglais !",
+   "voix_reponse": "Personal Computer !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚙️",
+   "question": "Quel métal est le plus utilisé au monde ?",
+   "choix": [
+    "L'aluminium",
+    "Le fer",
+    "Le cuivre",
+    "L'or"
+   ],
+   "reponse": 1,
+   "bonus": "Surtout sous forme d'acier !",
+   "voix_reponse": "Le fer !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Combien de nations composent le Royaume-Uni ?",
+   "choix": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "reponse": 2,
+   "bonus": "Angleterre, Écosse, pays de Galles et Irlande du Nord !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

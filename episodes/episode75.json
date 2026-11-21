@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 75",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Combien de temps vit un hamster, environ ?",
+   "choix": [
+    "6 mois",
+    "2 à 3 ans",
+    "10 ans",
+    "20 ans"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut stocker de la nourriture dans ses joues !",
+   "voix_reponse": "Deux à trois ans !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧀",
+   "question": "Avec quel lait fait-on la vraie mozzarella italienne ?",
+   "choix": [
+    "Le lait de vache",
+    "Le lait de bufflonne",
+    "Le lait de chèvre",
+    "Le lait de brebis"
+   ],
+   "reponse": 1,
+   "bonus": "La « mozzarella di bufala » !",
+   "voix_reponse": "Le lait de bufflonne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Malaisie ?",
+   "choix": [
+    "Singapour",
+    "Kuala Lumpur",
+    "Jakarta",
+    "Bangkok"
+   ],
+   "reponse": 1,
+   "bonus": "Célèbre pour ses tours jumelles !",
+   "voix_reponse": "Kuala Lumpur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Combien de jeux faut-il au minimum pour gagner un set ?",
+   "choix": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "reponse": 2,
+   "bonus": "Avec deux jeux d'écart !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💤",
+   "question": "Quelle part de notre vie passe-t-on à dormir ?",
+   "choix": [
+    "Un dixième",
+    "Environ un tiers",
+    "La moitié",
+    "Trois quarts"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 25 ans sur une vie entière !",
+   "voix_reponse": "Environ un tiers !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📜",
+   "question": "Quel dirigeant a fait adopter le Code civil en 1804 ?",
+   "choix": [
+    "Louis XIV",
+    "Napoléon Bonaparte",
+    "Robespierre",
+    "De Gaulle"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle aussi le Code Napoléon !",
+   "voix_reponse": "Napoléon Bonaparte !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✨",
+   "question": "Quelle est l'étoile la plus brillante du ciel nocturne ?",
+   "choix": [
+    "L'étoile Polaire",
+    "Sirius",
+    "Véga",
+    "Bételgeuse"
+   ],
+   "reponse": 1,
+   "bonus": "Pas l'étoile Polaire, qui est assez discrète !",
+   "voix_reponse": "Sirius ! Pas l'étoile Polaire.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🚢",
+   "question": "Quel acteur jouait Jack dans Titanic ?",
+   "choix": [
+    "Brad Pitt",
+    "Leonardo DiCaprio",
+    "Tom Cruise",
+    "Johnny Depp"
+   ],
+   "reponse": 1,
+   "bonus": "Aux côtés de Kate Winslet.",
+   "voix_reponse": "Leonardo DiCaprio !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌿",
+   "question": "Quelle molécule donne leur couleur verte aux plantes ?",
+   "choix": [
+    "La mélanine",
+    "La chlorophylle",
+    "L'hémoglobine",
+    "La kératine"
+   ],
+   "reponse": 1,
+   "bonus": "Elle capte la lumière du Soleil !",
+   "voix_reponse": "La chlorophylle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel est le plus grand pays d'Asie du Sud-Est ?",
+   "choix": [
+    "La Thaïlande",
+    "L'Indonésie",
+    "Le Vietnam",
+    "Les Philippines"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 17 000 îles !",
+   "voix_reponse": "L'Indonésie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

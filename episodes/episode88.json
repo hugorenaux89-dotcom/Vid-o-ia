@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 88",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit de la biche ?",
+   "choix": [
+    "Le faon",
+    "Le veau",
+    "Le cabri",
+    "L'agneau"
+   ],
+   "reponse": 0,
+   "bonus": "Avec des taches blanches sur le dos !",
+   "voix_reponse": "Le faon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥐",
+   "question": "Quelle viennoiserie contient deux barres de chocolat ?",
+   "choix": [
+    "Le croissant",
+    "Le pain au chocolat",
+    "Le pain aux raisins",
+    "La brioche"
+   ],
+   "reponse": 1,
+   "bonus": "Ou chocolatine, selon les régions !",
+   "voix_reponse": "Le pain au chocolat ! Ou chocolatine.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Corée du Nord ?",
+   "choix": [
+    "Séoul",
+    "Pyongyang",
+    "Busan",
+    "Pékin"
+   ],
+   "reponse": 1,
+   "bonus": "Séoul, c'est la Corée du Sud !",
+   "voix_reponse": "Pyongyang !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Combien de longueurs fait un 400 m en bassin olympique ?",
+   "choix": [
+    "4",
+    "8",
+    "10",
+    "16"
+   ],
+   "reponse": 1,
+   "bonus": "Le bassin fait 50 mètres !",
+   "voix_reponse": "Huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗣️",
+   "question": "Quel côté du cerveau gère surtout le langage ?",
+   "choix": [
+    "Le droit",
+    "Le gauche",
+    "Le milieu",
+    "Aucun"
+   ],
+   "reponse": 1,
+   "bonus": "Chez la grande majorité des gens !",
+   "voix_reponse": "Le gauche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quel philosophe grec était l'élève de Socrate ?",
+   "choix": [
+    "Aristote",
+    "Platon",
+    "Pythagore",
+    "Homère"
+   ],
+   "reponse": 1,
+   "bonus": "Et le maître d'Aristote !",
+   "voix_reponse": "Platon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "Comment s'appelle un nuage de gaz où naissent les étoiles ?",
+   "choix": [
+    "Une nébuleuse",
+    "Un trou noir",
+    "Une comète",
+    "Un astéroïde"
+   ],
+   "reponse": 0,
+   "bonus": "Parmi les plus belles images de l'espace !",
+   "voix_reponse": "Une nébuleuse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📱",
+   "question": "Quelle marque fabrique les téléphones Galaxy ?",
+   "choix": [
+    "Apple",
+    "Samsung",
+    "Huawei",
+    "Sony"
+   ],
+   "reponse": 1,
+   "bonus": "Une entreprise sud-coréenne.",
+   "voix_reponse": "Samsung !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥚",
+   "question": "Quel gaz sent l'œuf pourri ?",
+   "choix": [
+    "Le méthane",
+    "Le sulfure d'hydrogène",
+    "L'ozone",
+    "L'azote"
+   ],
+   "reponse": 1,
+   "bonus": "On le sent près des volcans !",
+   "voix_reponse": "Le sulfure d'hydrogène !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale de Malte ?",
+   "choix": [
+    "Mdina",
+    "La Valette",
+    "Gozo",
+    "Nicosie"
+   ],
+   "reponse": 1,
+   "bonus": "L'une des plus petites capitales d'Europe !",
+   "voix_reponse": "La Valette !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

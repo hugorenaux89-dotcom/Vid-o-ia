@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 63",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Combien de cornes a un rhinocéros blanc ?",
+   "choix": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "reponse": 2,
+   "bonus": "Elles sont faites de kératine, comme nos ongles !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥐",
+   "question": "Quel ingrédient rend le croissant feuilleté ?",
+   "choix": [
+    "L'huile",
+    "Le beurre",
+    "Le lait",
+    "La crème"
+   ],
+   "reponse": 1,
+   "bonus": "Plié en de nombreuses couches !",
+   "voix_reponse": "Le beurre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Jamaïque ?",
+   "choix": [
+    "Montego Bay",
+    "Kingston",
+    "La Havane",
+    "Nassau"
+   ],
+   "reponse": 1,
+   "bonus": "La ville de Bob Marley !",
+   "voix_reponse": "Kingston !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Combien de points vaut un essai au rugby à XV ?",
+   "choix": [
+    "3",
+    "4",
+    "5",
+    "7"
+   ],
+   "reponse": 2,
+   "bonus": "Plus 2 points si la transformation est réussie !",
+   "voix_reponse": "Cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💓",
+   "question": "Combien de fois bat le cœur par minute au repos, environ ?",
+   "choix": [
+    "20",
+    "70",
+    "150",
+    "200"
+   ],
+   "reponse": 1,
+   "bonus": "Entre 60 et 100 battements chez un adulte.",
+   "voix_reponse": "Environ soixante-dix !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖼️",
+   "question": "Quel peintre est célèbre pour ses Nymphéas ?",
+   "choix": [
+    "Renoir",
+    "Claude Monet",
+    "Manet",
+    "Degas"
+   ],
+   "reponse": 1,
+   "bonus": "Peints dans son jardin de Giverny !",
+   "voix_reponse": "Claude Monet !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌕",
+   "question": "Combien de lunes a la Terre ?",
+   "choix": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "reponse": 1,
+   "bonus": "Une seule, mais elle est grande !",
+   "voix_reponse": "Une seule !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📞",
+   "question": "Quel est le numéro d'urgence européen ?",
+   "choix": [
+    "15",
+    "17",
+    "112",
+    "911"
+   ],
+   "reponse": 2,
+   "bonus": "Il marche dans tous les pays de l'Union européenne !",
+   "voix_reponse": "Cent douze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧬",
+   "question": "Quel savant est considéré comme le père de la génétique ?",
+   "choix": [
+    "Darwin",
+    "Gregor Mendel",
+    "Pasteur",
+    "Watson"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à ses expériences sur des petits pois !",
+   "voix_reponse": "Gregor Mendel !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏞️",
+   "question": "Quel est le lac le plus profond du monde ?",
+   "choix": [
+    "Le lac Tanganyika",
+    "Le lac Baïkal",
+    "Le lac Victoria",
+    "La mer Caspienne"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 1 600 mètres de profondeur, en Sibérie !",
+   "voix_reponse": "Le lac Baïkal !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

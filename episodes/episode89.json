@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 89",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Combien de pattes a un papillon ?",
+   "choix": [
+    "0",
+    "4",
+    "6",
+    "8"
+   ],
+   "reponse": 2,
+   "bonus": "C'est un insecte !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍰",
+   "question": "Quel dessert italien contient du café et du mascarpone ?",
+   "choix": [
+    "La panna cotta",
+    "Le tiramisu",
+    "Le cannolo",
+    "Le gelato"
+   ],
+   "reponse": 1,
+   "bonus": "« Tiramisu » veut dire « remonte-moi » !",
+   "voix_reponse": "Le tiramisu !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Serbie ?",
+   "choix": [
+    "Zagreb",
+    "Belgrade",
+    "Sarajevo",
+    "Skopje"
+   ],
+   "reponse": 1,
+   "bonus": "Au confluent du Danube et de la Save.",
+   "voix_reponse": "Belgrade !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel joueur français a gagné le Ballon d'or en 1998 ?",
+   "choix": [
+    "Platini",
+    "Zinédine Zidane",
+    "Thierry Henry",
+    "Karim Benzema"
+   ],
+   "reponse": 1,
+   "bonus": "Après son doublé en finale de la Coupe du monde !",
+   "voix_reponse": "Zinédine Zidane !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💅",
+   "question": "Combien de temps met un ongle de main pour repousser entièrement ?",
+   "choix": [
+    "1 semaine",
+    "Environ 6 mois",
+    "5 ans",
+    "10 jours"
+   ],
+   "reponse": 1,
+   "bonus": "Ceux des pieds, c'est encore plus long !",
+   "voix_reponse": "Environ six mois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪖",
+   "question": "Dans quelle région a eu lieu le débarquement du 6 juin 1944 ?",
+   "choix": [
+    "En Provence",
+    "En Normandie",
+    "En Bretagne",
+    "En Belgique"
+   ],
+   "reponse": 1,
+   "bonus": "Le « D-Day » !",
+   "voix_reponse": "En Normandie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "Combien y a-t-il de galaxies dans l'univers observable ?",
+   "choix": [
+    "Mille",
+    "Un million",
+    "Des centaines de milliards",
+    "Une seule"
+   ],
+   "reponse": 2,
+   "bonus": "Chacune avec des milliards d'étoiles !",
+   "voix_reponse": "Des centaines de milliards !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quelle chanteuse est surnommée « Queen B » ?",
+   "choix": [
+    "Rihanna",
+    "Beyoncé",
+    "Shakira",
+    "Madonna"
+   ],
+   "reponse": 1,
+   "bonus": "L'artiste la plus récompensée aux Grammy Awards !",
+   "voix_reponse": "Beyoncé !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔭",
+   "question": "Quelle planète a été découverte en 1846 grâce à des calculs ?",
+   "choix": [
+    "Uranus",
+    "Neptune",
+    "Pluton",
+    "Saturne"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce au Français Urbain Le Verrier !",
+   "voix_reponse": "Neptune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale officielle de la Tanzanie ?",
+   "choix": [
+    "Dar es Salam",
+    "Dodoma",
+    "Zanzibar",
+    "Arusha"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Dar es Salam, la plus grande ville !",
+   "voix_reponse": "Dodoma ! Pas Dar es Salam.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 100",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "⚡",
+   "question": "Quel est le Pokémon jaune le plus célèbre ?",
+   "choix": [
+    "Évoli",
+    "Pikachu",
+    "Salamèche",
+    "Rondoudou"
+   ],
+   "reponse": 1,
+   "bonus": "La mascotte de Pokémon depuis 1996 !",
+   "voix_reponse": "Pikachu !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎂",
+   "question": "Combien de bougies faut-il pour fêter 100 ans ?",
+   "choix": [
+    "10",
+    "50",
+    "100",
+    "1 000"
+   ],
+   "reponse": 2,
+   "bonus": "Comme pour cet épisode 100 !",
+   "voix_reponse": "Cent ! Comme cet épisode.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇫🇷",
+   "question": "Combien de régions compte la France métropolitaine ?",
+   "choix": [
+    "10",
+    "13",
+    "18",
+    "22"
+   ],
+   "reponse": 1,
+   "bonus": "Depuis la réforme de 2016.",
+   "voix_reponse": "Treize !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel Français a gagné la Coupe du monde comme joueur et comme entraîneur ?",
+   "choix": [
+    "Zinédine Zidane",
+    "Didier Deschamps",
+    "Laurent Blanc",
+    "Thierry Henry"
+   ],
+   "reponse": 1,
+   "bonus": "En 1998, puis en 2018 !",
+   "voix_reponse": "Didier Deschamps !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💓",
+   "question": "Quel muscle travaille le plus dans le corps ?",
+   "choix": [
+    "Le biceps",
+    "Le cœur",
+    "Le diaphragme",
+    "Les mollets"
+   ],
+   "reponse": 1,
+   "bonus": "Il ne s'arrête jamais !",
+   "voix_reponse": "Le cœur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Sous quelle République vit la France aujourd'hui ?",
+   "choix": [
+    "La IIIe",
+    "La IVe",
+    "La Ve",
+    "La VIe"
+   ],
+   "reponse": 2,
+   "bonus": "Depuis 1958 !",
+   "voix_reponse": "La cinquième !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "Quel âge a l'univers, environ ?",
+   "choix": [
+    "6 000 ans",
+    "1 million d'années",
+    "Environ 13,8 milliards d'années",
+    "100 milliards d'années"
+   ],
+   "reponse": 2,
+   "bonus": "Depuis le Big Bang !",
+   "voix_reponse": "Environ treize virgule huit milliards d'années !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Dans quel pays est née Céline Dion ?",
+   "choix": [
+    "La France",
+    "Le Canada",
+    "La Belgique",
+    "La Suisse"
+   ],
+   "reponse": 1,
+   "bonus": "Au Québec !",
+   "voix_reponse": "Le Canada !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➗",
+   "question": "Combien font 100 divisé par 4 ?",
+   "choix": [
+    "20",
+    "25",
+    "40",
+    "50"
+   ],
+   "reponse": 1,
+   "bonus": "Un quart de 100 !",
+   "voix_reponse": "Vingt-cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Combien de pays y a-t-il en Afrique ?",
+   "choix": [
+    "44",
+    "54",
+    "64",
+    "74"
+   ],
+   "reponse": 1,
+   "bonus": "Le continent qui compte le plus de pays !",
+   "voix_reponse": "Cinquante-quatre !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

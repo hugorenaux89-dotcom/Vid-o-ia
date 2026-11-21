@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 97",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Qu'emprunte le bernard-l'hermite pour se protéger ?",
+   "choix": [
+    "Un terrier",
+    "Une coquille vide",
+    "Un nid",
+    "Une algue"
+   ],
+   "reponse": 1,
+   "bonus": "Et il en change quand il grandit !",
+   "voix_reponse": "Une coquille vide !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quel gâteau mange-t-on à l'Épiphanie ?",
+   "choix": [
+    "La bûche",
+    "La galette des rois",
+    "Le kouglof",
+    "Le fraisier"
+   ],
+   "reponse": 1,
+   "bonus": "Celui qui trouve la fève devient le roi !",
+   "voix_reponse": "La galette des rois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Azerbaïdjan ?",
+   "choix": [
+    "Erevan",
+    "Bakou",
+    "Tbilissi",
+    "Achgabat"
+   ],
+   "reponse": 1,
+   "bonus": "Au bord de la mer Caspienne.",
+   "voix_reponse": "Bakou !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel pays a gagné l'Euro 2016, en finale contre la France ?",
+   "choix": [
+    "L'Espagne",
+    "Le Portugal",
+    "L'Allemagne",
+    "L'Italie"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à un but en prolongation !",
+   "voix_reponse": "Le Portugal !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👅",
+   "question": "Quelle saveur a été découverte par un chimiste japonais ?",
+   "choix": [
+    "Le piquant",
+    "L'umami",
+    "Le sucré",
+    "L'acide"
+   ],
+   "reponse": 1,
+   "bonus": "« Savoureux », en japonais !",
+   "voix_reponse": "L'umami !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎨",
+   "question": "En quel siècle la Renaissance a-t-elle commencé en Italie ?",
+   "choix": [
+    "Le Xe siècle",
+    "Le XIVe siècle",
+    "Le XVIIIe siècle",
+    "Le XXe siècle"
+   ],
+   "reponse": 1,
+   "bonus": "Avant de gagner toute l'Europe.",
+   "voix_reponse": "Au quatorzième siècle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Combien de temps la lumière du Soleil met-elle pour atteindre Pluton ?",
+   "choix": [
+    "8 minutes",
+    "Environ 5 heures",
+    "3 jours",
+    "1 an"
+   ],
+   "reponse": 1,
+   "bonus": "Pluton est vraiment très loin !",
+   "voix_reponse": "Environ cinq heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quelle chanteuse a chanté « Waka Waka » ?",
+   "choix": [
+    "Beyoncé",
+    "Shakira",
+    "Jennifer Lopez",
+    "Rihanna"
+   ],
+   "reponse": 1,
+   "bonus": "L'hymne de la Coupe du monde 2010 !",
+   "voix_reponse": "Shakira !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔌",
+   "question": "Quel savant a donné son nom à l'unité de courant électrique ?",
+   "choix": [
+    "Volta",
+    "Ampère",
+    "Watt",
+    "Ohm"
+   ],
+   "reponse": 1,
+   "bonus": "Un physicien français !",
+   "voix_reponse": "Ampère !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale de l'Ouzbékistan ?",
+   "choix": [
+    "Astana",
+    "Tachkent",
+    "Samarcande",
+    "Bichkek"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Samarcande, la ville de la route de la soie !",
+   "voix_reponse": "Tachkent !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

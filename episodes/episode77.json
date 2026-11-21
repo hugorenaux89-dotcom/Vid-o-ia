@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 77",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit du lion ?",
+   "choix": [
+    "Le louveteau",
+    "Le lionceau",
+    "Le chaton",
+    "L'ourson"
+   ],
+   "reponse": 1,
+   "bonus": "Il naît avec des taches !",
+   "voix_reponse": "Le lionceau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥧",
+   "question": "Quel fruit utilise-t-on dans la tarte Tatin ?",
+   "choix": [
+    "La poire",
+    "La pomme",
+    "L'abricot",
+    "La cerise"
+   ],
+   "reponse": 1,
+   "bonus": "Une tarte cuite à l'envers !",
+   "voix_reponse": "La pomme !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale des Philippines ?",
+   "choix": [
+    "Cebu",
+    "Manille",
+    "Davao",
+    "Jakarta"
+   ],
+   "reponse": 1,
+   "bonus": "Sur l'île de Luçon.",
+   "voix_reponse": "Manille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Combien de styles de nage y a-t-il en compétition ?",
+   "choix": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "reponse": 1,
+   "bonus": "Crawl, dos, brasse et papillon !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👁️",
+   "question": "Sur quelle partie de l'œil se forme l'image ?",
+   "choix": [
+    "L'iris",
+    "La rétine",
+    "La cornée",
+    "La pupille"
+   ],
+   "reponse": 1,
+   "bonus": "Et l'image y est à l'envers !",
+   "voix_reponse": "La rétine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏺",
+   "question": "Qui a découvert le tombeau de Toutânkhamon ?",
+   "choix": [
+    "Champollion",
+    "Howard Carter",
+    "Indiana Jones",
+    "Napoléon"
+   ],
+   "reponse": 1,
+   "bonus": "En 1922, en Égypte.",
+   "voix_reponse": "Howard Carter !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle ligne coupe la Terre en hémisphères nord et sud ?",
+   "choix": [
+    "Le méridien",
+    "L'équateur",
+    "Le tropique",
+    "Le cercle polaire"
+   ],
+   "reponse": 1,
+   "bonus": "Elle fait environ 40 000 km.",
+   "voix_reponse": "L'équateur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍏",
+   "question": "Qui a cofondé Apple avec Steve Wozniak ?",
+   "choix": [
+    "Bill Gates",
+    "Steve Jobs",
+    "Elon Musk",
+    "Jeff Bezos"
+   ],
+   "reponse": 1,
+   "bonus": "Dans un garage, en 1976 !",
+   "voix_reponse": "Steve Jobs !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧪",
+   "question": "Quel élément chimique a pour symbole « C » ?",
+   "choix": [
+    "Le calcium",
+    "Le carbone",
+    "Le cuivre",
+    "Le chlore"
+   ],
+   "reponse": 1,
+   "bonus": "La base de toute la vie sur Terre !",
+   "voix_reponse": "Le carbone !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale de la Birmanie ?",
+   "choix": [
+    "Rangoun",
+    "Naypyidaw",
+    "Mandalay",
+    "Bangkok"
+   ],
+   "reponse": 1,
+   "bonus": "Depuis 2005 ! Avant, c'était Rangoun.",
+   "voix_reponse": "Naypyidaw ! Pas Rangoun.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

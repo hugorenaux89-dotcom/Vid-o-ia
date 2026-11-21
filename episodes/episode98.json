@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 98",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal nous donne la laine ?",
+   "choix": [
+    "La vache",
+    "Le mouton",
+    "Le cochon",
+    "Le cheval"
+   ],
+   "reponse": 1,
+   "bonus": "Il faut le tondre une fois par an !",
+   "voix_reponse": "Le mouton !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍳",
+   "question": "Combien de jaunes a un œuf de poule normal ?",
+   "choix": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ],
+   "reponse": 1,
+   "bonus": "Parfois deux, mais c'est rare !",
+   "voix_reponse": "Un seul !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Biélorussie ?",
+   "choix": [
+    "Kiev",
+    "Minsk",
+    "Vilnius",
+    "Riga"
+   ],
+   "reponse": 1,
+   "bonus": "Kiev, c'est l'Ukraine !",
+   "voix_reponse": "Minsk !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏃",
+   "question": "Quel athlète kényan a couru un marathon en moins de 2 heures ?",
+   "choix": [
+    "Usain Bolt",
+    "Eliud Kipchoge",
+    "Mo Farah",
+    "Haile Gebreselassie"
+   ],
+   "reponse": 1,
+   "bonus": "En 2019, lors d'une course spéciale !",
+   "voix_reponse": "Eliud Kipchoge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫁",
+   "question": "Combien de litres d'air respire-t-on par jour, environ ?",
+   "choix": [
+    "100 litres",
+    "Environ 10 000 litres",
+    "1 million de litres",
+    "500 litres"
+   ],
+   "reponse": 1,
+   "bonus": "De quoi remplir une petite pièce !",
+   "voix_reponse": "Environ dix mille litres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quelle tour italienne est célèbre parce qu'elle penche ?",
+   "choix": [
+    "La tour de Londres",
+    "La tour de Pise",
+    "La tour Eiffel",
+    "Big Ben"
+   ],
+   "reponse": 1,
+   "bonus": "Elle penche depuis sa construction !",
+   "voix_reponse": "La tour de Pise !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "De quelle couleur est vraiment le Soleil, vu de l'espace ?",
+   "choix": [
+    "Jaune",
+    "Blanc",
+    "Orange",
+    "Rouge"
+   ],
+   "reponse": 1,
+   "bonus": "C'est notre atmosphère qui le rend jaune !",
+   "voix_reponse": "Blanc ! Pas jaune.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "💻",
+   "question": "Qui est considéré comme le père de l'informatique ?",
+   "choix": [
+    "Bill Gates",
+    "Alan Turing",
+    "Steve Jobs",
+    "Einstein"
+   ],
+   "reponse": 1,
+   "bonus": "Il a aussi aidé à décoder les messages nazis !",
+   "voix_reponse": "Alan Turing !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💎",
+   "question": "De quel élément est fait un diamant ?",
+   "choix": [
+    "Le silicium",
+    "Le carbone",
+    "Le fer",
+    "Le quartz"
+   ],
+   "reponse": 1,
+   "bonus": "Comme la mine d'un crayon, mais organisé autrement !",
+   "voix_reponse": "Le carbone !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌉",
+   "question": "Quel est le plus long pont de France ?",
+   "choix": [
+    "Le pont de Normandie",
+    "Le pont de Saint-Nazaire",
+    "Le viaduc de Millau",
+    "Le pont de l'île de Ré"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 3,3 km au-dessus de la Loire !",
+   "voix_reponse": "Le pont de Saint-Nazaire !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

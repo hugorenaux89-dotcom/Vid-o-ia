@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 59",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Ukraine ?",
+   "choix": [
+    "Odessa",
+    "Kiev",
+    "Lviv",
+    "Minsk"
+   ],
+   "reponse": 1,
+   "bonus": "Minsk, c'est la Biélorussie !",
+   "voix_reponse": "Kiev !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle la maison des abeilles ?",
+   "choix": [
+    "La ruche",
+    "Le nid",
+    "Le terrier",
+    "La fourmilière"
+   ],
+   "reponse": 0,
+   "bonus": "Elle peut abriter 50 000 abeilles !",
+   "voix_reponse": "La ruche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍽️",
+   "question": "De quelle région vient la choucroute ?",
+   "choix": [
+    "La Bretagne",
+    "L'Alsace",
+    "La Provence",
+    "La Normandie"
+   ],
+   "reponse": 1,
+   "bonus": "Du chou fermenté !",
+   "voix_reponse": "L'Alsace !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛷️",
+   "question": "Dans quel pays ont eu lieu les JO d'hiver de 2026 ?",
+   "choix": [
+    "La France",
+    "L'Italie",
+    "La Suisse",
+    "L'Autriche"
+   ],
+   "reponse": 1,
+   "bonus": "À Milan et Cortina d'Ampezzo !",
+   "voix_reponse": "L'Italie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🕸️",
+   "question": "Comment s'appelle la peur des araignées ?",
+   "choix": [
+    "La claustrophobie",
+    "L'arachnophobie",
+    "L'agoraphobie",
+    "L'acrophobie"
+   ],
+   "reponse": 1,
+   "bonus": "L'une des peurs les plus répandues !",
+   "voix_reponse": "L'arachnophobie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Qui a été couronné empereur en l'an 800 ?",
+   "choix": [
+    "Clovis",
+    "Charlemagne",
+    "Louis le Pieux",
+    "Hugues Capet"
+   ],
+   "reponse": 1,
+   "bonus": "À Rome, le jour de Noël !",
+   "voix_reponse": "Charlemagne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🕳️",
+   "question": "Comment s'appelle la limite d'un trou noir d'où rien ne ressort ?",
+   "choix": [
+    "L'horizon des événements",
+    "La couronne",
+    "L'orbite",
+    "Le noyau"
+   ],
+   "reponse": 0,
+   "bonus": "Même la lumière ne peut pas s'en échapper !",
+   "voix_reponse": "L'horizon des événements !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚀",
+   "question": "Quelle entreprise d'Elon Musk fabrique des fusées ?",
+   "choix": [
+    "Tesla",
+    "SpaceX",
+    "Blue Origin",
+    "Boeing"
+   ],
+   "reponse": 1,
+   "bonus": "Ses fusées reviennent se poser toutes seules !",
+   "voix_reponse": "SpaceX !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎈",
+   "question": "Quel est le gaz le plus léger ?",
+   "choix": [
+    "L'hélium",
+    "L'hydrogène",
+    "L'oxygène",
+    "Le néon"
+   ],
+   "reponse": 1,
+   "bonus": "Encore plus léger que l'hélium !",
+   "voix_reponse": "L'hydrogène ! Pas l'hélium.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel pays africain a le plus de pays voisins ?",
+   "choix": [
+    "Le Nigeria",
+    "La RD Congo",
+    "L'Égypte",
+    "Le Kenya"
+   ],
+   "reponse": 1,
+   "bonus": "Neuf pays voisins !",
+   "voix_reponse": "La RD Congo !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

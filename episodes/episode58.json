@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 58",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Croatie ?",
+   "choix": [
+    "Split",
+    "Zagreb",
+    "Dubrovnik",
+    "Belgrade"
+   ],
+   "reponse": 1,
+   "bonus": "Ni Split, ni Dubrovnik !",
+   "voix_reponse": "Zagreb !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Quel animal est surnommé « le vaisseau du désert » ?",
+   "choix": [
+    "Le cheval",
+    "Le dromadaire",
+    "L'âne",
+    "L'éléphant"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut boire 100 litres d'eau d'un coup !",
+   "voix_reponse": "Le dromadaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍕",
+   "question": "Quelle pizza porte le nom d'une reine d'Italie ?",
+   "choix": [
+    "La Margherita",
+    "La Regina",
+    "La Calzone",
+    "La Napolitaine"
+   ],
+   "reponse": 0,
+   "bonus": "Aux couleurs du drapeau italien !",
+   "voix_reponse": "La Margherita !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏀",
+   "question": "Quel basketteur est surnommé « His Airness » ?",
+   "choix": [
+    "Kobe Bryant",
+    "Michael Jordan",
+    "LeBron James",
+    "Magic Johnson"
+   ],
+   "reponse": 1,
+   "bonus": "Six titres NBA avec les Chicago Bulls !",
+   "voix_reponse": "Michael Jordan !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫁",
+   "question": "Quels organes font entrer l'oxygène dans le sang ?",
+   "choix": [
+    "Le cœur",
+    "Les poumons",
+    "Le foie",
+    "Les reins"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à des millions de petites alvéoles.",
+   "voix_reponse": "Les poumons !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quelle ville aurait été fondée par Romulus et Rémus ?",
+   "choix": [
+    "Athènes",
+    "Rome",
+    "Carthage",
+    "Troie"
+   ],
+   "reponse": 1,
+   "bonus": "Selon la légende, en 753 avant J.-C.",
+   "voix_reponse": "Rome !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel est le plus long fleuve d'Afrique ?",
+   "choix": [
+    "Le Congo",
+    "Le Nil",
+    "Le Niger",
+    "Le Zambèze"
+   ],
+   "reponse": 1,
+   "bonus": "Il traverse une dizaine de pays !",
+   "voix_reponse": "Le Nil !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📸",
+   "question": "Dans quel pays a été inventée la photographie ?",
+   "choix": [
+    "L'Angleterre",
+    "La France",
+    "L'Allemagne",
+    "Les États-Unis"
+   ],
+   "reponse": 1,
+   "bonus": "Par Nicéphore Niépce, vers 1826 !",
+   "voix_reponse": "En France !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚛️",
+   "question": "Comment s'appelle le centre d'un atome ?",
+   "choix": [
+    "L'électron",
+    "Le noyau",
+    "Le quark",
+    "La couche"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des protons et des neutrons.",
+   "voix_reponse": "Le noyau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Quelle est la plus longue chaîne de montagnes du monde ?",
+   "choix": [
+    "L'Himalaya",
+    "Les Andes",
+    "Les Rocheuses",
+    "Les Alpes"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 7 000 km de long !",
+   "voix_reponse": "Les Andes ! Pas l'Himalaya.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

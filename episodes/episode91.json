@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 91",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel oiseau est le symbole de la sagesse ?",
+   "choix": [
+    "Le corbeau",
+    "La chouette",
+    "L'aigle",
+    "Le perroquet"
+   ],
+   "reponse": 1,
+   "bonus": "C'était l'animal de la déesse Athéna !",
+   "voix_reponse": "La chouette !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥙",
+   "question": "De quel pays vient le kebab ?",
+   "choix": [
+    "La Grèce",
+    "La Turquie",
+    "Le Liban",
+    "L'Iran"
+   ],
+   "reponse": 1,
+   "bonus": "« Kebab » veut dire viande grillée !",
+   "voix_reponse": "La Turquie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Mali ?",
+   "choix": [
+    "Dakar",
+    "Bamako",
+    "Niamey",
+    "Ouagadougou"
+   ],
+   "reponse": 1,
+   "bonus": "Traversée par le fleuve Niger.",
+   "voix_reponse": "Bamako !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Combien de joueurs par équipe au rugby à XIII ?",
+   "choix": [
+    "11",
+    "13",
+    "15",
+    "7"
+   ],
+   "reponse": 1,
+   "bonus": "D'où son nom !",
+   "voix_reponse": "Treize !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👶",
+   "question": "Combien d'heures dort un nouveau-né par jour, environ ?",
+   "choix": [
+    "6 heures",
+    "Environ 16 heures",
+    "24 heures",
+    "10 heures"
+   ],
+   "reponse": 1,
+   "bonus": "Mais rarement plus de 3 heures d'affilée !",
+   "voix_reponse": "Environ seize heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚖️",
+   "question": "Sous quel président la peine de mort a-t-elle été abolie en France ?",
+   "choix": [
+    "De Gaulle",
+    "François Mitterrand",
+    "Jacques Chirac",
+    "Giscard d'Estaing"
+   ],
+   "reponse": 1,
+   "bonus": "En 1981, avec Robert Badinter.",
+   "voix_reponse": "François Mitterrand !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle planète porte le nom du dieu romain de la guerre ?",
+   "choix": [
+    "Jupiter",
+    "Mars",
+    "Saturne",
+    "Mercure"
+   ],
+   "reponse": 1,
+   "bonus": "Sa couleur rouge rappelle le sang !",
+   "voix_reponse": "Mars !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👠",
+   "question": "Quelle princesse de Disney perd une pantoufle de verre ?",
+   "choix": [
+    "Blanche-Neige",
+    "Cendrillon",
+    "Raiponce",
+    "Ariel"
+   ],
+   "reponse": 1,
+   "bonus": "Avant minuit !",
+   "voix_reponse": "Cendrillon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛈️",
+   "question": "Qu'entend-on après avoir vu un éclair ?",
+   "choix": [
+    "La pluie",
+    "Le tonnerre",
+    "Le vent",
+    "Rien"
+   ],
+   "reponse": 1,
+   "bonus": "Le son voyage moins vite que la lumière !",
+   "voix_reponse": "Le tonnerre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale de la Namibie ?",
+   "choix": [
+    "Gaborone",
+    "Windhoek",
+    "Lusaka",
+    "Pretoria"
+   ],
+   "reponse": 1,
+   "bonus": "Au cœur d'un pays très désertique !",
+   "voix_reponse": "Windhoek !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

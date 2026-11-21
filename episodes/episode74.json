@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 74",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle la femelle du cerf ?",
+   "choix": [
+    "La biche",
+    "La laie",
+    "La chevrette",
+    "La hase"
+   ],
+   "reponse": 0,
+   "bonus": "Ses petits sont les faons.",
+   "voix_reponse": "La biche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍝",
+   "question": "De quelle ville italienne vient la sauce bolognaise ?",
+   "choix": [
+    "Rome",
+    "Bologne",
+    "Naples",
+    "Milan"
+   ],
+   "reponse": 1,
+   "bonus": "Là-bas, on l'appelle « ragù » !",
+   "voix_reponse": "Bologne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Afghanistan ?",
+   "choix": [
+    "Islamabad",
+    "Kaboul",
+    "Kandahar",
+    "Téhéran"
+   ],
+   "reponse": 1,
+   "bonus": "À plus de 1 700 m d'altitude.",
+   "voix_reponse": "Kaboul !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Quel tournoi de rugby réunit six nations européennes ?",
+   "choix": [
+    "La Coupe du monde",
+    "Le Tournoi des Six Nations",
+    "L'Euro",
+    "La Ryder Cup"
+   ],
+   "reponse": 1,
+   "bonus": "Chaque année au printemps !",
+   "voix_reponse": "Le Tournoi des Six Nations !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👂",
+   "question": "Combien d'osselets y a-t-il dans chaque oreille ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 2,
+   "bonus": "Le marteau, l'enclume et l'étrier !",
+   "voix_reponse": "Trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quel président a fait construire la pyramide du Louvre ?",
+   "choix": [
+    "De Gaulle",
+    "François Mitterrand",
+    "Jacques Chirac",
+    "Pompidou"
+   ],
+   "reponse": 1,
+   "bonus": "Inaugurée en 1989.",
+   "voix_reponse": "François Mitterrand !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌞",
+   "question": "En quel mois a lieu le jour le plus court de l'année en France ?",
+   "choix": [
+    "En juin",
+    "En décembre",
+    "En mars",
+    "En septembre"
+   ],
+   "reponse": 1,
+   "bonus": "Vers le 21 décembre : le solstice d'hiver !",
+   "voix_reponse": "En décembre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚀",
+   "question": "Comment s'appelait la première chienne envoyée en orbite ?",
+   "choix": [
+    "Belka",
+    "Laïka",
+    "Strelka",
+    "Lassie"
+   ],
+   "reponse": 1,
+   "bonus": "En 1957, à bord de Spoutnik 2.",
+   "voix_reponse": "Laïka !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚛️",
+   "question": "Combien d'éléments compte le tableau périodique ?",
+   "choix": [
+    "92",
+    "103",
+    "118",
+    "150"
+   ],
+   "reponse": 2,
+   "bonus": "Le dernier a été ajouté en 2016 !",
+   "voix_reponse": "Cent dix-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel pays est surnommé « le pays du Soleil levant » ?",
+   "choix": [
+    "La Chine",
+    "Le Japon",
+    "La Corée",
+    "La Thaïlande"
+   ],
+   "reponse": 1,
+   "bonus": "C'est le sens de son nom en japonais !",
+   "voix_reponse": "Le Japon !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

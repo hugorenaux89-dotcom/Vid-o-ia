@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 78",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel est le plus grand reptile du monde ?",
+   "choix": [
+    "L'anaconda",
+    "Le crocodile marin",
+    "Le dragon de Komodo",
+    "La tortue luth"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut dépasser 6 mètres !",
+   "voix_reponse": "Le crocodile marin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫓",
+   "question": "Comment s'appelle le pain plat indien ?",
+   "choix": [
+    "La pita",
+    "Le naan",
+    "La tortilla",
+    "La focaccia"
+   ],
+   "reponse": 1,
+   "bonus": "Cuit dans un four en terre, le tandoor.",
+   "voix_reponse": "Le naan !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Lituanie ?",
+   "choix": [
+    "Riga",
+    "Vilnius",
+    "Tallinn",
+    "Kaunas"
+   ],
+   "reponse": 1,
+   "bonus": "Riga, c'est la Lettonie !",
+   "voix_reponse": "Vilnius !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥋",
+   "question": "De quel pays vient le judo ?",
+   "choix": [
+    "La Chine",
+    "Le Japon",
+    "La Corée",
+    "La Thaïlande"
+   ],
+   "reponse": 1,
+   "bonus": "« Judo » veut dire « la voie de la souplesse ».",
+   "voix_reponse": "Le Japon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦴",
+   "question": "Quel minéral rend les os solides ?",
+   "choix": [
+    "Le fer",
+    "Le calcium",
+    "Le sodium",
+    "Le zinc"
+   ],
+   "reponse": 1,
+   "bonus": "On en trouve beaucoup dans les produits laitiers !",
+   "voix_reponse": "Le calcium !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔥",
+   "question": "Quel empereur est accusé d'avoir laissé brûler Rome ?",
+   "choix": [
+    "Auguste",
+    "Néron",
+    "Caligula",
+    "Trajan"
+   ],
+   "reponse": 1,
+   "bonus": "C'était en l'an 64.",
+   "voix_reponse": "Néron !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌠",
+   "question": "Comment s'appellent les étoiles filantes du mois d'août ?",
+   "choix": [
+    "Les Léonides",
+    "Les Perséides",
+    "Les Géminides",
+    "Les Orionides"
+   ],
+   "reponse": 1,
+   "bonus": "Le meilleur moment pour faire un vœu !",
+   "voix_reponse": "Les Perséides !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel est le premier long métrage entièrement en images de synthèse ?",
+   "choix": [
+    "Shrek",
+    "Toy Story",
+    "Cars",
+    "Le Monde de Nemo"
+   ],
+   "reponse": 1,
+   "bonus": "Sorti en 1995, par Pixar.",
+   "voix_reponse": "Toy Story !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔭",
+   "question": "Quel astronome a trouvé les lois du mouvement des planètes ?",
+   "choix": [
+    "Galilée",
+    "Kepler",
+    "Copernic",
+    "Newton"
+   ],
+   "reponse": 1,
+   "bonus": "Les planètes tournent en ellipse !",
+   "voix_reponse": "Kepler !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale de la Nouvelle-Calédonie ?",
+   "choix": [
+    "Papeete",
+    "Nouméa",
+    "Port-Vila",
+    "Suva"
+   ],
+   "reponse": 1,
+   "bonus": "Papeete, c'est Tahiti !",
+   "voix_reponse": "Nouméa !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

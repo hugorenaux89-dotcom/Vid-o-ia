@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 67",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Combien d'heures par jour un éléphant passe-t-il à manger ?",
+   "choix": [
+    "2 heures",
+    "Environ 16 heures",
+    "24 heures",
+    "30 minutes"
+   ],
+   "reponse": 1,
+   "bonus": "Jusqu'à 150 kg de nourriture par jour !",
+   "voix_reponse": "Environ seize heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍕",
+   "question": "Quel fruit met-on sur la pizza hawaïenne ?",
+   "choix": [
+    "La mangue",
+    "L'ananas",
+    "La banane",
+    "La pomme"
+   ],
+   "reponse": 1,
+   "bonus": "Inventée... au Canada !",
+   "voix_reponse": "L'ananas !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de Cuba ?",
+   "choix": [
+    "Santiago",
+    "La Havane",
+    "Kingston",
+    "San Juan"
+   ],
+   "reponse": 1,
+   "bonus": "Célèbre pour ses vieilles voitures américaines !",
+   "voix_reponse": "La Havane !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel club joue au Parc des Princes ?",
+   "choix": [
+    "L'OM",
+    "Le PSG",
+    "L'OL",
+    "Le LOSC"
+   ],
+   "reponse": 1,
+   "bonus": "Le Paris Saint-Germain !",
+   "voix_reponse": "Le PSG !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪥",
+   "question": "Combien de fois par jour faut-il se brosser les dents ?",
+   "choix": [
+    "1",
+    "2",
+    "5",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "Pendant au moins 2 minutes !",
+   "voix_reponse": "Deux fois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📚",
+   "question": "Qui a écrit Les Trois Mousquetaires ?",
+   "choix": [
+    "Victor Hugo",
+    "Alexandre Dumas",
+    "Jules Verne",
+    "Balzac"
+   ],
+   "reponse": 1,
+   "bonus": "Et ils sont en fait quatre, avec d'Artagnan !",
+   "voix_reponse": "Alexandre Dumas !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Quelle saison commence vers le 21 juin ?",
+   "choix": [
+    "Le printemps",
+    "L'été",
+    "L'automne",
+    "L'hiver"
+   ],
+   "reponse": 1,
+   "bonus": "Le jour le plus long de l'année !",
+   "voix_reponse": "L'été !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quel groupe suédois a chanté Dancing Queen ?",
+   "choix": [
+    "Roxette",
+    "ABBA",
+    "Ace of Base",
+    "Europe"
+   ],
+   "reponse": 1,
+   "bonus": "Vainqueurs de l'Eurovision 1974 !",
+   "voix_reponse": "ABBA !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦠",
+   "question": "Quel instrument permet de voir les microbes ?",
+   "choix": [
+    "Le télescope",
+    "Le microscope",
+    "Le périscope",
+    "Le stéthoscope"
+   ],
+   "reponse": 1,
+   "bonus": "Il grossit des centaines de fois !",
+   "voix_reponse": "Le microscope !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel est l'océan le plus profond ?",
+   "choix": [
+    "L'Atlantique",
+    "Le Pacifique",
+    "L'océan Indien",
+    "L'Arctique"
+   ],
+   "reponse": 1,
+   "bonus": "C'est là que se trouve la fosse des Mariannes !",
+   "voix_reponse": "Le Pacifique !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

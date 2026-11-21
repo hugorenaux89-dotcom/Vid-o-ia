@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 73",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal construit des barrages ?",
+   "choix": [
+    "La loutre",
+    "Le castor",
+    "Le rat musqué",
+    "Le ragondin"
+   ],
+   "reponse": 1,
+   "bonus": "Avec ses dents et des branches !",
+   "voix_reponse": "Le castor !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍪",
+   "question": "De quel pays viennent les spéculoos ?",
+   "choix": [
+    "L'Allemagne",
+    "La Belgique",
+    "L'Italie",
+    "L'Espagne"
+   ],
+   "reponse": 1,
+   "bonus": "Parfaits avec un café !",
+   "voix_reponse": "La Belgique !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Pakistan ?",
+   "choix": [
+    "Karachi",
+    "Islamabad",
+    "Lahore",
+    "Kaboul"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Karachi, la plus grande ville !",
+   "voix_reponse": "Islamabad ! Pas Karachi.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🏅",
+   "question": "Combien d'anneaux y a-t-il sur le drapeau olympique ?",
+   "choix": [
+    "4",
+    "5",
+    "6",
+    "7"
+   ],
+   "reponse": 1,
+   "bonus": "Pour les continents réunis !",
+   "voix_reponse": "Cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫁",
+   "question": "Combien de litres d'air peuvent contenir les poumons ?",
+   "choix": [
+    "1 litre",
+    "Environ 6 litres",
+    "20 litres",
+    "50 litres"
+   ],
+   "reponse": 1,
+   "bonus": "Chez un adulte en bonne santé.",
+   "voix_reponse": "Environ six litres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛪",
+   "question": "Quelle ville a été la ville des papes au XIVe siècle ?",
+   "choix": [
+    "Lyon",
+    "Avignon",
+    "Marseille",
+    "Reims"
+   ],
+   "reponse": 1,
+   "bonus": "Avec son immense palais des Papes !",
+   "voix_reponse": "Avignon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌌",
+   "question": "Quelle taille fait la Voie lactée, environ ?",
+   "choix": [
+    "1 000 années-lumière",
+    "100 000 années-lumière",
+    "10 millions d'années-lumière",
+    "1 milliard d'années-lumière"
+   ],
+   "reponse": 1,
+   "bonus": "Et c'est une galaxie de taille moyenne !",
+   "voix_reponse": "Environ cent mille années-lumière !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Qui a chanté « Ne me quitte pas » ?",
+   "choix": [
+    "Jacques Brel",
+    "Georges Brassens",
+    "Charles Aznavour",
+    "Serge Gainsbourg"
+   ],
+   "reponse": 0,
+   "bonus": "Un chanteur belge, en 1959.",
+   "voix_reponse": "Jacques Brel !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔥",
+   "question": "Quel gaz est indispensable pour faire du feu ?",
+   "choix": [
+    "L'azote",
+    "L'oxygène",
+    "L'hélium",
+    "Le CO2"
+   ],
+   "reponse": 1,
+   "bonus": "Sans lui, la flamme s'éteint !",
+   "voix_reponse": "L'oxygène !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏝️",
+   "question": "Quelle est la plus grande île de la Méditerranée ?",
+   "choix": [
+    "La Corse",
+    "La Sicile",
+    "La Sardaigne",
+    "Chypre"
+   ],
+   "reponse": 1,
+   "bonus": "Avec l'Etna !",
+   "voix_reponse": "La Sicile !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

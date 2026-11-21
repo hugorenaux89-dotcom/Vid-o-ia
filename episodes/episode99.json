@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 99",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal imaginaire est l'emblème de l'Écosse ?",
+   "choix": [
+    "Le dragon",
+    "La licorne",
+    "Le griffon",
+    "Le phénix"
+   ],
+   "reponse": 1,
+   "bonus": "Le dragon, c'est le pays de Galles !",
+   "voix_reponse": "La licorne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍫",
+   "question": "Quel fruit à coque est utilisé dans le Nutella ?",
+   "choix": [
+    "L'amande",
+    "La noisette",
+    "La noix de cajou",
+    "La cacahuète"
+   ],
+   "reponse": 1,
+   "bonus": "Inventé en Italie !",
+   "voix_reponse": "La noisette !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Monténégro ?",
+   "choix": [
+    "Tirana",
+    "Podgorica",
+    "Kotor",
+    "Sarajevo"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Kotor, la ville touristique !",
+   "voix_reponse": "Podgorica !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏒",
+   "question": "Quel est le sport d'hiver national du Canada ?",
+   "choix": [
+    "Le baseball",
+    "Le hockey sur glace",
+    "Le basket",
+    "Le curling"
+   ],
+   "reponse": 1,
+   "bonus": "Le lacrosse est son sport national d'été !",
+   "voix_reponse": "Le hockey sur glace !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫘",
+   "question": "Quel organe peut-on donner de son vivant ?",
+   "choix": [
+    "Le cœur",
+    "Un rein",
+    "Le cerveau",
+    "Les deux poumons"
+   ],
+   "reponse": 1,
+   "bonus": "On peut très bien vivre avec un seul !",
+   "voix_reponse": "Un rein !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Quel général a traversé les Alpes avec des éléphants ?",
+   "choix": [
+    "Jules César",
+    "Hannibal",
+    "Napoléon",
+    "Attila"
+   ],
+   "reponse": 1,
+   "bonus": "En 218 avant J.-C. !",
+   "voix_reponse": "Hannibal !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle planète est couverte de nuages d'acide sulfurique ?",
+   "choix": [
+    "Mars",
+    "Vénus",
+    "Mercure",
+    "Uranus"
+   ],
+   "reponse": 1,
+   "bonus": "Un vrai enfer !",
+   "voix_reponse": "Vénus !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel est le film français le plus vu au cinéma en France ?",
+   "choix": [
+    "Intouchables",
+    "Bienvenue chez les Ch'tis",
+    "Astérix et Obélix",
+    "Les Visiteurs"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 20 millions d'entrées !",
+   "voix_reponse": "Bienvenue chez les Ch'tis !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚡",
+   "question": "Combien de fois la foudre tombe-t-elle sur Terre chaque seconde ?",
+   "choix": [
+    "1",
+    "Environ 50",
+    "10 000",
+    "Jamais"
+   ],
+   "reponse": 1,
+   "bonus": "Des millions de fois par jour !",
+   "voix_reponse": "Environ cinquante fois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale du Laos ?",
+   "choix": [
+    "Phnom Penh",
+    "Vientiane",
+    "Hanoï",
+    "Bangkok"
+   ],
+   "reponse": 1,
+   "bonus": "Au bord du Mékong.",
+   "voix_reponse": "Vientiane !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

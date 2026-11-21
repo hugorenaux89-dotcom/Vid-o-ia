@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 87",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel insecte s'illumine la nuit ?",
+   "choix": [
+    "Le moustique",
+    "La luciole",
+    "La mouche",
+    "Le papillon de nuit"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle aussi ver luisant !",
+   "voix_reponse": "La luciole !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧁",
+   "question": "De quelle ville viennent les madeleines, selon la tradition ?",
+   "choix": [
+    "Commercy",
+    "Nancy",
+    "Dijon",
+    "Reims"
+   ],
+   "reponse": 0,
+   "bonus": "Une petite ville de la Meuse !",
+   "voix_reponse": "Commercy !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Libye ?",
+   "choix": [
+    "Benghazi",
+    "Tripoli",
+    "Tunis",
+    "Le Caire"
+   ],
+   "reponse": 1,
+   "bonus": "Au bord de la Méditerranée.",
+   "voix_reponse": "Tripoli !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥊",
+   "question": "Quel boxeur disait « Vole comme un papillon, pique comme une abeille » ?",
+   "choix": [
+    "Mike Tyson",
+    "Mohamed Ali",
+    "Rocky Balboa",
+    "Joe Frazier"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommé « The Greatest » !",
+   "voix_reponse": "Mohamed Ali !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫀",
+   "question": "Combien de temps met le sang pour faire le tour du corps ?",
+   "choix": [
+    "Environ 1 minute",
+    "1 heure",
+    "1 jour",
+    "1 seconde"
+   ],
+   "reponse": 0,
+   "bonus": "Et ça recommence sans arrêt !",
+   "voix_reponse": "Environ une minute !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📕",
+   "question": "Qui a écrit « Le Prince » ?",
+   "choix": [
+    "Voltaire",
+    "Machiavel",
+    "Rousseau",
+    "Montesquieu"
+   ],
+   "reponse": 1,
+   "bonus": "D'où le mot « machiavélique » !",
+   "voix_reponse": "Machiavel !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle planète tourne le plus vite sur elle-même ?",
+   "choix": [
+    "La Terre",
+    "Jupiter",
+    "Mars",
+    "Vénus"
+   ],
+   "reponse": 1,
+   "bonus": "Une journée y dure moins de 10 heures !",
+   "voix_reponse": "Jupiter !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤠",
+   "question": "Comment s'appelle le cow-boy de Toy Story ?",
+   "choix": [
+    "Buzz",
+    "Woody",
+    "Jessie",
+    "Rex"
+   ],
+   "reponse": 1,
+   "bonus": "Buzz l'Éclair, c'est le cosmonaute !",
+   "voix_reponse": "Woody !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔋",
+   "question": "Quelle est la principale source d'électricité en France ?",
+   "choix": [
+    "Le charbon",
+    "Le nucléaire",
+    "L'éolien",
+    "Le gaz"
+   ],
+   "reponse": 1,
+   "bonus": "Environ deux tiers de notre électricité !",
+   "voix_reponse": "Le nucléaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel petit pays se trouve entre la France et l'Espagne ?",
+   "choix": [
+    "Monaco",
+    "Andorre",
+    "Le Liechtenstein",
+    "Saint-Marin"
+   ],
+   "reponse": 1,
+   "bonus": "Dans les Pyrénées !",
+   "voix_reponse": "Andorre !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

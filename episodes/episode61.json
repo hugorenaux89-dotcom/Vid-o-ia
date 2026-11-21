@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 61",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Où vivent principalement les lions sauvages ?",
+   "choix": [
+    "En Amérique du Sud",
+    "En Afrique",
+    "En Australie",
+    "En Europe"
+   ],
+   "reponse": 1,
+   "bonus": "Quelques-uns vivent aussi en Inde !",
+   "voix_reponse": "En Afrique !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍞",
+   "question": "Comment s'appelle l'artisan qui fait le pain ?",
+   "choix": [
+    "Le pâtissier",
+    "Le boulanger",
+    "Le boucher",
+    "Le traiteur"
+   ],
+   "reponse": 1,
+   "bonus": "Il commence souvent à travailler vers 4 h du matin !",
+   "voix_reponse": "Le boulanger !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quelle mer sépare l'Europe de l'Afrique ?",
+   "choix": [
+    "La mer Rouge",
+    "La Méditerranée",
+    "La mer Noire",
+    "La mer du Nord"
+   ],
+   "reponse": 1,
+   "bonus": "« Méditerranée » veut dire « au milieu des terres » !",
+   "voix_reponse": "La Méditerranée !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel pays a organisé la Coupe du monde de foot 1998 ?",
+   "choix": [
+    "L'Allemagne",
+    "La France",
+    "L'Italie",
+    "Le Brésil"
+   ],
+   "reponse": 1,
+   "bonus": "Et l'a gagnée !",
+   "voix_reponse": "La France !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💀",
+   "question": "Combien d'os forment le crâne humain ?",
+   "choix": [
+    "8",
+    "22",
+    "32",
+    "50"
+   ],
+   "reponse": 1,
+   "bonus": "Ils sont presque tous soudés entre eux.",
+   "voix_reponse": "Vingt-deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎭",
+   "question": "Qui a écrit Cyrano de Bergerac ?",
+   "choix": [
+    "Molière",
+    "Edmond Rostand",
+    "Victor Hugo",
+    "Corneille"
+   ],
+   "reponse": 1,
+   "bonus": "Une pièce de 1897.",
+   "voix_reponse": "Edmond Rostand !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✨",
+   "question": "Quelle étoile indique le nord ?",
+   "choix": [
+    "Sirius",
+    "L'étoile Polaire",
+    "Véga",
+    "Bételgeuse"
+   ],
+   "reponse": 1,
+   "bonus": "Elle est presque immobile dans le ciel !",
+   "voix_reponse": "L'étoile Polaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💡",
+   "question": "Quel inventeur américain a déposé plus de 1 000 brevets ?",
+   "choix": [
+    "Tesla",
+    "Thomas Edison",
+    "Graham Bell",
+    "Henry Ford"
+   ],
+   "reponse": 1,
+   "bonus": "Dont le phonographe !",
+   "voix_reponse": "Thomas Edison !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "À quelle température l'eau bout-elle au sommet de l'Everest ?",
+   "choix": [
+    "100 °C",
+    "Environ 70 °C",
+    "120 °C",
+    "0 °C"
+   ],
+   "reponse": 1,
+   "bonus": "Moins il y a de pression, plus elle bout tôt !",
+   "voix_reponse": "Environ soixante-dix degrés !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel pays est entièrement entouré par l'Afrique du Sud ?",
+   "choix": [
+    "Le Botswana",
+    "Le Lesotho",
+    "La Namibie",
+    "Le Zimbabwe"
+   ],
+   "reponse": 1,
+   "bonus": "Un royaume perché dans les montagnes !",
+   "voix_reponse": "Le Lesotho !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

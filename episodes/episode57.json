@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 57",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Tchéquie ?",
+   "choix": [
+    "Bratislava",
+    "Prague",
+    "Brno",
+    "Vienne"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommée la ville aux cent clochers !",
+   "voix_reponse": "Prague !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle la femelle du sanglier ?",
+   "choix": [
+    "La truie",
+    "La laie",
+    "La biche",
+    "La hase"
+   ],
+   "reponse": 1,
+   "bonus": "Ses petits sont les marcassins.",
+   "voix_reponse": "La laie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥞",
+   "question": "Avec quelle farine fait-on les galettes bretonnes ?",
+   "choix": [
+    "Le blé",
+    "Le sarrasin",
+    "Le maïs",
+    "Le riz"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle aussi blé noir !",
+   "voix_reponse": "Le sarrasin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥊",
+   "question": "Combien de rounds dure au maximum un championnat du monde de boxe ?",
+   "choix": [
+    "10",
+    "12",
+    "15",
+    "20"
+   ],
+   "reponse": 1,
+   "bonus": "Trois minutes chacun.",
+   "voix_reponse": "Douze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💓",
+   "question": "Comment s'appelle l'appareil pour écouter le cœur ?",
+   "choix": [
+    "Le thermomètre",
+    "Le stéthoscope",
+    "Le tensiomètre",
+    "L'otoscope"
+   ],
+   "reponse": 1,
+   "bonus": "Inventé par un médecin français, Laennec !",
+   "voix_reponse": "Le stéthoscope !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quel roi voulait « la poule au pot » chaque dimanche ?",
+   "choix": [
+    "Louis XIV",
+    "Henri IV",
+    "François Ier",
+    "Louis IX"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommé le bon roi Henri !",
+   "voix_reponse": "Henri quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Combien de Terres pourraient tenir dans le Soleil ?",
+   "choix": [
+    "100",
+    "Environ 1 300",
+    "Environ 1,3 million",
+    "1 milliard"
+   ],
+   "reponse": 2,
+   "bonus": "Le Soleil est gigantesque !",
+   "voix_reponse": "Environ un million trois cent mille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel personnage dit « Je suis ton père » ?",
+   "choix": [
+    "Dark Vador",
+    "Le Joker",
+    "Voldemort",
+    "Sauron"
+   ],
+   "reponse": 0,
+   "bonus": "Une des répliques les plus célèbres du cinéma !",
+   "voix_reponse": "Dark Vador !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Comment s'appellent les dents du fond de la bouche ?",
+   "choix": [
+    "Les incisives",
+    "Les canines",
+    "Les molaires",
+    "Les prémolaires"
+   ],
+   "reponse": 2,
+   "bonus": "Elles servent à broyer les aliments.",
+   "voix_reponse": "Les molaires !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale de l'Équateur ?",
+   "choix": [
+    "Guayaquil",
+    "Quito",
+    "Lima",
+    "Bogota"
+   ],
+   "reponse": 1,
+   "bonus": "Perchée à 2 850 mètres d'altitude !",
+   "voix_reponse": "Quito !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 62",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit du lièvre ?",
+   "choix": [
+    "Le levraut",
+    "Le lapereau",
+    "Le faon",
+    "Le chevreau"
+   ],
+   "reponse": 0,
+   "bonus": "Le lapereau, c'est le petit du lapin !",
+   "voix_reponse": "Le levraut !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍇",
+   "question": "Avec quel fruit fait-on le vin ?",
+   "choix": [
+    "La pomme",
+    "Le raisin",
+    "La cerise",
+    "La poire"
+   ],
+   "reponse": 1,
+   "bonus": "La France en produit des milliards de bouteilles par an.",
+   "voix_reponse": "Le raisin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Chili ?",
+   "choix": [
+    "Valparaíso",
+    "Santiago",
+    "Lima",
+    "Buenos Aires"
+   ],
+   "reponse": 1,
+   "bonus": "Au pied de la cordillère des Andes.",
+   "voix_reponse": "Santiago !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Quel joueur a gagné Roland-Garros 14 fois ?",
+   "choix": [
+    "Roger Federer",
+    "Rafael Nadal",
+    "Novak Djokovic",
+    "Andre Agassi"
+   ],
+   "reponse": 1,
+   "bonus": "Un record incroyable !",
+   "voix_reponse": "Rafael Nadal !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😢",
+   "question": "Quelles glandes fabriquent les larmes ?",
+   "choix": [
+    "Les glandes lacrymales",
+    "Les glandes salivaires",
+    "La thyroïde",
+    "Les sinus"
+   ],
+   "reponse": 0,
+   "bonus": "Elles protègent et nettoient l'œil.",
+   "voix_reponse": "Les glandes lacrymales !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛵",
+   "question": "Quel navigateur a lancé le premier tour du monde en bateau ?",
+   "choix": [
+    "Christophe Colomb",
+    "Magellan",
+    "Vasco de Gama",
+    "James Cook"
+   ],
+   "reponse": 1,
+   "bonus": "Il est mort en route, mais son équipage a réussi !",
+   "voix_reponse": "Magellan !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌙",
+   "question": "Combien de fois la Lune est-elle plus légère que la Terre ?",
+   "choix": [
+    "2 fois",
+    "Environ 81 fois",
+    "1 000 fois",
+    "Elles pèsent pareil"
+   ],
+   "reponse": 1,
+   "bonus": "Elle ne pèse qu'environ 1 % de la Terre !",
+   "voix_reponse": "Environ quatre-vingt-une fois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel film raconte la recherche d'un petit poisson-clown ?",
+   "choix": [
+    "Le Roi lion",
+    "Le Monde de Nemo",
+    "Shrek",
+    "Toy Story"
+   ],
+   "reponse": 1,
+   "bonus": "Sorti en 2003, par Pixar.",
+   "voix_reponse": "Le Monde de Nemo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔋",
+   "question": "Quel métal est utilisé dans les batteries de téléphone ?",
+   "choix": [
+    "Le plomb",
+    "Le lithium",
+    "L'or",
+    "Le fer"
+   ],
+   "reponse": 1,
+   "bonus": "On parle de batteries lithium-ion !",
+   "voix_reponse": "Le lithium !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel pays africain n'a jamais été colonisé, malgré une courte occupation ?",
+   "choix": [
+    "Le Kenya",
+    "L'Éthiopie",
+    "Le Ghana",
+    "Le Sénégal"
+   ],
+   "reponse": 1,
+   "bonus": "Avec le Liberia, une exception en Afrique !",
+   "voix_reponse": "L'Éthiopie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

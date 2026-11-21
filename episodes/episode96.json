@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 96",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le mâle de la poule ?",
+   "choix": [
+    "Le dindon",
+    "Le coq",
+    "Le canard",
+    "Le jars"
+   ],
+   "reponse": 1,
+   "bonus": "Il chante au lever du jour !",
+   "voix_reponse": "Le coq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍕",
+   "question": "Quel fromage met-on sur une pizza Margherita ?",
+   "choix": [
+    "Le parmesan",
+    "La mozzarella",
+    "La ricotta",
+    "Le gorgonzola"
+   ],
+   "reponse": 1,
+   "bonus": "Avec de la tomate et du basilic !",
+   "voix_reponse": "La mozzarella !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Géorgie, le pays ?",
+   "choix": [
+    "Erevan",
+    "Tbilissi",
+    "Bakou",
+    "Batoumi"
+   ],
+   "reponse": 1,
+   "bonus": "Au pied des montagnes du Caucase.",
+   "voix_reponse": "Tbilissi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Quelle joueuse a gagné 23 titres du Grand Chelem ?",
+   "choix": [
+    "Venus Williams",
+    "Serena Williams",
+    "Steffi Graf",
+    "Coco Gauff"
+   ],
+   "reponse": 1,
+   "bonus": "Un record à l'ère moderne !",
+   "voix_reponse": "Serena Williams !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💓",
+   "question": "Quelle est la tension artérielle normale, environ ?",
+   "choix": [
+    "8/4",
+    "12/8",
+    "20/15",
+    "5/2"
+   ],
+   "reponse": 1,
+   "bonus": "Les médecins disent « 12 / 8 » !",
+   "voix_reponse": "Douze huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quel est le plus vieux monument de Paris ?",
+   "choix": [
+    "Notre-Dame",
+    "L'obélisque de la Concorde",
+    "Les arènes de Lutèce",
+    "L'Arc de Triomphe"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 3 000 ans, rapporté d'Égypte !",
+   "voix_reponse": "L'obélisque de la Concorde !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☄️",
+   "question": "Comment s'appelle la zone de rochers entre Mars et Jupiter ?",
+   "choix": [
+    "La ceinture d'astéroïdes",
+    "Le nuage d'Oort",
+    "La Voie lactée",
+    "Les anneaux"
+   ],
+   "reponse": 0,
+   "bonus": "Des millions de rochers spatiaux !",
+   "voix_reponse": "La ceinture d'astéroïdes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📺",
+   "question": "Quelle famille jaune vit à Springfield ?",
+   "choix": [
+    "Les Griffin",
+    "Les Simpson",
+    "Les Flintstone",
+    "Les Addams"
+   ],
+   "reponse": 1,
+   "bonus": "La plus longue série animée américaine !",
+   "voix_reponse": "Les Simpson !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧪",
+   "question": "Lequel de ces éléments est un gaz noble ?",
+   "choix": [
+    "L'oxygène",
+    "Le néon",
+    "L'azote",
+    "Le chlore"
+   ],
+   "reponse": 1,
+   "bonus": "Utilisé dans les enseignes lumineuses !",
+   "voix_reponse": "Le néon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale de l'Arménie ?",
+   "choix": [
+    "Tbilissi",
+    "Erevan",
+    "Bakou",
+    "Ankara"
+   ],
+   "reponse": 1,
+   "bonus": "Avec vue sur le mont Ararat !",
+   "voix_reponse": "Erevan !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

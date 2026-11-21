@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 54",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Tunisie ?",
+   "choix": [
+    "Sfax",
+    "Tunis",
+    "Sousse",
+    "Carthage"
+   ],
+   "reponse": 1,
+   "bonus": "Carthage est juste à côté !",
+   "voix_reponse": "Tunis !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit de l'ours ?",
+   "choix": [
+    "L'ourson",
+    "L'ourseau",
+    "Le lionceau",
+    "Le louveteau"
+   ],
+   "reponse": 0,
+   "bonus": "Il naît pendant l'hiver, dans la tanière.",
+   "voix_reponse": "L'ourson !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥖",
+   "question": "Combien pèse environ une baguette de pain ?",
+   "choix": [
+    "150 g",
+    "250 g",
+    "400 g",
+    "500 g"
+   ],
+   "reponse": 1,
+   "bonus": "Classée au patrimoine de l'Unesco depuis 2022 !",
+   "voix_reponse": "Environ deux cent cinquante grammes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚴",
+   "question": "De quelle couleur est le maillot du leader du Tour de France ?",
+   "choix": [
+    "Vert",
+    "Jaune",
+    "À pois",
+    "Blanc"
+   ],
+   "reponse": 1,
+   "bonus": "Le vert, c'est pour le meilleur sprinteur.",
+   "voix_reponse": "Jaune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "Combien de kilomètres de vaisseaux sanguins a-t-on dans le corps ?",
+   "choix": [
+    "10 km",
+    "1 000 km",
+    "Environ 100 000 km",
+    "1 million de km"
+   ],
+   "reponse": 2,
+   "bonus": "Plus de deux fois le tour de la Terre !",
+   "voix_reponse": "Environ cent mille kilomètres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📚",
+   "question": "Qui a écrit Germinal ?",
+   "choix": [
+    "Victor Hugo",
+    "Émile Zola",
+    "Balzac",
+    "Maupassant"
+   ],
+   "reponse": 1,
+   "bonus": "Un roman sur les mineurs du Nord.",
+   "voix_reponse": "Émile Zola !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☄️",
+   "question": "Comment s'appelle un caillou spatial qui touche le sol ?",
+   "choix": [
+    "Une comète",
+    "Une météorite",
+    "Un astéroïde",
+    "Une étoile"
+   ],
+   "reponse": 1,
+   "bonus": "Dans le ciel, c'est un météore !",
+   "voix_reponse": "Une météorite !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎮",
+   "question": "Quel jeu consiste à empiler des blocs qui tombent ?",
+   "choix": [
+    "Pac-Man",
+    "Tetris",
+    "Snake",
+    "Pong"
+   ],
+   "reponse": 1,
+   "bonus": "Inventé en URSS en 1984.",
+   "voix_reponse": "Tetris !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔥",
+   "question": "Quelle couleur a la flamme la plus chaude ?",
+   "choix": [
+    "Rouge",
+    "Orange",
+    "Jaune",
+    "Bleue"
+   ],
+   "reponse": 3,
+   "bonus": "Le rouge est la partie la moins chaude !",
+   "voix_reponse": "Bleue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧊",
+   "question": "Quelle est la capitale de l'Islande ?",
+   "choix": [
+    "Nuuk",
+    "Reykjavik",
+    "Oslo",
+    "Akureyri"
+   ],
+   "reponse": 1,
+   "bonus": "La capitale de pays la plus au nord du monde !",
+   "voix_reponse": "Reykjavik !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

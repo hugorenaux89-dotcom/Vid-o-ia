@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 84",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle la femelle du lièvre ?",
+   "choix": [
+    "La laie",
+    "La hase",
+    "La biche",
+    "La lapine"
+   ],
+   "reponse": 1,
+   "bonus": "La lapine, c'est la femelle du lapin !",
+   "voix_reponse": "La hase !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍝",
+   "question": "De quel pays viennent les lasagnes ?",
+   "choix": [
+    "La Grèce",
+    "L'Italie",
+    "La France",
+    "L'Espagne"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des couches de pâtes et de sauce !",
+   "voix_reponse": "L'Italie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Uruguay ?",
+   "choix": [
+    "Asunción",
+    "Montevideo",
+    "Buenos Aires",
+    "Santiago"
+   ],
+   "reponse": 1,
+   "bonus": "Au bord du Río de la Plata.",
+   "voix_reponse": "Montevideo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏀",
+   "question": "Quel basketteur français mesure plus de 2,20 m et joue en NBA ?",
+   "choix": [
+    "Tony Parker",
+    "Victor Wembanyama",
+    "Rudy Gobert",
+    "Evan Fournier"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommé « Wemby » !",
+   "voix_reponse": "Victor Wembanyama !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "Où sont fabriqués les globules rouges ?",
+   "choix": [
+    "Dans le foie",
+    "Dans la moelle osseuse",
+    "Dans le cœur",
+    "Dans la rate"
+   ],
+   "reponse": 1,
+   "bonus": "À l'intérieur de certains os !",
+   "voix_reponse": "Dans la moelle osseuse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "0️⃣",
+   "question": "Quelle civilisation a inventé le zéro en tant que nombre ?",
+   "choix": [
+    "La Grèce",
+    "L'Inde",
+    "Rome",
+    "L'Égypte"
+   ],
+   "reponse": 1,
+   "bonus": "Les Romains n'avaient pas de zéro !",
+   "voix_reponse": "L'Inde !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel fleuve forme le delta de la Camargue ?",
+   "choix": [
+    "La Loire",
+    "Le Rhône",
+    "La Seine",
+    "La Garonne"
+   ],
+   "reponse": 1,
+   "bonus": "Avec ses flamants roses !",
+   "voix_reponse": "Le Rhône !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📱",
+   "question": "En quelle année Facebook a-t-il été créé ?",
+   "choix": [
+    "2001",
+    "2004",
+    "2008",
+    "2010"
+   ],
+   "reponse": 1,
+   "bonus": "Par Mark Zuckerberg, à Harvard.",
+   "voix_reponse": "Deux mille quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪟",
+   "question": "Quel est le principal composant du verre ?",
+   "choix": [
+    "Le plastique",
+    "Le sable",
+    "Le fer",
+    "Le calcaire"
+   ],
+   "reponse": 1,
+   "bonus": "Fondu à plus de 1 500 °C !",
+   "voix_reponse": "Le sable !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel est le plus petit pays d'Afrique continentale ?",
+   "choix": [
+    "Le Rwanda",
+    "La Gambie",
+    "Le Togo",
+    "Djibouti"
+   ],
+   "reponse": 1,
+   "bonus": "Un pays en forme de long ruban !",
+   "voix_reponse": "La Gambie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}
