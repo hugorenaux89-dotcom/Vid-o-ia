@@ -27,9 +27,10 @@ EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 VOIX = "fr-FR-HenriNeural"  # voix française native (pas « Multilingual », qui a un accent anglais)
 # Traitement studio de la voix : coupe les graves parasites, présence, compression, léger écho de pièce
 FILTRE_VOIX = ("silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
-               "silenceremove=start_periods=1:start_threshold=-45dB,areverse,highpass=f=90,equalizer=f=200:t=q:w=1:g=2,equalizer=f=3500:t=q:w=1.5:g=3,"
-               "acompressor=threshold=-20dB:ratio=3.5:attack=5:release=120:makeup=3,"
-               "aecho=0.8:0.5:35:0.12")
+               "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
+               # traitement léger : pas d'écho (effet métallique), juste chaleur + clarté + compression douce
+               "highpass=f=75,equalizer=f=180:t=q:w=1:g=1.5,equalizer=f=3000:t=q:w=2:g=1.5,"
+               "acompressor=threshold=-18dB:ratio=2:attack=10:release=150:makeup=2")
 CACHE = os.path.join(os.path.dirname(os.path.abspath(__file__)), ".cache_voix")
 
 BG_TOP, BG_BOT = (12, 16, 48), (40, 10, 70)
@@ -149,17 +150,17 @@ def pop(t, duree=0.3):
 # ---------- voix ----------
 
 # Émotions : réglages (débit, hauteur, volume) appliqués phrase par phrase
-TONS = {
-    "neutre":     ("+25%", "+0Hz", "+0%"),
-    "curieux":    ("+24%", "+3Hz", "+0%"),
-    "intrigant":  ("+18%", "-2Hz", "+0%"),
-    "mysterieux": ("+10%", "-5Hz", "-5%"),
-    "suspense":   ("+4%", "-7Hz", "-8%"),
-    "energique":  ("+30%", "+6Hz", "+10%"),
-    "malicieux":  ("+26%", "+5Hz", "+5%"),
-    "emerveille": ("+20%", "+7Hz", "+5%"),
-    "triomphant": ("+26%", "+9Hz", "+15%"),
-    "chaleureux": ("+22%", "+2Hz", "+0%"),
+TONS = {  # pas de changement de hauteur : c'est ce qui rend la voix robotique
+    "neutre":     ("+18%", "+0Hz", "+0%"),
+    "curieux":    ("+18%", "+0Hz", "+0%"),
+    "intrigant":  ("+14%", "+0Hz", "+0%"),
+    "mysterieux": ("+8%", "+0Hz", "-5%"),
+    "suspense":   ("+4%", "+0Hz", "-8%"),
+    "energique":  ("+22%", "+0Hz", "+8%"),
+    "malicieux":  ("+20%", "+0Hz", "+4%"),
+    "emerveille": ("+15%", "+0Hz", "+4%"),
+    "triomphant": ("+20%", "+0Hz", "+10%"),
+    "chaleureux": ("+16%", "+0Hz", "+0%"),
 }
 
 
