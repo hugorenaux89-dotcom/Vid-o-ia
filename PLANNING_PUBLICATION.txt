@@ -1,0 +1,86 @@
+PLANNING : 3 ÉPISODES PAR JOUR (12h30, 18h00, 21h00)
+====================================================
+
+Jour 1 – dimanche 22/11/2026
+  12h30  →  épisode 1  (sortie/episode1.mp4)
+  18h00  →  épisode 2  (sortie/episode2.mp4)
+  21h00  →  épisode 3  (sortie/episode3.mp4)
+
+Jour 2 – lundi 23/11/2026
+  12h30  →  épisode 4  (sortie/episode4.mp4)
+  18h00  →  épisode 5  (sortie/episode5.mp4)
+  21h00  →  épisode 6  (sortie/episode6.mp4)
+
+Jour 3 – mardi 24/11/2026
+  12h30  →  épisode 7  (sortie/episode7.mp4)
+  18h00  →  épisode 8  (sortie/episode8.mp4)
+  21h00  →  épisode 9  (sortie/episode9.mp4)
+
+Jour 4 – mercredi 25/11/2026
+  12h30  →  épisode 10  (sortie/episode10.mp4)
+  18h00  →  épisode 11  (sortie/episode11.mp4)
+  21h00  →  épisode 12  (sortie/episode12.mp4)
+
+Jour 5 – jeudi 26/11/2026
+  12h30  →  épisode 13  (sortie/episode13.mp4)
+  18h00  →  épisode 14  (sortie/episode14.mp4)
+  21h00  →  épisode 15  (sortie/episode15.mp4)
+
+Jour 6 – vendredi 27/11/2026
+  12h30  →  épisode 16  (sortie/episode16.mp4)
+  18h00  →  épisode 17  (sortie/episode17.mp4)
+  21h00  →  épisode 18  (sortie/episode18.mp4)
+
+Jour 7 – samedi 28/11/2026
+  12h30  →  épisode 19  (sortie/episode19.mp4)
+  18h00  →  épisode 20  (sortie/episode20.mp4)
+  21h00  →  épisode 21  (sortie/episode21.mp4)
+
+Jour 8 – dimanche 29/11/2026
+  12h30  →  épisode 22  (sortie/episode22.mp4)
+  18h00  →  épisode 23  (sortie/episode23.mp4)
+  21h00  →  épisode 24  (sortie/episode24.mp4)
+
+Jour 9 – lundi 30/11/2026
+  12h30  →  épisode 25  (sortie/episode25.mp4)
+  18h00  →  épisode 26  (sortie/episode26.mp4)
+  21h00  →  épisode 27  (sortie/episode27.mp4)
+
+Jour 10 – mardi 01/12/2026
+  12h30  →  épisode 28  (sortie/episode28.mp4)
+  18h00  →  épisode 29  (sortie/episode29.mp4)
+  21h00  →  épisode 30  (sortie/episode30.mp4)
+
+Jour 11 – mercredi 02/12/2026
+  12h30  →  épisode 31  (sortie/episode31.mp4)
+  18h00  →  épisode 32  (sortie/episode32.mp4)
+  21h00  →  épisode 33  (sortie/episode33.mp4)
+
+Jour 12 – jeudi 03/12/2026
+  12h30  →  épisode 34  (sortie/episode34.mp4)
+  18h00  →  épisode 35  (sortie/episode35.mp4)
+  21h00  →  épisode 36  (sortie/episode36.mp4)
+
+Jour 13 – vendredi 04/12/2026
+  12h30  →  épisode 37  (sortie/episode37.mp4)
+  18h00  →  épisode 38  (sortie/episode38.mp4)
+  21h00  →  épisode 39  (sortie/episode39.mp4)
+
+Jour 14 – samedi 05/12/2026
+  12h30  →  épisode 40  (sortie/episode40.mp4)
+  18h00  →  épisode 41  (sortie/episode41.mp4)
+  21h00  →  épisode 42  (sortie/episode42.mp4)
+
+Jour 15 – dimanche 06/12/2026
+  12h30  →  épisode 43  (sortie/episode43.mp4)
+  18h00  →  épisode 44  (sortie/episode44.mp4)
+  21h00  →  épisode 45  (sortie/episode45.mp4)
+
+Jour 16 – lundi 07/12/2026
+  12h30  →  épisode 46  (sortie/episode46.mp4)
+  18h00  →  épisode 47  (sortie/episode47.mp4)
+  21h00  →  épisode 48  (sortie/episode48.mp4)
+
+Jour 17 – mardi 08/12/2026
+  12h30  →  épisode 49  (sortie/episode49.mp4)
+  18h00  →  épisode 50  (sortie/episode50.mp4)

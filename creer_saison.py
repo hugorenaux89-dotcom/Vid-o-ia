@@ -52,8 +52,9 @@ RELANCES_9 = [
 FIN = {
     "emoji": "🏆",
     "lignes": [["TON SCORE ?", 96, J], ["0-4 : débutant", 56, B], ["5-7 : solide", 56, B], ["8-9 : très fort", 56, B],
-               ["10 : GÉNIE", 66, V], ["Abonne-toi pour voir", 54, J], ["les prochains épisodes !", 54, J]],
-    "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes !",
+               ["10 : GÉNIE", 66, V], ["Abonne-toi pour voir", 54, J], ["les prochains épisodes !", 54, J],
+               ["3 nouveaux quiz par jour", 50, V]],
+    "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
     "ton": "chaleureux", "min": 3.5,
 }
 
@@ -97,7 +98,7 @@ def episode(n, questions):
 def publication(n):
     return (f"ÉPISODE {n} – À COPIER AU MOMENT DE PUBLIER\n\n"
             f"DESCRIPTION :\n{LEGENDES[(n - 1) % len(LEGENDES)].format(n=n)}\n"
-            f"Abonne-toi pour ne rater aucun épisode ⚡\n\n{HASHTAGS} #episode{n}\n")
+            f"3 nouveaux quiz chaque jour : abonne-toi pour ne rien rater ⚡\n\n{HASHTAGS} #episode{n}\n")
 
 
 def verifier():
@@ -141,4 +142,16 @@ if __name__ == "__main__":
         f.write("DESCRIPTIONS DES 50 ÉPISODES (à copier sous chaque vidéo TikTok)\n" + "=" * 60 + "\n\n")
         f.write(pub1 + "\n" + "-" * 60 + "\n\n")
         f.write(("\n" + "-" * 60 + "\n\n").join(toutes))
-    print(f"OK : {len(E)} épisodes créés + épisode 1 mis à jour")
+    import datetime
+    debut = datetime.date(2026, 11, 22)
+    heures = ["12h30", "18h00", "21h00"]
+    jours = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"]
+    with open(os.path.join(ICI, "PLANNING_PUBLICATION.txt"), "w", encoding="utf-8") as f:
+        f.write("PLANNING : 3 ÉPISODES PAR JOUR (12h30, 18h00, 21h00)\n" + "=" * 52 + "\n")
+        for n in range(1, 51):
+            j = (n - 1) // 3
+            d = debut + datetime.timedelta(days=j)
+            if (n - 1) % 3 == 0:
+                f.write(f"\nJour {j + 1} – {jours[d.weekday()]} {d.day:02d}/{d.month:02d}/{d.year}\n")
+            f.write(f"  {heures[(n - 1) % 3]}  →  épisode {n}  (sortie/episode{n}.mp4)\n")
+    print(f"OK : {len(E)} épisodes créés + épisode 1 mis à jour + planning")
