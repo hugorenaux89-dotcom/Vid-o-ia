@@ -40,7 +40,7 @@
     ]
    ]
   ],
-  "voix": "Quatre-vingt-dix-huit pour cent des gens... ratent la dernière question. Et toi, tu vas la trouver ?",
+  "voix": "Quatre-vingt-dix-huit pour cent des gens... se plantent à la dernière question. Et toi ?",
   "min": 2.5,
   "ton": "mysterieux"
  },
@@ -75,7 +75,7 @@
     ]
    ]
   ],
-  "voix": "Allez, compte tes points... c'est parti !",
+  "voix": "Allez, compte tes points. C'est parti !",
   "ton": "energique"
  },
  "relances": {
@@ -110,7 +110,7 @@
      ]
     ]
    ],
-   "voix": "Cinq sur cinq ? Franchement, bravo, t'es dans le top vingt pour cent ! Mais attention... là, ça se corse.",
+   "voix": "Cinq sur cinq ? Bravo, t'es dans le top vingt pour cent. Mais là... ça se corse.",
    "ton": "malicieux"
   },
   "9": {
@@ -144,7 +144,7 @@
      ]
     ]
    ],
-   "voix": "Bon... dernière question. Et celle-là... presque personne la trouve.",
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
    "ton": "suspense"
   }
  },
@@ -160,9 +160,9 @@
    ],
    "reponse": 2,
    "bonus": "Pas Sydney ! Canberra a été construite pour départager Sydney et Melbourne.",
-   "voix_reponse": "Canberra ! Eh oui... c'est pas Sydney !",
+   "voix_reponse": "Canberra ! Eh oui, pas Sydney.",
    "ton_question": "curieux",
-   "voix": "Première question : c'est quoi, la capitale de l'Australie ?",
+   "voix": "On commence. La capitale de l'Australie, c'est quoi ?",
    "ton_reponse": "malicieux"
   },
   {
@@ -176,9 +176,9 @@
    ],
    "reponse": 2,
    "bonus": "Et son sang est bleu !",
-   "voix_reponse": "Trois ! Et attends... son sang est bleu !",
+   "voix_reponse": "Trois ! Et en plus, son sang est bleu.",
    "ton_question": "curieux",
-   "voix": "Combien de cœurs a une pieuvre ?",
+   "voix": "Une pieuvre, ça a combien de cœurs ?",
    "ton_reponse": "emerveille"
   },
   {
@@ -192,9 +192,9 @@
    ],
    "reponse": 1,
    "bonus": "L'écureuil volant ne fait que planer !",
-   "voix_reponse": "La chauve-souris ! L'écureuil volant, lui... il fait que planer.",
+   "voix_reponse": "La chauve-souris ! L'écureuil volant, lui, il plane juste.",
    "ton_question": "intrigant",
-   "voix": "Quel est le seul mammifère qui sait vraiment voler ?",
+   "voix": "Le seul mammifère qui vole vraiment, c'est lequel ?",
    "ton_reponse": "malicieux"
   },
   {
@@ -210,7 +210,7 @@
    "bonus": "Un bébé en a près de 300, qui fusionnent en grandissant.",
    "voix_reponse": "Deux cent six !",
    "ton_question": "curieux",
-   "voix": "Combien d'os t'as dans le corps, adulte ?",
+   "voix": "Un adulte, ça a combien d'os ?",
    "ton_reponse": "triomphant"
   },
   {
@@ -224,9 +224,9 @@
    ],
    "reponse": 3,
    "bonus": "12 fuseaux horaires grâce à l'outre-mer !",
-   "voix_reponse": "La France ! Bah oui, grâce à l'outre-mer.",
+   "voix_reponse": "La France ! En fait, c'est grâce à l'outre-mer.",
    "ton_question": "intrigant",
-   "voix": "Quel pays a le plus de fuseaux horaires ?",
+   "voix": "Le pays avec le plus de fuseaux horaires ?",
    "ton_reponse": "triomphant"
   },
   {
@@ -240,9 +240,9 @@
    ],
    "reponse": 1,
    "bonus": "Près de 465 °C, à cause de son effet de serre géant.",
-   "voix_reponse": "Vénus ! Hé non, pas Mercure !",
+   "voix_reponse": "Vénus ! Et non, pas Mercure.",
    "ton_question": "intrigant",
-   "voix": "C'est quoi la planète la plus chaude du système solaire ?",
+   "voix": "La planète la plus chaude du système solaire ?",
    "ton_reponse": "malicieux"
   },
   {
@@ -258,7 +258,7 @@
    "bonus": "Tu vois donc le Soleil tel qu'il était il y a 8 minutes !",
    "voix_reponse": "Huit minutes ! Dingue, non ?",
    "ton_question": "curieux",
-   "voix": "La lumière du Soleil, elle met combien de temps pour arriver jusqu'à nous ?",
+   "voix": "La lumière du Soleil, elle met combien de temps à nous arriver ?",
    "ton_reponse": "emerveille"
   },
   {
@@ -288,9 +288,9 @@
    ],
    "reponse": 1,
    "bonus": "Même au microscope, on a du mal à les différencier !",
-   "voix_reponse": "Le koala ! Sérieux, j'te jure.",
+   "voix_reponse": "Le koala ! Si, si, je te jure.",
    "ton_question": "mysterieux",
-   "voix": "Quel animal a des empreintes digitales presque identiques aux nôtres ?",
+   "voix": "Quel animal a presque les mêmes empreintes digitales que nous ?",
    "ton_reponse": "emerveille"
   },
   {
@@ -305,9 +305,9 @@
    "reponse": 3,
    "bonus": "Environ 730 km, via la Guyane !",
    "compte": 4,
-   "voix_reponse": "Le Brésil ! Grâce à la Guyane !",
+   "voix_reponse": "Le Brésil ! Grâce à la Guyane.",
    "ton_question": "suspense",
-   "voix": "Avec quel pays la France partage sa plus longue frontière ?",
+   "voix": "Avec quel pays la France a sa plus longue frontière ?",
    "ton_reponse": "triomphant"
   }
  ],
@@ -378,7 +378,7 @@
     ]
    ]
   ],
-  "voix": "Alors... t'as eu combien ? Dis-le moi en commentaire, et abonne-toi pour la partie deux !",
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour la partie deux !",
   "min": 3.5,
   "ton": "chaleureux"
  }
