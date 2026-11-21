@@ -703,7 +703,7 @@
 
 ## Épisode 12 · J-19 · « La barbe »
 ⏱️ **1:12** · 📊 `JOUR 12 · VOUS AVEZ CHOISI BARBE`
-📈 `26 · 0`
+📈 `26 · 108`
 
 **P1 · L'accroche**
 🎥 `Barber shocked looking at Yanis's patchy beard with razor cuts.`
@@ -711,7 +711,7 @@
 🎭 `inquiet · idle`
 🔠 `LE BARBIER *N'A JAMAIS VU ÇA*`
 🔊 `boom`
-🎙️ **VOIX OFF** : « Ce barbier coupe des barbes depuis vingt ans. Et il vient de dire : ça, je n'avais jamais vu. »
+🎙️ **VOIX OFF** : « Ce barbier coupe des barbes depuis vingt ans. Et il vient de dire : ça, je n'avais jamais vu. Un abonnement, c'est un euro. Un like, c'est un euro. Pour le glow-up de Yanis ! »
 
 **P2 · Le résultat**
 🎥 `Yanis in front of the mirror, touching his messy beard.`
@@ -720,15 +720,25 @@
 🔠 `VOUS AVEZ CHOISI *BARBE*`
 🎙️ **VOIX OFF** : « Jour douze, vous avez choisi : BARBE. Des trous, des coupures, et un poil tout seul sous le menton qui vit sa meilleure vie. »
 
-**P3 · Moussa**
+**P3 · La cagnotte**
+🎥 `Yanis holding his piggy bank, hopeful, coins.`
+🎬 `solo scene=barbier gest=show prop=piggy fx=sparkle shot=med`
+🎭 `sourire · idle`
+🔠 `+61 € : *MERCI !*`
+🔊 `boom`
+🎙️ **VOIX OFF** : « La cagnotte d'abord ! Hier, cinquante-neuf likes et deux nouveaux abonnés. Soixante et un euros de plus ! Yanis a cent huit euros. Merci à ceux qui aident ! Et si tu regardes sans liker… c'est le moment. »
+📝 `💰 59 LIKES + 2 ABONNÉS = +61 € · TOTAL : 108 €`
+
+**P4 · Moussa**
 🎥 `Moussa the barber trimming Yanis's beard, hair falling.`
 🎬 `chair scene=barbier pro=MOUSSA tool=clippers cape=1 hairs=1`
 🎭 `calme · idle`
 🔠 `CHEZ *MOUSSA*`
-🎙️ **VOIX OFF** : « Direction chez Moussa, le meilleur barbier du quartier. Tondeuse, ciseaux, serviette chaude. Il travaille en silence, comme un chirurgien. »
-📝 `✨ GLOW-UP DU JOUR : BARBE PROPRE`
+🎙️ **VOIX OFF** : « Le rendez-vous que vous lui avez offert : vingt-cinq euros, chez Moussa, le meilleur barbier du quartier. Tondeuse, ciseaux, serviette chaude. Il travaille en silence, comme un chirurgien. »
+📝 `🛒 BARBIER : -25 € (PAYÉ PAR VOUS)`
+💶 `83`
 
-**P4 · La révélation**
+**P5 · La révélation**
 🎥 `Moussa showing Yanis the result in a mirror, Yanis amazed.`
 🎬 `chair scene=barbier pro=MOUSSA tool=comb gest=thumbs at2=2 expr2=sourire fx=sparkle`
 🎭 `choque · idle`
@@ -736,14 +746,14 @@
 🔊 `boing@1`
 🎙️ **VOIX OFF** : « Moussa tourne le fauteuil vers le miroir. Plus de trous, plus de coupures : tout est rasé, net et propre. Yanis touche ses joues, toutes douces. Il ne se reconnaît pas. »
 
-**P5 · Le conseil**
+**P6 · Le conseil**
 🎥 `Moussa talking, giving advice, Yanis listening.`
 🎬 `duo scene=barbier other=MOUSSA gest=idle ogest=talk oprop=comb`
 🎭 `sourire · idle`
 🔠 `LE CONSEIL *DE MOUSSA*`
 🎙️ **VOIX OFF** : « Moussa lui donne une règle : un rasoir propre, un coup tous les trois jours, et jamais à sec. Jamais. Il le répète trois fois. »
 
-**P6 · La course**
+**P7 · La course**
 🎥 `Yanis running with Kenzo in the park, faster.`
 🎬 `jog with=KENZO fast=1`
 🎭 `determine · idle`
@@ -751,7 +761,7 @@
 🎙️ **VOIX OFF** : « Footing : six kilomètres, à dix kilomètres et demi par heure. C'est la première fois que Kenzo doit accélérer pour le suivre. »
 📝 `🏃 COURSE : 6 KM À 10,5 KM/H`
 
-**P7 · La photo**
+**P8 · La photo**
 🎥 `Kenzo showing a photo of Sarah on his phone, Yanis hiding his face.`
 🎬 `duo scene=parc other=KENZO gest=facepalm ogest=show oprop=phone`
 🎭 `inquiet · idle`
@@ -759,26 +769,19 @@
 🔊 `scratch`
 🎙️ **VOIX OFF** : « À la pause, Kenzo sort son téléphone. Regarde, c'est nous à la plage. Sarah sourit sur la photo. Yanis sent son cœur faire un petit truc. Pas agréable. »
 
-**P8 · Le doute**
-🎥 `Yanis alone on a bench in the park, thinking.`
-🎬 `solo scene=parc gest=think shot=med`
-🎭 `triste · idle`
-🔠 `IL *DOUTE*`
-🎙️ **VOIX OFF** : « Sur le banc, il réfléchit. Est-ce qu'il fait tout ça pour Sarah ? Ou pour lui ? Pour l'instant, il n'a pas la réponse. Mais il continue à courir. »
-
 **P9 · La balance**
 🎥 `Yanis on the scale, smiling.`
 🎬 `weigh from=107 to=105.5`
 🎭 `inquiet · idle`
 🔠 `*105,5 KG*`
-🎙️ **VOIX OFF** : « Cent cinq kilos et demi. Sa barbe est propre, sa peau est nette, ses dents sont blanches. Il commence à ressembler à quelqu'un. À lui. »
+🎙️ **VOIX OFF** : « Cent cinq kilos et demi. Son visage est net, sa peau est propre, ses dents sont blanches. Il commence à ressembler à quelqu'un. À lui. »
 
 **P10 · Le vote**
 🎥 `Yanis with his thick messy hair, hesitating.`
 🎬 `solo scene=chambreJour gest=scratch shot=wide`
 🎭 `inquiet · idle`
 🔠 `DEMAIN, ON AMÉLIORE *QUOI ?*`
-🎙️ **VOIX OFF** : « Alors demain, qu'est-ce qu'on améliore : une vraie coupe pour ses nouveaux cheveux… ou ses ongles de mécano ? Écris-le en commentaire ! »
+🎙️ **VOIX OFF** : « Il reste quatre-vingt-trois euros. Il en manque soixante-sept pour sa première tenue stylée. Et toi qui regardes : si tu likes maintenant, et que tu t'abonnes, Yanis peut l'avoir dès demain. Un abonnement, un euro. Un like, un euro. Ça ne te coûte rien, et pour lui, ça change tout ! Alors demain, qu'est-ce qu'on améliore : une vraie coupe pour ses nouveaux cheveux… ou ses ongles de mécano ? Écris-le en commentaire ! »
 📝 `🅰️ COUPE` / `🅱️ ONGLES`
 
 ---
