@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 124",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle la femelle du lion ?",
+   "choix": [
+    "La tigresse",
+    "La lionne",
+    "La louve",
+    "La panthère"
+   ],
+   "reponse": 1,
+   "bonus": "C'est elle qui chasse le plus !",
+   "voix_reponse": "La lionne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍝",
+   "question": "Quelle forme ont les spaghettis ?",
+   "choix": [
+    "Des tubes",
+    "De longs fils",
+    "Des papillons",
+    "Des coquillages"
+   ],
+   "reponse": 1,
+   "bonus": "« Spago » veut dire ficelle en italien !",
+   "voix_reponse": "De longs fils !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏝️",
+   "question": "Quelle île de l'océan Indien est un département français ?",
+   "choix": [
+    "Madagascar",
+    "La Réunion",
+    "Maurice",
+    "Les Seychelles"
+   ],
+   "reponse": 1,
+   "bonus": "Avec le piton de la Fournaise !",
+   "voix_reponse": "La Réunion !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚴",
+   "question": "Comment s'appelle le maillot du meilleur grimpeur du Tour ?",
+   "choix": [
+    "Le maillot jaune",
+    "Le maillot à pois",
+    "Le maillot vert",
+    "Le maillot blanc"
+   ],
+   "reponse": 1,
+   "bonus": "Blanc à pois rouges !",
+   "voix_reponse": "Le maillot à pois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☕",
+   "question": "Quel goût a le café sans sucre ?",
+   "choix": [
+    "Sucré",
+    "Amer",
+    "Salé",
+    "Acide"
+   ],
+   "reponse": 1,
+   "bonus": "C'est pour ça qu'on ajoute du sucre !",
+   "voix_reponse": "Amer !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Quelle cité médiévale de l'Aude est célèbre pour ses remparts ?",
+   "choix": [
+    "Carcassonne",
+    "Avignon",
+    "Provins",
+    "Dinan"
+   ],
+   "reponse": 0,
+   "bonus": "Avec 52 tours !",
+   "voix_reponse": "Carcassonne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌨️",
+   "question": "Comment s'appellent les billes de glace qui tombent du ciel ?",
+   "choix": [
+    "La neige",
+    "La grêle",
+    "Le givre",
+    "La rosée"
+   ],
+   "reponse": 1,
+   "bonus": "Elles peuvent abîmer les voitures !",
+   "voix_reponse": "La grêle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐀",
+   "question": "Comment s'appelle le rat cuisinier de Ratatouille ?",
+   "choix": [
+    "Rémy",
+    "Linguini",
+    "Gusteau",
+    "Émile"
+   ],
+   "reponse": 0,
+   "bonus": "« Tout le monde peut cuisiner ! »",
+   "voix_reponse": "Rémy !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎲",
+   "question": "Combien de faces a un dé classique ?",
+   "choix": [
+    "4",
+    "6",
+    "8",
+    "12"
+   ],
+   "reponse": 1,
+   "bonus": "Numérotées de 1 à 6 !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏜️",
+   "question": "Dans quel pays se trouve le Grand Canyon ?",
+   "choix": [
+    "Le Mexique",
+    "Les États-Unis",
+    "Le Canada",
+    "L'Australie"
+   ],
+   "reponse": 1,
+   "bonus": "Creusé par le fleuve Colorado !",
+   "voix_reponse": "Les États-Unis !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

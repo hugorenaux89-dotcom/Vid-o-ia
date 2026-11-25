@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 120",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal change de couleur pour se cacher ?",
+   "choix": [
+    "Le lézard vert",
+    "Le caméléon",
+    "Le serpent",
+    "La tortue"
+   ],
+   "reponse": 1,
+   "bonus": "Et ses yeux bougent séparément !",
+   "voix_reponse": "Le caméléon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍳",
+   "question": "Quel animal pond les œufs que l'on mange le plus ?",
+   "choix": [
+    "La cane",
+    "La poule",
+    "La caille",
+    "L'autruche"
+   ],
+   "reponse": 1,
+   "bonus": "Une poule pond presque un œuf par jour !",
+   "voix_reponse": "La poule !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quel fleuve se jette dans la Manche au Havre ?",
+   "choix": [
+    "La Loire",
+    "La Seine",
+    "Le Rhin",
+    "La Somme"
+   ],
+   "reponse": 1,
+   "bonus": "Au Havre !",
+   "voix_reponse": "La Seine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏆",
+   "question": "Tous les combien d'années a lieu la Coupe du monde de foot ?",
+   "choix": [
+    "2 ans",
+    "3 ans",
+    "4 ans",
+    "5 ans"
+   ],
+   "reponse": 2,
+   "bonus": "Comme les Jeux olympiques !",
+   "voix_reponse": "Tous les quatre ans !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💧",
+   "question": "Que boit-on pour bien s'hydrater ?",
+   "choix": [
+    "Du soda",
+    "De l'eau",
+    "Du café",
+    "Du sirop pur"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 1,5 litre par jour !",
+   "voix_reponse": "De l'eau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quel peuple a construit les aqueducs comme le pont du Gard ?",
+   "choix": [
+    "Les Grecs",
+    "Les Romains",
+    "Les Gaulois",
+    "Les Vikings"
+   ],
+   "reponse": 1,
+   "bonus": "Pour amener l'eau jusqu'à Nîmes !",
+   "voix_reponse": "Les Romains !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌻",
+   "question": "Quelle fleur tourne sa tête vers le soleil ?",
+   "choix": [
+    "La rose",
+    "Le tournesol",
+    "La tulipe",
+    "La marguerite"
+   ],
+   "reponse": 1,
+   "bonus": "Surtout quand elle est jeune !",
+   "voix_reponse": "Le tournesol !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel petit robot nettoie la Terre dans un film de Pixar ?",
+   "choix": [
+    "R2-D2",
+    "WALL-E",
+    "Baymax",
+    "C-3PO"
+   ],
+   "reponse": 1,
+   "bonus": "Sorti en 2008 !",
+   "voix_reponse": "WALL-E !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔢",
+   "question": "Combien font quatre fois cinq ?",
+   "choix": [
+    "9",
+    "20",
+    "25",
+    "45"
+   ],
+   "reponse": 1,
+   "bonus": "La moitié de quarante !",
+   "voix_reponse": "Vingt !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel pays est célèbre pour ses kangourous ?",
+   "choix": [
+    "L'Afrique du Sud",
+    "L'Australie",
+    "Le Brésil",
+    "L'Inde"
+   ],
+   "reponse": 1,
+   "bonus": "On en compte des dizaines de millions !",
+   "voix_reponse": "L'Australie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

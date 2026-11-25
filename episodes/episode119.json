@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 119",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal porte sa maison sur son dos ?",
+   "choix": [
+    "La limace",
+    "L'escargot",
+    "Le ver de terre",
+    "La chenille"
+   ],
+   "reponse": 1,
+   "bonus": "La limace, elle, n'a pas de coquille !",
+   "voix_reponse": "L'escargot !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍿",
+   "question": "Quel aliment éclate quand on le chauffe et se mange au cinéma ?",
+   "choix": [
+    "Le riz",
+    "Le pop-corn",
+    "Les pâtes",
+    "Les lentilles"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à l'eau dans le grain de maïs !",
+   "voix_reponse": "Le pop-corn !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle ville est traversée par la Garonne et célèbre pour son vin ?",
+   "choix": [
+    "Lyon",
+    "Bordeaux",
+    "Dijon",
+    "Reims"
+   ],
+   "reponse": 1,
+   "bonus": "Avec sa place de la Bourse !",
+   "voix_reponse": "Bordeaux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Dans quelle nage avance-t-on sur le dos ?",
+   "choix": [
+    "La brasse",
+    "Le dos crawlé",
+    "Le papillon",
+    "Le crawl"
+   ],
+   "reponse": 1,
+   "bonus": "La seule nage où l'on part dans l'eau !",
+   "voix_reponse": "Le dos crawlé !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Avec quoi rêve-t-on ?",
+   "choix": [
+    "Le cœur",
+    "Le cerveau",
+    "Les yeux",
+    "L'estomac"
+   ],
+   "reponse": 1,
+   "bonus": "Surtout pendant le sommeil paradoxal !",
+   "voix_reponse": "Le cerveau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Quelle partie du château fort était la plus haute tour ?",
+   "choix": [
+    "Les douves",
+    "Le donjon",
+    "Le pont-levis",
+    "La cour"
+   ],
+   "reponse": 1,
+   "bonus": "Le dernier refuge en cas d'attaque !",
+   "voix_reponse": "Le donjon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☁️",
+   "question": "Comment appelle-t-on un nuage très bas, au ras du sol ?",
+   "choix": [
+    "La grêle",
+    "Le brouillard",
+    "La rosée",
+    "Le givre"
+   ],
+   "reponse": 1,
+   "bonus": "On ne voit plus rien !",
+   "voix_reponse": "Le brouillard !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐉",
+   "question": "Quel animal vert crache du feu dans les légendes ?",
+   "choix": [
+    "Le griffon",
+    "Le dragon",
+    "La licorne",
+    "Le phénix"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent gardien d'un trésor !",
+   "voix_reponse": "Le dragon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔢",
+   "question": "Combien de côtés a un triangle ?",
+   "choix": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "reponse": 1,
+   "bonus": "Comme son nom l'indique !",
+   "voix_reponse": "Trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Dans quel pays se trouve la ville de Lisbonne ?",
+   "choix": [
+    "L'Espagne",
+    "Le Portugal",
+    "L'Italie",
+    "Le Brésil"
+   ],
+   "reponse": 1,
+   "bonus": "Une ville construite sur sept collines !",
+   "voix_reponse": "Le Portugal !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

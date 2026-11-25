@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 130",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel mammifère marin respire par un trou sur la tête ?",
+   "choix": [
+    "Le requin",
+    "Le dauphin",
+    "Le saumon",
+    "La raie"
+   ],
+   "reponse": 1,
+   "bonus": "Ce trou s'appelle l'évent !",
+   "voix_reponse": "Le dauphin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥚",
+   "question": "Quelle sauce froide est faite avec un jaune d'œuf et de l'huile ?",
+   "choix": [
+    "Le ketchup",
+    "La mayonnaise",
+    "La moutarde",
+    "La béchamel"
+   ],
+   "reponse": 1,
+   "bonus": "Il faut fouetter longtemps !",
+   "voix_reponse": "La mayonnaise !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌭",
+   "question": "Quelle ville française est célèbre pour sa moutarde ?",
+   "choix": [
+    "Lyon",
+    "Dijon",
+    "Lille",
+    "Reims"
+   ],
+   "reponse": 1,
+   "bonus": "En Bourgogne !",
+   "voix_reponse": "Dijon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏃",
+   "question": "Combien de tours de piste fait-on pour courir 400 mètres ?",
+   "choix": [
+    "1",
+    "2",
+    "4",
+    "10"
+   ],
+   "reponse": 0,
+   "bonus": "Une piste fait 400 mètres !",
+   "voix_reponse": "Un seul !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Combien de sens a-t-on, traditionnellement ?",
+   "choix": [
+    "3",
+    "5",
+    "7",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "La vue, l'ouïe, l'odorat, le goût et le toucher !",
+   "voix_reponse": "Cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quel monument se trouve en haut des Champs-Élysées ?",
+   "choix": [
+    "La Grande Arche",
+    "L'Arc de Triomphe",
+    "Le Louvre",
+    "L'Opéra"
+   ],
+   "reponse": 1,
+   "bonus": "Avec la tombe du Soldat inconnu !",
+   "voix_reponse": "L'Arc de Triomphe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quel est le plus grand continent ?",
+   "choix": [
+    "L'Afrique",
+    "L'Asie",
+    "L'Amérique",
+    "L'Europe"
+   ],
+   "reponse": 1,
+   "bonus": "Avec plus de la moitié des humains !",
+   "voix_reponse": "L'Asie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚀",
+   "question": "Quel jouet dit « Vers l'infini et au-delà ! » ?",
+   "choix": [
+    "Woody",
+    "Buzz l'Éclair",
+    "Rex",
+    "Zigzag"
+   ],
+   "reponse": 1,
+   "bonus": "Le héros de l'espace de Toy Story !",
+   "voix_reponse": "Buzz l'Éclair !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font cent plus cent ?",
+   "choix": [
+    "100",
+    "110",
+    "200",
+    "1 000"
+   ],
+   "reponse": 2,
+   "bonus": "Deux cents tout rond !",
+   "voix_reponse": "Deux cents !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦘",
+   "question": "Dans quel pays se trouve la ville de Sydney ?",
+   "choix": [
+    "La Nouvelle-Zélande",
+    "L'Australie",
+    "Le Canada",
+    "L'Afrique du Sud"
+   ],
+   "reponse": 1,
+   "bonus": "Avec son célèbre opéra !",
+   "voix_reponse": "L'Australie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

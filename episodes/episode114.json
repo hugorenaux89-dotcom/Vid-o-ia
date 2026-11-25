@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 114",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri du loup ?",
+   "choix": [
+    "Il aboie",
+    "Il hurle",
+    "Il rugit",
+    "Il brame"
+   ],
+   "reponse": 1,
+   "bonus": "Pour communiquer avec sa meute !",
+   "voix_reponse": "Il hurle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥞",
+   "question": "Quel jour mange-t-on traditionnellement des crêpes ?",
+   "choix": [
+    "Le 14 juillet",
+    "La Chandeleur",
+    "Halloween",
+    "Le 1er avril"
+   ],
+   "reponse": 1,
+   "bonus": "Le 2 février !",
+   "voix_reponse": "À la Chandeleur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Dans quelle chaîne de montagnes se trouve le mont Blanc ?",
+   "choix": [
+    "Les Pyrénées",
+    "Les Alpes",
+    "Le Massif central",
+    "Les Vosges"
+   ],
+   "reponse": 1,
+   "bonus": "La plus haute chaîne d'Europe de l'Ouest !",
+   "voix_reponse": "Les Alpes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏀",
+   "question": "Dans quel pays le basket a-t-il été inventé ?",
+   "choix": [
+    "Le Canada",
+    "Les États-Unis",
+    "La France",
+    "L'Angleterre"
+   ],
+   "reponse": 1,
+   "bonus": "Par un professeur canadien, aux États-Unis, en 1891 !",
+   "voix_reponse": "Les États-Unis !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚦",
+   "question": "Combien de couleurs a un feu tricolore ?",
+   "choix": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "reponse": 1,
+   "bonus": "Rouge, orange et vert !",
+   "voix_reponse": "Trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Quelle héroïne a libéré Orléans en 1429 ?",
+   "choix": [
+    "Marie-Antoinette",
+    "Jeanne d'Arc",
+    "Catherine de Médicis",
+    "Joséphine"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommée la Pucelle d'Orléans !",
+   "voix_reponse": "Jeanne d'Arc !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌳",
+   "question": "Quel arbre donne des glands ?",
+   "choix": [
+    "Le sapin",
+    "Le chêne",
+    "Le pommier",
+    "Le bouleau"
+   ],
+   "reponse": 1,
+   "bonus": "Les écureuils et les sangliers adorent !",
+   "voix_reponse": "Le chêne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Qui sont les deux héros de Toy Story ?",
+   "choix": [
+    "Woody et Buzz",
+    "Mario et Luigi",
+    "Tom et Jerry",
+    "Astérix et Obélix"
+   ],
+   "reponse": 0,
+   "bonus": "Vers l'infini et au-delà !",
+   "voix_reponse": "Woody et Buzz !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➗",
+   "question": "Combien font cent divisé par deux ?",
+   "choix": [
+    "25",
+    "50",
+    "75",
+    "200"
+   ],
+   "reponse": 1,
+   "bonus": "La moitié de cent !",
+   "voix_reponse": "Cinquante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Dans quel pays se trouve la ville de Londres ?",
+   "choix": [
+    "L'Irlande",
+    "L'Angleterre",
+    "L'Écosse",
+    "Le pays de Galles"
+   ],
+   "reponse": 1,
+   "bonus": "Au Royaume-Uni !",
+   "voix_reponse": "En Angleterre !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

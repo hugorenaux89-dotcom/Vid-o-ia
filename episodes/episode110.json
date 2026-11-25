@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 110",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal a une très longue trompe ?",
+   "choix": [
+    "La girafe",
+    "L'éléphant",
+    "Le rhinocéros",
+    "L'hippopotame"
+   ],
+   "reponse": 1,
+   "bonus": "Avec plus de 40 000 muscles dedans !",
+   "voix_reponse": "L'éléphant !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍕",
+   "question": "Quel plat italien est rond, avec de la sauce tomate et du fromage ?",
+   "choix": [
+    "Les lasagnes",
+    "La pizza",
+    "Le risotto",
+    "Les pâtes"
+   ],
+   "reponse": 1,
+   "bonus": "Née à Naples !",
+   "voix_reponse": "La pizza !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Sur quel continent se trouve la France ?",
+   "choix": [
+    "L'Asie",
+    "L'Europe",
+    "L'Afrique",
+    "L'Amérique"
+   ],
+   "reponse": 1,
+   "bonus": "Et aussi sur d'autres continents grâce à l'outre-mer !",
+   "voix_reponse": "L'Europe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Combien de joueurs dans un match de tennis en simple ?",
+   "choix": [
+    "2",
+    "4",
+    "6",
+    "1"
+   ],
+   "reponse": 0,
+   "bonus": "En double, ils sont quatre !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Quel organe nous permet de réfléchir ?",
+   "choix": [
+    "Le cœur",
+    "Le cerveau",
+    "L'estomac",
+    "Le foie"
+   ],
+   "reponse": 1,
+   "bonus": "Il fonctionne même quand on dort !",
+   "voix_reponse": "Le cerveau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏺",
+   "question": "Quel peuple croyait en Zeus et Athéna ?",
+   "choix": [
+    "Les Égyptiens",
+    "Les Grecs",
+    "Les Vikings",
+    "Les Mayas"
+   ],
+   "reponse": 1,
+   "bonus": "Les dieux de l'Olympe !",
+   "voix_reponse": "Les Grecs !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Combien de planètes sont plus proches du Soleil que la Terre ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 1,
+   "bonus": "Mercure et Vénus !",
+   "voix_reponse": "Deux ! Mercure et Vénus.",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦁",
+   "question": "Quel est le nom du lionceau du Roi lion ?",
+   "choix": [
+    "Mufasa",
+    "Simba",
+    "Scar",
+    "Nala"
+   ],
+   "reponse": 1,
+   "bonus": "Hakuna matata !",
+   "voix_reponse": "Simba !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📅",
+   "question": "Combien de jours y a-t-il dans une année normale ?",
+   "choix": [
+    "360",
+    "365",
+    "366",
+    "400"
+   ],
+   "reponse": 1,
+   "bonus": "366 les années bissextiles !",
+   "voix_reponse": "Trois cent soixante-cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la plus grande ville de France ?",
+   "choix": [
+    "Marseille",
+    "Paris",
+    "Lyon",
+    "Toulouse"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 2 millions d'habitants dans la ville !",
+   "voix_reponse": "Paris !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 113",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri de la grenouille ?",
+   "choix": [
+    "Elle coasse",
+    "Elle croasse",
+    "Elle siffle",
+    "Elle bêle"
+   ],
+   "reponse": 0,
+   "bonus": "Le corbeau, lui, croasse !",
+   "voix_reponse": "Elle coasse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍰",
+   "question": "Quel gâteau mange-t-on traditionnellement à Noël en France ?",
+   "choix": [
+    "La galette",
+    "La bûche",
+    "Le fraisier",
+    "Le baba"
+   ],
+   "reponse": 1,
+   "bonus": "En forme de rondin de bois !",
+   "voix_reponse": "La bûche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Dans quelle région se trouve la ville de Strasbourg ?",
+   "choix": [
+    "La Bretagne",
+    "L'Alsace",
+    "La Provence",
+    "La Normandie"
+   ],
+   "reponse": 1,
+   "bonus": "Siège du Parlement européen !",
+   "voix_reponse": "En Alsace !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Combien de temps dure un match de rugby, hors arrêts de jeu ?",
+   "choix": [
+    "60 minutes",
+    "70 minutes",
+    "80 minutes",
+    "90 minutes"
+   ],
+   "reponse": 2,
+   "bonus": "Deux mi-temps de 40 minutes !",
+   "voix_reponse": "Quatre-vingts minutes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦴",
+   "question": "Où se trouve le fémur ?",
+   "choix": [
+    "Dans le bras",
+    "Dans la cuisse",
+    "Dans le dos",
+    "Dans le pied"
+   ],
+   "reponse": 1,
+   "bonus": "C'est l'os le plus long du corps !",
+   "voix_reponse": "Dans la cuisse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Dans quelle ville se trouve le musée du Louvre ?",
+   "choix": [
+    "Lyon",
+    "Paris",
+    "Nice",
+    "Lille"
+   ],
+   "reponse": 1,
+   "bonus": "Le musée le plus visité au monde !",
+   "voix_reponse": "Paris !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Comment s'appelle la roche en fusion qui sort d'un volcan ?",
+   "choix": [
+    "La boue",
+    "La lave",
+    "Le sable",
+    "La glace"
+   ],
+   "reponse": 1,
+   "bonus": "Elle peut dépasser 1 000 °C !",
+   "voix_reponse": "La lave !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧙",
+   "question": "Dans quelle école étudie Harry Potter ?",
+   "choix": [
+    "Beauxbâtons",
+    "Poudlard",
+    "Durmstrang",
+    "Oxford"
+   ],
+   "reponse": 1,
+   "bonus": "Avec Ron et Hermione !",
+   "voix_reponse": "Poudlard !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font quinze plus quinze ?",
+   "choix": [
+    "25",
+    "30",
+    "35",
+    "40"
+   ],
+   "reponse": 1,
+   "bonus": "Deux fois quinze !",
+   "voix_reponse": "Trente !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Dans quel pays se trouve la ville d'Amsterdam ?",
+   "choix": [
+    "La Belgique",
+    "Les Pays-Bas",
+    "Le Danemark",
+    "L'Allemagne"
+   ],
+   "reponse": 1,
+   "bonus": "La ville aux mille vélos et aux canaux !",
+   "voix_reponse": "Les Pays-Bas !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

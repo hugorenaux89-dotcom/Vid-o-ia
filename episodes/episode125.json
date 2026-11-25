@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 125",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel insecte aux ailes colorées sort d'une chrysalide ?",
+   "choix": [
+    "La coccinelle",
+    "Le papillon",
+    "La libellule",
+    "L'abeille"
+   ],
+   "reponse": 1,
+   "bonus": "Avant, c'était une chenille !",
+   "voix_reponse": "Le papillon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧀",
+   "question": "De quelle région française vient la raclette ?",
+   "choix": [
+    "La Bretagne",
+    "La Savoie",
+    "La Provence",
+    "La Normandie"
+   ],
+   "reponse": 1,
+   "bonus": "Et aussi de Suisse, dans le Valais !",
+   "voix_reponse": "La Savoie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚓",
+   "question": "Quelle ville bretonne est un grand port militaire ?",
+   "choix": [
+    "Rennes",
+    "Brest",
+    "Vannes",
+    "Quimper"
+   ],
+   "reponse": 1,
+   "bonus": "Au bout de la Bretagne !",
+   "voix_reponse": "Brest !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥊",
+   "question": "Dans quel sport porte-t-on des gants pour frapper ?",
+   "choix": [
+    "Le judo",
+    "La boxe",
+    "L'escrime",
+    "La lutte"
+   ],
+   "reponse": 1,
+   "bonus": "Sur un ring !",
+   "voix_reponse": "La boxe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Comment s'appelle le trou qui se forme dans une dent ?",
+   "choix": [
+    "La gingivite",
+    "La carie",
+    "Le tartre",
+    "L'aphte"
+   ],
+   "reponse": 1,
+   "bonus": "À cause du sucre et des bactéries !",
+   "voix_reponse": "Une carie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Comment s'appelait Paris à l'époque romaine ?",
+   "choix": [
+    "Lugdunum",
+    "Lutèce",
+    "Massilia",
+    "Burdigala"
+   ],
+   "reponse": 1,
+   "bonus": "Lugdunum, c'était Lyon !",
+   "voix_reponse": "Lutèce !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎄",
+   "question": "Quel arbre décore-t-on à Noël ?",
+   "choix": [
+    "Le chêne",
+    "Le sapin",
+    "Le pommier",
+    "Le palmier"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des boules et une étoile !",
+   "voix_reponse": "Le sapin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Qui a chanté « Dernière danse » ?",
+   "choix": [
+    "Zaz",
+    "Indila",
+    "Louane",
+    "Angèle"
+   ],
+   "reponse": 1,
+   "bonus": "Un énorme succès en 2014 !",
+   "voix_reponse": "Indila !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➖",
+   "question": "Combien font trente moins douze ?",
+   "choix": [
+    "16",
+    "18",
+    "22",
+    "28"
+   ],
+   "reponse": 1,
+   "bonus": "Bravo si tu as trouvé vite !",
+   "voix_reponse": "Dix-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧱",
+   "question": "Dans quel pays se trouve la Grande Muraille ?",
+   "choix": [
+    "Le Japon",
+    "La Chine",
+    "La Mongolie",
+    "La Corée"
+   ],
+   "reponse": 1,
+   "bonus": "Plus de 20 000 km !",
+   "voix_reponse": "La Chine !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

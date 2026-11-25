@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 128",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel oiseau blanc est le symbole de la paix ?",
+   "choix": [
+    "Le corbeau",
+    "La colombe",
+    "L'aigle",
+    "Le cygne"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent avec un rameau d'olivier !",
+   "voix_reponse": "La colombe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍲",
+   "question": "Quel plat du sud-ouest mélange haricots blancs et saucisses ?",
+   "choix": [
+    "La choucroute",
+    "Le cassoulet",
+    "La raclette",
+    "Le pot-au-feu"
+   ],
+   "reponse": 1,
+   "bonus": "Cuit dans une cassole !",
+   "voix_reponse": "Le cassoulet !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛲",
+   "question": "Quelle grande ville suisse est au bord du lac Léman ?",
+   "choix": [
+    "Zurich",
+    "Genève",
+    "Bâle",
+    "Berne"
+   ],
+   "reponse": 1,
+   "bonus": "Avec son grand jet d'eau !",
+   "voix_reponse": "Genève !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏄",
+   "question": "Dans quel sport glisse-t-on sur les vagues avec une planche ?",
+   "choix": [
+    "Le ski nautique",
+    "Le surf",
+    "La voile",
+    "Le kayak"
+   ],
+   "reponse": 1,
+   "bonus": "Né à Hawaï !",
+   "voix_reponse": "Le surf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌡️",
+   "question": "Que mesure un thermomètre ?",
+   "choix": [
+    "Le poids",
+    "La température",
+    "La taille",
+    "La vitesse"
+   ],
+   "reponse": 1,
+   "bonus": "Utile quand on a de la fièvre !",
+   "voix_reponse": "La température !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤺",
+   "question": "Comment s'appellent les soldats de d'Artagnan ?",
+   "choix": [
+    "Les chevaliers",
+    "Les mousquetaires",
+    "Les gladiateurs",
+    "Les samouraïs"
+   ],
+   "reponse": 1,
+   "bonus": "Un pour tous, tous pour un !",
+   "voix_reponse": "Les mousquetaires !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛰️",
+   "question": "Où vivent des astronautes, en orbite autour de la Terre ?",
+   "choix": [
+    "Sur la Lune",
+    "Dans la station ISS",
+    "Dans Hubble",
+    "Dans une fusée Ariane"
+   ],
+   "reponse": 1,
+   "bonus": "Elle fait le tour de la Terre en 90 minutes !",
+   "voix_reponse": "Dans la station spatiale internationale, l'ISS !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧚",
+   "question": "Comment s'appelle la petite fée de Peter Pan ?",
+   "choix": [
+    "La fée Clochette",
+    "La fée Morgane",
+    "La fée Carabosse",
+    "La bonne fée"
+   ],
+   "reponse": 0,
+   "bonus": "Elle sème de la poussière magique !",
+   "voix_reponse": "La fée Clochette !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font neuf plus neuf ?",
+   "choix": [
+    "16",
+    "18",
+    "19",
+    "81"
+   ],
+   "reponse": 1,
+   "bonus": "Le double de neuf !",
+   "voix_reponse": "Dix-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌎",
+   "question": "Sur quel continent se trouve le Brésil ?",
+   "choix": [
+    "L'Afrique",
+    "L'Amérique du Sud",
+    "L'Asie",
+    "L'Océanie"
+   ],
+   "reponse": 1,
+   "bonus": "Le plus grand pays du continent !",
+   "voix_reponse": "L'Amérique du Sud !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

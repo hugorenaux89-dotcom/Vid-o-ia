@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 121",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri de l'éléphant ?",
+   "choix": [
+    "Il barrit",
+    "Il rugit",
+    "Il brame",
+    "Il hennit"
+   ],
+   "reponse": 0,
+   "bonus": "On l'entend à plusieurs kilomètres !",
+   "voix_reponse": "Il barrit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍝",
+   "question": "Quel fromage râpé met-on souvent sur les pâtes italiennes ?",
+   "choix": [
+    "Le comté",
+    "Le parmesan",
+    "Le brie",
+    "La feta"
+   ],
+   "reponse": 1,
+   "bonus": "Affiné au moins 12 mois !",
+   "voix_reponse": "Le parmesan !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛪",
+   "question": "Dans quelle ville étaient sacrés les rois de France ?",
+   "choix": [
+    "Chartres",
+    "Reims",
+    "Rouen",
+    "Amiens"
+   ],
+   "reponse": 1,
+   "bonus": "Dans sa grande cathédrale !",
+   "voix_reponse": "Reims !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Qui fait respecter les règles pendant un match ?",
+   "choix": [
+    "L'entraîneur",
+    "L'arbitre",
+    "Le capitaine",
+    "Le gardien"
+   ],
+   "reponse": 1,
+   "bonus": "Avec son sifflet et ses cartons !",
+   "voix_reponse": "L'arbitre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💪",
+   "question": "Comment s'appelle l'articulation au milieu du bras ?",
+   "choix": [
+    "Le genou",
+    "Le coude",
+    "Le poignet",
+    "L'épaule"
+   ],
+   "reponse": 1,
+   "bonus": "Attention à ne pas te cogner !",
+   "voix_reponse": "Le coude !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Comment appelle-t-on le siège d'un roi ?",
+   "choix": [
+    "Le fauteuil",
+    "Le trône",
+    "Le banc",
+    "Le tabouret"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent en or et en velours !",
+   "voix_reponse": "Le trône !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "❄️",
+   "question": "À quelle température l'eau se transforme-t-elle en glace ?",
+   "choix": [
+    "-10 °C",
+    "0 °C",
+    "4 °C",
+    "10 °C"
+   ],
+   "reponse": 1,
+   "bonus": "Et elle bout à 100 °C !",
+   "voix_reponse": "Zéro degré !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel pantin de bois a un nez qui s'allonge quand il ment ?",
+   "choix": [
+    "Peter Pan",
+    "Pinocchio",
+    "Aladdin",
+    "Dumbo"
+   ],
+   "reponse": 1,
+   "bonus": "Il rêve de devenir un vrai garçon !",
+   "voix_reponse": "Pinocchio !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font cinquante plus cinquante ?",
+   "choix": [
+    "90",
+    "100",
+    "110",
+    "150"
+   ],
+   "reponse": 1,
+   "bonus": "Cent tout rond !",
+   "voix_reponse": "Cent !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎥",
+   "question": "Dans quel pays se trouve Hollywood ?",
+   "choix": [
+    "Le Canada",
+    "Les États-Unis",
+    "Le Royaume-Uni",
+    "L'Australie"
+   ],
+   "reponse": 1,
+   "bonus": "À Los Angeles, la capitale du cinéma !",
+   "voix_reponse": "Les États-Unis !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

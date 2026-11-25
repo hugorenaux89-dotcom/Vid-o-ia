@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 122",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit de la vache ?",
+   "choix": [
+    "Le poulain",
+    "Le veau",
+    "L'agneau",
+    "Le chevreau"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut marcher une heure après sa naissance !",
+   "voix_reponse": "Le veau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍽️",
+   "question": "Quel fruit exotique a une couronne de feuilles sur le dessus ?",
+   "choix": [
+    "La mangue",
+    "L'ananas",
+    "La papaye",
+    "Le litchi"
+   ],
+   "reponse": 1,
+   "bonus": "On peut même replanter sa couronne !",
+   "voix_reponse": "L'ananas !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌴",
+   "question": "Dans quelle ville se trouve la Promenade des Anglais ?",
+   "choix": [
+    "Cannes",
+    "Nice",
+    "Marseille",
+    "Biarritz"
+   ],
+   "reponse": 1,
+   "bonus": "Sur la Côte d'Azur !",
+   "voix_reponse": "Nice !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "De quelle couleur est généralement une balle de tennis ?",
+   "choix": [
+    "Blanche",
+    "Jaune",
+    "Orange",
+    "Rouge"
+   ],
+   "reponse": 1,
+   "bonus": "Pour qu'on la voie mieux à la télé !",
+   "voix_reponse": "Jaune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👀",
+   "question": "Comment s'appellent les petits poils au bord des paupières ?",
+   "choix": [
+    "Les sourcils",
+    "Les cils",
+    "Les moustaches",
+    "Les favoris"
+   ],
+   "reponse": 1,
+   "bonus": "Ils protègent les yeux de la poussière !",
+   "voix_reponse": "Les cils !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚔️",
+   "question": "Sur quel animal montaient les chevaliers ?",
+   "choix": [
+    "L'âne",
+    "Le cheval",
+    "Le chameau",
+    "L'éléphant"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent protégé lui aussi par une armure !",
+   "voix_reponse": "Le cheval !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Comment appelle-t-on une vague géante causée par un séisme ?",
+   "choix": [
+    "Une marée",
+    "Un tsunami",
+    "Un cyclone",
+    "Une tornade"
+   ],
+   "reponse": 1,
+   "bonus": "Un mot japonais !",
+   "voix_reponse": "Un tsunami !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧙",
+   "question": "Qui dirige l'école de Poudlard ?",
+   "choix": [
+    "Rogue",
+    "Dumbledore",
+    "Hagrid",
+    "Voldemort"
+   ],
+   "reponse": 1,
+   "bonus": "Avec sa longue barbe blanche !",
+   "voix_reponse": "Dumbledore !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font huit fois huit ?",
+   "choix": [
+    "56",
+    "64",
+    "72",
+    "88"
+   ],
+   "reponse": 1,
+   "bonus": "Comme les cases d'un échiquier !",
+   "voix_reponse": "Soixante-quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍺",
+   "question": "Dans quel pays se trouve la ville de Munich ?",
+   "choix": [
+    "L'Autriche",
+    "L'Allemagne",
+    "La Suisse",
+    "La Pologne"
+   ],
+   "reponse": 1,
+   "bonus": "Célèbre pour l'Oktoberfest !",
+   "voix_reponse": "L'Allemagne !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

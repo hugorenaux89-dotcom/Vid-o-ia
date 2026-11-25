@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 108",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal fait « cocorico » ?",
+   "choix": [
+    "La poule",
+    "Le coq",
+    "Le canard",
+    "Le dindon"
+   ],
+   "reponse": 1,
+   "bonus": "Il chante au lever du soleil !",
+   "voix_reponse": "Le coq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍯",
+   "question": "Quel insecte fabrique le miel ?",
+   "choix": [
+    "La guêpe",
+    "L'abeille",
+    "La mouche",
+    "Le papillon"
+   ],
+   "reponse": 1,
+   "bonus": "À partir du nectar des fleurs !",
+   "voix_reponse": "L'abeille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚓",
+   "question": "Quelle ville est surnommée la Cité phocéenne ?",
+   "choix": [
+    "Lyon",
+    "Marseille",
+    "Nice",
+    "Toulon"
+   ],
+   "reponse": 1,
+   "bonus": "Fondée par des Grecs venus de Phocée !",
+   "voix_reponse": "Marseille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel joueur peut prendre le ballon avec les mains au foot ?",
+   "choix": [
+    "L'attaquant",
+    "Le gardien",
+    "Le défenseur",
+    "L'arbitre"
+   ],
+   "reponse": 1,
+   "bonus": "Mais seulement dans sa surface !",
+   "voix_reponse": "Le gardien !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍽️",
+   "question": "Dans quel organe arrivent les aliments après l'œsophage ?",
+   "choix": [
+    "Le foie",
+    "L'estomac",
+    "Les reins",
+    "Le cœur"
+   ],
+   "reponse": 1,
+   "bonus": "Il les mélange avec des sucs très acides !",
+   "voix_reponse": "L'estomac !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Dans quel pays se trouvent les pyramides de Gizeh ?",
+   "choix": [
+    "Le Mexique",
+    "L'Égypte",
+    "La Grèce",
+    "L'Inde"
+   ],
+   "reponse": 1,
+   "bonus": "Près du Caire !",
+   "voix_reponse": "L'Égypte !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⭐",
+   "question": "Comment s'appelle notre galaxie ?",
+   "choix": [
+    "Andromède",
+    "La Voie lactée",
+    "Orion",
+    "La Grande Ourse"
+   ],
+   "reponse": 1,
+   "bonus": "On la voit comme une bande blanche la nuit !",
+   "voix_reponse": "La Voie lactée !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧜",
+   "question": "Comment s'appelle la petite sirène de Disney ?",
+   "choix": [
+    "Elsa",
+    "Ariel",
+    "Belle",
+    "Jasmine"
+   ],
+   "reponse": 1,
+   "bonus": "Elle rêve de vivre sur terre !",
+   "voix_reponse": "Ariel !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔢",
+   "question": "Combien font cinq fois cinq ?",
+   "choix": [
+    "20",
+    "25",
+    "30",
+    "55"
+   ],
+   "reponse": 1,
+   "bonus": "Cinq au carré !",
+   "voix_reponse": "Vingt-cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏜️",
+   "question": "Quel est le plus grand désert chaud du monde ?",
+   "choix": [
+    "Le Gobi",
+    "Le Sahara",
+    "L'Atacama",
+    "Le Kalahari"
+   ],
+   "reponse": 1,
+   "bonus": "Presque aussi grand que les États-Unis !",
+   "voix_reponse": "Le Sahara !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

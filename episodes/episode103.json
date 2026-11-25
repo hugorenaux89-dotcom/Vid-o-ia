@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 103",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit du chat ?",
+   "choix": [
+    "Le chiot",
+    "Le chaton",
+    "Le lapereau",
+    "Le poussin"
+   ],
+   "reponse": 1,
+   "bonus": "Il dort jusqu'à 20 heures par jour !",
+   "voix_reponse": "Le chaton !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐣",
+   "question": "Quelle fête célèbre-t-on avec des œufs en chocolat ?",
+   "choix": [
+    "Noël",
+    "Pâques",
+    "Halloween",
+    "La Saint-Valentin"
+   ],
+   "reponse": 1,
+   "bonus": "Les cloches les apportent, selon la tradition !",
+   "voix_reponse": "Pâques !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Espagne ?",
+   "choix": [
+    "Barcelone",
+    "Madrid",
+    "Séville",
+    "Valence"
+   ],
+   "reponse": 1,
+   "bonus": "En plein centre du pays !",
+   "voix_reponse": "Madrid !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Avec quoi frappe-t-on la balle au tennis ?",
+   "choix": [
+    "Une batte",
+    "Une raquette",
+    "Un club",
+    "Une crosse"
+   ],
+   "reponse": 1,
+   "bonus": "Avec un tamis en cordes !",
+   "voix_reponse": "Une raquette !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Comment s'appellent les dents pointues à côté des incisives ?",
+   "choix": [
+    "Les molaires",
+    "Les canines",
+    "Les prémolaires",
+    "Les dents de sagesse"
+   ],
+   "reponse": 1,
+   "bonus": "Comme celles des chiens !",
+   "voix_reponse": "Les canines !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛵",
+   "question": "Quel peuple scandinave naviguait sur des drakkars ?",
+   "choix": [
+    "Les Romains",
+    "Les Vikings",
+    "Les Gaulois",
+    "Les Grecs"
+   ],
+   "reponse": 1,
+   "bonus": "Ils sont même allés jusqu'en Amérique !",
+   "voix_reponse": "Les Vikings !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle planète est la troisième à partir du Soleil ?",
+   "choix": [
+    "Mars",
+    "La Terre",
+    "Vénus",
+    "Mercure"
+   ],
+   "reponse": 1,
+   "bonus": "Juste après Mercure et Vénus !",
+   "voix_reponse": "La Terre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel ogre vert vit dans un marais ?",
+   "choix": [
+    "Hulk",
+    "Shrek",
+    "Le Grinch",
+    "Yoda"
+   ],
+   "reponse": 1,
+   "bonus": "Avec son ami l'Âne !",
+   "voix_reponse": "Shrek !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📅",
+   "question": "Combien de jours a le mois de février, une année normale ?",
+   "choix": [
+    "28",
+    "29",
+    "30",
+    "31"
+   ],
+   "reponse": 0,
+   "bonus": "29 les années bissextiles !",
+   "voix_reponse": "Vingt-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel fleuve traverse Lyon, avec la Saône ?",
+   "choix": [
+    "La Seine",
+    "Le Rhône",
+    "La Loire",
+    "La Garonne"
+   ],
+   "reponse": 1,
+   "bonus": "Ils se rejoignent au confluent !",
+   "voix_reponse": "Le Rhône !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

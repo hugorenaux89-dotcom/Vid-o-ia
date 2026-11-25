@@ -11,8 +11,11 @@ ICI = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.join(ICI, "episodes"))
 from saison1_questions import E  # noqa: E402
 from saison2_questions import E as E2  # noqa: E402
+from saison3_questions import E as E3  # noqa: E402
+from saison3b_questions import E as E3b  # noqa: E402
 
-E.update(E2)
+for _e in (E2, E3, E3b):
+    E.update(_e)
 
 J, B, V = [255, 214, 0], [255, 255, 255], [34, 197, 94]
 

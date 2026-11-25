@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 127",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Lequel de ces animaux est un rongeur ?",
+   "choix": [
+    "Le lapin",
+    "La souris",
+    "Le chat",
+    "Le hérisson"
+   ],
+   "reponse": 1,
+   "bonus": "Le lapin n'est pas un rongeur, contrairement à ce qu'on croit !",
+   "voix_reponse": "La souris ! Pas le lapin.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🐚",
+   "question": "Quel petit gâteau a une forme de coquillage ?",
+   "choix": [
+    "Le financier",
+    "La madeleine",
+    "Le macaron",
+    "Le cookie"
+   ],
+   "reponse": 1,
+   "bonus": "Avec sa bosse caractéristique !",
+   "voix_reponse": "La madeleine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Dans quelle ville se trouve le château des ducs de Bretagne ?",
+   "choix": [
+    "Rennes",
+    "Nantes",
+    "Brest",
+    "Saint-Malo"
+   ],
+   "reponse": 1,
+   "bonus": "Au bord de la Loire !",
+   "voix_reponse": "Nantes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏂",
+   "question": "Quel sport d'hiver se pratique sur une seule planche ?",
+   "choix": [
+    "Le ski",
+    "Le snowboard",
+    "La luge",
+    "Le bobsleigh"
+   ],
+   "reponse": 1,
+   "bonus": "Arrivé aux JO en 1998 !",
+   "voix_reponse": "Le snowboard !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫀",
+   "question": "Comment s'appellent les vaisseaux qui ramènent le sang au cœur ?",
+   "choix": [
+    "Les artères",
+    "Les veines",
+    "Les nerfs",
+    "Les tendons"
+   ],
+   "reponse": 1,
+   "bonus": "Les artères, elles, partent du cœur !",
+   "voix_reponse": "Les veines !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🕊️",
+   "question": "Quelle guerre a duré de 1939 à 1945 ?",
+   "choix": [
+    "La Première Guerre mondiale",
+    "La Seconde Guerre mondiale",
+    "La guerre de Cent Ans",
+    "La guerre froide"
+   ],
+   "reponse": 1,
+   "bonus": "La plus meurtrière de l'histoire !",
+   "voix_reponse": "La Seconde Guerre mondiale !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚀",
+   "question": "Comment appelle-t-on une personne qui voyage dans l'espace ?",
+   "choix": [
+    "Un pilote",
+    "Un astronaute",
+    "Un astronome",
+    "Un aviateur"
+   ],
+   "reponse": 1,
+   "bonus": "L'astronome, lui, observe le ciel !",
+   "voix_reponse": "Un astronaute !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐘",
+   "question": "Quel éléphant vole grâce à ses grandes oreilles ?",
+   "choix": [
+    "Babar",
+    "Dumbo",
+    "Horton",
+    "Jumbo"
+   ],
+   "reponse": 1,
+   "bonus": "Un film Disney de 1941 !",
+   "voix_reponse": "Dumbo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📅",
+   "question": "Combien de mois ont 31 jours ?",
+   "choix": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "reponse": 2,
+   "bonus": "Compte sur tes poings !",
+   "voix_reponse": "Sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛰️",
+   "question": "Quel pays est célèbre pour ses fjords ?",
+   "choix": [
+    "La Suisse",
+    "La Norvège",
+    "L'Irlande",
+    "L'Italie"
+   ],
+   "reponse": 1,
+   "bonus": "Des vallées remplies par la mer !",
+   "voix_reponse": "La Norvège !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

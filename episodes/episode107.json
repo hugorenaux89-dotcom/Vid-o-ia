@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 107",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri du mouton ?",
+   "choix": [
+    "Il bêle",
+    "Il meugle",
+    "Il aboie",
+    "Il grogne"
+   ],
+   "reponse": 0,
+   "bonus": "Bêêê !",
+   "voix_reponse": "Il bêle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍓",
+   "question": "De quelle couleur est une fraise bien mûre ?",
+   "choix": [
+    "Verte",
+    "Rouge",
+    "Jaune",
+    "Bleue"
+   ],
+   "reponse": 1,
+   "bonus": "Avec ses graines à l'extérieur !",
+   "voix_reponse": "Rouge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale des États-Unis ?",
+   "choix": [
+    "New York",
+    "Washington",
+    "Los Angeles",
+    "Chicago"
+   ],
+   "reponse": 1,
+   "bonus": "Pas New York !",
+   "voix_reponse": "Washington ! Pas New York.",
+   "ton_question": "curieux",
+   "ton_reponse": "malicieux"
+  },
+  {
+   "emoji": "🏅",
+   "question": "Quelle médaille reçoit le gagnant aux Jeux olympiques ?",
+   "choix": [
+    "L'argent",
+    "L'or",
+    "Le bronze",
+    "Le cuivre"
+   ],
+   "reponse": 1,
+   "bonus": "L'argent est pour le deuxième !",
+   "voix_reponse": "La médaille d'or !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦴",
+   "question": "Comment s'appellent les os de la colonne vertébrale ?",
+   "choix": [
+    "Les côtes",
+    "Les vertèbres",
+    "Les phalanges",
+    "Les osselets"
+   ],
+   "reponse": 1,
+   "bonus": "Elles protègent la moelle épinière !",
+   "voix_reponse": "Les vertèbres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏹",
+   "question": "Quel héros anglais volait aux riches pour donner aux pauvres ?",
+   "choix": [
+    "Zorro",
+    "Robin des Bois",
+    "Ivanhoé",
+    "Lancelot"
+   ],
+   "reponse": 1,
+   "bonus": "Dans la forêt de Sherwood !",
+   "voix_reponse": "Robin des Bois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌕",
+   "question": "Qui a marché sur la Lune en premier ?",
+   "choix": [
+    "Buzz Aldrin",
+    "Neil Armstrong",
+    "Youri Gagarine",
+    "Thomas Pesquet"
+   ],
+   "reponse": 1,
+   "bonus": "En juillet 1969 !",
+   "voix_reponse": "Neil Armstrong !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦸",
+   "question": "Quel super-héros porte une cape et un grand S sur la poitrine ?",
+   "choix": [
+    "Batman",
+    "Superman",
+    "Spider-Man",
+    "Iron Man"
+   ],
+   "reponse": 1,
+   "bonus": "Il vient de la planète Krypton !",
+   "voix_reponse": "Superman !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⏰",
+   "question": "Combien d'heures y a-t-il dans une semaine ?",
+   "choix": [
+    "100",
+    "148",
+    "168",
+    "184"
+   ],
+   "reponse": 2,
+   "bonus": "Sept fois vingt-quatre !",
+   "voix_reponse": "Cent soixante-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Dans quelle ville se trouve le Colisée ?",
+   "choix": [
+    "Athènes",
+    "Rome",
+    "Naples",
+    "Milan"
+   ],
+   "reponse": 1,
+   "bonus": "Un amphithéâtre de près de 2 000 ans !",
+   "voix_reponse": "Rome !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 118",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit du renard ?",
+   "choix": [
+    "Le renardeau",
+    "Le louveteau",
+    "Le chiot",
+    "Le lapereau"
+   ],
+   "reponse": 0,
+   "bonus": "Il naît dans un terrier !",
+   "voix_reponse": "Le renardeau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥗",
+   "question": "Quel légume rouge est la base du ketchup ?",
+   "choix": [
+    "Le poivron",
+    "La tomate",
+    "La betterave",
+    "Le radis"
+   ],
+   "reponse": 1,
+   "bonus": "Avec du sucre et du vinaigre !",
+   "voix_reponse": "La tomate !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Sur quelle île française se trouve la ville d'Ajaccio ?",
+   "choix": [
+    "La Réunion",
+    "La Corse",
+    "La Martinique",
+    "Belle-Île"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommée l'île de Beauté !",
+   "voix_reponse": "La Corse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏓",
+   "question": "Comment appelle-t-on aussi le tennis de table ?",
+   "choix": [
+    "Le squash",
+    "Le ping-pong",
+    "Le padel",
+    "Le badminton"
+   ],
+   "reponse": 1,
+   "bonus": "À cause du bruit de la balle !",
+   "voix_reponse": "Le ping-pong !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Quelles dents servent à couper les aliments, à l'avant de la bouche ?",
+   "choix": [
+    "Les molaires",
+    "Les incisives",
+    "Les canines",
+    "Les dents de sagesse"
+   ],
+   "reponse": 1,
+   "bonus": "On en a huit !",
+   "voix_reponse": "Les incisives !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗡️",
+   "question": "Comment s'appelle l'épée du roi Arthur ?",
+   "choix": [
+    "Durandal",
+    "Excalibur",
+    "Joyeuse",
+    "Dard"
+   ],
+   "reponse": 1,
+   "bonus": "Retirée d'un rocher !",
+   "voix_reponse": "Excalibur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Comment s'appelle une montagne qui peut cracher de la lave ?",
+   "choix": [
+    "Une colline",
+    "Un volcan",
+    "Une falaise",
+    "Un glacier"
+   ],
+   "reponse": 1,
+   "bonus": "Il y en a environ 1 500 actifs sur Terre !",
+   "voix_reponse": "Un volcan !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧽",
+   "question": "Quel personnage de dessin animé vit dans un ananas sous la mer ?",
+   "choix": [
+    "Patrick",
+    "Bob l'éponge",
+    "Carlo",
+    "Plankton"
+   ],
+   "reponse": 1,
+   "bonus": "À Bikini Bottom !",
+   "voix_reponse": "Bob l'éponge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔢",
+   "question": "Combien font vingt plus trente ?",
+   "choix": [
+    "40",
+    "50",
+    "60",
+    "70"
+   ],
+   "reponse": 1,
+   "bonus": "La moitié de cent !",
+   "voix_reponse": "Cinquante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel pays a la forme d'un hexagone ?",
+   "choix": [
+    "L'Espagne",
+    "La France",
+    "L'Allemagne",
+    "La Pologne"
+   ],
+   "reponse": 1,
+   "bonus": "D'où son surnom : l'Hexagone !",
+   "voix_reponse": "La France !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 112",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal a un cou très long ?",
+   "choix": [
+    "Le zèbre",
+    "La girafe",
+    "Le cheval",
+    "Le chameau"
+   ],
+   "reponse": 1,
+   "bonus": "Le plus grand animal terrestre en hauteur !",
+   "voix_reponse": "La girafe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍟",
+   "question": "Avec quel légume fait-on les frites ?",
+   "choix": [
+    "La carotte",
+    "La pomme de terre",
+    "La courgette",
+    "Le navet"
+   ],
+   "reponse": 1,
+   "bonus": "Les Belges et les Français se disputent leur origine !",
+   "voix_reponse": "La pomme de terre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Bretagne ?",
+   "choix": [
+    "Brest",
+    "Rennes",
+    "Nantes",
+    "Quimper"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Nantes, qui est dans les Pays de la Loire !",
+   "voix_reponse": "Rennes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏁",
+   "question": "Dans quel sport conduit-on des voitures très rapides sur un circuit ?",
+   "choix": [
+    "Le rallye-raid",
+    "La Formule 1",
+    "Le karting",
+    "Le motocross"
+   ],
+   "reponse": 1,
+   "bonus": "Les voitures dépassent 300 km/h !",
+   "voix_reponse": "La Formule 1 !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "Quel groupe sanguin peut recevoir le sang de tous les autres ?",
+   "choix": [
+    "O-",
+    "AB+",
+    "A+",
+    "B-"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle le receveur universel !",
+   "voix_reponse": "A B positif !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Comment appelle-t-on le fils d'un roi ?",
+   "choix": [
+    "Le duc",
+    "Le prince",
+    "Le comte",
+    "Le chevalier"
+   ],
+   "reponse": 1,
+   "bonus": "Et le fils aîné devient souvent roi !",
+   "voix_reponse": "Le prince !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✨",
+   "question": "Comment s'appelle un groupe d'étoiles qui forme un dessin ?",
+   "choix": [
+    "Une galaxie",
+    "Une constellation",
+    "Une nébuleuse",
+    "Une comète"
+   ],
+   "reponse": 1,
+   "bonus": "Comme la Grande Ourse !",
+   "voix_reponse": "Une constellation !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🕷️",
+   "question": "Quel super-héros a été piqué par une araignée ?",
+   "choix": [
+    "Batman",
+    "Spider-Man",
+    "Superman",
+    "Hulk"
+   ],
+   "reponse": 1,
+   "bonus": "Peter Parker !",
+   "voix_reponse": "Spider-Man !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔢",
+   "question": "Combien de zéros y a-t-il dans un million ?",
+   "choix": [
+    "3",
+    "6",
+    "9",
+    "12"
+   ],
+   "reponse": 1,
+   "bonus": "Un milliard en a neuf !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel fleuve traverse Bordeaux ?",
+   "choix": [
+    "La Loire",
+    "La Garonne",
+    "La Seine",
+    "Le Rhône"
+   ],
+   "reponse": 1,
+   "bonus": "Il se jette dans l'estuaire de la Gironde !",
+   "voix_reponse": "La Garonne !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

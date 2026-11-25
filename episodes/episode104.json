@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 104",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal a une grande crinière ?",
+   "choix": [
+    "Le tigre",
+    "Le lion",
+    "L'ours",
+    "Le loup"
+   ],
+   "reponse": 1,
+   "bonus": "Seulement le mâle !",
+   "voix_reponse": "Le lion !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥕",
+   "question": "Quel animal adore les carottes dans les dessins animés ?",
+   "choix": [
+    "Le chat",
+    "Le lapin",
+    "Le chien",
+    "La souris"
+   ],
+   "reponse": 1,
+   "bonus": "Comme Bugs Bunny !",
+   "voix_reponse": "Le lapin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Royaume-Uni ?",
+   "choix": [
+    "Manchester",
+    "Londres",
+    "Liverpool",
+    "Édimbourg"
+   ],
+   "reponse": 1,
+   "bonus": "Traversée par la Tamise !",
+   "voix_reponse": "Londres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Dans quel sport porte-t-on un bonnet et des lunettes dans l'eau ?",
+   "choix": [
+    "Le ski",
+    "La natation",
+    "Le judo",
+    "Le golf"
+   ],
+   "reponse": 1,
+   "bonus": "Pour aller plus vite et protéger les yeux !",
+   "voix_reponse": "La natation !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👁️",
+   "question": "Comment s'appelle le médecin des yeux ?",
+   "choix": [
+    "Le dentiste",
+    "L'ophtalmologue",
+    "Le cardiologue",
+    "Le pédiatre"
+   ],
+   "reponse": 1,
+   "bonus": "On dit souvent « l'ophtalmo » !",
+   "voix_reponse": "L'ophtalmologue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Comment s'appelaient les combattants des arènes romaines ?",
+   "choix": [
+    "Les chevaliers",
+    "Les gladiateurs",
+    "Les samouraïs",
+    "Les mousquetaires"
+   ],
+   "reponse": 1,
+   "bonus": "Ils combattaient devant des milliers de spectateurs !",
+   "voix_reponse": "Les gladiateurs !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌈",
+   "question": "Quelle couleur est tout en haut d'un arc-en-ciel ?",
+   "choix": [
+    "Violet",
+    "Rouge",
+    "Jaune",
+    "Bleu"
+   ],
+   "reponse": 1,
+   "bonus": "Et le violet est tout en bas !",
+   "voix_reponse": "Rouge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐭",
+   "question": "Quelle est la souris la plus célèbre de Disney ?",
+   "choix": [
+    "Jerry",
+    "Mickey",
+    "Speedy",
+    "Stuart"
+   ],
+   "reponse": 1,
+   "bonus": "Née en 1928 !",
+   "voix_reponse": "Mickey !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "♨️",
+   "question": "À quelle température l'eau bout-elle, au niveau de la mer ?",
+   "choix": [
+    "50 °C",
+    "100 °C",
+    "150 °C",
+    "200 °C"
+   ],
+   "reponse": 1,
+   "bonus": "Et elle gèle à 0 °C !",
+   "voix_reponse": "Cent degrés !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Dans quel pays se trouve la ville de Rio de Janeiro ?",
+   "choix": [
+    "L'Argentine",
+    "Le Brésil",
+    "Le Portugal",
+    "Le Mexique"
+   ],
+   "reponse": 1,
+   "bonus": "Célèbre pour son carnaval !",
+   "voix_reponse": "Le Brésil !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

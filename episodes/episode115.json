@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 115",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri du serpent ?",
+   "choix": [
+    "Il siffle",
+    "Il grogne",
+    "Il chante",
+    "Il hulule"
+   ],
+   "reponse": 0,
+   "bonus": "Le hibou, lui, hulule !",
+   "voix_reponse": "Il siffle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫖",
+   "question": "Quelle boisson chaude prépare-t-on en faisant infuser des feuilles ?",
+   "choix": [
+    "Le café",
+    "Le thé",
+    "Le chocolat",
+    "Le lait"
+   ],
+   "reponse": 1,
+   "bonus": "Les Anglais en boivent à 17 h !",
+   "voix_reponse": "Le thé !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚴",
+   "question": "Dans quelle ville le Tour de France se termine-t-il traditionnellement ?",
+   "choix": [
+    "Lyon",
+    "Paris",
+    "Nice",
+    "Marseille"
+   ],
+   "reponse": 1,
+   "bonus": "Sur les Champs-Élysées !",
+   "voix_reponse": "À Paris !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Combien de points marque-t-on au premier point gagné d'un jeu de tennis ?",
+   "choix": [
+    "1",
+    "10",
+    "15",
+    "5"
+   ],
+   "reponse": 2,
+   "bonus": "Puis 30, puis 40 !",
+   "voix_reponse": "Quinze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫁",
+   "question": "Quels organes sont protégés par les côtes ?",
+   "choix": [
+    "Le cerveau",
+    "Le cœur et les poumons",
+    "Les pieds",
+    "Les yeux"
+   ],
+   "reponse": 1,
+   "bonus": "Une vraie cage de protection !",
+   "voix_reponse": "Le cœur et les poumons !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚔️",
+   "question": "Qui est le chef du village dans Astérix ?",
+   "choix": [
+    "Obélix",
+    "Abraracourcix",
+    "Panoramix",
+    "Idéfix"
+   ],
+   "reponse": 1,
+   "bonus": "Il a peur que le ciel lui tombe sur la tête !",
+   "voix_reponse": "Abraracourcix !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌦️",
+   "question": "Que faut-il pour voir un arc-en-ciel ?",
+   "choix": [
+    "De la neige et du vent",
+    "Du soleil et de la pluie",
+    "La nuit noire",
+    "Du brouillard"
+   ],
+   "reponse": 1,
+   "bonus": "Le soleil dans le dos, la pluie devant !",
+   "voix_reponse": "Du soleil et de la pluie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧊",
+   "question": "Quelle princesse de Disney a des pouvoirs de glace ?",
+   "choix": [
+    "Anna",
+    "Elsa",
+    "Vaiana",
+    "Raiponce"
+   ],
+   "reponse": 1,
+   "bonus": "Libérée, délivrée !",
+   "voix_reponse": "Elsa !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font six fois sept ?",
+   "choix": [
+    "36",
+    "42",
+    "48",
+    "49"
+   ],
+   "reponse": 1,
+   "bonus": "Un classique des tables !",
+   "voix_reponse": "Quarante-deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quelle mer sépare la France de l'Angleterre ?",
+   "choix": [
+    "La mer du Nord",
+    "La Manche",
+    "La Méditerranée",
+    "La mer Baltique"
+   ],
+   "reponse": 1,
+   "bonus": "Les Anglais l'appellent « English Channel » !",
+   "voix_reponse": "La Manche !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

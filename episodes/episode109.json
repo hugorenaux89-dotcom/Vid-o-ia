@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 109",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal fait « coin-coin » ?",
+   "choix": [
+    "L'oie",
+    "Le canard",
+    "Le cygne",
+    "La poule"
+   ],
+   "reponse": 1,
+   "bonus": "On dit qu'il cancane !",
+   "voix_reponse": "Le canard !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍽️",
+   "question": "Quel fruit a une peau poilue et une chair verte ?",
+   "choix": [
+    "La pêche",
+    "Le kiwi",
+    "La poire",
+    "La prune"
+   ],
+   "reponse": 1,
+   "bonus": "Riche en vitamine C !",
+   "voix_reponse": "Le kiwi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌸",
+   "question": "Quelle ville est surnommée la Ville rose ?",
+   "choix": [
+    "Lyon",
+    "Toulouse",
+    "Bordeaux",
+    "Nantes"
+   ],
+   "reponse": 1,
+   "bonus": "À cause de la couleur de ses briques !",
+   "voix_reponse": "Toulouse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏆",
+   "question": "Dans quel sport gagne-t-on la Coupe du monde FIFA ?",
+   "choix": [
+    "Le rugby",
+    "Le football",
+    "Le basket",
+    "Le tennis"
+   ],
+   "reponse": 1,
+   "bonus": "Elle a lieu tous les 4 ans !",
+   "voix_reponse": "Le football !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦶",
+   "question": "Combien d'orteils a-t-on à chaque pied ?",
+   "choix": [
+    "4",
+    "5",
+    "6",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "Le plus gros s'appelle l'hallux !",
+   "voix_reponse": "Cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚔️",
+   "question": "Avec quoi se battaient les chevaliers ?",
+   "choix": [
+    "Un pistolet",
+    "Une épée",
+    "Un arc à flèches seulement",
+    "Un fusil"
+   ],
+   "reponse": 1,
+   "bonus": "Protégés par une lourde armure !",
+   "voix_reponse": "Une épée !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌞",
+   "question": "Le Soleil se lève de quel côté ?",
+   "choix": [
+    "À l'ouest",
+    "À l'est",
+    "Au nord",
+    "Au sud"
+   ],
+   "reponse": 1,
+   "bonus": "Et il se couche à l'ouest !",
+   "voix_reponse": "À l'est !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👸",
+   "question": "Quelle princesse dort pendant cent ans ?",
+   "choix": [
+    "Cendrillon",
+    "La Belle au bois dormant",
+    "Raiponce",
+    "Blanche-Neige"
+   ],
+   "reponse": 1,
+   "bonus": "Réveillée par un baiser !",
+   "voix_reponse": "La Belle au bois dormant !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⏱️",
+   "question": "Combien de minutes dure un quart d'heure ?",
+   "choix": [
+    "10",
+    "15",
+    "20",
+    "25"
+   ],
+   "reponse": 1,
+   "bonus": "Un quart de 60 !",
+   "voix_reponse": "Quinze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel pays a pour capitale Bruxelles ?",
+   "choix": [
+    "Les Pays-Bas",
+    "La Belgique",
+    "La Suisse",
+    "Le Luxembourg"
+   ],
+   "reponse": 1,
+   "bonus": "Le pays des frites et des gaufres !",
+   "voix_reponse": "La Belgique !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

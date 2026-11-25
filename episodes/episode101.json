@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 101",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit du chien ?",
+   "choix": [
+    "Le chaton",
+    "Le chiot",
+    "Le louveteau",
+    "Le poulain"
+   ],
+   "reponse": 1,
+   "bonus": "Il ouvre les yeux vers deux semaines !",
+   "voix_reponse": "Le chiot !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍏",
+   "question": "Quel fruit empoisonné croque Blanche-Neige ?",
+   "choix": [
+    "Une poire",
+    "Une pomme",
+    "Une cerise",
+    "Une pêche"
+   ],
+   "reponse": 1,
+   "bonus": "Offert par la méchante reine déguisée !",
+   "voix_reponse": "Une pomme !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de l'Italie ?",
+   "choix": [
+    "Milan",
+    "Rome",
+    "Venise",
+    "Naples"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommée la Ville éternelle !",
+   "voix_reponse": "Rome !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Combien de buts y a-t-il sur un terrain de foot ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 1,
+   "bonus": "Un pour chaque équipe !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Combien de dents de sagesse peut-on avoir, au maximum ?",
+   "choix": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "reponse": 1,
+   "bonus": "Certaines personnes n'en ont aucune !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎖️",
+   "question": "Qui était surnommé « le Petit Caporal » ?",
+   "choix": [
+    "Louis XIV",
+    "Napoléon",
+    "Charlemagne",
+    "De Gaulle"
+   ],
+   "reponse": 1,
+   "bonus": "Un surnom donné par ses soldats !",
+   "voix_reponse": "Napoléon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌙",
+   "question": "Comment s'appelle la Lune quand elle est toute ronde et éclairée ?",
+   "choix": [
+    "La nouvelle lune",
+    "La pleine lune",
+    "Le croissant",
+    "Le quartier"
+   ],
+   "reponse": 1,
+   "bonus": "Elle revient environ une fois par mois !",
+   "voix_reponse": "La pleine lune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛄",
+   "question": "Comment s'appelle le bonhomme de neige de La Reine des neiges ?",
+   "choix": [
+    "Sven",
+    "Olaf",
+    "Kristoff",
+    "Hans"
+   ],
+   "reponse": 1,
+   "bonus": "Il adore les gros câlins !",
+   "voix_reponse": "Olaf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font douze fois douze ?",
+   "choix": [
+    "124",
+    "144",
+    "148",
+    "132"
+   ],
+   "reponse": 1,
+   "bonus": "On appelle ça une grosse : 144 !",
+   "voix_reponse": "Cent quarante-quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale du Brésil ?",
+   "choix": [
+    "Rio de Janeiro",
+    "Brasília",
+    "São Paulo",
+    "Salvador"
+   ],
+   "reponse": 1,
+   "bonus": "Pas Rio ! Une ville construite en 1960.",
+   "voix_reponse": "Brasília ! Pas Rio.",
+   "ton_question": "suspense",
+   "ton_reponse": "malicieux",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

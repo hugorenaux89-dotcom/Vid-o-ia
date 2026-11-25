@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 106",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri de la vache ?",
+   "choix": [
+    "Elle bêle",
+    "Elle meugle",
+    "Elle hennit",
+    "Elle caquette"
+   ],
+   "reponse": 1,
+   "bonus": "On dit aussi qu'elle mugit !",
+   "voix_reponse": "Elle meugle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧀",
+   "question": "Quel animal donne le lait de la plupart de nos fromages ?",
+   "choix": [
+    "La chèvre",
+    "La vache",
+    "La brebis",
+    "La bufflonne"
+   ],
+   "reponse": 1,
+   "bonus": "Mais il en existe aussi au lait de chèvre et de brebis !",
+   "voix_reponse": "La vache !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale du Japon ?",
+   "choix": [
+    "Kyoto",
+    "Tokyo",
+    "Osaka",
+    "Hiroshima"
+   ],
+   "reponse": 1,
+   "bonus": "L'une des plus grandes villes du monde !",
+   "voix_reponse": "Tokyo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Quelle est la forme du terrain de rugby ?",
+   "choix": [
+    "Rond",
+    "Rectangulaire",
+    "Triangulaire",
+    "Ovale"
+   ],
+   "reponse": 1,
+   "bonus": "C'est le ballon qui est ovale !",
+   "voix_reponse": "Rectangulaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦴",
+   "question": "Quel os protège le cœur, au milieu de la poitrine ?",
+   "choix": [
+    "Le crâne",
+    "Le sternum",
+    "La rotule",
+    "Le fémur"
+   ],
+   "reponse": 1,
+   "bonus": "Les côtes s'y accrochent !",
+   "voix_reponse": "Le sternum !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Comment appelle-t-on l'épouse d'un roi ?",
+   "choix": [
+    "La princesse",
+    "La reine",
+    "La duchesse",
+    "La comtesse"
+   ],
+   "reponse": 1,
+   "bonus": "Et la fille du roi est une princesse !",
+   "voix_reponse": "La reine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Autour de quoi tourne la Terre ?",
+   "choix": [
+    "La Lune",
+    "Le Soleil",
+    "Mars",
+    "Jupiter"
+   ],
+   "reponse": 1,
+   "bonus": "En un an !",
+   "voix_reponse": "Autour du Soleil !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧸",
+   "question": "Comment s'appelle l'ours qui adore le miel, ami de Porcinet ?",
+   "choix": [
+    "Baloo",
+    "Winnie l'ourson",
+    "Paddington",
+    "Petit Ours brun"
+   ],
+   "reponse": 1,
+   "bonus": "Il vit dans la forêt des Rêves bleus !",
+   "voix_reponse": "Winnie l'ourson !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📅",
+   "question": "Quel mois de l'année a le moins de jours ?",
+   "choix": [
+    "Janvier",
+    "Février",
+    "Avril",
+    "Novembre"
+   ],
+   "reponse": 1,
+   "bonus": "28 ou 29 jours seulement !",
+   "voix_reponse": "Février !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💶",
+   "question": "Quelle monnaie utilise-t-on en France ?",
+   "choix": [
+    "Le franc",
+    "L'euro",
+    "Le dollar",
+    "La livre"
+   ],
+   "reponse": 1,
+   "bonus": "En pièces et billets depuis 2002 !",
+   "voix_reponse": "L'euro !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

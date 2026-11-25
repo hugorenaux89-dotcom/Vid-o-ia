@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 111",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal tisse une toile ?",
+   "choix": [
+    "La fourmi",
+    "L'araignée",
+    "La chenille",
+    "L'abeille"
+   ],
+   "reponse": 1,
+   "bonus": "Avec de la soie très solide !",
+   "voix_reponse": "L'araignée !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥐",
+   "question": "Quelle viennoiserie a une forme de lune ?",
+   "choix": [
+    "Le pain au chocolat",
+    "Le croissant",
+    "La brioche",
+    "Le chausson"
+   ],
+   "reponse": 1,
+   "bonus": "D'où son nom !",
+   "voix_reponse": "Le croissant !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Dans quelle région se trouve Marseille ?",
+   "choix": [
+    "L'Occitanie",
+    "Provence-Alpes-Côte d'Azur",
+    "La Corse",
+    "La Bretagne"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle aussi la région Sud !",
+   "voix_reponse": "Provence-Alpes-Côte d'Azur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥋",
+   "question": "Quelle couleur de ceinture a un champion de judo ?",
+   "choix": [
+    "Blanche",
+    "Noire",
+    "Jaune",
+    "Verte"
+   ],
+   "reponse": 1,
+   "bonus": "La blanche, c'est pour les débutants !",
+   "voix_reponse": "Noire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👅",
+   "question": "Avec quoi goûte-t-on les aliments ?",
+   "choix": [
+    "Le nez",
+    "La langue",
+    "Les dents",
+    "Les lèvres"
+   ],
+   "reponse": 1,
+   "bonus": "Couverte de papilles !",
+   "voix_reponse": "La langue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Comment appelle-t-on le fossé rempli d'eau autour d'un château fort ?",
+   "choix": [
+    "Les remparts",
+    "Les douves",
+    "Le donjon",
+    "Le pont-levis"
+   ],
+   "reponse": 1,
+   "bonus": "Pour empêcher les ennemis d'approcher !",
+   "voix_reponse": "Les douves !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌧️",
+   "question": "D'où vient la pluie ?",
+   "choix": [
+    "De la mer directement",
+    "Des nuages",
+    "Du Soleil",
+    "Des arbres"
+   ],
+   "reponse": 1,
+   "bonus": "Des gouttes d'eau qui deviennent trop lourdes !",
+   "voix_reponse": "Des nuages !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐟",
+   "question": "Quel poisson bleu oublie tout dans Le Monde de Nemo ?",
+   "choix": [
+    "Marin",
+    "Dory",
+    "Bruce",
+    "Gill"
+   ],
+   "reponse": 1,
+   "bonus": "« Continuer de nager ! »",
+   "voix_reponse": "Dory !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔢",
+   "question": "Combien font dix fois dix ?",
+   "choix": [
+    "20",
+    "100",
+    "110",
+    "1 000"
+   ],
+   "reponse": 1,
+   "bonus": "Un 1 suivi de deux zéros !",
+   "voix_reponse": "Cent !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏝️",
+   "question": "Quelle est la plus grande ville de Corse ?",
+   "choix": [
+    "Bastia",
+    "Ajaccio",
+    "Calvi",
+    "Porto-Vecchio"
+   ],
+   "reponse": 1,
+   "bonus": "La ville natale de Napoléon !",
+   "voix_reponse": "Ajaccio !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

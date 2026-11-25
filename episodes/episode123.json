@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 123",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri du corbeau ?",
+   "choix": [
+    "Il coasse",
+    "Il croasse",
+    "Il hulule",
+    "Il caquette"
+   ],
+   "reponse": 1,
+   "bonus": "Croa, croa !",
+   "voix_reponse": "Il croasse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥖",
+   "question": "Comment s'appelle un pain long et plus fin qu'une baguette ?",
+   "choix": [
+    "Le pain de mie",
+    "La ficelle",
+    "La brioche",
+    "La miche"
+   ],
+   "reponse": 1,
+   "bonus": "Encore plus croustillant !",
+   "voix_reponse": "La ficelle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛍️",
+   "question": "Quelle ville du Nord est célèbre pour sa grande braderie ?",
+   "choix": [
+    "Lille",
+    "Amiens",
+    "Calais",
+    "Arras"
+   ],
+   "reponse": 0,
+   "bonus": "La plus grande braderie d'Europe !",
+   "voix_reponse": "Lille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏀",
+   "question": "Comment s'appelle l'endroit où l'on marque au basket ?",
+   "choix": [
+    "Le filet",
+    "Le panier",
+    "Le but",
+    "La cage"
+   ],
+   "reponse": 1,
+   "bonus": "Placé à 3,05 m de haut !",
+   "voix_reponse": "Le panier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖐️",
+   "question": "Comment s'appelle le plus gros doigt de la main ?",
+   "choix": [
+    "L'index",
+    "Le pouce",
+    "Le majeur",
+    "L'auriculaire"
+   ],
+   "reponse": 1,
+   "bonus": "Le seul qui n'a que deux phalanges !",
+   "voix_reponse": "Le pouce !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📖",
+   "question": "Quel Français a inventé l'écriture en relief pour les aveugles ?",
+   "choix": [
+    "Louis Pasteur",
+    "Louis Braille",
+    "Victor Hugo",
+    "Jules Verne"
+   ],
+   "reponse": 1,
+   "bonus": "Il était lui-même aveugle !",
+   "voix_reponse": "Louis Braille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍂",
+   "question": "Quelle saison vient juste après l'été ?",
+   "choix": [
+    "Le printemps",
+    "L'automne",
+    "L'hiver",
+    "Il n'y en a pas"
+   ],
+   "reponse": 1,
+   "bonus": "Quand les feuilles tombent !",
+   "voix_reponse": "L'automne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐭",
+   "question": "Comment s'appelle le chat qui poursuit Jerry ?",
+   "choix": [
+    "Garfield",
+    "Tom",
+    "Grosminet",
+    "Félix"
+   ],
+   "reponse": 1,
+   "bonus": "Il ne l'attrape jamais !",
+   "voix_reponse": "Tom !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font onze fois deux ?",
+   "choix": [
+    "12",
+    "22",
+    "24",
+    "112"
+   ],
+   "reponse": 1,
+   "bonus": "Le double de onze !",
+   "voix_reponse": "Vingt-deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🕌",
+   "question": "Dans quel pays se trouve le Taj Mahal ?",
+   "choix": [
+    "Le Pakistan",
+    "L'Inde",
+    "L'Iran",
+    "Le Népal"
+   ],
+   "reponse": 1,
+   "bonus": "Un monument construit par amour !",
+   "voix_reponse": "L'Inde !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

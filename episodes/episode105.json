@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 105",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri du chien ?",
+   "choix": [
+    "Il miaule",
+    "Il aboie",
+    "Il rugit",
+    "Il hennit"
+   ],
+   "reponse": 1,
+   "bonus": "Il existe aussi des chiens qui n'aboient presque pas !",
+   "voix_reponse": "Il aboie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍞",
+   "question": "Quel est le pain le plus célèbre de France ?",
+   "choix": [
+    "Le pain de mie",
+    "La baguette",
+    "La brioche",
+    "Le pain complet"
+   ],
+   "reponse": 1,
+   "bonus": "Les Français en mangent des millions chaque jour !",
+   "voix_reponse": "La baguette !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Quelle est la capitale de la Russie ?",
+   "choix": [
+    "Saint-Pétersbourg",
+    "Moscou",
+    "Kiev",
+    "Minsk"
+   ],
+   "reponse": 1,
+   "bonus": "Avec sa célèbre place Rouge !",
+   "voix_reponse": "Moscou !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚴",
+   "question": "Quelle célèbre course cycliste a lieu chaque été en France ?",
+   "choix": [
+    "Le Giro",
+    "Le Tour de France",
+    "La Vuelta",
+    "Paris-Roubaix"
+   ],
+   "reponse": 1,
+   "bonus": "Depuis 1903 !",
+   "voix_reponse": "Le Tour de France !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "❤️",
+   "question": "Quel organe fait circuler le sang dans tout le corps ?",
+   "choix": [
+    "Le foie",
+    "Le cœur",
+    "Les poumons",
+    "L'estomac"
+   ],
+   "reponse": 1,
+   "bonus": "Il bat environ 100 000 fois par jour !",
+   "voix_reponse": "Le cœur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quel roi de France était surnommé « le Bien-Aimé » ?",
+   "choix": [
+    "Louis XIV",
+    "Louis XV",
+    "Louis XVI",
+    "Henri IV"
+   ],
+   "reponse": 1,
+   "bonus": "Arrière-petit-fils de Louis XIV !",
+   "voix_reponse": "Louis quinze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "❄️",
+   "question": "En quelle saison tombe la neige le plus souvent ?",
+   "choix": [
+    "Au printemps",
+    "En hiver",
+    "En été",
+    "En automne"
+   ],
+   "reponse": 1,
+   "bonus": "Quand il fait moins de 0 °C !",
+   "voix_reponse": "En hiver !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎬",
+   "question": "Quel petit poisson orange et blanc est perdu dans un film de Pixar ?",
+   "choix": [
+    "Dory",
+    "Nemo",
+    "Marin",
+    "Bubulle"
+   ],
+   "reponse": 1,
+   "bonus": "Dory, elle, est bleue !",
+   "voix_reponse": "Nemo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font neuf fois neuf ?",
+   "choix": [
+    "72",
+    "81",
+    "99",
+    "91"
+   ],
+   "reponse": 1,
+   "bonus": "La dernière de la table de 9 !",
+   "voix_reponse": "Quatre-vingt-un !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗽",
+   "question": "Dans quelle ville se trouve la statue de la Liberté ?",
+   "choix": [
+    "Washington",
+    "New York",
+    "Chicago",
+    "Boston"
+   ],
+   "reponse": 1,
+   "bonus": "Sur une petite île, à l'entrée du port !",
+   "voix_reponse": "New York !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}
