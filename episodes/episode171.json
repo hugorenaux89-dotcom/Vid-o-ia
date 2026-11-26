@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 171",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal a des pattes palmées et un bec plat ?",
+   "choix": [
+    "La poule",
+    "Le canard",
+    "Le pigeon",
+    "Le moineau"
+   ],
+   "reponse": 1,
+   "bonus": "Ses pattes l'aident à nager !",
+   "voix_reponse": "Le canard !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎂",
+   "question": "Quel ingrédient fait gonfler un gâteau ?",
+   "choix": [
+    "Le sel",
+    "La levure chimique",
+    "Le poivre",
+    "L'huile"
+   ],
+   "reponse": 1,
+   "bonus": "Elle libère des bulles de gaz à la cuisson !",
+   "voix_reponse": "La levure chimique !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪵",
+   "question": "Comment s'appelle ce qui reste d'un arbre coupé, au ras du sol ?",
+   "choix": [
+    "La racine",
+    "La souche",
+    "La branche",
+    "L'écorce"
+   ],
+   "reponse": 1,
+   "bonus": "On peut y compter les cernes !",
+   "voix_reponse": "La souche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏆",
+   "question": "Combien d'équipes ont joué la Coupe du monde de foot 2026 ?",
+   "choix": [
+    "32",
+    "40",
+    "48",
+    "64"
+   ],
+   "reponse": 2,
+   "bonus": "Une première, avec trois pays organisateurs !",
+   "voix_reponse": "Quarante-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦶",
+   "question": "Comment s'appelle le dessous du pied ?",
+   "choix": [
+    "Le talon",
+    "La plante",
+    "La cheville",
+    "Le cou-de-pied"
+   ],
+   "reponse": 1,
+   "bonus": "La plante des pieds chatouille beaucoup !",
+   "voix_reponse": "La plante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Qui a écrit Le Tour du monde en 80 jours ?",
+   "choix": [
+    "Victor Hugo",
+    "Jules Verne",
+    "Alexandre Dumas",
+    "Molière"
+   ],
+   "reponse": 1,
+   "bonus": "Avec Phileas Fogg et Passepartout !",
+   "voix_reponse": "Jules Verne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Comment s'appelle une énorme coulée de neige qui dévale une montagne ?",
+   "choix": [
+    "Un séisme",
+    "Une avalanche",
+    "Un glacier",
+    "Une coulée de lave"
+   ],
+   "reponse": 1,
+   "bonus": "Très dangereuse pour les skieurs !",
+   "voix_reponse": "Une avalanche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quel chanteur français a chanté « La Bohème » ?",
+   "choix": [
+    "Johnny Hallyday",
+    "Charles Aznavour",
+    "Jacques Brel",
+    "Serge Gainsbourg"
+   ],
+   "reponse": 1,
+   "bonus": "Une chanson de 1965 !",
+   "voix_reponse": "Charles Aznavour !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➗",
+   "question": "Combien font soixante divisé par quatre ?",
+   "choix": [
+    "12",
+    "15",
+    "20",
+    "24"
+   ],
+   "reponse": 1,
+   "bonus": "Un quart d'heure !",
+   "voix_reponse": "Quinze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐫",
+   "question": "Dans quel pays se trouve une grande partie du désert de Gobi ?",
+   "choix": [
+    "Le Maroc",
+    "La Mongolie",
+    "L'Inde",
+    "Le Pérou"
+   ],
+   "reponse": 1,
+   "bonus": "Il s'étend aussi en Chine !",
+   "voix_reponse": "La Mongolie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

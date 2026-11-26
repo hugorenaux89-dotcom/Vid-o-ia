@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 177",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐘",
+   "question": "Combien de temps vit un éléphant, environ ?",
+   "choix": [
+    "10 ans",
+    "60 à 70 ans",
+    "200 ans",
+    "5 ans"
+   ],
+   "reponse": 1,
+   "bonus": "Presque autant qu'un humain !",
+   "voix_reponse": "Soixante à soixante-dix ans !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⭐",
+   "question": "Quel fruit a la forme d'une étoile quand on le coupe ?",
+   "choix": [
+    "Le kiwi",
+    "La carambole",
+    "La banane",
+    "La poire"
+   ],
+   "reponse": 1,
+   "bonus": "Un fruit tropical très décoratif !",
+   "voix_reponse": "La carambole !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌸",
+   "question": "Comment s'appelle la poudre jaune des fleurs ?",
+   "choix": [
+    "Le nectar",
+    "Le pollen",
+    "La sève",
+    "La résine"
+   ],
+   "reponse": 1,
+   "bonus": "Elle fait éternuer certaines personnes !",
+   "voix_reponse": "Le pollen !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛷",
+   "question": "Quel sport de glisse se pratique allongé sur un petit traîneau ?",
+   "choix": [
+    "Le bobsleigh",
+    "La luge",
+    "Le curling",
+    "Le biathlon"
+   ],
+   "reponse": 1,
+   "bonus": "À plus de 140 km/h !",
+   "voix_reponse": "La luge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦯",
+   "question": "Comment appelle-t-on une personne qui ne voit pas ?",
+   "choix": [
+    "Sourde",
+    "Aveugle",
+    "Muette",
+    "Myope"
+   ],
+   "reponse": 1,
+   "bonus": "Elle peut lire grâce au braille !",
+   "voix_reponse": "Aveugle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌉",
+   "question": "Quel est le plus vieux pont de Paris, malgré son nom ?",
+   "choix": [
+    "Le pont Alexandre-III",
+    "Le Pont-Neuf",
+    "Le pont des Arts",
+    "Le pont de l'Alma"
+   ],
+   "reponse": 1,
+   "bonus": "Terminé en 1607 !",
+   "voix_reponse": "Le Pont-Neuf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧊",
+   "question": "Quel est le continent le plus froid ?",
+   "choix": [
+    "L'Europe",
+    "L'Antarctique",
+    "L'Asie",
+    "L'Amérique du Nord"
+   ],
+   "reponse": 1,
+   "bonus": "Jusqu'à -89 °C !",
+   "voix_reponse": "L'Antarctique !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐢",
+   "question": "Comment s'appelle le grand méchant tortue-dragon de Mario ?",
+   "choix": [
+    "Wario",
+    "Bowser",
+    "Ganon",
+    "Eggman"
+   ],
+   "reponse": 1,
+   "bonus": "Il enlève toujours la princesse !",
+   "voix_reponse": "Bowser !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font cinq cents plus cinq cents ?",
+   "choix": [
+    "500",
+    "1 000",
+    "1 500",
+    "10 000"
+   ],
+   "reponse": 1,
+   "bonus": "Mille !",
+   "voix_reponse": "Mille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚢",
+   "question": "Quel canal relie l'Atlantique et le Pacifique ?",
+   "choix": [
+    "Le canal de Suez",
+    "Le canal de Panama",
+    "Le canal du Midi",
+    "Le canal de Corinthe"
+   ],
+   "reponse": 1,
+   "bonus": "Il évite de faire le tour de l'Amérique du Sud !",
+   "voix_reponse": "Le canal de Panama !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

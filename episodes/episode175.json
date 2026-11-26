@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 175",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel est le plus grand rongeur du monde ?",
+   "choix": [
+    "Le castor",
+    "Le capybara",
+    "Le rat",
+    "Le porc-épic"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut peser 60 kg !",
+   "voix_reponse": "Le capybara !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍋",
+   "question": "Quel fruit utilise-t-on pour la tarte meringuée ?",
+   "choix": [
+    "L'orange",
+    "Le citron",
+    "La fraise",
+    "La pomme"
+   ],
+   "reponse": 1,
+   "bonus": "Acide et sucrée à la fois !",
+   "voix_reponse": "Le citron !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧙",
+   "question": "Dans quelle forêt de Bretagne vivrait l'enchanteur Merlin ?",
+   "choix": [
+    "Fontainebleau",
+    "Brocéliande",
+    "Les Landes",
+    "Compiègne"
+   ],
+   "reponse": 1,
+   "bonus": "Une forêt de légendes !",
+   "voix_reponse": "Brocéliande !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎱",
+   "question": "Quel jeu se joue sur une table verte avec des boules et une queue ?",
+   "choix": [
+    "Le golf",
+    "Le billard",
+    "Le bowling",
+    "La pétanque"
+   ],
+   "reponse": 1,
+   "bonus": "Il faut viser les trous !",
+   "voix_reponse": "Le billard !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫘",
+   "question": "Quel organe a la forme d'un gros haricot ?",
+   "choix": [
+    "Le cœur",
+    "Le rein",
+    "Le foie",
+    "Le poumon"
+   ],
+   "reponse": 1,
+   "bonus": "Il filtre le sang !",
+   "voix_reponse": "Le rein !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗽",
+   "question": "Qui a sculpté la statue de la Liberté ?",
+   "choix": [
+    "Rodin",
+    "Bartholdi",
+    "Eiffel",
+    "Michel-Ange"
+   ],
+   "reponse": 1,
+   "bonus": "Un sculpteur français de Colmar !",
+   "voix_reponse": "Bartholdi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌕",
+   "question": "Sur quel astre se trouve la mer de la Tranquillité ?",
+   "choix": [
+    "Mars",
+    "La Lune",
+    "Vénus",
+    "Jupiter"
+   ],
+   "reponse": 1,
+   "bonus": "Là où Apollo 11 s'est posé !",
+   "voix_reponse": "La Lune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚢",
+   "question": "Quelle chanteuse a interprété la chanson du film Titanic ?",
+   "choix": [
+    "Lara Fabian",
+    "Céline Dion",
+    "Mylène Farmer",
+    "Adele"
+   ],
+   "reponse": 1,
+   "bonus": "« My Heart Will Go On » !",
+   "voix_reponse": "Céline Dion !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➖",
+   "question": "Combien font cent moins quarante ?",
+   "choix": [
+    "40",
+    "50",
+    "60",
+    "70"
+   ],
+   "reponse": 2,
+   "bonus": "Soixante !",
+   "voix_reponse": "Soixante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌍",
+   "question": "Dans quel pays se trouve la ville de Lagos ?",
+   "choix": [
+    "Le Ghana",
+    "Le Nigeria",
+    "Le Kenya",
+    "L'Angola"
+   ],
+   "reponse": 1,
+   "bonus": "L'une des plus grandes villes d'Afrique !",
+   "voix_reponse": "Le Nigeria !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

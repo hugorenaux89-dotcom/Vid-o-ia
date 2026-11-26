@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 178",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le petit du chameau ?",
+   "choix": [
+    "Le chamelon",
+    "Le poulain",
+    "Le veau",
+    "Le faon"
+   ],
+   "reponse": 0,
+   "bonus": "Il naît sans bosse !",
+   "voix_reponse": "Le chamelon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥗",
+   "question": "Quel petit légume rouge et croquant pousse sous terre ?",
+   "choix": [
+    "Le radis",
+    "La tomate",
+    "Le poivron",
+    "La fraise"
+   ],
+   "reponse": 0,
+   "bonus": "Délicieux avec du beurre et du sel !",
+   "voix_reponse": "Le radis !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌰",
+   "question": "Quel fruit pousse sur le noyer ?",
+   "choix": [
+    "La noisette",
+    "La noix",
+    "L'amande",
+    "La châtaigne"
+   ],
+   "reponse": 1,
+   "bonus": "Dans une coque dure !",
+   "voix_reponse": "La noix !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏑",
+   "question": "Quel sport se joue avec une crosse et une balle sur du gazon ?",
+   "choix": [
+    "Le cricket",
+    "Le hockey sur gazon",
+    "Le polo",
+    "Le golf"
+   ],
+   "reponse": 1,
+   "bonus": "Comme le hockey, mais sans glace !",
+   "voix_reponse": "Le hockey sur gazon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦵",
+   "question": "Quel muscle se trouve sur le devant de la cuisse ?",
+   "choix": [
+    "Le mollet",
+    "Le quadriceps",
+    "Le biceps",
+    "Le fessier"
+   ],
+   "reponse": 1,
+   "bonus": "Il est formé de quatre muscles !",
+   "voix_reponse": "Le quadriceps !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💶",
+   "question": "En quelle année les pièces et billets en euros sont-ils arrivés ?",
+   "choix": [
+    "1992",
+    "1999",
+    "2002",
+    "2010"
+   ],
+   "reponse": 2,
+   "bonus": "Le 1er janvier !",
+   "voix_reponse": "Deux mille deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥶",
+   "question": "Quelle est la température la plus froide jamais mesurée sur Terre ?",
+   "choix": [
+    "-20 °C",
+    "-50 °C",
+    "-89 °C",
+    "-150 °C"
+   ],
+   "reponse": 2,
+   "bonus": "En Antarctique, en 1983 !",
+   "voix_reponse": "Moins quatre-vingt-neuf degrés !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦀",
+   "question": "Comment s'appelle le crabe qui chante « Sous l'océan » ?",
+   "choix": [
+    "Polochon",
+    "Sébastien",
+    "Eurêka",
+    "Flotsam"
+   ],
+   "reponse": 1,
+   "bonus": "Le conseiller du roi Triton !",
+   "voix_reponse": "Sébastien !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font quatre fois onze ?",
+   "choix": [
+    "40",
+    "41",
+    "44",
+    "48"
+   ],
+   "reponse": 2,
+   "bonus": "Quarante-quatre !",
+   "voix_reponse": "Quarante-quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏙️",
+   "question": "Dans quel pays se trouve la ville de Chicago ?",
+   "choix": [
+    "Le Canada",
+    "Les États-Unis",
+    "Le Mexique",
+    "L'Angleterre"
+   ],
+   "reponse": 1,
+   "bonus": "Au bord du lac Michigan !",
+   "voix_reponse": "Les États-Unis !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

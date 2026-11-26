@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 180",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐦",
+   "question": "Quel est le plus petit oiseau du monde ?",
+   "choix": [
+    "Le moineau",
+    "Le colibri",
+    "La mésange",
+    "Le roitelet"
+   ],
+   "reponse": 1,
+   "bonus": "Le colibri d'Elena : 5 cm !",
+   "voix_reponse": "Le colibri !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍚",
+   "question": "Quel pays produit le plus de riz au monde ?",
+   "choix": [
+    "L'Inde",
+    "La Chine",
+    "Le Japon",
+    "La Thaïlande"
+   ],
+   "reponse": 1,
+   "bonus": "Juste devant l'Inde !",
+   "voix_reponse": "La Chine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌿",
+   "question": "Quelle plante donne le coton ?",
+   "choix": [
+    "Le lin",
+    "Le cotonnier",
+    "Le chanvre",
+    "Le bambou"
+   ],
+   "reponse": 1,
+   "bonus": "Ses fibres sont comme des boules blanches !",
+   "voix_reponse": "Le cotonnier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel club de foot joue au stade Vélodrome ?",
+   "choix": [
+    "Le PSG",
+    "L'OM",
+    "L'OL",
+    "L'ASSE"
+   ],
+   "reponse": 1,
+   "bonus": "À Marseille !",
+   "voix_reponse": "L'OM !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Avec quoi nettoie-t-on entre les dents ?",
+   "choix": [
+    "Un peigne",
+    "Du fil dentaire",
+    "Une pince",
+    "Une lime"
+   ],
+   "reponse": 1,
+   "bonus": "Pour enlever ce que la brosse rate !",
+   "voix_reponse": "Du fil dentaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏹",
+   "question": "Quelle était l'arme principale des archers ?",
+   "choix": [
+    "L'épée",
+    "L'arc",
+    "La lance",
+    "La hache"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des flèches !",
+   "voix_reponse": "L'arc !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Que va devenir le Soleil dans des milliards d'années ?",
+   "choix": [
+    "Une supernova demain",
+    "Une géante rouge",
+    "Une planète",
+    "Une comète"
+   ],
+   "reponse": 1,
+   "bonus": "Il va gonfler énormément !",
+   "voix_reponse": "Une géante rouge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐗",
+   "question": "Qui chante « Hakuna Matata » avec Timon ?",
+   "choix": [
+    "Rafiki",
+    "Pumbaa",
+    "Zazu",
+    "Scar"
+   ],
+   "reponse": 1,
+   "bonus": "Un phacochère très drôle !",
+   "voix_reponse": "Pumbaa !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font mille plus mille ?",
+   "choix": [
+    "1 100",
+    "2 000",
+    "2 100",
+    "10 000"
+   ],
+   "reponse": 1,
+   "bonus": "Deux mille !",
+   "voix_reponse": "Deux mille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚓",
+   "question": "Dans quel pays se trouve le port de Valparaíso ?",
+   "choix": [
+    "L'Argentine",
+    "Le Chili",
+    "Le Pérou",
+    "Le Mexique"
+   ],
+   "reponse": 1,
+   "bonus": "Une ville aux maisons colorées !",
+   "voix_reponse": "Le Chili !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

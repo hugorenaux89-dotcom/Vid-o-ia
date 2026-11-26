@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 179",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐝",
+   "question": "Comment appelle-t-on le bruit de l'abeille ?",
+   "choix": [
+    "Elle bourdonne",
+    "Elle siffle",
+    "Elle chante",
+    "Elle grogne"
+   ],
+   "reponse": 0,
+   "bonus": "Bzzz !",
+   "voix_reponse": "Elle bourdonne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍫",
+   "question": "Quel ingrédient rend la mousse au chocolat légère ?",
+   "choix": [
+    "La farine",
+    "Les blancs d'œufs",
+    "Le riz",
+    "Les pâtes"
+   ],
+   "reponse": 1,
+   "bonus": "Battus en neige !",
+   "voix_reponse": "Les blancs d'œufs !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Combien y a-t-il de volcans actifs en France métropolitaine ?",
+   "choix": [
+    "0",
+    "3",
+    "10",
+    "25"
+   ],
+   "reponse": 0,
+   "bonus": "Ceux d'Auvergne sont endormis !",
+   "voix_reponse": "Aucun !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏃",
+   "question": "Quelle est la course de sprint la plus courte aux JO ?",
+   "choix": [
+    "50 m",
+    "100 m",
+    "200 m",
+    "400 m"
+   ],
+   "reponse": 1,
+   "bonus": "La reine des épreuves !",
+   "voix_reponse": "Le cent mètres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Quelle partie du cerveau, à l'arrière, aide à garder l'équilibre ?",
+   "choix": [
+    "Le cortex",
+    "Le cervelet",
+    "Le lobe frontal",
+    "La moelle"
+   ],
+   "reponse": 1,
+   "bonus": "Le « petit cerveau » !",
+   "voix_reponse": "Le cervelet !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Qui était le premier roi capétien ?",
+   "choix": [
+    "Charlemagne",
+    "Hugues Capet",
+    "Clovis",
+    "Louis XIV"
+   ],
+   "reponse": 1,
+   "bonus": "Couronné en 987 !",
+   "voix_reponse": "Hugues Capet !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌧️",
+   "question": "Que veut dire « il pleut des cordes » ?",
+   "choix": [
+    "Il pleut très fort",
+    "Il neige",
+    "Il fait beau",
+    "Il grêle"
+   ],
+   "reponse": 0,
+   "bonus": "Prends ton parapluie !",
+   "voix_reponse": "Il pleut très fort !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😊",
+   "question": "Quel chanteur a chanté « Happy » ?",
+   "choix": [
+    "Bruno Mars",
+    "Pharrell Williams",
+    "Justin Timberlake",
+    "The Weeknd"
+   ],
+   "reponse": 1,
+   "bonus": "Avec son grand chapeau !",
+   "voix_reponse": "Pharrell Williams !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➗",
+   "question": "Combien font quatre-vingts divisé par quatre ?",
+   "choix": [
+    "16",
+    "20",
+    "25",
+    "40"
+   ],
+   "reponse": 1,
+   "bonus": "Vingt !",
+   "voix_reponse": "Vingt !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌺",
+   "question": "Quel est le chef-lieu de la Polynésie française ?",
+   "choix": [
+    "Nouméa",
+    "Papeete",
+    "Bora-Bora",
+    "Moorea"
+   ],
+   "reponse": 1,
+   "bonus": "Sur l'île de Tahiti !",
+   "voix_reponse": "Papeete !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

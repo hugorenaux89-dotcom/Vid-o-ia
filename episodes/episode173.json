@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 173",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐠",
+   "question": "Quel poisson orange et blanc vit dans les anémones de mer ?",
+   "choix": [
+    "Le poisson-chat",
+    "Le poisson-clown",
+    "Le poisson rouge",
+    "Le poisson-lune"
+   ],
+   "reponse": 1,
+   "bonus": "Comme Nemo !",
+   "voix_reponse": "Le poisson-clown !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎄",
+   "question": "Quelle brioche italienne aux fruits confits mange-t-on à Noël ?",
+   "choix": [
+    "La focaccia",
+    "Le panettone",
+    "La ciabatta",
+    "Le pain d'épices"
+   ],
+   "reponse": 1,
+   "bonus": "Elle vient de Milan !",
+   "voix_reponse": "Le panettone !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌼",
+   "question": "Quelle fleur blanche offre-t-on le 1er mai ?",
+   "choix": [
+    "La rose",
+    "Le muguet",
+    "La tulipe",
+    "La violette"
+   ],
+   "reponse": 1,
+   "bonus": "Elle porte bonheur !",
+   "voix_reponse": "Le muguet !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🟥",
+   "question": "De quelle couleur est le carton qui exclut un joueur ?",
+   "choix": [
+    "Jaune",
+    "Rouge",
+    "Vert",
+    "Bleu"
+   ],
+   "reponse": 1,
+   "bonus": "Direction les vestiaires !",
+   "voix_reponse": "Rouge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💀",
+   "question": "Quel os forme le front ?",
+   "choix": [
+    "Le frontal",
+    "Le temporal",
+    "L'occipital",
+    "Le maxillaire"
+   ],
+   "reponse": 0,
+   "bonus": "Facile, avec ce nom !",
+   "voix_reponse": "Le frontal !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏹",
+   "question": "Quel héros grec avait un seul point faible, au talon ?",
+   "choix": [
+    "Ulysse",
+    "Achille",
+    "Hercule",
+    "Persée"
+   ],
+   "reponse": 1,
+   "bonus": "D'où le « tendon d'Achille » !",
+   "voix_reponse": "Achille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌬️",
+   "question": "Quel instrument mesure la vitesse du vent ?",
+   "choix": [
+    "Le thermomètre",
+    "L'anémomètre",
+    "Le pluviomètre",
+    "Le baromètre"
+   ],
+   "reponse": 1,
+   "bonus": "Avec ses petites coupelles qui tournent !",
+   "voix_reponse": "L'anémomètre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍄",
+   "question": "Quelle princesse Mario doit-il souvent sauver ?",
+   "choix": [
+    "Zelda",
+    "Peach",
+    "Daisy",
+    "Harmonie"
+   ],
+   "reponse": 1,
+   "bonus": "La princesse du royaume Champignon !",
+   "voix_reponse": "Peach !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font quatre-vingt-dix plus quinze ?",
+   "choix": [
+    "95",
+    "100",
+    "105",
+    "115"
+   ],
+   "reponse": 2,
+   "bonus": "Cent cinq !",
+   "voix_reponse": "Cent cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌴",
+   "question": "Quelle île française des Antilles a pour chef-lieu Fort-de-France ?",
+   "choix": [
+    "La Guadeloupe",
+    "La Martinique",
+    "La Réunion",
+    "Saint-Martin"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommée l'île aux fleurs !",
+   "voix_reponse": "La Martinique !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

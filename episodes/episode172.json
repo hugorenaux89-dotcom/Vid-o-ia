@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 172",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🦁",
+   "question": "Combien d'heures un lion dort-il par jour, environ ?",
+   "choix": [
+    "2 heures",
+    "Environ 20 heures",
+    "8 heures",
+    "1 heure"
+   ],
+   "reponse": 1,
+   "bonus": "Il économise son énergie pour chasser !",
+   "voix_reponse": "Environ vingt heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍊",
+   "question": "Comment s'appelle une confiture faite avec des agrumes ?",
+   "choix": [
+    "La compote",
+    "La marmelade",
+    "La gelée",
+    "Le coulis"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent à l'orange amère !",
+   "voix_reponse": "La marmelade !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪨",
+   "question": "Comment s'appelle la science qui étudie les roches et la Terre ?",
+   "choix": [
+    "La biologie",
+    "La géologie",
+    "L'astronomie",
+    "La chimie"
+   ],
+   "reponse": 1,
+   "bonus": "« Géo » veut dire Terre en grec !",
+   "voix_reponse": "La géologie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚵",
+   "question": "Comment s'appelle le vélo fait pour les chemins de montagne ?",
+   "choix": [
+    "Le BMX",
+    "Le VTT",
+    "Le vélo de route",
+    "Le tandem"
+   ],
+   "reponse": 1,
+   "bonus": "Vélo tout-terrain !",
+   "voix_reponse": "Le VTT !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "❤️",
+   "question": "Comment s'appelle le médecin spécialiste du cœur ?",
+   "choix": [
+    "Le dermatologue",
+    "Le cardiologue",
+    "Le dentiste",
+    "L'ophtalmologue"
+   ],
+   "reponse": 1,
+   "bonus": "« Cardio » veut dire cœur en grec !",
+   "voix_reponse": "Le cardiologue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Quel château allemand a inspiré le château de Disney ?",
+   "choix": [
+    "Versailles",
+    "Neuschwanstein",
+    "Chambord",
+    "Windsor"
+   ],
+   "reponse": 1,
+   "bonus": "Perché dans les montagnes de Bavière !",
+   "voix_reponse": "Neuschwanstein !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛰️",
+   "question": "Comment appelle-t-on un objet qui tourne autour d'une planète ?",
+   "choix": [
+    "Une étoile",
+    "Un satellite",
+    "Une galaxie",
+    "Une comète"
+   ],
+   "reponse": 1,
+   "bonus": "Comme la Lune autour de la Terre !",
+   "voix_reponse": "Un satellite !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐷",
+   "question": "Comment s'appelle le petit cochon ami de Winnie ?",
+   "choix": [
+    "Bourriquet",
+    "Porcinet",
+    "Tigrou",
+    "Coco Lapin"
+   ],
+   "reponse": 1,
+   "bonus": "Très peureux, mais très courageux !",
+   "voix_reponse": "Porcinet !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font deux fois deux fois deux ?",
+   "choix": [
+    "4",
+    "6",
+    "8",
+    "16"
+   ],
+   "reponse": 2,
+   "bonus": "Huit !",
+   "voix_reponse": "Huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛩️",
+   "question": "Quelle ville japonaise était la capitale avant Tokyo ?",
+   "choix": [
+    "Osaka",
+    "Kyoto",
+    "Hiroshima",
+    "Nagoya"
+   ],
+   "reponse": 1,
+   "bonus": "Pendant plus de 1 000 ans !",
+   "voix_reponse": "Kyoto !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

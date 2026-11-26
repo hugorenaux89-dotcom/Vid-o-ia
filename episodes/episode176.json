@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 176",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐘",
+   "question": "On dit avoir une mémoire de quel animal ?",
+   "choix": [
+    "De poisson rouge",
+    "D'éléphant",
+    "De chat",
+    "De lapin"
+   ],
+   "reponse": 1,
+   "bonus": "Les éléphants se souviennent très longtemps !",
+   "voix_reponse": "D'éléphant !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍕",
+   "question": "Quelle viande met-on sur une pizza Regina ?",
+   "choix": [
+    "Le chorizo",
+    "Le jambon",
+    "Le poulet",
+    "Le bœuf"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des champignons !",
+   "voix_reponse": "Le jambon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quelle mer se trouve entre l'Afrique et l'Arabie ?",
+   "choix": [
+    "La mer Noire",
+    "La mer Rouge",
+    "La mer Morte",
+    "La Méditerranée"
+   ],
+   "reponse": 1,
+   "bonus": "Avec de magnifiques coraux !",
+   "voix_reponse": "La mer Rouge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Quel sport de raquette à la mode se joue entre des murs vitrés ?",
+   "choix": [
+    "Le badminton",
+    "Le padel",
+    "Le ping-pong",
+    "Le golf"
+   ],
+   "reponse": 1,
+   "bonus": "Toujours en double !",
+   "voix_reponse": "Le padel !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😴",
+   "question": "Quel bruit fait-on parfois en dormant, avec le nez ou la gorge ?",
+   "choix": [
+    "Le hoquet",
+    "Le ronflement",
+    "L'éternuement",
+    "Le bâillement"
+   ],
+   "reponse": 1,
+   "bonus": "Pas toujours agréable pour les voisins !",
+   "voix_reponse": "Le ronflement !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💪",
+   "question": "Quel héros grec a accompli douze travaux ?",
+   "choix": [
+    "Achille",
+    "Hercule",
+    "Ulysse",
+    "Jason"
+   ],
+   "reponse": 1,
+   "bonus": "Héraclès, pour les Grecs !",
+   "voix_reponse": "Hercule !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💚",
+   "question": "Quelle couleur symbolise souvent l'espoir ?",
+   "choix": [
+    "Le noir",
+    "Le vert",
+    "Le gris",
+    "Le marron"
+   ],
+   "reponse": 1,
+   "bonus": "Comme la nature au printemps !",
+   "voix_reponse": "Le vert !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐇",
+   "question": "Comment s'appelle la petite fille qui va au pays des merveilles ?",
+   "choix": [
+    "Wendy",
+    "Alice",
+    "Dorothy",
+    "Lucy"
+   ],
+   "reponse": 1,
+   "bonus": "En suivant un lapin blanc !",
+   "voix_reponse": "Alice !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font trois fois treize ?",
+   "choix": [
+    "33",
+    "36",
+    "39",
+    "42"
+   ],
+   "reponse": 2,
+   "bonus": "Trente-neuf !",
+   "voix_reponse": "Trente-neuf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌎",
+   "question": "Quel pays d'Amérique du Sud porte le nom d'une ligne imaginaire ?",
+   "choix": [
+    "Le Pérou",
+    "L'Équateur",
+    "La Colombie",
+    "Le Chili"
+   ],
+   "reponse": 1,
+   "bonus": "La ligne de l'équateur le traverse !",
+   "voix_reponse": "L'Équateur !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}
