@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 136",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel est le plus grand félin d'Amérique ?",
+   "choix": [
+    "Le puma",
+    "Le jaguar",
+    "Le lynx",
+    "L'ocelot"
+   ],
+   "reponse": 1,
+   "bonus": "Sa morsure est redoutable !",
+   "voix_reponse": "Le jaguar !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍊",
+   "question": "Quel fruit ressemble à une petite orange qu'on épluche facilement ?",
+   "choix": [
+    "Le pamplemousse",
+    "La clémentine",
+    "Le citron",
+    "La mangue"
+   ],
+   "reponse": 1,
+   "bonus": "Star des fêtes de fin d'année !",
+   "voix_reponse": "La clémentine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌳",
+   "question": "Combien de temps un chêne peut-il vivre ?",
+   "choix": [
+    "10 ans",
+    "50 ans",
+    "Plusieurs siècles",
+    "5 ans"
+   ],
+   "reponse": 2,
+   "bonus": "Certains ont plus de 1 000 ans !",
+   "voix_reponse": "Plusieurs siècles !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Dans quel pays le rugby a-t-il été inventé ?",
+   "choix": [
+    "La France",
+    "L'Angleterre",
+    "La Nouvelle-Zélande",
+    "L'Irlande"
+   ],
+   "reponse": 1,
+   "bonus": "Dans la ville de Rugby, d'où son nom !",
+   "voix_reponse": "L'Angleterre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎨",
+   "question": "Comment appelle-t-on une personne qui confond certaines couleurs ?",
+   "choix": [
+    "Myope",
+    "Daltonien",
+    "Presbyte",
+    "Astigmate"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent le rouge et le vert !",
+   "voix_reponse": "Daltonien !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛡️",
+   "question": "Quel peuple vivait en Gaule avant l'arrivée des Romains ?",
+   "choix": [
+    "Les Vikings",
+    "Les Gaulois",
+    "Les Francs",
+    "Les Normands"
+   ],
+   "reponse": 1,
+   "bonus": "Nos ancêtres les Gaulois !",
+   "voix_reponse": "Les Gaulois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Quel volcan domine la ville de Naples ?",
+   "choix": [
+    "L'Etna",
+    "Le Vésuve",
+    "Le Stromboli",
+    "Le Fuji"
+   ],
+   "reponse": 1,
+   "bonus": "Toujours actif aujourd'hui !",
+   "voix_reponse": "Le Vésuve !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗡️",
+   "question": "Quel héros de Nintendo porte une tunique verte pour sauver Zelda ?",
+   "choix": [
+    "Mario",
+    "Link",
+    "Kirby",
+    "Yoshi"
+   ],
+   "reponse": 1,
+   "bonus": "Beaucoup pensent qu'il s'appelle Zelda !",
+   "voix_reponse": "Link !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➗",
+   "question": "Combien font trente divisé par trois ?",
+   "choix": [
+    "3",
+    "10",
+    "15",
+    "90"
+   ],
+   "reponse": 1,
+   "bonus": "Dix !",
+   "voix_reponse": "Dix !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌄",
+   "question": "Quel pays est surnommé « le pays du Matin calme » ?",
+   "choix": [
+    "La Chine",
+    "La Corée",
+    "Le Japon",
+    "Le Vietnam"
+   ],
+   "reponse": 1,
+   "bonus": "Le Japon, c'est le Soleil levant !",
+   "voix_reponse": "La Corée !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

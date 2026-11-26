@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 139",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le mâle de la cane ?",
+   "choix": [
+    "Le jars",
+    "Le canard",
+    "Le coq",
+    "Le dindon"
+   ],
+   "reponse": 1,
+   "bonus": "Le jars, c'est le mâle de l'oie !",
+   "voix_reponse": "Le canard !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥦",
+   "question": "Quel légume vert ressemble à un petit arbre ?",
+   "choix": [
+    "Le chou-fleur",
+    "Le brocoli",
+    "L'artichaut",
+    "La courgette"
+   ],
+   "reponse": 1,
+   "bonus": "Plein de vitamines !",
+   "voix_reponse": "Le brocoli !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌹",
+   "question": "Quelle fleur est le symbole de l'amour ?",
+   "choix": [
+    "La tulipe",
+    "La rose rouge",
+    "La marguerite",
+    "Le lys"
+   ],
+   "reponse": 1,
+   "bonus": "Star de la Saint-Valentin !",
+   "voix_reponse": "La rose rouge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Dans quelle nage bouge-t-on les deux bras ensemble, comme des ailes ?",
+   "choix": [
+    "Le crawl",
+    "Le papillon",
+    "Le dos",
+    "La brasse"
+   ],
+   "reponse": 1,
+   "bonus": "La nage la plus fatigante !",
+   "voix_reponse": "Le papillon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦶",
+   "question": "Comment s'appelle l'articulation entre la jambe et le pied ?",
+   "choix": [
+    "Le poignet",
+    "La cheville",
+    "Le genou",
+    "La hanche"
+   ],
+   "reponse": 1,
+   "bonus": "Attention aux entorses !",
+   "voix_reponse": "La cheville !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Quelle ville était la capitale de l'Empire inca ?",
+   "choix": [
+    "Lima",
+    "Cuzco",
+    "Quito",
+    "La Paz"
+   ],
+   "reponse": 1,
+   "bonus": "Perchée à plus de 3 000 m d'altitude !",
+   "voix_reponse": "Cuzco !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎨",
+   "question": "Quelle couleur obtient-on en mélangeant noir et blanc ?",
+   "choix": [
+    "Le marron",
+    "Le gris",
+    "Le beige",
+    "Le bleu"
+   ],
+   "reponse": 1,
+   "bonus": "Plus ou moins foncé selon le mélange !",
+   "voix_reponse": "Le gris !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐱",
+   "question": "Quel chat orange et paresseux adore les lasagnes ?",
+   "choix": [
+    "Tom",
+    "Garfield",
+    "Grosminet",
+    "Félix"
+   ],
+   "reponse": 1,
+   "bonus": "Il déteste les lundis !",
+   "voix_reponse": "Garfield !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font trois fois quatre ?",
+   "choix": [
+    "7",
+    "10",
+    "12",
+    "14"
+   ],
+   "reponse": 2,
+   "bonus": "Une douzaine !",
+   "voix_reponse": "Douze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Dans quel pays se trouve la ville de Saint-Pétersbourg ?",
+   "choix": [
+    "L'Ukraine",
+    "La Russie",
+    "La Pologne",
+    "La Finlande"
+   ],
+   "reponse": 1,
+   "bonus": "L'ancienne capitale des tsars !",
+   "voix_reponse": "La Russie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

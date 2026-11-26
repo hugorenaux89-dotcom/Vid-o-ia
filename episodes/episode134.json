@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 134",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel est le plus grand des cervidés ?",
+   "choix": [
+    "Le cerf",
+    "L'élan",
+    "Le renne",
+    "Le daim"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle orignal au Canada !",
+   "voix_reponse": "L'élan !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍫",
+   "question": "Quel chocolat contient le plus de cacao ?",
+   "choix": [
+    "Le chocolat blanc",
+    "Le chocolat noir",
+    "Le chocolat au lait",
+    "Le praliné"
+   ],
+   "reponse": 1,
+   "bonus": "C'est aussi le plus amer !",
+   "voix_reponse": "Le chocolat noir !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌺",
+   "question": "Quelle partie colorée de la fleur attire les insectes ?",
+   "choix": [
+    "La racine",
+    "Les pétales",
+    "La tige",
+    "La graine"
+   ],
+   "reponse": 1,
+   "bonus": "Ils viennent chercher le nectar !",
+   "voix_reponse": "Les pétales !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel sport est surnommé le « sport roi » ?",
+   "choix": [
+    "Le tennis",
+    "Le football",
+    "Le rugby",
+    "La boxe"
+   ],
+   "reponse": 1,
+   "bonus": "Le sport le plus pratiqué au monde !",
+   "voix_reponse": "Le football !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "❤️",
+   "question": "Où se trouve le cœur dans le corps ?",
+   "choix": [
+    "Dans le ventre",
+    "Dans la poitrine, un peu à gauche",
+    "Dans le cou",
+    "Dans le dos"
+   ],
+   "reponse": 1,
+   "bonus": "Mets ta main dessus, tu le sens battre !",
+   "voix_reponse": "Dans la poitrine, un peu à gauche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quelle reine a donné son nom à toute une époque au XIXe siècle ?",
+   "choix": [
+    "Élisabeth Ire",
+    "Victoria",
+    "Anne",
+    "Marie"
+   ],
+   "reponse": 1,
+   "bonus": "On parle de l'époque victorienne !",
+   "voix_reponse": "Victoria !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "À quel moment le Soleil est-il le plus haut dans le ciel ?",
+   "choix": [
+    "Le matin",
+    "Vers midi",
+    "Le soir",
+    "La nuit"
+   ],
+   "reponse": 1,
+   "bonus": "Les ombres sont alors les plus courtes !",
+   "voix_reponse": "Vers midi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quelle chanteuse américaine a chanté « Shake It Off » ?",
+   "choix": [
+    "Katy Perry",
+    "Taylor Swift",
+    "Ariana Grande",
+    "Lady Gaga"
+   ],
+   "reponse": 1,
+   "bonus": "L'une des artistes les plus écoutées au monde !",
+   "voix_reponse": "Taylor Swift !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➖",
+   "question": "Combien font douze moins cinq ?",
+   "choix": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "reponse": 2,
+   "bonus": "Facile !",
+   "voix_reponse": "Sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel est le plus grand pays d'Amérique du Nord ?",
+   "choix": [
+    "Les États-Unis",
+    "Le Canada",
+    "Le Mexique",
+    "Cuba"
+   ],
+   "reponse": 1,
+   "bonus": "Plus grand que les États-Unis !",
+   "voix_reponse": "Le Canada !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

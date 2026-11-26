@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 135",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel petit animal presque aveugle creuse des galeries sous terre ?",
+   "choix": [
+    "Le hérisson",
+    "La taupe",
+    "Le lapin",
+    "Le blaireau"
+   ],
+   "reponse": 1,
+   "bonus": "Elle laisse des petits tas de terre dans les jardins !",
+   "voix_reponse": "La taupe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌾",
+   "question": "Avec quelle céréale fait-on la farine du pain blanc ?",
+   "choix": [
+    "Le riz",
+    "Le blé",
+    "Le maïs",
+    "L'avoine"
+   ],
+   "reponse": 1,
+   "bonus": "Moulue très finement !",
+   "voix_reponse": "Le blé !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍄",
+   "question": "Quel champignon des bois a un dessous en forme d'éponge ?",
+   "choix": [
+    "La girolle",
+    "Le cèpe",
+    "La morille",
+    "Le champignon de Paris"
+   ],
+   "reponse": 1,
+   "bonus": "Très recherché en automne !",
+   "voix_reponse": "Le cèpe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏃",
+   "question": "Comment s'appelle le bâton qu'on se passe dans une course de relais ?",
+   "choix": [
+    "La baguette",
+    "Le témoin",
+    "Le flambeau",
+    "Le relais"
+   ],
+   "reponse": 1,
+   "bonus": "S'il tombe, l'équipe perd du temps !",
+   "voix_reponse": "Le témoin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫁",
+   "question": "Quel organe fabrique la bile, qui aide à digérer ?",
+   "choix": [
+    "Le pancréas",
+    "Le foie",
+    "L'estomac",
+    "Les reins"
+   ],
+   "reponse": 1,
+   "bonus": "Stockée dans la vésicule biliaire !",
+   "voix_reponse": "Le foie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐴",
+   "question": "Quelle ville a été prise grâce à un grand cheval de bois ?",
+   "choix": [
+    "Rome",
+    "Troie",
+    "Sparte",
+    "Athènes"
+   ],
+   "reponse": 1,
+   "bonus": "Des soldats étaient cachés dedans !",
+   "voix_reponse": "Troie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌧️",
+   "question": "Comment s'appelle l'instrument qui mesure la pluie ?",
+   "choix": [
+    "Le thermomètre",
+    "Le pluviomètre",
+    "Le baromètre",
+    "L'anémomètre"
+   ],
+   "reponse": 1,
+   "bonus": "L'anémomètre, lui, mesure le vent !",
+   "voix_reponse": "Le pluviomètre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪔",
+   "question": "Quel héros de Disney possède une lampe magique ?",
+   "choix": [
+    "Aladdin",
+    "Mowgli",
+    "Hercule",
+    "Tarzan"
+   ],
+   "reponse": 0,
+   "bonus": "Avec un génie très drôle !",
+   "voix_reponse": "Aladdin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⏰",
+   "question": "Combien d'heures y a-t-il dans deux jours ?",
+   "choix": [
+    "24",
+    "36",
+    "48",
+    "72"
+   ],
+   "reponse": 2,
+   "bonus": "Deux fois vingt-quatre !",
+   "voix_reponse": "Quarante-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quel océan se trouve entre l'Afrique et l'Australie ?",
+   "choix": [
+    "L'Atlantique",
+    "L'océan Indien",
+    "Le Pacifique",
+    "L'Arctique"
+   ],
+   "reponse": 1,
+   "bonus": "Le troisième plus grand océan !",
+   "voix_reponse": "L'océan Indien !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

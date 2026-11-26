@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 138",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel grand oiseau australien ne vole pas mais court vite ?",
+   "choix": [
+    "L'autruche",
+    "L'émeu",
+    "Le kiwi",
+    "Le dodo"
+   ],
+   "reponse": 1,
+   "bonus": "L'autruche, elle, vit en Afrique !",
+   "voix_reponse": "L'émeu !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍑",
+   "question": "Comment appelle-t-on une prune séchée ?",
+   "choix": [
+    "Un raisin sec",
+    "Un pruneau",
+    "Une datte",
+    "Un abricot sec"
+   ],
+   "reponse": 1,
+   "bonus": "Spécialité d'Agen !",
+   "voix_reponse": "Un pruneau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌿",
+   "question": "Quelle plante pique quand on la touche ?",
+   "choix": [
+    "Le trèfle",
+    "L'ortie",
+    "La menthe",
+    "Le basilic"
+   ],
+   "reponse": 1,
+   "bonus": "On peut pourtant en faire de la soupe !",
+   "voix_reponse": "L'ortie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎿",
+   "question": "Quel sport d'hiver mélange ski de fond et tir à la carabine ?",
+   "choix": [
+    "Le combiné nordique",
+    "Le biathlon",
+    "Le slalom",
+    "Le saut à ski"
+   ],
+   "reponse": 1,
+   "bonus": "Un sport où la France brille !",
+   "voix_reponse": "Le biathlon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "À quoi servent les globules rouges ?",
+   "choix": [
+    "Combattre les microbes",
+    "Transporter l'oxygène",
+    "Arrêter les saignements",
+    "Digérer"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à l'hémoglobine !",
+   "voix_reponse": "À transporter l'oxygène !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Que porte un roi sur la tête ?",
+   "choix": [
+    "Un casque",
+    "Une couronne",
+    "Un béret",
+    "Un turban"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent en or, avec des pierres précieuses !",
+   "voix_reponse": "Une couronne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Quelle est la plus grande planète rocheuse du système solaire ?",
+   "choix": [
+    "Mars",
+    "La Terre",
+    "Vénus",
+    "Mercure"
+   ],
+   "reponse": 1,
+   "bonus": "Juste devant Vénus !",
+   "voix_reponse": "La Terre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quelle chanteuse belge a chanté « Balance ton quoi » ?",
+   "choix": [
+    "Aya Nakamura",
+    "Angèle",
+    "Louane",
+    "Zaz"
+   ],
+   "reponse": 1,
+   "bonus": "La petite sœur de Roméo Elvis !",
+   "voix_reponse": "Angèle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font vingt-cinq plus vingt-cinq ?",
+   "choix": [
+    "40",
+    "45",
+    "50",
+    "55"
+   ],
+   "reponse": 2,
+   "bonus": "La moitié de cent !",
+   "voix_reponse": "Cinquante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☘️",
+   "question": "Quel pays a pour symbole le trèfle ?",
+   "choix": [
+    "L'Écosse",
+    "L'Irlande",
+    "Le pays de Galles",
+    "L'Angleterre"
+   ],
+   "reponse": 1,
+   "bonus": "Fêté à la Saint-Patrick !",
+   "voix_reponse": "L'Irlande !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

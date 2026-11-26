@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 131",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal rentre la tête dans sa carapace ?",
+   "choix": [
+    "Le hérisson",
+    "La tortue",
+    "Le tatou",
+    "L'escargot"
+   ],
+   "reponse": 1,
+   "bonus": "Sa carapace fait partie de son squelette !",
+   "voix_reponse": "La tortue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍊",
+   "question": "Quel fruit porte le même nom que sa couleur ?",
+   "choix": [
+    "La mandarine",
+    "L'orange",
+    "L'abricot",
+    "La clémentine"
+   ],
+   "reponse": 1,
+   "bonus": "Le mot est venu avant la couleur !",
+   "voix_reponse": "L'orange !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌳",
+   "question": "Comment s'appelle la partie de l'arbre sous la terre ?",
+   "choix": [
+    "Le tronc",
+    "Les racines",
+    "Les branches",
+    "L'écorce"
+   ],
+   "reponse": 1,
+   "bonus": "Elles puisent l'eau dans le sol !",
+   "voix_reponse": "Les racines !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel est le surnom de l'équipe de France de foot ?",
+   "choix": [
+    "Les Diables rouges",
+    "Les Bleus",
+    "Les Lions",
+    "Les Azzurri"
+   ],
+   "reponse": 1,
+   "bonus": "Les Diables rouges, c'est la Belgique !",
+   "voix_reponse": "Les Bleus !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👁️",
+   "question": "Combien de paupières a chaque œil humain ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 1,
+   "bonus": "Une en haut, une en bas !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛵",
+   "question": "Quel était le navire principal de Christophe Colomb ?",
+   "choix": [
+    "Le Titanic",
+    "La Santa María",
+    "Le Mayflower",
+    "Le Bounty"
+   ],
+   "reponse": 1,
+   "bonus": "Accompagné de la Pinta et de la Niña !",
+   "voix_reponse": "La Santa María !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍂",
+   "question": "Combien de saisons y a-t-il dans une année ?",
+   "choix": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ],
+   "reponse": 2,
+   "bonus": "Printemps, été, automne, hiver !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐻",
+   "question": "Comment s'appelle l'ours ami de Masha dans le dessin animé ?",
+   "choix": [
+    "Baloo",
+    "Michka",
+    "Winnie",
+    "Paddington"
+   ],
+   "reponse": 1,
+   "bonus": "Masha et Michka !",
+   "voix_reponse": "Michka !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➗",
+   "question": "Combien vaut la moitié de quarante ?",
+   "choix": [
+    "10",
+    "20",
+    "30",
+    "80"
+   ],
+   "reponse": 1,
+   "bonus": "Quarante divisé par deux !",
+   "voix_reponse": "Vingt !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌎",
+   "question": "Quel est le plus long fleuve d'Amérique du Sud ?",
+   "choix": [
+    "Le Paraná",
+    "L'Amazone",
+    "L'Orénoque",
+    "Le Mississippi"
+   ],
+   "reponse": 1,
+   "bonus": "Il traverse la plus grande forêt tropicale du monde !",
+   "voix_reponse": "L'Amazone !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

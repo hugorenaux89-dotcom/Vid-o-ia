@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 133",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel grand oiseau fait son nid sur les toits en Alsace ?",
+   "choix": [
+    "La mouette",
+    "La cigogne",
+    "Le pigeon",
+    "Le corbeau"
+   ],
+   "reponse": 1,
+   "bonus": "Le symbole de l'Alsace !",
+   "voix_reponse": "La cigogne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧈",
+   "question": "Avec quoi fabrique-t-on le beurre ?",
+   "choix": [
+    "De l'huile",
+    "De la crème de lait",
+    "Du fromage",
+    "Des œufs"
+   ],
+   "reponse": 1,
+   "bonus": "On la bat très longtemps !",
+   "voix_reponse": "Avec de la crème de lait !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌿",
+   "question": "Comment les plantes fabriquent-elles leur nourriture avec la lumière ?",
+   "choix": [
+    "La respiration",
+    "La photosynthèse",
+    "La digestion",
+    "La germination"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à la chlorophylle !",
+   "voix_reponse": "La photosynthèse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Au tennis, comment s'appelle un service que l'adversaire ne touche pas ?",
+   "choix": [
+    "Un smash",
+    "Un ace",
+    "Un lob",
+    "Un revers"
+   ],
+   "reponse": 1,
+   "bonus": "Un point gagné direct !",
+   "voix_reponse": "Un ace !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦴",
+   "question": "Comment s'appelle l'os plat en forme de triangle dans le haut du dos ?",
+   "choix": [
+    "La clavicule",
+    "L'omoplate",
+    "Le sternum",
+    "La rotule"
+   ],
+   "reponse": 1,
+   "bonus": "On en a deux !",
+   "voix_reponse": "L'omoplate !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚔️",
+   "question": "Quel guerrier japonais se battait avec un sabre appelé katana ?",
+   "choix": [
+    "Le Viking",
+    "Le samouraï",
+    "Le gladiateur",
+    "Le mousquetaire"
+   ],
+   "reponse": 1,
+   "bonus": "Il suivait un code d'honneur très strict !",
+   "voix_reponse": "Le samouraï !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Comment s'appelle une énorme masse de glace qui glisse dans la montagne ?",
+   "choix": [
+    "Un iceberg",
+    "Un glacier",
+    "Une banquise",
+    "Une avalanche"
+   ],
+   "reponse": 1,
+   "bonus": "Il avance de quelques mètres par an !",
+   "voix_reponse": "Un glacier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐶",
+   "question": "Comment s'appelle le chien de Mickey ?",
+   "choix": [
+    "Dingo",
+    "Pluto",
+    "Idéfix",
+    "Milou"
+   ],
+   "reponse": 1,
+   "bonus": "Dingo est un chien aussi, mais c'est son ami !",
+   "voix_reponse": "Pluto !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font quatorze plus six ?",
+   "choix": [
+    "18",
+    "20",
+    "22",
+    "24"
+   ],
+   "reponse": 1,
+   "bonus": "Vingt pile !",
+   "voix_reponse": "Vingt !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛕",
+   "question": "Dans quel pays se trouvent les temples d'Angkor ?",
+   "choix": [
+    "La Thaïlande",
+    "Le Cambodge",
+    "Le Vietnam",
+    "Le Laos"
+   ],
+   "reponse": 1,
+   "bonus": "Le plus grand site religieux du monde !",
+   "voix_reponse": "Le Cambodge !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

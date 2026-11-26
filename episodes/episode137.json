@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 137",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Combien de pattes a une libellule ?",
+   "choix": [
+    "4",
+    "6",
+    "8",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "Et quatre grandes ailes !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥔",
+   "question": "Quel légume est la base de la purée ?",
+   "choix": [
+    "La carotte",
+    "La pomme de terre",
+    "Le navet",
+    "La courge"
+   ],
+   "reponse": 1,
+   "bonus": "Avec du beurre et du lait !",
+   "voix_reponse": "La pomme de terre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌸",
+   "question": "Que font beaucoup d'arbres fruitiers au printemps ?",
+   "choix": [
+    "Ils perdent leurs feuilles",
+    "Ils fleurissent",
+    "Ils gèlent",
+    "Ils dorment"
+   ],
+   "reponse": 1,
+   "bonus": "Les fleurs deviendront des fruits !",
+   "voix_reponse": "Ils fleurissent !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏀",
+   "question": "Comment s'appelle le grand championnat de basket américain ?",
+   "choix": [
+    "La NFL",
+    "La NBA",
+    "La MLB",
+    "La NHL"
+   ],
+   "reponse": 1,
+   "bonus": "La NFL, c'est le football américain !",
+   "voix_reponse": "La NBA !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💇",
+   "question": "Combien de cheveux a-t-on sur la tête, environ ?",
+   "choix": [
+    "1 000",
+    "Environ 100 000",
+    "10 millions",
+    "500"
+   ],
+   "reponse": 1,
+   "bonus": "On en perd une centaine par jour !",
+   "voix_reponse": "Environ cent mille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇯🇵",
+   "question": "Qu'y a-t-il au centre du drapeau japonais ?",
+   "choix": [
+    "Une étoile",
+    "Un cercle rouge",
+    "Une feuille",
+    "Un croissant"
+   ],
+   "reponse": 1,
+   "bonus": "Il représente le Soleil !",
+   "voix_reponse": "Un cercle rouge !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⭐",
+   "question": "Quel animal marin a souvent cinq bras ?",
+   "choix": [
+    "La pieuvre",
+    "L'étoile de mer",
+    "La méduse",
+    "Le crabe"
+   ],
+   "reponse": 1,
+   "bonus": "Et un bras coupé peut repousser !",
+   "voix_reponse": "L'étoile de mer !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👱‍♀️",
+   "question": "Quel film Disney raconte l'histoire d'une fille aux cheveux immenses ?",
+   "choix": [
+    "Rebelle",
+    "Raiponce",
+    "Vaiana",
+    "Mulan"
+   ],
+   "reponse": 1,
+   "bonus": "Enfermée dans une tour !",
+   "voix_reponse": "Raiponce !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔢",
+   "question": "Combien de doigts a-t-on en tout, mains et pieds ?",
+   "choix": [
+    "10",
+    "15",
+    "20",
+    "25"
+   ],
+   "reponse": 2,
+   "bonus": "Dix doigts et dix orteils !",
+   "voix_reponse": "Vingt !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎰",
+   "question": "Quelle ville américaine est célèbre pour ses casinos dans le désert ?",
+   "choix": [
+    "Miami",
+    "Las Vegas",
+    "Chicago",
+    "Seattle"
+   ],
+   "reponse": 1,
+   "bonus": "Dans le Nevada !",
+   "voix_reponse": "Las Vegas !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

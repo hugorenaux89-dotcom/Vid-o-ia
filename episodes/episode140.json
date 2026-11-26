@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 140",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal lâche de l'encre pour s'enfuir ?",
+   "choix": [
+    "Le crabe",
+    "La pieuvre",
+    "Le dauphin",
+    "La tortue"
+   ],
+   "reponse": 1,
+   "bonus": "Un nuage noir qui trompe ses ennemis !",
+   "voix_reponse": "La pieuvre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍰",
+   "question": "Quel gâteau alterne pâte feuilletée et crème pâtissière ?",
+   "choix": [
+    "Le fraisier",
+    "Le mille-feuille",
+    "L'éclair",
+    "Le baba"
+   ],
+   "reponse": 1,
+   "bonus": "Avec un glaçage blanc et brun !",
+   "voix_reponse": "Le mille-feuille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌴",
+   "question": "Comment s'appelle une forêt très dense et humide des pays chauds ?",
+   "choix": [
+    "La savane",
+    "La jungle",
+    "La taïga",
+    "La steppe"
+   ],
+   "reponse": 1,
+   "bonus": "Pleine d'animaux et de plantes !",
+   "voix_reponse": "La jungle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐎",
+   "question": "Dans quel sport saute-t-on des obstacles à cheval ?",
+   "choix": [
+    "Le polo",
+    "L'équitation",
+    "Le rodéo",
+    "Le tir à l'arc"
+   ],
+   "reponse": 1,
+   "bonus": "Le saut d'obstacles !",
+   "voix_reponse": "L'équitation !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫁",
+   "question": "Combien de fois respire-t-on par minute au repos, environ ?",
+   "choix": [
+    "3",
+    "Environ 15",
+    "60",
+    "100"
+   ],
+   "reponse": 1,
+   "bonus": "Sans même y penser !",
+   "voix_reponse": "Environ quinze fois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💡",
+   "question": "Quelle ville est surnommée la Ville lumière ?",
+   "choix": [
+    "Lyon",
+    "Paris",
+    "Rome",
+    "Londres"
+   ],
+   "reponse": 1,
+   "bonus": "L'une des premières éclairées la nuit !",
+   "voix_reponse": "Paris !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌙",
+   "question": "Quel est le satellite naturel de la Terre ?",
+   "choix": [
+    "Le Soleil",
+    "La Lune",
+    "Mars",
+    "L'ISS"
+   ],
+   "reponse": 1,
+   "bonus": "L'ISS, c'est un satellite artificiel !",
+   "voix_reponse": "La Lune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐺",
+   "question": "Quel garçon est élevé par des loups dans Le Livre de la jungle ?",
+   "choix": [
+    "Tarzan",
+    "Mowgli",
+    "Peter Pan",
+    "Robin"
+   ],
+   "reponse": 1,
+   "bonus": "Avec Baloo et Bagheera !",
+   "voix_reponse": "Mowgli !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥚",
+   "question": "Combien d'œufs y a-t-il dans une douzaine ?",
+   "choix": [
+    "10",
+    "12",
+    "20",
+    "6"
+   ],
+   "reponse": 1,
+   "bonus": "Et six dans une demi-douzaine !",
+   "voix_reponse": "Douze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏝️",
+   "question": "Quelle est la plus grande île des Caraïbes ?",
+   "choix": [
+    "La Jamaïque",
+    "Cuba",
+    "Haïti",
+    "Porto Rico"
+   ],
+   "reponse": 1,
+   "bonus": "Avec sa capitale La Havane !",
+   "voix_reponse": "Cuba !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}
