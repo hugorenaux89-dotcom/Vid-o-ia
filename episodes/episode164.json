@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 164",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal porte des bois sur la tête ?",
+   "choix": [
+    "La vache",
+    "Le cerf",
+    "La chèvre",
+    "Le mouton"
+   ],
+   "reponse": 1,
+   "bonus": "Ils tombent et repoussent chaque année !",
+   "voix_reponse": "Le cerf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥪",
+   "question": "Quel fromage met-on dans un croque-monsieur ?",
+   "choix": [
+    "Le roquefort",
+    "L'emmental",
+    "Le brie",
+    "Le chèvre"
+   ],
+   "reponse": 1,
+   "bonus": "Ou du gruyère !",
+   "voix_reponse": "L'emmental !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦒",
+   "question": "Comment s'appelle la grande prairie africaine où vivent girafes et zèbres ?",
+   "choix": [
+    "La jungle",
+    "La savane",
+    "La taïga",
+    "La toundra"
+   ],
+   "reponse": 1,
+   "bonus": "Avec ses grands acacias !",
+   "voix_reponse": "La savane !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏃",
+   "question": "Comment s'appelle la course où l'on saute des barrières ?",
+   "choix": [
+    "Le sprint",
+    "La course de haies",
+    "Le marathon",
+    "Le relais"
+   ],
+   "reponse": 1,
+   "bonus": "110 mètres haies chez les hommes !",
+   "voix_reponse": "La course de haies !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👅",
+   "question": "Où se trouvent les papilles gustatives ?",
+   "choix": [
+    "Sur les dents",
+    "Sur la langue",
+    "Dans le nez",
+    "Sur les lèvres"
+   ],
+   "reponse": 1,
+   "bonus": "Elles reconnaissent les saveurs !",
+   "voix_reponse": "Sur la langue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Comment appelait-on le fils aîné du roi de France ?",
+   "choix": [
+    "Le duc",
+    "Le dauphin",
+    "Le prince noir",
+    "Le marquis"
+   ],
+   "reponse": 1,
+   "bonus": "Comme le mammifère marin !",
+   "voix_reponse": "Le dauphin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪐",
+   "question": "Combien de planètes du système solaire ont des anneaux ?",
+   "choix": [
+    "1",
+    "2",
+    "4",
+    "8"
+   ],
+   "reponse": 2,
+   "bonus": "Jupiter, Saturne, Uranus et Neptune !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👧",
+   "question": "Comment s'appelle la petite fille de Monstres et Cie ?",
+   "choix": [
+    "Bouh",
+    "Lilo",
+    "Agnès",
+    "Riley"
+   ],
+   "reponse": 0,
+   "bonus": "Elle n'a pas peur des monstres !",
+   "voix_reponse": "Bouh !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➗",
+   "question": "Combien font cent divisé par vingt ?",
+   "choix": [
+    "4",
+    "5",
+    "10",
+    "20"
+   ],
+   "reponse": 1,
+   "bonus": "Cinq fois vingt font cent !",
+   "voix_reponse": "Cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Quelle mer borde la Turquie au nord ?",
+   "choix": [
+    "La mer Rouge",
+    "La mer Noire",
+    "La mer Caspienne",
+    "La mer Morte"
+   ],
+   "reponse": 1,
+   "bonus": "Reliée à la Méditerranée par le Bosphore !",
+   "voix_reponse": "La mer Noire !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

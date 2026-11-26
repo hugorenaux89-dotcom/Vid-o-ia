@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 163",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quels oiseaux migrateurs volent en forme de V ?",
+   "choix": [
+    "Les moineaux",
+    "Les oies sauvages",
+    "Les pigeons",
+    "Les pies"
+   ],
+   "reponse": 1,
+   "bonus": "Pour se fatiguer moins !",
+   "voix_reponse": "Les oies sauvages !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍓",
+   "question": "Comment s'appelle le sucre naturel des fruits ?",
+   "choix": [
+    "Le glucose",
+    "Le fructose",
+    "Le lactose",
+    "Le sel"
+   ],
+   "reponse": 1,
+   "bonus": "Le lactose, c'est le sucre du lait !",
+   "voix_reponse": "Le fructose !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌸",
+   "question": "Quel insecte transporte le pollen de fleur en fleur ?",
+   "choix": [
+    "La fourmi",
+    "L'abeille",
+    "Le moustique",
+    "La mouche"
+   ],
+   "reponse": 1,
+   "bonus": "Sans elle, beaucoup de fruits n'existeraient pas !",
+   "voix_reponse": "L'abeille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Comment s'appelle le coup qui fait passer la balle au-dessus de l'adversaire ?",
+   "choix": [
+    "Le smash",
+    "Le lob",
+    "L'amorti",
+    "Le revers"
+   ],
+   "reponse": 1,
+   "bonus": "Une balle haute et lobée !",
+   "voix_reponse": "Le lob !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💓",
+   "question": "Comment s'appelle le battement qu'on sent au poignet ?",
+   "choix": [
+    "Le souffle",
+    "Le pouls",
+    "Le réflexe",
+    "Le frisson"
+   ],
+   "reponse": 1,
+   "bonus": "Il suit les battements du cœur !",
+   "voix_reponse": "Le pouls !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quelle ville était la capitale de l'Empire romain ?",
+   "choix": [
+    "Athènes",
+    "Rome",
+    "Carthage",
+    "Alexandrie"
+   ],
+   "reponse": 1,
+   "bonus": "Avec son forum et ses temples !",
+   "voix_reponse": "Rome !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌑",
+   "question": "Comment s'appelle une éclipse où la Terre cache la Lune ?",
+   "choix": [
+    "Une éclipse solaire",
+    "Une éclipse lunaire",
+    "Un solstice",
+    "Un équinoxe"
+   ],
+   "reponse": 1,
+   "bonus": "La Lune devient rouge !",
+   "voix_reponse": "Une éclipse lunaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎹",
+   "question": "Quel instrument a des touches noires et blanches ?",
+   "choix": [
+    "La guitare",
+    "Le piano",
+    "La batterie",
+    "La flûte"
+   ],
+   "reponse": 1,
+   "bonus": "Il fait partie des instruments à cordes frappées !",
+   "voix_reponse": "Le piano !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font huit fois cinq ?",
+   "choix": [
+    "35",
+    "40",
+    "45",
+    "48"
+   ],
+   "reponse": 1,
+   "bonus": "Quarante !",
+   "voix_reponse": "Quarante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦘",
+   "question": "Quel est le plus grand pays d'Océanie ?",
+   "choix": [
+    "La Nouvelle-Zélande",
+    "L'Australie",
+    "La Papouasie",
+    "Les Fidji"
+   ],
+   "reponse": 1,
+   "bonus": "Grand comme presque toute l'Europe !",
+   "voix_reponse": "L'Australie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

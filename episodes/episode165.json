@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 165",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal de l'Arctique change de couleur de pelage en été ?",
+   "choix": [
+    "Le renard polaire",
+    "L'ours polaire",
+    "Le phoque",
+    "Le manchot"
+   ],
+   "reponse": 0,
+   "bonus": "Blanc en hiver, brun en été !",
+   "voix_reponse": "Le renard polaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍞",
+   "question": "Comment s'appelle le pain en tranches carrées pour les sandwichs ?",
+   "choix": [
+    "La baguette",
+    "Le pain de mie",
+    "La ficelle",
+    "La miche"
+   ],
+   "reponse": 1,
+   "bonus": "Très moelleux !",
+   "voix_reponse": "Le pain de mie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍇",
+   "question": "Comment appelle-t-on un champ de vignes ?",
+   "choix": [
+    "Un verger",
+    "Un vignoble",
+    "Un potager",
+    "Une rizière"
+   ],
+   "reponse": 1,
+   "bonus": "Le verger, c'est pour les arbres fruitiers !",
+   "voix_reponse": "Un vignoble !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚴",
+   "question": "Combien de pédales a un vélo ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 1,
+   "bonus": "Une pour chaque pied !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💤",
+   "question": "Combien de temps dure une sieste idéale, selon les médecins ?",
+   "choix": [
+    "5 minutes",
+    "Environ 20 minutes",
+    "3 heures",
+    "5 heures"
+   ],
+   "reponse": 1,
+   "bonus": "Pour ne pas se réveiller fatigué !",
+   "voix_reponse": "Environ vingt minutes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧭",
+   "question": "Quel objet chinois permet de trouver le nord ?",
+   "choix": [
+    "Le télescope",
+    "La boussole",
+    "La montre",
+    "La carte"
+   ],
+   "reponse": 1,
+   "bonus": "Grâce à une aiguille aimantée !",
+   "voix_reponse": "La boussole !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "❄️",
+   "question": "Comment s'appelle une maison faite de blocs de neige ?",
+   "choix": [
+    "Un tipi",
+    "Un igloo",
+    "Une yourte",
+    "Un chalet"
+   ],
+   "reponse": 1,
+   "bonus": "Il fait plus chaud dedans qu'on ne le croit !",
+   "voix_reponse": "Un igloo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦖",
+   "question": "Comment s'appelle le petit dinosaure vert de Mario ?",
+   "choix": [
+    "Bowser",
+    "Yoshi",
+    "Rex",
+    "Dino"
+   ],
+   "reponse": 1,
+   "bonus": "Il a une très longue langue !",
+   "voix_reponse": "Yoshi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font dix fois dix fois dix ?",
+   "choix": [
+    "100",
+    "300",
+    "1 000",
+    "10 000"
+   ],
+   "reponse": 2,
+   "bonus": "Mille !",
+   "voix_reponse": "Mille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎈",
+   "question": "Dans quel pays se trouve la Cappadoce, célèbre pour ses montgolfières ?",
+   "choix": [
+    "La Grèce",
+    "La Turquie",
+    "L'Égypte",
+    "Le Maroc"
+   ],
+   "reponse": 1,
+   "bonus": "Des centaines de ballons au lever du soleil !",
+   "voix_reponse": "La Turquie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

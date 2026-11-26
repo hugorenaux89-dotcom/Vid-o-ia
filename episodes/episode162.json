@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 162",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment appelle-t-on le cri du pigeon ?",
+   "choix": [
+    "Il roucoule",
+    "Il croasse",
+    "Il hulule",
+    "Il caquette"
+   ],
+   "reponse": 0,
+   "bonus": "Rrrou, rrrou !",
+   "voix_reponse": "Il roucoule !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍏",
+   "question": "Quelle viennoiserie en demi-lune est garnie de compote de pommes ?",
+   "choix": [
+    "Le chausson aux pommes",
+    "Le croissant",
+    "Le pain au lait",
+    "La brioche"
+   ],
+   "reponse": 0,
+   "bonus": "Croustillant et fondant !",
+   "voix_reponse": "Le chausson aux pommes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Comment s'appelle une rivière qui se jette dans une autre ?",
+   "choix": [
+    "Un fleuve",
+    "Un affluent",
+    "Une embouchure",
+    "Un estuaire"
+   ],
+   "reponse": 1,
+   "bonus": "La Marne est un affluent de la Seine !",
+   "voix_reponse": "Un affluent !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏉",
+   "question": "Comment s'appelle le regroupement des avants, épaule contre épaule ?",
+   "choix": [
+    "La touche",
+    "La mêlée",
+    "L'essai",
+    "Le drop"
+   ],
+   "reponse": 1,
+   "bonus": "Huit joueurs de chaque côté !",
+   "voix_reponse": "La mêlée !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖐️",
+   "question": "Quelle articulation relie la main au bras ?",
+   "choix": [
+    "Le coude",
+    "Le poignet",
+    "L'épaule",
+    "La cheville"
+   ],
+   "reponse": 1,
+   "bonus": "On y porte sa montre !",
+   "voix_reponse": "Le poignet !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛡️",
+   "question": "Comment s'appelaient les jeunes qui aidaient les chevaliers ?",
+   "choix": [
+    "Les écuyers",
+    "Les gladiateurs",
+    "Les moines",
+    "Les marchands"
+   ],
+   "reponse": 0,
+   "bonus": "Ils portaient le bouclier du chevalier !",
+   "voix_reponse": "Les écuyers !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥵",
+   "question": "Comment appelle-t-on une période de très forte chaleur ?",
+   "choix": [
+    "Une averse",
+    "Une canicule",
+    "Un blizzard",
+    "Une mousson"
+   ],
+   "reponse": 1,
+   "bonus": "Pense à boire beaucoup d'eau !",
+   "voix_reponse": "Une canicule !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦉",
+   "question": "Comment s'appelle la chouette blanche de Harry Potter ?",
+   "choix": [
+    "Hedwige",
+    "Croûtard",
+    "Fumseck",
+    "Buck"
+   ],
+   "reponse": 0,
+   "bonus": "Elle lui apporte son courrier !",
+   "voix_reponse": "Hedwige !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➖",
+   "question": "Combien font mille moins un ?",
+   "choix": [
+    "99",
+    "990",
+    "999",
+    "1 001"
+   ],
+   "reponse": 2,
+   "bonus": "Neuf cent quatre-vingt-dix-neuf !",
+   "voix_reponse": "Neuf cent quatre-vingt-dix-neuf !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Dans quel pays se trouve le Kremlin ?",
+   "choix": [
+    "L'Ukraine",
+    "La Russie",
+    "La Pologne",
+    "La Biélorussie"
+   ],
+   "reponse": 1,
+   "bonus": "Au cœur de Moscou !",
+   "voix_reponse": "La Russie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

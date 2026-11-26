@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 170",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel grand singe roux vit à Bornéo ?",
+   "choix": [
+    "Le gorille",
+    "L'orang-outan",
+    "Le chimpanzé",
+    "Le babouin"
+   ],
+   "reponse": 1,
+   "bonus": "Son nom veut dire « homme de la forêt » !",
+   "voix_reponse": "L'orang-outan !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫐",
+   "question": "Quel petit fruit bleu-violet pousse en montagne ?",
+   "choix": [
+    "La groseille",
+    "La myrtille",
+    "La framboise",
+    "La fraise"
+   ],
+   "reponse": 1,
+   "bonus": "Parfait en tarte !",
+   "voix_reponse": "La myrtille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌼",
+   "question": "Quelle fleur effeuille-t-on pour savoir si on est aimé ?",
+   "choix": [
+    "La rose",
+    "La marguerite",
+    "Le coquelicot",
+    "La tulipe"
+   ],
+   "reponse": 1,
+   "bonus": "Un peu, beaucoup, passionnément...",
+   "voix_reponse": "La marguerite !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤺",
+   "question": "Quel sport se pratique avec une épée fine et un masque ?",
+   "choix": [
+    "Le judo",
+    "L'escrime",
+    "La boxe",
+    "Le karaté"
+   ],
+   "reponse": 1,
+   "bonus": "Un sport où la France gagne souvent !",
+   "voix_reponse": "L'escrime !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🫘",
+   "question": "Combien de reins a-t-on ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 1,
+   "bonus": "En forme de haricot !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚔️",
+   "question": "Quelle grande bataille a eu lieu en France en 1916 ?",
+   "choix": [
+    "Waterloo",
+    "Verdun",
+    "Hastings",
+    "Austerlitz"
+   ],
+   "reponse": 1,
+   "bonus": "Pendant la Première Guerre mondiale !",
+   "voix_reponse": "Verdun !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌇",
+   "question": "Comment s'appelle le moment où le Soleil disparaît à l'horizon ?",
+   "choix": [
+    "L'aube",
+    "Le coucher du soleil",
+    "Le zénith",
+    "L'aurore"
+   ],
+   "reponse": 1,
+   "bonus": "Le ciel devient orange et rose !",
+   "voix_reponse": "Le coucher du soleil !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧠",
+   "question": "Quel film Pixar montre les émotions dans la tête de Riley ?",
+   "choix": [
+    "Soul",
+    "Vice-Versa",
+    "Luca",
+    "Elemental"
+   ],
+   "reponse": 1,
+   "bonus": "Avec Joie, Tristesse et Colère !",
+   "voix_reponse": "Vice-Versa !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font sept fois neuf ?",
+   "choix": [
+    "56",
+    "63",
+    "72",
+    "81"
+   ],
+   "reponse": 1,
+   "bonus": "Soixante-trois !",
+   "voix_reponse": "Soixante-trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💎",
+   "question": "Dans quel pays se trouve la ville d'Anvers ?",
+   "choix": [
+    "Les Pays-Bas",
+    "La Belgique",
+    "Le Luxembourg",
+    "L'Allemagne"
+   ],
+   "reponse": 1,
+   "bonus": "La capitale mondiale du diamant !",
+   "voix_reponse": "La Belgique !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

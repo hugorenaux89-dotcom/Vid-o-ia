@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 168",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐔",
+   "question": "Comment s'appelle la femelle du coq ?",
+   "choix": [
+    "La cane",
+    "La poule",
+    "L'oie",
+    "La dinde"
+   ],
+   "reponse": 1,
+   "bonus": "Elle pond presque un œuf par jour !",
+   "voix_reponse": "La poule !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍽️",
+   "question": "Quel fruit tropical a une peau rose à écailles et une chair blanche à points noirs ?",
+   "choix": [
+    "Le litchi",
+    "Le fruit du dragon",
+    "La papaye",
+    "La goyave"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle aussi pitaya !",
+   "voix_reponse": "Le fruit du dragon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌵",
+   "question": "Quelle plante du désert stocke l'eau et a des épines ?",
+   "choix": [
+    "La fougère",
+    "Le cactus",
+    "Le lierre",
+    "La mousse"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut survivre des mois sans pluie !",
+   "voix_reponse": "Le cactus !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Combien dure une prolongation au foot ?",
+   "choix": [
+    "10 minutes",
+    "Deux fois 15 minutes",
+    "45 minutes",
+    "5 minutes"
+   ],
+   "reponse": 1,
+   "bonus": "Puis les tirs au but si besoin !",
+   "voix_reponse": "Deux fois quinze minutes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👁️",
+   "question": "Comment appelle-t-on les petites lunettes posées directement sur l'œil ?",
+   "choix": [
+    "Les verres",
+    "Les lentilles",
+    "Les loupes",
+    "Les jumelles"
+   ],
+   "reponse": 1,
+   "bonus": "Invisibles quand on les porte !",
+   "voix_reponse": "Les lentilles !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📚",
+   "question": "Qui a écrit Notre-Dame de Paris ?",
+   "choix": [
+    "Émile Zola",
+    "Victor Hugo",
+    "Balzac",
+    "Flaubert"
+   ],
+   "reponse": 1,
+   "bonus": "Avec Quasimodo et Esmeralda !",
+   "voix_reponse": "Victor Hugo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌬️",
+   "question": "Comment s'appelle le vent froid et fort de la vallée du Rhône ?",
+   "choix": [
+    "Le sirocco",
+    "Le mistral",
+    "La tramontane",
+    "Le foehn"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut souffler à plus de 100 km/h !",
+   "voix_reponse": "Le mistral !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗡️",
+   "question": "Quelle héroïne de Disney se déguise en soldat pour sauver son père ?",
+   "choix": [
+    "Pocahontas",
+    "Mulan",
+    "Jasmine",
+    "Vaiana"
+   ],
+   "reponse": 1,
+   "bonus": "Avec son petit dragon Mushu !",
+   "voix_reponse": "Mulan !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font neuf fois six ?",
+   "choix": [
+    "45",
+    "54",
+    "56",
+    "63"
+   ],
+   "reponse": 1,
+   "bonus": "Cinquante-quatre !",
+   "voix_reponse": "Cinquante-quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍷",
+   "question": "Dans quel pays se trouve la Toscane ?",
+   "choix": [
+    "L'Espagne",
+    "L'Italie",
+    "La Grèce",
+    "Le Portugal"
+   ],
+   "reponse": 1,
+   "bonus": "Avec Florence et Pise !",
+   "voix_reponse": "L'Italie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

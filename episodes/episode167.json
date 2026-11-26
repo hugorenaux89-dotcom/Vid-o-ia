@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 167",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐋",
+   "question": "Quel animal marin chante pour communiquer ?",
+   "choix": [
+    "Le requin",
+    "La baleine",
+    "La raie",
+    "Le thon"
+   ],
+   "reponse": 1,
+   "bonus": "Son chant s'entend à des kilomètres !",
+   "voix_reponse": "La baleine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎄",
+   "question": "Quelle épice en bâton parfume les biscuits de Noël ?",
+   "choix": [
+    "Le poivre",
+    "La cannelle",
+    "Le sel",
+    "Le curry"
+   ],
+   "reponse": 1,
+   "bonus": "C'est l'écorce d'un arbre !",
+   "voix_reponse": "La cannelle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌳",
+   "question": "Quel arbre africain a un tronc énorme qui stocke de l'eau ?",
+   "choix": [
+    "Le palmier",
+    "Le baobab",
+    "Le cèdre",
+    "Le séquoia"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut vivre plus de 2 000 ans !",
+   "voix_reponse": "Le baobab !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏀",
+   "question": "Comment appelle-t-on la faute où l'on avance sans dribbler ?",
+   "choix": [
+    "Le marcher",
+    "Le dunk",
+    "Le rebond",
+    "Le panier"
+   ],
+   "reponse": 0,
+   "bonus": "Interdit de courir avec le ballon dans les mains !",
+   "voix_reponse": "Le marcher !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "Quel liquide transporte la nourriture dans tout le corps ?",
+   "choix": [
+    "La salive",
+    "Le sang",
+    "Les larmes",
+    "La sueur"
+   ],
+   "reponse": 1,
+   "bonus": "Il fait le tour du corps en une minute !",
+   "voix_reponse": "Le sang !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🪞",
+   "question": "Comment s'appelle la célèbre galerie de miroirs à Versailles ?",
+   "choix": [
+    "La salle du trône",
+    "La galerie des Glaces",
+    "La chapelle royale",
+    "Le salon d'Hercule"
+   ],
+   "reponse": 1,
+   "bonus": "Avec 357 miroirs !",
+   "voix_reponse": "La galerie des Glaces !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔱",
+   "question": "Quelle planète porte le nom du dieu romain de la mer ?",
+   "choix": [
+    "Mars",
+    "Neptune",
+    "Jupiter",
+    "Mercure"
+   ],
+   "reponse": 1,
+   "bonus": "Et elle est toute bleue !",
+   "voix_reponse": "Neptune !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quel chanteur jamaïcain est le roi du reggae ?",
+   "choix": [
+    "Bob Marley",
+    "Jimmy Cliff",
+    "Shaggy",
+    "Sean Paul"
+   ],
+   "reponse": 0,
+   "bonus": "« One Love » !",
+   "voix_reponse": "Bob Marley !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➖",
+   "question": "Combien font quatre-vingts moins vingt ?",
+   "choix": [
+    "50",
+    "60",
+    "70",
+    "100"
+   ],
+   "reponse": 1,
+   "bonus": "Soixante !",
+   "voix_reponse": "Soixante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏝️",
+   "question": "Dans quel pays se trouve l'île de Santorin ?",
+   "choix": [
+    "L'Italie",
+    "La Grèce",
+    "La Croatie",
+    "Chypre"
+   ],
+   "reponse": 1,
+   "bonus": "Avec ses maisons blanches et bleues !",
+   "voix_reponse": "La Grèce !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

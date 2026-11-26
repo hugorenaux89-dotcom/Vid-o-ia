@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 169",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐜",
+   "question": "Comment s'appelle la maison des fourmis ?",
+   "choix": [
+    "La ruche",
+    "La fourmilière",
+    "Le terrier",
+    "Le nid"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des milliers de galeries !",
+   "voix_reponse": "La fourmilière !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍟",
+   "question": "Quelle sauce rouge accompagne souvent les frites ?",
+   "choix": [
+    "La mayonnaise",
+    "Le ketchup",
+    "La moutarde",
+    "La béarnaise"
+   ],
+   "reponse": 1,
+   "bonus": "À base de tomate !",
+   "voix_reponse": "Le ketchup !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌊",
+   "question": "Combien de temps s'écoule entre deux marées hautes ?",
+   "choix": [
+    "6 heures",
+    "Environ 12 heures",
+    "24 heures",
+    "1 semaine"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 12 h 25 !",
+   "voix_reponse": "Environ douze heures !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏐",
+   "question": "Combien de touches de balle a une équipe de volley avant de renvoyer ?",
+   "choix": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "reponse": 1,
+   "bonus": "Manchette, passe, smash !",
+   "voix_reponse": "Trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌑",
+   "question": "Comment s'appelle la peur du noir ?",
+   "choix": [
+    "L'arachnophobie",
+    "La nyctophobie",
+    "La claustrophobie",
+    "L'acrophobie"
+   ],
+   "reponse": 1,
+   "bonus": "Très courante chez les enfants !",
+   "voix_reponse": "La nyctophobie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛲",
+   "question": "Dans quelle fontaine de Rome lance-t-on une pièce pour revenir ?",
+   "choix": [
+    "La fontaine de Trevi",
+    "Le Colisée",
+    "Le Panthéon",
+    "La place d'Espagne"
+   ],
+   "reponse": 0,
+   "bonus": "Des milliers d'euros chaque semaine !",
+   "voix_reponse": "La fontaine de Trevi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦅",
+   "question": "Comment s'appelait le module lunaire d'Apollo 11 ?",
+   "choix": [
+    "Columbia",
+    "Eagle",
+    "Saturn",
+    "Discovery"
+   ],
+   "reponse": 1,
+   "bonus": "« L'aigle s'est posé » !",
+   "voix_reponse": "Eagle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💃",
+   "question": "Quel jeu vidéo fait danser en suivant des mouvements à l'écran ?",
+   "choix": [
+    "Guitar Hero",
+    "Just Dance",
+    "FIFA",
+    "Tetris"
+   ],
+   "reponse": 1,
+   "bonus": "Un jeu français, créé par Ubisoft !",
+   "voix_reponse": "Just Dance !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font quarante-cinq plus dix-sept ?",
+   "choix": [
+    "52",
+    "62",
+    "63",
+    "72"
+   ],
+   "reponse": 1,
+   "bonus": "Soixante-deux !",
+   "voix_reponse": "Soixante-deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💃",
+   "question": "Quelle ville est la capitale de l'Andalousie ?",
+   "choix": [
+    "Grenade",
+    "Séville",
+    "Malaga",
+    "Cordoue"
+   ],
+   "reponse": 1,
+   "bonus": "Patrie du flamenco !",
+   "voix_reponse": "Séville !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

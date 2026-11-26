@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 166",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel oiseau qui ne vole pas vit en Nouvelle-Zélande ?",
+   "choix": [
+    "L'émeu",
+    "Le kiwi",
+    "Le manchot",
+    "Le dodo"
+   ],
+   "reponse": 1,
+   "bonus": "Le symbole du pays !",
+   "voix_reponse": "Le kiwi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥬",
+   "question": "Quel légume vert à feuilles sert de base à la salade ?",
+   "choix": [
+    "La carotte",
+    "La laitue",
+    "Le radis",
+    "La tomate"
+   ],
+   "reponse": 1,
+   "bonus": "Avec un peu de vinaigrette !",
+   "voix_reponse": "La laitue !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Quel est le volcan le plus célèbre de La Réunion ?",
+   "choix": [
+    "Le Vésuve",
+    "Le piton de la Fournaise",
+    "L'Etna",
+    "Le Krakatoa"
+   ],
+   "reponse": 1,
+   "bonus": "L'un des volcans les plus actifs du monde !",
+   "voix_reponse": "Le piton de la Fournaise !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Combien de longueurs fait-on pour un 100 m en bassin olympique ?",
+   "choix": [
+    "1",
+    "2",
+    "4",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "Un aller-retour !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Quel appareil sert à redresser les dents ?",
+   "choix": [
+    "Le plâtre",
+    "L'appareil dentaire",
+    "La couronne",
+    "Le pansement"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent porté à l'adolescence !",
+   "voix_reponse": "L'appareil dentaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📅",
+   "question": "Quel siècle a commencé le 1er janvier 2001 ?",
+   "choix": [
+    "Le XXe",
+    "Le XXIe",
+    "Le XXIIe",
+    "Le XIXe"
+   ],
+   "reponse": 1,
+   "bonus": "Et pas en 2000 !",
+   "voix_reponse": "Le vingt et unième !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎨",
+   "question": "Quelle couleur obtient-on en mélangeant bleu et blanc ?",
+   "choix": [
+    "Bleu clair",
+    "Vert",
+    "Violet",
+    "Gris"
+   ],
+   "reponse": 0,
+   "bonus": "Comme le ciel d'été !",
+   "voix_reponse": "Bleu clair !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦁",
+   "question": "Comment s'appelle le méchant lion du Roi lion ?",
+   "choix": [
+    "Mufasa",
+    "Scar",
+    "Nala",
+    "Rafiki"
+   ],
+   "reponse": 1,
+   "bonus": "L'oncle de Simba !",
+   "voix_reponse": "Scar !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font soixante-dix plus vingt-cinq ?",
+   "choix": [
+    "85",
+    "90",
+    "95",
+    "105"
+   ],
+   "reponse": 2,
+   "bonus": "Presque cent !",
+   "voix_reponse": "Quatre-vingt-quinze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎻",
+   "question": "Dans quel pays se trouve la ville de Salzbourg ?",
+   "choix": [
+    "L'Allemagne",
+    "L'Autriche",
+    "La Suisse",
+    "La Hongrie"
+   ],
+   "reponse": 1,
+   "bonus": "La ville natale de Mozart !",
+   "voix_reponse": "L'Autriche !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}
