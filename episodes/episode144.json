@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 144",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel oiseau est le symbole des États-Unis ?",
+   "choix": [
+    "Le faucon",
+    "L'aigle à tête blanche",
+    "Le condor",
+    "Le corbeau"
+   ],
+   "reponse": 1,
+   "bonus": "Présent sur le sceau du pays !",
+   "voix_reponse": "L'aigle à tête blanche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍊",
+   "question": "Quel agrume est plus gros qu'une orange et un peu amer ?",
+   "choix": [
+    "La mandarine",
+    "Le pamplemousse",
+    "Le citron",
+    "La clémentine"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent mangé au petit-déjeuner !",
+   "voix_reponse": "Le pamplemousse !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌰",
+   "question": "Quel arbre donne des châtaignes ?",
+   "choix": [
+    "Le marronnier",
+    "Le châtaignier",
+    "Le noyer",
+    "Le chêne"
+   ],
+   "reponse": 1,
+   "bonus": "Les marrons du marronnier ne se mangent pas !",
+   "voix_reponse": "Le châtaignier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏋️",
+   "question": "Dans quelle épreuve lance-t-on une lourde boule de métal ?",
+   "choix": [
+    "Le javelot",
+    "Le lancer du poids",
+    "Le disque",
+    "Le saut en longueur"
+   ],
+   "reponse": 1,
+   "bonus": "Elle pèse 7,26 kg chez les hommes !",
+   "voix_reponse": "Le lancer du poids !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥶",
+   "question": "Pourquoi a-t-on la chair de poule ?",
+   "choix": [
+    "À cause du froid ou de la peur",
+    "À cause de la faim",
+    "Parce qu'on dort",
+    "Parce qu'on mange"
+   ],
+   "reponse": 0,
+   "bonus": "Nos poils se dressent !",
+   "voix_reponse": "À cause du froid ou de la peur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quelle ville du sud de la France a de célèbres arènes romaines ?",
+   "choix": [
+    "Lille",
+    "Nîmes",
+    "Brest",
+    "Rennes"
+   ],
+   "reponse": 1,
+   "bonus": "Encore utilisées pour des spectacles !",
+   "voix_reponse": "Nîmes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌏",
+   "question": "Quel est le plus petit continent ?",
+   "choix": [
+    "L'Europe",
+    "L'Océanie",
+    "L'Antarctique",
+    "L'Amérique du Sud"
+   ],
+   "reponse": 1,
+   "bonus": "Avec l'Australie !",
+   "voix_reponse": "L'Océanie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦖",
+   "question": "Comment s'appelle le dinosaure de Toy Story ?",
+   "choix": [
+    "Rex",
+    "Spike",
+    "Dino",
+    "Barney"
+   ],
+   "reponse": 0,
+   "bonus": "Un dinosaure très peureux !",
+   "voix_reponse": "Rex !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font neuf fois trois ?",
+   "choix": [
+    "18",
+    "24",
+    "27",
+    "36"
+   ],
+   "reponse": 2,
+   "bonus": "Trois fois neuf, c'est pareil !",
+   "voix_reponse": "Vingt-sept !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏝️",
+   "question": "Dans quel pays se trouve l'île de Bali ?",
+   "choix": [
+    "La Thaïlande",
+    "L'Indonésie",
+    "Les Philippines",
+    "La Malaisie"
+   ],
+   "reponse": 1,
+   "bonus": "Surnommée l'île des dieux !",
+   "voix_reponse": "L'Indonésie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

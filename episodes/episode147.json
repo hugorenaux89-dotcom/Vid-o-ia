@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 147",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle le bébé du kangourou ?",
+   "choix": [
+    "Le joey",
+    "Le lapereau",
+    "Le louveteau",
+    "Le faon"
+   ],
+   "reponse": 0,
+   "bonus": "Il naît gros comme un haricot !",
+   "voix_reponse": "Le joey !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎃",
+   "question": "Quel légume orange sculpte-t-on à Halloween ?",
+   "choix": [
+    "La carotte",
+    "La citrouille",
+    "La patate douce",
+    "Le melon"
+   ],
+   "reponse": 1,
+   "bonus": "Avec une bougie dedans !",
+   "voix_reponse": "La citrouille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌿",
+   "question": "Quelle herbe aromatique accompagne la tomate-mozzarella ?",
+   "choix": [
+    "Le persil",
+    "Le basilic",
+    "La menthe",
+    "Le thym"
+   ],
+   "reponse": 1,
+   "bonus": "Aux couleurs de l'Italie !",
+   "voix_reponse": "Le basilic !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎾",
+   "question": "Comment s'appelle le score de 40 partout au tennis ?",
+   "choix": [
+    "Égalité",
+    "Avantage",
+    "Jeu blanc",
+    "Balle de match"
+   ],
+   "reponse": 0,
+   "bonus": "Il faut deux points d'écart pour gagner !",
+   "voix_reponse": "Égalité !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🩸",
+   "question": "Combien y a-t-il de groupes sanguins principaux ?",
+   "choix": [
+    "2",
+    "4",
+    "6",
+    "8"
+   ],
+   "reponse": 1,
+   "bonus": "A, B, AB et O !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Comment s'appelait l'épouse de Napoléon, devenue impératrice ?",
+   "choix": [
+    "Marie-Antoinette",
+    "Joséphine",
+    "Catherine",
+    "Anne"
+   ],
+   "reponse": 1,
+   "bonus": "Joséphine de Beauharnais !",
+   "voix_reponse": "Joséphine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌧️",
+   "question": "Comment s'appelle la saison des grosses pluies en Asie ?",
+   "choix": [
+    "Le blizzard",
+    "La mousson",
+    "Le mistral",
+    "La canicule"
+   ],
+   "reponse": 1,
+   "bonus": "Elle peut durer plusieurs mois !",
+   "voix_reponse": "La mousson !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐻",
+   "question": "Quelle confiture adore l'ours Paddington ?",
+   "choix": [
+    "La fraise",
+    "La marmelade d'orange",
+    "La pomme",
+    "La framboise"
+   ],
+   "reponse": 1,
+   "bonus": "Toujours un sandwich sous son chapeau !",
+   "voix_reponse": "La marmelade d'orange !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font six fois huit ?",
+   "choix": [
+    "42",
+    "46",
+    "48",
+    "54"
+   ],
+   "reponse": 2,
+   "bonus": "Quatre douzaines !",
+   "voix_reponse": "Quarante-huit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Dans quel pays se trouve la ville de Bombay ?",
+   "choix": [
+    "Le Pakistan",
+    "L'Inde",
+    "Le Bangladesh",
+    "Le Sri Lanka"
+   ],
+   "reponse": 1,
+   "bonus": "Aujourd'hui appelée Mumbai !",
+   "voix_reponse": "L'Inde !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

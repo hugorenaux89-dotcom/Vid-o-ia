@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 150",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel chien sauvage vit en Australie ?",
+   "choix": [
+    "Le coyote",
+    "Le dingo",
+    "Le chacal",
+    "Le loup"
+   ],
+   "reponse": 1,
+   "bonus": "Il ne sait pas aboyer comme nos chiens !",
+   "voix_reponse": "Le dingo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🔥",
+   "question": "Quelle friandise fait-on griller au-dessus d'un feu de camp ?",
+   "choix": [
+    "Le caramel",
+    "Le chamallow",
+    "Le nougat",
+    "La réglisse"
+   ],
+   "reponse": 1,
+   "bonus": "Fondant à l'intérieur !",
+   "voix_reponse": "Le chamallow !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧊",
+   "question": "Comment s'appelle la mer gelée près des pôles ?",
+   "choix": [
+    "Le glacier",
+    "La banquise",
+    "L'iceberg",
+    "La toundra"
+   ],
+   "reponse": 1,
+   "bonus": "Elle fond en partie en été !",
+   "voix_reponse": "La banquise !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏅",
+   "question": "Quelle ville accueillera les JO d'été de 2028 ?",
+   "choix": [
+    "Paris",
+    "Los Angeles",
+    "Brisbane",
+    "Londres"
+   ],
+   "reponse": 1,
+   "bonus": "Brisbane, ce sera en 2032 !",
+   "voix_reponse": "Los Angeles !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✍️",
+   "question": "Avec quelle main écrivent la plupart des gens ?",
+   "choix": [
+    "La gauche",
+    "La droite",
+    "Les deux",
+    "Aucune"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 9 personnes sur 10 !",
+   "voix_reponse": "La droite !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏰",
+   "question": "Quel palais royal célèbre se trouve à Londres ?",
+   "choix": [
+    "Versailles",
+    "Buckingham",
+    "Schönbrunn",
+    "L'Alhambra"
+   ],
+   "reponse": 1,
+   "bonus": "Avec la relève de la garde !",
+   "voix_reponse": "Le palais de Buckingham !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚀",
+   "question": "Comment s'appelle l'agence spatiale américaine ?",
+   "choix": [
+    "L'ESA",
+    "La NASA",
+    "Le CNES",
+    "SpaceX"
+   ],
+   "reponse": 1,
+   "bonus": "Créée en 1958 !",
+   "voix_reponse": "La NASA !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏎️",
+   "question": "Quel jeu Nintendo est une course de karts ?",
+   "choix": [
+    "Mario Party",
+    "Mario Kart",
+    "Smash Bros",
+    "Zelda"
+   ],
+   "reponse": 1,
+   "bonus": "Attention aux carapaces bleues !",
+   "voix_reponse": "Mario Kart !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font dix fois cinquante ?",
+   "choix": [
+    "50",
+    "150",
+    "500",
+    "5 000"
+   ],
+   "reponse": 2,
+   "bonus": "Cinq cents !",
+   "voix_reponse": "Cinq cents !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quelle est la capitale du Luxembourg ?",
+   "choix": [
+    "Bruxelles",
+    "Luxembourg",
+    "Esch-sur-Alzette",
+    "Strasbourg"
+   ],
+   "reponse": 1,
+   "bonus": "La ville porte le même nom que le pays !",
+   "voix_reponse": "Luxembourg !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

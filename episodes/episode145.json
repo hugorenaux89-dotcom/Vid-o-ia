@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 145",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal à long museau se nourrit de fourmis ?",
+   "choix": [
+    "Le tatou",
+    "Le fourmilier",
+    "Le hérisson",
+    "Le blaireau"
+   ],
+   "reponse": 1,
+   "bonus": "Sa langue peut mesurer 60 cm !",
+   "voix_reponse": "Le fourmilier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍜",
+   "question": "Quel plat japonais est fait de nouilles dans un bouillon ?",
+   "choix": [
+    "Les sushis",
+    "Les ramens",
+    "Les sashimis",
+    "Les tempuras"
+   ],
+   "reponse": 1,
+   "bonus": "Souvent avec un œuf mollet !",
+   "voix_reponse": "Les ramens !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌋",
+   "question": "Comment s'appelle le trou au sommet d'un volcan ?",
+   "choix": [
+    "La cheminée",
+    "Le cratère",
+    "La faille",
+    "Le geyser"
+   ],
+   "reponse": 1,
+   "bonus": "C'est de là que sort la lave !",
+   "voix_reponse": "Le cratère !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Quel joueur portugais est célèbre pour son cri « Siuuu » ?",
+   "choix": [
+    "Lionel Messi",
+    "Cristiano Ronaldo",
+    "Neymar",
+    "Kylian Mbappé"
+   ],
+   "reponse": 1,
+   "bonus": "Le meilleur buteur de l'histoire en sélection !",
+   "voix_reponse": "Cristiano Ronaldo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👄",
+   "question": "Comment s'appelle le petit bout de chair au fond de la gorge ?",
+   "choix": [
+    "L'amygdale",
+    "La luette",
+    "La glotte",
+    "Le palais"
+   ],
+   "reponse": 1,
+   "bonus": "Elle pend au fond de la bouche !",
+   "voix_reponse": "La luette !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📻",
+   "question": "Qui a lancé l'appel du 18 juin 1940 ?",
+   "choix": [
+    "Pétain",
+    "Charles de Gaulle",
+    "Leclerc",
+    "Joffre"
+   ],
+   "reponse": 1,
+   "bonus": "Depuis Londres, à la radio !",
+   "voix_reponse": "Charles de Gaulle !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚀",
+   "question": "Qui a été le premier Français dans l'espace ?",
+   "choix": [
+    "Thomas Pesquet",
+    "Jean-Loup Chrétien",
+    "Claudie Haigneré",
+    "Patrick Baudry"
+   ],
+   "reponse": 1,
+   "bonus": "En 1982, à bord d'une station soviétique !",
+   "voix_reponse": "Jean-Loup Chrétien !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎮",
+   "question": "Quelle petite boule rose avale ses ennemis chez Nintendo ?",
+   "choix": [
+    "Yoshi",
+    "Kirby",
+    "Rondoudou",
+    "Toad"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut copier leurs pouvoirs !",
+   "voix_reponse": "Kirby !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➖",
+   "question": "Combien font cent moins vingt-cinq ?",
+   "choix": [
+    "65",
+    "70",
+    "75",
+    "85"
+   ],
+   "reponse": 2,
+   "bonus": "Trois quarts de cent !",
+   "voix_reponse": "Soixante-quinze !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Quel pays partage la péninsule Ibérique avec l'Espagne ?",
+   "choix": [
+    "La France",
+    "Le Portugal",
+    "L'Italie",
+    "Le Maroc"
+   ],
+   "reponse": 1,
+   "bonus": "Tout à l'ouest de l'Europe !",
+   "voix_reponse": "Le Portugal !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

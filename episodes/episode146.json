@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 146",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel oiseau a une grande poche sous le bec pour pêcher ?",
+   "choix": [
+    "Le cormoran",
+    "Le pélican",
+    "La mouette",
+    "Le héron"
+   ],
+   "reponse": 1,
+   "bonus": "Elle peut contenir plusieurs litres d'eau !",
+   "voix_reponse": "Le pélican !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍆",
+   "question": "Quel légume violet foncé met-on dans la ratatouille ?",
+   "choix": [
+    "Le poivron",
+    "L'aubergine",
+    "La courgette",
+    "La betterave"
+   ],
+   "reponse": 1,
+   "bonus": "Un légume du soleil !",
+   "voix_reponse": "L'aubergine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌳",
+   "question": "Comment connaît-on l'âge d'un arbre coupé ?",
+   "choix": [
+    "À sa hauteur",
+    "En comptant les cernes",
+    "À la couleur des feuilles",
+    "À son odeur"
+   ],
+   "reponse": 1,
+   "bonus": "Un cerne par année !",
+   "voix_reponse": "En comptant les cernes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤽",
+   "question": "Quel sport se joue dans une piscine avec un ballon et des buts ?",
+   "choix": [
+    "La natation artistique",
+    "Le water-polo",
+    "Le plongeon",
+    "L'aviron"
+   ],
+   "reponse": 1,
+   "bonus": "Interdit de toucher le fond !",
+   "voix_reponse": "Le water-polo !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦷",
+   "question": "Qui récupère les dents de lait en France, selon la tradition ?",
+   "choix": [
+    "Le père Noël",
+    "La petite souris",
+    "La fée des dents",
+    "Le lapin de Pâques"
+   ],
+   "reponse": 1,
+   "bonus": "La fée des dents, c'est chez les Anglais !",
+   "voix_reponse": "La petite souris !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚔️",
+   "question": "Quelle célèbre bataille a eu lieu en Angleterre en 1066 ?",
+   "choix": [
+    "Waterloo",
+    "Hastings",
+    "Azincourt",
+    "Verdun"
+   ],
+   "reponse": 1,
+   "bonus": "Guillaume le Conquérant devient roi d'Angleterre !",
+   "voix_reponse": "Hastings !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Comment s'appelle le jour le plus long de l'année ?",
+   "choix": [
+    "L'équinoxe",
+    "Le solstice d'été",
+    "Le solstice d'hiver",
+    "La nuit polaire"
+   ],
+   "reponse": 1,
+   "bonus": "Vers le 21 juin !",
+   "voix_reponse": "Le solstice d'été !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤖",
+   "question": "Quel gros robot blanc gonflable est un héros de Disney ?",
+   "choix": [
+    "WALL-E",
+    "Baymax",
+    "R2-D2",
+    "Bender"
+   ],
+   "reponse": 1,
+   "bonus": "Dans Les Nouveaux Héros !",
+   "voix_reponse": "Baymax !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💯",
+   "question": "Combien de zéros y a-t-il dans le nombre cent ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "10"
+   ],
+   "reponse": 1,
+   "bonus": "Un 1 et deux 0 !",
+   "voix_reponse": "Deux !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏖️",
+   "question": "Dans quel pays se trouve la station balnéaire de Cancún ?",
+   "choix": [
+    "Le Brésil",
+    "Le Mexique",
+    "Cuba",
+    "L'Espagne"
+   ],
+   "reponse": 1,
+   "bonus": "Au bord de la mer des Caraïbes !",
+   "voix_reponse": "Le Mexique !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

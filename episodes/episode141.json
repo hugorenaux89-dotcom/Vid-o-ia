@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 141",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel oiseau peut imiter la voix humaine ?",
+   "choix": [
+    "Le moineau",
+    "Le perroquet",
+    "Le pigeon",
+    "La mouette"
+   ],
+   "reponse": 1,
+   "bonus": "Certains connaissent des centaines de mots !",
+   "voix_reponse": "Le perroquet !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍑",
+   "question": "Quel fruit a un gros noyau et une peau toute douce ?",
+   "choix": [
+    "La prune",
+    "La pêche",
+    "La cerise",
+    "La poire"
+   ],
+   "reponse": 1,
+   "bonus": "Sa peau est couverte d'un fin duvet !",
+   "voix_reponse": "La pêche !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌳",
+   "question": "Comment s'appelle la couche qui protège le tronc d'un arbre ?",
+   "choix": [
+    "La sève",
+    "L'écorce",
+    "Le bois",
+    "La racine"
+   ],
+   "reponse": 1,
+   "bonus": "Comme une peau pour l'arbre !",
+   "voix_reponse": "L'écorce !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Comment appelle-t-on trois buts marqués par le même joueur dans un match ?",
+   "choix": [
+    "Un doublé",
+    "Un coup du chapeau",
+    "Un penalty",
+    "Un corner"
+   ],
+   "reponse": 1,
+   "bonus": "On dit aussi un triplé !",
+   "voix_reponse": "Un coup du chapeau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦴",
+   "question": "Quel os relie l'épaule au sternum, à l'avant ?",
+   "choix": [
+    "L'omoplate",
+    "La clavicule",
+    "La côte",
+    "Le fémur"
+   ],
+   "reponse": 1,
+   "bonus": "Un os qui se casse souvent en tombant !",
+   "voix_reponse": "La clavicule !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💐",
+   "question": "Quelle fête a lieu le 1er mai en France ?",
+   "choix": [
+    "La fête nationale",
+    "La fête du Travail",
+    "Noël",
+    "Le jour de l'An"
+   ],
+   "reponse": 1,
+   "bonus": "On offre du muguet !",
+   "voix_reponse": "La fête du Travail !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌀",
+   "question": "Comment s'appelle une énorme tempête tropicale qui tourne en spirale ?",
+   "choix": [
+    "Une averse",
+    "Un cyclone",
+    "Une bruine",
+    "Une brise"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des vents à plus de 120 km/h !",
+   "voix_reponse": "Un cyclone !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍪",
+   "question": "Comment s'appelle le petit bonhomme en pain d'épice dans Shrek ?",
+   "choix": [
+    "Ti-Biscuit",
+    "Pinocchio",
+    "Le Chat Potté",
+    "Fiona"
+   ],
+   "reponse": 0,
+   "bonus": "« Pas mes boutons en sucre ! »",
+   "voix_reponse": "Ti-Biscuit !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📅",
+   "question": "Combien de mois y a-t-il dans un trimestre ?",
+   "choix": [
+    "2",
+    "3",
+    "4",
+    "6"
+   ],
+   "reponse": 1,
+   "bonus": "Un quart d'année !",
+   "voix_reponse": "Trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗺️",
+   "question": "Dans quel pays se trouve la ville de Cracovie ?",
+   "choix": [
+    "La Hongrie",
+    "La Pologne",
+    "La Tchéquie",
+    "L'Autriche"
+   ],
+   "reponse": 1,
+   "bonus": "L'ancienne capitale royale du pays !",
+   "voix_reponse": "La Pologne !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

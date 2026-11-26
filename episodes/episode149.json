@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 149",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Comment s'appelle la femelle du chien ?",
+   "choix": [
+    "La chienne",
+    "La louve",
+    "La renarde",
+    "La biche"
+   ],
+   "reponse": 0,
+   "bonus": "Elle peut avoir plus de 10 chiots d'un coup !",
+   "voix_reponse": "La chienne !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧀",
+   "question": "Quel fromage hollandais est reconnaissable à sa croûte rouge ?",
+   "choix": [
+    "Le gouda",
+    "L'édam",
+    "Le cheddar",
+    "Le brie"
+   ],
+   "reponse": 1,
+   "bonus": "Une croûte en cire !",
+   "voix_reponse": "L'édam !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌱",
+   "question": "De quoi une plante a-t-elle besoin pour pousser ?",
+   "choix": [
+    "De sel",
+    "D'eau et de lumière",
+    "De sucre",
+    "De rien"
+   ],
+   "reponse": 1,
+   "bonus": "Et de bonne terre !",
+   "voix_reponse": "D'eau et de lumière !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚴",
+   "question": "Lequel de ces Français a gagné cinq Tours de France ?",
+   "choix": [
+    "Bernard Hinault",
+    "Thibaut Pinot",
+    "Romain Bardet",
+    "Julian Alaphilippe"
+   ],
+   "reponse": 0,
+   "bonus": "Surnommé « le Blaireau » !",
+   "voix_reponse": "Bernard Hinault !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😵",
+   "question": "Comment appelle-t-on le fait de ne pas réussir à dormir ?",
+   "choix": [
+    "Le somnambulisme",
+    "L'insomnie",
+    "La sieste",
+    "Le ronflement"
+   ],
+   "reponse": 1,
+   "bonus": "Évite les écrans avant de dormir !",
+   "voix_reponse": "L'insomnie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏴‍☠️",
+   "question": "Comment s'appelle le drapeau noir des pirates ?",
+   "choix": [
+    "Le Jolly Roger",
+    "L'Union Jack",
+    "Le pavillon royal",
+    "Le fanion"
+   ],
+   "reponse": 0,
+   "bonus": "Avec une tête de mort !",
+   "voix_reponse": "Le Jolly Roger !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇫🇷",
+   "question": "Combien de couleurs y a-t-il sur le drapeau français ?",
+   "choix": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "reponse": 1,
+   "bonus": "Bleu, blanc, rouge !",
+   "voix_reponse": "Trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍌",
+   "question": "Comment s'appellent les petits personnages jaunes de Moi, moche et méchant ?",
+   "choix": [
+    "Les Schtroumpfs",
+    "Les Minions",
+    "Les Lapins crétins",
+    "Les Gremlins"
+   ],
+   "reponse": 1,
+   "bonus": "Ils adorent les bananes !",
+   "voix_reponse": "Les Minions !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font soixante plus quarante ?",
+   "choix": [
+    "90",
+    "100",
+    "110",
+    "120"
+   ],
+   "reponse": 1,
+   "bonus": "Cent tout rond !",
+   "voix_reponse": "Cent !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎰",
+   "question": "Quel est le deuxième plus petit pays du monde, après le Vatican ?",
+   "choix": [
+    "Saint-Marin",
+    "Monaco",
+    "Malte",
+    "Le Liechtenstein"
+   ],
+   "reponse": 1,
+   "bonus": "Environ 2 km² seulement !",
+   "voix_reponse": "Monaco !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}
