@@ -150,7 +150,7 @@
  },
  "questions": [
   {
-   "emoji": "🐠",
+   "emoji": "🌊",
    "question": "Quel poisson orange et blanc vit dans les anémones de mer ?",
    "choix": [
     "Le poisson-chat",
@@ -195,7 +195,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🟥",
+   "emoji": "⚽",
    "question": "De quelle couleur est le carton qui exclut un joueur ?",
    "choix": [
     "Jaune",

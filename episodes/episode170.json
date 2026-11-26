@@ -165,7 +165,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🫐",
+   "emoji": "🍽️",
    "question": "Quel petit fruit bleu-violet pousse en montagne ?",
    "choix": [
     "La groseille",
@@ -180,7 +180,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🌼",
+   "emoji": "🌿",
    "question": "Quelle fleur effeuille-t-on pour savoir si on est aimé ?",
    "choix": [
     "La rose",
@@ -195,7 +195,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🤺",
+   "emoji": "🏅",
    "question": "Quel sport se pratique avec une épée fine et un masque ?",
    "choix": [
     "Le judo",

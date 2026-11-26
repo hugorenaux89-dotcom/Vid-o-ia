@@ -6,7 +6,7 @@ E = {}
 E[101] = [
     ("🐾", "Comment s'appelle le petit du chien ?", ["Le chaton", "Le chiot", "Le louveteau", "Le poulain"], 1,
      "Il ouvre les yeux vers deux semaines !", "Le chiot !"),
-    ("🍏", "Quel fruit empoisonné croque Blanche-Neige ?", ["Une poire", "Une pomme", "Une cerise", "Une pêche"], 1,
+    ("🍽️", "Quel fruit empoisonné croque Blanche-Neige ?", ["Une poire", "Une pomme", "Une cerise", "Une pêche"], 1,
      "Offert par la méchante reine déguisée !", "Une pomme !"),
     ("🌍", "Quelle est la capitale de l'Italie ?", ["Milan", "Rome", "Venise", "Naples"], 1,
      "Surnommée la Ville éternelle !", "Rome !"),
@@ -198,7 +198,7 @@ E[109] = [
      "Elle a lieu tous les 4 ans !", "Le football !"),
     ("🦶", "Combien d'orteils a-t-on à chaque pied ?", ["4", "5", "6", "10"], 1,
      "Le plus gros s'appelle l'hallux !", "Cinq !"),
-    ("⚔️", "Avec quoi se battaient les chevaliers ?", ["Un pistolet", "Une épée", "Un arc à flèches seulement", "Un fusil"], 1,
+    ("📜", "Avec quoi se battaient les chevaliers ?", ["Un pistolet", "Une épée", "Un arc à flèches seulement", "Un fusil"], 1,
      "Protégés par une lourde armure !", "Une épée !"),
     ("🌞", "Le Soleil se lève de quel côté ?", ["À l'ouest", "À l'est", "Au nord", "Au sud"], 1,
      "Et il se couche à l'ouest !", "À l'est !"),

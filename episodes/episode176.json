@@ -150,7 +150,7 @@
  },
  "questions": [
   {
-   "emoji": "🐘",
+   "emoji": "🧠",
    "question": "On dit avoir une mémoire de quel animal ?",
    "choix": [
     "De poisson rouge",
@@ -240,7 +240,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "💚",
+   "emoji": "🎨",
    "question": "Quelle couleur symbolise souvent l'espoir ?",
    "choix": [
     "Le noir",

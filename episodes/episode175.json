@@ -165,7 +165,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🍋",
+   "emoji": "🍽️",
    "question": "Quel fruit utilise-t-on pour la tarte meringuée ?",
    "choix": [
     "L'orange",
@@ -195,7 +195,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🎱",
+   "emoji": "🏅",
    "question": "Quel jeu se joue sur une table verte avec des boules et une queue ?",
    "choix": [
     "Le golf",
@@ -240,7 +240,7 @@
    "ton_reponse": "triomphant"
   },
   {
-   "emoji": "🌕",
+   "emoji": "🔭",
    "question": "Sur quel astre se trouve la mer de la Tranquillité ?",
    "choix": [
     "Mars",
