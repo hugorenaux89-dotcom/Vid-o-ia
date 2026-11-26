@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 153",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel petit renard du désert a d'énormes oreilles ?",
+   "choix": [
+    "Le chacal",
+    "Le fennec",
+    "Le lynx",
+    "Le furet"
+   ],
+   "reponse": 1,
+   "bonus": "Ses oreilles l'aident à rester au frais !",
+   "voix_reponse": "Le fennec !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍋",
+   "question": "Quelle boisson pétillante est faite avec du citron ?",
+   "choix": [
+    "Le cola",
+    "La limonade",
+    "Le jus d'orange",
+    "Le sirop de menthe"
+   ],
+   "reponse": 1,
+   "bonus": "Parfaite en été !",
+   "voix_reponse": "La limonade !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌼",
+   "question": "Quelle fleur jaune du printemps a une trompette au centre ?",
+   "choix": [
+    "La tulipe",
+    "La jonquille",
+    "La rose",
+    "Le coquelicot"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle aussi narcisse !",
+   "voix_reponse": "La jonquille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏊",
+   "question": "Comment s'appelle un saut dans l'eau depuis un tremplin ?",
+   "choix": [
+    "Le plongeon",
+    "Le crawl",
+    "Le surf",
+    "La brasse"
+   ],
+   "reponse": 0,
+   "bonus": "Jusqu'à 10 mètres de haut aux JO !",
+   "voix_reponse": "Le plongeon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💓",
+   "question": "Qu'est-ce qui fait battre le cœur plus vite ?",
+   "choix": [
+    "Le sommeil",
+    "Le sport",
+    "La lecture",
+    "Le repos"
+   ],
+   "reponse": 1,
+   "bonus": "Pour envoyer plus de sang aux muscles !",
+   "voix_reponse": "Le sport !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧊",
+   "question": "Quelle guerre a opposé les États-Unis et l'URSS sans combat direct ?",
+   "choix": [
+    "La guerre de Cent Ans",
+    "La guerre froide",
+    "La guerre de Sécession",
+    "La guerre des Roses"
+   ],
+   "reponse": 1,
+   "bonus": "De 1947 à 1991 !",
+   "voix_reponse": "La guerre froide !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌏",
+   "question": "Sur quel continent se trouve la Chine ?",
+   "choix": [
+    "L'Europe",
+    "L'Asie",
+    "L'Afrique",
+    "L'Océanie"
+   ],
+   "reponse": 1,
+   "bonus": "Le plus grand continent !",
+   "voix_reponse": "L'Asie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎤",
+   "question": "Quel chanteur britannique a chanté « Shape of You » ?",
+   "choix": [
+    "Harry Styles",
+    "Ed Sheeran",
+    "Sam Smith",
+    "Elton John"
+   ],
+   "reponse": 1,
+   "bonus": "Avec sa guitare et ses cheveux roux !",
+   "voix_reponse": "Ed Sheeran !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font onze fois onze ?",
+   "choix": [
+    "111",
+    "121",
+    "122",
+    "131"
+   ],
+   "reponse": 1,
+   "bonus": "Un joli nombre !",
+   "voix_reponse": "Cent vingt et un !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏟️",
+   "question": "Quelle ville est la capitale de la Catalogne ?",
+   "choix": [
+    "Madrid",
+    "Barcelone",
+    "Valence",
+    "Séville"
+   ],
+   "reponse": 1,
+   "bonus": "Avec son célèbre club de foot !",
+   "voix_reponse": "Barcelone !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

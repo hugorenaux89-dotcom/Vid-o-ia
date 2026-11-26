@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 152",
+ "hook": {
+  "emoji": "😱",
+  "lignes": [
+   [
+    "Presque personne",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "n'a 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "à ce quiz...",
+    76,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Et toi ?",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Presque personne n'a dix sur dix à ce quiz... Et toi ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel insecte a de petites pinces au bout du corps ?",
+   "choix": [
+    "Le cafard",
+    "Le perce-oreille",
+    "La blatte",
+    "Le scarabée"
+   ],
+   "reponse": 1,
+   "bonus": "Il ne perce pas du tout les oreilles !",
+   "voix_reponse": "Le perce-oreille !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧀",
+   "question": "Quel fromage bleu italien est très crémeux ?",
+   "choix": [
+    "Le parmesan",
+    "Le gorgonzola",
+    "La mozzarella",
+    "Le pecorino"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des veines bleues !",
+   "voix_reponse": "Le gorgonzola !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌳",
+   "question": "Quel arbre aux branches tombantes pousse souvent au bord de l'eau ?",
+   "choix": [
+    "Le chêne",
+    "Le saule pleureur",
+    "Le sapin",
+    "Le platane"
+   ],
+   "reponse": 1,
+   "bonus": "Ses branches touchent presque l'eau !",
+   "voix_reponse": "Le saule pleureur !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎯",
+   "question": "Dans quel jeu lance-t-on des boules de métal vers un cochonnet ?",
+   "choix": [
+    "Le bowling",
+    "La pétanque",
+    "Le curling",
+    "Le billard"
+   ],
+   "reponse": 1,
+   "bonus": "Né à La Ciotat, en Provence !",
+   "voix_reponse": "La pétanque !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👂",
+   "question": "Quelle substance les oreilles fabriquent-elles pour se protéger ?",
+   "choix": [
+    "Des larmes",
+    "Du cérumen",
+    "De la salive",
+    "De la sueur"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle aussi la cire d'oreille !",
+   "voix_reponse": "Du cérumen !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "📜",
+   "question": "Comment s'appelle l'écriture des anciens Égyptiens ?",
+   "choix": [
+    "L'alphabet",
+    "Les hiéroglyphes",
+    "Le cunéiforme",
+    "Les runes"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des petits dessins !",
+   "voix_reponse": "Les hiéroglyphes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🚗",
+   "question": "Comment s'appelle la glace très glissante sur les routes en hiver ?",
+   "choix": [
+    "La neige",
+    "Le verglas",
+    "La grêle",
+    "La rosée"
+   ],
+   "reponse": 1,
+   "bonus": "Très dangereux pour les voitures !",
+   "voix_reponse": "Le verglas !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎈",
+   "question": "Dans quel film Pixar une maison s'envole grâce à des ballons ?",
+   "choix": [
+    "Cars",
+    "Là-haut",
+    "Toy Story",
+    "Coco"
+   ],
+   "reponse": 1,
+   "bonus": "Avec le vieux Carl et le petit Russell !",
+   "voix_reponse": "Là-haut !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➗",
+   "question": "Combien font quatre-vingt-dix divisé par trois ?",
+   "choix": [
+    "20",
+    "30",
+    "33",
+    "45"
+   ],
+   "reponse": 1,
+   "bonus": "Trente !",
+   "voix_reponse": "Trente !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🧊",
+   "question": "Quel océan entoure l'Antarctique ?",
+   "choix": [
+    "L'Arctique",
+    "L'océan Austral",
+    "L'océan Indien",
+    "L'Atlantique"
+   ],
+   "reponse": 1,
+   "bonus": "Le plus froid du monde !",
+   "voix_reponse": "L'océan Austral !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 154",
+ "hook": {
+  "emoji": "🔥",
+  "lignes": [
+   [
+    "La dernière",
+    90,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "question va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "te piéger...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Tu paries ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "La dernière question va te piéger... Tu paries ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel serpent déploie une « capuche » quand il se dresse ?",
+   "choix": [
+    "La vipère",
+    "Le cobra",
+    "Le python",
+    "La couleuvre"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut cracher son venin !",
+   "voix_reponse": "Le cobra !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌮",
+   "question": "Quelle galette mexicaine sert à faire les tacos ?",
+   "choix": [
+    "Le naan",
+    "La tortilla",
+    "La pita",
+    "La focaccia"
+   ],
+   "reponse": 1,
+   "bonus": "À base de maïs ou de blé !",
+   "voix_reponse": "La tortilla !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌲",
+   "question": "Quel arbre a des aiguilles et des pommes de pin ?",
+   "choix": [
+    "Le chêne",
+    "Le pin",
+    "Le hêtre",
+    "Le bouleau"
+   ],
+   "reponse": 1,
+   "bonus": "Il sent bon la résine !",
+   "voix_reponse": "Le pin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥊",
+   "question": "Comment s'appelle l'endroit où se battent les boxeurs ?",
+   "choix": [
+    "Le tatami",
+    "Le ring",
+    "Le court",
+    "La piste"
+   ],
+   "reponse": 1,
+   "bonus": "Entouré de cordes !",
+   "voix_reponse": "Le ring !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🗣️",
+   "question": "Qu'est-ce qui vibre dans la gorge quand on parle ?",
+   "choix": [
+    "Les cordes vocales",
+    "Les amygdales",
+    "Les nerfs",
+    "Les tendons"
+   ],
+   "reponse": 0,
+   "bonus": "Plus elles vibrent vite, plus la voix est aiguë !",
+   "voix_reponse": "Les cordes vocales !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "👑",
+   "question": "Quel titre portaient les empereurs de Russie ?",
+   "choix": [
+    "Sultan",
+    "Tsar",
+    "Shah",
+    "Pharaon"
+   ],
+   "reponse": 1,
+   "bonus": "Jusqu'en 1917 !",
+   "voix_reponse": "Tsar !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☁️",
+   "question": "De quoi sont faits les nuages ?",
+   "choix": [
+    "De fumée",
+    "De minuscules gouttes d'eau",
+    "De coton",
+    "De poussière seulement"
+   ],
+   "reponse": 1,
+   "bonus": "Ou de petits cristaux de glace !",
+   "voix_reponse": "De minuscules gouttes d'eau !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🐱",
+   "question": "Quel chat avec des bottes est l'ami de Shrek ?",
+   "choix": [
+    "Le Chat Potté",
+    "Garfield",
+    "Félix",
+    "Grosminet"
+   ],
+   "reponse": 0,
+   "bonus": "Avec ses grands yeux qui font craquer !",
+   "voix_reponse": "Le Chat Potté !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font deux cents plus trois cents ?",
+   "choix": [
+    "400",
+    "500",
+    "600",
+    "5 000"
+   ],
+   "reponse": 1,
+   "bonus": "La moitié de mille !",
+   "voix_reponse": "Cinq cents !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦁",
+   "question": "Dans quel pays se trouve la ville de Pretoria ?",
+   "choix": [
+    "Le Kenya",
+    "L'Afrique du Sud",
+    "Le Nigeria",
+    "L'Égypte"
+   ],
+   "reponse": 1,
+   "bonus": "Le siège du gouvernement du pays !",
+   "voix_reponse": "L'Afrique du Sud !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

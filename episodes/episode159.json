@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 159",
+ "hook": {
+  "emoji": "🧠",
+  "lignes": [
+   [
+    "Seuls les",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vrais génies",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "ont 10/10",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "Prouve-le !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Seuls les vrais génies ont dix sur dix. Prouve-le !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal dort la tête en bas dans les grottes ?",
+   "choix": [
+    "Le paresseux",
+    "La chauve-souris",
+    "Le singe",
+    "Le hibou"
+   ],
+   "reponse": 1,
+   "bonus": "Accrochée par les pieds !",
+   "voix_reponse": "La chauve-souris !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍯",
+   "question": "Quel animal adore voler le miel dans les dessins animés ?",
+   "choix": [
+    "Le loup",
+    "L'ours",
+    "Le renard",
+    "Le lapin"
+   ],
+   "reponse": 1,
+   "bonus": "Comme Winnie !",
+   "voix_reponse": "L'ours !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍀",
+   "question": "Combien de feuilles a un trèfle porte-bonheur ?",
+   "choix": [
+    "2",
+    "3",
+    "4",
+    "5"
+   ],
+   "reponse": 2,
+   "bonus": "Très rare à trouver !",
+   "voix_reponse": "Quatre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏄",
+   "question": "Où est né le surf ?",
+   "choix": [
+    "En Australie",
+    "À Hawaï",
+    "Au Brésil",
+    "En France"
+   ],
+   "reponse": 1,
+   "bonus": "Il y a des siècles !",
+   "voix_reponse": "À Hawaï !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😴",
+   "question": "Qu'est-ce qui aide le plus la mémoire ?",
+   "choix": [
+    "Ne pas dormir",
+    "Bien dormir",
+    "Manger beaucoup de sucre",
+    "Regarder la télé"
+   ],
+   "reponse": 1,
+   "bonus": "Le cerveau range les souvenirs la nuit !",
+   "voix_reponse": "Bien dormir !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏛️",
+   "question": "Quel monument parisien abrite les tombes de grands Français ?",
+   "choix": [
+    "Les Invalides",
+    "Le Panthéon",
+    "Notre-Dame",
+    "Le Louvre"
+   ],
+   "reponse": 1,
+   "bonus": "Comme Victor Hugo et Marie Curie !",
+   "voix_reponse": "Le Panthéon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌠",
+   "question": "Comment appelle-t-on la trace lumineuse d'un caillou spatial dans le ciel ?",
+   "choix": [
+    "Une comète",
+    "Une étoile filante",
+    "Une aurore",
+    "Un éclair"
+   ],
+   "reponse": 1,
+   "bonus": "Fais un vœu !",
+   "voix_reponse": "Une étoile filante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍄",
+   "question": "Comment s'appelle le frère de Mario ?",
+   "choix": [
+    "Wario",
+    "Luigi",
+    "Toad",
+    "Yoshi"
+   ],
+   "reponse": 1,
+   "bonus": "Toujours habillé en vert !",
+   "voix_reponse": "Luigi !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font douze fois cinq ?",
+   "choix": [
+    "50",
+    "55",
+    "60",
+    "65"
+   ],
+   "reponse": 2,
+   "bonus": "Autant que les minutes dans une heure !",
+   "voix_reponse": "Soixante !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍁",
+   "question": "Quel grand fleuve traverse Montréal et Québec ?",
+   "choix": [
+    "Le Mississippi",
+    "Le Saint-Laurent",
+    "Le Yukon",
+    "Le Niagara"
+   ],
+   "reponse": 1,
+   "bonus": "Il se jette dans l'Atlantique !",
+   "voix_reponse": "Le Saint-Laurent !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

@@ -262,3 +262,133 @@ E[150] = [
     ('✖️', 'Combien font dix fois cinquante ?', ['50', '150', '500', '5 000'], 2, 'Cinq cents !', 'Cinq cents !'),
     ('🗺️', 'Quelle est la capitale du Luxembourg ?', ['Bruxelles', 'Luxembourg', 'Esch-sur-Alzette', 'Strasbourg'], 1, 'La ville porte le même nom que le pays !', 'Luxembourg !'),
 ]
+
+E[151] = [
+    ('🐾', 'Quel animal ressemble à un cheval avec des rayures noires et blanches ?', ["L'âne", 'Le zèbre', 'Le cheval', "L'okapi"], 1, 'Ses rayures éloignent les mouches !', 'Le zèbre !'),
+    ('🍇', 'Quel fruit pousse en grappes avec plein de petits grains ?', ['La cerise', 'Le raisin', 'La fraise', 'La mûre'], 1, 'Noir, rouge ou blanc !', 'Le raisin !'),
+    ('🌸', 'Quel arbre japonais est célèbre pour ses fleurs roses au printemps ?', ["L'érable", 'Le cerisier', 'Le bambou', 'Le pin'], 1, 'Les Japonais font la fête sous ses fleurs !', 'Le cerisier !'),
+    ('🏀', 'De quelle couleur est un ballon de basket, en général ?', ['Blanc', 'Orange', 'Noir', 'Vert'], 1, 'Avec des lignes noires !', 'Orange !'),
+    ('🖐️', 'Combien de petits os y a-t-il dans un doigt, hors pouce ?', ['1', '2', '3', '4'], 2, 'On les appelle les phalanges !', 'Trois !'),
+    ('🌕', 'Quel pays a envoyé les premiers hommes sur la Lune ?', ["L'URSS", 'Les États-Unis', 'La Chine', 'La France'], 1, 'Avec la mission Apollo 11 !', 'Les États-Unis !'),
+    ('☀️', 'Combien de fois le Soleil est-il plus large que la Terre ?', ['10 fois', 'Environ 109 fois', '1 000 fois', '2 fois'], 1, 'Il est gigantesque !', 'Environ cent neuf fois !'),
+    ('🥕', 'Quel lapin dit « Quoi de neuf, docteur ? » ?', ['Roger Rabbit', 'Bugs Bunny', 'Panpan', 'Pierre Lapin'], 1, 'Toujours une carotte à la main !', 'Bugs Bunny !'),
+    ('✖️', 'Combien font quinze fois trois ?', ['35', '45', '50', '55'], 1, 'Trois quarts d\'heure en minutes !', 'Quarante-cinq !'),
+    ('⛰️', "Quelles montagnes séparent l'Europe de l'Asie, en Russie ?", ['Le Caucase', "L'Oural", "L'Altaï", 'Les Carpates'], 1, 'Une frontière naturelle de 2 500 km !', "L'Oural !"),
+]
+
+E[152] = [
+    ('🐾', 'Quel insecte a de petites pinces au bout du corps ?', ['Le cafard', 'Le perce-oreille', 'La blatte', 'Le scarabée'], 1, 'Il ne perce pas du tout les oreilles !', 'Le perce-oreille !'),
+    ('🧀', 'Quel fromage bleu italien est très crémeux ?', ['Le parmesan', 'Le gorgonzola', 'La mozzarella', 'Le pecorino'], 1, 'Avec des veines bleues !', 'Le gorgonzola !'),
+    ('🌳', "Quel arbre aux branches tombantes pousse souvent au bord de l'eau ?", ['Le chêne', 'Le saule pleureur', 'Le sapin', 'Le platane'], 1, "Ses branches touchent presque l'eau !", 'Le saule pleureur !'),
+    ('🎯', 'Dans quel jeu lance-t-on des boules de métal vers un cochonnet ?', ['Le bowling', 'La pétanque', 'Le curling', 'Le billard'], 1, 'Né à La Ciotat, en Provence !', 'La pétanque !'),
+    ('👂', 'Quelle substance les oreilles fabriquent-elles pour se protéger ?', ['Des larmes', 'Du cérumen', 'De la salive', 'De la sueur'], 1, "On l'appelle aussi la cire d'oreille !", 'Du cérumen !'),
+    ('📜', "Comment s'appelle l'écriture des anciens Égyptiens ?", ["L'alphabet", 'Les hiéroglyphes', 'Le cunéiforme', 'Les runes'], 1, 'Avec des petits dessins !', 'Les hiéroglyphes !'),
+    ('🚗', "Comment s'appelle la glace très glissante sur les routes en hiver ?", ['La neige', 'Le verglas', 'La grêle', 'La rosée'], 1, 'Très dangereux pour les voitures !', 'Le verglas !'),
+    ('🎈', "Dans quel film Pixar une maison s'envole grâce à des ballons ?", ['Cars', 'Là-haut', 'Toy Story', 'Coco'], 1, 'Avec le vieux Carl et le petit Russell !', 'Là-haut !'),
+    ('➗', 'Combien font quatre-vingt-dix divisé par trois ?', ['20', '30', '33', '45'], 1, 'Trente !', 'Trente !'),
+    ('🧊', "Quel océan entoure l'Antarctique ?", ["L'Arctique", "L'océan Austral", "L'océan Indien", "L'Atlantique"], 1, 'Le plus froid du monde !', "L'océan Austral !"),
+]
+
+E[153] = [
+    ('🐾', "Quel petit renard du désert a d'énormes oreilles ?", ['Le chacal', 'Le fennec', 'Le lynx', 'Le furet'], 1, "Ses oreilles l'aident à rester au frais !", 'Le fennec !'),
+    ('🍋', 'Quelle boisson pétillante est faite avec du citron ?', ['Le cola', 'La limonade', "Le jus d'orange", 'Le sirop de menthe'], 1, 'Parfaite en été !', 'La limonade !'),
+    ('🌼', 'Quelle fleur jaune du printemps a une trompette au centre ?', ['La tulipe', 'La jonquille', 'La rose', 'Le coquelicot'], 1, "On l'appelle aussi narcisse !", 'La jonquille !'),
+    ('🏊', "Comment s'appelle un saut dans l'eau depuis un tremplin ?", ['Le plongeon', 'Le crawl', 'Le surf', 'La brasse'], 0, "Jusqu'à 10 mètres de haut aux JO !", 'Le plongeon !'),
+    ('💓', "Qu'est-ce qui fait battre le cœur plus vite ?", ['Le sommeil', 'Le sport', 'La lecture', 'Le repos'], 1, 'Pour envoyer plus de sang aux muscles !', 'Le sport !'),
+    ('🧊', "Quelle guerre a opposé les États-Unis et l'URSS sans combat direct ?", ['La guerre de Cent Ans', 'La guerre froide', 'La guerre de Sécession', 'La guerre des Roses'], 1, 'De 1947 à 1991 !', 'La guerre froide !'),
+    ('🌏', 'Sur quel continent se trouve la Chine ?', ["L'Europe", "L'Asie", "L'Afrique", "L'Océanie"], 1, 'Le plus grand continent !', "L'Asie !"),
+    ('🎤', 'Quel chanteur britannique a chanté « Shape of You » ?', ['Harry Styles', 'Ed Sheeran', 'Sam Smith', 'Elton John'], 1, 'Avec sa guitare et ses cheveux roux !', 'Ed Sheeran !'),
+    ('✖️', 'Combien font onze fois onze ?', ['111', '121', '122', '131'], 1, 'Un joli nombre !', 'Cent vingt et un !'),
+    ('🏟️', 'Quelle ville est la capitale de la Catalogne ?', ['Madrid', 'Barcelone', 'Valence', 'Séville'], 1, 'Avec son célèbre club de foot !', 'Barcelone !'),
+]
+
+E[154] = [
+    ('🐾', 'Quel serpent déploie une « capuche » quand il se dresse ?', ['La vipère', 'Le cobra', 'Le python', 'La couleuvre'], 1, 'Il peut cracher son venin !', 'Le cobra !'),
+    ('🌮', 'Quelle galette mexicaine sert à faire les tacos ?', ['Le naan', 'La tortilla', 'La pita', 'La focaccia'], 1, 'À base de maïs ou de blé !', 'La tortilla !'),
+    ('🌲', 'Quel arbre a des aiguilles et des pommes de pin ?', ['Le chêne', 'Le pin', 'Le hêtre', 'Le bouleau'], 1, 'Il sent bon la résine !', 'Le pin !'),
+    ('🥊', "Comment s'appelle l'endroit où se battent les boxeurs ?", ['Le tatami', 'Le ring', 'Le court', 'La piste'], 1, 'Entouré de cordes !', 'Le ring !'),
+    ('🗣️', "Qu'est-ce qui vibre dans la gorge quand on parle ?", ['Les cordes vocales', 'Les amygdales', 'Les nerfs', 'Les tendons'], 0, 'Plus elles vibrent vite, plus la voix est aiguë !', 'Les cordes vocales !'),
+    ('👑', 'Quel titre portaient les empereurs de Russie ?', ['Sultan', 'Tsar', 'Shah', 'Pharaon'], 1, "Jusqu'en 1917 !", 'Tsar !'),
+    ('☁️', 'De quoi sont faits les nuages ?', ['De fumée', "De minuscules gouttes d'eau", 'De coton', 'De poussière seulement'], 1, 'Ou de petits cristaux de glace !', "De minuscules gouttes d'eau !"),
+    ('🐱', "Quel chat avec des bottes est l'ami de Shrek ?", ['Le Chat Potté', 'Garfield', 'Félix', 'Grosminet'], 0, 'Avec ses grands yeux qui font craquer !', 'Le Chat Potté !'),
+    ('➕', 'Combien font deux cents plus trois cents ?', ['400', '500', '600', '5 000'], 1, 'La moitié de mille !', 'Cinq cents !'),
+    ('🦁', 'Dans quel pays se trouve la ville de Pretoria ?', ['Le Kenya', "L'Afrique du Sud", 'Le Nigeria', "L'Égypte"], 1, 'Le siège du gouvernement du pays !', "L'Afrique du Sud !"),
+]
+
+E[155] = [
+    ('🐾', 'Quel petit rongeur court dans une roue, dans sa cage ?', ['Le lapin', 'Le hamster', 'Le chat', 'Le furet'], 1, 'Il peut courir des kilomètres chaque nuit !', 'Le hamster !'),
+    ('🍰', "Quel gâteau au café et au chocolat porte le nom d'un lieu de spectacle ?", ["L'opéra", 'Le théâtre', 'Le cinéma', 'Le cirque'], 0, 'Avec ses fines couches !', "L'opéra !"),
+    ('🌿', 'Quelle plante grimpante recouvre souvent les vieux murs ?', ['Le lierre', 'Le cactus', 'Le bambou', 'La fougère'], 0, 'Toujours vert, même en hiver !', 'Le lierre !'),
+    ('⛷️', "Comment s'appelle une descente de ski entre des piquets ?", ['Le saut', 'Le slalom', 'Le biathlon', 'Le ski de fond'], 1, 'Il faut zigzaguer vite !', 'Le slalom !'),
+    ('🤙', "Comment s'appelle le plus petit doigt de la main ?", ['Le pouce', "L'auriculaire", "L'annulaire", "L'index"], 1, "On l'appelle aussi le petit doigt !", "L'auriculaire !"),
+    ('🛁', 'Quel savant grec a crié « Eurêka ! » dans son bain ?', ['Pythagore', 'Archimède', 'Platon', 'Euclide'], 1, 'Il venait de faire une grande découverte !', 'Archimède !'),
+    ('🌕', 'Combien de missions Apollo se sont posées sur la Lune ?', ['1', '3', '6', '12'], 2, 'Entre 1969 et 1972 !', 'Six !'),
+    ('🎮', 'Dans quel jeu capture-t-on des créatures avec des balles rouges et blanches ?', ['Digimon', 'Pokémon', 'Animal Crossing', 'Zelda'], 1, 'Attrapez-les tous !', 'Pokémon !'),
+    ('➕', 'Combien font trente-trois plus trente-trois ?', ['63', '66', '69', '99'], 1, 'Le double de trente-trois !', 'Soixante-six !'),
+    ('🍕', 'Dans quel pays se trouve la ville de Naples ?', ["L'Espagne", "L'Italie", 'La Grèce', 'Malte'], 1, 'La ville de naissance de la pizza !', "L'Italie !"),
+]
+
+E[156] = [
+    ('🐾', 'Quel oiseau noir et blanc aime voler ce qui brille ?', ['La pie', 'Le corbeau', 'Le merle', 'La mésange'], 0, "On dit d'ailleurs « voleuse comme une pie » !", 'La pie !'),
+    ('🍽️', 'De quelle région du monde vient le couscous ?', ["L'Asie", 'Le Maghreb', "L'Amérique", "L'Europe du Nord"], 1, 'Avec de la semoule et des légumes !', 'Le Maghreb !'),
+    ('♨️', "Comment s'appelle un jet d'eau chaude qui jaillit du sol ?", ['Un volcan', 'Un geyser', 'Une source', 'Une cascade'], 1, 'Très nombreux en Islande !', 'Un geyser !'),
+    ('⚽', 'Combien mesure environ un but de foot en largeur ?', ['3 m', 'Environ 7,3 m', '12 m', '20 m'], 1, 'Et 2,44 m de haut !', 'Environ sept mètres trente !'),
+    ('🦒', 'Quelle partie du corps relie la tête au reste du corps ?', ['Le dos', 'Le cou', "L'épaule", 'La poitrine'], 1, 'Avec sept vertèbres !', 'Le cou !'),
+    ('🎈', 'Quels frères français ont fait voler le premier ballon à air chaud ?', ['Les frères Wright', 'Les frères Montgolfier', 'Les frères Lumière', 'Les frères Grimm'], 1, 'En 1783 !', 'Les frères Montgolfier !'),
+    ('🌡️', 'Que mesure le baromètre ?', ['La température', "La pression de l'air", 'Le vent', 'La pluie'], 1, "Pour prévoir le temps qu'il va faire !", "La pression de l'air !"),
+    ('🦗', 'Quel insecte est la petite conscience de Pinocchio ?', ['Une abeille', 'Un grillon', 'Un papillon', 'Une fourmi'], 1, "Il s'appelle Jiminy Cricket !", 'Un grillon !'),
+    ('✖️', 'Combien font cinq fois neuf ?', ['40', '45', '50', '54'], 1, 'Quarante-cinq !', 'Quarante-cinq !'),
+    ('🏔️', "Quel est le plus haut sommet d'Amérique du Sud ?", ['Le Chimborazo', "L'Aconcagua", 'Le Machu Picchu', 'Le Huascarán'], 1, 'Presque 7 000 mètres, en Argentine !', "L'Aconcagua !"),
+]
+
+E[157] = [
+    ('🐾', 'Quel animal saute de branche en branche avec sa longue queue ?', ['Le paresseux', 'Le singe', 'Le koala', 'Le panda'], 1, "Certains s'accrochent même avec leur queue !", 'Le singe !'),
+    ('🍏', 'Quelle pomme est verte et acide ?', ['La Golden', 'La Granny Smith', 'La Gala', 'La Pink Lady'], 1, "Venue d'Australie !", 'La Granny Smith !'),
+    ('🍁', 'Pourquoi les feuilles changent-elles de couleur en automne ?', ['Il fait trop chaud', 'Leur chlorophylle disparaît', 'Elles sont peintes', 'À cause de la pluie'], 1, 'Le jaune et le rouge apparaissent !', 'Leur chlorophylle disparaît !'),
+    ('🏓', 'Quel pays domine le tennis de table mondial ?', ['Le Brésil', 'La Chine', 'La France', "L'Allemagne"], 1, 'Un sport national là-bas !', 'La Chine !'),
+    ('😱', 'Comment appelle-t-on un mauvais rêve ?', ['Une rêverie', 'Un cauchemar', 'Une insomnie', 'Une sieste'], 1, "Heureusement, ce n'est qu'un rêve !", 'Un cauchemar !'),
+    ('💎', 'Où sont gardés les joyaux de la Couronne britannique ?', ['À Big Ben', 'À la tour de Londres', 'À Buckingham', 'À Westminster'], 1, 'Surveillés par des gardes en rouge !', 'À la tour de Londres !'),
+    ('☄️', "Comment s'appellent les boules de glace et de poussière avec une longue queue ?", ['Les astéroïdes', 'Les comètes', 'Les météorites', 'Les planètes naines'], 1, 'Leur queue peut faire des millions de km !', 'Les comètes !'),
+    ('🎧', 'Quel duo français a chanté « Get Lucky » ?', ['Justice', 'Daft Punk', 'Air', 'Phoenix'], 1, 'Avec leurs casques de robots !', 'Daft Punk !'),
+    ('➗', 'Combien font cinquante divisé par cinq ?', ['5', '10', '15', '25'], 1, 'Dix !', 'Dix !'),
+    ('🇨🇭', 'Quelle est la plus grande ville de Suisse ?', ['Genève', 'Zurich', 'Berne', 'Lausanne'], 1, "Ce n'est pas la capitale !", 'Zurich !'),
+]
+
+E[158] = [
+    ('🐟', 'Comment appelle-t-on un groupe de poissons ?', ['Une meute', 'Un banc', 'Un troupeau', 'Une nuée'], 1, 'Ils nagent tous ensemble !', 'Un banc !'),
+    ('🧅', 'Quel légume fait pleurer quand on le coupe ?', ['La carotte', "L'oignon", 'La pomme de terre', 'Le poireau'], 1, "À cause d'un gaz qui pique les yeux !", "L'oignon !"),
+    ('🌊', "Combien d'océans y a-t-il sur Terre ?", ['3', '5', '7', '9'], 1, 'Pacifique, Atlantique, Indien, Arctique et Austral !', 'Cinq !'),
+    ('⚾', 'Combien de bases y a-t-il au baseball, marbre compris ?', ['3', '4', '5', '6'], 1, 'Le terrain forme un losange !', 'Quatre !'),
+    ('🍬', 'Quel aliment abîme le plus les dents ?', ["L'eau", 'Les bonbons', 'Les légumes', 'Le pain complet'], 1, 'Pense à bien te brosser les dents !', 'Les bonbons !'),
+    ('🛡️', 'Comment appelait-on un soldat romain ?', ['Un hoplite', 'Un légionnaire', 'Un samouraï', 'Un chevalier'], 1, 'Avec son bouclier rectangulaire !', 'Un légionnaire !'),
+    ('☀️', 'Quelle est la saison la plus chaude en France ?', ['Le printemps', "L'été", "L'automne", "L'hiver"], 1, 'Le temps des vacances !', "L'été !"),
+    ('💀', 'Quel film Pixar se passe pendant la fête des morts au Mexique ?', ['Encanto', 'Coco', 'Vaiana', 'Luca'], 1, "« Ne m'oublie pas » !", 'Coco !'),
+    ('💶', 'Combien de centimes y a-t-il dans un euro ?', ['10', '50', '100', '1 000'], 2, 'Cent centimes !', 'Cent !'),
+    ('🗺️', 'Dans quel pays se trouve la ville de Göteborg ?', ['La Norvège', 'La Suède', 'Le Danemark', 'La Finlande'], 1, 'La deuxième ville du pays !', 'La Suède !'),
+]
+
+E[159] = [
+    ('🐾', 'Quel animal dort la tête en bas dans les grottes ?', ['Le paresseux', 'La chauve-souris', 'Le singe', 'Le hibou'], 1, 'Accrochée par les pieds !', 'La chauve-souris !'),
+    ('🍯', 'Quel animal adore voler le miel dans les dessins animés ?', ['Le loup', "L'ours", 'Le renard', 'Le lapin'], 1, 'Comme Winnie !', "L'ours !"),
+    ('🍀', 'Combien de feuilles a un trèfle porte-bonheur ?', ['2', '3', '4', '5'], 2, 'Très rare à trouver !', 'Quatre !'),
+    ('🏄', 'Où est né le surf ?', ['En Australie', 'À Hawaï', 'Au Brésil', 'En France'], 1, 'Il y a des siècles !', 'À Hawaï !'),
+    ('😴', "Qu'est-ce qui aide le plus la mémoire ?", ['Ne pas dormir', 'Bien dormir', 'Manger beaucoup de sucre', 'Regarder la télé'], 1, 'Le cerveau range les souvenirs la nuit !', 'Bien dormir !'),
+    ('🏛️', 'Quel monument parisien abrite les tombes de grands Français ?', ['Les Invalides', 'Le Panthéon', 'Notre-Dame', 'Le Louvre'], 1, 'Comme Victor Hugo et Marie Curie !', 'Le Panthéon !'),
+    ('🌠', "Comment appelle-t-on la trace lumineuse d'un caillou spatial dans le ciel ?", ['Une comète', 'Une étoile filante', 'Une aurore', 'Un éclair'], 1, 'Fais un vœu !', 'Une étoile filante !'),
+    ('🍄', "Comment s'appelle le frère de Mario ?", ['Wario', 'Luigi', 'Toad', 'Yoshi'], 1, 'Toujours habillé en vert !', 'Luigi !'),
+    ('✖️', 'Combien font douze fois cinq ?', ['50', '55', '60', '65'], 2, 'Autant que les minutes dans une heure !', 'Soixante !'),
+    ('🍁', 'Quel grand fleuve traverse Montréal et Québec ?', ['Le Mississippi', 'Le Saint-Laurent', 'Le Yukon', 'Le Niagara'], 1, "Il se jette dans l'Atlantique !", 'Le Saint-Laurent !'),
+]
+
+E[160] = [
+    ('🐾', 'Quel animal a un museau appelé groin ?', ['Le chien', 'Le cochon', 'Le cheval', 'Le mouton'], 1, 'Il fouille le sol avec !', 'Le cochon !'),
+    ('🍕', 'Quelle pizza est pliée en deux comme un chausson ?', ['La Margherita', 'La calzone', 'La Regina', 'La quatre-fromages'], 1, 'Le mot veut dire « pantalon » en italien !', 'La calzone !'),
+    ('🌺', 'Quelle fleur des champs est rouge avec un cœur noir ?', ['La rose', 'Le coquelicot', 'La tulipe', 'Le géranium'], 1, 'Elle pousse souvent dans les blés !', 'Le coquelicot !'),
+    ('🏆', 'Quel trophée récompense chaque année le meilleur joueur de foot ?', ['La Coupe Davis', "Le Ballon d'or", "La Palme d'or", "Le Soulier d'argent"], 1, 'Remis à Paris depuis 1956 !', "Le Ballon d'or !"),
+    ('😉', "Combien de temps dure un clignement d'œil ?", ['Une minute', 'Une fraction de seconde', '10 secondes', 'Une heure'], 1, "Plus rapide qu'un éclair !", 'Une fraction de seconde !'),
+    ('🏛️', "Comment s'appelle le palais du président français ?", ['Matignon', "L'Élysée", 'Versailles', 'Le Louvre'], 1, "Matignon, c'est le Premier ministre !", "L'Élysée !"),
+    ('🌍', 'Quelle ligne imaginaire passe par Greenwich, à Londres ?', ["L'équateur", 'Le méridien de Greenwich', 'Le tropique', 'Le cercle polaire'], 1, 'Le point de départ des fuseaux horaires !', 'Le méridien de Greenwich !'),
+    ('🦇', 'Quel super-héros milliardaire se déguise en chauve-souris ?', ['Superman', 'Batman', 'Iron Man', 'Spider-Man'], 1, 'Il protège la ville de Gotham !', 'Batman !'),
+    ('➕', 'Combien font cent cinquante plus cinquante ?', ['150', '200', '250', '300'], 1, 'Deux cents !', 'Deux cents !'),
+    ('⚡', 'Dans quel pays se trouve le mont Olympe ?', ["L'Italie", 'La Grèce', 'La Turquie', 'Chypre'], 1, 'La maison des dieux grecs !', 'La Grèce !'),
+]

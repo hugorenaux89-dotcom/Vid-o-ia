@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 156",
+ "hook": {
+  "emoji": "⚡",
+  "lignes": [
+   [
+    "10 questions",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "de plus en",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "plus dures...",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "T'es prêt ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Dix questions, de plus en plus dures... T'es prêt ?",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "🔥",
+   "lignes": [
+    [
+     "Mi-temps !",
+     100,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "T'as tout bon ?",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Accroche-toi...",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Mi-temps ! T'as tout bon ? Accroche-toi... la suite est plus dure.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "😱",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Presque personne",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "ne la trouve...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Bon... dernière question. Et celle-là, presque personne la trouve.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel oiseau noir et blanc aime voler ce qui brille ?",
+   "choix": [
+    "La pie",
+    "Le corbeau",
+    "Le merle",
+    "La mésange"
+   ],
+   "reponse": 0,
+   "bonus": "On dit d'ailleurs « voleuse comme une pie » !",
+   "voix_reponse": "La pie !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍽️",
+   "question": "De quelle région du monde vient le couscous ?",
+   "choix": [
+    "L'Asie",
+    "Le Maghreb",
+    "L'Amérique",
+    "L'Europe du Nord"
+   ],
+   "reponse": 1,
+   "bonus": "Avec de la semoule et des légumes !",
+   "voix_reponse": "Le Maghreb !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "♨️",
+   "question": "Comment s'appelle un jet d'eau chaude qui jaillit du sol ?",
+   "choix": [
+    "Un volcan",
+    "Un geyser",
+    "Une source",
+    "Une cascade"
+   ],
+   "reponse": 1,
+   "bonus": "Très nombreux en Islande !",
+   "voix_reponse": "Un geyser !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⚽",
+   "question": "Combien mesure environ un but de foot en largeur ?",
+   "choix": [
+    "3 m",
+    "Environ 7,3 m",
+    "12 m",
+    "20 m"
+   ],
+   "reponse": 1,
+   "bonus": "Et 2,44 m de haut !",
+   "voix_reponse": "Environ sept mètres trente !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦒",
+   "question": "Quelle partie du corps relie la tête au reste du corps ?",
+   "choix": [
+    "Le dos",
+    "Le cou",
+    "L'épaule",
+    "La poitrine"
+   ],
+   "reponse": 1,
+   "bonus": "Avec sept vertèbres !",
+   "voix_reponse": "Le cou !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎈",
+   "question": "Quels frères français ont fait voler le premier ballon à air chaud ?",
+   "choix": [
+    "Les frères Wright",
+    "Les frères Montgolfier",
+    "Les frères Lumière",
+    "Les frères Grimm"
+   ],
+   "reponse": 1,
+   "bonus": "En 1783 !",
+   "voix_reponse": "Les frères Montgolfier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌡️",
+   "question": "Que mesure le baromètre ?",
+   "choix": [
+    "La température",
+    "La pression de l'air",
+    "Le vent",
+    "La pluie"
+   ],
+   "reponse": 1,
+   "bonus": "Pour prévoir le temps qu'il va faire !",
+   "voix_reponse": "La pression de l'air !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🦗",
+   "question": "Quel insecte est la petite conscience de Pinocchio ?",
+   "choix": [
+    "Une abeille",
+    "Un grillon",
+    "Un papillon",
+    "Une fourmi"
+   ],
+   "reponse": 1,
+   "bonus": "Il s'appelle Jiminy Cricket !",
+   "voix_reponse": "Un grillon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font cinq fois neuf ?",
+   "choix": [
+    "40",
+    "45",
+    "50",
+    "54"
+   ],
+   "reponse": 1,
+   "bonus": "Quarante-cinq !",
+   "voix_reponse": "Quarante-cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏔️",
+   "question": "Quel est le plus haut sommet d'Amérique du Sud ?",
+   "choix": [
+    "Le Chimborazo",
+    "L'Aconcagua",
+    "Le Machu Picchu",
+    "Le Huascarán"
+   ],
+   "reponse": 1,
+   "bonus": "Presque 7 000 mètres, en Argentine !",
+   "voix_reponse": "L'Aconcagua !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

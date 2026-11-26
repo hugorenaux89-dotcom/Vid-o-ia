@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 157",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal saute de branche en branche avec sa longue queue ?",
+   "choix": [
+    "Le paresseux",
+    "Le singe",
+    "Le koala",
+    "Le panda"
+   ],
+   "reponse": 1,
+   "bonus": "Certains s'accrochent même avec leur queue !",
+   "voix_reponse": "Le singe !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍏",
+   "question": "Quelle pomme est verte et acide ?",
+   "choix": [
+    "La Golden",
+    "La Granny Smith",
+    "La Gala",
+    "La Pink Lady"
+   ],
+   "reponse": 1,
+   "bonus": "Venue d'Australie !",
+   "voix_reponse": "La Granny Smith !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍁",
+   "question": "Pourquoi les feuilles changent-elles de couleur en automne ?",
+   "choix": [
+    "Il fait trop chaud",
+    "Leur chlorophylle disparaît",
+    "Elles sont peintes",
+    "À cause de la pluie"
+   ],
+   "reponse": 1,
+   "bonus": "Le jaune et le rouge apparaissent !",
+   "voix_reponse": "Leur chlorophylle disparaît !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏓",
+   "question": "Quel pays domine le tennis de table mondial ?",
+   "choix": [
+    "Le Brésil",
+    "La Chine",
+    "La France",
+    "L'Allemagne"
+   ],
+   "reponse": 1,
+   "bonus": "Un sport national là-bas !",
+   "voix_reponse": "La Chine !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "😱",
+   "question": "Comment appelle-t-on un mauvais rêve ?",
+   "choix": [
+    "Une rêverie",
+    "Un cauchemar",
+    "Une insomnie",
+    "Une sieste"
+   ],
+   "reponse": 1,
+   "bonus": "Heureusement, ce n'est qu'un rêve !",
+   "voix_reponse": "Un cauchemar !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "💎",
+   "question": "Où sont gardés les joyaux de la Couronne britannique ?",
+   "choix": [
+    "À Big Ben",
+    "À la tour de Londres",
+    "À Buckingham",
+    "À Westminster"
+   ],
+   "reponse": 1,
+   "bonus": "Surveillés par des gardes en rouge !",
+   "voix_reponse": "À la tour de Londres !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☄️",
+   "question": "Comment s'appellent les boules de glace et de poussière avec une longue queue ?",
+   "choix": [
+    "Les astéroïdes",
+    "Les comètes",
+    "Les météorites",
+    "Les planètes naines"
+   ],
+   "reponse": 1,
+   "bonus": "Leur queue peut faire des millions de km !",
+   "voix_reponse": "Les comètes !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎧",
+   "question": "Quel duo français a chanté « Get Lucky » ?",
+   "choix": [
+    "Justice",
+    "Daft Punk",
+    "Air",
+    "Phoenix"
+   ],
+   "reponse": 1,
+   "bonus": "Avec leurs casques de robots !",
+   "voix_reponse": "Daft Punk !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➗",
+   "question": "Combien font cinquante divisé par cinq ?",
+   "choix": [
+    "5",
+    "10",
+    "15",
+    "25"
+   ],
+   "reponse": 1,
+   "bonus": "Dix !",
+   "voix_reponse": "Dix !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🇨🇭",
+   "question": "Quelle est la plus grande ville de Suisse ?",
+   "choix": [
+    "Genève",
+    "Zurich",
+    "Berne",
+    "Lausanne"
+   ],
+   "reponse": 1,
+   "bonus": "Ce n'est pas la capitale !",
+   "voix_reponse": "Zurich !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

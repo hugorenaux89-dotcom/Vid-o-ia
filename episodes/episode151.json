@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 151",
+ "hook": {
+  "emoji": "😏",
+  "lignes": [
+   [
+    "Si tu fais",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10/10,",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "t'es un",
+    86,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "génie !",
+    110,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Si tu fais dix sur dix... t'es un génie.",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "😬",
+   "lignes": [
+    [
+     "5/5 ?",
+     110,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Pas mal !",
+     76,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "Mais ça se corse...",
+     68,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Cinq sur cinq ? Pas mal ! Mais attention... ça se corse.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "🎯",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La plus dure",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "de l'épisode...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Dernière question... et c'est la plus dure de l'épisode.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel animal ressemble à un cheval avec des rayures noires et blanches ?",
+   "choix": [
+    "L'âne",
+    "Le zèbre",
+    "Le cheval",
+    "L'okapi"
+   ],
+   "reponse": 1,
+   "bonus": "Ses rayures éloignent les mouches !",
+   "voix_reponse": "Le zèbre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍇",
+   "question": "Quel fruit pousse en grappes avec plein de petits grains ?",
+   "choix": [
+    "La cerise",
+    "Le raisin",
+    "La fraise",
+    "La mûre"
+   ],
+   "reponse": 1,
+   "bonus": "Noir, rouge ou blanc !",
+   "voix_reponse": "Le raisin !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌸",
+   "question": "Quel arbre japonais est célèbre pour ses fleurs roses au printemps ?",
+   "choix": [
+    "L'érable",
+    "Le cerisier",
+    "Le bambou",
+    "Le pin"
+   ],
+   "reponse": 1,
+   "bonus": "Les Japonais font la fête sous ses fleurs !",
+   "voix_reponse": "Le cerisier !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🏀",
+   "question": "De quelle couleur est un ballon de basket, en général ?",
+   "choix": [
+    "Blanc",
+    "Orange",
+    "Noir",
+    "Vert"
+   ],
+   "reponse": 1,
+   "bonus": "Avec des lignes noires !",
+   "voix_reponse": "Orange !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🖐️",
+   "question": "Combien de petits os y a-t-il dans un doigt, hors pouce ?",
+   "choix": [
+    "1",
+    "2",
+    "3",
+    "4"
+   ],
+   "reponse": 2,
+   "bonus": "On les appelle les phalanges !",
+   "voix_reponse": "Trois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌕",
+   "question": "Quel pays a envoyé les premiers hommes sur la Lune ?",
+   "choix": [
+    "L'URSS",
+    "Les États-Unis",
+    "La Chine",
+    "La France"
+   ],
+   "reponse": 1,
+   "bonus": "Avec la mission Apollo 11 !",
+   "voix_reponse": "Les États-Unis !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "☀️",
+   "question": "Combien de fois le Soleil est-il plus large que la Terre ?",
+   "choix": [
+    "10 fois",
+    "Environ 109 fois",
+    "1 000 fois",
+    "2 fois"
+   ],
+   "reponse": 1,
+   "bonus": "Il est gigantesque !",
+   "voix_reponse": "Environ cent neuf fois !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🥕",
+   "question": "Quel lapin dit « Quoi de neuf, docteur ? » ?",
+   "choix": [
+    "Roger Rabbit",
+    "Bugs Bunny",
+    "Panpan",
+    "Pierre Lapin"
+   ],
+   "reponse": 1,
+   "bonus": "Toujours une carotte à la main !",
+   "voix_reponse": "Bugs Bunny !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "✖️",
+   "question": "Combien font quinze fois trois ?",
+   "choix": [
+    "35",
+    "45",
+    "50",
+    "55"
+   ],
+   "reponse": 1,
+   "bonus": "Trois quarts d'heure en minutes !",
+   "voix_reponse": "Quarante-cinq !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛰️",
+   "question": "Quelles montagnes séparent l'Europe de l'Asie, en Russie ?",
+   "choix": [
+    "Le Caucase",
+    "L'Oural",
+    "L'Altaï",
+    "Les Carpates"
+   ],
+   "reponse": 1,
+   "bonus": "Une frontière naturelle de 2 500 km !",
+   "voix_reponse": "L'Oural !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}

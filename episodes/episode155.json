@@ -1,0 +1,384 @@
+{
+ "titre": "QUIZ CULTURE GÉ • ÉPISODE 155",
+ "hook": {
+  "emoji": "🤔",
+  "lignes": [
+   [
+    "Tu te crois",
+    90,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "cultivé ?",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "On va",
+    80,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "vérifier !",
+    100,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Tu te crois cultivé ? On va vérifier !",
+  "ton": "mysterieux",
+  "min": 2.5
+ },
+ "regles": {
+  "emoji": "📝",
+  "lignes": [
+   [
+    "Compte tes points",
+    84,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "et écris ton score",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "en commentaire !",
+    76,
+    [
+     255,
+     214,
+     0
+    ]
+   ]
+  ],
+  "voix": "Allez, compte tes points. C'est parti !",
+  "ton": "energique"
+ },
+ "relances": {
+  "5": {
+   "emoji": "💪",
+   "lignes": [
+    [
+     "Toujours là ?",
+     96,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "La suite est",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "plus difficile !",
+     72,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Toujours là ? Bravo. Mais la suite... est plus difficile.",
+   "ton": "malicieux"
+  },
+  "9": {
+   "emoji": "👀",
+   "lignes": [
+    [
+     "DERNIÈRE QUESTION",
+     86,
+     [
+      255,
+      214,
+      0
+     ]
+    ],
+    [
+     "Concentre-toi",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ],
+    [
+     "bien...",
+     75,
+     [
+      255,
+      255,
+      255
+     ]
+    ]
+   ],
+   "voix": "Attention... dernière question. Concentre-toi bien.",
+   "ton": "suspense"
+  }
+ },
+ "questions": [
+  {
+   "emoji": "🐾",
+   "question": "Quel petit rongeur court dans une roue, dans sa cage ?",
+   "choix": [
+    "Le lapin",
+    "Le hamster",
+    "Le chat",
+    "Le furet"
+   ],
+   "reponse": 1,
+   "bonus": "Il peut courir des kilomètres chaque nuit !",
+   "voix_reponse": "Le hamster !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍰",
+   "question": "Quel gâteau au café et au chocolat porte le nom d'un lieu de spectacle ?",
+   "choix": [
+    "L'opéra",
+    "Le théâtre",
+    "Le cinéma",
+    "Le cirque"
+   ],
+   "reponse": 0,
+   "bonus": "Avec ses fines couches !",
+   "voix_reponse": "L'opéra !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌿",
+   "question": "Quelle plante grimpante recouvre souvent les vieux murs ?",
+   "choix": [
+    "Le lierre",
+    "Le cactus",
+    "Le bambou",
+    "La fougère"
+   ],
+   "reponse": 0,
+   "bonus": "Toujours vert, même en hiver !",
+   "voix_reponse": "Le lierre !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "⛷️",
+   "question": "Comment s'appelle une descente de ski entre des piquets ?",
+   "choix": [
+    "Le saut",
+    "Le slalom",
+    "Le biathlon",
+    "Le ski de fond"
+   ],
+   "reponse": 1,
+   "bonus": "Il faut zigzaguer vite !",
+   "voix_reponse": "Le slalom !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🤙",
+   "question": "Comment s'appelle le plus petit doigt de la main ?",
+   "choix": [
+    "Le pouce",
+    "L'auriculaire",
+    "L'annulaire",
+    "L'index"
+   ],
+   "reponse": 1,
+   "bonus": "On l'appelle aussi le petit doigt !",
+   "voix_reponse": "L'auriculaire !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🛁",
+   "question": "Quel savant grec a crié « Eurêka ! » dans son bain ?",
+   "choix": [
+    "Pythagore",
+    "Archimède",
+    "Platon",
+    "Euclide"
+   ],
+   "reponse": 1,
+   "bonus": "Il venait de faire une grande découverte !",
+   "voix_reponse": "Archimède !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🌕",
+   "question": "Combien de missions Apollo se sont posées sur la Lune ?",
+   "choix": [
+    "1",
+    "3",
+    "6",
+    "12"
+   ],
+   "reponse": 2,
+   "bonus": "Entre 1969 et 1972 !",
+   "voix_reponse": "Six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🎮",
+   "question": "Dans quel jeu capture-t-on des créatures avec des balles rouges et blanches ?",
+   "choix": [
+    "Digimon",
+    "Pokémon",
+    "Animal Crossing",
+    "Zelda"
+   ],
+   "reponse": 1,
+   "bonus": "Attrapez-les tous !",
+   "voix_reponse": "Pokémon !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "➕",
+   "question": "Combien font trente-trois plus trente-trois ?",
+   "choix": [
+    "63",
+    "66",
+    "69",
+    "99"
+   ],
+   "reponse": 1,
+   "bonus": "Le double de trente-trois !",
+   "voix_reponse": "Soixante-six !",
+   "ton_question": "curieux",
+   "ton_reponse": "triomphant"
+  },
+  {
+   "emoji": "🍕",
+   "question": "Dans quel pays se trouve la ville de Naples ?",
+   "choix": [
+    "L'Espagne",
+    "L'Italie",
+    "La Grèce",
+    "Malte"
+   ],
+   "reponse": 1,
+   "bonus": "La ville de naissance de la pizza !",
+   "voix_reponse": "L'Italie !",
+   "ton_question": "suspense",
+   "ton_reponse": "triomphant",
+   "compte": 4
+  }
+ ],
+ "fin": {
+  "emoji": "🏆",
+  "lignes": [
+   [
+    "TON SCORE ?",
+    96,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "0-4 : débutant",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "5-7 : solide",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "8-9 : très fort",
+    56,
+    [
+     255,
+     255,
+     255
+    ]
+   ],
+   [
+    "10 : GÉNIE",
+    66,
+    [
+     34,
+     197,
+     94
+    ]
+   ],
+   [
+    "Abonne-toi pour voir",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "les prochains épisodes !",
+    54,
+    [
+     255,
+     214,
+     0
+    ]
+   ],
+   [
+    "3 nouveaux quiz par jour",
+    50,
+    [
+     34,
+     197,
+     94
+    ]
+   ]
+  ],
+  "voix": "Alors, t'as eu combien ? Dis-le en commentaire... et abonne-toi pour voir les prochains épisodes. Y'en a trois nouveaux chaque jour !",
+  "ton": "chaleureux",
+  "min": 3.5
+ }
+}
