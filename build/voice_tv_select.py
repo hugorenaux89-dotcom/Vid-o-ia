@@ -23,6 +23,7 @@ TEMPO = float(os.environ.get("TV_TEMPO", "1.08"))  # débit d'animateur, sans ch
 
 
 def norm(s):
+    s = s.replace("-z-", " ")  # graphie de liaison forcée (« fans-z-auront »)
     s = unicodedata.normalize("NFD", s.lower())
     s = "".join(c for c in s if unicodedata.category(c) != "Mn")
     s = s.replace("10", "dix")

@@ -19,7 +19,7 @@ OUT = os.path.join(ROOT, "assets", "voice_tv", "raw")
 # texte, style. « hype » = animateur très enthousiaste ; « host » = présentation posée mais vive ;
 # « whisper » = généré calmement puis transformé en chuchotement.
 LINES = {
-    "01_accroche": ("Seuls les vrais fans auront dix sur dix !", "hype"),
+    "01_accroche": ("Seuls les vrais fans-z-auront dix sur dix !", "hype"),
     "02_Q1_question": ("Quel est ce pays ?", "host"),
     "03_Q1_reponse": ("Le Japon ! Trop facile !", "hype"),
     "04_Q2_question": ("Et celui-là ?", "host"),
@@ -34,11 +34,10 @@ LINES = {
     "12_Q6_question": ("Et lui ?", "host"),
     "13_Q6_reponse": ("La Corée du Sud ! Bravo !", "hype"),
     "14_niveau_difficile": ("Ça se complique !", "hype"),
-    "15_Q7_reponse": ("Le Népal ! Aïe aïe aïe !", "hype"),
+    "15_Q7_reponse": ("Le Népal !", "hype"),
     "16_Q8_question": ("Attention !", "host"),
     "17_Q8_reponse": ("Le Kazakhstan !", "hype"),
     "18_niveau_extreme": ("Niveau extrême !", "hype"),
-    "19_suspense": ("La réponse...", "whisper"),
     "20_Q9_reponse": ("Le Bhoutan !", "hype"),
     "21_Q10_question": ("Le dernier !", "host"),
     "22_Q10_reponse": ("Le Tchad ! Pas la Roumanie !", "hype"),

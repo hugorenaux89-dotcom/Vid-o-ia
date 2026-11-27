@@ -31,9 +31,9 @@ QUESTIONS = [
          banner=("ÇA SE COMPLIQUE !", "14_niveau_difficile")),
     dict(flag="Kazakhstan", short="Kazakhstan", big="KAZAKHSTAN", level="DIFFICILE", vq="16_Q8_question", vr="17_Q8_reponse"),
     dict(flag="Bhutan", short="Bhoutan", big="BHOUTAN", level="EXTREME", vq=None, vr="20_Q9_reponse",
-         banner=("NIVEAU EXTRÊME !", "18_niveau_extreme"), suspense=True),
+         banner=("NIVEAU EXTRÊME !", "18_niveau_extreme")),
     dict(flag="Chad", short="Tchad", big="TCHAD", level="EXTREME", vq="21_Q10_question", vr="22_Q10_reponse",
-         suspense=True, qtext="INDICE : CE N'EST\nPAS LA ROUMANIE !"),
+         qtext="INDICE : CE N'EST\nPAS LA ROUMANIE !"),
 ]
 
 
