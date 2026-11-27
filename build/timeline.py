@@ -5,6 +5,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VOICE_DIR = os.environ.get("VOICE_DIR") or os.path.join(ROOT, "assets", "voice", "trimmed")
 FPS = 30
 BEAT = 0.5  # 120 BPM
+CTA_AFTER = 2  # index de la question après laquelle on place l'appel (Q3)
 CD_STEP = float(os.environ.get("CD_STEP", "0.8"))  # durée d'un chiffre du compte à rebours
 
 LEVELS = {
@@ -50,6 +51,7 @@ def build():
     voices = []   # (start, name)
     sfx = []      # (start, kind)
     qs = []
+    cta = None
     t = 0.0
     last_voice_end = 0.0
 
@@ -95,13 +97,20 @@ def build():
         qs.append(dict(q, idx=i, appear=A, cd_start=cd_start, cd_end=cd_end, reveal=R, end=nxt,
                        suspense=susp, banner_t=(A, A + 0.5) if banner else None))
         t = nxt
+        if i == CTA_AFTER and os.path.exists(os.path.join(VOICE_DIR, "07b_cta.wav")):
+            # appel « abonne-toi + like » juste avant la question 4, puis enchaînement immédiat
+            sfx.append((t, "pop"))
+            cs, ce = say("07b_cta", t + 0.05)
+            sfx.append((t + 0.95, "pop")); sfx.append((t + 1.45, "ding"))
+            cta = (t, up(ce + 0.05, 0.25))
+            t = cta[1]
 
     concl = t
     say("23_conclusion", concl + 0.05)
     end = max(concl + 2.0, last_voice_end + 0.35)
     end = up(end, 0.25)
     sfx.append((end - 1.0, "jingle"))
-    return dict(questions=qs, voices=voices, sfx=sfx, conclusion=concl, duration=end, fps=FPS)
+    return dict(questions=qs, voices=voices, sfx=sfx, conclusion=concl, duration=end, fps=FPS, cta=cta)
 
 
 if __name__ == "__main__":

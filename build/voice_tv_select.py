@@ -84,7 +84,10 @@ def whisperize(path_in, path_out):
 
 def main():
     report = []
+    only = set(sys.argv[1:])
     for name, (text, style) in LINES.items():
+        if only and name not in only:
+            continue
         takes = sorted(glob.glob(os.path.join(RAW, f"{name}_*.wav")))
         best = None
         for p in takes:
@@ -118,7 +121,8 @@ def main():
         flag = "" if score >= 0.85 else "   <-- À REVOIR"
         print(f"{name:<22} {d2:4.2f}s  fidélité {score:.2f}  « {heard} »{flag}")
         report.append(dict(name=name, score=score, heard=heard, dur=d2))
-    json.dump(report, open(os.path.join(OUT, "selection.json"), "w"), ensure_ascii=False, indent=1)
+    if not only:
+        json.dump(report, open(os.path.join(OUT, "selection.json"), "w"), ensure_ascii=False, indent=1)
 
 
 if __name__ == "__main__":

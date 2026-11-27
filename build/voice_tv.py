@@ -26,6 +26,7 @@ LINES = {
     "05_Q2_reponse": ("Le Brésil !", "hype"),
     "06_Q3_question": ("Suivant !", "host"),
     "07_Q3_reponse": ("Le Canada ! Bien joué !", "hype"),
+    "07b_cta": ("Abonne-toi et like ! On continue !", "hype"),
     "08_niveau_moyen": ("Niveau moyen !", "hype"),
     "09_Q4_reponse": ("La Turquie !", "hype"),
     "10_Q5_question": ("Et celui-ci ?", "host"),

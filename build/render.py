@@ -339,6 +339,52 @@ def draw_level_banner(img, t, q):
     paste_center(img, band, x, 700)
 
 
+@lru_cache(8)
+def emoji_img(ch, size):
+    ef = ImageFont.truetype(F_EMOJI, 109)
+    e = Image.new("RGBA", (160, 160), (0, 0, 0, 0))
+    ImageDraw.Draw(e).text((10, 10), ch, font=ef, embedded_color=True)
+    e = e.crop(e.getbbox())
+    return e.resize((size, int(size * e.height / e.width)), Image.LANCZOS)
+
+
+def draw_cta(layer, t):
+    """Appel « abonne-toi + like » (≈ 2 s) entre la Q3 et la Q4."""
+    a, b = TL["cta"]
+    k = t - a
+    cx = 610
+    # titre
+    t1 = fit_text("ABONNE-TOI\n& LIKE !", F_TITLE, 96, 560, stroke=10, fill=(255, 225, 60))
+    paste_center(layer, t1, cx, 470, ease_out_back(k / 0.25))
+    # bouton S'ABONNER -> clic -> ABONNÉ
+    clicked = k >= 0.95
+    press = 1.0
+    if 0.95 <= k < 1.1:
+        press = 0.9
+    btn = Image.new("RGBA", (460, 130), (0, 0, 0, 0))
+    d = ImageDraw.Draw(btn)
+    d.rounded_rectangle((0, 0, 459, 129), 65, fill=(90, 90, 100, 255) if clicked else (230, 20, 40, 255), outline=WHITE, width=6)
+    lab = text_img("ABONNÉ ✓" if False else ("ABONNÉ !" if clicked else "S'ABONNER"), F_TITLE, 64, stroke=6, shadow=False)
+    btn.alpha_composite(lab, (int(230 - lab.width / 2) + 30, int(68 - lab.height / 2)))
+    bell = emoji_img("🔔", 62)
+    btn.alpha_composite(bell, (34, int(65 - bell.height / 2)))
+    sc = ease_out_back((k - 0.1) / 0.25) * press
+    paste_center(layer, btn, cx, 700, sc)
+    # pouce levé qui rebondit, puis « liké » avec éclat
+    liked = k >= 1.45
+    if liked:
+        kb = (k - 1.45) / 0.6
+        if kb < 1:
+            paste_center(layer, BURSTS["FACILE"], cx, 930, 0.35 + 0.3 * ease_out(kb), 1 - kb)
+    bounce = 1 + 0.08 * math.sin(2 * math.pi * t / 0.5)
+    thumb_sc = ease_out_back((k - 0.3) / 0.25) * (1.25 - 0.25 * ease_out_back(min(1, (k - 1.45) / 0.3)) if liked else bounce)
+    paste_center(layer, emoji_img("👍", 190), cx, 930, thumb_sc)
+    # « ON CONTINUE ! » juste avant d'enchaîner
+    if k >= 1.75:
+        t3 = text_img("ON CONTINUE !", F_TITLE, 70, stroke=8)
+        paste_center(layer, t3, cx, 1170, ease_out_back((k - 1.75) / 0.2))
+
+
 def frame(fi):
     t = fi / FPS
     cur = current_q(t)
@@ -369,7 +415,10 @@ def frame(fi):
     layer.alpha_composite(TITLE, (90, 170))
     draw_ladder(layer, t, cur, loop_fade)
 
-    if not in_concl:
+    in_cta = TL.get("cta") is not None and TL["cta"][0] <= t < TL["cta"][1]
+    if in_cta:
+        draw_cta(layer, t)
+    elif not in_concl:
         q = cur
         col = LEVELS[q["level"]]["color"]
         A0, R = q["appear"], q["reveal"]

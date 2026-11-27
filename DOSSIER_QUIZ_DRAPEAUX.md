@@ -1,3 +1,12 @@
+# 🆕 VERSION 3 — `output/quiz_drapeaux_v3.mp4` (64,7 s) — VERSION À PUBLIER
+
+Identique à la V2, avec en plus un **appel « Abonne-toi et like ! On continue ! »** de 2,5 s entre la Q3 et la Q4 (de 17,25 s à 19,75 s), suivi tout de suite de la Q4 et de son bandeau « NIVEAU MOYEN ! ».
+- **À l'écran :** « ABONNE-TOI & LIKE ! », un bouton rouge « 🔔 S'ABONNER » qui se fait cliquer (il devient « ABONNÉ ! », avec un son pop), un 👍 qui rebondit puis s'allume avec un éclat (son ding), et enfin « ON CONTINUE ! ».
+- **Voix :** même voix de commentateur (Chatterbox), réplique `07b_cta`.
+- **Placement :** juste après la dernière question facile, quand le spectateur vient de gagner et se sent fort. C'est le moment où il est le plus enclin à s'abonner. L'appel n'est ni trompeur ni forcé, donc il respecte la règle §6.5.
+
+---
+
 # 🆕 VERSION 2 — `output/quiz_drapeaux_v2.mp4` (62,25 s) — VERSION À PUBLIER
 
 **Changements demandés :**
