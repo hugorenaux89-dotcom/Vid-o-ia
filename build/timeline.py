@@ -5,6 +5,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 VOICE_DIR = os.environ.get("VOICE_DIR") or os.path.join(ROOT, "assets", "voice", "trimmed")
 FPS = 30
 BEAT = 0.5  # 120 BPM
+CD_STEP = float(os.environ.get("CD_STEP", "0.8"))  # durée d'un chiffre du compte à rebours
 
 LEVELS = {
     "FACILE":    {"color": (0x2E, 0xCC, 0x40), "label": "Facile"},
@@ -74,18 +75,18 @@ def build():
             cd_start += 0.5
         if q["vq"]:
             say(q["vq"], A)
-        # Compte à rebours : 3 s minimum, et au moins 0,9 s de réflexion après la fin de la voix
-        cd_end = max(cd_start + 3.0, last_voice_end + 0.8)
-        cd_end = up(cd_end, 0.25)
+        # Compte à rebours 5-4-3-2-1 puis 0 = révélation immédiate (CD_STEP s par chiffre)
+        cd_start = max(cd_start, last_voice_end + 0.8 - 5 * CD_STEP)
+        cd_start = up(cd_start, 0.05)
+        cd_end = cd_start + 5 * CD_STEP
         R = cd_end
         susp = None
         if q.get("suspense"):
-            susp = (cd_end, cd_end + 1.0)
-            sfx.append((cd_end, "cut"))
-            # le chuchotement démarre 0,05 s après la coupure
-            last_voice_end = min(last_voice_end, cd_end)
-            say("19_suspense", cd_end + 0.05)
-            R = cd_end + 1.0
+            # suspense DANS le compte à rebours : musique coupée sur le « 1 », chuchotement, puis 0 = réponse
+            susp = (cd_end - CD_STEP, cd_end)
+            sfx.append((cd_end - CD_STEP, "cut"))
+            w = dur("19_suspense")
+            say("19_suspense", max(last_voice_end + 0.05, cd_end - w - 0.08))
         sfx.append((R, "ding"))
         rs, re_ = say(q["vr"], R)
         # la question suivante enchaîne dès que la réponse est inscrite (fin de voix - 0,3 s, grille 1/4 de temps)

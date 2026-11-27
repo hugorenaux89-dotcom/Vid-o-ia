@@ -277,26 +277,46 @@ def draw_ladder(img, t, cur, loop_fade):
 
 
 def draw_countdown(img, t, q):
+    """Compte à rebours 5-4-3-2-1 puis 0 : pastille chiffre + barre qui se vide."""
     col = LEVELS[q["level"]]["color"]
     a, b = q["cd_start"], q["cd_end"]
-    x0, x1, y0, y1 = 330, 890, 1255, 1365
-    d = ImageDraw.Draw(img)
-    if t < a or t >= b:
+    step = (b - a) / 5
+    ZERO = 0.45  # durée d'affichage du « 0 » (la réponse s'affiche en même temps)
+    if t < a or t >= b + ZERO:
         return
-    k = (t - a) / (b - a)
-    remaining = b - t
-    blink = remaining <= 1.0 and int(t * 8) % 2 == 0
-    d.rounded_rectangle((x0, y0, x1, y1), 55, fill=(10, 12, 30, 230), outline=WHITE, width=6)
-    fw = int((x1 - x0 - 24) * (1 - k))
-    if fw > 30:
-        c = WHITE if blink else col
-        d.rounded_rectangle((x0 + 12, y0 + 12, x0 + 12 + fw, y1 - 12), 43, fill=c + (255,))
-    n = max(1, math.ceil(remaining - 1e-6))
-    n = min(n, 3)
-    frac = (math.ceil(remaining) - remaining)
-    sc = 1.25 - 0.25 * ease_out(frac / 0.25)
-    ti = text_img(str(n), F_TITLE, 92, stroke=8)
-    paste_center(img, ti, (x0 + x1) / 2, (y0 + y1) / 2 + 6, sc)
+    d = ImageDraw.Draw(img)
+    cx, cy, r = 425, 1310, 88
+    bx0, bx1, by0, by1 = 535, 890, 1268, 1352
+    red = (230, 20, 50)
+    if t < b:
+        k = (t - a) / (b - a)
+        n = 5 - int((t - a) / step)          # 5,4,3,2,1
+        n = max(1, min(5, n))
+        ph = ((t - a) % step) / step          # phase dans le chiffre
+        last = n == 1
+        blink = last and int(t * 10) % 2 == 0
+        # barre
+        d.rounded_rectangle((bx0, by0, bx1, by1), 42, fill=(10, 12, 30, 230), outline=WHITE, width=6)
+        fw = int((bx1 - bx0 - 20) * (1 - k))
+        if fw > 26:
+            d.rounded_rectangle((bx0 + 10, by0 + 10, bx0 + 10 + fw, by1 - 10), 32,
+                                fill=(WHITE if blink else (red if last else col)) + (255,))
+        # pastille
+        ring = red if last else col
+        d.ellipse((cx - r - 8, cy - r - 8, cx + r + 8, cy + r + 8), fill=WHITE + (255,))
+        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=(15, 18, 40, 255))
+        # arc de progression du chiffre en cours
+        d.arc((cx - r + 6, cy - r + 6, cx + r - 6, cy + r - 6), -90, -90 + 360 * (1 - ph), fill=ring + (255,), width=14)
+        sc = 1.45 - 0.45 * ease_out_back(min(1, ph / 0.35))
+        ti = text_img(str(n), F_TITLE, 120, stroke=9, fill=(255, 90, 110) if last else WHITE)
+        paste_center(img, ti, cx, cy + 8, sc)
+    else:
+        kz = (t - b) / ZERO
+        d.ellipse((cx - r - 8, cy - r - 8, cx + r + 8, cy + r + 8), fill=WHITE + (255,))
+        d.ellipse((cx - r, cy - r, cx + r, cy + r), fill=red + (255,))
+        ti = text_img("0", F_TITLE, 130, stroke=9)
+        paste_center(img, ti, cx, cy + 8, 1.5 - 0.5 * ease_out_back(min(1, kz / 0.4)), 1 - max(0, kz - 0.75) * 4)
+        d.rounded_rectangle((bx0, by0, bx1, by1), 42, fill=(10, 12, 30, int(230 * (1 - kz))), outline=WHITE + (int(255 * (1 - kz)),), width=6)
 
 
 def draw_level_banner(img, t, q):
@@ -393,17 +413,16 @@ def frame(fi):
         kt = (t - A0) / 0.2
         tsc = 0.8 + 0.3 * ease_out(kt / 0.6) if kt < 0.6 else 1.1 - 0.1 * ease_out((kt - 0.6) / 0.4) if kt < 1 else 1.0
         # contour couleur niveau : halo derrière le texte
-        paste_center(layer, qi, 610, 1120, tsc)
+        if not (q["suspense"] and q["suspense"][0] <= t < q["suspense"][1]):
+            paste_center(layer, qi, 610, 1120, tsc)
 
-        draw_countdown(layer, t, q)
-
-        # suspense extrême
-        if q["suspense"] and q["suspense"][0] <= t < q["suspense"][1]:
-            dark = Image.new("RGBA", (W, H), (0, 0, 0, 120))
-            layer.alpha_composite(dark)
+        insusp = q["suspense"] and q["suspense"][0] <= t < q["suspense"][1]
+        if insusp:
+            layer.alpha_composite(Image.new("RGBA", (W, H), (0, 0, 0, 120)))
             ks = (t - q["suspense"][0])
             ti = text_img("LA RÉPONSE…", F_TITLE, 84, stroke=8, fill=(255, 220, 230))
-            paste_center(layer, ti, 610, 1310, 1 + 0.06 * math.sin(ks * 18))
+            paste_center(layer, ti, 610, 1120, 1 + 0.06 * math.sin(ks * 18))
+        draw_countdown(layer, t, q)
 
         # réponse : pop au centre, puis vol vers l'échelle
         if t >= R:

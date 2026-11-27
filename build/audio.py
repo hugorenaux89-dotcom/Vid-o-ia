@@ -212,16 +212,20 @@ def main():
             "impact": sfx_impact(), "jingle": sfx_jingle(), "cut": np.zeros(10)}
     for st, kind in tl["sfx"]:
         x = bank[kind]; i = int(st * SR); j = min(n, i + len(x)); fx[i:j] += x[:j - i]
-    # tic-tac : double croches, plus rapide dans la dernière seconde, plus grave au difficile/extrême
+    # tic-tac : un « TOC » marqué à chaque chiffre, tic-tac entre, accélère sur le dernier chiffre
     for q in qs:
         a, b = q["cd_start"], q["cd_end"]
-        t = a; k = 0
+        step = (b - a) / 5
         low = q["level"] in ("DIFFICILE", "EXTREME")
-        while t < b - 0.03:
-            x = sfx_tick(high=(k % 2 == 0))
-            if low: x = np.interp(np.arange(int(len(x) * 1.3)) / 1.3, np.arange(len(x)), x)
-            i = int(t * SR); j = min(n, i + len(x)); fx[i:j] += 0.9 * x[:j - i]
-            t += 0.125 if b - t <= 1.0 else 0.25; k += 1
+        for dgt in range(5):
+            t0 = a + dgt * step
+            sub = 4 if dgt == 4 else 2
+            for s_ in range(sub):
+                tt = t0 + s_ * step / sub
+                x = sfx_tick(high=(s_ % 2 == 0))
+                g = 1.15 if s_ == 0 else 0.7
+                if low: x = np.interp(np.arange(int(len(x) * 1.3)) / 1.3, np.arange(len(x)), x)
+                i = int(tt * SR); j = min(n, i + len(x)); fx[i:j] += g * x[:j - i]
 
     # ducking de la musique sous la voix (env. -20 dB par rapport à la voix)
     from scipy.ndimage import maximum_filter1d, uniform_filter1d

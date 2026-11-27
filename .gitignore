@@ -5,3 +5,5 @@ build/__pycache__/
 build/timeline.json
 assets/piper/
 assets/voice_claude/raw/
+assets/voice_tv/raw/
+build/cd_sheet.png
