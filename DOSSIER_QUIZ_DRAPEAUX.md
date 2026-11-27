@@ -1,6 +1,6 @@
 # 🎬 Dossier de production — QUIZ DRAPEAUX #1
 
-**Vidéos finales :** `output/quiz_drapeaux_voix_libre.mp4` (**voix gratuite maison**, 50,75 s, recommandée) et `output/quiz_drapeaux.mp4` (voix ElevenLabs « Charlie ») — 1080 × 1920, 30 i/s, H.264 + AAC 192 kb/s, **52,25 s**, ≈ −15,7 LUFS.
+**Vidéos finales :** `output/quiz_drapeaux_voix_libre.mp4` (**voix gratuite maison**, 51,75 s, recommandée) et `output/quiz_drapeaux.mp4` (voix ElevenLabs « Charlie ») — 1080 × 1920, 30 i/s, H.264 + AAC 192 kb/s, **52,25 s**, ≈ −15,7 LUFS.
 
 ## 1. Paramètres
 | Paramètre | Valeur |
@@ -19,12 +19,14 @@
 
 ## Voix gratuite « maison » (version recommandée)
 - **Moteur :** Piper (TTS neuronal libre, tourne en local, gratuit, sans compte, sans limite de caractères). Modèle `fr_FR-tom-medium` : voix masculine, français de France. Elle a été choisie après comparaison automatique de 127 voix françaises (hauteur, expressivité, transcription sans faute).
-- **Ma chaîne de traitement** (`build/voice_claude.py`), d'après ta description §10.1 :
-  - débit rapide (vitesse ×1,28 sur les répliques énergiques) ;
-  - style « punch » : un peu plus aigu (+0,6 demi-ton) et intonation plus variée ;
-  - timbre chaleureux (+2,5 dB à 140 Hz, −2 dB à 350 Hz) et présence radio (+4 dB à 3,2 kHz, +2 dB à 9 kHz) ;
-  - compression 4:1, de-esser, normalisation à −14 LUFS ;
-  - « La réponse… » chuchotée : plus lente, bas coupé, léger écho de suspense.
+- **Ma « sculpture » de la voix** (`build/voice_claude.py`, analyse-resynthèse WORLD + mixage), réglée d'après le §10.1 :
+  - *Jeune adulte, légèrement grave* : hauteur moyenne ramenée à 118 Hz (questions) et 128 Hz (réponses et réactions).
+  - *Chaleureux* : formants abaissés de 4 % (timbre plus plein), +2,5 dB à 140 Hz, −2 dB à 350 Hz.
+  - *Expressif et enthousiaste* : mélodie amplifiée ×1,25 sur les questions et ×1,5 sur les réponses (lissée pour éviter les tremblements), avec un élan montant sur les phrases longues.
+  - *Articulation précise, son studio* : présence +4 dB à 3,2 kHz, brillance +2 dB à 9 kHz, compression 4:1, de-esser, −14 LUFS.
+  - *Débit rapide* : vitesse ×1,28 sur les phrases. Les mots isolés gardent une vitesse normale, sinon ils deviennent incompréhensibles.
+  - *Suspense* : « La réponse… » est un vrai chuchotement (aucune vibration des cordes vocales, 100 % souffle) avec un léger écho.
+- **Contrôle** : chaque réplique et le mixage final ont été retranscrits automatiquement, avec zéro erreur. Formulations retenues après test : « Le Brésil », « La Grèce », « Le Bhoutane », « Le Tchad », « Kazak-stane », « Aïe aïe aïe ».
 - **Réglages fixes à garder** pour toutes les vidéos : même modèle, mêmes paramètres. C'est l'équivalent du VOICE_ID.
 - **Phonétique :** Kazakhstan ➜ « Kazak-stane ».
 - **Licence :** le modèle `tom` est publié par le projet Piper. ➜ À FAIRE PAR TOI : vérifier sa licence dans la fiche du modèle (huggingface.co/rhasspy/piper-voices) avant un usage monétisé.
