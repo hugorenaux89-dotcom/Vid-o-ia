@@ -3,3 +3,5 @@ build/frames/
 build/sheet.png
 build/__pycache__/
 build/timeline.json
+assets/piper/
+assets/voice_claude/raw/

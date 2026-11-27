@@ -475,10 +475,10 @@ def main():
             if k % 150 == 0:
                 print(f"{k}/{nframes}", flush=True)
     ff.stdin.close(); ff.wait()
-    final = os.path.join(ROOT, "output", "quiz_drapeaux.mp4")
+    final = os.path.join(ROOT, "output", os.environ.get("OUT_NAME", "quiz_drapeaux.mp4"))
     os.makedirs(os.path.dirname(final), exist_ok=True)
     subprocess.run(["ffmpeg", "-v", "error", "-y", "-i", out_v, "-i", os.path.join(ROOT, "build", "mix.wav"),
-                    "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", "-movflags", "+faststart", final], check=True)
+                    "-c:v", "copy", "-af", "volume=5.2dB,alimiter=limit=0.84:level=false", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-shortest", "-movflags", "+faststart", final], check=True)
     print("OK ->", final)
 
 

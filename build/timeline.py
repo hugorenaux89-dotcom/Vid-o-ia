@@ -2,7 +2,7 @@
 import json, math, os, subprocess
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-VOICE_DIR = os.path.join(ROOT, "assets", "voice", "trimmed")
+VOICE_DIR = os.environ.get("VOICE_DIR") or os.path.join(ROOT, "assets", "voice", "trimmed")
 FPS = 30
 BEAT = 0.5  # 120 BPM
 
