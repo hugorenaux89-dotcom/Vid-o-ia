@@ -32,7 +32,7 @@ LINES = {
     "14_niveau_difficile": ("Ça se complique !", "punch"),
     "15_Q7_reponse": ("Népal ! Aïe !", "punch"),
     "16_Q8_question": ("Attention !", "normal"),
-    "17_Q8_reponse": ("Kazakhstan !", "punch"),
+    "17_Q8_reponse": ("Kazak-stane !", "normal"),
     "18_niveau_extreme": ("Niveau extrême !", "punch"),
     "19_suspense": ("La réponse...", "whisper"),
     "20_Q9_reponse": ("Le Bhoutan !", "punch"),

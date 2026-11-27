@@ -1,6 +1,6 @@
 # 🎬 Dossier de production — QUIZ DRAPEAUX #1
 
-**Vidéo finale :** `output/quiz_drapeaux.mp4` — 1080 × 1920, 30 i/s, H.264 + AAC 192 kb/s, **52,25 s**, ≈ −15,7 LUFS.
+**Vidéos finales :** `output/quiz_drapeaux_voix_libre.mp4` (**voix gratuite maison**, 50,75 s, recommandée) et `output/quiz_drapeaux.mp4` (voix ElevenLabs « Charlie ») — 1080 × 1920, 30 i/s, H.264 + AAC 192 kb/s, **52,25 s**, ≈ −15,7 LUFS.
 
 ## 1. Paramètres
 | Paramètre | Valeur |
@@ -16,6 +16,19 @@
 > ⚠️ **Voix :** ton compte ElevenLabs est en offre gratuite. L'API y refuse Voice Design (« paid plan only ») et les voix françaises de la bibliothèque. J'ai donc pris la voix prédéfinie la plus énergique (« Charlie »), avec `language_code: fr`. Toutes les répliques ont été retranscrites automatiquement (Scribe) en français correct, mais **je n'ai pas pu écouter l'accent**. ➜ À FAIRE PAR TOI : écoute-la. Si l'accent ne te convient pas, crée ta voix maison (§10 du prompt) sur une offre payante, puis relance `build/` avec ce nouveau VOICE_ID.
 
 **Pourquoi les drapeaux ?** Thème universel et « commentable » (« trop facile ! », « jamais vu ce drapeau »). Les images sont libres (Wikimedia Commons) et justes à 100 %, ce qui supprime le risque d'une image fausse. Le piège Tchad/Roumanie de la Q10 est connu pour déclencher des débats en commentaires.
+
+## Voix gratuite « maison » (version recommandée)
+- **Moteur :** Piper (TTS neuronal libre, tourne en local, gratuit, sans compte, sans limite de caractères). Modèle `fr_FR-tom-medium` : voix masculine, français de France. Elle a été choisie après comparaison automatique de 127 voix françaises (hauteur, expressivité, transcription sans faute).
+- **Ma chaîne de traitement** (`build/voice_claude.py`), d'après ta description §10.1 :
+  - débit rapide (vitesse ×1,28 sur les répliques énergiques) ;
+  - style « punch » : un peu plus aigu (+0,6 demi-ton) et intonation plus variée ;
+  - timbre chaleureux (+2,5 dB à 140 Hz, −2 dB à 350 Hz) et présence radio (+4 dB à 3,2 kHz, +2 dB à 9 kHz) ;
+  - compression 4:1, de-esser, normalisation à −14 LUFS ;
+  - « La réponse… » chuchotée : plus lente, bas coupé, léger écho de suspense.
+- **Réglages fixes à garder** pour toutes les vidéos : même modèle, mêmes paramètres. C'est l'équivalent du VOICE_ID.
+- **Phonétique :** Kazakhstan ➜ « Kazak-stane ».
+- **Licence :** le modèle `tom` est publié par le projet Piper. ➜ À FAIRE PAR TOI : vérifier sa licence dans la fiche du modèle (huggingface.co/rhasspy/piper-voices) avant un usage monétisé.
+- **Régénérer :** `python3 build/voice_claude.py assets/piper/fr_FR-tom-medium.onnx`, puis `VOICE_DIR=assets/voice_claude OUT_NAME=... python3 audio.py && python3 render.py` (depuis `build/`).
 
 ## 2-4. Questions, réponses, confiance
 | # | Niveau | Drapeau | Réponse (échelle) | Pourquoi ce niveau | Confiance / source |
