@@ -1,3 +1,16 @@
+# 🆕 VERSION 4 — `output/quiz_drapeaux_v4.mp4` (66,5 s) — VERSION À PUBLIER
+
+Identique à la V3, avec une **voix à l'accent français natif**.
+- **Moteur :** Kyutai TTS 1.6B en/fr (Kyutai, labo de recherche parisien). Le modèle est sous **licence CC-BY 4.0** : usage commercial autorisé, à condition de créditer.
+- **Voix :** locuteur francophone natif « cml-tts/fr/2216 » (jeu de données CML-TTS, CC-BY 4.0). C'est un homme jeune, légèrement grave (≈ 120 Hz), et la plus expressive des 16 voix masculines testées.
+- **Mastering :** débit accéléré ×1,18 sans changer la hauteur (rythme de commentateur), EQ de présence, compression douce, environ −15 LUFS.
+- **Sélection :** 2 à 3 prises par réplique, puis choix automatique par transcription. « Suivant ! » est devenu « Au suivant ! », plus clair.
+- **Contrôle :** mixage final retranscrit **mot pour mot sans erreur**.
+- **Crédit à ajouter dans la description :** « Voix : Kyutai TTS (CC-BY 4.0) ».
+- **Régénérer :** `<python avec moshi> build/voice_kyutai.py cml-tts/fr/2216_1745_000007-0001_enhanced.wav assets/voice_fr/raw`, puis `SEL_RAW=assets/voice_fr/raw SEL_OUT=assets/voice_fr TV_TEMPO=1.18 python3 build/voice_tv_select.py`, puis `VOICE_DIR=assets/voice_fr CD_STEP=0.87` avec `audio.py` et `render.py`.
+
+---
+
 # 🆕 VERSION 3 — `output/quiz_drapeaux_v3.mp4` (64,7 s) — VERSION À PUBLIER
 
 Identique à la V2, avec en plus un **appel « Abonne-toi et like ! On continue ! »** de 2,5 s entre la Q3 et la Q4 (de 17,25 s à 19,75 s), suivi tout de suite de la Q4 et de son bandeau « NIVEAU MOYEN ! ».
