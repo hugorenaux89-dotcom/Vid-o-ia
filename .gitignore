@@ -1,0 +1,5 @@
+build/video_noaudio.mp4
+build/frames/
+build/sheet.png
+build/__pycache__/
+build/timeline.json
