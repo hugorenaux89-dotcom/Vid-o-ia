@@ -1,0 +1,140 @@
+[
+ {
+  "name": "01_accroche",
+  "score": 1.0,
+  "heard": "seuls les vrais fans auront dix sur dix",
+  "dur": 2.6273922902494333
+ },
+ {
+  "name": "02_Q1_question",
+  "score": 1.0,
+  "heard": "quel est ce pays",
+  "dur": 0.9095691609977324
+ },
+ {
+  "name": "03_Q1_reponse",
+  "score": 1.0,
+  "heard": "le japon trop facile",
+  "dur": 2.032857142857143
+ },
+ {
+  "name": "04_Q2_question",
+  "score": 1.0,
+  "heard": "et celui la",
+  "dur": 0.9154421768707482
+ },
+ {
+  "name": "05_Q2_reponse",
+  "score": 1.0,
+  "heard": "le bresil",
+  "dur": 0.8583219954648527
+ },
+ {
+  "name": "06_Q3_question",
+  "score": 1.0,
+  "heard": "au suivant",
+  "dur": 0.636984126984127
+ },
+ {
+  "name": "07_Q3_reponse",
+  "score": 1.0,
+  "heard": "le canada bien joue",
+  "dur": 1.7705215419501135
+ },
+ {
+  "name": "07b_cta",
+  "score": 1.0,
+  "heard": "abonne toi et like on continue",
+  "dur": 2.5805442176870748
+ },
+ {
+  "name": "08_niveau_moyen",
+  "score": 1.0,
+  "heard": "niveau moyen",
+  "dur": 0.7966213151927438
+ },
+ {
+  "name": "09_Q4_reponse",
+  "score": 1.0,
+  "heard": "la turquie",
+  "dur": 0.8807709750566893
+ },
+ {
+  "name": "10_Q5_question",
+  "score": 1.0,
+  "heard": "et celui ci",
+  "dur": 0.8198866213151927
+ },
+ {
+  "name": "11_Q5_reponse",
+  "score": 1.0,
+  "heard": "la grece",
+  "dur": 0.826734693877551
+ },
+ {
+  "name": "12_Q6_question",
+  "score": 1.0,
+  "heard": "et lui",
+  "dur": 0.6475283446712018
+ },
+ {
+  "name": "13_Q6_reponse",
+  "score": 1.0,
+  "heard": "la coree du sud bravo",
+  "dur": 2.262517006802721
+ },
+ {
+  "name": "14_niveau_difficile",
+  "score": 1.0,
+  "heard": "ca se complique",
+  "dur": 0.7729931972789116
+ },
+ {
+  "name": "15_Q7_reponse",
+  "score": 1.0,
+  "heard": "le nepal",
+  "dur": 0.9706802721088436
+ },
+ {
+  "name": "16_Q8_question",
+  "score": 1.0,
+  "heard": "attention",
+  "dur": 0.6060090702947846
+ },
+ {
+  "name": "17_Q8_reponse",
+  "score": 1.0,
+  "heard": "le kazakhstan",
+  "dur": 1.1434920634920636
+ },
+ {
+  "name": "18_niveau_extreme",
+  "score": 1.0,
+  "heard": "niveau extreme",
+  "dur": 1.1648072562358276
+ },
+ {
+  "name": "20_Q9_reponse",
+  "score": 0.67,
+  "heard": "le",
+  "dur": 0.39104308390022674
+ },
+ {
+  "name": "21_Q10_question",
+  "score": 1.0,
+  "heard": "le dernier",
+  "dur": 0.8168253968253968
+ },
+ {
+  "name": "22_Q10_reponse",
+  "score": 1.0,
+  "heard": "le tchad pas la roumanie",
+  "dur": 2.0069160997732425
+ },
+ {
+  "name": "23_conclusion",
+  "score": 1.0,
+  "heard": "alors t as combien dis le en commentaire",
+  "dur": 3.335532879818594
+ }
+]

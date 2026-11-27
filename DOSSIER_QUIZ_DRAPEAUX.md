@@ -1,3 +1,14 @@
+# 🆕 VERSION 5 — `output/quiz_drapeaux_v5.mp4` (67,25 s) — VERSION À PUBLIER
+
+- **Voix française de France :** Kyutai TTS 1.6B, avec la voix « fabieng ». C'est un enregistrement de l'équipe Kyutai (Paris) en style présentateur (« Bonjour à tous, ravi d'être à vos côtés… Au programme, du divertissement… »), sous licence **CC0** : libre, sans crédit obligatoire. Le crédit « Kyutai TTS (CC-BY 4.0) » reste requis pour le modèle lui-même.
+- **Liaisons :** la seule liaison facultative du script, « les vrais fans‿auront », est forcée (texte « fans-z-auront »). Une transcription phonétique automatique confirme que le « z » est bien prononcé : /…f a n **z** u ʁ ɔ̃…/. Les autres enchaînements du script n'ont pas de liaison facultative.
+- **Retiré :** « Aïe aïe aïe » (Q7 : il ne reste que « Le Népal ! »).
+- **Retiré :** le moment « La réponse… » des Q9 et Q10, c'est-à-dire la voix chuchotée, le texte « LA RÉPONSE… », l'assombrissement et la coupure de musique. La réponse tombe directement au 0.
+- **Débit :** ×1,10, sans changer la hauteur de la voix.
+- **Contrôle :** mixage final retranscrit **mot pour mot** sans erreur.
+
+---
+
 # 🆕 VERSION 4 — `output/quiz_drapeaux_v4.mp4` (66,5 s) — VERSION À PUBLIER
 
 Identique à la V3, avec une **voix à l'accent français natif**.
