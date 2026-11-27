@@ -6,8 +6,8 @@ import difflib, glob, json, os, re, subprocess, sys, unicodedata
 import numpy as np, soundfile as sf
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RAW = os.path.join(ROOT, "assets", "voice_tv", "raw")
-OUT = os.path.join(ROOT, "assets", "voice_tv")
+RAW = os.environ.get("SEL_RAW") or os.path.join(ROOT, "assets", "voice_tv", "raw")
+OUT = os.environ.get("SEL_OUT") or os.path.join(ROOT, "assets", "voice_tv")
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 # lecture des répliques sans importer chatterbox
 src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "voice_tv.py")).read()
