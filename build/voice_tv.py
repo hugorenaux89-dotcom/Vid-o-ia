@@ -58,10 +58,10 @@ def main():
         if only and name not in only:
             continue
         for k in range(TAKES):
-            path = os.path.join(OUT, f"{name}_{k}.wav")
+            path = os.path.join(OUT, f"{name}_{k + int(os.environ.get('SEED_OFFSET', '0')) // 100}.wav")
             if os.path.exists(path) and not only:
                 continue
-            torch.manual_seed(1000 * k + hash(name) % 997)
+            torch.manual_seed(1000 * k + hash(name) % 997 + int(os.environ.get("SEED_OFFSET", "0")))
             t0 = time.time()
             wav = m.generate(text, language_id="fr", audio_prompt_path=REF, **STYLE[style])
             sf.write(path, wav.squeeze().numpy(), m.sr)

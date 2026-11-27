@@ -1,3 +1,21 @@
+# 🆕 VERSION 2 — `output/quiz_drapeaux_v2.mp4` (62,25 s) — VERSION À PUBLIER
+
+**Changements demandés :**
+1. **Compte à rebours 5-4-3-2-1-0** : pastille avec gros chiffre qui « pop » et arc de progression, barre qui se vide. Le « 1 » passe en rouge et clignote, et le tic-tac accélère. **Au « 0 » (pastille rouge), la réponse s'affiche sur la même image**, avec le ding. Chaque chiffre dure 0,87 s.
+2. **Voix de commentateur télé réaliste et gratuite** : Chatterbox Multilingual (Resemble AI, **licence MIT**, usage commercial autorisé), exécuté en local et gratuit.
+   - Timbre : référence de 9 s créée à partir de notre voix libre « Tom » (`assets/voice_ref_tom.wav`). Aucune personne réelle n'est imitée.
+   - Ton : réglage « émotion » à 0,85 sur les réponses et réactions (animateur enthousiaste), 0,6 sur les questions (présentation posée mais vive).
+   - Hauteur mesurée : 113 à 145 Hz (voix d'homme, légèrement grave). La mélodie est naturelle, sans déformation artificielle.
+   - Sélection automatique : 2 à 6 prises par réplique, retranscrites, puis on garde la plus fidèle. Les mots « inventés » par le modèle après la phrase sont coupés automatiquement.
+   - Mastering léger : débit ×1,08 sans changer la hauteur, EQ de présence, compression douce, −14 LUFS. « La réponse… » est un vrai chuchotement.
+   - Contrôle : mixage final retranscrit **mot pour mot sans erreur**.
+3. **Durée +10 s** : 52 s ➜ **62,25 s**. ⚠️ C'est au-delà des 59 s du prompt (§18), à ta demande. YouTube Shorts accepte jusqu'à 3 min et TikTok jusqu'à 10 min.
+4. Suspense de l'Extrême : il se fait maintenant **pendant** le « 1 » (musique coupée, chuchotement « La réponse… »), pour que la réponse tombe pile sur le « 0 ».
+
+**Régénérer la voix :** `<python avec chatterbox> build/voice_tv.py`, puis `python3 build/voice_tv_select.py`. Pour la vidéo : `VOICE_DIR=assets/voice_tv CD_STEP=0.87 OUT_NAME=quiz_drapeaux_v2.mp4`, puis `audio.py` et `render.py`.
+
+---
+
 # 🎬 Dossier de production — QUIZ DRAPEAUX #1
 
 **Vidéos finales :** `output/quiz_drapeaux_voix_libre.mp4` (**voix gratuite maison**, 51,75 s, recommandée) et `output/quiz_drapeaux.mp4` (voix ElevenLabs « Charlie ») — 1080 × 1920, 30 i/s, H.264 + AAC 192 kb/s, **52,25 s**, ≈ −15,7 LUFS.

@@ -29,6 +29,34 @@ def norm(s):
     return re.sub(r"[^a-z ]", " ", s).split()
 
 
+def stt_words(path):
+    r = subprocess.run(["curl", "-s", "-m", "60", "-F", "model_id=scribe_v1", "-F", "language_code=fr",
+                        "-F", "tag_audio_events=false", "-F", f"file=@{path}",
+                        "https://api.elevenlabs.io/v1/speech-to-text"], capture_output=True, text=True).stdout
+    try:
+        d = json.loads(r)
+        return [w for w in d.get("words", []) if w.get("type") == "word"]
+    except Exception:
+        return []
+
+
+def cut_after_expected(path, text):
+    """Coupe ce que le modèle a « inventé » après la dernière parole attendue."""
+    words = stt_words(path)
+    exp = norm(text)
+    heard = [(norm(w["text"]), w) for w in words]
+    best_end, best_score, best_heard = None, -1, ""
+    acc = []
+    for i, (toks, w) in enumerate(heard):
+        acc += toks
+        sc = difflib.SequenceMatcher(None, exp, acc).ratio()
+        if sc > best_score + 1e-9:
+            best_score, best_end, best_heard = sc, w["end"], " ".join(acc)
+    if best_end is None:
+        return 0.0, "", None
+    return best_score, best_heard, best_end
+
+
 def stt(path):
     r = subprocess.run(["curl", "-s", "-m", "60", "-F", "model_id=scribe_v1", "-F", "language_code=fr",
                         "-F", "tag_audio_events=false", "-F", f"file=@{path}",
@@ -60,20 +88,28 @@ def main():
         takes = sorted(glob.glob(os.path.join(RAW, f"{name}_*.wav")))
         best = None
         for p in takes:
+            if p.endswith(("_t.wav", "_w.wav", "_c.wav")):
+                continue
             tmp = p.replace(".wav", "_t.wav")
             ffmpeg(p, tmp, TRIM)
-            heard = stt(tmp)
-            score = difflib.SequenceMatcher(None, norm(text), norm(heard)).ratio()
-            d = len(sf.read(tmp)[0]) / 44100
+            score, heard, end = cut_after_expected(tmp, text)
+            if end is None:
+                continue
+            x, fs = sf.read(tmp)
+            cut = p.replace(".wav", "_c.wav")
+            n = min(len(x), int((end + 0.15) * fs))
+            y = x[:n].copy(); f = int(0.04 * fs); y[-f:] *= np.linspace(1, 0, f)
+            sf.write(cut, y, fs)
+            d = n / fs
             key = (round(score, 2), -d)
             if best is None or key > best[0]:
-                best = (key, tmp, heard, d)
+                best = (key, cut, heard, d)
         if best is None:
             print("MANQUE", name); continue
         (score, _), tmp, heard, d = best
         out = os.path.join(OUT, name + ".wav")
         if style == "whisper":
-            w = tmp.replace("_t.wav", "_w.wav")
+            w = tmp.replace("_c.wav", "_w.wav")
             whisperize(tmp, w)
             ffmpeg(w, out, f"atempo={TEMPO},{MASTER},highpass=f=200,aecho=0.8:0.6:60:0.25,loudnorm=I=-17:TP=-2")
         else:
