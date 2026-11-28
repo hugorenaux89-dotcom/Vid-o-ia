@@ -15,6 +15,11 @@ from moshi.models.tts import DEFAULT_DSM_TTS_REPO, TTSModel
 HERE = os.path.dirname(os.path.abspath(__file__))
 src = open(os.path.join(HERE, "voice_tv.py")).read()
 LINES = eval(src[src.index("LINES = {") + 8: src.index("}\nSTYLE") + 1])
+if os.environ.get("QUIZ"):
+    import json as _json
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from timeline import voice_lines as _vl
+    LINES = _vl(_json.load(open(os.environ["QUIZ"])))
 CFG = float(os.environ.get("KY_CFG", "2.0"))
 TEMP = float(os.environ.get("KY_TEMP", "0.6"))
 

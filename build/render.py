@@ -4,7 +4,7 @@ from functools import lru_cache
 from multiprocessing import Pool
 import numpy as np
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageChops
-from timeline import ROOT, LEVELS, LEVEL_ORDER, QTEXT, build
+from timeline import ROOT, LEVELS, LEVEL_ORDER, QTEXT, build, META
 
 W, H = 1080, 1920
 A = os.path.join(ROOT, "assets")
@@ -83,9 +83,49 @@ def mix(c1, c2, k):
     return tuple(int(a + (b - a) * k) for a, b in zip(c1, c2))
 
 
+@lru_cache(64)
+def emoji_img(ch, size):
+    ef = ImageFont.truetype(F_EMOJI, 109)
+    e = Image.new("RGBA", (160, 160), (0, 0, 0, 0))
+    ImageDraw.Draw(e).text((10, 10), ch, font=ef, embedded_color=True)
+    e = e.crop(e.getbbox())
+    return e.resize((size, int(size * e.height / e.width)), Image.LANCZOS)
+
+
+def emoji_row(text, size, maxw):
+    """Rend une suite d'emojis (séparés par des espaces ou collés) sur une ligne."""
+    import regex
+    items = [g for g in regex.findall(r"\X", text) if g.strip()]
+    ims = [emoji_img(g, size) for g in items]
+    gap = int(size * 0.12)
+    w = sum(i.width for i in ims) + gap * (len(ims) - 1)
+    h = max(i.height for i in ims)
+    row = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    x = 0
+    for i in ims:
+        row.alpha_composite(i, (x, (h - i.height) // 2)); x += i.width + gap
+    if w > maxw:
+        row = row.resize((maxw, int(h * maxw / w)), Image.LANCZOS)
+    return row
+
+
 # ---------------- ASSETS PRÉ-CALCULÉS ----------------
+def bg_tiles():
+    bg = META.get("bg", {"type": "flags"})
+    if bg["type"] == "flags":
+        return [Image.open(os.path.join(A, "flags_bg", f)).convert("RGB") for f in sorted(os.listdir(os.path.join(A, "flags_bg")))]
+    tiles = []
+    palette = [(255, 90, 90), (90, 170, 255), (255, 200, 60), (120, 220, 120), (200, 120, 255)]
+    for k, e in enumerate(bg["items"]):
+        im = Image.new("RGB", (300, 200), palette[k % len(palette)])
+        em = emoji_img(e, 150)
+        im.paste(em, (75, int(100 - em.height / 2)), em)
+        tiles.append(im)
+    return tiles
+
+
 def make_backgrounds():
-    flags = [Image.open(os.path.join(A, "flags_bg", f)).convert("RGB") for f in sorted(os.listdir(os.path.join(A, "flags_bg")))]
+    flags = bg_tiles()
     BW, BH = 1300, 2200
     col = Image.new("RGB", (BW, BH), (20, 20, 40))
     random.seed(3)
@@ -120,26 +160,129 @@ def rounded_mask(size, r):
     return m
 
 
-def make_card(q):
-    im = Image.open(os.path.join(A, "flags", q["flag"] + ".png")).convert("RGBA")
-    maxw, maxh = 520, 540
-    s = min(maxw / im.width, maxh / im.height)
-    fw, fh = int(im.width * s), int(im.height * s)
-    im = im.resize((fw, fh), Image.LANCZOS)
-    # sature / contraste léger pour ressortir sur téléphone
+INK = (20, 22, 45)
+GOOD = (0x2E, 0xCC, 0x40)
+
+
+def dark_text(text, size, maxw, fill=INK):
+    """Texte foncé (sans contour) pour l'intérieur des cartes blanches, retour à la ligne automatique."""
+    f = font(F_TITLE, size)
+    words = text.split()
+    lines, cur = [], ""
+    d0 = ImageDraw.Draw(Image.new("RGBA", (1, 1)))
+    for w in words:
+        test = (cur + " " + w).strip()
+        if d0.textlength(test, font=f) <= maxw or not cur:
+            cur = test
+        else:
+            lines.append(cur); cur = w
+    lines.append(cur)
+    if len(lines) > 4 and size > 30:
+        return dark_text(text, size - 4, maxw, fill)
+    lh = int(size * 1.15)
+    im = Image.new("RGBA", (maxw, lh * len(lines) + 10), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    for k, l in enumerate(lines):
+        wl = d.textlength(l, font=f)
+        d.text(((maxw - wl) / 2, k * lh), l, font=f, fill=fill)
+    return im
+
+
+def pill(text, w, h, fill, txt=WHITE, size=46):
+    im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    d = ImageDraw.Draw(im)
+    d.rounded_rectangle((0, 0, w - 1, h - 1), h // 2 if h < 120 else 26, fill=fill, outline=INK, width=5)
+    t = fit_text(text, F_TITLE, size, w - 30, stroke=0, shadow=False, fill=txt)
+    im.alpha_composite(t, (int(w / 2 - t.width / 2), int(h / 2 - t.height / 2) + 3))
+    return im
+
+
+def stack(*parts, gap=24, w=520):
+    parts = [p for p in parts if p is not None]
+    h = sum(p.height for p in parts) + gap * (len(parts) - 1)
+    im = Image.new("RGBA", (w, h), (0, 0, 0, 0))
+    y = 0
+    for p in parts:
+        im.alpha_composite(p, (int((w - p.width) / 2), y)); y += p.height + gap
+    return im
+
+
+def media_contents(q):
+    """Retourne (contenu caché, contenu révélé) : images RGBA à mettre dans la carte."""
+    m = q.get("media") or {"type": "flag", "flag": q["flag"]}
+    t = m["type"]
+    qdir = META.get("quiz_dir", A)
+    if t in ("flag", "image", "zoom"):
+        path = os.path.join(A, "flags", m["flag"] + ".png") if t == "flag" else os.path.join(qdir, m["path"])
+        im = Image.open(path).convert("RGBA")
+        s_ = min(520 / im.width, 540 / im.height)
+        full = im.resize((int(im.width * s_), int(im.height * s_)), Image.LANCZOS)
+        if t != "zoom":
+            return full, full
+        cx, cy, frac = m["crop"]  # centre (0-1) et fraction de la largeur visible
+        cw = im.width * frac; ch = cw * full.height / full.width
+        x0 = min(max(cx * im.width - cw / 2, 0), im.width - cw); y0 = min(max(cy * im.height - ch / 2, 0), im.height - ch)
+        crop = im.crop((int(x0), int(y0), int(x0 + cw), int(y0 + ch))).resize(full.size, Image.LANCZOS)
+        return crop, full
+    if t == "emoji":
+        row = emoji_row(m["text"], 210, 500)
+        c = stack(row, w=520)
+        return c, c
+    if t == "text":  # devinette : texte, puis emoji de la réponse à la révélation
+        hid = stack(dark_text(m["text"], 62, 490), w=520)
+        rev = stack(emoji_row(m["reveal_emoji"], 230, 480), dark_text(m["text"], 36, 480, fill=(90, 90, 110)), w=520) if m.get("reveal_emoji") else hid
+        return hid, rev
+    if t == "truefalse":
+        top = emoji_row(m["emoji"], 150, 460) if m.get("emoji") else None
+        st = dark_text(m["text"], 54, 490)
+        neutral = Image.new("RGBA", (500, 110), (0, 0, 0, 0))
+        neutral.alpha_composite(pill("VRAI", 230, 100, (60, 130, 230)), (0, 0)); neutral.alpha_composite(pill("FAUX", 230, 100, (230, 60, 80)), (270, 0))
+        res = Image.new("RGBA", (500, 110), (0, 0, 0, 0))
+        ok = m["answer"]  # True / False
+        res.alpha_composite(pill("VRAI !" if ok else "VRAI", 230, 100, GOOD if ok else (200, 200, 205), txt=WHITE if ok else (150, 150, 160)), (0, 0))
+        res.alpha_composite(pill("FAUX !" if not ok else "FAUX", 230, 100, GOOD if not ok else (200, 200, 205), txt=WHITE if not ok else (150, 150, 160)), (270, 0))
+        return stack(top, st, neutral, gap=20), stack(top, st, res, gap=20)
+    if t == "choices":
+        top = emoji_row(m["emoji"], 120, 460) if m.get("emoji") else None
+        opts = m["options"]; ans = m["answer"]
+        def grid(reveal):
+            g = Image.new("RGBA", (500, 230), (0, 0, 0, 0))
+            cols = [(60, 130, 230), (230, 120, 40), (150, 80, 220), (220, 60, 120)]
+            for k, o in enumerate(opts):
+                lab = f"{'ABCD'[k]}. {o}"
+                if reveal:
+                    fill = GOOD if k == ans else (200, 200, 205); txt = WHITE if k == ans else (150, 150, 160)
+                else:
+                    fill, txt = cols[k], WHITE
+                g.alpha_composite(pill(lab, 240, 105, fill, txt, size=40), ((k % 2) * 260, (k // 2) * 122))
+            return g
+        p = dark_text(m["prompt"], 42, 480) if m.get("prompt") else None
+        return stack(top, p, grid(False), gap=18), stack(top, p, grid(True), gap=18)
+    raise ValueError(t)
+
+
+def frame_card(content, level):
+    pad_in = 26 if META.get("bg", {}).get("type") != "flags" else 0
+    fw, fh = content.width + 2 * pad_in, content.height + 2 * pad_in
+    if pad_in:  # cartes « contenu » : taille minimale pour bien remplir la zone image
+        fw, fh = max(fw, 560), max(fh, 440)
     border = 12; pad = 40
     cw, ch = fw + 2 * border, fh + 2 * border
     card = Image.new("RGBA", (cw + 2 * pad, ch + 2 * pad), (0, 0, 0, 0))
     sh = Image.new("RGBA", card.size, (0, 0, 0, 0))
     ImageDraw.Draw(sh).rounded_rectangle((pad + 6, pad + 14, pad + cw + 6, pad + ch + 14), 34, fill=(0, 0, 0, 170))
-    sh = sh.filter(ImageFilter.GaussianBlur(14))
-    card.alpha_composite(sh)
-    frame = Image.new("RGBA", (cw, ch), LEVELS[q["level"]]["color"] + (255,))
+    card.alpha_composite(sh.filter(ImageFilter.GaussianBlur(14)))
+    frame = Image.new("RGBA", (cw, ch), LEVELS[level]["color"] + (255,))
     inner = Image.new("RGBA", (fw, fh), (255, 255, 255, 255))
-    inner.alpha_composite(im)
+    inner.alpha_composite(content, ((fw - content.width) // 2, (fh - content.height) // 2))
     frame.paste(inner, (border, border), rounded_mask((fw, fh), 22))
     card.paste(frame, (pad, pad), rounded_mask((cw, ch), 32))
     return card
+
+
+def make_card(q):
+    hid, rev = media_contents(q)
+    return frame_card(hid, q["level"]), frame_card(rev, q["level"])
 
 
 def make_title():
@@ -151,13 +294,13 @@ def make_title():
     seg = 900 / 4
     for k, n in enumerate(LEVEL_ORDER):
         d.rectangle((int(k * seg) + (30 if k == 0 else 0), 118, int((k + 1) * seg) - (30 if k == 3 else 0), 132), fill=LEVELS[n]["color"])
-    t = text_img("QUIZ DRAPEAUX", F_TITLE, 86, stroke=7, shadow=False)
+    t = fit_text(META["title"], F_TITLE, 86, 740, stroke=7, shadow=False)
     im.alpha_composite(t, (int(470 - t.width / 2), int(66 - t.height / 2)))
     # petit logo de chaîne : globe emoji dans une pastille
     try:
         ef = ImageFont.truetype(F_EMOJI, 109)
         e = Image.new("RGBA", (140, 140), (0, 0, 0, 0))
-        ImageDraw.Draw(e).text((6, 6), "🌍", font=ef, embedded_color=True)
+        ImageDraw.Draw(e).text((6, 6), META.get("logo", "🌍"), font=ef, embedded_color=True)
         e = e.crop(e.getbbox()).resize((84, 84), Image.LANCZOS)
         im.alpha_composite(e, (28, 24))
     except Exception as ex:
@@ -339,15 +482,6 @@ def draw_level_banner(img, t, q):
     paste_center(img, band, x, 700)
 
 
-@lru_cache(8)
-def emoji_img(ch, size):
-    ef = ImageFont.truetype(F_EMOJI, 109)
-    e = Image.new("RGBA", (160, 160), (0, 0, 0, 0))
-    ImageDraw.Draw(e).text((10, 10), ch, font=ef, embedded_color=True)
-    e = e.crop(e.getbbox())
-    return e.resize((size, int(size * e.height / e.width)), Image.LANCZOS)
-
-
 def draw_cta(layer, t):
     """Appel « abonne-toi + like » (≈ 2 s) entre la Q3 et la Q4."""
     a, b = TL["cta"]
@@ -422,7 +556,7 @@ def frame(fi):
         q = cur
         col = LEVELS[q["level"]]["color"]
         A0, R = q["appear"], q["reveal"]
-        card = CARDS[q["idx"]]
+        card = CARDS[q["idx"]][0 if t < R else 1]
         cx, cy = 610, 690
         # rayons derrière la carte à la révélation
         if t >= R:
@@ -452,11 +586,7 @@ def frame(fi):
             paste_center(layer, CHECK, min(bx, 860), max(by, 360), ease_out_back(kc))
 
         # texte de la question
-        qt = q.get("qtext", QTEXT)
-        if q["idx"] == 0 and "qtext" not in q:
-            qt = "QUEL EST\nCE PAYS ?"
-        elif "qtext" not in q:
-            qt = "QUEL EST\nCE PAYS ?"
+        qt = q.get("qtext") or META.get("default_qtext") or "QUEL EST\nCE PAYS ?"
         qi = fit_text(qt, F_TITLE, 78 if "qtext" not in q else 66, 560, stroke=9,
                       fill=WHITE)
         kt = (t - A0) / 0.2
@@ -511,7 +641,7 @@ def frame(fi):
     # accroche (pendant la question 1)
     if t < 2.45:
         ka = t / 0.2
-        acc = fit_text("SEULS LES VRAIS FANS\nAURONT 10/10 !", F_TITLE, 50, 540, stroke=6, fill=(255, 225, 60))
+        acc = fit_text(META["accroche_screen"], F_TITLE, 50, 540, stroke=6, fill=(255, 225, 60))
         a_alpha = 1 if t < 2.25 else (2.45 - t) / 0.2
         paste_center(layer, acc, 610, 400, 0.8 + 0.2 * ease_out_back(ka), a_alpha)
 

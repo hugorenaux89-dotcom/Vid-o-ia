@@ -12,6 +12,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 # lecture des répliques sans importer chatterbox
 src = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "voice_tv.py")).read()
 LINES = eval(src[src.index("LINES = {") + 8: src.index("}\nSTYLE") + 1])
+if os.environ.get("QUIZ"):
+    import json as _json
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from timeline import voice_lines as _vl
+    LINES = _vl(_json.load(open(os.environ["QUIZ"])))
 
 TRIM = ("silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.02,areverse,"
         "silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.06,areverse")

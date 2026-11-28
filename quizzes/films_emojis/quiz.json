@@ -1,0 +1,19 @@
+{
+ "title": "QUIZ FILMS", "logo": "🎬",
+ "bg": {"type": "emoji", "items": ["🎬", "🍿", "🎥", "🎞️", "⭐"]},
+ "accroche_screen": "10 FILMS EN EMOJIS :\nTU LES TROUVES ?",
+ "accroche_voice": "Dix films en émojis. Tu les trouves tous ?",
+ "default_qtext": "QUEL EST\nCE FILM ?",
+ "questions": [
+  {"level": "FACILE", "media": {"type": "emoji", "text": "🦁👑"}, "short": "Le Roi Lion", "big": "LE ROI LION", "voice_q": "Quel est ce film ?", "voice_r": "Le Roi Lion ! Trop facile !", "source": "Disney, 1994"},
+  {"level": "FACILE", "media": {"type": "emoji", "text": "🚢🧊💔"}, "short": "Titanic", "big": "TITANIC", "voice_q": "Et celui-là ?", "voice_r": "Titanic !", "source": "James Cameron, 1997"},
+  {"level": "FACILE", "media": {"type": "emoji", "text": "⚡🧙‍♂️👓"}, "short": "Harry Potter", "big": "HARRY POTTER", "voice_q": "Au suivant !", "voice_r": "Harry Potter ! Bien joué !", "source": "Saga Warner, 2001-2011"},
+  {"level": "MOYEN", "media": {"type": "emoji", "text": "🐠🔍"}, "short": "Nemo", "big": "LE MONDE DE NEMO", "voice_r": "Le Monde de Nemo !", "source": "Pixar, 2003"},
+  {"level": "MOYEN", "media": {"type": "emoji", "text": "🐀👨‍🍳🍲"}, "short": "Ratatouille", "big": "RATATOUILLE", "voice_q": "Et celui-ci ?", "voice_r": "Ratatouille !", "source": "Pixar, 2007"},
+  {"level": "MOYEN", "media": {"type": "emoji", "text": "🧸🤠🚀"}, "short": "Toy Story", "big": "TOY STORY", "voice_q": "Et lui ?", "voice_r": "Toy Story ! Bravo !", "source": "Pixar, 1995"},
+  {"level": "DIFFICILE", "media": {"type": "emoji", "text": "🎈🏠👴"}, "short": "Là-haut", "big": "LÀ-HAUT", "voice_r": "Là-haut !", "source": "Pixar, 2009 (titre français)"},
+  {"level": "DIFFICILE", "media": {"type": "emoji", "text": "🦖🏝️🚙"}, "short": "Jurassic Park", "big": "JURASSIC PARK", "voice_q": "Attention !", "voice_r": "Jurassic Park !", "source": "Steven Spielberg, 1993"},
+  {"level": "EXTREME", "media": {"type": "emoji", "text": "💊🕶️🐇"}, "short": "Matrix", "big": "MATRIX", "voice_r": "Matrix !", "source": "Wachowski, 1999 (pilule rouge, lunettes, lapin blanc)"},
+  {"level": "EXTREME", "media": {"type": "emoji", "text": "🌀😴🏙️"}, "short": "Inception", "big": "INCEPTION", "voice_q": "Le dernier !", "voice_r": "Inception ! Le rêve dans le rêve !", "source": "Christopher Nolan, 2010 (toupie, rêves, ville qui se plie)"}
+ ]
+}

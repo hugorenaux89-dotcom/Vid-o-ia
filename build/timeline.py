@@ -37,6 +37,52 @@ QUESTIONS = [
 ]
 
 
+# ---------- Quiz générique (fichier quizzes/<slug>/quiz.json) ----------
+V_ACCROCHE, V_CTA, V_CONCL = "01_accroche", "07b_cta", "23_conclusion"
+META = dict(title="QUIZ DRAPEAUX", logo="🌍", accroche_screen="SEULS LES VRAIS FANS\nAURONT 10/10 !",
+            default_qtext="QUEL EST\nCE PAYS ?", bg=dict(type="flags"))
+BANNER_TXT = {"MOYEN": ("NIVEAU MOYEN !", "Niveau moyen !"), "DIFFICILE": ("ÇA SE COMPLIQUE !", "Ça se complique !"),
+              "EXTREME": ("NIVEAU EXTRÊME !", "Niveau extrême !")}
+QUIZ_FILE = os.environ.get("QUIZ")
+
+
+def voice_lines(quiz):
+    """Toutes les répliques à générer pour un quiz : {nom: (texte, style)}."""
+    L = {"00_accroche": (quiz["accroche_voice"], "hype")}
+    prev = None
+    for i, q in enumerate(quiz["questions"]):
+        n = f"q{i + 1:02d}"
+        if q["level"] != prev and prev is not None:
+            L[f"{n}_banner"] = (quiz.get("banners", {}).get(q["level"], BANNER_TXT[q["level"]])[1], "hype")
+        prev = q["level"]
+        if q.get("voice_q"):
+            L[f"{n}_q"] = (q["voice_q"], "host")
+        L[f"{n}_r"] = (q["voice_r"], "hype")
+        if i == CTA_AFTER:
+            L["90_cta"] = (quiz.get("cta_voice", "Abonne-toi et like ! On continue !"), "hype")
+    L["99_conclusion"] = (quiz.get("conclusion_voice", "Alors, t'as combien ? Dis-le en commentaire !"), "hype")
+    return L
+
+
+if QUIZ_FILE:
+    QUIZ = json.load(open(QUIZ_FILE))
+    QUIZ_DIR = os.path.dirname(os.path.abspath(QUIZ_FILE))
+    VOICE_DIR = os.environ.get("VOICE_DIR") or os.path.join(QUIZ_DIR, "voice")
+    V_ACCROCHE, V_CTA, V_CONCL = "00_accroche", "90_cta", "99_conclusion"
+    META = dict(title=QUIZ["title"], logo=QUIZ.get("logo", "❓"), accroche_screen=QUIZ["accroche_screen"],
+                default_qtext=QUIZ.get("default_qtext", ""), bg=QUIZ.get("bg", dict(type="emoji", items=[QUIZ.get("logo", "❓")])),
+                quiz_dir=QUIZ_DIR)
+    QUESTIONS = []
+    prev = None
+    for i, q in enumerate(QUIZ["questions"]):
+        n = f"q{i + 1:02d}"
+        d = dict(q, short=q["short"], big=q["big"], level=q["level"], vq=f"{n}_q" if q.get("voice_q") else None, vr=f"{n}_r")
+        if q["level"] != prev and prev is not None:
+            d["banner"] = (QUIZ.get("banners", {}).get(q["level"], BANNER_TXT[q["level"]])[0], f"{n}_banner")
+        prev = q["level"]
+        QUESTIONS.append(d)
+
+
 def dur(name):
     out = subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
                           os.path.join(VOICE_DIR, name + ".wav")], capture_output=True, text=True).stdout
@@ -64,7 +110,7 @@ def build():
 
     sfx.append((0.0, "whoosh"))
     # Accroche dite PENDANT la question 1
-    say("01_accroche", 0.0)
+    say(V_ACCROCHE, 0.0)
 
     for i, q in enumerate(QUESTIONS):
         A = t
@@ -97,20 +143,20 @@ def build():
         qs.append(dict(q, idx=i, appear=A, cd_start=cd_start, cd_end=cd_end, reveal=R, end=nxt,
                        suspense=susp, banner_t=(A, A + 0.5) if banner else None))
         t = nxt
-        if i == CTA_AFTER and os.path.exists(os.path.join(VOICE_DIR, "07b_cta.wav")):
+        if i == CTA_AFTER and os.path.exists(os.path.join(VOICE_DIR, V_CTA + ".wav")):
             # appel « abonne-toi + like » juste avant la question 4, puis enchaînement immédiat
             sfx.append((t, "pop"))
-            cs, ce = say("07b_cta", t + 0.05)
+            cs, ce = say(V_CTA, t + 0.05)
             sfx.append((t + 0.95, "pop")); sfx.append((t + 1.45, "ding"))
             cta = (t, up(ce + 0.05, 0.25))
             t = cta[1]
 
     concl = t
-    say("23_conclusion", concl + 0.05)
+    say(V_CONCL, concl + 0.05)
     end = max(concl + 2.0, last_voice_end + 0.35)
     end = up(end, 0.25)
     sfx.append((end - 1.0, "jingle"))
-    return dict(questions=qs, voices=voices, sfx=sfx, conclusion=concl, duration=end, fps=FPS, cta=cta)
+    return dict(questions=qs, voices=voices, sfx=sfx, conclusion=concl, duration=end, fps=FPS, cta=cta, meta=META)
 
 
 if __name__ == "__main__":

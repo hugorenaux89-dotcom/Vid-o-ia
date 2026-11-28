@@ -1,0 +1,19 @@
+{
+ "title": "DEVINETTES", "logo": "🧩",
+ "bg": {"type": "emoji", "items": ["🧩", "🤔", "💡", "❓", "🔍"]},
+ "accroche_screen": "10 DEVINETTES :\nT'ES PLUS MALIN QUE ÇA ?",
+ "accroche_voice": "Dix devinettes. T'es assez malin ?",
+ "default_qtext": "QUI SUIS-JE ?",
+ "questions": [
+  {"level": "FACILE", "media": {"type": "text", "text": "J'ai des dents, mais je ne mords jamais.", "reveal_emoji": "🪮"}, "short": "Un peigne", "big": "UN PEIGNE", "voice_q": "J'ai des dents, mais je ne mords jamais. Qui suis-je ?", "voice_r": "Un peigne ! Trop facile !", "source": "Devinette classique"},
+  {"level": "FACILE", "media": {"type": "text", "text": "Je suis plein de trous, mais je retiens l'eau.", "reveal_emoji": "🧽"}, "short": "Une éponge", "big": "UNE ÉPONGE", "voice_q": "Je suis plein de trous, mais je retiens l'eau.", "voice_r": "Une éponge !", "source": "Devinette classique"},
+  {"level": "FACILE", "media": {"type": "text", "text": "J'ai un cou, mais pas de tête.", "reveal_emoji": "🍾"}, "short": "Une bouteille", "big": "UNE BOUTEILLE", "voice_q": "J'ai un cou, mais pas de tête.", "voice_r": "Une bouteille ! Bien joué !", "source": "Devinette classique"},
+  {"level": "MOYEN", "media": {"type": "text", "text": "Plus on m'enlève de la terre, plus je deviens grand.", "reveal_emoji": "🕳️"}, "short": "Un trou", "big": "UN TROU", "voice_q": "Plus on m'enlève de la terre, plus je deviens grand.", "voice_r": "Un trou !", "source": "Devinette classique"},
+  {"level": "MOYEN", "media": {"type": "text", "text": "On me jette quand on a besoin de moi, et on me remonte quand on n'en a plus besoin.", "reveal_emoji": "⚓"}, "short": "Une ancre", "big": "UNE ANCRE", "voice_q": "On me jette quand on a besoin de moi, et on me remonte quand on n'en a plus besoin.", "voice_r": "Une ancre !", "source": "Devinette classique"},
+  {"level": "MOYEN", "media": {"type": "text", "text": "Je cours sans jambes, et j'ai un lit sans jamais dormir.", "reveal_emoji": "🏞️"}, "short": "Une rivière", "big": "UNE RIVIÈRE", "voice_q": "Je cours sans jambes, et j'ai un lit sans jamais dormir.", "voice_r": "Une rivière ! Bravo !", "source": "Devinette classique"},
+  {"level": "DIFFICILE", "media": {"type": "text", "text": "J'ai des villes sans maisons, des forêts sans arbres et de l'eau sans poissons.", "reveal_emoji": "🗺️"}, "short": "Une carte", "big": "UNE CARTE", "voice_q": "J'ai des villes sans maisons, des forêts sans arbres, et de l'eau sans poissons.", "voice_r": "Une carte !", "source": "Devinette classique"},
+  {"level": "DIFFICILE", "media": {"type": "text", "text": "Je parle sans bouche et j'entends sans oreilles.", "reveal_emoji": "🏔️"}, "short": "L'écho", "big": "L'ÉCHO", "voice_q": "Je parle sans bouche, et j'entends sans oreilles.", "voice_r": "L'écho !", "source": "Devinette classique"},
+  {"level": "EXTREME", "media": {"type": "text", "text": "Si tu prononces mon nom, tu me brises.", "reveal_emoji": "🤫"}, "short": "Le silence", "big": "LE SILENCE", "voice_q": "Si tu prononces mon nom, tu me brises.", "voice_r": "Le silence !", "source": "Devinette classique"},
+  {"level": "EXTREME", "media": {"type": "text", "text": "Plus il y en a, moins on voit.", "reveal_emoji": "🌑"}, "short": "Le noir", "big": "LE NOIR", "voice_q": "Le dernier ! Plus il y en a, moins on voit.", "voice_r": "Le noir ! L'obscurité !", "source": "Devinette classique (l'obscurité)"}
+ ]
+}

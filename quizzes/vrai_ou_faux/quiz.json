@@ -1,0 +1,19 @@
+{
+ "title": "VRAI OU FAUX", "logo": "🤔",
+ "bg": {"type": "emoji", "items": ["✅", "❌", "🤔", "💡", "❓"]},
+ "accroche_screen": "VRAI OU FAUX :\nNE TE FAIS PAS PIÉGER !",
+ "accroche_voice": "Vrai ou faux ? Ne te fais pas piéger !",
+ "default_qtext": "VRAI OU FAUX ?",
+ "questions": [
+  {"level": "FACILE", "media": {"type": "truefalse", "emoji": "☀️", "text": "Le Soleil est une étoile.", "answer": true}, "short": "Vrai", "big": "VRAI !", "voice_q": "Le Soleil est une étoile.", "voice_r": "Vrai ! C'est une étoile !", "source": "Le Soleil est une étoile naine jaune (type G)."},
+  {"level": "FACILE", "media": {"type": "truefalse", "emoji": "🩸", "text": "Le sang est bleu dans nos veines.", "answer": false}, "short": "Faux", "big": "FAUX !", "voice_q": "Le sang est bleu dans nos veines.", "voice_r": "Faux ! Il est toujours rouge !", "source": "L'hémoglobine est rouge ; les veines paraissent bleues à travers la peau."},
+  {"level": "FACILE", "media": {"type": "truefalse", "emoji": "🍌", "text": "La banane est une baie.", "answer": true}, "short": "Vrai", "big": "VRAI !", "voice_q": "La banane est une baie.", "voice_r": "Vrai ! En botanique, c'est une baie !", "source": "Botanique : la banane est une baie."},
+  {"level": "MOYEN", "media": {"type": "truefalse", "emoji": "🐙", "text": "La pieuvre a trois cœurs.", "answer": true}, "short": "Vrai", "big": "VRAI !", "voice_r": "Vrai ! Trois cœurs !", "source": "Un cœur systémique et deux cœurs branchiaux."},
+  {"level": "MOYEN", "media": {"type": "truefalse", "emoji": "🦩", "text": "Les flamants roses naissent roses.", "answer": false}, "short": "Faux", "big": "FAUX !", "voice_q": "Les flamants roses naissent roses.", "voice_r": "Faux ! Ils naissent gris !", "source": "Les poussins sont gris-blanc ; le rose vient des caroténoïdes de l'alimentation."},
+  {"level": "MOYEN", "media": {"type": "truefalse", "emoji": "⚡", "text": "La foudre ne tombe jamais deux fois au même endroit.", "answer": false}, "short": "Faux", "big": "FAUX !", "voice_q": "La foudre ne tombe jamais deux fois au même endroit.", "voice_r": "Faux ! Elle peut retomber au même endroit !", "source": "Les tours élevées sont frappées de nombreuses fois par an."},
+  {"level": "DIFFICILE", "media": {"type": "truefalse", "emoji": "🗼", "text": "La tour Eiffel grandit en été.", "answer": true}, "short": "Vrai", "big": "VRAI !", "voice_r": "Vrai ! Le métal se dilate !", "source": "Dilatation thermique : jusqu'à une quinzaine de centimètres (site officiel de la tour Eiffel)."},
+  {"level": "DIFFICILE", "media": {"type": "truefalse", "emoji": "🧠", "text": "On n'utilise que 10 % de notre cerveau.", "answer": false}, "short": "Faux", "big": "FAUX !", "voice_q": "On n'utilise que dix pour cent de notre cerveau.", "voice_r": "Faux ! C'est un mythe !", "source": "L'imagerie cérébrale montre une activité dans tout le cerveau."},
+  {"level": "EXTREME", "media": {"type": "truefalse", "emoji": "🪐", "text": "Sur Vénus, un jour dure plus longtemps qu'une année.", "answer": true}, "short": "Vrai", "big": "VRAI !", "voice_r": "Vrai ! Vénus tourne très lentement !", "source": "Rotation : 243 jours terrestres ; révolution : 225 jours (NASA)."},
+  {"level": "EXTREME", "media": {"type": "truefalse", "emoji": "🐘", "text": "L'éléphant est le seul animal qui ne peut pas sauter.", "answer": false}, "short": "Faux", "big": "FAUX !", "voice_q": "Le dernier ! L'éléphant est le seul animal qui ne peut pas sauter.", "voice_r": "Faux ! D'autres animaux ne sautent pas, comme le paresseux !", "source": "Paresseux, tortues, hippopotames adultes ne sautent pas non plus."}
+ ]
+}
