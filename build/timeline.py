@@ -93,7 +93,7 @@ def up(x, step):
     return math.ceil(x / step - 1e-6) * step
 
 
-def build():
+def _build():
     voices = []   # (start, name)
     sfx = []      # (start, kind)
     qs = []
@@ -157,6 +157,22 @@ def build():
     end = up(end, 0.25)
     sfx.append((end - 1.0, "jingle"))
     return dict(questions=qs, voices=voices, sfx=sfx, conclusion=concl, duration=end, fps=FPS, cta=cta, meta=META)
+
+
+MIN_DUR = float(os.environ.get("MIN_DUR", "62"))  # TikTok ne rémunère que les vidéos > 1 min
+
+
+def build():
+    """Construit la timeline ; ralentit le compte à rebours si besoin pour dépasser MIN_DUR."""
+    global CD_STEP
+    base = CD_STEP
+    tl = _build()
+    while tl["duration"] < MIN_DUR and CD_STEP < 1.3:
+        CD_STEP = round(CD_STEP + 0.01, 3)
+        tl = _build()
+    tl["cd_step"] = CD_STEP
+    CD_STEP = base
+    return tl
 
 
 if __name__ == "__main__":
