@@ -1,0 +1,140 @@
+[
+ {
+  "name": "00_accroche",
+  "score": 1.0,
+  "heard": "dix films en emojis tu les trouves tous",
+  "dur": 2.751814058956916
+ },
+ {
+  "name": "q01_q",
+  "score": 1.0,
+  "heard": "quel est ce film",
+  "dur": 0.980453514739229
+ },
+ {
+  "name": "q01_r",
+  "score": 1.0,
+  "heard": "le roi lion trop facile",
+  "dur": 2.3764399092970523
+ },
+ {
+  "name": "q02_q",
+  "score": 1.0,
+  "heard": "et celui la",
+  "dur": 0.9154421768707482
+ },
+ {
+  "name": "q02_r",
+  "score": 1.0,
+  "heard": "titanic",
+  "dur": 0.7991836734693878
+ },
+ {
+  "name": "q03_q",
+  "score": 1.0,
+  "heard": "au suivant",
+  "dur": 0.636984126984127
+ },
+ {
+  "name": "q03_r",
+  "score": 1.0,
+  "heard": "harry potter bien joue",
+  "dur": 1.8163038548752835
+ },
+ {
+  "name": "90_cta",
+  "score": 1.0,
+  "heard": "abonne toi et like on continue",
+  "dur": 2.5805442176870748
+ },
+ {
+  "name": "q04_banner",
+  "score": 1.0,
+  "heard": "niveau moyen",
+  "dur": 0.7966213151927438
+ },
+ {
+  "name": "q04_r",
+  "score": 1.0,
+  "heard": "le monde de nemo",
+  "dur": 1.123718820861678
+ },
+ {
+  "name": "q05_q",
+  "score": 1.0,
+  "heard": "et celui ci",
+  "dur": 0.8198866213151927
+ },
+ {
+  "name": "q05_r",
+  "score": 1.0,
+  "heard": "ratatouille",
+  "dur": 0.9347619047619048
+ },
+ {
+  "name": "q06_q",
+  "score": 1.0,
+  "heard": "et lui",
+  "dur": 0.6475283446712018
+ },
+ {
+  "name": "q06_r",
+  "score": 1.0,
+  "heard": "toy story bravo",
+  "dur": 1.9951927437641723
+ },
+ {
+  "name": "q07_banner",
+  "score": 1.0,
+  "heard": "ca se complique",
+  "dur": 0.7729931972789116
+ },
+ {
+  "name": "q07_r",
+  "score": 1.0,
+  "heard": "la haut",
+  "dur": 0.8087755102040817
+ },
+ {
+  "name": "q08_q",
+  "score": 1.0,
+  "heard": "attention",
+  "dur": 0.6060090702947846
+ },
+ {
+  "name": "q08_r",
+  "score": 1.0,
+  "heard": "jurassic park",
+  "dur": 1.2624036281179138
+ },
+ {
+  "name": "q09_banner",
+  "score": 1.0,
+  "heard": "niveau extreme",
+  "dur": 1.1648072562358276
+ },
+ {
+  "name": "q09_r",
+  "score": 1.0,
+  "heard": "matrix",
+  "dur": 0.7454648526077098
+ },
+ {
+  "name": "q10_q",
+  "score": 1.0,
+  "heard": "le dernier",
+  "dur": 0.8168253968253968
+ },
+ {
+  "name": "q10_r",
+  "score": 1.0,
+  "heard": "inception le reve dans le reve",
+  "dur": 2.3641950113378685
+ },
+ {
+  "name": "99_conclusion",
+  "score": 1.0,
+  "heard": "alors t as combien dis le en commentaire",
+  "dur": 3.335532879818594
+ }
+]
