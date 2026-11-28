@@ -1,0 +1,135 @@
+{
+ "title": "EXPRESSIONS",
+ "logo": "🇫🇷",
+ "bg": {
+  "type": "emoji",
+  "items": [
+   "💬",
+   "🤔",
+   "😂",
+   "🗣️",
+   "💡"
+  ]
+ },
+ "accroche_screen": "10 EXPRESSIONS\nEN EMOJIS !",
+ "accroche_voice": "Dix expressions françaises en émojis. Tu les trouves ?",
+ "default_qtext": "QUELLE EST\nCETTE EXPRESSION ?",
+ "questions": [
+  {
+   "level": "FACILE",
+   "media": {
+    "type": "emoji",
+    "text": "🐱🗣️"
+   },
+   "short": "Chat gorge",
+   "big": "UN CHAT DANS\nLA GORGE",
+   "voice_r": "Avoir un chat dans la gorge !",
+   "source": "Expression française"
+  },
+  {
+   "level": "FACILE",
+   "media": {
+    "type": "emoji",
+    "text": "🌧️🪢🪢"
+   },
+   "short": "Il pleut",
+   "big": "IL PLEUT DES\nCORDES",
+   "voice_q": "Et celle-là ?",
+   "voice_r": "Il pleut des cordes ! Bien vu !",
+   "source": "Expression française (équivalent anglais : chats et chiens)"
+  },
+  {
+   "level": "FACILE",
+   "media": {
+    "type": "emoji",
+    "text": "🐔🥩😨"
+   },
+   "short": "Chair de poule",
+   "big": "LA CHAIR\nDE POULE",
+   "voice_q": "Au suivant !",
+   "voice_r": "Avoir la chair de poule !",
+   "source": "Expression française"
+  },
+  {
+   "level": "MOYEN",
+   "media": {
+    "type": "emoji",
+    "text": "🚶🥚🥚"
+   },
+   "short": "Œufs",
+   "big": "MARCHER SUR\nDES ŒUFS",
+   "voice_r": "Marcher sur des œufs !",
+   "source": "Expression française"
+  },
+  {
+   "level": "MOYEN",
+   "media": {
+    "type": "emoji",
+    "text": "🦷😠👤"
+   },
+   "short": "Une dent",
+   "big": "AVOIR UNE\nDENT CONTRE",
+   "voice_q": "Et celle-ci ?",
+   "voice_r": "Avoir une dent contre quelqu'un !",
+   "source": "Expression française"
+  },
+  {
+   "level": "MOYEN",
+   "media": {
+    "type": "emoji",
+    "text": "🥕🥕✅"
+   },
+   "short": "Carottes",
+   "big": "LES CAROTTES\nSONT CUITES",
+   "voice_q": "Attention !",
+   "voice_r": "Les carottes sont cuites !",
+   "source": "Expression française"
+  },
+  {
+   "level": "DIFFICILE",
+   "media": {
+    "type": "emoji",
+    "text": "🐟🗓️4️⃣"
+   },
+   "short": "Poisson",
+   "big": "POISSON\nD'AVRIL",
+   "voice_r": "Poisson d'avril !",
+   "source": "Expression française"
+  },
+  {
+   "level": "DIFFICILE",
+   "media": {
+    "type": "emoji",
+    "text": "🐻🫤"
+   },
+   "short": "Ours",
+   "big": "UN OURS\nMAL LÉCHÉ",
+   "voice_q": "Et celle-là ?",
+   "voice_r": "Un ours mal léché !",
+   "source": "Expression française"
+  },
+  {
+   "level": "EXTREME",
+   "media": {
+    "type": "emoji",
+    "text": "🧀🍷🍐"
+   },
+   "short": "Poire fromage",
+   "big": "ENTRE LA POIRE\nET LE FROMAGE",
+   "voice_r": "Entre la poire et le fromage !",
+   "source": "Expression française"
+  },
+  {
+   "level": "EXTREME",
+   "media": {
+    "type": "emoji",
+    "text": "🍞🛒🥖"
+   },
+   "short": "Petits pains",
+   "big": "COMME DES\nPETITS PAINS",
+   "voice_q": "Le dernier !",
+   "voice_r": "Se vendre comme des petits pains !",
+   "source": "Expression française"
+  }
+ ]
+}
