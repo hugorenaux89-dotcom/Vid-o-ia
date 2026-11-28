@@ -1,0 +1,140 @@
+[
+ {
+  "name": "00_accroche",
+  "score": 1.0,
+  "heard": "culture generale tu fais un sans faute",
+  "dur": 2.3489115646258503
+ },
+ {
+  "name": "q01_q",
+  "score": 1.0,
+  "heard": "combien de pattes a une araignee",
+  "dur": 1.5855555555555556
+ },
+ {
+  "name": "q01_r",
+  "score": 0.0,
+  "heard": "behui",
+  "dur": 0.9492290249433106
+ },
+ {
+  "name": "q02_q",
+  "score": 1.0,
+  "heard": "la plus grande planete du systeme solaire",
+  "dur": 2.194172335600907
+ },
+ {
+  "name": "q02_r",
+  "score": 0.8,
+  "heard": "c est jupiter",
+  "dur": 1.475124716553288
+ },
+ {
+  "name": "q03_q",
+  "score": 1.0,
+  "heard": "le plus grand ocean du monde",
+  "dur": 1.5297278911564627
+ },
+ {
+  "name": "q03_r",
+  "score": 1.0,
+  "heard": "b le pacifique bien joue",
+  "dur": 2.3723809523809525
+ },
+ {
+  "name": "90_cta",
+  "score": 1.0,
+  "heard": "abonne toi et like on continue",
+  "dur": 2.5805442176870748
+ },
+ {
+  "name": "q04_banner",
+  "score": 1.0,
+  "heard": "niveau moyen",
+  "dur": 0.7966213151927438
+ },
+ {
+  "name": "q04_r",
+  "score": 0.8,
+  "heard": "le guepard",
+  "dur": 1.7607936507936508
+ },
+ {
+  "name": "q05_q",
+  "score": 1.0,
+  "heard": "combien d os a un adulte",
+  "dur": 1.3861224489795918
+ },
+ {
+  "name": "q05_r",
+  "score": 0.4,
+  "heard": "c",
+  "dur": 1.9555555555555555
+ },
+ {
+  "name": "q06_q",
+  "score": 1.0,
+  "heard": "combien de couleurs dans un arc en ciel",
+  "dur": 1.8638548752834467
+ },
+ {
+  "name": "q06_r",
+  "score": 0.44,
+  "heard": "c est cette couleur bravo",
+  "dur": 2.8221315192743766
+ },
+ {
+  "name": "q07_banner",
+  "score": 1.0,
+  "heard": "ca se complique",
+  "dur": 0.7729931972789116
+ },
+ {
+  "name": "q07_r",
+  "score": 0.8,
+  "heard": "b la",
+  "dur": 1.2731292517006803
+ },
+ {
+  "name": "q08_q",
+  "score": 1.0,
+  "heard": "combien de touches sur un piano classique",
+  "dur": 2.132766439909297
+ },
+ {
+  "name": "q08_r",
+  "score": 0.33,
+  "heard": "c est",
+  "dur": 0.6066213151927438
+ },
+ {
+  "name": "q09_banner",
+  "score": 1.0,
+  "heard": "niveau extreme",
+  "dur": 1.1648072562358276
+ },
+ {
+  "name": "q09_r",
+  "score": 1.0,
+  "heard": "c l argent pas l or",
+  "dur": 2.5063945578231293
+ },
+ {
+  "name": "q10_q",
+  "score": 1.0,
+  "heard": "le dernier quel pays a le plus de fuseaux horaires",
+  "dur": 2.928843537414966
+ },
+ {
+  "name": "q10_r",
+  "score": 0.88,
+  "heard": "deux la france grace a l outre mer",
+  "dur": 2.6773696145124717
+ },
+ {
+  "name": "99_conclusion",
+  "score": 1.0,
+  "heard": "alors t as combien dis le en commentaire",
+  "dur": 3.335532879818594
+ }
+]
