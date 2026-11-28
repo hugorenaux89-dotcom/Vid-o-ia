@@ -229,7 +229,9 @@ def media_contents(q):
         c = stack(row, w=520)
         return c, c
     if t == "text":  # devinette : texte, puis emoji de la réponse à la révélation
-        hid = stack(dark_text(m["text"], 62, 490), w=520)
+        hid = stack(dark_text(m["text"], m.get("size", 62), 490), w=520)
+        if m.get("reveal_text"):
+            return hid, stack(emoji_row(m.get("reveal_emoji", "✅"), 120, 300), dark_text(m["reveal_text"], m.get("size", 62), 490), w=520)
         rev = stack(emoji_row(m["reveal_emoji"], 230, 480), dark_text(m["text"], 36, 480, fill=(90, 90, 110)), w=520) if m.get("reveal_emoji") else hid
         return hid, rev
     if t == "truefalse":

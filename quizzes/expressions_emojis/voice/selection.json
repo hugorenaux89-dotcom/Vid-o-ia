@@ -1,0 +1,134 @@
+[
+ {
+  "name": "00_accroche",
+  "score": 1.0,
+  "heard": "dix expressions francaises en emojis tu les trouves",
+  "dur": 3.0212471655328796
+ },
+ {
+  "name": "q01_r",
+  "score": 1.0,
+  "heard": "avoir un chat dans la gorge",
+  "dur": 1.5680045351473924
+ },
+ {
+  "name": "q02_q",
+  "score": 1.0,
+  "heard": "et celle la",
+  "dur": 0.8009977324263039
+ },
+ {
+  "name": "q02_r",
+  "score": 1.0,
+  "heard": "il pleut des cordes bien vu",
+  "dur": 2.1618820861678003
+ },
+ {
+  "name": "q03_q",
+  "score": 1.0,
+  "heard": "au suivant",
+  "dur": 0.636984126984127
+ },
+ {
+  "name": "q03_r",
+  "score": 1.0,
+  "heard": "avoir la chair de poule",
+  "dur": 1.3103854875283447
+ },
+ {
+  "name": "90_cta",
+  "score": 1.0,
+  "heard": "abonne toi et like on continue",
+  "dur": 2.5805442176870748
+ },
+ {
+  "name": "q04_banner",
+  "score": 1.0,
+  "heard": "niveau moyen",
+  "dur": 0.7966213151927438
+ },
+ {
+  "name": "q04_r",
+  "score": 1.0,
+  "heard": "marcher sur des ufs",
+  "dur": 1.246734693877551
+ },
+ {
+  "name": "q05_q",
+  "score": 1.0,
+  "heard": "et celle ci",
+  "dur": 0.9175056689342403
+ },
+ {
+  "name": "q05_r",
+  "score": 1.0,
+  "heard": "avoir une dent contre quelqu un",
+  "dur": 1.4612925170068027
+ },
+ {
+  "name": "q06_q",
+  "score": 1.0,
+  "heard": "attention",
+  "dur": 0.6060090702947846
+ },
+ {
+  "name": "q06_r",
+  "score": 1.0,
+  "heard": "les carottes sont cuites",
+  "dur": 1.5324036281179139
+ },
+ {
+  "name": "q07_banner",
+  "score": 1.0,
+  "heard": "ca se complique",
+  "dur": 0.7729931972789116
+ },
+ {
+  "name": "q07_r",
+  "score": 1.0,
+  "heard": "poisson d avril",
+  "dur": 0.8981859410430839
+ },
+ {
+  "name": "q08_q",
+  "score": 1.0,
+  "heard": "et celle la",
+  "dur": 0.8009977324263039
+ },
+ {
+  "name": "q08_r",
+  "score": 1.0,
+  "heard": "un ours mal leche",
+  "dur": 1.3137868480725623
+ },
+ {
+  "name": "q09_banner",
+  "score": 1.0,
+  "heard": "niveau extreme",
+  "dur": 1.0492290249433107
+ },
+ {
+  "name": "q09_r",
+  "score": 1.0,
+  "heard": "entre la poire et le fromage",
+  "dur": 1.6994331065759638
+ },
+ {
+  "name": "q10_q",
+  "score": 1.0,
+  "heard": "le dernier",
+  "dur": 0.8168253968253968
+ },
+ {
+  "name": "q10_r",
+  "score": 1.0,
+  "heard": "se vendre comme des petits pains",
+  "dur": 1.5806802721088435
+ },
+ {
+  "name": "99_conclusion",
+  "score": 1.0,
+  "heard": "alors t as combien dis le en commentaire",
+  "dur": 3.335532879818594
+ }
+]

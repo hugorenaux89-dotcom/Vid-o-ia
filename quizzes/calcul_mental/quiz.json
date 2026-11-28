@@ -1,19 +1,166 @@
 {
- "title": "CALCUL MENTAL", "logo": "🧮",
- "bg": {"type": "emoji", "items": ["🧮", "➕", "✖️", "🧠", "🔢"]},
+ "title": "CALCUL MENTAL",
+ "logo": "🧮",
+ "bg": {
+  "type": "emoji",
+  "items": [
+   "🧮",
+   "➕",
+   "✖️",
+   "🧠",
+   "🔢"
+  ]
+ },
  "accroche_screen": "10 CALCULS :\nSANS CALCULATRICE !",
  "accroche_voice": "Dix calculs, sans calculatrice. Prêt ?",
  "default_qtext": "COMBIEN\nÇA FAIT ?",
  "questions": [
-  {"level": "FACILE", "media": {"type": "text", "text": "7 + 8 = ?", "reveal_emoji": "✅"}, "short": "15", "big": "15", "voice_q": "Sept plus huit ?", "voice_r": "Quinze ! Trop facile !", "source": "7+8=15"},
-  {"level": "FACILE", "media": {"type": "text", "text": "6 × 7 = ?", "reveal_emoji": "✅"}, "short": "42", "big": "42", "voice_q": "Six fois sept ?", "voice_r": "Quarante-deux !", "source": "6x7=42"},
-  {"level": "FACILE", "media": {"type": "text", "text": "100 − 37 = ?", "reveal_emoji": "✅"}, "short": "63", "big": "63", "voice_q": "Cent moins trente-sept ?", "voice_r": "Soixante-trois ! Bien joué !", "source": "100-37=63"},
-  {"level": "MOYEN", "media": {"type": "text", "text": "15 × 4 = ?", "reveal_emoji": "✅"}, "short": "60", "big": "60", "voice_r": "Soixante !", "source": "15x4=60"},
-  {"level": "MOYEN", "media": {"type": "text", "text": "La moitié de 250 ?", "reveal_emoji": "✅"}, "short": "125", "big": "125", "voice_q": "La moitié de deux cent cinquante ?", "voice_r": "Cent vingt-cinq !", "source": "250/2=125"},
-  {"level": "MOYEN", "media": {"type": "text", "text": "2 + 2 × 2 = ?", "reveal_emoji": "⚠️"}, "short": "6", "big": "6", "voice_q": "Attention au piège !", "voice_r": "Six ! Pas huit !", "source": "Priorité de la multiplication : 2+4=6"},
-  {"level": "DIFFICILE", "media": {"type": "text", "text": "25 × 24 = ?", "reveal_emoji": "✅"}, "short": "600", "big": "600", "voice_r": "Six cents !", "source": "25x24=600"},
-  {"level": "DIFFICILE", "media": {"type": "text", "text": "10 % de 450 ?", "reveal_emoji": "✅"}, "short": "45", "big": "45", "voice_q": "Dix pour cent de quatre cent cinquante ?", "voice_r": "Quarante-cinq !", "source": "450x0,1=45"},
-  {"level": "EXTREME", "media": {"type": "text", "text": "17 × 13 = ?", "reveal_emoji": "🔥"}, "short": "221", "big": "221", "voice_r": "Deux cent vingt et un !", "source": "17x13=221"},
-  {"level": "EXTREME", "media": {"type": "text", "text": "1 + 2 + 3 + … + 10 ?", "reveal_emoji": "🔥"}, "short": "55", "big": "55", "voice_q": "Le dernier ! La somme de un à dix ?", "voice_r": "Cinquante-cinq !", "source": "10x11/2=55"}
+  {
+   "level": "FACILE",
+   "media": {
+    "type": "text",
+    "text": "7 + 8 = ?",
+    "reveal_emoji": "✅",
+    "size": 100,
+    "reveal_text": "7 + 8 = 15"
+   },
+   "short": "15",
+   "big": "15",
+   "voice_q": "Sept plus huit ?",
+   "voice_r": "Quinze ! Trop facile !",
+   "source": "7+8=15"
+  },
+  {
+   "level": "FACILE",
+   "media": {
+    "type": "text",
+    "text": "6 × 7 = ?",
+    "reveal_emoji": "✅",
+    "size": 100,
+    "reveal_text": "6 × 7 = 42"
+   },
+   "short": "42",
+   "big": "42",
+   "voice_q": "Six fois sept ?",
+   "voice_r": "Quarante-deux !",
+   "source": "6x7=42"
+  },
+  {
+   "level": "FACILE",
+   "media": {
+    "type": "text",
+    "text": "100 − 37 = ?",
+    "reveal_emoji": "✅",
+    "size": 100,
+    "reveal_text": "100 − 37 = 63"
+   },
+   "short": "63",
+   "big": "63",
+   "voice_q": "Cent moins trente-sept ?",
+   "voice_r": "Soixante-trois ! Bien joué !",
+   "source": "100-37=63"
+  },
+  {
+   "level": "MOYEN",
+   "media": {
+    "type": "text",
+    "text": "15 × 4 = ?",
+    "reveal_emoji": "✅",
+    "size": 100,
+    "reveal_text": "15 × 4 = 60"
+   },
+   "short": "60",
+   "big": "60",
+   "voice_r": "Soixante !",
+   "source": "15x4=60"
+  },
+  {
+   "level": "MOYEN",
+   "media": {
+    "type": "text",
+    "text": "La moitié de 250 ?",
+    "reveal_emoji": "✅",
+    "size": 100,
+    "reveal_text": "La moitié de 250\n= 125"
+   },
+   "short": "125",
+   "big": "125",
+   "voice_q": "La moitié de deux cent cinquante ?",
+   "voice_r": "Cent vingt-cinq !",
+   "source": "250/2=125"
+  },
+  {
+   "level": "MOYEN",
+   "media": {
+    "type": "text",
+    "text": "2 + 2 × 2 = ?",
+    "reveal_emoji": "⚠️",
+    "size": 100,
+    "reveal_text": "2 + 2 × 2 = 6"
+   },
+   "short": "6",
+   "big": "6",
+   "voice_q": "Attention au piège !",
+   "voice_r": "Six ! Et pas huit !",
+   "source": "Priorité de la multiplication : 2+4=6"
+  },
+  {
+   "level": "DIFFICILE",
+   "media": {
+    "type": "text",
+    "text": "25 × 24 = ?",
+    "reveal_emoji": "✅",
+    "size": 100,
+    "reveal_text": "25 × 24 = 600"
+   },
+   "short": "600",
+   "big": "600",
+   "voice_r": "Six cents !",
+   "source": "25x24=600"
+  },
+  {
+   "level": "DIFFICILE",
+   "media": {
+    "type": "text",
+    "text": "10 % de 450 ?",
+    "reveal_emoji": "✅",
+    "size": 100,
+    "reveal_text": "10 % de 450\n= 45"
+   },
+   "short": "45",
+   "big": "45",
+   "voice_q": "Dix pour cent de quatre cent cinquante ?",
+   "voice_r": "Quarante-cinq !",
+   "source": "450x0,1=45"
+  },
+  {
+   "level": "EXTREME",
+   "media": {
+    "type": "text",
+    "text": "17 × 13 = ?",
+    "reveal_emoji": "🔥",
+    "size": 100,
+    "reveal_text": "17 × 13 = 221"
+   },
+   "short": "221",
+   "big": "221",
+   "voice_r": "Deux cent vingt et un !",
+   "source": "17x13=221"
+  },
+  {
+   "level": "EXTREME",
+   "media": {
+    "type": "text",
+    "text": "1 + 2 + 3 + … + 10 ?",
+    "reveal_emoji": "🔥",
+    "size": 100,
+    "reveal_text": "1 + 2 + 3 + … + 10\n= 55"
+   },
+   "short": "55",
+   "big": "55",
+   "voice_q": "Le dernier ! La somme de un à dix ?",
+   "voice_r": "Cinquante-cinq !",
+   "source": "10x11/2=55"
+  }
  ]
 }

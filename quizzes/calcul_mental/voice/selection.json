@@ -1,0 +1,140 @@
+[
+ {
+  "name": "00_accroche",
+  "score": 1.0,
+  "heard": "dix calculs sans calculatrice pret",
+  "dur": 2.1197278911564625
+ },
+ {
+  "name": "q01_q",
+  "score": 1.0,
+  "heard": "sept plus huit",
+  "dur": 1.2554875283446711
+ },
+ {
+  "name": "q01_r",
+  "score": 1.0,
+  "heard": "quinze trop facile",
+  "dur": 1.6945124716553288
+ },
+ {
+  "name": "q02_q",
+  "score": 1.0,
+  "heard": "six fois sept",
+  "dur": 1.1856235827664399
+ },
+ {
+  "name": "q02_r",
+  "score": 1.0,
+  "heard": "quarante deux",
+  "dur": 0.6791156462585034
+ },
+ {
+  "name": "q03_q",
+  "score": 1.0,
+  "heard": "cent moins trente sept",
+  "dur": 1.3536961451247165
+ },
+ {
+  "name": "q03_r",
+  "score": 1.0,
+  "heard": "soixante trois bien joue",
+  "dur": 2.132154195011338
+ },
+ {
+  "name": "90_cta",
+  "score": 1.0,
+  "heard": "abonne toi et like on continue",
+  "dur": 2.5805442176870748
+ },
+ {
+  "name": "q04_banner",
+  "score": 1.0,
+  "heard": "niveau moyen",
+  "dur": 0.7966213151927438
+ },
+ {
+  "name": "q04_r",
+  "score": 1.0,
+  "heard": "soixante",
+  "dur": 0.6385260770975056
+ },
+ {
+  "name": "q05_q",
+  "score": 1.0,
+  "heard": "la moitie de deux cent cinquante",
+  "dur": 1.5213832199546484
+ },
+ {
+  "name": "q05_r",
+  "score": 1.0,
+  "heard": "cent vingt cinq",
+  "dur": 1.3499319727891157
+ },
+ {
+  "name": "q06_q",
+  "score": 1.0,
+  "heard": "attention au piege",
+  "dur": 1.2894557823129251
+ },
+ {
+  "name": "q06_r",
+  "score": 0.67,
+  "heard": "six euh huit",
+  "dur": 1.8437641723356009
+ },
+ {
+  "name": "q07_banner",
+  "score": 1.0,
+  "heard": "ca se complique",
+  "dur": 0.7729931972789116
+ },
+ {
+  "name": "q07_r",
+  "score": 1.0,
+  "heard": "six cents",
+  "dur": 0.823718820861678
+ },
+ {
+  "name": "q08_q",
+  "score": 1.0,
+  "heard": "dix pour cent de quatre cent cinquante",
+  "dur": 2.024013605442177
+ },
+ {
+  "name": "q08_r",
+  "score": 1.0,
+  "heard": "quarante cinq",
+  "dur": 0.7963492063492064
+ },
+ {
+  "name": "q09_banner",
+  "score": 1.0,
+  "heard": "niveau extreme",
+  "dur": 1.1648072562358276
+ },
+ {
+  "name": "q09_r",
+  "score": 1.0,
+  "heard": "deux cent vingt et un",
+  "dur": 1.9362585034013606
+ },
+ {
+  "name": "q10_q",
+  "score": 1.0,
+  "heard": "le dernier la somme de un a dix",
+  "dur": 2.447845804988662
+ },
+ {
+  "name": "q10_r",
+  "score": 1.0,
+  "heard": "cinquante cinq",
+  "dur": 0.7566213151927438
+ },
+ {
+  "name": "99_conclusion",
+  "score": 1.0,
+  "heard": "alors t as combien dis le en commentaire",
+  "dur": 3.335532879818594
+ }
+]

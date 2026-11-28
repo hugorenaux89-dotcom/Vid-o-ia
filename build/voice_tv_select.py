@@ -31,7 +31,12 @@ def norm(s):
     s = s.replace("-z-", " ")  # graphie de liaison forcée (« fans-z-auront »)
     s = unicodedata.normalize("NFD", s.lower())
     s = "".join(c for c in s if unicodedata.category(c) != "Mn")
-    s = s.replace("10", "dix")
+    s = s.replace("%", " pour cent ")
+    try:
+        from num2words import num2words
+        s = re.sub(r"\d+", lambda m: " " + num2words(int(m.group()), lang="fr") + " ", s)
+    except ImportError:
+        s = s.replace("10", "dix")
     return re.sub(r"[^a-z ]", " ", s).split()
 
 
