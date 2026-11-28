@@ -1,0 +1,19 @@
+{
+ "title": "QUIZ CAPITALES", "logo": "🏛️",
+ "bg": {"type": "flags"},
+ "accroche_screen": "10 CAPITALES :\nTU CONNAIS TA GÉO ?",
+ "accroche_voice": "Dix capitales. Tu connais ta géo ?",
+ "default_qtext": "QUELLE EST\nSA CAPITALE ?",
+ "questions": [
+  {"level": "FACILE", "media": {"type": "image", "path": "img/Italy.png"}, "qtext": "CAPITALE\nDE L'ITALIE ?", "short": "Rome", "big": "ROME", "voice_q": "Quelle est la capitale de l'Italie ?", "voice_r": "Rome ! Trop facile !", "source": "Rome, capitale de l'Italie."},
+  {"level": "FACILE", "media": {"type": "image", "path": "img/Spain.png"}, "qtext": "CAPITALE\nDE L'ESPAGNE ?", "short": "Madrid", "big": "MADRID", "voice_q": "Et de l'Espagne ?", "voice_r": "Madrid !", "source": "Madrid, capitale de l'Espagne."},
+  {"level": "FACILE", "media": {"type": "image", "path": "img/Japan.png"}, "qtext": "CAPITALE\nDU JAPON ?", "short": "Tokyo", "big": "TOKYO", "voice_q": "Et du Japon ?", "voice_r": "Tokyo ! Bien joué !", "source": "Tokyo, capitale du Japon."},
+  {"level": "MOYEN", "media": {"type": "image", "path": "img/the_United_States.png"}, "qtext": "CAPITALE DES\nÉTATS-UNIS ?", "short": "Washington", "big": "WASHINGTON", "voice_r": "Washington ! Pas New York !", "source": "Washington D.C., capitale fédérale des États-Unis."},
+  {"level": "MOYEN", "media": {"type": "image", "path": "img/Canada.png"}, "qtext": "CAPITALE\nDU CANADA ?", "short": "Ottawa", "big": "OTTAWA", "voice_q": "Et du Canada ?", "voice_r": "Ottawa ! Pas Toronto !", "source": "Ottawa, capitale du Canada."},
+  {"level": "MOYEN", "media": {"type": "image", "path": "img/Brazil.png"}, "qtext": "CAPITALE\nDU BRÉSIL ?", "short": "Brasília", "big": "BRASÍLIA", "voice_q": "Et du Brésil ?", "voice_r": "Brasilia ! Pas Rio !", "source": "Brasília, capitale du Brésil depuis 1960."},
+  {"level": "DIFFICILE", "media": {"type": "image", "path": "img/Australia.png"}, "qtext": "CAPITALE DE\nL'AUSTRALIE ?", "short": "Canberra", "big": "CANBERRA", "voice_r": "Canberra ! Pas Sydney !", "source": "Canberra, capitale de l'Australie."},
+  {"level": "DIFFICILE", "media": {"type": "image", "path": "img/Turkey.png"}, "qtext": "CAPITALE\nDE LA TURQUIE ?", "short": "Ankara", "big": "ANKARA", "voice_q": "Et de la Turquie ?", "voice_r": "Ankara ! Pas Istanbul !", "source": "Ankara, capitale de la Turquie depuis 1923."},
+  {"level": "EXTREME", "media": {"type": "image", "path": "img/Nigeria.png"}, "qtext": "CAPITALE\nDU NIGERIA ?", "short": "Abuja", "big": "ABUJA", "voice_r": "Abuja ! Pas Lagos !", "source": "Abuja, capitale du Nigeria depuis 1991."},
+  {"level": "EXTREME", "media": {"type": "image", "path": "img/Kazakhstan.png"}, "qtext": "CAPITALE DU\nKAZAKHSTAN ?", "short": "Astana", "big": "ASTANA", "voice_q": "Le dernier ! La capitale du Kazakhstan ?", "voice_r": "Astana !", "source": "Astana, capitale du Kazakhstan (nom rétabli en 2022)."}
+ ]
+}
